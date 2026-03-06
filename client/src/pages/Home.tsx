@@ -132,7 +132,7 @@ export default function Home() {
             {/* Text */}
             <div>
               <h2
-                className="font-display text-3xl sm:text-4xl font-bold mb-8 leading-tight text-white"
+                className="font-display text-2xl sm:text-3xl lg:text-4xl font-bold mb-8 leading-snug text-white"
                 data-testid="text-about-headline"
               >
                 <span className="text-gradient-rose">I'm Eden,</span>{" "}
@@ -275,11 +275,11 @@ export default function Home() {
           <Link href="/discounts-coupon-codes" data-testid="link-results-discounts">
             <Button
               size="lg"
-              className="bg-rose-500 text-white border-0 rounded-full px-10 text-sm tracking-widest uppercase font-semibold"
+              className="bg-rose-500 text-white border-0 rounded-full px-6 sm:px-10 text-xs sm:text-sm tracking-widest uppercase font-semibold whitespace-normal text-center leading-relaxed h-auto py-3"
             >
               Best Vitamins, Supplements, Biohacking Technologies & Ethical
               Clothing Discount Codes{" "}
-              <ArrowRight className="ml-2 w-4 h-4" />
+              <ArrowRight className="ml-2 w-4 h-4 flex-shrink-0" />
             </Button>
           </Link>
         </div>
