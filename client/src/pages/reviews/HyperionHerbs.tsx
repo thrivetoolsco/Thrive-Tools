@@ -2,6 +2,9 @@ import PageLayout from "@/components/PageLayout";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { ExternalLink, Star, Leaf, FlaskConical, User, CheckCircle, Sparkles, Heart } from "lucide-react";
+import heroImg from "@assets/generated_images/hyperion-herbs-hero.png";
+import reishiImg from "@assets/generated_images/hyperion-reishi.png";
+import schisandraImg from "@assets/generated_images/hyperion-schisandra.png";
 
 export default function HyperionHerbs() {
   return (
@@ -13,21 +16,7 @@ export default function HyperionHerbs() {
     >
       <article className="space-y-12">
         <div className="card-glass rounded-2xl overflow-hidden" data-testid="img-hero-hyperion">
-          <div
-            className="w-full h-48 sm:h-64"
-            style={{
-              background: "linear-gradient(135deg, #1a2a0d 0%, #2d3a0e 40%, #1a0824 100%)",
-            }}
-          >
-            <div className="w-full h-full flex items-center justify-center px-6">
-              <div className="text-center">
-                <div className="w-28 h-28 sm:w-36 sm:h-36 rounded-2xl bg-green-500/15 border border-green-500/25 flex items-center justify-center mb-3 mx-auto">
-                  <Leaf className="w-14 h-14 sm:w-16 sm:h-16 text-green-300" />
-                </div>
-                <p className="text-white/40 text-sm">Tonic Herbs & Medicinal Mushrooms</p>
-              </div>
-            </div>
-          </div>
+          <img src={heroImg} alt="Medicinal herbs and mushrooms from Hyperion Herbs" className="w-full h-auto object-cover" />
         </div>
 
         <div className="flex flex-wrap gap-3">
@@ -205,23 +194,29 @@ export default function HyperionHerbs() {
           </div>
 
           <div className="grid sm:grid-cols-2 gap-5 mt-6">
-            <div className="card-glass rounded-xl p-6 border-l-4" style={{ borderLeftColor: "#4ade80" }}>
-              <div className="flex items-center gap-2 mb-3">
-                <Leaf className="w-4 h-4 text-green-300" />
-                <h3 className="text-green-300 font-bold">Stress Relief, Immune Support & Deep Calm</h3>
+            <div className="card-glass rounded-xl overflow-hidden border-l-4" style={{ borderLeftColor: "#4ade80" }}>
+              <img src={reishiImg} alt="Reishi mushroom extract" className="w-full h-40 object-cover" />
+              <div className="p-6">
+                <div className="flex items-center gap-2 mb-3">
+                  <Leaf className="w-4 h-4 text-green-300" />
+                  <h3 className="text-green-300 font-bold">Stress Relief, Immune Support & Deep Calm</h3>
+                </div>
+                <p className="text-white/60 text-sm leading-relaxed">
+                  Try their <strong className="text-white/90">Reishi Mushroom 8:1 Extract</strong>. It's the king of calming tonics.
+                </p>
               </div>
-              <p className="text-white/60 text-sm leading-relaxed">
-                Try their <strong className="text-white/90">Reishi Mushroom 8:1 Extract</strong>. It's the king of calming tonics.
-              </p>
             </div>
-            <div className="card-glass rounded-xl p-6 border-l-4" style={{ borderLeftColor: "#c97a8e" }}>
-              <div className="flex items-center gap-2 mb-3">
-                <Sparkles className="w-4 h-4 text-rose-300" />
-                <h3 className="text-rose-300 font-bold">Physical Vitality, Liver Support & Cognitive Clarity</h3>
+            <div className="card-glass rounded-xl overflow-hidden border-l-4" style={{ borderLeftColor: "#c97a8e" }}>
+              <img src={schisandraImg} alt="Schisandra berries" className="w-full h-40 object-cover" />
+              <div className="p-6">
+                <div className="flex items-center gap-2 mb-3">
+                  <Sparkles className="w-4 h-4 text-rose-300" />
+                  <h3 className="text-rose-300 font-bold">Physical Vitality, Liver Support & Cognitive Clarity</h3>
+                </div>
+                <p className="text-white/60 text-sm leading-relaxed">
+                  Try their <strong className="text-white/90">Schisandra Berry 10:1 Extract</strong>. It's the perfect all-around adaptogen for our high-paced lives.
+                </p>
               </div>
-              <p className="text-white/60 text-sm leading-relaxed">
-                Try their <strong className="text-white/90">Schisandra Berry 10:1 Extract</strong>. It's the perfect all-around adaptogen for our high-paced lives.
-              </p>
             </div>
           </div>
         </section>

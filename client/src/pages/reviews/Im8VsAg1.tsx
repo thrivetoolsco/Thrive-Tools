@@ -2,6 +2,8 @@ import PageLayout from "@/components/PageLayout";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { ExternalLink, Star, FlaskConical, User, CheckCircle, XCircle } from "lucide-react";
+import heroImg from "@assets/generated_images/im8-vs-ag1-comparison.png";
+import ingredientsImg from "@assets/generated_images/im8-ingredients.png";
 
 export default function Im8VsAg1() {
   return (
@@ -13,28 +15,7 @@ export default function Im8VsAg1() {
     >
       <article className="space-y-12">
         <div className="card-glass rounded-2xl overflow-hidden" data-testid="img-hero-im8-ag1">
-          <div
-            className="w-full h-48 sm:h-64"
-            style={{
-              background: "linear-gradient(135deg, #1a3a2a 0%, #2d0e3e 50%, #0d2a1a 100%)",
-            }}
-          >
-            <div className="w-full h-full flex items-center justify-center gap-8 sm:gap-16 px-6">
-              <div className="text-center">
-                <div className="w-20 h-20 sm:w-24 sm:h-24 rounded-2xl bg-emerald-500/20 border border-emerald-500/30 flex items-center justify-center mb-2 mx-auto">
-                  <span className="text-emerald-300 font-bold text-2xl sm:text-3xl font-display">IM8</span>
-                </div>
-                <span className="text-white/50 text-xs">All-in-One</span>
-              </div>
-              <span className="text-white/30 text-3xl font-bold">VS</span>
-              <div className="text-center">
-                <div className="w-20 h-20 sm:w-24 sm:h-24 rounded-2xl bg-green-500/20 border border-green-500/30 flex items-center justify-center mb-2 mx-auto">
-                  <span className="text-green-300 font-bold text-2xl sm:text-3xl font-display">AG1</span>
-                </div>
-                <span className="text-white/50 text-xs">Athletic Greens</span>
-              </div>
-            </div>
-          </div>
+          <img src={heroImg} alt="IM8 vs AG1 supplement comparison" className="w-full h-auto object-cover" />
         </div>
 
         <div className="flex flex-wrap gap-3">
@@ -64,6 +45,10 @@ export default function Im8VsAg1() {
           <div className="flex items-center gap-3 mb-6">
             <FlaskConical className="w-5 h-5 text-rose-300" />
             <h2 className="font-display text-2xl font-bold text-white">Ingredient Breakdown</h2>
+          </div>
+
+          <div className="card-glass rounded-2xl overflow-hidden mb-8" data-testid="img-ingredients">
+            <img src={ingredientsImg} alt="Supplement ingredients comparison" className="w-full h-auto object-cover" />
           </div>
 
           <div className="grid sm:grid-cols-2 gap-6 mb-8">
