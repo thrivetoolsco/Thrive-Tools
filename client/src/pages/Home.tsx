@@ -2,12 +2,21 @@ import { Link } from "wouter";
 import logoImg from "@assets/image_1772756046665.png";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { ArrowRight, ChevronDown } from "lucide-react";
+import { ArrowRight, ChevronDown, Play } from "lucide-react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 
 const EDEN_PHOTO_1 = "https://i0.wp.com/thrivetools.co/wp-content/uploads/2026/03/Screenshot_20260305_054256_Photos.jpg?resize=781%2C814&ssl=1";
 const EDEN_PHOTO_2 = "https://i0.wp.com/thrivetools.co/wp-content/uploads/2026/03/Screenshot_20260305_061408_Photos.jpg?resize=781%2C1062&ssl=1";
+
+const testimonials = [
+  { name: "Client Testimonial 1", placeholder: true },
+  { name: "Client Testimonial 2", placeholder: true },
+  { name: "Client Testimonial 3", placeholder: true },
+  { name: "Client Testimonial 4", placeholder: true },
+  { name: "Client Testimonial 5", placeholder: true },
+  { name: "Client Testimonial 6", placeholder: true },
+];
 
 export default function Home() {
   return (
@@ -44,18 +53,18 @@ export default function Home() {
           />
         </div>
 
-        <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 text-center pt-16">
+        <div className="relative z-10 w-full max-w-5xl mx-auto px-6 sm:px-8 text-center pt-20 pb-8">
           <div className="mb-8 flex justify-center">
             <img
               src={logoImg}
               alt="Thrive Tools"
-              className="w-full max-w-2xl h-auto object-contain animate-float"
+              className="w-full max-w-[280px] sm:max-w-md md:max-w-lg lg:max-w-2xl h-auto object-contain animate-float"
               data-testid="img-hero-logo"
             />
           </div>
 
           <h1
-            className="font-display text-4xl sm:text-6xl lg:text-7xl font-bold mb-6 leading-tight"
+            className="font-display text-3xl sm:text-5xl lg:text-7xl font-bold mb-6 leading-tight"
             data-testid="text-hero-headline"
           >
             <span className="text-gradient-rose">Your 2.0 </span>
@@ -64,7 +73,7 @@ export default function Home() {
           </h1>
 
           <p
-            className="text-white/60 text-lg sm:text-xl max-w-2xl mx-auto mb-10 leading-relaxed font-medium"
+            className="text-white/60 text-base sm:text-lg lg:text-xl max-w-2xl mx-auto mb-10 leading-relaxed font-medium px-2"
             data-testid="text-hero-subheadline"
           >
             Most "wellness" is just expensive marketing in a synthetic shell.
@@ -72,11 +81,11 @@ export default function Home() {
             energy fog while your bank account takes the hit.
           </p>
 
-          <div className="flex flex-wrap items-center justify-center gap-4 mb-16">
+          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-8">
             <a href="#about" data-testid="button-hero-learn">
               <Button
                 size="lg"
-                className="bg-rose-500 text-white border-0 rounded-full px-8 text-sm tracking-widest uppercase font-semibold"
+                className="bg-rose-500 text-white border-0 rounded-full px-8 text-sm tracking-widest uppercase font-semibold w-full sm:w-auto"
               >
                 Learn More <ArrowRight className="ml-2 w-4 h-4" />
               </Button>
@@ -85,7 +94,7 @@ export default function Home() {
               <Button
                 size="lg"
                 variant="outline"
-                className="rounded-full px-8 text-sm tracking-widest uppercase font-semibold border-white/20 text-white/80 bg-transparent"
+                className="rounded-full px-8 text-sm tracking-widest uppercase font-semibold border-white/20 text-white/80 bg-transparent w-full sm:w-auto"
               >
                 Discount Codes
               </Button>
@@ -105,14 +114,14 @@ export default function Home() {
       {/* ─── ABOUT EDEN ─── */}
       <section
         id="about"
-        className="relative py-24 px-4 sm:px-6 lg:px-8"
+        className="relative py-16 sm:py-24 px-6 sm:px-8 lg:px-8"
         style={{ background: "linear-gradient(180deg, #0d0514 0%, #160920 50%, #0d0514 100%)" }}
       >
-        <div className="section-divider mb-24" />
+        <div className="section-divider mb-16 sm:mb-24" />
         <div className="max-w-5xl mx-auto">
-          <div className="grid lg:grid-cols-2 gap-16 items-center">
+          <div className="grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
             {/* Photo */}
-            <div className="relative" data-testid="img-eden-portrait">
+            <div className="relative max-w-sm mx-auto lg:max-w-none" data-testid="img-eden-portrait">
               <div
                 className="absolute inset-0 rounded-2xl opacity-30 glow-rose"
                 style={{ background: "radial-gradient(circle at 50% 50%, #c97a8e 0%, transparent 70%)" }}
@@ -130,7 +139,7 @@ export default function Home() {
             </div>
 
             {/* Text */}
-            <div>
+            <div className="text-center lg:text-left">
               <h2
                 className="font-display text-2xl sm:text-3xl lg:text-4xl font-bold mb-8 leading-snug text-white"
                 data-testid="text-about-headline"
@@ -144,7 +153,7 @@ export default function Home() {
                   When your physical chemistry is optimized, the shift is
                   undeniable:
                 </p>
-                <ul className="space-y-3 pl-2">
+                <ul className="space-y-3 pl-2 text-left mx-auto lg:mx-0 max-w-xs sm:max-w-none">
                   <li className="flex items-start gap-3">
                     <span className="w-2 h-2 rounded-full bg-rose-400 mt-2 flex-shrink-0" />
                     <span className="text-white/90 font-semibold">Brain fog vanishes.</span>
@@ -168,13 +177,13 @@ export default function Home() {
 
       {/* ─── THE CURATION ─── */}
       <section
-        className="py-24 px-4 sm:px-6 lg:px-8"
+        className="py-16 sm:py-24 px-6 sm:px-8 lg:px-8"
         style={{ background: "linear-gradient(180deg, #0d0514 0%, #1a0824 100%)" }}
       >
         <div className="max-w-5xl mx-auto">
-          <div className="grid lg:grid-cols-2 gap-16 items-center">
+          <div className="grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
             {/* Text */}
-            <div>
+            <div className="text-center lg:text-left order-2 lg:order-1">
               <Badge
                 className="bg-rose-500/15 text-rose-300 border border-rose-500/25 rounded-full px-4 py-1 text-xs tracking-widest uppercase font-medium mb-6"
                 data-testid="badge-insider"
@@ -206,10 +215,10 @@ export default function Home() {
                   <Link href="/discounts-coupon-codes" data-testid="link-curated-list">
                     <Button
                       size="lg"
-                      className="bg-rose-500 text-white border-0 rounded-full px-8 text-sm tracking-widest uppercase font-semibold"
+                      className="bg-rose-500 text-white border-0 rounded-full px-8 text-sm tracking-widest uppercase font-semibold whitespace-normal h-auto py-3"
                     >
                       The Curated List With Discount Codes{" "}
-                      <ArrowRight className="ml-2 w-4 h-4" />
+                      <ArrowRight className="ml-2 w-4 h-4 flex-shrink-0" />
                     </Button>
                   </Link>
                 </div>
@@ -217,7 +226,7 @@ export default function Home() {
             </div>
 
             {/* Photo 2 */}
-            <div className="relative" data-testid="img-eden-photo-2">
+            <div className="relative order-1 lg:order-2 max-w-sm mx-auto lg:max-w-none" data-testid="img-eden-photo-2">
               <div
                 className="absolute inset-0 rounded-2xl opacity-30 glow-purple"
                 style={{ background: "radial-gradient(circle at 50% 50%, #9b6fa5 0%, transparent 70%)" }}
@@ -235,26 +244,26 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="mt-24 text-center">
+          <div className="mt-16 sm:mt-24 text-center">
             <p className="text-white/60 text-lg font-medium mb-4">
               Curious about my 14 year journey?
             </p>
-            <a href="/about" data-testid="link-full-story">
+            <Link href="/about" data-testid="link-full-story">
               <Button
                 variant="outline"
                 className="rounded-full px-8 text-sm tracking-widest uppercase font-semibold border-white/20 text-white/80 bg-transparent"
               >
                 Read the full story here
               </Button>
-            </a>
+            </Link>
           </div>
         </div>
-        <div className="section-divider mt-24" />
+        <div className="section-divider mt-16 sm:mt-24" />
       </section>
 
-      {/* ─── THE RESULTS (link to discount page) ─── */}
+      {/* ─── THE RESULTS — Testimonial Videos ─── */}
       <section
-        className="py-24 px-4 sm:px-6 lg:px-8 relative overflow-hidden"
+        className="py-16 sm:py-24 px-6 sm:px-8 lg:px-8 relative overflow-hidden"
         style={{
           background: "linear-gradient(135deg, #1a0824 0%, #2d0e3e 50%, #1a0824 100%)",
         }}
@@ -265,23 +274,68 @@ export default function Home() {
             style={{ background: "radial-gradient(circle, #c97a8e 0%, transparent 70%)", filter: "blur(80px)" }}
           />
         </div>
-        <div className="max-w-3xl mx-auto text-center relative z-10">
-          <h2
-            className="font-display text-4xl sm:text-5xl font-bold text-white mb-6"
-            data-testid="text-results-headline"
-          >
-            <span className="text-gradient-rose">The Results</span>
-          </h2>
-          <Link href="/discounts-coupon-codes" data-testid="link-results-discounts">
-            <Button
-              size="lg"
-              className="bg-rose-500 text-white border-0 rounded-full px-6 sm:px-10 text-xs sm:text-sm tracking-widest uppercase font-semibold whitespace-normal text-center leading-relaxed h-auto py-3"
+        <div className="max-w-5xl mx-auto relative z-10">
+          <div className="text-center mb-12">
+            <h2
+              className="font-display text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4"
+              data-testid="text-results-headline"
             >
-              Best Vitamins, Supplements, Biohacking Technologies & Ethical
-              Clothing Discount Codes{" "}
-              <ArrowRight className="ml-2 w-4 h-4 flex-shrink-0" />
-            </Button>
-          </Link>
+              <span className="text-gradient-rose">The Results</span>
+            </h2>
+            <p className="text-white/50 text-base sm:text-lg max-w-xl mx-auto">
+              Real stories from real people experiencing transformation.
+            </p>
+          </div>
+
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6 mb-12">
+            {testimonials.map((t, i) => (
+              <div
+                key={i}
+                className="card-glass rounded-xl overflow-hidden group cursor-pointer"
+                data-testid={`card-testimonial-${i}`}
+              >
+                <div
+                  className="relative aspect-video flex items-center justify-center"
+                  style={{
+                    background: `linear-gradient(135deg, ${i % 2 === 0 ? '#1a0824' : '#2d0e3e'} 0%, ${i % 2 === 0 ? '#2d0e3e' : '#1a0824'} 100%)`,
+                  }}
+                >
+                  <div
+                    className="w-14 h-14 rounded-full flex items-center justify-center transition-transform group-hover:scale-110"
+                    style={{
+                      background: "rgba(201,122,142,0.2)",
+                      border: "2px solid rgba(201,122,142,0.4)",
+                    }}
+                  >
+                    <Play className="w-6 h-6 text-rose-300 ml-0.5" fill="currentColor" />
+                  </div>
+                  <div className="absolute bottom-3 left-3 right-3">
+                    <span className="text-white/40 text-xs font-medium uppercase tracking-wider">
+                      Video coming soon
+                    </span>
+                  </div>
+                </div>
+                <div className="p-4">
+                  <p className="text-white/70 text-sm font-medium" data-testid={`text-testimonial-name-${i}`}>
+                    {t.name}
+                  </p>
+                </div>
+              </div>
+            ))}
+          </div>
+
+          <div className="text-center">
+            <Link href="/discounts-coupon-codes" data-testid="link-results-discounts">
+              <Button
+                size="lg"
+                className="bg-rose-500 text-white border-0 rounded-full px-6 sm:px-10 text-xs sm:text-sm tracking-widest uppercase font-semibold whitespace-normal text-center leading-relaxed h-auto py-3"
+              >
+                Best Vitamins, Supplements, Biohacking Technologies & Ethical
+                Clothing Discount Codes{" "}
+                <ArrowRight className="ml-2 w-4 h-4 flex-shrink-0" />
+              </Button>
+            </Link>
+          </div>
         </div>
       </section>
 

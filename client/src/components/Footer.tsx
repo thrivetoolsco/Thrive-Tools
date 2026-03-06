@@ -1,7 +1,7 @@
 import { Link } from "wouter";
 import logoImg from "@assets/image_1772756046665.png";
 import { Mail, Instagram } from "lucide-react";
-import { SiTiktok, SiPinterest } from "react-icons/si";
+import { SiTiktok } from "react-icons/si";
 
 export default function Footer() {
   return (
@@ -36,16 +36,6 @@ export default function Footer() {
                 style={{ background: "rgba(255,255,255,0.05)", border: "1px solid rgba(255,255,255,0.08)" }}
               >
                 <Instagram className="w-4 h-4 text-white/50 hover:text-white transition-colors" />
-              </a>
-              <a
-                href="https://pinterest.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                data-testid="link-social-pinterest"
-                className="w-9 h-9 rounded-full flex items-center justify-center transition-colors"
-                style={{ background: "rgba(255,255,255,0.05)", border: "1px solid rgba(255,255,255,0.08)" }}
-              >
-                <SiPinterest className="w-4 h-4 text-white/50 hover:text-white transition-colors" />
               </a>
               <a
                 href="mailto:hello@thrivetools.co"
