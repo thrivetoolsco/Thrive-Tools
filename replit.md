@@ -17,7 +17,15 @@ Redesigned landing page for ThriveTools.co — a wellness and biohacking brand b
 - `/personalized-guidance` — Personalized Guidance (`client/src/pages/PersonalizedGuidance.tsx`) — 2-col layout, CTA to contact
 - `/quantum-healing` — Quantum Healing (`client/src/pages/QuantumHealing.tsx`) — accordions for treatment info, rates, disclaimer
 - `/breathwork` — Breathwork (`client/src/pages/Breathwork.tsx`) — intro + 6 accordion types (individual, couples, business, corporate, kids, addiction)
-- `/events` — Events (`client/src/pages/Events.tsx`) — newsletter signup, future/past event cards
+- `/events` — Events (`client/src/pages/Events.tsx`) — newsletter signup, future/past event cards linking to individual pages
+- `/events/thrive-1` — Docu Evening: Thrive 1 (`client/src/pages/events/Thrive1.tsx`)
+- `/events/thrive-2` — Docu Evening: Thrive 2 (`client/src/pages/events/Thrive2.tsx`)
+- `/events/drum-circle` — Drum Circle Breathwork (`client/src/pages/events/DrumCircle.tsx`)
+- `/events/cacao-ceremonies` — Cacao Ceremonies (`client/src/pages/events/CacaoCeremonies.tsx`)
+- `/events/psilocybin-forest-walk` — Psilocybin Forest Walk (`client/src/pages/events/PsilocybinForestWalk.tsx`)
+- `/events/ayahuasca-journey` — Ayahuasca Journey Peru (`client/src/pages/events/AyahuascaJourney.tsx`)
+- `/events/indoor-gardening` — Indoor Edible Gardening (`client/src/pages/events/IndoorGardening.tsx`)
+- `/events/food-forest` — Thriving Food Forest (`client/src/pages/events/FoodForest.tsx`)
 - `/contact` — Contact (`client/src/pages/Contact.tsx`) — frontend-only form with toast on submit
 - `/discounts-coupon-codes` — Discount codes (`client/src/pages/Discounts.tsx`) — 3 categories: Vitamins (12), Health Tech (16), Ethical Clothing (6)
 - `/retreats-workshops/blossoming-bliss` — Blossoming Bliss retreat (`client/src/pages/retreats/BlossomingBliss.tsx`) — 6 themes, 7-day retreat, rates

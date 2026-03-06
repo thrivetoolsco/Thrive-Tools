@@ -1,21 +1,22 @@
 import { useState } from "react";
+import { Link } from "wouter";
 import PageLayout from "@/components/PageLayout";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
 import { Mail, ArrowRight, Calendar, Sparkles } from "lucide-react";
 
 const futureEvents = [
-  { id: "docu-thrive-1", title: "Docu Evening: Thrive 1", url: "https://thrivetools.co/thrive-1/" },
-  { id: "docu-thrive-2", title: "Docu Evening: Thrive 2", url: "https://thrivetools.co/thrive-2" },
-  { id: "drum-circle", title: "Drum Circle Breathwork", url: "https://thrivetools.co/events/drum-circle/" },
-  { id: "cacao-ceremonies", title: "Cacao Ceremonies", url: "https://thrivetools.co/cacao-ceremonies/" },
-  { id: "psilocybin-walk", title: "Psilocybin Forest Walk", url: "https://thrivetools.co/retreats-workshops/psilocybin-forest-walk/" },
+  { id: "docu-thrive-1", title: "Docu Evening: Thrive 1", href: "/events/thrive-1" },
+  { id: "docu-thrive-2", title: "Docu Evening: Thrive 2", href: "/events/thrive-2" },
+  { id: "drum-circle", title: "Drum Circle Breathwork", href: "/events/drum-circle" },
+  { id: "cacao-ceremonies", title: "Cacao Ceremonies", href: "/events/cacao-ceremonies" },
+  { id: "psilocybin-walk", title: "Psilocybin Forest Walk", href: "/events/psilocybin-forest-walk" },
 ];
 
 const pastEvents = [
-  { id: "ayahuasca-peru", title: "Ayahuasca Journey Peru", url: "https://thrivetools.co/ayahuasca-journey" },
-  { id: "indoor-gardening", title: "Indoor Edible Gardening", url: "https://thrivetools.co/events/indoor-gardening/" },
-  { id: "food-forest", title: "Thriving Food Forest", url: "https://thrivetools.co/thriving-food-forest/" },
+  { id: "ayahuasca-peru", title: "Ayahuasca Journey Peru", href: "/events/ayahuasca-journey" },
+  { id: "indoor-gardening", title: "Indoor Edible Gardening", href: "/events/indoor-gardening" },
+  { id: "food-forest", title: "Thriving Food Forest", href: "/events/food-forest" },
 ];
 
 export default function Events() {
@@ -81,12 +82,10 @@ export default function Events() {
 
           <div className="grid gap-4">
             {futureEvents.map((event) => (
-              <a
+              <Link
                 key={event.id}
-                href={event.url}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="card-glass hover-elevate rounded-md p-5 flex items-center justify-between gap-4 group transition-all duration-200 border-[rgba(201,122,142,0.25)]"
+                href={event.href}
+                className="card-glass hover-elevate rounded-md p-5 flex items-center justify-between gap-4 group transition-all duration-200"
                 style={{ borderColor: "rgba(201,122,142,0.25)" }}
                 data-testid={`link-event-${event.id}`}
               >
@@ -94,7 +93,7 @@ export default function Events() {
                   {event.title}
                 </span>
                 <ArrowRight className="w-4 h-4 text-[#c97a8e] opacity-0 group-hover:opacity-100 transition-opacity shrink-0" />
-              </a>
+              </Link>
             ))}
           </div>
         </section>
@@ -114,11 +113,9 @@ export default function Events() {
 
           <div className="grid gap-4">
             {pastEvents.map((event) => (
-              <a
+              <Link
                 key={event.id}
-                href={event.url}
-                target="_blank"
-                rel="noopener noreferrer"
+                href={event.href}
                 className="card-glass hover-elevate rounded-md p-5 flex items-center justify-between gap-4 group transition-all duration-200"
                 style={{ borderColor: "rgba(155,111,165,0.25)" }}
                 data-testid={`link-event-${event.id}`}
@@ -127,7 +124,7 @@ export default function Events() {
                   {event.title}
                 </span>
                 <ArrowRight className="w-4 h-4 text-[#9b6fa5] opacity-0 group-hover:opacity-100 transition-opacity shrink-0" />
-              </a>
+              </Link>
             ))}
           </div>
         </section>
