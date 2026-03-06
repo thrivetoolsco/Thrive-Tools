@@ -72,6 +72,7 @@ export default function Footer() {
             <ul className="space-y-3 text-sm text-white/35">
               {[
                 { label: "My Top Picks", href: "/discounts-coupon-codes" },
+                { label: "Products Reviews", href: "/product-reviews" },
                 { label: "About", href: "/about" },
                 { label: "Contact", href: "/contact" },
               ].map((item) => (

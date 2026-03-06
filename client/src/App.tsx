@@ -25,6 +25,10 @@ import PsilocybinForestWalk from "@/pages/events/PsilocybinForestWalk";
 import AyahuascaJourney from "@/pages/events/AyahuascaJourney";
 import IndoorGardening from "@/pages/events/IndoorGardening";
 import FoodForest from "@/pages/events/FoodForest";
+import ProductReviews from "@/pages/ProductReviews";
+import Im8VsAg1 from "@/pages/reviews/Im8VsAg1";
+import Im8HealthReview from "@/pages/reviews/Im8HealthReview";
+import VielightNeuroReview from "@/pages/reviews/VielightNeuroReview";
 
 function ScrollToTop() {
   const [location] = useLocation();
@@ -57,6 +61,10 @@ function Router() {
       <Route path="/events/ayahuasca-journey" component={AyahuascaJourney} />
       <Route path="/events/indoor-gardening" component={IndoorGardening} />
       <Route path="/events/food-forest" component={FoodForest} />
+      <Route path="/product-reviews" component={ProductReviews} />
+      <Route path="/product-reviews/im8-vs-ag1" component={Im8VsAg1} />
+      <Route path="/product-reviews/im8-health-review" component={Im8HealthReview} />
+      <Route path="/product-reviews/vielight-neuro-review" component={VielightNeuroReview} />
       <Route component={NotFound} />
     </Switch>
   );

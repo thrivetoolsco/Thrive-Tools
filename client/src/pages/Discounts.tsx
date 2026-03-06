@@ -228,7 +228,7 @@ const ethicalClothing: DiscountItem[] = [
     url: "https://sustainbykat.com/?sca_ref=4525701.rDWUOnv37U",
   },
   {
-    name: "Grounding Sheets & Footwear",
+    name: "Earthing Harmony",
     description: "Grounding Sheets & Footwear",
     code: "THRIVENOW",
     url: "https://earthingharmony.com/?ref=hxaqgkso",
@@ -442,7 +442,7 @@ export default function Discounts() {
                 <Plane className="w-5 h-5 text-sky-300" />
               </div>
               <div>
-                <h2 className="text-white font-bold text-2xl font-display">Traveling</h2>
+                <h2 className="text-white font-bold text-2xl font-display">Travels</h2>
                 <p className="text-white/40 text-sm">I'm also passionate about Traveling.</p>
               </div>
             </div>
@@ -458,7 +458,7 @@ export default function Discounts() {
                   rel="noopener noreferrer"
                   data-testid="link-travel-tips"
                 >
-                  Visit TravelTipsExposed.com <ExternalLink className="ml-2 w-4 h-4" />
+                  Check out TravelTipsExposed.com <ExternalLink className="ml-2 w-4 h-4" />
                 </a>
               </Button>
             </div>

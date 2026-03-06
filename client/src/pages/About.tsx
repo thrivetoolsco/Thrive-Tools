@@ -35,7 +35,7 @@ export default function About() {
           </h3>
           <div className="space-y-4 text-white/70 leading-relaxed">
             <p>
-              I've spent years studying under the best in the game, think Joe Dispenza and Bruce Lipton, integrating quantum wellness tech to help people navigate the heavy stuff: anxiety, burnout, addiction, and PTSD. My approach isn't just about "fixing" a symptom; it's a total holistic reset. We're talking about optimizing your biology to unlock a version of yourself you haven't met yet.
+              I've spent years studying under the best in the game, think Joe Dispenza and Bruce Lipton, integrating quantum wellness tech to help people navigate the heavy stuff: anxiety, burnout, depression, addiction, and PTSD. My approach isn't just about "fixing" a symptom; it's a total holistic reset. We're talking about optimizing your biology to unlock a version of yourself you haven't met yet.
             </p>
             <p>
               I've done a lot of work in the trenches of trauma and addiction recovery. Whether it's helping clients process childhood trauma or navigating the complexities of severe addiction, my goal is to find the root cause. We don't just talk about it; we use practical, bio-harmonizing strategies to reclaim your power.
@@ -80,7 +80,7 @@ export default function About() {
               Beyond the psychedelics, I'm deep into the world of longevity herbs (shoutout to my mentor, Taoist Jing Master Truth Calkins). I'm a huge advocate for using Reishi, Schisandra, and Taoist secrets to protect your energy and stay "ageless."
             </p>
             <p>
-              But if you ask me what the ultimate "hack" is? The breath. I traveled to India to immerse myself in Pranayama and learned from incredible Yogis. The breath is the bridge between the conscious and the subconcious. Between the breathwork and my sound healing practice, I create spaces where you can finally drop the baggage and tune back into your true frequency.
+              But if you ask me what the ultimate "hack" is? The breath. I traveled to India to immerse myself in Pranayama and learned from incredible Yogis. The breath is the bridge between the conscious and the subconcious. Between the breathwork and my sound healing practice, I create spaces where you can finally drop the baggage and tune back into your highest frequency.
             </p>
           </div>
           <div className="mt-6">

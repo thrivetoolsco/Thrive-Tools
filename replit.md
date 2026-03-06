@@ -27,7 +27,11 @@ Redesigned landing page for ThriveTools.co — a wellness and biohacking brand b
 - `/events/indoor-gardening` — Indoor Edible Gardening (`client/src/pages/events/IndoorGardening.tsx`)
 - `/events/food-forest` — Thriving Food Forest (`client/src/pages/events/FoodForest.tsx`)
 - `/contact` — Contact (`client/src/pages/Contact.tsx`) — frontend-only form with toast on submit
-- `/discounts-coupon-codes` — Discount codes (`client/src/pages/Discounts.tsx`) — 3 categories: Vitamins (12), Health Tech (16), Ethical Clothing (6)
+- `/discounts-coupon-codes` — Discount codes (`client/src/pages/Discounts.tsx`) — 4 categories: Vitamins (12), Health Tech (16), Ethical Clothing (6), Travels
+- `/product-reviews` — Products Reviews listing (`client/src/pages/ProductReviews.tsx`) — 3 blog post cards
+- `/product-reviews/im8-vs-ag1` — IM8 vs AG1 comparison review (`client/src/pages/reviews/Im8VsAg1.tsx`)
+- `/product-reviews/im8-health-review` — IM8 Health in-depth review (`client/src/pages/reviews/Im8HealthReview.tsx`)
+- `/product-reviews/vielight-neuro-review` — Vielight Neuro 2026 review (`client/src/pages/reviews/VielightNeuroReview.tsx`)
 - `/retreats-workshops/blossoming-bliss` — Blossoming Bliss retreat (`client/src/pages/retreats/BlossomingBliss.tsx`) — 6 themes, 7-day retreat, rates
 - `/retreats-workshops/spiritual-nutrition` — Spiritual Nutrition (`client/src/pages/retreats/SpiritualNutrition.tsx`) — 3-day online intensive
 - `/retreats-workshops/mescaline-wisdom` — Mescaline Wisdom (`client/src/pages/retreats/MescalineWisdom.tsx`) — Wachuma ceremonies, group rates
