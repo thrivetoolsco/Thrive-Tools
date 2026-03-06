@@ -10,6 +10,7 @@ import {
   Pill,
   Cpu,
   Shirt,
+  Plane,
   ArrowLeft,
 } from "lucide-react";
 import { useState } from "react";
@@ -426,6 +427,42 @@ export default function Discounts() {
             gradient="linear-gradient(135deg, rgba(212,168,103,0.2) 0%, rgba(201,122,142,0.2) 100%)"
             startIndex={vitaminsSupplements.length + healthTech.length}
           />
+
+          <div className="section-divider mb-20" />
+
+          <section className="mb-20" data-testid="section-traveling">
+            <div className="flex items-center gap-4 mb-8">
+              <div
+                className="w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0"
+                style={{
+                  background: "linear-gradient(135deg, rgba(100,180,220,0.2) 0%, rgba(155,111,165,0.2) 100%)",
+                  border: "1px solid rgba(100,180,220,0.2)",
+                }}
+              >
+                <Plane className="w-5 h-5 text-sky-300" />
+              </div>
+              <div>
+                <h2 className="text-white font-bold text-2xl font-display">Traveling</h2>
+                <p className="text-white/40 text-sm">I'm also passionate about Traveling.</p>
+              </div>
+            </div>
+            <div className="card-glass rounded-2xl p-8 text-center">
+              <Button
+                asChild
+                size="lg"
+                className="bg-rose-500 text-white border-0 rounded-full px-8 text-sm tracking-widest uppercase font-semibold"
+              >
+                <a
+                  href="https://www.traveltipsexposed.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  data-testid="link-travel-tips"
+                >
+                  Visit TravelTipsExposed.com <ExternalLink className="ml-2 w-4 h-4" />
+                </a>
+              </Button>
+            </div>
+          </section>
         </div>
       </section>
 

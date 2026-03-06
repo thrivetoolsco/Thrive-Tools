@@ -3,7 +3,7 @@ import { Link } from "wouter";
 import logoImg from "@assets/image_1772756046665.png";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { ArrowRight, ChevronDown, Play } from "lucide-react";
+import { ArrowRight, ChevronDown } from "lucide-react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 
@@ -11,12 +11,19 @@ const EDEN_PHOTO_1 = "https://i0.wp.com/thrivetools.co/wp-content/uploads/2026/0
 const EDEN_PHOTO_2 = "https://i0.wp.com/thrivetools.co/wp-content/uploads/2026/03/Screenshot_20260305_061408_Photos.jpg?resize=781%2C1062&ssl=1";
 
 const testimonials = [
-  { name: "Client Testimonial 1", placeholder: true },
-  { name: "Client Testimonial 2", placeholder: true },
-  { name: "Client Testimonial 3", placeholder: true },
-  { name: "Client Testimonial 4", placeholder: true },
-  { name: "Client Testimonial 5", placeholder: true },
-  { name: "Client Testimonial 6", placeholder: true },
+  { name: "Client Testimonial 1", videoId: "QNrE8TVVCf8", isShort: true },
+  { name: "Client Testimonial 2", videoId: "oblIRSW-OBg", isShort: false },
+  { name: "Client Testimonial 3", videoId: "eAesjZov7Z0", isShort: false },
+  { name: "Client Testimonial 4", videoId: "Fss2GYJhntw", isShort: true },
+  { name: "Client Testimonial 5", videoId: "8JD_u6FIfT0", isShort: true },
+  { name: "Client Testimonial 6", videoId: "5WK4qLmuAwo", isShort: false },
+  { name: "Client Testimonial 7", videoId: "b6JuP2Ugic8", isShort: true },
+  { name: "Client Testimonial 8", videoId: "Hob0-l_GuWw", isShort: false },
+  { name: "Client Testimonial 9", videoId: "a3IFCYF_s0I", isShort: false },
+  { name: "Client Testimonial 10", videoId: "1zm4mHf3rTQ", isShort: false },
+  { name: "Client Testimonial 11", videoId: "Oq5NAOKyPvE", isShort: true },
+  { name: "Client Testimonial 12", videoId: "_Bcm7k87rns", isShort: false },
+  { name: "Client Testimonial 13", videoId: "iCt-MqPUv24", isShort: false },
 ];
 
 export default function Home() {
@@ -295,29 +302,19 @@ export default function Home() {
             {visibleTestimonials.map((t, i) => (
               <div
                 key={i}
-                className="card-glass rounded-xl overflow-hidden group cursor-pointer"
+                className="card-glass rounded-xl overflow-hidden"
                 data-testid={`card-testimonial-${i}`}
               >
-                <div
-                  className="relative aspect-video flex items-center justify-center"
-                  style={{
-                    background: `linear-gradient(135deg, ${i % 2 === 0 ? '#1a0824' : '#2d0e3e'} 0%, ${i % 2 === 0 ? '#2d0e3e' : '#1a0824'} 100%)`,
-                  }}
-                >
-                  <div
-                    className="w-14 h-14 rounded-full flex items-center justify-center transition-transform group-hover:scale-110"
-                    style={{
-                      background: "rgba(201,122,142,0.2)",
-                      border: "2px solid rgba(201,122,142,0.4)",
-                    }}
-                  >
-                    <Play className="w-6 h-6 text-rose-300 ml-0.5" fill="currentColor" />
-                  </div>
-                  <div className="absolute bottom-3 left-3 right-3">
-                    <span className="text-white/40 text-xs font-medium uppercase tracking-wider">
-                      Video coming soon
-                    </span>
-                  </div>
+                <div className={`relative w-full ${t.isShort ? 'aspect-[9/16] max-h-[400px]' : 'aspect-video'}`}>
+                  <iframe
+                    src={`https://www.youtube.com/embed/${t.videoId}`}
+                    title={t.name}
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                    loading="lazy"
+                    className="absolute inset-0 w-full h-full"
+                    data-testid={`video-testimonial-${i}`}
+                  />
                 </div>
                 <div className="p-4">
                   <p className="text-white/70 text-sm font-medium" data-testid={`text-testimonial-name-${i}`}>
