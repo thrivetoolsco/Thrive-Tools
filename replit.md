@@ -1,10 +1,6 @@
 # Thrive Tools Website
 
-A redesigned landing page for ThriveTools.co — a wellness supplement brand. The site features a premium dark cosmic aesthetic with rose-gold accents matching the brand logo.
-
-## Overview
-
-A single-page marketing/landing website for Thrive Tools wellness products. No backend API needed — all frontend with static content.
+Redesigned landing page for ThriveTools.co — a wellness and biohacking brand by Eden. Dark cosmic aesthetic with rose-gold accents matching the brand logo.
 
 ## Architecture
 
@@ -16,7 +12,13 @@ A single-page marketing/landing website for Thrive Tools wellness products. No b
 
 ## Pages
 
-- `/` — Full landing page (`client/src/pages/Home.tsx`)
+- `/` — Home page (`client/src/pages/Home.tsx`) — exact text from thrivetools.co
+- `/discounts-coupon-codes` — Discount codes page (`client/src/pages/Discounts.tsx`) — cards for 3 categories: Vitamins & Supplements (12), Health Tech (16), Ethical Clothing (6)
+
+## Shared Components
+
+- `client/src/components/Navigation.tsx` — Fixed nav bar with logo, nav links matching original site structure, mobile menu with dropdowns
+- `client/src/components/Footer.tsx` — Logo, social links, navigation links
 
 ## Design System
 
@@ -26,31 +28,19 @@ A single-page marketing/landing website for Thrive Tools wellness products. No b
 - Secondary accent: Purple `#9b6fa5`
 - Gold accent: `#d4a867`
 
-### CSS Custom Properties (index.css)
-- `--primary`: Rose 330° 55% 65% (dark mode)
-- `--background`: Deep purple 280° 35% 6% (dark mode)
-- Custom utility classes: `.text-gradient-rose`, `.text-gradient-purple`, `.card-glass`, `.glow-rose`, `.animate-float`
-
-## Sections
-
-1. **Navigation** — Fixed header with logo, nav links, cart icon
-2. **Hero** — Full-screen cosmic background with logo, headline, CTAs
-3. **About/Founder** — Problem statement + founder photo + stats
-4. **Why Different** — 4 differentiating features grid
-5. **Products** — 4 product cards (Neural Flow, Vital Restore, Heart Resonance, Immune Shield)
-6. **Testimonials** — 4 customer reviews
-7. **How It Works** — 3-step process
-8. **Newsletter CTA** — Email subscribe with confirmation state
-9. **Footer** — Logo, nav links, social media icons
+### CSS Custom Utilities (index.css)
+- `.text-gradient-rose`, `.text-gradient-purple` — gradient text
+- `.card-glass` — glassmorphism card styling
+- `.glow-rose`, `.glow-purple` — glow effects
+- `.animate-float`, `.animate-float-delayed` — floating animations
+- `.section-divider` — gradient horizontal rule
+- `.shimmer` — shimmer animation
 
 ## Assets
 
-- `@assets/image_1772756046665.png` — Main Thrive Tools logo (used in hero + footer)
-- `@assets/IMG_6279_1772756331583.jpeg` — Founder/brand photo (used in About section)
+- `@assets/image_1772756046665.png` — Main Thrive Tools logo (header + hero + footer)
+- Eden's photos referenced via original thrivetools.co URLs
 
-## User Preferences
+## Navigation Structure (matches original site)
 
-- Deep purple dark theme matching the logo's cosmic aesthetic
-- Rose gold + purple accent palette
-- Premium wellness brand feel (not clinical/medical)
-- Playfair Display for headlines (brand typography)
+Home, Personalized Guidance, Quantum Healing, Breathwork, Retreats & Workshops (submenu), Events, Store > My Top Picks, About, Contact
