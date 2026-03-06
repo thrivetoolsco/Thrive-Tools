@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { Link } from "wouter";
 import logoImg from "@assets/image_1772756046665.png";
 import { Badge } from "@/components/ui/badge";
@@ -19,6 +20,9 @@ const testimonials = [
 ];
 
 export default function Home() {
+  const [showAllTestimonials, setShowAllTestimonials] = useState(false);
+  const visibleTestimonials = showAllTestimonials ? testimonials : testimonials.slice(0, 3);
+
   return (
     <div className="min-h-screen bg-[#0d0514] text-white overflow-x-hidden">
       <Navigation />
@@ -287,8 +291,8 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6 mb-12">
-            {testimonials.map((t, i) => (
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6 mb-6">
+            {visibleTestimonials.map((t, i) => (
               <div
                 key={i}
                 className="card-glass rounded-xl overflow-hidden group cursor-pointer"
@@ -323,6 +327,32 @@ export default function Home() {
               </div>
             ))}
           </div>
+
+          {!showAllTestimonials && testimonials.length > 3 && (
+            <div className="text-center mb-10">
+              <Button
+                variant="outline"
+                onClick={() => setShowAllTestimonials(true)}
+                className="rounded-full px-8 text-sm tracking-widest uppercase font-semibold border-white/20 text-white/80 bg-transparent"
+                data-testid="button-more-testimonials"
+              >
+                More <ChevronDown className="ml-2 w-4 h-4" />
+              </Button>
+            </div>
+          )}
+
+          {showAllTestimonials && (
+            <div className="text-center mb-10">
+              <Button
+                variant="outline"
+                onClick={() => setShowAllTestimonials(false)}
+                className="rounded-full px-8 text-sm tracking-widest uppercase font-semibold border-white/20 text-white/80 bg-transparent"
+                data-testid="button-less-testimonials"
+              >
+                Show Less <ChevronDown className="ml-2 w-4 h-4 rotate-180" />
+              </Button>
+            </div>
+          )}
 
           <div className="text-center">
             <Link href="/discounts-coupon-codes" data-testid="link-results-discounts">

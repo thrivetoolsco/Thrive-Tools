@@ -18,7 +18,7 @@ export default function Footer() {
             </p>
             <div className="flex items-center gap-3 mt-5">
               <a
-                href="https://tiktok.com"
+                href="https://www.tiktok.com/@thrivetools.co?_r=1&_t=ZS-94RwhlhXkNl"
                 target="_blank"
                 rel="noopener noreferrer"
                 data-testid="link-social-tiktok"
@@ -28,7 +28,7 @@ export default function Footer() {
                 <SiTiktok className="w-4 h-4 text-white/50 hover:text-white transition-colors" />
               </a>
               <a
-                href="https://instagram.com"
+                href="https://www.instagram.com/thrivetools.co?igsh=cnZ6MWRxbzJkaXNt"
                 target="_blank"
                 rel="noopener noreferrer"
                 data-testid="link-social-instagram"
