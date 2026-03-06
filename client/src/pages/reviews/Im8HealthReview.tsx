@@ -148,9 +148,6 @@ export default function Im8HealthReview() {
             <p>
               The electrolyte component was an unexpected bonus. As someone who practices breathwork daily and sweats through intense sessions, having balanced electrolytes without needing a separate supplement simplified my routine significantly.
             </p>
-            <p>
-              If I had to name one downside, the taste isn't amazing — it's earthy and a bit bitter. But mixed with cold water and a squeeze of lemon, it's completely fine. I'd rather have a product that tastes like real ingredients than one loaded with artificial sweeteners.
-            </p>
           </div>
         </section>
 

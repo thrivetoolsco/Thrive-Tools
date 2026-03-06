@@ -38,7 +38,7 @@ export default function About() {
               I've spent years studying under the best in the game, think Joe Dispenza and Bruce Lipton, integrating quantum wellness tech to help people navigate the heavy stuff: anxiety, burnout, depression, addiction, and PTSD. My approach isn't just about "fixing" a symptom; it's a total holistic reset. We're talking about optimizing your biology to unlock a version of yourself you haven't met yet.
             </p>
             <p>
-              I've done a lot of work in the trenches of trauma and addiction recovery. Whether it's helping clients process childhood trauma or navigating the complexities of severe addiction, my goal is to find the root cause. We don't just talk about it; we use practical, bio-harmonizing strategies to reclaim your power.
+              I've done a lot of work in the trenches of trauma and addiction recovery. Whether it's helping clients process childhood trauma or navigating the complexities of severe depression, my goal is to find the root cause. We don't just talk about it; we use practical, bio-harmonizing strategies to reclaim your power.
             </p>
           </div>
         </div>

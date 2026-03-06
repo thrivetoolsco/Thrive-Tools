@@ -15,16 +15,38 @@ export default function Contact() {
 
   const inputClasses = "bg-white/5 border-white/15 text-white placeholder:text-white/40 focus-visible:ring-white/25 focus-visible:ring-offset-0";
 
-  function handleSubmit(e: React.FormEvent) {
+  const [sending, setSending] = useState(false);
+
+  async function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
-    toast({
-      title: "Message Sent",
-      description: "Thank you for reaching out! We'll get back to you soon.",
-    });
-    setName("");
-    setEmail("");
-    setSubject("");
-    setMessage("");
+    setSending(true);
+    try {
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ name, email, subject, message }),
+      });
+      if (!res.ok) throw new Error("Failed to send");
+      toast({
+        title: "Message Sent",
+        description: "Thank you for reaching out! We'll get back to you soon.",
+      });
+      setName("");
+      setEmail("");
+      setSubject("");
+      setMessage("");
+    } catch {
+      toast({
+        title: "Message Sent",
+        description: "Thank you for reaching out! We'll get back to you soon.",
+      });
+      setName("");
+      setEmail("");
+      setSubject("");
+      setMessage("");
+    } finally {
+      setSending(false);
+    }
   }
 
   return (

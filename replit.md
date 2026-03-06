@@ -32,6 +32,7 @@ Redesigned landing page for ThriveTools.co — a wellness and biohacking brand b
 - `/product-reviews/im8-vs-ag1` — IM8 vs AG1 comparison review (`client/src/pages/reviews/Im8VsAg1.tsx`)
 - `/product-reviews/im8-health-review` — IM8 Health in-depth review (`client/src/pages/reviews/Im8HealthReview.tsx`)
 - `/product-reviews/vielight-neuro-review` — Vielight Neuro 2026 review (`client/src/pages/reviews/VielightNeuroReview.tsx`)
+- `/product-reviews/hyperion-herbs` — Hyperion Herbs tonic herbs review (`client/src/pages/reviews/HyperionHerbs.tsx`)
 - `/retreats-workshops/blossoming-bliss` — Blossoming Bliss retreat (`client/src/pages/retreats/BlossomingBliss.tsx`) — 6 themes, 7-day retreat, rates
 - `/retreats-workshops/spiritual-nutrition` — Spiritual Nutrition (`client/src/pages/retreats/SpiritualNutrition.tsx`) — 3-day online intensive
 - `/retreats-workshops/mescaline-wisdom` — Mescaline Wisdom (`client/src/pages/retreats/MescalineWisdom.tsx`) — Wachuma ceremonies, group rates

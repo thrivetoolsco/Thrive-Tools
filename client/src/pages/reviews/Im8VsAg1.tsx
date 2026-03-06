@@ -198,7 +198,7 @@ export default function Im8VsAg1() {
               </div>
             </div>
             <p className="text-white/70 text-sm leading-relaxed text-center">
-              AG1 isn't a bad product — it's just not the best. When you factor in price, bioavailability, and the completeness of the formula, IM8 wins by a significant margin. You're paying for David Beckham's endorsement, not a superior supplement.
+              AG1 isn't a bad product — it's just not the best. When you factor in price, bioavailability, and the completeness of the formula, IM8 wins by a significant margin.
             </p>
           </div>
         </section>

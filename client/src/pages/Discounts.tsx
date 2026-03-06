@@ -446,11 +446,11 @@ export default function Discounts() {
                 <p className="text-white/40 text-sm">I'm also passionate about Traveling.</p>
               </div>
             </div>
-            <div className="card-glass rounded-2xl p-8 text-center">
+            <div className="card-glass rounded-2xl p-10 flex items-center justify-center">
               <Button
                 asChild
                 size="lg"
-                className="bg-rose-500 text-white border-0 rounded-full px-8 text-sm tracking-widest uppercase font-semibold"
+                className="bg-rose-500 text-white border-0 rounded-full px-10 py-4 text-base tracking-widest uppercase font-semibold"
               >
                 <a
                   href="https://www.traveltipsexposed.com"
@@ -458,7 +458,7 @@ export default function Discounts() {
                   rel="noopener noreferrer"
                   data-testid="link-travel-tips"
                 >
-                  Check out TravelTipsExposed.com <ExternalLink className="ml-2 w-4 h-4" />
+                  Find me on TravelTipsExposed.com <ExternalLink className="ml-2 w-4 h-4" />
                 </a>
               </Button>
             </div>

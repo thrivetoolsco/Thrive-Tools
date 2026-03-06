@@ -29,6 +29,7 @@ import ProductReviews from "@/pages/ProductReviews";
 import Im8VsAg1 from "@/pages/reviews/Im8VsAg1";
 import Im8HealthReview from "@/pages/reviews/Im8HealthReview";
 import VielightNeuroReview from "@/pages/reviews/VielightNeuroReview";
+import HyperionHerbs from "@/pages/reviews/HyperionHerbs";
 
 function ScrollToTop() {
   const [location] = useLocation();
@@ -65,6 +66,7 @@ function Router() {
       <Route path="/product-reviews/im8-vs-ag1" component={Im8VsAg1} />
       <Route path="/product-reviews/im8-health-review" component={Im8HealthReview} />
       <Route path="/product-reviews/vielight-neuro-review" component={VielightNeuroReview} />
+      <Route path="/product-reviews/hyperion-herbs" component={HyperionHerbs} />
       <Route component={NotFound} />
     </Switch>
   );

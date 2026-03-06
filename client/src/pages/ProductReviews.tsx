@@ -39,6 +39,14 @@ const blogPosts: BlogPost[] = [
     badge: "Tech Review",
     badgeColor: "bg-purple-500/15 text-purple-300 border-purple-500/25",
   },
+  {
+    id: "hyperion-herbs",
+    title: "Experience True Potency: Why I Recommend Hyperion Herbs for Tonic Herbs",
+    excerpt: "Why most supplements fail, what makes Hyperion Herbs different, and my personal experience with their Reishi and Schisandra extracts.",
+    href: "/product-reviews/hyperion-herbs",
+    badge: "Herbal Review",
+    badgeColor: "bg-green-500/15 text-green-300 border-green-500/25",
+  },
 ];
 
 export default function ProductReviews() {
