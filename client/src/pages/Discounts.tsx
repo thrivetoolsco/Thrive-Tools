@@ -352,7 +352,7 @@ export default function Discounts() {
 
       {/* Header */}
       <section
-        className="pt-28 pb-16 px-4 sm:px-6 lg:px-8 relative overflow-hidden"
+        className="pt-32 pb-16 px-4 sm:px-6 lg:px-8 relative overflow-hidden"
         style={{
           background: "radial-gradient(ellipse 80% 50% at 50% 30%, #2d0e3e 0%, #1a0824 40%, #0d0514 100%)",
         }}
