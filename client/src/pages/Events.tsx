@@ -5,17 +5,17 @@ import { Button } from "@/components/ui/button";
 import { Mail, ArrowRight, Calendar, Sparkles } from "lucide-react";
 
 const futureEvents = [
-  { id: "docu-thrive-1", title: "Docu Evening: Thrive 1" },
-  { id: "docu-thrive-2", title: "Docu Evening: Thrive 2" },
-  { id: "drum-circle", title: "Drum Circle Breathwork" },
-  { id: "cacao-ceremonies", title: "Cacao Ceremonies" },
-  { id: "psilocybin-walk", title: "Psilocybin Forest Walk" },
+  { id: "docu-thrive-1", title: "Docu Evening: Thrive 1", url: "https://thrivetools.co/thrive-1/" },
+  { id: "docu-thrive-2", title: "Docu Evening: Thrive 2", url: "https://thrivetools.co/thrive-2" },
+  { id: "drum-circle", title: "Drum Circle Breathwork", url: "https://thrivetools.co/events/drum-circle/" },
+  { id: "cacao-ceremonies", title: "Cacao Ceremonies", url: "https://thrivetools.co/cacao-ceremonies/" },
+  { id: "psilocybin-walk", title: "Psilocybin Forest Walk", url: "https://thrivetools.co/retreats-workshops/psilocybin-forest-walk/" },
 ];
 
 const pastEvents = [
-  { id: "ayahuasca-peru", title: "Ayahuasca Journey Peru" },
-  { id: "indoor-gardening", title: "Indoor Edible Gardening" },
-  { id: "food-forest", title: "Thriving Food Forest" },
+  { id: "ayahuasca-peru", title: "Ayahuasca Journey Peru", url: "https://thrivetools.co/ayahuasca-journey" },
+  { id: "indoor-gardening", title: "Indoor Edible Gardening", url: "https://thrivetools.co/events/indoor-gardening/" },
+  { id: "food-forest", title: "Thriving Food Forest", url: "https://thrivetools.co/thriving-food-forest/" },
 ];
 
 export default function Events() {
@@ -83,7 +83,9 @@ export default function Events() {
             {futureEvents.map((event) => (
               <a
                 key={event.id}
-                href="#"
+                href={event.url}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="card-glass hover-elevate rounded-md p-5 flex items-center justify-between gap-4 group transition-all duration-200 border-[rgba(201,122,142,0.25)]"
                 style={{ borderColor: "rgba(201,122,142,0.25)" }}
                 data-testid={`link-event-${event.id}`}
@@ -114,7 +116,9 @@ export default function Events() {
             {pastEvents.map((event) => (
               <a
                 key={event.id}
-                href="#"
+                href={event.url}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="card-glass hover-elevate rounded-md p-5 flex items-center justify-between gap-4 group transition-all duration-200"
                 style={{ borderColor: "rgba(155,111,165,0.25)" }}
                 data-testid={`link-event-${event.id}`}
