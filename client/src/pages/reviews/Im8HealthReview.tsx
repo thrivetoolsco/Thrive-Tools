@@ -2,6 +2,8 @@ import PageLayout from "@/components/PageLayout";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { ExternalLink, Star, FlaskConical, User, Leaf, Heart, Zap } from "lucide-react";
+import im8ProductImg from "@assets/image_1772841246898.png";
+import im8ClinicalImg from "@assets/image_1772841266580.png";
 
 export default function Im8HealthReview() {
   return (
@@ -13,21 +15,7 @@ export default function Im8HealthReview() {
     >
       <article className="space-y-12">
         <div className="card-glass rounded-2xl overflow-hidden" data-testid="img-hero-im8">
-          <div
-            className="w-full h-48 sm:h-64"
-            style={{
-              background: "linear-gradient(135deg, #0d2a1a 0%, #1a3a2a 40%, #2d0e3e 100%)",
-            }}
-          >
-            <div className="w-full h-full flex items-center justify-center px-6">
-              <div className="text-center">
-                <div className="w-28 h-28 sm:w-36 sm:h-36 rounded-2xl bg-emerald-500/20 border border-emerald-500/30 flex items-center justify-center mb-3 mx-auto">
-                  <span className="text-emerald-300 font-bold text-4xl sm:text-5xl font-display">IM8</span>
-                </div>
-                <p className="text-white/40 text-sm">The All-in-One Supplement</p>
-              </div>
-            </div>
-          </div>
+          <img src={im8ProductImg} alt="IM8 Health Daily Ultimate Essentials" className="w-full h-auto object-cover" />
         </div>
 
         <div className="flex flex-wrap gap-3">
@@ -107,6 +95,10 @@ export default function Im8HealthReview() {
             <p>
               A randomized, double-blind, placebo-controlled study by Chandrasekhar et al. demonstrated that KSM-66 Ashwagandha reduced serum cortisol levels by an average of 30.5% over 60 days, with subjects reporting significant improvements in stress, anxiety, and sleep quality.
             </p>
+          </div>
+
+          <div className="card-glass rounded-2xl overflow-hidden mt-8" data-testid="img-im8-clinical">
+            <img src={im8ClinicalImg} alt="IM8 Health clinically proven third-party tested results" className="w-full h-auto object-cover" />
           </div>
 
           <div className="card-glass rounded-xl p-5 mt-6 border-l-4" style={{ borderLeftColor: "#9b6fa5" }}>

@@ -2,6 +2,8 @@ import PageLayout from "@/components/PageLayout";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { ExternalLink, Star, FlaskConical, User, CheckCircle, XCircle } from "lucide-react";
+import im8ProductImg from "@assets/image_1772841246898.png";
+import ag1ProductImg from "@assets/image_1772841256231.png";
 
 export default function Im8VsAg1() {
   return (
@@ -12,28 +14,12 @@ export default function Im8VsAg1() {
       backHref="/product-reviews"
     >
       <article className="space-y-12">
-        <div className="card-glass rounded-2xl overflow-hidden" data-testid="img-hero-im8-ag1">
-          <div
-            className="w-full h-48 sm:h-64"
-            style={{
-              background: "linear-gradient(135deg, #1a3a2a 0%, #2d0e3e 50%, #0d2a1a 100%)",
-            }}
-          >
-            <div className="w-full h-full flex items-center justify-center gap-8 sm:gap-16 px-6">
-              <div className="text-center">
-                <div className="w-20 h-20 sm:w-24 sm:h-24 rounded-2xl bg-emerald-500/20 border border-emerald-500/30 flex items-center justify-center mb-2 mx-auto">
-                  <span className="text-emerald-300 font-bold text-2xl sm:text-3xl font-display">IM8</span>
-                </div>
-                <span className="text-white/50 text-xs">All-in-One</span>
-              </div>
-              <span className="text-white/30 text-3xl font-bold">VS</span>
-              <div className="text-center">
-                <div className="w-20 h-20 sm:w-24 sm:h-24 rounded-2xl bg-green-500/20 border border-green-500/30 flex items-center justify-center mb-2 mx-auto">
-                  <span className="text-green-300 font-bold text-2xl sm:text-3xl font-display">AG1</span>
-                </div>
-                <span className="text-white/50 text-xs">Athletic Greens</span>
-              </div>
-            </div>
+        <div className="grid sm:grid-cols-2 gap-5">
+          <div className="card-glass rounded-2xl overflow-hidden" data-testid="img-im8-product">
+            <img src={im8ProductImg} alt="IM8 Health Daily Ultimate Essentials" className="w-full h-auto object-cover" />
+          </div>
+          <div className="card-glass rounded-2xl overflow-hidden" data-testid="img-ag1-product">
+            <img src={ag1ProductImg} alt="AG1 Athletic Greens supplement" className="w-full h-auto object-cover" />
           </div>
         </div>
 

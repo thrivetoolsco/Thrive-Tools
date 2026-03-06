@@ -2,6 +2,7 @@ import PageLayout from "@/components/PageLayout";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { ExternalLink, Star, Leaf, FlaskConical, User, CheckCircle, Sparkles, Heart } from "lucide-react";
+import hyperionReishiImg from "@assets/image_1772841296371.png";
 
 export default function HyperionHerbs() {
   return (
@@ -13,21 +14,7 @@ export default function HyperionHerbs() {
     >
       <article className="space-y-12">
         <div className="card-glass rounded-2xl overflow-hidden" data-testid="img-hero-hyperion">
-          <div
-            className="w-full h-48 sm:h-64"
-            style={{
-              background: "linear-gradient(135deg, #1a2a0d 0%, #2d3a0e 40%, #1a0824 100%)",
-            }}
-          >
-            <div className="w-full h-full flex items-center justify-center px-6">
-              <div className="text-center">
-                <div className="w-28 h-28 sm:w-36 sm:h-36 rounded-2xl bg-green-500/15 border border-green-500/25 flex items-center justify-center mb-3 mx-auto">
-                  <Leaf className="w-14 h-14 sm:w-16 sm:h-16 text-green-300" />
-                </div>
-                <p className="text-white/40 text-sm">Tonic Herbs & Medicinal Mushrooms</p>
-              </div>
-            </div>
-          </div>
+          <img src={hyperionReishiImg} alt="Hyperion Herbs Organic Duanwood Reishi Mushroom" className="w-full h-auto object-cover" />
         </div>
 
         <div className="flex flex-wrap gap-3">
