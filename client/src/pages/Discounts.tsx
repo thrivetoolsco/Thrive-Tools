@@ -446,19 +446,20 @@ export default function Discounts() {
                 <p className="text-white/40 text-sm">I'm also passionate about Traveling.</p>
               </div>
             </div>
-            <div className="card-glass rounded-2xl p-10 flex items-center justify-center">
+            <div className="card-glass rounded-2xl p-6 sm:p-10 flex items-center justify-center">
               <Button
                 asChild
                 size="lg"
-                className="bg-rose-500 text-white border-0 rounded-full px-10 py-4 text-base tracking-widest uppercase font-semibold"
+                className="bg-rose-500 text-white border-0 rounded-full px-6 sm:px-10 py-4 text-sm sm:text-base tracking-widest uppercase font-semibold whitespace-normal text-center leading-relaxed h-auto"
               >
                 <a
                   href="https://www.traveltipsexposed.com"
                   target="_blank"
                   rel="noopener noreferrer"
                   data-testid="link-travel-tips"
+                  className="inline-flex items-center justify-center gap-2 flex-wrap"
                 >
-                  Find me on TravelTipsExposed.com <ExternalLink className="ml-2 w-4 h-4" />
+                  Find me on TravelTipsExposed.com <ExternalLink className="w-4 h-4 flex-shrink-0" />
                 </a>
               </Button>
             </div>
