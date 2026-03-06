@@ -62,4 +62,4 @@ Redesigned landing page for ThriveTools.co — a wellness and biohacking brand b
 
 ## Navigation Structure (matches original site)
 
-Home, Personalized Guidance, Quantum Healing, Breathwork, Retreats & Workshops (submenu), Events, Store > My Top Picks, About, Contact
+Home, My Top Picks, Personalized Guidance, Quantum Healing, Breathwork, Retreats & Workshops (submenu), Events, About, Contact

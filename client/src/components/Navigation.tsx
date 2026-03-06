@@ -11,6 +11,7 @@ import {
 
 const navItems = [
   { label: "Home", href: "/" },
+  { label: "My Top Picks", href: "/discounts-coupon-codes" },
   { label: "Personalized Guidance", href: "/personalized-guidance" },
   { label: "Quantum Healing", href: "/quantum-healing" },
   { label: "Breathwork", href: "/breathwork" },
@@ -25,13 +26,6 @@ const navItems = [
     ],
   },
   { label: "Events", href: "/events" },
-  {
-    label: "Store",
-    href: "#",
-    children: [
-      { label: "My Top Picks", href: "/discounts-coupon-codes" },
-    ],
-  },
   { label: "About", href: "/about" },
   { label: "Contact", href: "/contact" },
 ];
