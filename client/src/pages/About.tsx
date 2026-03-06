@@ -2,7 +2,7 @@ import PageLayout from "@/components/PageLayout";
 
 export default function About() {
   return (
-    <PageLayout title="About" subtitle="Eden Laraki">
+    <PageLayout title="About">
       <div className="space-y-12">
         <div className="flex flex-col md:flex-row gap-8 items-start">
           <div className="flex-shrink-0">
