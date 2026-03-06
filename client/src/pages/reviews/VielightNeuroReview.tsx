@@ -2,8 +2,6 @@ import PageLayout from "@/components/PageLayout";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { ExternalLink, Star, FlaskConical, User, Brain, Lightbulb, Activity } from "lucide-react";
-import heroImg from "@assets/generated_images/vielight-device-hero.png";
-import brainImg from "@assets/generated_images/vielight-brain-light.png";
 
 export default function VielightNeuroReview() {
   return (
@@ -15,7 +13,22 @@ export default function VielightNeuroReview() {
     >
       <article className="space-y-12">
         <div className="card-glass rounded-2xl overflow-hidden" data-testid="img-hero-vielight">
-          <img src={heroImg} alt="Vielight Neuro photobiomodulation device" className="w-full h-auto object-cover" />
+          <div
+            className="w-full h-48 sm:h-64"
+            style={{
+              background: "linear-gradient(135deg, #1a0824 0%, #0d1a3a 50%, #2d0e3e 100%)",
+            }}
+          >
+            <div className="w-full h-full flex items-center justify-center px-6">
+              <div className="text-center">
+                <div className="w-28 h-28 sm:w-36 sm:h-36 rounded-full bg-indigo-500/15 border border-indigo-500/25 flex items-center justify-center mb-3 mx-auto relative">
+                  <Brain className="w-14 h-14 sm:w-16 sm:h-16 text-indigo-300" />
+                  <div className="absolute inset-0 rounded-full animate-pulse" style={{ background: "radial-gradient(circle, rgba(129,140,248,0.15) 0%, transparent 70%)" }} />
+                </div>
+                <p className="text-white/40 text-sm">Transcranial Photobiomodulation</p>
+              </div>
+            </div>
+          </div>
         </div>
 
         <div className="flex flex-wrap gap-3">
@@ -69,10 +82,6 @@ export default function VielightNeuroReview() {
               <h3 className="text-white font-bold text-sm mb-2">Neural Regeneration</h3>
               <p className="text-white/50 text-xs leading-relaxed">Promotes neuroplasticity, reduces neuroinflammation & oxidative stress</p>
             </div>
-          </div>
-
-          <div className="card-glass rounded-2xl overflow-hidden mb-6" data-testid="img-brain-pbm">
-            <img src={brainImg} alt="Brain illuminated by photobiomodulation light" className="w-full h-auto object-cover" />
           </div>
 
           <div className="space-y-4 text-white/70 leading-relaxed">
