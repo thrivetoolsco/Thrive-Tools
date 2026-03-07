@@ -3,7 +3,7 @@ import edenPortrait from "@assets/WhatsApp_Image_2026-03-06_at_7.06.40_PM_177284
 
 export default function About() {
   return (
-    <PageLayout title="About">
+    <PageLayout title="About" subtitle="Eden Laraki">
       <div className="space-y-12">
         <div className="flex flex-col md:flex-row gap-8 items-start">
           <div className="flex-shrink-0">
@@ -15,9 +15,6 @@ export default function About() {
             />
           </div>
           <div className="space-y-4">
-            <h2 className="font-display text-3xl sm:text-4xl font-bold text-gradient-rose" data-testid="text-eden-heading">
-              Eden Laraki
-            </h2>
             <div className="space-y-4 text-white/70 leading-relaxed">
               <p data-testid="text-intro-1">Hey, I'm Eden.</p>
               <p data-testid="text-intro-2">
