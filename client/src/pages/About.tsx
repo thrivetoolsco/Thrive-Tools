@@ -1,4 +1,5 @@
 import PageLayout from "@/components/PageLayout";
+import edenPortrait from "@assets/WhatsApp_Image_2026-03-06_at_7.06.40_PM_1772842644213.jpeg";
 
 export default function About() {
   return (
@@ -7,7 +8,7 @@ export default function About() {
         <div className="flex flex-col md:flex-row gap-8 items-start">
           <div className="flex-shrink-0">
             <img
-              src="https://i0.wp.com/thrivetools.co/wp-content/uploads/2026/03/IMG-20251218-WA00203.jpg?resize=300%2C285&ssl=1"
+              src={edenPortrait}
               alt="Eden Laraki"
               className="rounded-md w-[300px] h-auto border border-white/10"
               data-testid="img-eden-portrait"
