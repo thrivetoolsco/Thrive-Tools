@@ -1,7 +1,7 @@
 import PageLayout from "@/components/PageLayout";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { ExternalLink, Star, FlaskConical, User, CheckCircle, XCircle } from "lucide-react";
+import { ExternalLink } from "lucide-react";
 import im8ProductImg from "@assets/image_1772841246898.png";
 import ag1ProductImg from "@assets/image_1772841256231.png";
 
@@ -33,74 +33,57 @@ export default function Im8VsAg1() {
         </div>
 
         <section data-testid="section-intro">
-          <h2 className="font-display text-2xl font-bold text-white mb-4">The Big Question</h2>
           <div className="space-y-4 text-white/70 leading-relaxed">
             <p>
-              AG1 (formerly Athletic Greens) has become one of the most marketed supplements on the planet, with celebrity endorsements from David Beckham, podcaster Tim Ferriss, and countless influencers. But does heavy marketing translate to a superior product?
+              David Beckham has entered the chat with IM8, and honestly? It's giving "foundational nutrition" a much needed upgrade.
             </p>
             <p>
-              I've spent over 6 months testing both IM8 and AG1 side by side, tracking my energy levels, digestion, blood markers, and overall well-being. Here's the unfiltered truth.
+              If you're wondering if it's just another celebrity cash grab, here's why IM8 is actually moving the needle.
             </p>
           </div>
         </section>
 
         <div className="section-divider" />
 
-        <section data-testid="section-ingredients">
-          <div className="flex items-center gap-3 mb-6">
-            <FlaskConical className="w-5 h-5 text-rose-300" />
-            <h2 className="font-display text-2xl font-bold text-white">Ingredient Breakdown</h2>
-          </div>
-
-          <div className="grid sm:grid-cols-2 gap-6 mb-8">
-            <div className="card-glass rounded-xl p-6">
-              <h3 className="text-emerald-300 font-bold text-lg mb-4">IM8 Health</h3>
-              <ul className="space-y-3 text-white/60 text-sm">
-                <li className="flex items-start gap-2">
-                  <CheckCircle className="w-4 h-4 text-emerald-400 mt-0.5 flex-shrink-0" />
-                  <span>75+ bioavailable vitamins, minerals & trace elements</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <CheckCircle className="w-4 h-4 text-emerald-400 mt-0.5 flex-shrink-0" />
-                  <span>Probiotics (15 billion CFU) & prebiotics included</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <CheckCircle className="w-4 h-4 text-emerald-400 mt-0.5 flex-shrink-0" />
-                  <span>Full electrolyte complex for hydration</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <CheckCircle className="w-4 h-4 text-emerald-400 mt-0.5 flex-shrink-0" />
-                  <span>Methylated B vitamins for optimal absorption</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <CheckCircle className="w-4 h-4 text-emerald-400 mt-0.5 flex-shrink-0" />
-                  <span>Adaptogenic herbs & medicinal mushrooms</span>
-                </li>
-              </ul>
+        <section data-testid="section-gut-health">
+          <h2 className="font-display text-2xl font-bold text-white mb-4" data-testid="text-gut-health-heading">1. The Gut Health "Holy Trinity"</h2>
+          <div className="space-y-4 text-white/70 leading-relaxed">
+            <p>
+              While AG1 has the standard prebiotics and probiotics, IM8 goes for the triple threat: Prebiotics, Probiotics, AND Postbiotics.
+            </p>
+            <div className="card-glass rounded-xl p-5 mt-2">
+              <h3 className="text-white/90 font-semibold mb-2">The Probiotics:</h3>
+              <p className="text-white/70 text-sm leading-relaxed">
+                IM8 uses 10 billion CFUs of clinically studied strains like Bacillus coagulans and Bacillus subtilis. These are "shelf stable," meaning they actually survive the trip to your gut rather than dying on your kitchen counter.
+              </p>
             </div>
+            <div className="card-glass rounded-xl p-5">
+              <h3 className="text-white/90 font-semibold mb-2">The Postbiotic Advantage:</h3>
+              <p className="text-white/70 text-sm leading-relaxed">
+                This is the game changer. Postbiotics (like FloraSMART®️) provide the beneficial compounds a healthy microbiome produces directly to your system. It's like skipping the line for better digestion and immediate gut barrier support.
+              </p>
+            </div>
+          </div>
+        </section>
 
-            <div className="card-glass rounded-xl p-6">
-              <h3 className="text-green-300 font-bold text-lg mb-4">AG1 (Athletic Greens)</h3>
-              <ul className="space-y-3 text-white/60 text-sm">
-                <li className="flex items-start gap-2">
-                  <CheckCircle className="w-4 h-4 text-green-400 mt-0.5 flex-shrink-0" />
-                  <span>75 vitamins, minerals & whole food ingredients</span>
+        <div className="section-divider" />
+
+        <section data-testid="section-stacks">
+          <h2 className="font-display text-2xl font-bold text-white mb-4" data-testid="text-stacks-heading">2. Built-in "Stacks" (Save Your Money)</h2>
+          <div className="space-y-4 text-white/70 leading-relaxed">
+            <p>
+              Most of us end up buying extra supplements to "stack" on top of a greens powder. IM8 basically looked at our Amazon carts and said, "I'll do it myself."
+            </p>
+            <div className="card-glass rounded-xl p-5">
+              <ul className="space-y-4 text-white/70 text-sm">
+                <li>
+                  <span className="text-white/90 font-semibold">Joints & Muscles:</span> It includes 1,000mg of MSM for joint comfort; something AG1 completely lacks.
                 </li>
-                <li className="flex items-start gap-2">
-                  <CheckCircle className="w-4 h-4 text-green-400 mt-0.5 flex-shrink-0" />
-                  <span>7.2 billion CFU probiotics</span>
+                <li>
+                  <span className="text-white/90 font-semibold">Heart & Energy:</span> You get 100mg of CoQ10 (compared to AG1's 60mg) for better cellular energy and heart health.
                 </li>
-                <li className="flex items-start gap-2">
-                  <XCircle className="w-4 h-4 text-red-400/60 mt-0.5 flex-shrink-0" />
-                  <span>No dedicated electrolyte complex</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <XCircle className="w-4 h-4 text-red-400/60 mt-0.5 flex-shrink-0" />
-                  <span>Uses cyanocobalamin B12 (less bioavailable form)</span>
-                </li>
-                <li className="flex items-start gap-2">
-                  <CheckCircle className="w-4 h-4 text-green-400 mt-0.5 flex-shrink-0" />
-                  <span>Ashwagandha & Rhodiola adaptogen blend</span>
+                <li>
+                  <span className="text-white/90 font-semibold">Hydration:</span> It actually has a dedicated electrolyte complex. No more buying separate hydration packets for your post workout (or post wine) recovery.
                 </li>
               </ul>
             </div>
@@ -109,51 +92,11 @@ export default function Im8VsAg1() {
 
         <div className="section-divider" />
 
-        <section data-testid="section-science">
-          <div className="flex items-center gap-3 mb-6">
-            <FlaskConical className="w-5 h-5 text-purple-300" />
-            <h2 className="font-display text-2xl font-bold text-white">What the Science Says</h2>
-          </div>
+        <section data-testid="section-transparency">
+          <h2 className="font-display text-2xl font-bold text-white mb-4" data-testid="text-transparency-heading">3. Radical Transparency</h2>
           <div className="space-y-4 text-white/70 leading-relaxed">
             <p>
-              The key differentiator comes down to <strong className="text-white/90">bioavailability</strong>. A study published in the <em>Journal of the American College of Nutrition</em> (2019) found that methylated forms of B vitamins showed 3-4x higher absorption rates compared to their synthetic counterparts.
-            </p>
-            <p>
-              IM8 uses methylcobalamin (B12) and methylfolate (B9), whereas AG1 relies on cyanocobalamin — a form that requires your liver to convert it before use. For individuals with MTHFR gene variants (roughly 40% of the population), this difference is significant.
-            </p>
-          </div>
-
-          <div className="card-glass rounded-xl p-5 mt-6 border-l-4" style={{ borderLeftColor: "#9b6fa5" }}>
-            <p className="text-white/50 text-xs uppercase tracking-wider mb-2">Scientific Reference</p>
-            <p className="text-white/70 text-sm leading-relaxed">
-              Scaglione, F., & Panzavolta, G. (2014). "Folate, folic acid and 5-methyltetrahydrofolate are not the same thing." <em>Xenobiotica</em>, 44(5), 480–488. doi:10.3109/00498254.2013.845705
-            </p>
-          </div>
-
-          <div className="card-glass rounded-xl p-5 mt-4 border-l-4" style={{ borderLeftColor: "#9b6fa5" }}>
-            <p className="text-white/50 text-xs uppercase tracking-wider mb-2">Scientific Reference</p>
-            <p className="text-white/70 text-sm leading-relaxed">
-              Paul, C., & Brady, D. M. (2017). "Comparative Bioavailability and Utilization of Particular Forms of B12 Supplements." <em>Integrative Medicine</em>, 16(1), 42–49. PMCID: PMC6494183
-            </p>
-          </div>
-        </section>
-
-        <div className="section-divider" />
-
-        <section data-testid="section-personal">
-          <div className="flex items-center gap-3 mb-6">
-            <User className="w-5 h-5 text-rose-300" />
-            <h2 className="font-display text-2xl font-bold text-white">My Personal Experience</h2>
-          </div>
-          <div className="space-y-4 text-white/70 leading-relaxed">
-            <p>
-              After 3 months on AG1, I noticed moderate improvements in energy and digestion. The taste was pleasant, and the convenience factor was high. However, I still felt I needed additional supplements to fill gaps — especially electrolytes and a stronger probiotic.
-            </p>
-            <p>
-              Switching to IM8, the difference was noticeable within the first two weeks. My morning brain fog cleared up almost entirely, my gut felt more balanced, and I no longer needed a separate electrolyte supplement. The fact that it combines everything — multivitamin, probiotics, AND electrolytes — in one scoop was a game changer for simplifying my routine.
-            </p>
-            <p>
-              After 6 months of daily IM8 use, my blood work showed improved B12 levels, better iron absorption markers, and significantly improved gut microbiome diversity (tested via a stool panel).
+              AG1 is famous for its "proprietary blends," which is code for "we won't tell you exactly how much of each ingredient is in here." IM8 is way more label forward. You can actually see the clinical dosages of the heavy hitters, so you know you're getting enough to actually make a difference, not just "fairy dusted" amounts for marketing.
             </p>
           </div>
         </section>
@@ -161,31 +104,16 @@ export default function Im8VsAg1() {
         <div className="section-divider" />
 
         <section data-testid="section-verdict">
-          <div className="flex items-center gap-3 mb-6">
-            <Star className="w-5 h-5 text-amber-300" />
-            <h2 className="font-display text-2xl font-bold text-white">The Verdict</h2>
-          </div>
+          <h2 className="font-display text-2xl font-bold text-white mb-4" data-testid="text-verdict-heading">The Verdict</h2>
           <div className="card-glass rounded-2xl p-6 sm:p-8">
-            <div className="grid sm:grid-cols-2 gap-6 mb-6">
-              <div className="text-center p-4">
-                <p className="text-emerald-300 font-bold text-lg mb-1">IM8 Health</p>
-                <div className="flex items-center justify-center gap-1 mb-2">
-                  {[1,2,3,4,5].map(s => <Star key={s} className="w-4 h-4 text-amber-400" fill="currentColor" />)}
-                </div>
-                <p className="text-white/50 text-sm">Best overall value & formula</p>
-              </div>
-              <div className="text-center p-4">
-                <p className="text-green-300 font-bold text-lg mb-1">AG1</p>
-                <div className="flex items-center justify-center gap-1 mb-2">
-                  {[1,2,3].map(s => <Star key={s} className="w-4 h-4 text-amber-400" fill="currentColor" />)}
-                  {[4,5].map(s => <Star key={s} className="w-4 h-4 text-white/20" />)}
-                </div>
-                <p className="text-white/50 text-sm">Good but overpriced for what you get</p>
-              </div>
+            <div className="space-y-4 text-white/70 leading-relaxed">
+              <p>
+                AG1 is the OG, but IM8 is like the v2.0 we actually need. It simplifies the "supplement graveyard" in your cabinet by folding in joint support, hydration, and a superior gut health system into one scoop. Plus, if it's good enough for Beckham to stay that fit at 50, it's probably good enough for our afternoon slumps.
+              </p>
+              <p className="text-white/90 font-semibold">
+                Ready to simplify your morning?
+              </p>
             </div>
-            <p className="text-white/70 text-sm leading-relaxed text-center">
-              AG1 isn't a bad product — it's just not the best. When you factor in price, bioavailability, and the completeness of the formula, IM8 wins by a significant margin.
-            </p>
           </div>
         </section>
 

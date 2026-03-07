@@ -34,7 +34,7 @@ export default function Im8HealthReview() {
               IM8 Health positions itself as the ultimate all-in-one supplement: a single scoop that replaces your multivitamin, probiotics, and electrolytes. Bold claim. In a market flooded with overpromising products and underdosed formulas, I wanted to dig into whether IM8 is the real deal or just another well-packaged marketing story.
             </p>
             <p>
-              After 8 months of daily use, extensive research into their ingredient sourcing, and two rounds of blood work, here's my honest assessment.
+              After 1 year of daily use, extensive research into their ingredient sourcing, and two rounds of blood work, here's my honest assessment.
             </p>
           </div>
         </section>
@@ -132,7 +132,7 @@ export default function Im8HealthReview() {
           </div>
           <div className="space-y-4 text-white/70 leading-relaxed">
             <p>
-              I started taking IM8 in mid-2025 and haven't stopped. The first thing I noticed was a significant improvement in my morning energy — I no longer needed coffee to feel alert. Within two weeks, my digestion stabilized noticeably, which I attribute to the probiotic and prebiotic complex.
+              I started taking IM8 in early 2025 and haven't stopped. The first thing I noticed was a significant improvement in my morning energy — I no longer needed coffee to feel alert. Within two weeks, my digestion stabilized noticeably, which I attribute to the probiotic and prebiotic complex.
             </p>
             <p>
               By month three, my blood work told a compelling story: B12 levels rose from 380 pg/mL to 620 pg/mL, vitamin D went from borderline (28 ng/mL) to optimal (52 ng/mL), and my inflammatory markers (hs-CRP) dropped from 1.8 to 0.6 mg/L.
