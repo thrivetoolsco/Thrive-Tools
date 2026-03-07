@@ -60,15 +60,17 @@ export default function Navigation() {
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16 sm:h-20">
-          <Link href="/" className="flex-shrink-0 group" data-testid="link-logo">
+          <div className="hidden lg:block w-10" />
+
+          <Link href="/" className="flex-shrink-0 group absolute left-1/2 -translate-x-1/2" data-testid="link-logo">
             <img
               src={logoImg}
               alt="Thrive Tools"
-              className="h-10 sm:h-14 w-auto object-contain transition-transform duration-300 group-hover:scale-105"
+              className="h-12 sm:h-16 w-auto max-w-[200px] sm:max-w-[280px] object-contain transition-transform duration-300 group-hover:scale-105"
             />
           </Link>
 
-          <div className="hidden lg:flex items-center gap-1">
+          <div className="hidden lg:flex items-center gap-1 ml-auto">
             {navItems.map((item) => (
               <div
                 key={item.label}

@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { Link } from "wouter";
-import logoImg from "@assets/image_1772756046665.png";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, ChevronDown } from "lucide-react";
@@ -109,12 +108,16 @@ export default function Home() {
 
         <div className="relative z-10 w-full max-w-5xl mx-auto px-6 sm:px-8 text-center pt-24 pb-8">
           <div className="mb-8 flex justify-center">
-            <img
-              src={logoImg}
-              alt="Thrive Tools"
-              className="w-full max-w-[260px] sm:max-w-md md:max-w-lg lg:max-w-2xl h-auto object-contain animate-float"
-              data-testid="img-hero-logo"
-            />
+            <div className="w-full max-w-3xl rounded-2xl overflow-hidden shadow-2xl shadow-black/40" data-testid="video-hero">
+              <video
+                autoPlay
+                loop
+                muted
+                playsInline
+                className="w-full h-auto object-cover"
+                src="/hero-video.mp4"
+              />
+            </div>
           </div>
 
           <h1
