@@ -47,6 +47,14 @@ const blogPosts: BlogPost[] = [
     badge: "Herbal Review",
     badgeColor: "bg-green-500/15 text-green-300 border-green-500/25",
   },
+  {
+    id: "joovv-review",
+    title: "Is Joovv Worth It? A Deep Dive into the Benefits and Results (2026 Edition)",
+    excerpt: "Red light therapy has taken the biohacking world by storm — but is Joovv's premium price tag justified? My unfiltered experience after months of daily use.",
+    href: "/product-reviews/joovv-review",
+    badge: "Tech Review",
+    badgeColor: "bg-red-500/15 text-red-300 border-red-500/25",
+  },
 ];
 
 export default function ProductReviews() {
