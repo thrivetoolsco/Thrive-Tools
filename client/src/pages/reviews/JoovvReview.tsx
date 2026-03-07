@@ -2,6 +2,8 @@ import PageLayout from "@/components/PageLayout";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { ExternalLink } from "lucide-react";
+import joovvDeviceImg from "@assets/image_1772900161167.png";
+import joovvBenefitsImg from "@assets/image_1772900170720.png";
 
 export default function JoovvReview() {
   return (
@@ -12,6 +14,10 @@ export default function JoovvReview() {
       backHref="/product-reviews"
     >
       <article className="space-y-12">
+        <div className="card-glass rounded-2xl overflow-hidden" data-testid="img-hero-joovv">
+          <img src={joovvDeviceImg} alt="Joovv red light therapy panel" className="w-full h-auto object-cover" />
+        </div>
+
         <div className="flex flex-wrap gap-3">
           <Badge className="bg-red-500/15 text-red-300 border border-red-500/25 rounded-full px-3 py-0.5 text-xs" data-testid="badge-review-type">
             In-Depth Review
@@ -54,6 +60,9 @@ export default function JoovvReview() {
             <p>
               We aren't just standing in the dark with a red bulb. Joovv uses medical grade LEDs to blast your cells with specific wavelengths: 660nm (Red) and 850nm (Near-Infrared). In 2026 lingo, we call this "charging your cellular batteries."
             </p>
+          </div>
+          <div className="card-glass rounded-2xl overflow-hidden mt-6" data-testid="img-joovv-benefits">
+            <img src={joovvBenefitsImg} alt="Joovv benefits of light therapy infographic" className="w-full h-auto object-cover" />
           </div>
         </section>
 
