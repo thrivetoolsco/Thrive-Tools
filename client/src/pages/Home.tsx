@@ -37,39 +37,82 @@ export default function Home() {
       {/* ─── HERO ─── */}
       <section
         className="relative min-h-screen flex items-center justify-center overflow-hidden"
-        style={{
-          background: "radial-gradient(ellipse 80% 60% at 50% 40%, #2d0e3e 0%, #1a0824 40%, #0d0514 100%)",
-        }}
+        style={{ background: "#0d0514" }}
       >
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
           <div
-            className="absolute top-1/4 left-1/4 w-64 h-64 rounded-full opacity-20 animate-float"
-            style={{ background: "radial-gradient(circle, #c97a8e 0%, transparent 70%)", filter: "blur(40px)" }}
+            className="absolute w-[600px] h-[600px] rounded-full"
+            style={{
+              top: "10%",
+              left: "15%",
+              background: "radial-gradient(circle, rgba(201,122,142,0.35) 0%, rgba(201,122,142,0.08) 40%, transparent 70%)",
+              filter: "blur(60px)",
+              animation: "hero-drift 20s ease-in-out infinite, hero-pulse 8s ease-in-out infinite",
+            }}
           />
           <div
-            className="absolute bottom-1/3 right-1/4 w-80 h-80 rounded-full opacity-15 animate-float-delayed"
-            style={{ background: "radial-gradient(circle, #9b6fa5 0%, transparent 70%)", filter: "blur(50px)" }}
+            className="absolute w-[500px] h-[500px] rounded-full"
+            style={{
+              bottom: "5%",
+              right: "10%",
+              background: "radial-gradient(circle, rgba(155,111,165,0.3) 0%, rgba(155,111,165,0.06) 40%, transparent 70%)",
+              filter: "blur(55px)",
+              animation: "hero-drift-reverse 25s ease-in-out infinite, hero-pulse 10s ease-in-out 2s infinite",
+            }}
           />
           <div
-            className="absolute top-1/2 right-1/3 w-48 h-48 rounded-full opacity-10"
-            style={{ background: "radial-gradient(circle, #d4a867 0%, transparent 70%)", filter: "blur(35px)" }}
+            className="absolute w-[400px] h-[400px] rounded-full"
+            style={{
+              top: "40%",
+              right: "25%",
+              background: "radial-gradient(circle, rgba(212,168,103,0.2) 0%, transparent 60%)",
+              filter: "blur(50px)",
+              animation: "hero-drift 18s ease-in-out 3s infinite, hero-pulse 12s ease-in-out 4s infinite",
+            }}
           />
           <div
-            className="absolute inset-0 opacity-[0.03]"
+            className="absolute w-[350px] h-[350px] rounded-full"
+            style={{
+              top: "60%",
+              left: "5%",
+              background: "radial-gradient(circle, rgba(100,140,200,0.15) 0%, transparent 60%)",
+              filter: "blur(45px)",
+              animation: "hero-drift-reverse 22s ease-in-out 5s infinite",
+            }}
+          />
+          <div
+            className="absolute w-[800px] h-[800px]"
+            style={{
+              top: "50%",
+              left: "50%",
+              marginTop: "-400px",
+              marginLeft: "-400px",
+              background: "conic-gradient(from 0deg, transparent 0%, rgba(201,122,142,0.04) 25%, transparent 50%, rgba(155,111,165,0.04) 75%, transparent 100%)",
+              animation: "hero-rotate 60s linear infinite",
+            }}
+          />
+          <div
+            className="absolute inset-0 opacity-[0.015]"
             style={{
               backgroundImage:
-                "linear-gradient(rgba(201,122,142,1) 1px, transparent 1px), linear-gradient(90deg, rgba(201,122,142,1) 1px, transparent 1px)",
-              backgroundSize: "80px 80px",
+                "radial-gradient(rgba(201,122,142,0.8) 1px, transparent 1px)",
+              backgroundSize: "40px 40px",
+            }}
+          />
+          <div
+            className="absolute inset-0"
+            style={{
+              background: "radial-gradient(ellipse 70% 50% at 50% 45%, transparent 0%, #0d0514 100%)",
             }}
           />
         </div>
 
-        <div className="relative z-10 w-full max-w-5xl mx-auto px-6 sm:px-8 text-center pt-20 pb-8">
+        <div className="relative z-10 w-full max-w-5xl mx-auto px-6 sm:px-8 text-center pt-24 pb-8">
           <div className="mb-8 flex justify-center">
             <img
               src={logoImg}
               alt="Thrive Tools"
-              className="w-full max-w-[280px] sm:max-w-md md:max-w-lg lg:max-w-2xl h-auto object-contain animate-float"
+              className="w-full max-w-[260px] sm:max-w-md md:max-w-lg lg:max-w-2xl h-auto object-contain animate-float"
               data-testid="img-hero-logo"
             />
           </div>

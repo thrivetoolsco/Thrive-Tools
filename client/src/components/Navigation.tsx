@@ -1,9 +1,7 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Link, useLocation } from "wouter";
 import logoImg from "@assets/image_1772756046665.png";
-import { Button } from "@/components/ui/button";
 import {
-  ShoppingCart,
   Menu,
   X,
   ChevronDown,
@@ -33,24 +31,44 @@ const navItems = [
 export default function Navigation() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [openDropdown, setOpenDropdown] = useState<string | null>(null);
+  const [scrolled, setScrolled] = useState(false);
   const [location] = useLocation();
+
+  useEffect(() => {
+    const handleScroll = () => setScrolled(window.scrollY > 20);
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  useEffect(() => {
+    setMenuOpen(false);
+    setOpenDropdown(null);
+  }, [location]);
 
   return (
     <nav
-      className="fixed top-0 left-0 right-0 z-50 border-b border-white/5"
-      style={{ background: "rgba(13,5,20,0.92)", backdropFilter: "blur(16px)" }}
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+        scrolled ? "shadow-lg shadow-black/20" : ""
+      }`}
+      style={{
+        background: scrolled
+          ? "rgba(13,5,20,0.95)"
+          : "rgba(13,5,20,0.75)",
+        backdropFilter: "blur(20px)",
+        WebkitBackdropFilter: "blur(20px)",
+      }}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-20 gap-4">
-          <button data-testid="button-cart" className="relative text-white/70 hover:text-white transition-colors">
-            <ShoppingCart className="w-5 h-5" />
-          </button>
-
-          <Link href="/" className="flex-shrink-0" data-testid="link-logo">
-            <img src={logoImg} alt="Thrive Tools" className="h-14 sm:h-16 w-auto object-contain" />
+        <div className="flex items-center justify-between h-16 sm:h-20">
+          <Link href="/" className="flex-shrink-0 group" data-testid="link-logo">
+            <img
+              src={logoImg}
+              alt="Thrive Tools"
+              className="h-10 sm:h-14 w-auto object-contain transition-transform duration-300 group-hover:scale-105"
+            />
           </Link>
 
-          <div className="hidden lg:flex items-center gap-5">
+          <div className="hidden lg:flex items-center gap-1">
             {navItems.map((item) => (
               <div
                 key={item.label}
@@ -60,36 +78,47 @@ export default function Navigation() {
               >
                 {item.children ? (
                   <button
-                    className={`text-xs text-white/60 hover:text-white transition-colors tracking-wide uppercase font-medium flex items-center gap-1 ${location === item.href ? "text-white" : ""}`}
+                    className={`relative px-3 py-2 text-[11px] tracking-[0.15em] uppercase font-medium flex items-center gap-1 transition-colors duration-200 ${
+                      location === item.href
+                        ? "text-[#c97a8e]"
+                        : "text-white/55 hover:text-white"
+                    }`}
                     data-testid={`link-nav-${item.label.toLowerCase().replace(/\s+/g, "-")}`}
                   >
                     {item.label}
-                    <ChevronDown className="w-3 h-3" />
+                    <ChevronDown className={`w-3 h-3 transition-transform duration-200 ${openDropdown === item.label ? "rotate-180" : ""}`} />
                   </button>
                 ) : (
                   <Link
                     href={item.href}
-                    className={`text-xs text-white/60 hover:text-white transition-colors tracking-wide uppercase font-medium ${location === item.href ? "text-white" : ""}`}
+                    className={`relative px-3 py-2 text-[11px] tracking-[0.15em] uppercase font-medium transition-colors duration-200 block ${
+                      location === item.href
+                        ? "text-[#c97a8e]"
+                        : "text-white/55 hover:text-white"
+                    }`}
                     data-testid={`link-nav-${item.label.toLowerCase().replace(/\s+/g, "-")}`}
                   >
                     {item.label}
+                    {location === item.href && (
+                      <span className="absolute bottom-0 left-3 right-3 h-[2px] bg-[#c97a8e] rounded-full" />
+                    )}
                   </Link>
                 )}
 
                 {item.children && openDropdown === item.label && (
                   <div
-                    className="absolute top-full left-0 mt-1 min-w-[220px] rounded-md py-2"
+                    className="absolute top-full left-0 mt-1 min-w-[240px] rounded-xl py-2 shadow-xl shadow-black/30"
                     style={{
                       background: "rgba(20,10,30,0.98)",
-                      border: "1px solid rgba(201,122,142,0.15)",
-                      backdropFilter: "blur(16px)",
+                      border: "1px solid rgba(201,122,142,0.12)",
+                      backdropFilter: "blur(20px)",
                     }}
                   >
                     {item.children.map((child) => (
                       <Link
                         key={child.label}
                         href={child.href}
-                        className="block px-4 py-2 text-xs text-white/60 hover:text-white hover:bg-white/5 transition-colors"
+                        className="block px-5 py-2.5 text-xs text-white/55 hover:text-white hover:bg-white/5 transition-all duration-200 tracking-wide"
                         data-testid={`link-nav-${child.label.toLowerCase().replace(/\s+/g, "-")}`}
                       >
                         {child.label}
@@ -103,7 +132,7 @@ export default function Navigation() {
 
           <button
             data-testid="button-mobile-menu"
-            className="lg:hidden text-white/70 hover:text-white transition-colors"
+            className="lg:hidden relative w-10 h-10 flex items-center justify-center rounded-lg text-white/70 hover:text-white hover:bg-white/5 transition-all duration-200"
             onClick={() => setMenuOpen(!menuOpen)}
           >
             {menuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
@@ -111,42 +140,52 @@ export default function Navigation() {
         </div>
       </div>
 
-      {menuOpen && (
-        <div
-          className="lg:hidden border-t border-white/5 py-4 px-6 max-h-[80vh] overflow-y-auto"
-          style={{ background: "rgba(13,5,20,0.98)" }}
-        >
-          <div className="flex flex-col gap-3">
+      <div
+        className={`lg:hidden overflow-hidden transition-all duration-300 ease-in-out ${
+          menuOpen ? "max-h-[80vh] opacity-100" : "max-h-0 opacity-0"
+        }`}
+        style={{ background: "rgba(13,5,20,0.98)" }}
+      >
+        <div className="border-t border-white/5 py-4 px-6 overflow-y-auto max-h-[75vh]">
+          <div className="flex flex-col gap-1">
             {navItems.map((item) => (
               <div key={item.label}>
                 {item.children ? (
                   <>
                     <button
-                      className="text-white/60 hover:text-white text-sm uppercase tracking-wide font-medium flex items-center gap-1 w-full text-left py-1"
+                      className="text-white/60 hover:text-white text-sm uppercase tracking-[0.12em] font-medium flex items-center justify-between w-full text-left py-3 px-2 rounded-lg hover:bg-white/5 transition-all duration-200"
                       onClick={() => setOpenDropdown(openDropdown === item.label ? null : item.label)}
                     >
                       {item.label}
-                      <ChevronDown className={`w-3 h-3 transition-transform ${openDropdown === item.label ? "rotate-180" : ""}`} />
+                      <ChevronDown className={`w-4 h-4 transition-transform duration-200 ${openDropdown === item.label ? "rotate-180" : ""}`} />
                     </button>
-                    {openDropdown === item.label && (
-                      <div className="pl-4 mt-1 space-y-2">
+                    <div
+                      className={`overflow-hidden transition-all duration-200 ${
+                        openDropdown === item.label ? "max-h-60 opacity-100" : "max-h-0 opacity-0"
+                      }`}
+                    >
+                      <div className="pl-4 pb-2 space-y-1">
                         {item.children.map((child) => (
                           <Link
                             key={child.label}
                             href={child.href}
-                            className="block text-white/50 hover:text-white text-xs py-1"
+                            className="block text-white/45 hover:text-white text-xs py-2.5 px-3 rounded-lg hover:bg-white/5 transition-all duration-200 tracking-wide"
                             onClick={() => setMenuOpen(false)}
                           >
                             {child.label}
                           </Link>
                         ))}
                       </div>
-                    )}
+                    </div>
                   </>
                 ) : (
                   <Link
                     href={item.href}
-                    className="text-white/60 hover:text-white text-sm uppercase tracking-wide font-medium block py-1"
+                    className={`text-sm uppercase tracking-[0.12em] font-medium block py-3 px-2 rounded-lg transition-all duration-200 ${
+                      location === item.href
+                        ? "text-[#c97a8e] bg-[#c97a8e]/5"
+                        : "text-white/60 hover:text-white hover:bg-white/5"
+                    }`}
                     onClick={() => setMenuOpen(false)}
                   >
                     {item.label}
@@ -156,7 +195,7 @@ export default function Navigation() {
             ))}
           </div>
         </div>
-      )}
+      </div>
     </nav>
   );
 }
