@@ -11,7 +11,7 @@ export default function Thrive2() {
       <div className="space-y-8">
         <div className="card-glass rounded-md p-6 sm:p-8" data-testid="card-invitation">
           <p className="text-white/80 text-lg leading-relaxed" data-testid="text-invitation">
-            It is our privilege to extend an invitation to you for our forthcoming Docu Evening, scheduled to take place at 5:33 pm on September 9th, 2023.
+            It is our privilege to extend an invitation to you for our forthcoming Docu Evenings, scheduled to take place every Thursdays at 6:30 pm.
           </p>
         </div>
 

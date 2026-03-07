@@ -17,7 +17,7 @@ export default function DrumCircle() {
 
         <div className="space-y-6 text-white/80 text-lg leading-relaxed">
           <p className="font-bold text-white" data-testid="text-full-moon">
-            Every full moon in August 2023, we'll be celebrating life around a bonfire.
+            Every full moon this summer, we'll be celebrating life around a bonfire.
           </p>
 
           <p data-testid="text-breathing-exercises">
