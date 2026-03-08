@@ -39,15 +39,6 @@ export default function PersonalizedGuidance() {
             </Link>
           </div>
         </div>
-
-        <div className="card-glass rounded-md glow-rose p-3" data-testid="container-guidance-image">
-          <img
-            src="https://i0.wp.com/thrivetools.co/wp-content/uploads/2023/07/PerGuid.webp?fit=506%2C800&ssl=1"
-            alt="Personalized Guidance"
-            className="rounded-md w-full h-auto"
-            data-testid="img-personalized-guidance"
-          />
-        </div>
       </div>
     </PageLayout>
   );
