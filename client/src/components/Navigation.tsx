@@ -1,11 +1,12 @@
 import { useState, useEffect } from "react";
 import { Link, useLocation } from "wouter";
-import logoImg from "@assets/image_1772756046665.png";
 import {
   Menu,
   X,
   ChevronDown,
 } from "lucide-react";
+
+const logoImg = "/logo.webp";
 
 const navItems = [
   { label: "Home", href: "/" },
