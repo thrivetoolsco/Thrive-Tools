@@ -1,60 +1,58 @@
 import PageLayout from "@/components/PageLayout";
-import { Link } from "wouter";
-import { Button } from "@/components/ui/button";
+import { Check } from "lucide-react";
+
+const details = [
+  { label: "Cost", desc: "Totally free. Everyone is welcome." },
+  { label: "What to Bring", desc: "If you've got a drum, bring it! If you can grab some firewood on your way, even better." },
+  { label: "Weather Check", desc: "If it rains, we'll just push the date and catch the next clear night in August." },
+];
 
 export default function DrumCircle() {
   return (
     <PageLayout title="Drum Circle Breathwork" backLabel="Events" backHref="/events">
-      <div className="space-y-8">
+      <div className="space-y-12" data-testid="section-drum-circle">
+
         <div className="flex justify-center">
           <img
             src="https://i0.wp.com/thrivetools.co/wp-content/uploads/2023/03/drum_circle_img.jpeg?resize=282%2C187&ssl=1"
             alt="Drum Circle Breathwork"
-            className="rounded-md"
+            className="rounded-md glow-rose"
             data-testid="img-drum-circle"
           />
         </div>
 
-        <div className="space-y-6 text-white/80 text-lg leading-relaxed">
-          <p className="font-bold text-white" data-testid="text-full-moon">
-            Every full moon this summer, we'll be celebrating life around a bonfire.
+        <div className="card-glass rounded-md p-6 sm:p-8 space-y-4" data-testid="section-intro">
+          <p className="text-[#e8a4b8] text-lg font-display italic leading-relaxed" data-testid="text-opening">
+            Every full moon this summer, we're heading to the bonfire to celebrate just being alive.
           </p>
-
-          <p data-testid="text-breathing-exercises">
-            I will lead you through breathing exercises while the drumming induces a dreamy state, which aids in releasing stagnant emotional and physical energy within the body.
-          </p>
-
-          <p data-testid="text-journey">
-            This journey has the power to help us grow more love and wholeness within us, while leading us to ways to authentically connect with others.
-          </p>
-
-          <p data-testid="text-chanting">
-            Chanting and Aum-ing will very be part of this beautiful celebration.
-          </p>
-
-          <p className="font-bold text-white" data-testid="text-welcome">
-            Everyone is welcome to join at no cost.
-          </p>
-
-          <p data-testid="text-bring-drum">
-            Feel free to bring your own drum if you have one, and if you would like, you can also bring some firewood.
-          </p>
-
-          <p data-testid="text-rain">
-            In case of rain, we will plan another date in August.
+          <p className="text-white/80 leading-relaxed text-base" data-testid="text-description">
+            This isn't your typical breathwork session. We're pairing deep breathwork with the raw energy of live drumming to help you get out of your head and into a flow state. It's a space to shake off the stagnant vibes, clear out any heavy energy you've been carrying, and just... breathe.
           </p>
         </div>
 
-        <div className="flex justify-center pt-4">
-          <Link href="/contact">
-            <Button
-              size="lg"
-              className="rounded-full bg-gradient-to-r from-[#c97a8e] to-[#d4a867] text-white border-[#c97a8e]"
-              data-testid="link-sign-up"
-            >
-              I'm In, Sign Me Up
-            </Button>
-          </Link>
+        <div className="card-glass rounded-md p-6 sm:p-8 space-y-6" data-testid="section-vibe">
+          <h3 className="font-display text-2xl font-bold text-gradient-purple" data-testid="text-vibe-heading">
+            The Vibe
+          </h3>
+          <p className="text-white/80 leading-relaxed text-base" data-testid="text-vibe">
+            Expect some chanting, some "Aum-ing," and a lot of genuine connection. It's about finding that sense of wholeness within yourself while vibing with the people around you.
+          </p>
+          <ul className="space-y-4">
+            {details.map((item, i) => (
+              <li key={i} className="flex items-start gap-3" data-testid={`detail-item-${i}`}>
+                <Check className="w-5 h-5 text-[#c97a8e] shrink-0 mt-0.5" />
+                <p className="text-white/80 leading-relaxed text-base">
+                  <span className="text-white font-semibold">{item.label}:</span> {item.desc}
+                </p>
+              </li>
+            ))}
+          </ul>
+        </div>
+
+        <div className="card-glass rounded-md p-6 sm:p-8 text-center" data-testid="section-closing">
+          <p className="text-[#e8a4b8] font-display text-lg italic" data-testid="text-closing">
+            Come as you are. Let's make some noise and clear some space.
+          </p>
         </div>
       </div>
     </PageLayout>
