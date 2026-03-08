@@ -114,6 +114,7 @@ export default function Home() {
                 loop
                 muted
                 playsInline
+                preload="auto"
                 className="w-full h-auto"
                 src="/hero-video.mp4"
               />
