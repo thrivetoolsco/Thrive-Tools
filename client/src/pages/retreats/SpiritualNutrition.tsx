@@ -1,49 +1,118 @@
 import PageLayout from "@/components/PageLayout";
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, Check } from "lucide-react";
+import img1 from "@assets/IMG-20260307-WA0004_1772934376636.jpg";
+import img2 from "@assets/IMG-20260307-WA0006_1772934376688.jpg";
+import img3 from "@assets/IMG-20260307-WA0005_1772934376698.jpg";
+import img4 from "@assets/IMG-20260307-WA0009_1772934376712.jpg";
+import img5 from "@assets/IMG-20260307-WA0007_1772934376724.jpg";
+
+const pillars = [
+  { label: "Mind-Body Alignment", desc: "Stop fighting your energy and start fueling your purpose." },
+  { label: "Practical Tools", desc: "No fluff. Just real world guidelines for a high vibe lifestyle." },
+  { label: "Global Impact", desc: "Eat and live in a way that actually feels good for the planet, too." },
+];
 
 export default function SpiritualNutrition() {
   return (
     <PageLayout title="Spiritual Nutrition" backLabel="Home" backHref="/">
       <div className="space-y-12" data-testid="section-spiritual-nutrition">
+
         <div className="card-glass rounded-md p-6 sm:p-8 space-y-6" data-testid="section-intro">
-          <h2 className="font-display text-xl sm:text-2xl font-bold text-gradient-rose leading-relaxed" data-testid="text-heading">
-            A powerful 3 days online intensive that goes deep into a NUTRITIONAL APPROACH TO HEALING & FREEING YOUR THOUGHTS, EMOTIONS & BEHAVIORS
-          </h2>
+          <p className="text-[#e8a4b8] text-lg sm:text-xl font-display italic leading-relaxed" data-testid="text-subtitle">
+            Spiritual Nutrition: The 3 Day Digital Intensive
+          </p>
+          <p className="text-white/80 leading-relaxed text-base" data-testid="text-opening">
+            We all know how hard it is to feel "aligned" when your body feels heavy or your brain is foggy. This isn't a typical diet or a restrictive detox. It's a 3 day deep dive into how what you consume physically, directly affects how you think, feel, and show up.
+          </p>
         </div>
 
         <div className="flex justify-center">
           <img
-            src="https://i0.wp.com/thrivetools.co/wp-content/uploads/2023/03/spiritual-healing.jpeg?fit=564%2C564&ssl=1"
+            src={img1}
             alt="Spiritual Nutrition"
             className="rounded-md max-w-full sm:max-w-md glow-rose"
-            data-testid="img-spiritual-nutrition"
+            data-testid="img-spiritual-1"
           />
         </div>
 
-        <div className="card-glass rounded-md p-6 sm:p-8 space-y-6" data-testid="section-description">
-          <p className="text-white/80 leading-relaxed text-base" data-testid="text-description-1">
-            This online workshop is designed for individuals who aspire to adopt a lifestyle that nurtures their physical, mental, and spiritual well-being while also contributing positively to the planet and all its inhabitants.
+        <div className="card-glass rounded-md p-6 sm:p-8 space-y-6" data-testid="section-lowdown">
+          <h3 className="font-display text-2xl font-bold text-gradient-purple" data-testid="text-lowdown-heading">
+            The Lowdown
+          </h3>
+          <p className="text-white/80 leading-relaxed text-base" data-testid="text-lowdown-intro">
+            We're looking at nutrition as a tool for mental and emotional freedom. By lightening the load on your system, we're clearing the path to that "quiet mind" state where everything just clicks.
           </p>
-          <p className="text-white/80 leading-relaxed text-base" data-testid="text-description-2">
-            As we purify and lighten our bodies, we enhance our connection to our higher selves, facilitating an easier and quicker ascension process. Quieting the mind allows for transcendence into a state of nothingness, paving the way for the mind to act as a conduit for light.
-          </p>
-          <p className="text-white/80 leading-relaxed text-base" data-testid="text-description-3">
-            This online workshop is designed to provide numerous practical tools and guidelines to help you align your body with your spiritual purpose and intention in life.
+          <ul className="space-y-4">
+            {pillars.map((pillar, i) => (
+              <li key={i} className="flex items-start gap-3" data-testid={`pillar-item-${i}`}>
+                <Check className="w-5 h-5 text-[#c97a8e] shrink-0 mt-0.5" />
+                <p className="text-white/80 leading-relaxed text-base">
+                  <span className="text-white font-semibold">{pillar.label}:</span> {pillar.desc}
+                </p>
+              </li>
+            ))}
+          </ul>
+        </div>
+
+        <div className="grid grid-cols-2 gap-3 sm:gap-4" data-testid="section-food-images">
+          <img
+            src={img2}
+            alt="Spiritual nutrition food"
+            className="rounded-md w-full object-cover glow-rose"
+            data-testid="img-spiritual-2"
+          />
+          <img
+            src={img3}
+            alt="Spiritual nutrition food"
+            className="rounded-md w-full object-cover glow-purple"
+            data-testid="img-spiritual-3"
+          />
+          <img
+            src={img4}
+            alt="Spiritual nutrition food"
+            className="rounded-md w-full object-cover glow-purple"
+            data-testid="img-spiritual-4"
+          />
+          <img
+            src={img5}
+            alt="Spiritual nutrition food"
+            className="rounded-md w-full object-cover glow-rose"
+            data-testid="img-spiritual-5"
+          />
+        </div>
+
+        <div className="card-glass rounded-md p-6 sm:p-8 space-y-4" data-testid="section-join">
+          <h3 className="font-display text-2xl font-bold text-gradient-purple" data-testid="text-join-heading">
+            Join from Anywhere
+          </h3>
+          <p className="text-white/80 leading-relaxed text-base" data-testid="text-join-desc">
+            I'm currently wandering the globe, but this intensive is 100% online. Whether you're hanging in Canada, South America, or anywhere else on the map, we can jump in and do the work together.
           </p>
         </div>
 
-        <div className="card-glass rounded-md p-6 sm:p-8 text-center space-y-4" data-testid="section-globetrotter">
-          <p className="text-white/70 leading-relaxed text-base">
-            As a globetrotter, I am available for sessions worldwide. Whether you are in the US, Europe, or anywhere else on the planet, we can connect and work together.
+        <div className="card-glass rounded-md p-6 sm:p-8 space-y-6" data-testid="section-investment">
+          <h3 className="font-display text-2xl font-bold text-gradient-rose text-center" data-testid="text-investment-heading">
+            Investment
+          </h3>
+          <div className="card-glass rounded-md p-6 text-center space-y-3" data-testid="card-rate-zoom">
+            <p className="text-[#e8a4b8] font-display font-semibold text-lg">3 days online Zoom workshop</p>
+            <p className="text-white/70 text-sm">From 10 am – 1 pm</p>
+            <p className="text-white font-bold text-3xl" data-testid="text-price">USD $396</p>
+          </div>
+          <p className="text-center text-white/50 text-xs italic" data-testid="text-customizable">
+            * All workshops & Retreats are customizable and are designed to meet your individual needs.
           </p>
+        </div>
+
+        <div className="card-glass rounded-md p-6 sm:p-8 text-center space-y-4" data-testid="section-cta">
           <Link href="/contact">
             <Button
               className="bg-[#c97a8e] border-[#c97a8e] text-white mt-2"
               data-testid="link-schedule-cta"
             >
-              Sounds Great - Let's Schedule A Date <ArrowRight className="w-4 h-4 ml-2" />
+              I Deserve This, Let's Schedule A Date <ArrowRight className="w-4 h-4 ml-2" />
             </Button>
           </Link>
         </div>
