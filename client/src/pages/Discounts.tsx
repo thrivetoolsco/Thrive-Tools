@@ -12,6 +12,7 @@ import {
   Shirt,
   Plane,
   ArrowLeft,
+  ChevronDown,
 } from "lucide-react";
 import { useState } from "react";
 
@@ -313,33 +314,100 @@ interface CategorySectionProps {
   badgeColor: string;
   gradient: string;
   startIndex: number;
+  borderColor?: string;
 }
 
-function CategorySection({ icon: Icon, title, subtitle, items, badgeColor, gradient, startIndex }: CategorySectionProps) {
+function CategorySection({ icon: Icon, title, subtitle, items, badgeColor, gradient, startIndex, borderColor = "rgba(201,122,142,0.2)" }: CategorySectionProps) {
+  const [open, setOpen] = useState(true);
+
   return (
-    <section className="mb-20">
-      <div className="flex items-center gap-4 mb-8">
+    <section className="mb-8">
+      <button
+        onClick={() => setOpen(!open)}
+        className="w-full flex items-center gap-4 mb-0 group cursor-pointer"
+        data-testid={`accordion-toggle-${title.replace(/\s+/g, "-").toLowerCase()}`}
+      >
         <div
           className="w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0"
-          style={{
-            background: gradient,
-            border: "1px solid rgba(201,122,142,0.2)",
-          }}
+          style={{ background: gradient, border: `1px solid ${borderColor}` }}
         >
           <Icon className="w-5 h-5 text-rose-300" />
         </div>
-        <div>
+        <div className="text-left">
           <h2 className="text-white font-bold text-2xl font-display">{title}</h2>
           <p className="text-white/40 text-sm">{subtitle}</p>
         </div>
         <Badge className={`${badgeColor} border rounded-full text-xs px-3 py-0.5 font-medium ml-auto hidden sm:inline-flex`}>
           {items.length} brands
         </Badge>
+        <ChevronDown
+          className={`w-5 h-5 text-white/40 flex-shrink-0 transition-transform duration-300 ${open ? "rotate-180" : ""}`}
+        />
+      </button>
+
+      <div
+        className={`overflow-hidden transition-all duration-500 ease-in-out ${open ? "max-h-[9999px] opacity-100 mt-8" : "max-h-0 opacity-0 mt-0"}`}
+      >
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+          {items.map((item, i) => (
+            <DiscountCard key={i} item={item} index={startIndex + i} />
+          ))}
+        </div>
       </div>
-      <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
-        {items.map((item, i) => (
-          <DiscountCard key={i} item={item} index={startIndex + i} />
-        ))}
+
+      <div className="section-divider mt-8 mb-8" />
+    </section>
+  );
+}
+
+function TravelsSection() {
+  const [open, setOpen] = useState(true);
+
+  return (
+    <section className="mb-8" data-testid="section-traveling">
+      <button
+        onClick={() => setOpen(!open)}
+        className="w-full flex items-center gap-4 mb-0 group cursor-pointer"
+        data-testid="accordion-toggle-travels"
+      >
+        <div
+          className="w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0"
+          style={{
+            background: "linear-gradient(135deg, rgba(100,180,220,0.2) 0%, rgba(155,111,165,0.2) 100%)",
+            border: "1px solid rgba(100,180,220,0.2)",
+          }}
+        >
+          <Plane className="w-5 h-5 text-sky-300" />
+        </div>
+        <div className="text-left">
+          <h2 className="text-white font-bold text-2xl font-display">Travels</h2>
+          <p className="text-white/40 text-sm">I'm also passionate about Traveling.</p>
+        </div>
+        <ChevronDown
+          className={`w-5 h-5 text-white/40 flex-shrink-0 ml-auto transition-transform duration-300 ${open ? "rotate-180" : ""}`}
+        />
+      </button>
+
+      <div
+        className={`overflow-hidden transition-all duration-500 ease-in-out ${open ? "max-h-[9999px] opacity-100 mt-8" : "max-h-0 opacity-0 mt-0"}`}
+      >
+        <div className="card-glass rounded-2xl p-6 sm:p-10 flex items-center justify-center">
+          <Button
+            asChild
+            size="lg"
+            className="bg-rose-500 text-white border-0 rounded-full px-6 sm:px-10 py-4 text-sm sm:text-base tracking-widest uppercase font-semibold whitespace-normal text-center leading-relaxed h-auto"
+          >
+            <a
+              href="https://www.traveltipsexposed.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              data-testid="link-travel-tips"
+              className="inline-flex items-center justify-center gap-2 flex-wrap"
+            >
+              Find me on TravelTipsExposed.com <ExternalLink className="w-4 h-4 flex-shrink-0" />
+            </a>
+          </Button>
+        </div>
       </div>
     </section>
   );
@@ -403,8 +471,6 @@ export default function Discounts() {
             startIndex={0}
           />
 
-          <div className="section-divider mb-20" />
-
           <CategorySection
             icon={Cpu}
             title="Longevity Tech"
@@ -412,10 +478,9 @@ export default function Discounts() {
             items={healthTech}
             badgeColor="bg-purple-400/20 text-purple-300 border-purple-400/30"
             gradient="linear-gradient(135deg, rgba(155,111,165,0.2) 0%, rgba(100,80,180,0.2) 100%)"
+            borderColor="rgba(155,111,165,0.2)"
             startIndex={vitaminsSupplements.length}
           />
-
-          <div className="section-divider mb-20" />
 
           <CategorySection
             icon={Shirt}
@@ -424,45 +489,11 @@ export default function Discounts() {
             items={ethicalClothing}
             badgeColor="bg-amber-400/20 text-amber-300 border-amber-400/30"
             gradient="linear-gradient(135deg, rgba(212,168,103,0.2) 0%, rgba(201,122,142,0.2) 100%)"
+            borderColor="rgba(212,168,103,0.2)"
             startIndex={vitaminsSupplements.length + healthTech.length}
           />
 
-          <div className="section-divider mb-20" />
-
-          <section className="mb-20" data-testid="section-traveling">
-            <div className="flex items-center gap-4 mb-8">
-              <div
-                className="w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0"
-                style={{
-                  background: "linear-gradient(135deg, rgba(100,180,220,0.2) 0%, rgba(155,111,165,0.2) 100%)",
-                  border: "1px solid rgba(100,180,220,0.2)",
-                }}
-              >
-                <Plane className="w-5 h-5 text-sky-300" />
-              </div>
-              <div>
-                <h2 className="text-white font-bold text-2xl font-display">Travels</h2>
-                <p className="text-white/40 text-sm">I'm also passionate about Traveling.</p>
-              </div>
-            </div>
-            <div className="card-glass rounded-2xl p-6 sm:p-10 flex items-center justify-center">
-              <Button
-                asChild
-                size="lg"
-                className="bg-rose-500 text-white border-0 rounded-full px-6 sm:px-10 py-4 text-sm sm:text-base tracking-widest uppercase font-semibold whitespace-normal text-center leading-relaxed h-auto"
-              >
-                <a
-                  href="https://www.traveltipsexposed.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  data-testid="link-travel-tips"
-                  className="inline-flex items-center justify-center gap-2 flex-wrap"
-                >
-                  Find me on TravelTipsExposed.com <ExternalLink className="w-4 h-4 flex-shrink-0" />
-                </a>
-              </Button>
-            </div>
-          </section>
+          <TravelsSection />
         </div>
       </section>
 
