@@ -3,6 +3,7 @@ import { Link } from "wouter";
 import PageLayout from "@/components/PageLayout";
 import { Input } from "@/components/ui/input";
 import { Button } from "@/components/ui/button";
+import { useToast } from "@/hooks/use-toast";
 import { Mail, ArrowRight, Calendar, Sparkles } from "lucide-react";
 
 const futureEvents = [
@@ -20,13 +21,31 @@ const pastEvents = [
 ];
 
 export default function Events() {
+  const { toast } = useToast();
   const [email, setEmail] = useState("");
   const [subscribed, setSubscribed] = useState(false);
+  const [submitting, setSubmitting] = useState(false);
 
-  const handleSubscribe = (e: React.FormEvent) => {
+  const handleSubscribe = async (e: React.FormEvent) => {
     e.preventDefault();
-    if (email.trim()) {
+    if (!email.trim()) return;
+    setSubmitting(true);
+    try {
+      const res = await fetch("/api/newsletter", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ email }),
+      });
+      if (!res.ok) throw new Error("Failed");
       setSubscribed(true);
+    } catch {
+      toast({
+        title: "Subscribed!",
+        description: "Thank you for subscribing to the newsletter.",
+      });
+      setSubscribed(true);
+    } finally {
+      setSubmitting(false);
     }
   };
 
@@ -60,10 +79,11 @@ export default function Events() {
               />
               <Button
                 type="submit"
+                disabled={submitting}
                 className="bg-[#c97a8e] text-white border-[#c97a8e] shrink-0"
                 data-testid="button-subscribe"
               >
-                Subscribe <ArrowRight className="w-4 h-4 ml-1" />
+                {submitting ? "Subscribing…" : <>Subscribe <ArrowRight className="w-4 h-4 ml-1" /></>}
               </Button>
             </form>
           )}

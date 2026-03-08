@@ -38,7 +38,7 @@ export default function Footer() {
                 <Instagram className="w-4 h-4 text-white/50 hover:text-white transition-colors" />
               </a>
               <a
-                href="mailto:hello@thrivetools.co"
+                href="mailto:Thrivetools.co@gmail.com"
                 data-testid="link-social-email"
                 className="w-9 h-9 rounded-full flex items-center justify-center transition-colors"
                 style={{ background: "rgba(255,255,255,0.05)", border: "1px solid rgba(255,255,255,0.08)" }}

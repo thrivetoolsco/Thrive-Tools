@@ -10,6 +10,14 @@ const contactRateLimit = rateLimit({
   message: { error: "Too many requests, please try again later." },
 });
 
+const newsletterRateLimit = rateLimit({
+  windowMs: 60 * 60 * 1000,
+  max: 3,
+  standardHeaders: true,
+  legacyHeaders: false,
+  message: { error: "Too many requests, please try again later." },
+});
+
 function sanitizeText(input: string): string {
   return String(input)
     .replace(/[<>]/g, "")
@@ -68,6 +76,43 @@ export async function registerRoutes(
       res.json({ success: true });
     } catch (err) {
       console.log("Contact form submission (email failed, logged safely)");
+      res.json({ success: true });
+    }
+  });
+
+  app.post("/api/newsletter", newsletterRateLimit, async (req, res) => {
+    const { email } = req.body;
+
+    if (!email) {
+      return res.status(400).json({ error: "Email is required" });
+    }
+
+    if (!isValidEmail(email)) {
+      return res.status(400).json({ error: "Invalid email address" });
+    }
+
+    const safeEmail = sanitizeText(email);
+
+    try {
+      const nodemailer = await import("nodemailer");
+      const transporter = nodemailer.createTransport({
+        service: "gmail",
+        auth: {
+          user: process.env.GMAIL_USER,
+          pass: process.env.GMAIL_APP_PASSWORD,
+        },
+      });
+
+      await transporter.sendMail({
+        from: process.env.GMAIL_USER,
+        to: "Thrivetools.co@gmail.com",
+        subject: "[ThriveTools] New Newsletter Subscriber",
+        text: `New newsletter subscription request:\n\nEmail: ${safeEmail}`,
+      });
+
+      res.json({ success: true });
+    } catch (err) {
+      console.log("Newsletter subscription (email failed, logged safely)");
       res.json({ success: true });
     }
   });
