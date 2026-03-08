@@ -25,7 +25,7 @@ app.use(
         fontSrc: ["'self'", "https://fonts.gstatic.com", "data:"],
         imgSrc: ["'self'", "data:", "https:", "blob:"],
         connectSrc: ["'self'", "https:"],
-        frameSrc: ["'none'"],
+        frameSrc: ["https://www.youtube.com", "https://www.youtube-nocookie.com"],
         objectSrc: ["'none'"],
         baseUri: ["'self'"],
         formAction: ["'self'"],

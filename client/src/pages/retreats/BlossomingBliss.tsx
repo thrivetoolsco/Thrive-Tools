@@ -46,6 +46,15 @@ export default function BlossomingBliss() {
   return (
     <PageLayout title="Blossoming Bliss Transformation" backLabel="Home" backHref="/">
       <div className="space-y-12" data-testid="section-blossoming-bliss">
+        <div className="flex justify-center">
+          <img
+            src="https://i0.wp.com/thrivetools.co/wp-content/uploads/2023/06/Blossoming_Bliss_1.webp?fit=1000%2C667&ssl=1"
+            alt="Blossoming Bliss Retreat"
+            className="rounded-md max-w-full glow-rose"
+            data-testid="img-blossoming-bliss"
+          />
+        </div>
+
         <div className="card-glass rounded-md p-6 sm:p-8 space-y-6" data-testid="section-intro">
           <p className="text-[#e8a4b8] text-lg sm:text-xl font-display italic leading-relaxed" data-testid="text-subtitle">
             Blossoming Bliss: The Full-System Reset
@@ -83,15 +92,6 @@ export default function BlossomingBliss() {
           <p className="text-white/80 leading-relaxed text-base" data-testid="text-closing">
             You'll leave with more than just good memories. You'll have a roadmap to stay blissful and grounded, no matter how chaotic the "real world" gets.
           </p>
-        </div>
-
-        <div className="flex justify-center">
-          <img
-            src="https://i0.wp.com/thrivetools.co/wp-content/uploads/2023/06/Blossoming_Bliss_1.webp?fit=1000%2C667&ssl=1"
-            alt="Blossoming Bliss Retreat"
-            className="rounded-md max-w-full glow-rose"
-            data-testid="img-blossoming-bliss"
-          />
         </div>
 
         <div className="card-glass rounded-md p-6 sm:p-8 space-y-4 text-center" data-testid="section-details">
