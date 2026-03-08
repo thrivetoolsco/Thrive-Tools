@@ -407,8 +407,8 @@ export default function Discounts() {
 
           <CategorySection
             icon={Cpu}
-            title="Health Tech"
-            subtitle="For the longevity lovers"
+            title="Longevity Tech"
+            subtitle="For cognitive power & cellular repair"
             items={healthTech}
             badgeColor="bg-purple-400/20 text-purple-300 border-purple-400/30"
             gradient="linear-gradient(135deg, rgba(155,111,165,0.2) 0%, rgba(100,80,180,0.2) 100%)"
