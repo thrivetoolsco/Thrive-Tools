@@ -68,3 +68,12 @@ Redesigned landing page for ThriveTools.co — a wellness and biohacking brand b
 ## Navigation Structure (matches original site)
 
 Home, My Top Picks, Personalized Guidance, Quantum Healing, Breathwork, Retreats & Workshops (submenu), Events, About, Contact
+
+## Email / Newsletter
+
+Email sending uses nodemailer with Gmail SMTP (`GMAIL_USER` + `GMAIL_APP_PASSWORD` secrets).
+- The Gmail App Password must be exactly 16 characters (generated at myaccount.google.com → Security → 2-Step Verification → App passwords).
+- The current GMAIL_APP_PASSWORD appears to be 32 characters — it is invalid and email sending will fail.
+- To fix: delete the existing GMAIL_APP_PASSWORD secret and re-enter the real 16-character App Password.
+- Replit Gmail and Resend integrations were both dismissed by the user — do not propose them again.
+- Until credentials are fixed, newsletter and contact emails will fail silently on the server side.
