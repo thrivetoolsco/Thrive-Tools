@@ -1,59 +1,91 @@
 import PageLayout from "@/components/PageLayout";
-import { Clock, DollarSign, Mail, Film } from "lucide-react";
+import { Clock, Mail, Check } from "lucide-react";
+import thriveImg from "@assets/IMG-20260307-WA0016_1772935064209.jpg";
+
+const topics = [
+  { label: "The New Science", desc: "Unpacking the \"Unified Field\" (the stuff Einstein was looking for) in a way that actually makes sense." },
+  { label: "Real Solutions", desc: "From decentralized energy to health cures that actually work." },
+  { label: "Taking Back Control", desc: "Practical tools to reclaim our own authority and support a world that works for everyone." },
+];
 
 export default function Thrive2() {
   return (
     <PageLayout
       title="Docu Evening: Thrive 2"
+      subtitle="Thursday Night Docs: Let's Talk Solutions — Weekly at 6:30 PM"
       backLabel="Events"
       backHref="/events"
     >
-      <div className="space-y-8">
-        <div className="card-glass rounded-md p-6 sm:p-8" data-testid="card-invitation">
-          <p className="text-white/80 text-lg leading-relaxed" data-testid="text-invitation">
-            It is our privilege to extend an invitation to you for our forthcoming Docu Evenings, scheduled to take place every Thursdays at 6:30 pm.
+      <div className="space-y-12" data-testid="section-thrive2">
+
+        <div className="card-glass rounded-md p-6 sm:p-8 space-y-4" data-testid="section-intro">
+          <p className="text-white/80 leading-relaxed text-base" data-testid="text-intro">
+            I'm stoked to invite you to our weekly Docu Evenings. We're diving into <span className="text-[#e8a4b8] font-semibold">THRIVE II: This is What it Takes</span>, and honestly, it's the shift in perspective we all kind of need right now.
           </p>
         </div>
 
-        <div className="card-glass rounded-md p-6 sm:p-8" data-testid="card-description">
-          <div className="flex items-center gap-3 mb-4">
-            <Film className="w-5 h-5 text-[#c97a8e]" />
-            <h2 className="text-xl font-display font-semibold text-gradient-rose" data-testid="text-screening-title">
-              About the Screening
-            </h2>
-          </div>
-          <p className="text-white/70 leading-relaxed" data-testid="text-description">
-            We'll screen the amazing THRIVE II: This is What it Takes brings viewers behind the scenes with the people and innovations that have the power to transform life for everyone. Follow a journey across the globe investigating the most promising solutions in energy, health, consciousness, and non-coercive self-organizing while unpacking the underlying science, principles, and strategies that make them possible. THRIVE II reveals compelling evidence that illustrates a new paradigm of science that Einstein was seeking, unveiling for the layperson an emerging coherent theory of the "Unified Field" and all that it implies. Inspiring trans-political, grass roots, and decentralized solutions, THRIVE II offers practical tools for reclaiming authority over our lives. From new sources of energy to breakthrough health cures, THRIVE II provides the insights and resources needed for viewers to take next steps in accessing and supporting the solutions that can truly create a world that works for everyone.
-          </p>
+        <div className="flex justify-center">
+          <img
+            src={thriveImg}
+            alt="Thrive II: This is What it Takes"
+            className="rounded-md max-w-full sm:max-w-sm glow-rose"
+            data-testid="img-thrive2"
+          />
         </div>
 
-        <div className="card-glass rounded-md p-6 sm:p-8" data-testid="card-details">
-          <h2 className="text-xl font-display font-semibold text-gradient-purple mb-6" data-testid="text-details-title">
-            Event Details
-          </h2>
-          <div className="space-y-4">
-            <div className="flex items-center gap-3" data-testid="detail-registration">
-              <Mail className="w-5 h-5 text-[#9b6fa5]" />
-              <span className="text-white/70">
-                Registration required{" "}
+        <div className="card-glass rounded-md p-6 sm:p-8 space-y-6" data-testid="section-vibe">
+          <h3 className="font-display text-2xl font-bold text-gradient-purple" data-testid="text-vibe-heading">
+            The Vibe
+          </h3>
+          <p className="text-white/80 leading-relaxed text-base" data-testid="text-vibe">
+            If the first film was about "what's going on," this one is about what we can actually do about it. It's a global journey looking at the legit breakthroughs in energy, health, and consciousness that the mainstream usually misses.
+          </p>
+          <p className="text-white/70 font-medium" data-testid="text-vibe-talking">We're talking:</p>
+          <ul className="space-y-4">
+            {topics.map((item, i) => (
+              <li key={i} className="flex items-start gap-3" data-testid={`topic-item-${i}`}>
+                <Check className="w-5 h-5 text-[#c97a8e] shrink-0 mt-0.5" />
+                <p className="text-white/80 leading-relaxed text-base">
+                  <span className="text-white font-semibold">{item.label}:</span> {item.desc}
+                </p>
+              </li>
+            ))}
+          </ul>
+        </div>
+
+        <div className="card-glass rounded-md p-6 sm:p-8 space-y-5" data-testid="section-essentials">
+          <h3 className="font-display text-2xl font-bold text-gradient-purple text-center" data-testid="text-essentials-heading">
+            The Essentials
+          </h3>
+          <div className="flex flex-col items-center gap-4">
+            <p className="text-white/80 leading-relaxed text-base" data-testid="text-cost">
+              <span className="text-[#e8a4b8] font-semibold">Cost:</span> Free <span className="text-white/50 text-sm">(It's about the community and the conversation).</span>
+            </p>
+            <p className="text-white/80 leading-relaxed text-base flex items-center gap-2" data-testid="text-duration">
+              <Clock className="w-4 h-4 text-[#c97a8e]" />
+              <span><span className="text-[#e8a4b8] font-semibold">Duration:</span> 2h 30m of mind-bending info.</span>
+            </p>
+            <p className="text-white/80 leading-relaxed text-base flex items-center gap-2" data-testid="text-registration">
+              <Mail className="w-4 h-4 text-[#c97a8e]" />
+              <span>
+                <span className="text-[#e8a4b8] font-semibold">How to Join:</span> Shoot a quick email to{" "}
                 <a
                   href="mailto:thrivetools.co@gmail.com"
-                  className="text-[#e8a4b8] underline underline-offset-2"
+                  className="text-[#e8a4b8] underline underline-offset-4 decoration-[#c97a8e]/40"
                   data-testid="link-email"
                 >
                   thrivetools.co@gmail.com
-                </a>
+                </a>{" "}
+                to grab your spot.
               </span>
-            </div>
-            <div className="flex items-center gap-3" data-testid="detail-cost">
-              <DollarSign className="w-5 h-5 text-[#9b6fa5]" />
-              <span className="text-white/70">Cost: Free</span>
-            </div>
-            <div className="flex items-center gap-3" data-testid="detail-duration">
-              <Clock className="w-5 h-5 text-[#9b6fa5]" />
-              <span className="text-white/70">Duration : 2 h 30 m</span>
-            </div>
+            </p>
           </div>
+        </div>
+
+        <div className="card-glass rounded-md p-6 sm:p-8 text-center" data-testid="section-closing">
+          <p className="text-[#e8a4b8] font-display text-lg italic" data-testid="text-closing">
+            Come with an open mind. See you Thursday!
+          </p>
         </div>
       </div>
     </PageLayout>
