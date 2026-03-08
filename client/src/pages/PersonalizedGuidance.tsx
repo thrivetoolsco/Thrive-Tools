@@ -1,47 +1,40 @@
 import PageLayout from "@/components/PageLayout";
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
+import { ArrowRight } from "lucide-react";
 
 export default function PersonalizedGuidance() {
   return (
     <PageLayout title="Personalized Guidance">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
         <div className="space-y-6" data-testid="section-guidance-text">
-          <p className="text-xl sm:text-2xl font-display text-white/70 leading-relaxed" data-testid="text-guidance-intro">
-            Personalized workshops, retreats and products recommendations that perfectly suit your needs.
+          <p className="text-white/80 leading-relaxed text-base" data-testid="text-guidance-intro">
+            Between burnout, 3:00 AM ceiling staring, and the general chaos of life, just "feeling human" can feel like a full time job. I'm here to help you cut through the wellness noise and get straight to the stuff that actually makes a difference.
           </p>
 
-          <p className="text-white/70 leading-relaxed" data-testid="text-guidance-burnout">
-            Whether you're navigating burnout, struggling with 3:00 AM insomnia, or just trying to feel human again, I'm here to help you cut through the noise.
+          <p className="text-white/80 leading-relaxed text-base" data-testid="text-guidance-toolkit">
+            I've spent years testing and curating a toolkit of high quality supplements, tech-backed gear, and body care that I actually trust. You won't find any "miracle cures" here. Just practical, science backed resources like breathwork and frequency tools designed to help your nervous system finally chill out.
           </p>
 
-          <p className="text-white/70 leading-relaxed" data-testid="text-guidance-toolkit">
-            I've curated a toolkit of high-quality supplements, tech-backed wellness gear, and body care that actually works. No 'miracle cures': just practical, science backed tools like transformational breathwork and quantum healing to help you recalibrate your nervous system.
+          <p className="text-white/80 leading-relaxed text-base" data-testid="text-guidance-hustle">
+            You don't need to work harder to be happy. You just need the right resources to help you feel centered, energized, and dare I say, actually stoked for the day.
           </p>
 
-          <p className="text-white/70 leading-relaxed" data-testid="text-guidance-hustle">
-            You don't need to 'hustle' your way to happiness. You just need the right resources to help you feel centered, energized, and, dare we say, actually excited for the day.
+          <p className="text-[#e8a4b8] font-display text-lg font-semibold" data-testid="text-guidance-ready">
+            Ready to upgrade your human experience?
           </p>
 
-          <p className="text-white/90 font-display text-lg font-semibold" data-testid="text-guidance-ready">
-            Ready to feel better and upgrade your 'Human-ing'?
+          <p className="text-white/80 leading-relaxed text-base" data-testid="text-guidance-cta">
+            If you're looking for a more personalized approach, let's chat. I'll help you navigate the options and find the specific tools that fit your life right now.
           </p>
 
-          <p className="text-white/70 leading-relaxed" data-testid="text-guidance-click">
-            Click{" "}
-            <Link href="/contact" className="text-rose-400 underline font-semibold" data-testid="link-here-contact">
-              HERE
-            </Link>{" "}
-            for a consultation with me, and I'll provide you with targeted recommendations that will help you make the right choice for your unique situation.
-          </p>
-
-          <div className="pt-4">
+          <div className="pt-2">
             <Link href="/contact">
               <Button
-                className="bg-rose-500 border-rose-500 text-white"
+                className="bg-[#c97a8e] border-[#c97a8e] text-white"
                 data-testid="button-consultation-cta"
               >
-                Book a Consultation
+                Book a Consultation <ArrowRight className="w-4 h-4 ml-2" />
               </Button>
             </Link>
           </div>
