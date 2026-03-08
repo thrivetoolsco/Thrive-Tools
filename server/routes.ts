@@ -1,18 +1,51 @@
 import type { Express } from "express";
-import { createServer, type Server } from "http";
-import { storage } from "./storage";
+import { type Server } from "http";
+import rateLimit from "express-rate-limit";
+
+const contactRateLimit = rateLimit({
+  windowMs: 15 * 60 * 1000,
+  max: 5,
+  standardHeaders: true,
+  legacyHeaders: false,
+  message: { error: "Too many requests, please try again later." },
+});
+
+function sanitizeText(input: string): string {
+  return String(input)
+    .replace(/[<>]/g, "")
+    .trim()
+    .slice(0, 2000);
+}
+
+function isValidEmail(email: string): boolean {
+  return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email) && email.length <= 254;
+}
 
 export async function registerRoutes(
   httpServer: Server,
   app: Express
 ): Promise<Server> {
-  app.post("/api/contact", async (req, res) => {
+  app.post("/api/contact", contactRateLimit, async (req, res) => {
     const { name, email, subject, message } = req.body;
+
     if (!name || !email || !subject || !message) {
       return res.status(400).json({ error: "All fields are required" });
     }
 
-    const mailtoBody = `Name: ${name}\nEmail: ${email}\nSubject: ${subject}\n\nMessage:\n${message}`;
+    if (!isValidEmail(email)) {
+      return res.status(400).json({ error: "Invalid email address" });
+    }
+
+    const safeName = sanitizeText(name);
+    const safeEmail = sanitizeText(email);
+    const safeSubject = sanitizeText(subject);
+    const safeMessage = sanitizeText(message);
+
+    if (!safeName || !safeSubject || !safeMessage) {
+      return res.status(400).json({ error: "Invalid input" });
+    }
+
+    const mailtoBody = `Name: ${safeName}\nEmail: ${safeEmail}\nSubject: ${safeSubject}\n\nMessage:\n${safeMessage}`;
 
     try {
       const nodemailer = await import("nodemailer");
@@ -27,14 +60,14 @@ export async function registerRoutes(
       await transporter.sendMail({
         from: process.env.GMAIL_USER,
         to: "Thrivetools.co@gmail.com",
-        replyTo: email,
-        subject: `[ThriveTools Contact] ${subject}`,
+        replyTo: safeEmail,
+        subject: `[ThriveTools Contact] ${safeSubject}`,
         text: mailtoBody,
       });
 
       res.json({ success: true });
     } catch (err) {
-      console.log("Contact form submission:", { name, email, subject, message: message.substring(0, 100) });
+      console.log("Contact form submission (email failed, logged safely)");
       res.json({ success: true });
     }
   });
