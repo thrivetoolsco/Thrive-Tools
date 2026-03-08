@@ -1,180 +1,115 @@
 import PageLayout from "@/components/PageLayout";
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
-import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import { Zap, Brain, Sun, Disc, ArrowRight, Check } from "lucide-react";
-
-const treatments = [
-  {
-    num: 1,
-    title: "Cranio-Electro Stimulation (CES)",
-    description: "A non-invasive brain stimulation that applies a small pulsed electric current across the head. It stimulates the production of endorphins, serotonin, and norepinephrine, promoting a deep state of relaxation and mental clarity.",
-    icon: Brain,
-  },
-  {
-    num: 2,
-    title: "Audio-Visual Entrainment (AVE)",
-    description: "Uses light and sound pulses at specific frequencies to gently guide the brain into various brain wave patterns. This technology synchronizes brainwave activity, enhancing relaxation, focus, and cognitive function.",
-    icon: Zap,
-  },
-  {
-    num: 3,
-    title: "The Photon Genie",
-    description: "An advanced energy therapy device that emits energy properties resembling the vital properties of living cells. It supports detoxification, lymphatic drainage, and cellular regeneration through harmonic energy transmission.",
-    icon: Sun,
-  },
-  {
-    num: 4,
-    title: "Purple Harmony Plates",
-    description: "Inspired by the work of Nikola Tesla, these aluminum plates are anodized and infused with a specific vibrational frequency. They help to harmonize and balance the body's energy field, promoting a state of deep peace and alignment.",
-    icon: Disc,
-  },
-];
+import { ArrowRight, Check } from "lucide-react";
 
 const benefits = [
-  "Relieve stress",
-  "Alleviate physical pain",
-  "Reduce anxiety",
-  "Gain mental clarity",
-  "Release stagnant thoughts",
-  "Feel more grounded",
-  "Reconnect with creativity",
-  "Control addiction",
-  "Explore altered states",
-  "Reach meditation depths",
-  "Enhance athletic performance",
+  "Crushing anxiety & stress",
+  "Deepening your meditation (without the struggle)",
+  "Physical recovery & pain relief",
+  "Getting your spark back",
+];
+
+const techStack = [
+  "Vielight Photobiomodulation device",
+  "Photon Genie",
 ];
 
 export default function QuantumHealing() {
   return (
     <PageLayout
       title="Quantum Healing"
-      subtitle="Step into wide-spectrum healing and empowerment with this unique 1hr15min treatment which combines Breathwork with Electro Therapy."
+      subtitle="The High Vibe Reset: Breathwork + Electro-Therapy"
     >
       <div className="space-y-12" data-testid="section-quantum-healing">
-        <div className="card-glass rounded-md p-6 sm:p-8" data-testid="section-accordions">
-          <Accordion type="single" collapsible className="w-full">
-            <AccordionItem value="breathwork" className="border-white/10" data-testid="accordion-breathwork">
-              <AccordionTrigger className="text-white/90 text-lg font-display hover:no-underline hover:text-white" data-testid="trigger-breathwork">
-                What's Breathwork?
-              </AccordionTrigger>
-              <AccordionContent className="text-white/70 leading-relaxed text-base" data-testid="content-breathwork">
-                It's the practice of consciously controlling the rate and depth of the breath to positively influence our mental, emotional or physical state and therefore achieve a therapeutic effect.
-              </AccordionContent>
-            </AccordionItem>
 
-            <AccordionItem value="electro-therapy" className="border-white/10" data-testid="accordion-electro-therapy">
-              <AccordionTrigger className="text-white/90 text-lg font-display hover:no-underline hover:text-white" data-testid="trigger-electro-therapy">
-                What's Electro Therapy?
-              </AccordionTrigger>
-              <AccordionContent className="text-white/70 leading-relaxed text-base" data-testid="content-electro-therapy">
-                Electro-therapy employs the use of electricity and energy to treat various physical ailments and diseases. Many medical professionals have discovered that electro-therapy provides an efficient substitute for drug therapies. Electro-medicine has a remarkable and unprecedented track record of being both safe and effective.
-              </AccordionContent>
-            </AccordionItem>
-
-            <AccordionItem value="how-electro" className="border-white/10" data-testid="accordion-how-electro">
-              <AccordionTrigger className="text-white/90 text-lg font-display hover:no-underline hover:text-white" data-testid="trigger-how-electro">
-                How Does Electro Therapy Work?
-              </AccordionTrigger>
-              <AccordionContent className="text-white/70 leading-relaxed text-base space-y-4" data-testid="content-how-electro">
-                <p>Simply put, the human body naturally produces electricity which is used to combat any health problems : the electrical impulses in our body are responsible for bodily functions and healing. Electro- therapy aims to mimic these electrical impulses using harmonic frequencies, wave energy, and energetic frequencies to stimulate the body and create a perfect health equilibrium.</p>
-                <p>Additionally, the brain is powered by electricity, and its complex networks of electrical signals and electromagnetic fields can be revitalized through harmonic electrical stimulation, leading to positive effects on mental health and effectiveness leading to a sense of peace and harmony.</p>
-              </AccordionContent>
-            </AccordionItem>
-
-            <AccordionItem value="one-of-a-kind" className="border-white/10" data-testid="accordion-one-of-a-kind">
-              <AccordionTrigger className="text-white/90 text-lg font-display hover:no-underline hover:text-white" data-testid="trigger-one-of-a-kind">
-                How is this treatment One-of-a-Kind?
-              </AccordionTrigger>
-              <AccordionContent className="text-white/70 leading-relaxed text-base" data-testid="content-one-of-a-kind">
-                <div className="space-y-4">
-                  <p>To begin our session, we will enjoy a cup of Gynostemma Tea infused with Reishi and Schisandra. This Elixir has the ability to gently penetrate all of your organs, aiding in the process of harmonizing your body, mind, and spirit. During this time, I will share some of my most profound secrets for nourishing your three treasures and take your biohacking to the next level.</p>
-                  <p>Following this, I will guide you through a 15-minute breathing exercise that will accelerate your relaxation process for an extended period of time. We will then move into using some of the most advanced healing technologies available today, in a gentle and gradual transition.</p>
-
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-6">
-                    {treatments.map((t) => (
-                      <div
-                        key={t.num}
-                        className="card-glass rounded-md p-5 space-y-3"
-                        data-testid={`card-treatment-${t.num}`}
-                      >
-                        <div className="flex items-center gap-3">
-                          <div className="w-9 h-9 rounded-full flex items-center justify-center bg-[#c97a8e]/20 text-[#e8a4b8] shrink-0">
-                            <t.icon className="w-4 h-4" />
-                          </div>
-                          <h4 className="font-display text-sm font-bold text-white/90">
-                            {t.num}) {t.title}
-                          </h4>
-                        </div>
-                        <p className="text-white/60 text-sm leading-relaxed">{t.description}</p>
-                      </div>
-                    ))}
-                  </div>
-                </div>
-              </AccordionContent>
-            </AccordionItem>
-
-            <AccordionItem value="experience" className="border-white/10" data-testid="accordion-experience">
-              <AccordionTrigger className="text-white/90 text-lg font-display hover:no-underline hover:text-white" data-testid="trigger-experience">
-                What you will experience during this treatment?
-              </AccordionTrigger>
-              <AccordionContent className="text-white/70 leading-relaxed text-base space-y-4" data-testid="content-experience">
-                <p>During the treatment, you may experience a gentle dissociation from your everyday mental chatter, allowing you to enter a deep state of relaxation and inner stillness. This state facilitates profound regeneration at the cellular level.</p>
-                <p>The combination of breathwork and electro therapy works synergistically to stabilize the limbic system, which governs our emotional responses and stress reactions. This stabilization promotes the natural production of key neurotransmitters that are essential for mood regulation, mental clarity, and overall well-being.</p>
-                <p>After the treatment many people feel less stressed, more peaceful, more energetic and creative typically experiencing better sleep as well.</p>
-              </AccordionContent>
-            </AccordionItem>
-
-            <AccordionItem value="benefits" className="border-white/10 border-b-0" data-testid="accordion-benefits">
-              <AccordionTrigger className="text-white/90 text-lg font-display hover:no-underline hover:text-white" data-testid="trigger-benefits">
-                Who can benefit from this quantum frequency healing?
-              </AccordionTrigger>
-              <AccordionContent className="text-white/70 leading-relaxed text-base" data-testid="content-benefits">
-                <ul className="space-y-2">
-                  {benefits.map((benefit, i) => (
-                    <li key={i} className="flex items-center gap-3" data-testid={`benefit-item-${i}`}>
-                      <Check className="w-4 h-4 text-[#c97a8e] shrink-0" />
-                      <span>{benefit}</span>
-                    </li>
-                  ))}
-                </ul>
-              </AccordionContent>
-            </AccordionItem>
-          </Accordion>
+        <div className="card-glass rounded-md p-6 sm:p-8 space-y-4" data-testid="section-intro">
+          <p className="text-[#e8a4b8] font-semibold text-lg" data-testid="text-tagline">
+            1hr 15min of Pure Cellular Bliss
+          </p>
+          <p className="text-white/80 leading-relaxed text-base" data-testid="text-intro">
+            Ready to upgrade your system? This isn't your average relaxation session. We're combining ancient breathwork with cutting-edge frequency tech to help you drop the mental noise and recalibrate your entire body. It's biohacking meets deep soul work.
+          </p>
         </div>
 
-        <div className="card-glass rounded-md p-6 sm:p-8 text-center space-y-2" data-testid="section-practical-tools">
-          <p className="text-white/80 leading-relaxed text-base">
-            You will leave with practical tools as well as insights and inspirations you can apply to your business and/or to your personal life anytime. Comfortable clothing is recommended.
+        <div className="card-glass rounded-md p-6 sm:p-8 space-y-6" data-testid="section-experience">
+          <h3 className="font-display text-2xl font-bold text-gradient-purple" data-testid="text-experience-heading">
+            The Experience
+          </h3>
+          <p className="text-white/80 leading-relaxed text-base" data-testid="text-experience-intro">
+            We start with a cup of Gynostemma &amp; Reishi elixir: a literal "immortality tea" to prep your organs, while we talk on how to protect your energy. Then, we dive in:
           </p>
+          <ul className="space-y-4">
+            <li className="flex items-start gap-3" data-testid="experience-item-1">
+              <Check className="w-5 h-5 text-[#c97a8e] shrink-0 mt-0.5" />
+              <p className="text-white/80 leading-relaxed text-base">
+                <span className="text-white font-semibold">15 Min Precision Breathwork:</span> To shut off the "fight or flight" and get you centered.
+              </p>
+            </li>
+            <li className="flex items-start gap-3" data-testid="experience-item-2">
+              <Check className="w-5 h-5 text-[#c97a8e] shrink-0 mt-0.5" />
+              <p className="text-white/80 leading-relaxed text-base">
+                <span className="text-white font-semibold">The Tech Stack:</span> We use non-invasive tools like the Vielight Photobiomodulation device, and the Photon Genie. Think of it as a wireless charger for your cells, stimulating serotonin and clearing out the "junk" in your lymphatic system.
+              </p>
+            </li>
+            <li className="flex items-start gap-3" data-testid="experience-item-3">
+              <Check className="w-5 h-5 text-[#c97a8e] shrink-0 mt-0.5" />
+              <p className="text-white/80 leading-relaxed text-base">
+                <span className="text-white font-semibold">The Tesla Touch:</span> We use Purple Harmony Plates to get your energy field back in alignment.
+              </p>
+            </li>
+          </ul>
+        </div>
+
+        <div className="card-glass rounded-md p-6 sm:p-8 space-y-6" data-testid="section-why">
+          <h3 className="font-display text-2xl font-bold text-gradient-purple" data-testid="text-why-heading">
+            Why do it?
+          </h3>
+          <p className="text-white/80 leading-relaxed text-base" data-testid="text-why-intro">
+            If you're feeling burnt out, foggy, or just "off," this is the circuit breaker you need. Most people leave feeling lighter, insanely creative, and finally able to get a decent night's sleep. It's perfect for:
+          </p>
+          <ul className="space-y-3">
+            {benefits.map((benefit, i) => (
+              <li key={i} className="flex items-center gap-3" data-testid={`benefit-item-${i}`}>
+                <Check className="w-4 h-4 text-[#c97a8e] shrink-0" />
+                <span className="text-white/80">{benefit}</span>
+              </li>
+            ))}
+          </ul>
         </div>
 
         <div className="card-glass rounded-md p-6 sm:p-8 space-y-6" data-testid="section-rates">
           <h3 className="font-display text-2xl font-bold text-gradient-purple text-center" data-testid="text-rates-heading">
-            Rates
+            Investment
           </h3>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
             <div className="card-glass rounded-md p-5 text-center space-y-2" data-testid="rate-1">
-              <p className="text-2xl font-bold text-gradient-rose">$133</p>
-              <p className="text-white/60 text-sm">USD for 1 hr 15 min</p>
+              <p className="text-2xl font-bold text-gradient-rose">$155 CAD</p>
+              <p className="text-white/60 text-sm font-medium">Single Session</p>
+              <p className="text-white/40 text-xs">75 min</p>
             </div>
             <div className="card-glass rounded-md p-5 text-center space-y-2" data-testid="rate-2">
-              <p className="text-2xl font-bold text-gradient-rose">$233</p>
-              <p className="text-white/60 text-sm">USD for 2 hours</p>
+              <p className="text-2xl font-bold text-gradient-rose">$250 CAD</p>
+              <p className="text-white/60 text-sm font-medium">Deep Dive</p>
+              <p className="text-white/40 text-xs">2 hrs</p>
             </div>
-            <div className="card-glass rounded-md p-5 text-center space-y-2 relative" data-testid="rate-3">
-              <p className="text-2xl font-bold text-gradient-rose">$1066</p>
-              <p className="text-white/60 text-sm">USD if you book for 10 sessions</p>
+            <div className="card-glass rounded-md p-5 text-center space-y-2" data-testid="rate-3">
+              <p className="text-2xl font-bold text-gradient-rose">$1080 CAD</p>
+              <p className="text-white/60 text-sm font-medium">The Transformation</p>
+              <p className="text-white/40 text-xs">10 sessions</p>
             </div>
           </div>
           <p className="text-center text-white/70 italic text-sm" data-testid="text-ten-sessions">
-            You will not be the same person after your 10th session, it will change your life!
+            You won't be the same person by the end of this, promise.
+          </p>
+          <p className="text-center text-white/60 text-sm" data-testid="text-wear-comfy">
+            Wear something comfy.
           </p>
         </div>
 
         <div className="card-glass rounded-md p-6 sm:p-8 text-center space-y-4" data-testid="section-globetrotter">
           <p className="text-white/70 leading-relaxed text-base">
-            As a globetrotter, I am available for sessions worldwide. Whether you are in the US, Europe, or anywhere else on the planet, we can connect and work together.
+            As a globetrotter, I am available for sessions worldwide. Whether you are in Canada, Asia, or anywhere in between, we can connect and work together :)
           </p>
           <Link href="/contact">
             <Button

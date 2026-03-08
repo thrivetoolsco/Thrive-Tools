@@ -1,12 +1,22 @@
 import PageLayout from "@/components/PageLayout";
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { ArrowRight, User, Heart, Briefcase } from "lucide-react";
 
 export default function Breathwork() {
   return (
     <PageLayout title="Breathwork">
       <div className="space-y-12" data-testid="section-breathwork">
+        <div className="flex justify-center">
+          <img
+            src="https://i0.wp.com/thrivetools.co/wp-content/uploads/2023/05/breathwork2.webp?fit=1400%2C910&ssl=1"
+            alt="Breathwork practice"
+            className="rounded-md max-w-full glow-purple"
+            data-testid="img-breathwork-top"
+          />
+        </div>
+
         <div className="card-glass rounded-md p-6 sm:p-8 space-y-6" data-testid="section-intro">
           <p className="text-white/80 leading-relaxed text-base" data-testid="text-intro-1">
             Your breath has been with you since day one. It's the only thing that never leaves, yet most of us hardly notice it's there.
@@ -24,7 +34,7 @@ export default function Breathwork() {
             src="https://i0.wp.com/thrivetools.co/wp-content/uploads/2023/03/breathwork.jpeg?fit=564%2C642&ssl=1"
             alt="Breathwork session"
             className="rounded-md max-w-full sm:max-w-md glow-rose"
-            data-testid="img-breathwork-top"
+            data-testid="img-breathwork-mid"
           />
         </div>
 
@@ -32,58 +42,65 @@ export default function Breathwork() {
           Breathwork Sessions
         </h3>
 
-        <div className="card-glass rounded-md p-6 sm:p-8 space-y-4" data-testid="section-just-for-you">
-          <div className="flex items-center gap-3 mb-2">
-            <div className="w-8 h-8 rounded-full flex items-center justify-center bg-[#c97a8e]/20 text-[#e8a4b8] shrink-0">
-              <User className="w-4 h-4" />
-            </div>
-            <h4 className="font-display text-xl font-bold text-white" data-testid="text-just-for-you-heading">Breathwork just for You</h4>
-          </div>
-          <p className="text-white/80 leading-relaxed text-base" data-testid="text-just-for-you-1">
-            This is for the people ready to stop skimming the surface and actually do the work. We aren't just "practicing breathing"; we're using your breath to get under the hood, unstick those old emotional blocks, and clear out the "noise" you've been carrying around.
-          </p>
-          <p className="text-white/80 leading-relaxed text-base" data-testid="text-just-for-you-2">
-            Whether you're currently in the middle of a mess, looking for a bit more clarity, or just feel like there's a better version of you waiting to show up, we'll meet you exactly where you are. No fluff, just deep healing and a chance to finally feel like yourself again.
-          </p>
-        </div>
+        <div className="card-glass rounded-md p-6 sm:p-8" data-testid="section-sessions">
+          <Accordion type="single" collapsible className="w-full">
+            <AccordionItem value="just-for-you" className="border-white/10" data-testid="accordion-just-for-you">
+              <AccordionTrigger className="text-white/90 text-lg font-display hover:no-underline hover:text-white" data-testid="trigger-just-for-you">
+                <div className="flex items-center gap-3">
+                  <div className="w-8 h-8 rounded-full flex items-center justify-center bg-[#c97a8e]/20 text-[#e8a4b8] shrink-0">
+                    <User className="w-4 h-4" />
+                  </div>
+                  <span>Breathwork just for You</span>
+                </div>
+              </AccordionTrigger>
+              <AccordionContent className="text-white/80 leading-relaxed text-base space-y-4 pt-2" data-testid="content-just-for-you">
+                <p data-testid="text-just-for-you-1">
+                  This is for the people ready to stop skimming the surface and actually do the work. We aren't just "practicing breathing"; we're using your breath to get under the hood, unstick those old emotional blocks, and clear out the "noise" you've been carrying around.
+                </p>
+                <p data-testid="text-just-for-you-2">
+                  Whether you're currently in the middle of a mess, looking for a bit more clarity, or just feel like there's a better version of you waiting to show up, we'll meet you exactly where you are. No fluff, just deep healing and a chance to finally feel like yourself again.
+                </p>
+              </AccordionContent>
+            </AccordionItem>
 
-        <div className="card-glass rounded-md p-6 sm:p-8 space-y-4" data-testid="section-couples">
-          <div className="flex items-center gap-3 mb-2">
-            <div className="w-8 h-8 rounded-full flex items-center justify-center bg-[#c97a8e]/20 text-[#e8a4b8] shrink-0">
-              <Heart className="w-4 h-4" />
-            </div>
-            <h4 className="font-display text-xl font-bold text-white" data-testid="text-couples-heading">Breathwork for couples</h4>
-          </div>
-          <p className="text-white/80 leading-relaxed text-base" data-testid="text-couples-1">
-            Relationships can get noisy. This session is about hitting the "pause" button and actually getting back in sync with each other. By simply breathing together, you'll learn to pick up on each other's vibes without needing a million words to explain it.
-          </p>
-          <p className="text-white/80 leading-relaxed text-base" data-testid="text-couples-2">
-            It's a low pressure way to soften the edges of an argument, build some real trust, and feel closer than you have in a while. Less talking, more connecting.
-          </p>
-        </div>
+            <AccordionItem value="couples" className="border-white/10" data-testid="accordion-couples">
+              <AccordionTrigger className="text-white/90 text-lg font-display hover:no-underline hover:text-white" data-testid="trigger-couples">
+                <div className="flex items-center gap-3">
+                  <div className="w-8 h-8 rounded-full flex items-center justify-center bg-[#c97a8e]/20 text-[#e8a4b8] shrink-0">
+                    <Heart className="w-4 h-4" />
+                  </div>
+                  <span>Breathwork for Couples</span>
+                </div>
+              </AccordionTrigger>
+              <AccordionContent className="text-white/80 leading-relaxed text-base space-y-4 pt-2" data-testid="content-couples">
+                <p data-testid="text-couples-1">
+                  Relationships can get noisy. This session is about hitting the "pause" button and actually getting back in sync with each other. By simply breathing together, you'll learn to pick up on each other's vibes without needing a million words to explain it.
+                </p>
+                <p data-testid="text-couples-2">
+                  It's a low pressure way to soften the edges of an argument, build some real trust, and feel closer than you have in a while. Less talking, more connecting.
+                </p>
+              </AccordionContent>
+            </AccordionItem>
 
-        <div className="flex justify-center">
-          <img
-            src="https://i0.wp.com/thrivetools.co/wp-content/uploads/2023/05/breathwork2.webp?fit=1400%2C910&ssl=1"
-            alt="Breathwork practice"
-            className="rounded-md max-w-full glow-purple"
-            data-testid="img-breathwork-bottom"
-          />
-        </div>
-
-        <div className="card-glass rounded-md p-6 sm:p-8 space-y-4" data-testid="section-business">
-          <div className="flex items-center gap-3 mb-2">
-            <div className="w-8 h-8 rounded-full flex items-center justify-center bg-[#c97a8e]/20 text-[#e8a4b8] shrink-0">
-              <Briefcase className="w-4 h-4" />
-            </div>
-            <h4 className="font-display text-xl font-bold text-white" data-testid="text-business-heading">Breathwork for your business</h4>
-          </div>
-          <p className="text-white/80 leading-relaxed text-base" data-testid="text-business-1">
-            Chronic stress isn't just a buzzword; it's the reason your team is tired, distracted, and checked out.
-          </p>
-          <p className="text-white/80 leading-relaxed text-base" data-testid="text-business-2">
-            Bringing breathwork into your work space is a simple way to actually support your people. It's about clearing the mental fog, lowering the collective heart rate, and building a culture where people show up focused because they actually feel good; not just because they have a deadline.
-          </p>
+            <AccordionItem value="business" className="border-white/10 border-b-0" data-testid="accordion-business">
+              <AccordionTrigger className="text-white/90 text-lg font-display hover:no-underline hover:text-white" data-testid="trigger-business">
+                <div className="flex items-center gap-3">
+                  <div className="w-8 h-8 rounded-full flex items-center justify-center bg-[#c97a8e]/20 text-[#e8a4b8] shrink-0">
+                    <Briefcase className="w-4 h-4" />
+                  </div>
+                  <span>Breathwork for Your Business</span>
+                </div>
+              </AccordionTrigger>
+              <AccordionContent className="text-white/80 leading-relaxed text-base space-y-4 pt-2" data-testid="content-business">
+                <p data-testid="text-business-1">
+                  Chronic stress isn't just a buzzword; it's the reason your team is tired, distracted, and checked out.
+                </p>
+                <p data-testid="text-business-2">
+                  Bringing breathwork into your work space is a simple way to actually support your people. It's about clearing the mental fog, lowering the collective heart rate, and building a culture where people show up focused because they actually feel good; not just because they have a deadline.
+                </p>
+              </AccordionContent>
+            </AccordionItem>
+          </Accordion>
         </div>
 
         <div className="card-glass rounded-md p-6 sm:p-8 text-center space-y-4" data-testid="section-globetrotter">
