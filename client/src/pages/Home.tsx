@@ -108,13 +108,13 @@ export default function Home() {
 
         <div className="relative z-10 w-full max-w-5xl mx-auto px-6 sm:px-8 text-center pt-24 pb-8">
           <div className="mb-8 flex justify-center">
-            <div className="w-full max-w-3xl rounded-2xl overflow-hidden shadow-2xl shadow-black/40" data-testid="video-hero">
+            <div className="w-full max-w-3xl shadow-2xl shadow-black/40" data-testid="video-hero">
               <video
                 autoPlay
                 loop
                 muted
                 playsInline
-                className="w-full h-auto object-cover"
+                className="w-full h-auto"
                 src="/hero-video.mp4"
               />
             </div>
