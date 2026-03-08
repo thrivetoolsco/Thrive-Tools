@@ -78,7 +78,7 @@ export default function PsilocybinForestWalk() {
 
         <div className="card-glass rounded-md p-6 sm:p-8 text-center space-y-4" data-testid="section-cta">
           <p className="text-white/70 leading-relaxed text-base" data-testid="text-cta">
-            Ready to clear the mental fog and get back to your natural state?
+            Ready to clear the mental fog and uplift your vibes?
           </p>
           <Link href="/contact">
             <Button
