@@ -138,8 +138,8 @@ export default function Home() {
             You're being sold bio-unavailable influencer pills that leave you in
             a brain fog while your bank account takes the hit.
             <br /><br />
-            I'm here for the evidence based protocols that finally clears the
-            fog and raises the frequency.
+            I'm here for the evidence based protocols that finally clear the
+            fog and raise the frequency.
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-8">
