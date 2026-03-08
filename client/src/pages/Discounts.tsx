@@ -26,7 +26,7 @@ const vitaminsSupplements: DiscountItem[] = [
   {
     name: "IM8",
     description: "By far the best all in 1 supplement/ multi vitamin. Also contains probiotics & electrolytes",
-    code: "THRIVE8",
+    code: "THRIVE10",
     url: "https://im8health.com/",
   },
   {
