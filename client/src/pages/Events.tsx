@@ -28,17 +28,19 @@ export default function Events() {
             </h2>
           </div>
           <p className="text-white/60 text-base leading-relaxed mb-6 max-w-md mx-auto" data-testid="text-newsletter-subtitle">
-            Want to stay in the loop? Just send me an email and I'll add you to the list. No forms, no fuss — just real updates.
+            Want to stay in the loop? Just send me an email and I'll add you to the list. No forms, no fuss. Just real updates.
           </p>
-          <a
-            href="mailto:thrivetools.co@gmail.com?subject=Newsletter Subscription"
-            className="inline-flex items-center gap-2 bg-[#c97a8e] hover:bg-[#b56d7e] text-white font-semibold px-6 py-3 rounded-full transition-colors"
-            data-testid="link-subscribe-email"
-          >
-            <Mail className="w-4 h-4" />
-            thrivetools.co@gmail.com
-            <ArrowRight className="w-4 h-4" />
-          </a>
+          <div className="flex justify-center">
+            <a
+              href="mailto:thrivetools.co@gmail.com?subject=Newsletter Subscription"
+              className="inline-flex items-center gap-2 bg-[#c97a8e] hover:bg-[#b56d7e] text-white font-semibold px-6 py-3 rounded-full transition-colors"
+              data-testid="link-subscribe-email"
+            >
+              <Mail className="w-4 h-4 shrink-0" />
+              <span>thrivetools.co@gmail.com</span>
+              <ArrowRight className="w-4 h-4 shrink-0" />
+            </a>
+          </div>
         </section>
 
         <section data-testid="section-future-events">
