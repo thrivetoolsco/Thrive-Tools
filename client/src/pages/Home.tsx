@@ -5,9 +5,9 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight, ChevronDown } from "lucide-react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
+import edenPhoto2 from "@assets/Generate_a_new_image_so_that_the_resolution_looks__delpmaspu~4_1772975930027.png";
 
 const EDEN_PHOTO_1 = "https://i0.wp.com/thrivetools.co/wp-content/uploads/2026/03/Screenshot_20260305_054256_Photos.jpg?resize=781%2C814&ssl=1";
-const EDEN_PHOTO_2 = "https://i0.wp.com/thrivetools.co/wp-content/uploads/2026/03/Screenshot_20260305_061408_Photos.jpg?resize=781%2C1062&ssl=1";
 
 const testimonials = [
   { name: "Client Testimonial 1", videoId: "QNrE8TVVCf8", isShort: true },
@@ -294,7 +294,7 @@ export default function Home() {
                 style={{ border: "1px solid rgba(155,111,165,0.2)" }}
               >
                 <img
-                  src={EDEN_PHOTO_2}
+                  src={edenPhoto2}
                   alt="Eden - Thrive Tools"
                   className="w-full h-auto object-cover"
                 />
