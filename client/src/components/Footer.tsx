@@ -54,7 +54,7 @@ export default function Footer() {
               {[
                 { label: "Home", href: "/" },
                 { label: "Personalized Guidance", href: "/personalized-guidance" },
-                { label: "Quantum Healing", href: "/quantum-healing" },
+                { label: "Somatic Reset", href: "/quantum-healing" },
                 { label: "Breathwork", href: "/breathwork" },
                 { label: "Events", href: "/events" },
               ].map((item) => (
