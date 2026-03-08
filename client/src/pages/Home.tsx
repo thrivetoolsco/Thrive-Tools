@@ -255,7 +255,7 @@ export default function Home() {
                 <p className="text-white/90 text-lg">
                   I'm not selling you a "magic pill." I'm a curator. I've vetted
                   the specific herbs and tools that actually work! No random
-                  Amazon finds, just proven chemistry shifters.
+                  Amazon finds, proven alchemical upgrades for your biology.
                 </p>
 
                 <div className="mt-8">
