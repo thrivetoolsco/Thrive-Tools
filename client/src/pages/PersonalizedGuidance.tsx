@@ -13,7 +13,7 @@ export default function PersonalizedGuidance() {
           </p>
 
           <p className="text-white/80 leading-relaxed text-base" data-testid="text-guidance-toolkit">
-            I've spent years testing and curating a toolkit of high quality supplements, tech-backed gear, and body care that I actually trust. You won't find any "miracle cures" here. Just practical, science backed resources like breathwork and frequency tools designed to help your nervous system finally chill out.
+            I've spent years testing and curating a toolkit of high quality supplements, tech-backed gear, and body care that I actually trust. You won't find any "miracle cures" here. Just practical, science backed resources like breathwork and longevity tools designed to help your nervous system finally chill out.
           </p>
 
           <p className="text-white/80 leading-relaxed text-base" data-testid="text-guidance-hustle">
