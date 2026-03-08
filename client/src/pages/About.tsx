@@ -47,7 +47,7 @@ export default function About() {
           </h3>
           <div className="space-y-4 text-white/70 leading-relaxed">
             <p>
-              Born and raised in Morocco, I grew up at the crossroads of African, Middle Eastern, and European vibes. Before I dove into wellness, I was deep in the world of urban farming. I spent years designing food forests and micro farming models from the UK to Canada, even developing strategies to reverse desertification.
+              Born and raised in Morocco, I grew up at the crossroads of African, Middle Eastern, and European vibes. Before I dove into wellness, I was deep in the world of urban farming. I spent years designing food forests and micro farming models from the UK to Canada, even developing strategies to reverse desertification (in Morocco).
             </p>
             <p>
               For me, the earth and the body are mirrors. I've mastered the art of creating systems that work with nature, not against it. (And yes, that definitely translates to the kitchen : I'm a massive fan of vegetarian cooking using "live" ingredients to fuel the soul).
