@@ -1,6 +1,4 @@
 import PageLayout from "@/components/PageLayout";
-import { Link } from "wouter";
-import { Button } from "@/components/ui/button";
 import { ArrowRight, Clock, Mail } from "lucide-react";
 import thriveImg from "@assets/IMG-20260307-WA0015_1772934779859.jpg";
 
@@ -73,16 +71,15 @@ export default function Thrive1() {
 
         <div className="card-glass rounded-md p-6 sm:p-8 text-center space-y-4" data-testid="section-newsletter">
           <p className="text-white/70 leading-relaxed text-base" data-testid="text-newsletter">
-            Want to stay in the loop on future dates and locations? Join the newsletter so you don't miss the next one.
+            Want to stay in the loop on future dates and locations? Just send me an email and I'll add you to the list.
           </p>
-          <Link href="/events">
-            <Button
-              className="bg-[#c97a8e] border-[#c97a8e] text-white mt-2"
-              data-testid="link-events-subscribe"
-            >
-              Subscribe to Newsletter <ArrowRight className="w-4 h-4 ml-2" />
-            </Button>
-          </Link>
+          <a
+            href="mailto:thrivetools.co@gmail.com?subject=Newsletter Subscription"
+            className="inline-flex items-center gap-2 bg-[#c97a8e] hover:bg-[#b56d7e] text-white font-semibold px-6 py-3 rounded-full transition-colors mt-2"
+            data-testid="link-events-subscribe"
+          >
+            thrivetools.co@gmail.com <ArrowRight className="w-4 h-4" />
+          </a>
         </div>
       </div>
     </PageLayout>

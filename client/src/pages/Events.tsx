@@ -1,10 +1,6 @@
-import { useState } from "react";
 import { Link } from "wouter";
 import PageLayout from "@/components/PageLayout";
-import { Input } from "@/components/ui/input";
-import { Button } from "@/components/ui/button";
-import { useToast } from "@/hooks/use-toast";
-import { Mail, ArrowRight, Calendar, Sparkles } from "lucide-react";
+import { Mail, ArrowRight, Calendar } from "lucide-react";
 
 const futureEvents = [
   { id: "docu-thrive-1", title: "Docu Evening: Thrive 1", href: "/events/thrive-1" },
@@ -21,34 +17,6 @@ const pastEvents = [
 ];
 
 export default function Events() {
-  const { toast } = useToast();
-  const [email, setEmail] = useState("");
-  const [subscribed, setSubscribed] = useState(false);
-  const [submitting, setSubmitting] = useState(false);
-
-  const handleSubscribe = async (e: React.FormEvent) => {
-    e.preventDefault();
-    if (!email.trim()) return;
-    setSubmitting(true);
-    try {
-      const res = await fetch("/api/newsletter", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ email }),
-      });
-      if (!res.ok) throw new Error("Failed");
-      setSubscribed(true);
-    } catch {
-      toast({
-        title: "Subscribed!",
-        description: "Thank you for subscribing to the newsletter.",
-      });
-      setSubscribed(true);
-    } finally {
-      setSubmitting(false);
-    }
-  };
-
   return (
     <PageLayout title="Events">
       <div className="space-y-16">
@@ -59,34 +27,18 @@ export default function Events() {
               Subscribe to my Newsletter
             </h2>
           </div>
-          <p className="text-white/50 text-sm mb-6" data-testid="text-newsletter-subtitle">No Spam, I promise</p>
-
-          {subscribed ? (
-            <div className="flex items-center justify-center gap-2 text-[#c97a8e]" data-testid="text-subscribe-confirmation">
-              <Sparkles className="w-5 h-5" />
-              <span className="font-medium">Thank you for subscribing!</span>
-            </div>
-          ) : (
-            <form onSubmit={handleSubscribe} className="flex flex-col sm:flex-row items-center justify-center gap-3 max-w-md mx-auto">
-              <Input
-                type="email"
-                placeholder="your@email.com"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-                required
-                className="bg-white/5 border-white/15 text-white placeholder:text-white/30 focus-visible:ring-[#c97a8e]/50"
-                data-testid="input-email"
-              />
-              <Button
-                type="submit"
-                disabled={submitting}
-                className="bg-[#c97a8e] text-white border-[#c97a8e] shrink-0"
-                data-testid="button-subscribe"
-              >
-                {submitting ? "Subscribing…" : <>Subscribe <ArrowRight className="w-4 h-4 ml-1" /></>}
-              </Button>
-            </form>
-          )}
+          <p className="text-white/60 text-base leading-relaxed mb-6 max-w-md mx-auto" data-testid="text-newsletter-subtitle">
+            Want to stay in the loop? Just send me an email and I'll add you to the list. No forms, no fuss — just real updates.
+          </p>
+          <a
+            href="mailto:thrivetools.co@gmail.com?subject=Newsletter Subscription"
+            className="inline-flex items-center gap-2 bg-[#c97a8e] hover:bg-[#b56d7e] text-white font-semibold px-6 py-3 rounded-full transition-colors"
+            data-testid="link-subscribe-email"
+          >
+            <Mail className="w-4 h-4" />
+            thrivetools.co@gmail.com
+            <ArrowRight className="w-4 h-4" />
+          </a>
         </section>
 
         <section data-testid="section-future-events">

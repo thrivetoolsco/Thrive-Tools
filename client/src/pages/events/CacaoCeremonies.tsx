@@ -1,6 +1,4 @@
 import PageLayout from "@/components/PageLayout";
-import { Link } from "wouter";
-import { Button } from "@/components/ui/button";
 import { ArrowRight, Check } from "lucide-react";
 import danceImg from "@assets/IMG-20260307-WA0018_1772935245312.jpg";
 
@@ -64,14 +62,16 @@ export default function CacaoCeremonies() {
         </div>
 
         <div className="card-glass rounded-md p-6 sm:p-8 text-center space-y-4" data-testid="section-newsletter">
-          <Link href="/events">
-            <Button
-              className="bg-[#c97a8e] border-[#c97a8e] text-white"
-              data-testid="link-subscribe-newsletter"
-            >
-              Subscribe to Newsletter <ArrowRight className="w-4 h-4 ml-2" />
-            </Button>
-          </Link>
+          <p className="text-white/70 leading-relaxed text-base">
+            Want to catch the next location and date? Just send me an email and I'll add you to the list.
+          </p>
+          <a
+            href="mailto:thrivetools.co@gmail.com?subject=Newsletter Subscription"
+            className="inline-flex items-center gap-2 bg-[#c97a8e] hover:bg-[#b56d7e] text-white font-semibold px-6 py-3 rounded-full transition-colors"
+            data-testid="link-subscribe-newsletter"
+          >
+            thrivetools.co@gmail.com <ArrowRight className="w-4 h-4" />
+          </a>
         </div>
 
         <div className="card-glass rounded-md p-6 sm:p-8" data-testid="section-disclaimer">
