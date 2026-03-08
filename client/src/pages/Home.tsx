@@ -135,8 +135,11 @@ export default function Home() {
             data-testid="text-hero-subheadline"
           >
             Most "wellness" is just expensive marketing in a synthetic shell.
-            You're sold influencer pills that don't absorb, leaving you in a low
-            energy fog while your bank account takes the hit.
+            You're being sold bio-unavailable influencer pills that leave you in
+            a brain fog while your bank account takes the hit.
+            <br /><br />
+            I'm here for the evidence based protocols that finally clears the
+            fog and raises the frequency.
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-8">
