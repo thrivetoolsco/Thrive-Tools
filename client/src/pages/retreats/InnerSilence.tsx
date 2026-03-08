@@ -1,66 +1,71 @@
 import PageLayout from "@/components/PageLayout";
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, Check } from "lucide-react";
+import silenceImg from "@assets/IMG-20260307-WA0014_1772934650614.jpg";
+
+const toolkit = [
+  { label: "The Transition", desc: "2 days of 1-on-1 guidance to help you settle into the stillness." },
+  { label: "The Tech", desc: "Access to frequency tools to help shift your energy and deepen the healing." },
+  { label: "The Fuel", desc: "Tonic herbs to balance your Jing, Qi, and Shen, plus an intermittent fasting protocol with clean, vegan meals." },
+  { label: "The Timeline", desc: "While you can stay for less, I recommend 14 days to really let the transformation stick." },
+];
 
 export default function InnerSilence() {
   return (
     <PageLayout title="Inner Silence" backLabel="Home" backHref="/">
       <div className="space-y-12" data-testid="section-inner-silence">
-        <div className="card-glass rounded-md p-6 sm:p-8 space-y-6" data-testid="section-intro">
-          <p className="text-[#e8a4b8] text-lg sm:text-xl font-display font-semibold leading-relaxed" data-testid="text-opening">
-            This silent retreat provides a safe and supportive space for you to dive deep into your truth seeking and journey of self-discovery.
+
+        <div className="card-glass rounded-md p-6 sm:p-8 space-y-4" data-testid="section-intro">
+          <p className="text-[#e8a4b8] text-lg sm:text-xl font-display italic leading-relaxed" data-testid="text-subtitle">
+            The Big Quiet: An Off-Grid Silent Retreat
+          </p>
+          <p className="text-white/60 font-medium text-base" data-testid="text-tagline">
+            Unplug to Tune In
+          </p>
+          <p className="text-white/80 leading-relaxed text-base" data-testid="text-opening">
+            When was the last time you actually heard yourself think? No notifications, no "hustle," just the woods and your own headspace. This is a dedicated space to drop the performance, get quiet, and finally meet yourself where you're at.
           </p>
         </div>
 
         <div className="flex justify-center">
           <img
-            src="https://i0.wp.com/thrivetools.co/wp-content/uploads/2023/03/silent_retreat.jpeg?fit=564%2C1002&ssl=1"
+            src={silenceImg}
             alt="Inner Silence Silent Retreat"
             className="rounded-md max-w-full sm:max-w-sm glow-purple"
             data-testid="img-inner-silence"
           />
         </div>
 
-        <div className="card-glass rounded-md p-6 sm:p-8 space-y-6" data-testid="section-description">
-          <p className="text-white/80 leading-relaxed text-base" data-testid="text-description-1">
-            You will be accommodated in a modest, off-grid cabin located in the heart of a forest, surrounded by the soothing sounds of nature. This serene environment provides the perfect backdrop for deep introspection and spiritual growth, away from the distractions of modern life.
-          </p>
-          <p className="text-white/80 leading-relaxed text-base" data-testid="text-description-2">
-            This retreat is transcendental and unique of its kind as it will provide you with all the right tools you need to release inhibiting mental, emotional and behavioral patterns and find true inner peace, freedom, joy and love.
+        <div className="card-glass rounded-md p-6 sm:p-8 space-y-4" data-testid="section-setup">
+          <h3 className="font-display text-2xl font-bold text-gradient-purple" data-testid="text-setup-heading">
+            The Setup
+          </h3>
+          <p className="text-white/80 leading-relaxed text-base" data-testid="text-setup">
+            You'll be living in a minimalist, off grid cabin deep in the forest. It's rustic and grounding (think wood stoves and birdsong), the kind of reset your nervous system is probably screaming for.
           </p>
         </div>
 
-        <div className="card-glass rounded-md p-6 sm:p-8 space-y-6" data-testid="section-details">
-          <h3 className="font-display text-2xl font-bold text-gradient-purple text-center" data-testid="text-details-heading">
-            Retreat Details
+        <div className="card-glass rounded-md p-6 sm:p-8 space-y-6" data-testid="section-toolkit">
+          <h3 className="font-display text-2xl font-bold text-gradient-purple" data-testid="text-toolkit-heading">
+            The Toolkit
           </h3>
-          <ul className="space-y-3 ml-4" data-testid="list-details">
-            <li className="text-white/70 text-base flex items-start gap-3">
-              <span className="text-[#c97a8e] mt-1 shrink-0">&#8226;</span>
-              During the first 2 days, you will receive personal assistance and guidance to help you settle into the silence and establish your practice
-            </li>
-            <li className="text-white/70 text-base flex items-start gap-3">
-              <span className="text-[#c97a8e] mt-1 shrink-0">&#8226;</span>
-              Access to quantum technologies designed to accelerate healing and raise your vibrational frequency
-            </li>
-            <li className="text-white/70 text-base flex items-start gap-3">
-              <span className="text-[#c97a8e] mt-1 shrink-0">&#8226;</span>
-              Tonic herbs provided to nourish and balance the 3 treasures: Jing, Qi, and Shen
-            </li>
-            <li className="text-white/70 text-base flex items-start gap-3">
-              <span className="text-[#c97a8e] mt-1 shrink-0">&#8226;</span>
-              Intermittent fasting protocol with nourishing vegan meals
-            </li>
-            <li className="text-white/70 text-base flex items-start gap-3">
-              <span className="text-[#c97a8e] mt-1 shrink-0">&#8226;</span>
-              Off-grid cabin heated with a wood stove for a grounding, rustic experience
-            </li>
-            <li className="text-white/70 text-base flex items-start gap-3">
-              <span className="text-[#c97a8e] mt-1 shrink-0">&#8226;</span>
-              A minimum of 14 days is recommended for deep transformation and lasting results
-            </li>
+          <p className="text-white/80 leading-relaxed text-base" data-testid="text-toolkit-intro">
+            To help you move through the mental noise, I've curated a high frequency support system:
+          </p>
+          <ul className="space-y-4">
+            {toolkit.map((item, i) => (
+              <li key={i} className="flex items-start gap-3" data-testid={`toolkit-item-${i}`}>
+                <Check className="w-5 h-5 text-[#c97a8e] shrink-0 mt-0.5" />
+                <p className="text-white/80 leading-relaxed text-base">
+                  <span className="text-white font-semibold">{item.label}:</span> {item.desc}
+                </p>
+              </li>
+            ))}
           </ul>
+          <p className="text-white/80 leading-relaxed text-base" data-testid="text-toolkit-closing">
+            You'll leave feeling lighter, clearer, and actually back in the driver's seat of your life.
+          </p>
         </div>
 
         <div className="card-glass rounded-md p-6 sm:p-8 space-y-4" data-testid="section-rates">
@@ -82,13 +87,13 @@ export default function InnerSilence() {
             </div>
           </div>
           <p className="text-white/60 text-sm text-center mt-2" data-testid="text-deposit">
-            A damage deposit of $3,000 is required and will be fully refunded upon departure.
+            A damage deposit of $500 is required and will be fully refunded upon departure.
           </p>
         </div>
 
         <div className="card-glass rounded-md p-6 sm:p-8 text-center space-y-4" data-testid="section-globetrotter">
           <p className="text-white/70 leading-relaxed text-base">
-            As a globetrotter, I am available for sessions worldwide. Whether you are in the US, Europe, or anywhere else on the planet, we can connect and work together.
+            As a globetrotter, I am available to hold space worldwide. Whether you are in the US, Europe, or anywhere else on the planet, we can connect and work together.
           </p>
           <Link href="/contact">
             <Button
@@ -98,6 +103,12 @@ export default function InnerSilence() {
               Sounds Amazing, Let's Schedule A Date <ArrowRight className="w-4 h-4 ml-2" />
             </Button>
           </Link>
+        </div>
+
+        <div className="card-glass rounded-md p-6 sm:p-8" data-testid="section-disclaimer">
+          <p className="text-white/40 text-xs leading-relaxed italic">
+            This educational material is provided under freedom of speech for your information only. It is not intended to substitute for the medical expertise and advice of your health practitioners from whom we encourage you to seek advice about treatment or care. These statements have not been evaluated by the Food and Drug Administration. This product is not intended to diagnose, treat, cure, or prevent any disease.
+          </p>
         </div>
       </div>
     </PageLayout>
