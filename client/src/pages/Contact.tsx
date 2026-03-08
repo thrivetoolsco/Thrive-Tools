@@ -26,7 +26,10 @@ export default function Contact() {
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ name, email, subject, message }),
       });
-      if (!res.ok) throw new Error("Failed to send");
+      if (!res.ok) {
+        const data = await res.json().catch(() => ({}));
+        throw new Error(data.error || "Failed to send");
+      }
       toast({
         title: "Message Sent",
         description: "Thank you for reaching out! We'll get back to you soon.",
@@ -35,15 +38,12 @@ export default function Contact() {
       setEmail("");
       setSubject("");
       setMessage("");
-    } catch {
+    } catch (err: any) {
       toast({
-        title: "Message Sent",
-        description: "Thank you for reaching out! We'll get back to you soon.",
+        title: "Something went wrong",
+        description: err?.message || "Please try again or email us directly at Thrivetools.co@gmail.com",
+        variant: "destructive",
       });
-      setName("");
-      setEmail("");
-      setSubject("");
-      setMessage("");
     } finally {
       setSending(false);
     }

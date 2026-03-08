@@ -75,8 +75,8 @@ export async function registerRoutes(
 
       res.json({ success: true });
     } catch (err) {
-      console.log("Contact form submission (email failed, logged safely)");
-      res.json({ success: true });
+      console.error("Contact form email failed:", err);
+      res.status(500).json({ error: "Failed to send message. Please try again later." });
     }
   });
 
