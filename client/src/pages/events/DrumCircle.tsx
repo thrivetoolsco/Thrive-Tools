@@ -1,5 +1,6 @@
 import PageLayout from "@/components/PageLayout";
 import { Check } from "lucide-react";
+import drumImg from "@assets/A_woman_with_brown_curly_hair__playing_shamanic_dr_delpmaspu_1772935716507.png";
 
 const details = [
   { label: "Cost", desc: "Totally free. Everyone is welcome." },
@@ -14,9 +15,9 @@ export default function DrumCircle() {
 
         <div className="flex justify-center">
           <img
-            src="https://i0.wp.com/thrivetools.co/wp-content/uploads/2023/03/drum_circle_img.jpeg?resize=282%2C187&ssl=1"
+            src={drumImg}
             alt="Drum Circle Breathwork"
-            className="rounded-md glow-rose"
+            className="rounded-md max-w-full glow-rose"
             data-testid="img-drum-circle"
           />
         </div>
