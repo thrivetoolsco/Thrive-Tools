@@ -450,7 +450,7 @@ export default function Discounts() {
             <span className="text-gradient-rose">Discount Codes</span>
           </h1>
           <p className="text-white/60 text-lg sm:text-xl max-w-3xl leading-relaxed font-medium" data-testid="text-discounts-subtitle">
-            Top Biohacking Supplements & Tech: 2026 Picks + Discount Codes
+            Top Biohacking Supplements, Longevity Tech & Conscious Fashion: 2026 Picks + Discount Codes
           </p>
         </div>
       </section>
