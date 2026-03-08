@@ -50,7 +50,8 @@ function Router() {
       <Route path="/personalized-guidance" component={PersonalizedGuidance} />
       <Route path="/events" component={Events} />
       <Route path="/contact" component={Contact} />
-      <Route path="/discounts-coupon-codes" component={Discounts} />
+      <Route path="/discounts-coupon-codes" component={() => { window.location.replace("/discount-codes"); return null; }} />
+      <Route path="/discount-codes" component={Discounts} />
       <Route path="/retreats-workshops/blossoming-bliss" component={BlossomingBliss} />
       <Route path="/retreats-workshops/spiritual-nutrition" component={SpiritualNutrition} />
       <Route path="/retreats-workshops/mescaline-wisdom" component={MescalineWisdom} />

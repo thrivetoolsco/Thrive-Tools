@@ -151,7 +151,7 @@ export default function Home() {
                 Learn More <ArrowRight className="ml-2 w-4 h-4" />
               </Button>
             </a>
-            <Link href="/discounts-coupon-codes" data-testid="button-hero-discounts">
+            <Link href="/discount-codes" data-testid="button-hero-discounts">
               <Button
                 size="lg"
                 variant="outline"
@@ -273,7 +273,7 @@ export default function Home() {
                 </div>
 
                 <div className="mt-8">
-                  <Link href="/discounts-coupon-codes" data-testid="link-curated-list">
+                  <Link href="/discount-codes" data-testid="link-curated-list">
                     <Button
                       size="lg"
                       className="bg-rose-500 text-white border-0 rounded-full px-8 text-sm tracking-widest uppercase font-semibold whitespace-normal h-auto py-3"
@@ -402,7 +402,7 @@ export default function Home() {
           )}
 
           <div className="text-center">
-            <Link href="/discounts-coupon-codes" data-testid="link-results-discounts">
+            <Link href="/discount-codes" data-testid="link-results-discounts">
               <Button
                 size="lg"
                 className="bg-rose-500 text-white border-0 rounded-full px-6 sm:px-10 text-xs sm:text-sm tracking-widest uppercase font-semibold whitespace-normal text-center leading-relaxed h-auto py-3"
