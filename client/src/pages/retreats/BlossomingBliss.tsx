@@ -3,72 +3,42 @@ import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 
-const themes = [
+const pillars = [
   {
     number: 1,
-    title: "Nutrition",
+    title: "Mindful Fuel",
     description:
-      "The food we consume has a direct impact on our emotions and mental clarity. A 2021 study confirmed the strong connection between diet and emotional well-being.",
-    bullets: [
-      "Finding pleasure and nourishment in every meal",
-      "Understanding the three treasures: Jing, Qi, and Shen",
-      "Intermittent fasting and its benefits for body and spirit",
-    ],
+      "Moving past \"diet culture.\" We'll talk about how food actually affects your mood, the art of intermittent fasting, and the ancient \"Three Treasures\" of energy.",
   },
   {
     number: 2,
-    title: "Gardening",
+    title: "Getting Your Hands Dirty",
     description:
-      "Customized gardening workshops designed to reconnect you with the earth and its healing energies.",
-    bullets: [
-      "Indoor and outdoor gardening techniques",
-      "Electroculture and its role in enhancing plant growth",
-      "Growing your own medicinal herbs and superfoods",
-    ],
+      "Connecting with the earth isn't just a hobby. It's healing. We'll cover indoor/outdoor gardening, growing your own superfoods, and even the \"electroculture\" of plants.",
   },
   {
     number: 3,
-    title: "Spiritual",
+    title: "The Spiritual Core",
     description:
-      "Cultivating a positive attitude and deepening your spiritual connection through ancient and modern practices.",
-    bullets: [
-      "Harnessing your breath as your superpower",
-      "Reconnecting to the Divine source within",
-      "Daily spiritual practices for inner peace",
-    ],
+      "No fluff, just real practices. Learn to use your breath as a superpower and find a daily rhythm that keeps you centered.",
   },
   {
     number: 4,
-    title: "Exercise",
+    title: "Movement as Protection",
     description:
-      "Movement charges your energy bodies and strengthens your biofield, making EMFs and radiation have less effect on your well-being.",
-    bullets: [
-      "Consistent daily movement practice",
-      "Exercises that charge and protect your energy bodies",
-      "Understanding how movement mitigates EMF and radiation effects",
-    ],
+      "We move to charge our energy, not just to \"workout.\" We'll explore how daily movement helps shield your system from the digital exhaustion of EMFs and radiation.",
   },
   {
     number: 5,
-    title: "Technologies",
+    title: "Frequency Tech",
     description:
-      "Healing technologies that raise your frequency and support your body's natural healing abilities.",
-    bullets: [
-      "Enemas, grounding, and EMF protection",
-      "Frequency machines and electro therapy",
-      "Magnetic therapy and tachyon energy",
-    ],
+      "Meet the high-tech side of healing. From grounding and EMF protection to electro-therapy and magnetic tools, we use modern tech to raise your vibration.",
   },
   {
     number: 6,
-    title: "Sleep",
+    title: "The Art of Sleep",
     description:
-      "The importance of sleep for brain health cannot be overstated. A 2019 JAMA study highlighted how proper sleep clears toxins from the brain and supports cognitive function.",
-    bullets: [
-      "Optimizing sleep for brain health and longevity",
-      "Lucid dreaming techniques and their spiritual significance",
-      "Yoga Nidra: the art of conscious sleep",
-    ],
+      "Sleep is the ultimate brain-detox. We'll dive into optimizing your rest, the magic of Lucid Dreaming, and Yoga Nidra (the best \"nap\" of your life).",
   },
 ];
 
@@ -77,43 +47,41 @@ export default function BlossomingBliss() {
     <PageLayout title="Blossoming Bliss Transformation" backLabel="Home" backHref="/">
       <div className="space-y-12" data-testid="section-blossoming-bliss">
         <div className="card-glass rounded-md p-6 sm:p-8 space-y-6" data-testid="section-intro">
-          <p className="text-[#e8a4b8] text-lg sm:text-xl font-display italic leading-relaxed" data-testid="text-opening">
-            The aim of this retreat is to equip you with practical tools that will assist you in thriving in a state of harmony and bliss. It is the most comprehensive program I offer, a remarkable spiritual intensive that will elevate your inner self and rejuvenate your spirit.
+          <p className="text-[#e8a4b8] text-lg sm:text-xl font-display italic leading-relaxed" data-testid="text-subtitle">
+            Blossoming Bliss: The Full-System Reset
           </p>
-          <p className="text-white/80 leading-relaxed text-base" data-testid="text-themes-intro">
-            During this retreat, you will be empowered with holistic tools that revolve around six themes:
+          <p className="text-white/60 font-medium text-base" data-testid="text-tagline">
+            A Deep Dive into Living Well
+          </p>
+          <p className="text-white/80 leading-relaxed text-base" data-testid="text-opening">
+            This isn't just a getaway; it's a toolkit for a life that doesn't feel like a constant uphill battle. I've pulled together the most effective practices I know into one intensive experience designed to get you back in sync with yourself.
+          </p>
+          <p className="text-white/80 leading-relaxed text-base" data-testid="text-pillars-intro">
+            We're stripping back the noise and focusing on six pillars to help you feel human again:
           </p>
         </div>
 
-        <div className="grid gap-6" data-testid="section-themes">
-          {themes.map((theme) => (
+        <div className="grid gap-6" data-testid="section-pillars">
+          {pillars.map((pillar) => (
             <div
-              key={theme.number}
-              className="card-glass rounded-md p-6 sm:p-8 space-y-4"
-              data-testid={`card-theme-${theme.number}`}
+              key={pillar.number}
+              className="card-glass rounded-md p-6 sm:p-8 space-y-3"
+              data-testid={`card-pillar-${pillar.number}`}
             >
-              <h3 className="font-display text-xl font-bold text-gradient-rose" data-testid={`text-theme-title-${theme.number}`}>
-                <span className="text-[#c97a8e] mr-2">{theme.number}.</span>
-                {theme.title}
+              <h3 className="font-display text-xl font-bold text-gradient-rose" data-testid={`text-pillar-title-${pillar.number}`}>
+                <span className="text-[#c97a8e] mr-2">{pillar.number}.</span>
+                {pillar.title}
               </h3>
-              <p className="text-white/80 leading-relaxed text-base" data-testid={`text-theme-desc-${theme.number}`}>
-                {theme.description}
+              <p className="text-white/80 leading-relaxed text-base" data-testid={`text-pillar-desc-${pillar.number}`}>
+                {pillar.description}
               </p>
-              <ul className="space-y-2 ml-4" data-testid={`list-theme-${theme.number}`}>
-                {theme.bullets.map((bullet, i) => (
-                  <li key={i} className="text-white/70 text-sm flex items-start gap-2">
-                    <span className="text-[#c97a8e] mt-1 shrink-0">&#8226;</span>
-                    {bullet}
-                  </li>
-                ))}
-              </ul>
             </div>
           ))}
         </div>
 
-        <div className="card-glass rounded-md p-6 sm:p-8 space-y-6" data-testid="section-closing">
+        <div className="card-glass rounded-md p-6 sm:p-8 space-y-4" data-testid="section-closing">
           <p className="text-white/80 leading-relaxed text-base" data-testid="text-closing">
-            We'll share experiences that are beyond ordinary and you'll discover ways to live your truth and gain a blissful life right now wherever you are. This retreat is a journey of self-discovery and transformation that will leave you feeling renewed, empowered, and deeply connected to your authentic self.
+            You'll leave with more than just good memories. You'll have a roadmap to stay blissful and grounded, no matter how chaotic the "real world" gets.
           </p>
         </div>
 
@@ -126,14 +94,14 @@ export default function BlossomingBliss() {
           />
         </div>
 
-        <div className="card-glass rounded-md p-6 sm:p-8 space-y-6" data-testid="section-details">
-          <h3 className="font-display text-2xl font-bold text-gradient-purple text-center" data-testid="text-details-heading">
+        <div className="card-glass rounded-md p-6 sm:p-8 space-y-4 text-center" data-testid="section-details">
+          <h3 className="font-display text-2xl font-bold text-gradient-purple" data-testid="text-details-heading">
             Retreat Details
           </h3>
-          <p className="text-white/80 leading-relaxed text-base text-center" data-testid="text-duration">
+          <p className="text-white/80 leading-relaxed text-base" data-testid="text-duration">
             <span className="text-[#e8a4b8] font-semibold">Duration:</span> 7 days
           </p>
-          <p className="text-white/70 leading-relaxed text-base text-center italic" data-testid="text-customizable">
+          <p className="text-white/70 leading-relaxed text-base italic" data-testid="text-customizable">
             All workshops & Retreats are customizable and are designed to meet your individual needs.
           </p>
         </div>
@@ -158,7 +126,7 @@ export default function BlossomingBliss() {
 
         <div className="card-glass rounded-md p-6 sm:p-8 text-center space-y-4" data-testid="section-globetrotter">
           <p className="text-white/70 leading-relaxed text-base">
-            As a globetrotter, I am available for sessions worldwide. Whether you are in the US, Europe, or anywhere else on the planet, we can connect and work together.
+            As a globetrotter, I am available for sessions worldwide. Whether you are in Canada, Asia, or anywhere in between, we can connect and work together :)
           </p>
           <Link href="/contact">
             <Button
