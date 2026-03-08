@@ -204,7 +204,7 @@ export default function Home() {
               >
                 <span className="text-gradient-rose">I'm Eden,</span>{" "}
                 and I've spent 14 years bridging ancient Taoist wisdom with
-                modern biohacking to find what actually moves the needle.
+                modern longevity science to identify the specific protocols that actually move the needle for your healthspan.
               </h2>
               <div className="space-y-5 text-white/70 text-base leading-relaxed font-medium">
                 <p>

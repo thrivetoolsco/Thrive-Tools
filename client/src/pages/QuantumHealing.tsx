@@ -19,7 +19,7 @@ export default function QuantumHealing() {
   return (
     <PageLayout
       title="Quantum Healing"
-      subtitle="The High Vibe Reset: Breathwork + Electro-Therapy"
+      subtitle="The High Vibe Nervous System Reset: Breathwork + Electro-Therapy"
     >
       <div className="space-y-12" data-testid="section-quantum-healing">
 
