@@ -404,8 +404,7 @@ export default function Home() {
                 size="lg"
                 className="bg-rose-500 text-white border-0 rounded-full px-6 sm:px-10 text-xs sm:text-sm tracking-widest uppercase font-semibold whitespace-normal text-center leading-relaxed h-auto py-3"
               >
-                Best Vitamins, Supplements, Biohacking Technologies & Ethical
-                Clothing Discount Codes{" "}
+                Vetted Biohacking Tech, Supplements & Clothing Discount Codes (2026)
                 <ArrowRight className="ml-2 w-4 h-4 flex-shrink-0" />
               </Button>
             </Link>
