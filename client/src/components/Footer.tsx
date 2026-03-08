@@ -71,7 +71,7 @@ export default function Footer() {
             <h4 className="text-white/60 text-xs font-semibold uppercase tracking-widest mb-4">More</h4>
             <ul className="space-y-3 text-sm text-white/35">
               {[
-                { label: "My Top Picks", href: "/discounts-coupon-codes" },
+                { label: "Discount Codes (2026)", href: "/discounts-coupon-codes" },
                 { label: "Products Reviews", href: "/product-reviews" },
                 { label: "About", href: "/about" },
                 { label: "Contact", href: "/contact" },

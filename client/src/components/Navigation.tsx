@@ -10,7 +10,7 @@ const logoImg = "/logo.webp";
 
 const navItems = [
   { label: "Home", href: "/" },
-  { label: "My Top Picks", href: "/discounts-coupon-codes" },
+  { label: "Discount Codes (2026)", href: "/discounts-coupon-codes" },
   { label: "Personalized Guidance", href: "/personalized-guidance" },
   { label: "Quantum Healing", href: "/quantum-healing" },
   { label: "Breathwork", href: "/breathwork" },
