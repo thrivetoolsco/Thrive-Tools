@@ -61,8 +61,6 @@ export default function Navigation() {
     >
       <div className="max-w-7xl mx-auto px-8 sm:px-12 lg:px-20">
         <div className="flex items-center justify-between h-20 sm:h-28">
-          <div className="hidden lg:block w-10" />
-
           <Link href="/" className="flex-shrink-0 group absolute left-1/2 -translate-x-1/2" data-testid="link-logo">
             <img
               src={logoImg}
@@ -71,80 +69,20 @@ export default function Navigation() {
             />
           </Link>
 
-          <div className="hidden lg:flex items-center gap-1 ml-auto">
-            {navItems.map((item) => (
-              <div
-                key={item.label}
-                className="relative"
-                onMouseEnter={() => item.children && setOpenDropdown(item.label)}
-                onMouseLeave={() => setOpenDropdown(null)}
-              >
-                {item.children ? (
-                  <button
-                    className={`relative px-3 py-2 text-[11px] tracking-[0.15em] uppercase font-medium flex items-center gap-1 transition-colors duration-200 ${
-                      location === item.href
-                        ? "text-[#c97a8e]"
-                        : "text-white/55 hover:text-white"
-                    }`}
-                    data-testid={`link-nav-${item.label.toLowerCase().replace(/\s+/g, "-")}`}
-                  >
-                    {item.label}
-                    <ChevronDown className={`w-3 h-3 transition-transform duration-200 ${openDropdown === item.label ? "rotate-180" : ""}`} />
-                  </button>
-                ) : (
-                  <Link
-                    href={item.href}
-                    className={`relative px-3 py-2 text-[11px] tracking-[0.15em] uppercase font-medium transition-colors duration-200 block ${
-                      location === item.href
-                        ? "text-[#c97a8e]"
-                        : "text-white/55 hover:text-white"
-                    }`}
-                    data-testid={`link-nav-${item.label.toLowerCase().replace(/\s+/g, "-")}`}
-                  >
-                    {item.label}
-                    {location === item.href && (
-                      <span className="absolute bottom-0 left-3 right-3 h-[2px] bg-[#c97a8e] rounded-full" />
-                    )}
-                  </Link>
-                )}
-
-                {item.children && openDropdown === item.label && (
-                  <div
-                    className="absolute top-full left-0 mt-1 min-w-[240px] rounded-xl py-2 shadow-xl shadow-black/30"
-                    style={{
-                      background: "rgba(20,10,30,0.98)",
-                      border: "1px solid rgba(201,122,142,0.12)",
-                      backdropFilter: "blur(20px)",
-                    }}
-                  >
-                    {item.children.map((child) => (
-                      <Link
-                        key={child.label}
-                        href={child.href}
-                        className="block px-5 py-2.5 text-xs text-white/55 hover:text-white hover:bg-white/5 transition-all duration-200 tracking-wide"
-                        data-testid={`link-nav-${child.label.toLowerCase().replace(/\s+/g, "-")}`}
-                      >
-                        {child.label}
-                      </Link>
-                    ))}
-                  </div>
-                )}
-              </div>
-            ))}
+          <div className="ml-auto">
+            <button
+              data-testid="button-menu"
+              className="relative w-10 h-10 flex items-center justify-center rounded-lg text-white/70 hover:text-white hover:bg-white/5 transition-all duration-200"
+              onClick={() => setMenuOpen(!menuOpen)}
+            >
+              {menuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
+            </button>
           </div>
-
-          <button
-            data-testid="button-mobile-menu"
-            className="lg:hidden relative w-10 h-10 flex items-center justify-center rounded-lg text-white/70 hover:text-white hover:bg-white/5 transition-all duration-200"
-            onClick={() => setMenuOpen(!menuOpen)}
-          >
-            {menuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
-          </button>
         </div>
       </div>
 
       <div
-        className={`lg:hidden overflow-hidden transition-all duration-300 ease-in-out ${
+        className={`overflow-hidden transition-all duration-300 ease-in-out ${
           menuOpen ? "max-h-[80vh] opacity-100" : "max-h-0 opacity-0"
         }`}
         style={{ background: "rgba(13,5,20,0.98)" }}
