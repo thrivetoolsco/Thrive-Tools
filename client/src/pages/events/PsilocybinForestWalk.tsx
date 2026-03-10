@@ -2,7 +2,7 @@ import PageLayout from "@/components/PageLayout";
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Check } from "lucide-react";
-import forestWalkImg from "@assets/stock_images/forest_walk.jpg";
+import forestWalkImg from "@assets/walk_1773178753116.jpeg";
 
 const included = [
   { label: "The Integration", desc: "You won't just be left hanging. We'll wrap up with some practical tools to help you take that inner peace back into your daily life." },

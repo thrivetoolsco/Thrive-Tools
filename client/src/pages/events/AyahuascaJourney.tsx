@@ -1,5 +1,5 @@
 import PageLayout from "@/components/PageLayout";
-import ayahuascaImg from "@assets/stock_images/ayahuasca_ceremony.jpg";
+import ayahuascaImg from "@assets/Ayahuasca_Flyer-1_1773178753075.jpeg";
 
 export default function AyahuascaJourney() {
   return (

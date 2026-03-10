@@ -3,8 +3,8 @@ import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { ArrowRight, User, Heart, Briefcase } from "lucide-react";
-import breathworkWide from "@assets/stock_images/breathwork_wide.jpg";
-import breathworkPortrait from "@assets/stock_images/breathwork_portrait.jpg";
+import breathworkWide from "@assets/breathwork2_1773178753100.jpeg";
+import breathworkPortrait from "@assets/breathwork_1773178753092.jpeg";
 
 export default function Breathwork() {
   return (

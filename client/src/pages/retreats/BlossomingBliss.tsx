@@ -2,7 +2,7 @@ import PageLayout from "@/components/PageLayout";
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
-import blossomingImg from "@assets/stock_images/blossoming_bliss.jpg";
+import blossomingImg from "@assets/Blossoming_Bliss_1_1773178753084.jpeg";
 
 const pillars = [
   {

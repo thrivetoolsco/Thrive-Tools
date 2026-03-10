@@ -2,8 +2,8 @@ import PageLayout from "@/components/PageLayout";
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
-import foodForest1 from "@assets/stock_images/food_forest_1.jpg";
-import foodForest2 from "@assets/stock_images/food_forest_2.jpg";
+import foodForest1 from "@assets/food2-1_1773178753035.jpeg";
+import foodForest2 from "@assets/food-1_1773178753025.jpeg";
 
 export default function FoodForest() {
   return (
