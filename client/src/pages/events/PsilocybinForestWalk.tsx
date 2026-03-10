@@ -2,6 +2,7 @@ import PageLayout from "@/components/PageLayout";
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Check } from "lucide-react";
+import forestWalkImg from "@assets/stock_images/forest_walk.jpg";
 
 const included = [
   { label: "The Integration", desc: "You won't just be left hanging. We'll wrap up with some practical tools to help you take that inner peace back into your daily life." },
@@ -25,7 +26,7 @@ export default function PsilocybinForestWalk() {
 
         <div className="flex justify-center">
           <img
-            src="https://i0.wp.com/thrivetools.co/wp-content/uploads/2023/06/walk.webp?fit=1000%2C750&ssl=1"
+            src={forestWalkImg}
             alt="Psilocybin Forest Walk"
             className="rounded-md max-w-full glow-rose"
             data-testid="img-forest-walk"

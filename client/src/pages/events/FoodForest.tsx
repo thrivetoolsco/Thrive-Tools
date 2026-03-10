@@ -2,6 +2,8 @@ import PageLayout from "@/components/PageLayout";
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
+import foodForest1 from "@assets/stock_images/food_forest_1.jpg";
+import foodForest2 from "@assets/stock_images/food_forest_2.jpg";
 
 export default function FoodForest() {
   return (
@@ -9,13 +11,13 @@ export default function FoodForest() {
       <div className="space-y-12" data-testid="section-food-forest">
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6" data-testid="section-images">
           <img
-            src="https://i0.wp.com/thrivetools.co/wp-content/uploads/2023/03/food2-1.webp?fit=564%2C489&ssl=1"
+            src={foodForest1}
             alt="Food forest garden"
             className="w-full rounded-md object-cover aspect-square"
             data-testid="img-food-forest-1"
           />
           <img
-            src="https://i0.wp.com/thrivetools.co/wp-content/uploads/2023/03/food-1.webp?fit=564%2C489&ssl=1"
+            src={foodForest2}
             alt="Food forest plants"
             className="w-full rounded-md object-cover aspect-square"
             data-testid="img-food-forest-2"

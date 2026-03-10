@@ -3,6 +3,8 @@ import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { ArrowRight, User, Heart, Briefcase } from "lucide-react";
+import breathworkWide from "@assets/stock_images/breathwork_wide.jpg";
+import breathworkPortrait from "@assets/stock_images/breathwork_portrait.jpg";
 
 export default function Breathwork() {
   return (
@@ -10,7 +12,7 @@ export default function Breathwork() {
       <div className="space-y-12" data-testid="section-breathwork">
         <div className="flex justify-center">
           <img
-            src="https://i0.wp.com/thrivetools.co/wp-content/uploads/2023/05/breathwork2.webp?fit=1400%2C910&ssl=1"
+            src={breathworkWide}
             alt="Breathwork practice"
             className="rounded-md max-w-full glow-purple"
             data-testid="img-breathwork-top"
@@ -31,7 +33,7 @@ export default function Breathwork() {
 
         <div className="flex justify-center">
           <img
-            src="https://i0.wp.com/thrivetools.co/wp-content/uploads/2023/03/breathwork.jpeg?fit=564%2C642&ssl=1"
+            src={breathworkPortrait}
             alt="Breathwork session"
             className="rounded-md max-w-full sm:max-w-md glow-rose"
             data-testid="img-breathwork-mid"

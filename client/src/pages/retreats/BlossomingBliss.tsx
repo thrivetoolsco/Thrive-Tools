@@ -2,6 +2,7 @@ import PageLayout from "@/components/PageLayout";
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
+import blossomingImg from "@assets/stock_images/blossoming_bliss.jpg";
 
 const pillars = [
   {
@@ -48,7 +49,7 @@ export default function BlossomingBliss() {
       <div className="space-y-12" data-testid="section-blossoming-bliss">
         <div className="flex justify-center">
           <img
-            src="https://i0.wp.com/thrivetools.co/wp-content/uploads/2023/06/Blossoming_Bliss_1.webp?fit=1000%2C667&ssl=1"
+            src={blossomingImg}
             alt="Blossoming Bliss Retreat"
             className="rounded-md max-w-full glow-rose"
             data-testid="img-blossoming-bliss"
