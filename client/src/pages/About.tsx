@@ -1,5 +1,6 @@
 import PageLayout from "@/components/PageLayout";
 import edenPortrait from "@assets/WhatsApp_Image_2026-03-06_at_7.06.40_PM_1772842644213.jpeg";
+import breathworkClass from "@assets/stock_images/breathwork_class.jpg";
 
 export default function About() {
   return (
@@ -83,7 +84,7 @@ export default function About() {
           </div>
           <div className="mt-6">
             <img
-              src="https://i0.wp.com/thrivetools.co/wp-content/uploads/2023/05/breathwork2.webp?resize=781%2C508&ssl=1"
+              src={breathworkClass}
               alt="Breathwork class"
               className="rounded-md w-full h-auto border border-white/10"
               data-testid="img-breathwork-class"
