@@ -22,7 +22,7 @@ export default function MescalineWisdom() {
         </div>
 
         <div className="flex justify-center">
-          <img
+          <img loading="lazy" decoding="async"
             src={cactuImg}
             alt="San Pedro cactus in the mountains"
             className="rounded-md max-w-full glow-rose"

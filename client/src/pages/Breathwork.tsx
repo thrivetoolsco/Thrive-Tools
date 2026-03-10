@@ -11,7 +11,7 @@ export default function Breathwork() {
     <PageLayout title="Breathwork">
       <div className="space-y-12" data-testid="section-breathwork">
         <div className="flex justify-center">
-          <img
+          <img loading="lazy" decoding="async"
             src={breathworkWide}
             alt="Breathwork practice"
             className="rounded-md max-w-full glow-purple"
@@ -32,7 +32,7 @@ export default function Breathwork() {
         </div>
 
         <div className="flex justify-center">
-          <img
+          <img loading="lazy" decoding="async"
             src={breathworkPortrait}
             alt="Breathwork session"
             className="rounded-md max-w-full sm:max-w-md glow-rose"

@@ -25,7 +25,7 @@ export default function PsilocybinForestWalk() {
         </div>
 
         <div className="flex justify-center">
-          <img
+          <img loading="lazy" decoding="async"
             src={forestWalkImg}
             alt="Psilocybin Forest Walk"
             className="rounded-md max-w-full glow-rose"

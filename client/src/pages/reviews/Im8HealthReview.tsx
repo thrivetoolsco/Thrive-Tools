@@ -15,7 +15,7 @@ export default function Im8HealthReview() {
     >
       <article className="space-y-12">
         <div className="card-glass rounded-2xl overflow-hidden" data-testid="img-hero-im8">
-          <img src={im8ProductImg} alt="IM8 Health Daily Ultimate Essentials" className="w-full h-auto object-cover" />
+          <img loading="lazy" decoding="async" src={im8ProductImg} alt="IM8 Health Daily Ultimate Essentials" className="w-full h-auto object-cover" />
         </div>
 
         <div className="flex flex-wrap gap-3">
@@ -98,7 +98,7 @@ export default function Im8HealthReview() {
           </div>
 
           <div className="card-glass rounded-2xl overflow-hidden mt-8" data-testid="img-im8-clinical">
-            <img src={im8ClinicalImg} alt="IM8 Health clinically proven third-party tested results" className="w-full h-auto object-cover" />
+            <img loading="lazy" decoding="async" src={im8ClinicalImg} alt="IM8 Health clinically proven third-party tested results" className="w-full h-auto object-cover" />
           </div>
 
           <div className="card-glass rounded-xl p-5 mt-6 border-l-4" style={{ borderLeftColor: "#9b6fa5" }}>

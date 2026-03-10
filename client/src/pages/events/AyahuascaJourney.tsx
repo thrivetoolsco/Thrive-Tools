@@ -10,7 +10,7 @@ export default function AyahuascaJourney() {
     >
       <div className="flex justify-center" data-testid="section-flyer">
         <div className="card-glass rounded-md glow-rose p-6 sm:p-8 inline-block">
-          <img
+          <img loading="lazy" decoding="async"
             src={ayahuascaImg}
             alt="Ayahuasca Journey Peru Flyer"
             className="max-w-full h-auto rounded-md"

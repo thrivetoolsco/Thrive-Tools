@@ -191,7 +191,7 @@ export default function Home() {
                 className="relative rounded-2xl overflow-hidden"
                 style={{ border: "1px solid rgba(201,122,142,0.2)" }}
               >
-                <img
+                <img loading="lazy" decoding="async"
                   src={EDEN_PHOTO_1}
                   alt="Eden - Thrive Tools founder"
                   className="w-full h-auto object-cover"
@@ -296,7 +296,7 @@ export default function Home() {
                 className="relative rounded-2xl overflow-hidden"
                 style={{ border: "1px solid rgba(155,111,165,0.2)" }}
               >
-                <img
+                <img loading="lazy" decoding="async"
                   src={edenPhoto2}
                   alt="Eden - Thrive Tools"
                   className="w-full h-auto object-cover"

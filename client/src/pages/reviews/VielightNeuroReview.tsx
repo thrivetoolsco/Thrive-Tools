@@ -15,7 +15,7 @@ export default function VielightNeuroReview() {
     >
       <article className="space-y-12">
         <div className="card-glass rounded-2xl overflow-hidden" data-testid="img-hero-vielight">
-          <img src={vielightDeviceImg} alt="Vielight Neuro Alpha Gamma device" className="w-full h-auto object-cover" />
+          <img loading="lazy" decoding="async" src={vielightDeviceImg} alt="Vielight Neuro Alpha Gamma device" className="w-full h-auto object-cover" />
         </div>
 
         <div className="flex flex-wrap gap-3">
@@ -86,7 +86,7 @@ export default function VielightNeuroReview() {
             <h2 className="font-display text-2xl font-bold text-white">Clinical Evidence</h2>
           </div>
           <div className="card-glass rounded-2xl overflow-hidden mb-6" data-testid="img-vielight-brain">
-            <img src={vielightBrainImg} alt="Vielight Neuro photobiomodulation brain visualization" className="w-full h-auto object-cover" />
+            <img loading="lazy" decoding="async" src={vielightBrainImg} alt="Vielight Neuro photobiomodulation brain visualization" className="w-full h-auto object-cover" />
           </div>
 
           <div className="space-y-4 text-white/70 leading-relaxed">

@@ -8,7 +8,7 @@ export default function About() {
       <div className="space-y-12">
         <div className="flex flex-col md:flex-row gap-8 items-start">
           <div className="flex-shrink-0">
-            <img
+            <img loading="lazy" decoding="async"
               src={edenPortrait}
               alt="Eden Laraki"
               className="rounded-md w-[300px] h-auto border border-white/10"
@@ -83,7 +83,7 @@ export default function About() {
             </p>
           </div>
           <div className="mt-6">
-            <img
+            <img loading="lazy" decoding="async"
               src={breathworkClass}
               alt="Breathwork class"
               className="rounded-md w-full h-auto border border-white/10"

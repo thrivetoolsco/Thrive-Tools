@@ -45,7 +45,8 @@ function Router() {
     <Switch>
       <Route path="/" component={Home} />
       <Route path="/about" component={About} />
-      <Route path="/quantum-healing" component={QuantumHealing} />
+      <Route path="/quantum-healing" component={() => { window.location.replace("/somatic-reset"); return null; }} />
+      <Route path="/somatic-reset" component={QuantumHealing} />
       <Route path="/breathwork" component={Breathwork} />
       <Route path="/personalized-guidance" component={PersonalizedGuidance} />
       <Route path="/events" component={Events} />

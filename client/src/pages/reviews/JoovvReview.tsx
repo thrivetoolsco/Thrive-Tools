@@ -15,7 +15,7 @@ export default function JoovvReview() {
     >
       <article className="space-y-12">
         <div className="card-glass rounded-2xl overflow-hidden" data-testid="img-hero-joovv">
-          <img src={joovvDeviceImg} alt="Joovv red light therapy panel" className="w-full h-auto object-cover" />
+          <img loading="lazy" decoding="async" src={joovvDeviceImg} alt="Joovv red light therapy panel" className="w-full h-auto object-cover" />
         </div>
 
         <div className="flex flex-wrap gap-3">
@@ -62,7 +62,7 @@ export default function JoovvReview() {
             </p>
           </div>
           <div className="card-glass rounded-2xl overflow-hidden mt-6" data-testid="img-joovv-benefits">
-            <img src={joovvBenefitsImg} alt="Joovv benefits of light therapy infographic" className="w-full h-auto object-cover" />
+            <img loading="lazy" decoding="async" src={joovvBenefitsImg} alt="Joovv benefits of light therapy infographic" className="w-full h-auto object-cover" />
           </div>
         </section>
 

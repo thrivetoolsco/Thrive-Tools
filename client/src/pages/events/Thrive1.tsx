@@ -14,7 +14,7 @@ export default function Thrive1() {
         </div>
 
         <div className="flex justify-center">
-          <img
+          <img loading="lazy" decoding="async"
             src={thriveImg}
             alt="Thrive 1: What on Earth Will It Take?"
             className="rounded-md max-w-full sm:max-w-sm glow-rose"

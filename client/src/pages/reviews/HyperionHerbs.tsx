@@ -14,7 +14,7 @@ export default function HyperionHerbs() {
     >
       <article className="space-y-12">
         <div className="card-glass rounded-2xl overflow-hidden" data-testid="img-hero-hyperion">
-          <img src={hyperionReishiImg} alt="Hyperion Herbs Organic Duanwood Reishi Mushroom" className="w-full h-auto object-cover" />
+          <img loading="lazy" decoding="async" src={hyperionReishiImg} alt="Hyperion Herbs Organic Duanwood Reishi Mushroom" className="w-full h-auto object-cover" />
         </div>
 
         <div className="flex flex-wrap gap-3">

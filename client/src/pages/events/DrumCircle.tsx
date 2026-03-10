@@ -14,7 +14,7 @@ export default function DrumCircle() {
       <div className="space-y-12" data-testid="section-drum-circle">
 
         <div className="flex justify-center">
-          <img
+          <img loading="lazy" decoding="async"
             src={drumImg}
             alt="Drum Circle Breathwork"
             className="rounded-md max-w-full glow-rose"

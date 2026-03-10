@@ -48,7 +48,7 @@ export default function BlossomingBliss() {
     <PageLayout title="Blossoming Bliss Transformation" backLabel="Home" backHref="/">
       <div className="space-y-12" data-testid="section-blossoming-bliss">
         <div className="flex justify-center">
-          <img
+          <img loading="lazy" decoding="async"
             src={blossomingImg}
             alt="Blossoming Bliss Retreat"
             className="rounded-md max-w-full glow-rose"

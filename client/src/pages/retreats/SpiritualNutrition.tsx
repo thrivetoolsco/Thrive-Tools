@@ -29,7 +29,7 @@ export default function SpiritualNutrition() {
         </div>
 
         <div className="flex justify-center">
-          <img
+          <img loading="lazy" decoding="async"
             src={img1}
             alt="Spiritual Nutrition"
             className="rounded-md max-w-full sm:max-w-md glow-rose"
@@ -57,25 +57,25 @@ export default function SpiritualNutrition() {
         </div>
 
         <div className="grid grid-cols-2 gap-3 sm:gap-4" data-testid="section-food-images">
-          <img
+          <img loading="lazy" decoding="async"
             src={img2}
             alt="Spiritual nutrition food"
             className="rounded-md w-full object-cover glow-rose"
             data-testid="img-spiritual-2"
           />
-          <img
+          <img loading="lazy" decoding="async"
             src={img3}
             alt="Spiritual nutrition food"
             className="rounded-md w-full object-cover glow-purple"
             data-testid="img-spiritual-3"
           />
-          <img
+          <img loading="lazy" decoding="async"
             src={img4}
             alt="Spiritual nutrition food"
             className="rounded-md w-full object-cover glow-purple"
             data-testid="img-spiritual-4"
           />
-          <img
+          <img loading="lazy" decoding="async"
             src={img5}
             alt="Spiritual nutrition food"
             className="rounded-md w-full object-cover glow-rose"

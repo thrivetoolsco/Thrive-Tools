@@ -16,13 +16,13 @@ export default function Im8VsAg1() {
       <article className="space-y-12">
         <div className="relative flex flex-col sm:flex-row items-center gap-5">
           <div className="card-glass rounded-2xl overflow-hidden flex-1" data-testid="img-im8-product">
-            <img src={im8ProductImg} alt="IM8 Health Daily Ultimate Essentials" className="w-full h-auto object-cover" />
+            <img loading="lazy" decoding="async" src={im8ProductImg} alt="IM8 Health Daily Ultimate Essentials" className="w-full h-auto object-cover" />
           </div>
           <div className="flex-shrink-0 z-10 flex items-center justify-center w-12 h-12 rounded-full bg-white/10 border border-white/20 text-white font-bold text-lg">
             vs.
           </div>
           <div className="card-glass rounded-2xl overflow-hidden flex-1" data-testid="img-ag1-product">
-            <img src={ag1ProductImg} alt="AG1 Athletic Greens supplement" className="w-full h-auto object-cover" />
+            <img loading="lazy" decoding="async" src={ag1ProductImg} alt="AG1 Athletic Greens supplement" className="w-full h-auto object-cover" />
           </div>
         </div>
 

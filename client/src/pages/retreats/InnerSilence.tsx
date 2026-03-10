@@ -29,7 +29,7 @@ export default function InnerSilence() {
         </div>
 
         <div className="flex justify-center">
-          <img
+          <img loading="lazy" decoding="async"
             src={silenceImg}
             alt="Inner Silence Silent Retreat"
             className="rounded-md max-w-full sm:max-w-sm glow-purple"

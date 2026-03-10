@@ -24,7 +24,7 @@ export default function IndoorGardening() {
       <div className="space-y-10" data-testid="section-indoor-gardening">
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-4" data-testid="section-images">
           {images.map((img, index) => (
-            <img
+            <img loading="lazy" decoding="async"
               key={index}
               src={img.src}
               alt={img.alt}

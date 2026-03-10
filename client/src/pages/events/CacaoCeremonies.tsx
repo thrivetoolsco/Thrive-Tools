@@ -22,7 +22,7 @@ export default function CacaoCeremonies() {
         </div>
 
         <div className="flex justify-center">
-          <img
+          <img loading="lazy" decoding="async"
             src={danceImg}
             alt="Cacao Ceremony and Ecstatic Dance"
             className="rounded-md max-w-full glow-rose"

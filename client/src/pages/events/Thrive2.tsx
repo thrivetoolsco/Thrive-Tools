@@ -25,7 +25,7 @@ export default function Thrive2() {
         </div>
 
         <div className="flex justify-center">
-          <img
+          <img loading="lazy" decoding="async"
             src={thriveImg}
             alt="Thrive II: This is What it Takes"
             className="rounded-md max-w-full sm:max-w-sm glow-rose"

@@ -12,7 +12,7 @@ const navItems = [
   { label: "Home", href: "/" },
   { label: "Discount Codes (2026)", href: "/discount-codes" },
   { label: "Personalized Guidance", href: "/personalized-guidance" },
-  { label: "Somatic Reset", href: "/quantum-healing" },
+  { label: "Somatic Reset", href: "/somatic-reset" },
   { label: "Breathwork", href: "/breathwork" },
   {
     label: "Retreats & Workshops",

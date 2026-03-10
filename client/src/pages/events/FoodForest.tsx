@@ -10,13 +10,13 @@ export default function FoodForest() {
     <PageLayout title="Thriving Food Forest" backLabel="Events" backHref="/events">
       <div className="space-y-12" data-testid="section-food-forest">
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6" data-testid="section-images">
-          <img
+          <img loading="lazy" decoding="async"
             src={foodForest1}
             alt="Food forest garden"
             className="w-full rounded-md object-cover aspect-square"
             data-testid="img-food-forest-1"
           />
-          <img
+          <img loading="lazy" decoding="async"
             src={foodForest2}
             alt="Food forest plants"
             className="w-full rounded-md object-cover aspect-square"
