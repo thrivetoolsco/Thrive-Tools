@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { Link } from "wouter";
-import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, ChevronDown } from "lucide-react";
 import Navigation from "@/components/Navigation";
@@ -144,22 +143,13 @@ export default function Home() {
             Supplements. Vitamins. Longevity tech. Conscious fashion. All vetted. All discounted.
           </p>
 
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-8">
-            <a href="#about" data-testid="button-hero-learn">
+          <div className="flex justify-center mb-8">
+            <Link href="/discount-codes" data-testid="button-hero-discounts">
               <Button
                 size="lg"
                 className="bg-rose-500 text-white border-0 rounded-full px-8 text-sm tracking-widest uppercase font-semibold w-full sm:w-auto"
               >
-                Learn More <ArrowRight className="ml-2 w-4 h-4" />
-              </Button>
-            </a>
-            <Link href="/discount-codes" data-testid="button-hero-discounts">
-              <Button
-                size="lg"
-                variant="outline"
-                className="rounded-full px-8 text-sm tracking-widest uppercase font-semibold border-white/20 text-white/80 bg-transparent w-full sm:w-auto"
-              >
-                Discount Codes
+                → See the full list + discounts
               </Button>
             </Link>
           </div>
@@ -174,19 +164,18 @@ export default function Home() {
         </a>
       </section>
 
-      {/* ─── ABOUT EDEN ─── */}
+      {/* ─── PHOTOS ─── */}
       <section
         id="about"
-        className="relative py-16 sm:py-24 px-6 sm:px-8 lg:px-8"
+        className="relative py-12 sm:py-20 px-6 sm:px-8 lg:px-8"
         style={{ background: "linear-gradient(180deg, #0d0514 0%, #160920 50%, #0d0514 100%)" }}
       >
-        <div className="section-divider mb-16 sm:mb-24" />
-        <div className="max-w-5xl mx-auto">
-          <div className="grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
-            {/* Photo */}
-            <div className="relative max-w-sm mx-auto lg:max-w-none" data-testid="img-eden-portrait">
+        <div className="section-divider mb-12 sm:mb-16" />
+        <div className="max-w-4xl mx-auto">
+          <div className="grid grid-cols-2 gap-5 sm:gap-8">
+            <div className="relative" data-testid="img-eden-portrait">
               <div
-                className="absolute inset-0 rounded-2xl opacity-30 glow-rose"
+                className="absolute inset-0 rounded-2xl opacity-25 glow-rose"
                 style={{ background: "radial-gradient(circle at 50% 50%, #c97a8e 0%, transparent 70%)" }}
               />
               <div
@@ -196,81 +185,13 @@ export default function Home() {
                 <img loading="lazy" decoding="async"
                   src={edenPhoto1}
                   alt="Eden - Thrive Tools founder"
-                  className="w-full h-auto object-cover"
+                  className="w-full h-full object-cover"
                 />
               </div>
             </div>
-
-            {/* Text */}
-            <div className="text-center lg:text-left">
-              <h2
-                className="font-display text-2xl sm:text-3xl lg:text-4xl font-bold mb-8 leading-snug text-white"
-                data-testid="text-about-headline"
-              >
-                <span className="text-gradient-rose">I'm Eden,</span>{" "}
-                and I've spent 14 years bridging ancient Taoist wisdom with
-                modern longevity science to identify the specific protocols that actually move the needle for your mood and for your healthspan.
-              </h2>
-              <div className="space-y-5 text-white/70 text-base leading-relaxed font-medium">
-                <p>
-                  When your physical chemistry is optimized, the shift is
-                  undeniable:
-                </p>
-                <ul className="space-y-3 pl-2 text-left mx-auto lg:mx-0 max-w-xs sm:max-w-none">
-                  <li className="flex items-start gap-3">
-                    <span className="w-2 h-2 rounded-full bg-rose-400 mt-2 flex-shrink-0" />
-                    <span className="text-white/90 font-semibold">Brain fog vanishes.</span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <span className="w-2 h-2 rounded-full bg-purple-400 mt-2 flex-shrink-0" />
-                    <span className="text-white/90 font-semibold">Mood stabilizes.</span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <span className="w-2 h-2 rounded-full bg-amber-400 mt-2 flex-shrink-0" />
-                    <span className="text-white/90 font-semibold">
-                      True longevity replaces the weekly burnout.
-                    </span>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* ─── THE CURATION ─── */}
-      <section
-        className="py-16 sm:py-24 px-6 sm:px-8 lg:px-8"
-        style={{ background: "linear-gradient(180deg, #0d0514 0%, #1a0824 100%)" }}
-      >
-        <div className="max-w-5xl mx-auto">
-          <div className="grid lg:grid-cols-2 gap-10 lg:gap-16 items-center">
-            {/* Text */}
-            <div className="text-center lg:text-left order-2 lg:order-1">
-              <Badge
-                className="bg-rose-500/15 text-rose-300 border border-rose-500/25 rounded-full px-4 py-1 text-xs tracking-widest uppercase font-medium mb-6"
-                data-testid="badge-insider"
-              >
-                The "Insider" Curation
-              </Badge>
-              <div className="space-y-5 text-white/70 text-base leading-relaxed font-medium">
-                <div className="mt-8">
-                  <Link href="/discount-codes" data-testid="link-curated-list">
-                    <Button
-                      size="lg"
-                      className="bg-rose-500 text-white border-0 rounded-full px-8 text-sm tracking-widest uppercase font-semibold whitespace-normal h-auto py-3"
-                    >
-                      → See the full list + discounts
-                    </Button>
-                  </Link>
-                </div>
-              </div>
-            </div>
-
-            {/* Photo 2 */}
-            <div className="relative order-1 lg:order-2 max-w-sm mx-auto lg:max-w-none" data-testid="img-eden-photo-2">
+            <div className="relative" data-testid="img-eden-photo-2">
               <div
-                className="absolute inset-0 rounded-2xl opacity-30 glow-purple"
+                className="absolute inset-0 rounded-2xl opacity-25 glow-purple"
                 style={{ background: "radial-gradient(circle at 50% 50%, #9b6fa5 0%, transparent 70%)" }}
               />
               <div
@@ -280,7 +201,7 @@ export default function Home() {
                 <img loading="lazy" decoding="async"
                   src={edenPhoto2}
                   alt="Eden - Thrive Tools"
-                  className="w-full h-auto object-cover"
+                  className="w-full h-full object-cover"
                 />
               </div>
             </div>
