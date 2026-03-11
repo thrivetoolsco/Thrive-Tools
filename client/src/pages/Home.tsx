@@ -6,6 +6,7 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import edenPhoto2 from "@assets/Generate_a_new_image_so_that_the_resolution_looks__delpmaspu~4_1772975930027.png";
 import edenPhoto1 from "@assets/eden_portrait_1.jpg";
+import edenHatPhoto from "@assets/IMG-20251218-WA0018_1773256125844.jpg";
 
 const testimonials = [
   { name: "Client Testimonial 1", videoId: "QNrE8TVVCf8", isShort: true },
@@ -142,6 +143,17 @@ export default function Home() {
             <br /><br />
             Supplements. Vitamins. Longevity tech. Conscious fashion. All vetted. All discounted.
           </p>
+
+          <div className="flex justify-center mb-10">
+            <img
+              src={edenHatPhoto}
+              alt="Eden"
+              loading="eager"
+              fetchPriority="high"
+              className="w-64 h-64 sm:w-72 sm:h-72 object-cover object-top rounded-full shadow-lg"
+              data-testid="img-eden-hat"
+            />
+          </div>
 
           <div className="flex justify-center mb-8">
             <Link href="/discount-codes" data-testid="button-hero-discounts">
