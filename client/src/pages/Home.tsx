@@ -124,9 +124,9 @@ export default function Home() {
             className="font-display text-3xl sm:text-5xl lg:text-7xl font-bold mb-6 leading-tight"
             data-testid="text-hero-headline"
           >
-            <span className="text-gradient-rose">Your 2.0 </span>
+            <span className="text-gradient-rose">Still foggy? Still tired? </span>
             <br />
-            <span className="text-white/90">starts here.</span>
+            <span className="text-white/90">Still spending money on supplements that do nothing?</span>
           </h1>
 
           <p
