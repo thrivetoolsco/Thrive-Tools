@@ -134,7 +134,7 @@ export default function Home() {
           >
             I'm Eden. For 14 years I've been deep in the research — Taoist protocols, longevity science, biohacking — separating what actually works from what just sells.
             <br /><br />
-            And I've learned one thing: 90% of wellness is noise. The 10% that works? It's on this list.
+            And I've learned one thing: 90% of wellness is noise. The 10% that works? <Link href="/discount-codes" className="underline underline-offset-2 hover:text-white transition-colors">It's on this list.</Link>
             <br /><br />
             I don't sell supplements. I find the best ones and get you a discount on them. Getting access to the best products shouldn't mean paying full price for them.
             <br /><br />
