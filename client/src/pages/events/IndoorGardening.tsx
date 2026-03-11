@@ -2,20 +2,14 @@ import PageLayout from "@/components/PageLayout";
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Leaf } from "lucide-react";
+import indoorGardening1 from "@assets/Indoor_Gardening-1_1773178753058.jpeg";
+import indoorGardening2 from "@assets/Indoor_Gardening-2_1773178753067.jpeg";
+import indoorGardening3 from "@assets/Indoor_Gardening-3_1773178753048.jpeg";
 
 const images = [
-  {
-    src: "https://i0.wp.com/thrivetools.co/wp-content/uploads/2023/03/Indoor_Gardening-1.webp?fit=564%2C478&ssl=1",
-    alt: "Indoor Gardening 1",
-  },
-  {
-    src: "https://i0.wp.com/thrivetools.co/wp-content/uploads/2023/03/Indoor_Gardening-2.webp?fit=564%2C478&ssl=1",
-    alt: "Indoor Gardening 2",
-  },
-  {
-    src: "https://i0.wp.com/thrivetools.co/wp-content/uploads/2023/03/Indoor_Gardening-3.webp?fit=564%2C478&ssl=1",
-    alt: "Indoor Gardening 3",
-  },
+  { src: indoorGardening1, alt: "Indoor Gardening 1" },
+  { src: indoorGardening2, alt: "Indoor Gardening 2" },
+  { src: indoorGardening3, alt: "Indoor Gardening 3" },
 ];
 
 export default function IndoorGardening() {
