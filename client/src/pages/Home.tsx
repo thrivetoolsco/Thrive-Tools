@@ -182,7 +182,7 @@ export default function Home() {
         <div className="section-divider mb-12 sm:mb-16" />
         <div className="max-w-4xl mx-auto">
           <div className="grid grid-cols-1 gap-5 sm:gap-8">
-            <div className="relative max-w-2xl mx-auto w-full" data-testid="img-eden-photo-2">
+            <div className="relative max-w-lg mx-auto w-full" data-testid="img-eden-photo-2">
               <div
                 className="absolute inset-0 rounded-2xl opacity-25 glow-purple"
                 style={{ background: "radial-gradient(circle at 50% 50%, #9b6fa5 0%, transparent 70%)" }}
