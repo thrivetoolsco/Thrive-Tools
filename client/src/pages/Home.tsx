@@ -133,12 +133,15 @@ export default function Home() {
             className="text-white/60 text-base sm:text-lg lg:text-xl max-w-2xl mx-auto mb-10 leading-relaxed font-medium px-2"
             data-testid="text-hero-subheadline"
           >
-            Most "wellness" is just expensive marketing in a synthetic shell.
-            You're being sold bio-unavailable influencer pills that leave you in
-            a brain fog while your bank account takes the hit.
+            I'm Eden. For 14 years I've been deep in the research — Taoist protocols, longevity science, biohacking — separating what actually works from what just sells.
             <br /><br />
-            I'm here for the evidence based protocols that finally clear the
-            fog and raise the frequency.
+            And I've learned one thing: 90% of wellness is noise. The 10% that works? It's on this list.
+            <br /><br />
+            I don't sell supplements. I find the best ones and get you a discount on them. Getting access to the best products shouldn't mean paying full price for them.
+            <br /><br />
+            This is my curated list of the supplements, longevity tools, and brands I personally trust, with exclusive discount codes built in. No fluff. No affiliate bro science. Just the good stuff, cheaper.
+            <br /><br />
+            Supplements. Vitamins. Longevity tech. Conscious fashion. All vetted. All discounted.
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-8">
@@ -251,34 +254,13 @@ export default function Home() {
                 The "Insider" Curation
               </Badge>
               <div className="space-y-5 text-white/70 text-base leading-relaxed font-medium">
-                <p className="text-white/90 text-lg">
-                  I'm not selling you a "magic pill." I'm a curator. I've vetted
-                  the specific herbs and tools that actually work! No random
-                  Amazon finds, just proven alchemical upgrades for your biology.
-                </p>
-
-                <div className="mt-8">
-                  <Badge
-                    className="bg-amber-500/15 text-amber-300 border border-amber-500/25 rounded-full px-4 py-1 text-xs tracking-widest uppercase font-medium mb-4"
-                    data-testid="badge-lead"
-                  >
-                    The Lead
-                  </Badge>
-                  <p className="text-white/90 text-lg">
-                    I've secured exclusive discount codes for the best products
-                    on the market: high frequency essentials that rarely go on
-                    sale.
-                  </p>
-                </div>
-
                 <div className="mt-8">
                   <Link href="/discount-codes" data-testid="link-curated-list">
                     <Button
                       size="lg"
                       className="bg-rose-500 text-white border-0 rounded-full px-8 text-sm tracking-widest uppercase font-semibold whitespace-normal h-auto py-3"
                     >
-                      The Curated List With Discount Codes{" "}
-                      <ArrowRight className="ml-2 w-4 h-4 flex-shrink-0" />
+                      → See the full list + discounts
                     </Button>
                   </Link>
                 </div>
