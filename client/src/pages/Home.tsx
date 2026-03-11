@@ -172,23 +172,7 @@ export default function Home() {
       >
         <div className="section-divider mb-12 sm:mb-16" />
         <div className="max-w-4xl mx-auto">
-          <div className="grid grid-cols-2 gap-5 sm:gap-8">
-            <div className="relative" data-testid="img-eden-portrait">
-              <div
-                className="absolute inset-0 rounded-2xl opacity-25 glow-rose"
-                style={{ background: "radial-gradient(circle at 50% 50%, #c97a8e 0%, transparent 70%)" }}
-              />
-              <div
-                className="relative rounded-2xl overflow-hidden"
-                style={{ border: "1px solid rgba(201,122,142,0.2)" }}
-              >
-                <img loading="lazy" decoding="async"
-                  src={edenPhoto1}
-                  alt="Eden - Thrive Tools founder"
-                  className="w-full h-full object-cover"
-                />
-              </div>
-            </div>
+          <div className="grid grid-cols-1 gap-5 sm:gap-8">
             <div className="relative" data-testid="img-eden-photo-2">
               <div
                 className="absolute inset-0 rounded-2xl opacity-25 glow-purple"
