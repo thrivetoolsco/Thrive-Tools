@@ -155,13 +155,6 @@ export default function Home() {
           </div>
         </div>
 
-        <a
-          href="#about"
-          className="absolute bottom-8 left-1/2 -translate-x-1/2 text-white/30 hover:text-white/60 transition-colors animate-bounce"
-          data-testid="link-scroll-down"
-        >
-          <ChevronDown className="w-6 h-6" />
-        </a>
       </section>
 
       {/* ─── PHOTOS ─── */}
