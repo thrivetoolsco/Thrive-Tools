@@ -28,7 +28,7 @@ export default function QuantumHealing() {
             1hr 15min of Pure Cellular Bliss
           </p>
           <p className="text-white/80 leading-relaxed text-base" data-testid="text-intro">
-            Ready to upgrade your system? This isn't your average relaxation session. We're combining ancient breathwork with cutting-edge frequency tech to help you drop the mental noise and recalibrate your entire body. It's biohacking meets deep soul work.
+            Ready to upgrade your system? This isn't your average relaxation session. We're combining ancient breathwork with cutting-edge Longevity tech to help you drop the mental noise and recalibrate your entire body. It's biohacking meets deep soul work.
           </p>
         </div>
 
