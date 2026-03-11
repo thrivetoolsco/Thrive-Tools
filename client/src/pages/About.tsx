@@ -44,6 +44,15 @@ export default function About() {
           </div>
         </div>
 
+        <div className="mt-6">
+          <img loading="lazy" decoding="async"
+            src={breathworkClass}
+            alt="Breathwork class"
+            className="rounded-md w-full h-auto border border-white/10"
+            data-testid="img-breathwork-class"
+          />
+        </div>
+
         <div className="card-glass rounded-md p-6 sm:p-8 space-y-4" data-testid="section-what-i-do">
           <h3 className="font-display text-2xl font-bold text-gradient-purple" data-testid="text-heading-what-i-do">
             What I do
@@ -66,15 +75,6 @@ export default function About() {
               </button>
             </Link>
           </div>
-        </div>
-
-        <div className="mt-6">
-          <img loading="lazy" decoding="async"
-            src={breathworkClass}
-            alt="Breathwork class"
-            className="rounded-md w-full h-auto border border-white/10"
-            data-testid="img-breathwork-class"
-          />
         </div>
       </div>
     </PageLayout>
