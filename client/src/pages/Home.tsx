@@ -136,12 +136,6 @@ export default function Home() {
             I'm Eden. For 14 years I've been deep in the research — Taoist protocols, longevity science, biohacking — separating what actually works from what just sells.
             <br /><br />
             And I've learned one thing: 90% of wellness is noise. The 10% that works? <Link href="/discount-codes" className="underline underline-offset-2 hover:text-white transition-colors">It's on this list.</Link>
-            <br /><br />
-            I don't sell supplements. I find the best ones and get you a discount on them. Getting access to the best products shouldn't mean paying full price for them.
-            <br /><br />
-            This is my curated list of the supplements, longevity tools, and brands I personally trust, with exclusive discount codes built in. No fluff. No affiliate bro science. Just the good stuff, cheaper.
-            <br /><br />
-            Supplements. Vitamins. Longevity tech. Conscious fashion. All vetted. All discounted.
           </p>
 
           <div className="flex justify-center mb-10">
@@ -154,6 +148,16 @@ export default function Home() {
               data-testid="img-eden-hat"
             />
           </div>
+
+          <p
+            className="text-white/60 text-base sm:text-lg lg:text-xl max-w-2xl mx-auto mb-10 leading-relaxed font-medium px-2"
+          >
+            I don't sell supplements. I find the best ones and get you a discount on them. Getting access to the best products shouldn't mean paying full price for them.
+            <br /><br />
+            This is my curated list of the supplements, longevity tools, and brands I personally trust, with exclusive discount codes built in. No fluff. No affiliate bro science. Just the good stuff, cheaper.
+            <br /><br />
+            Supplements. Vitamins. Longevity tech. Conscious fashion. All vetted. All discounted.
+          </p>
 
           <div className="flex justify-center mb-8">
             <Link href="/discount-codes" data-testid="button-hero-discounts">
