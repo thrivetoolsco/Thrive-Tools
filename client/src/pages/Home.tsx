@@ -171,13 +171,25 @@ export default function Home() {
           </div>
 
           <div className="flex justify-center mb-8">
-            <img
-              src={edenPhoto1}
-              alt="Eden meditating"
-              loading="eager"
-              className="w-64 h-auto sm:w-72 rounded-2xl shadow-lg object-cover"
-              data-testid="img-eden-meditation"
-            />
+            <div className="relative max-w-sm w-full" data-testid="img-eden-photo-2">
+              <div
+                className="absolute inset-0 rounded-2xl opacity-25 glow-purple"
+                style={{ background: "radial-gradient(circle at 50% 50%, #9b6fa5 0%, transparent 70%)" }}
+              />
+              <div
+                className="relative rounded-2xl overflow-hidden"
+                style={{ border: "1px solid rgba(155,111,165,0.2)" }}
+              >
+                <img
+                  loading="eager"
+                  fetchPriority="high"
+                  decoding="async"
+                  src={edenPhoto2}
+                  alt="Eden - Thrive Tools"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+            </div>
           </div>
 
           <p className="text-white/60 text-base sm:text-lg lg:text-xl max-w-2xl mx-auto mb-6 leading-relaxed font-medium px-2" data-testid="text-retreats-intro">
@@ -207,28 +219,6 @@ export default function Home() {
       >
         <div className="section-divider mb-12 sm:mb-16" />
         <div className="max-w-4xl mx-auto">
-          <div className="grid grid-cols-1 gap-5 sm:gap-8">
-            <div className="relative max-w-sm mx-auto w-full" data-testid="img-eden-photo-2">
-              <div
-                className="absolute inset-0 rounded-2xl opacity-25 glow-purple"
-                style={{ background: "radial-gradient(circle at 50% 50%, #9b6fa5 0%, transparent 70%)" }}
-              />
-              <div
-                className="relative rounded-2xl overflow-hidden"
-                style={{ border: "1px solid rgba(155,111,165,0.2)" }}
-              >
-                <img
-                  loading="eager"
-                  fetchPriority="high"
-                  decoding="async"
-                  src={edenPhoto2}
-                  alt="Eden - Thrive Tools"
-                  className="w-full h-full object-cover"
-                />
-              </div>
-            </div>
-          </div>
-
           <div className="mt-16 sm:mt-24 text-center">
             <p className="text-white/60 text-lg font-medium mb-4">
               Curious about my 14 year journey?
