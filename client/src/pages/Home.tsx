@@ -169,6 +169,22 @@ export default function Home() {
               </Button>
             </Link>
           </div>
+
+          <p className="text-white/60 text-base sm:text-lg lg:text-xl max-w-2xl mx-auto mb-6 leading-relaxed font-medium px-2" data-testid="text-retreats-intro">
+            Real transformation isn't just what you take. It's how you live.<br /><br />
+            That's why I built spaces where the real work happens. In my retreats and workshops, we go deeper: nervous system reset, Taoist longevity practices, and cutting through the noise together, in person.
+          </p>
+
+          <div className="flex justify-center mb-8">
+            <Link href="/retreats-workshops/blossoming-bliss" data-testid="button-explore-retreats">
+              <Button
+                size="lg"
+                className="bg-rose-500 text-white border-0 rounded-full px-8 text-sm tracking-widest uppercase font-semibold w-full sm:w-auto"
+              >
+                → Explore Retreats & Workshops
+              </Button>
+            </Link>
+          </div>
         </div>
 
       </section>
