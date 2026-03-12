@@ -65,13 +65,21 @@ export default function About() {
               The curated discount list on this site is part of that. The supplements, tools, and brands I recommend here are the same ones I use and trust. Nothing random. Nothing I haven't tested.
             </p>
           </div>
-          <div className="pt-2">
+          <div className="pt-2 flex flex-col sm:flex-row gap-3">
             <Link href="/discount-codes">
               <button
                 data-testid="button-curated-list"
                 className="inline-flex items-center px-6 py-3 rounded-md bg-white/10 hover:bg-white/20 border border-white/20 text-white font-medium transition-colors duration-200"
               >
                 → See the curated list
+              </button>
+            </Link>
+            <Link href="/events">
+              <button
+                data-testid="button-retreats-workshops"
+                className="inline-flex items-center px-6 py-3 rounded-md bg-white/10 hover:bg-white/20 border border-white/20 text-white font-medium transition-colors duration-200"
+              >
+                → See the retreats & workshops
               </button>
             </Link>
           </div>
