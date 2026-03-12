@@ -170,6 +170,16 @@ export default function Home() {
             </Link>
           </div>
 
+          <div className="flex justify-center mb-8">
+            <img
+              src={edenPhoto1}
+              alt="Eden meditating"
+              loading="eager"
+              className="w-64 h-auto sm:w-72 rounded-2xl shadow-lg object-cover"
+              data-testid="img-eden-meditation"
+            />
+          </div>
+
           <p className="text-white/60 text-base sm:text-lg lg:text-xl max-w-2xl mx-auto mb-6 leading-relaxed font-medium px-2" data-testid="text-retreats-intro">
             Real transformation isn't just what you take. It's how you live.<br /><br />
             That's why I built spaces where the real work happens. In my retreats and workshops, we go deeper: nervous system reset, Taoist longevity practices, and cutting through the noise together, in person.
