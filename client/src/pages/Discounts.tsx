@@ -85,8 +85,8 @@ const vitaminsSupplements: DiscountItem[] = [
     url: "https://bulletproof.fdf2.net/DKAdJ2",
   },
   {
-    name: "Ceremonial Cacao",
-    description: "Ceremonial Cacao",
+    name: "Koracao Ceremonial Cacao",
+    description: "Koracao Ceremonial Cacao",
     code: "EDENKAWTHARLARAKI123",
     url: "https://koracao.com/THRIVE33",
   },
