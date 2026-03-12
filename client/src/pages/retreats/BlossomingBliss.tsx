@@ -31,7 +31,7 @@ const pillars = [
   },
   {
     number: 5,
-    title: "Frequency Tech",
+    title: "Longevity technologies",
     description:
       "Meet the high-tech side of healing. From grounding and EMF protection to electro-therapy and magnetic tools, we use modern tech to raise your vibration.",
   },
