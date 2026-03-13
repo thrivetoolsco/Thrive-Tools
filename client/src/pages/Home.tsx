@@ -225,8 +225,7 @@ export default function Home() {
             </p>
             <Link href="/about" data-testid="link-full-story">
               <Button
-                variant="outline"
-                className="rounded-full px-8 text-sm tracking-widest uppercase font-semibold border-[#3d1a28]/20 text-[#3d1a28]/80 bg-transparent"
+                className="btn-gradient-rose rounded-full px-8 text-sm tracking-widest uppercase font-semibold text-white border-0"
               >
                 Read the full story here
               </Button>
