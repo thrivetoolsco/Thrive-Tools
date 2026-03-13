@@ -25,13 +25,13 @@ export default function FoodForest() {
         </div>
 
         <div className="card-glass rounded-md p-6 sm:p-8 space-y-6" data-testid="section-description">
-          <p className="text-white/90 text-lg font-semibold leading-relaxed" data-testid="text-intro">
+          <p className="text-black/90 text-lg font-semibold leading-relaxed" data-testid="text-intro">
             This 3 day workshop teaches you the essence of how to think like a forest and create an abundant multi story high output low input edible medicinal garden.
           </p>
-          <p className="text-white/80 leading-relaxed text-base" data-testid="text-details-1">
+          <p className="text-black/80 leading-relaxed text-base" data-testid="text-details-1">
             You'll learn how to gain hands on knowledge and practical understanding about the design process from implementation and maintenance to aspects such as site soils, pest control, guild design, in hand seven layers planting, plant propagation and sourcing and integration of animals. You'll also learn about electro-culture techniques that can help you increase yields and cultivate a thriving garden.
           </p>
-          <p className="text-white/80 leading-relaxed text-base" data-testid="text-details-2">
+          <p className="text-black/80 leading-relaxed text-base" data-testid="text-details-2">
             You'll have the opportunity to tour the food forest site which features an organic nursery and food forest. You'll even get to taste some of the plants and participate in creating a delicious vegetarian meal with them.
           </p>
         </div>

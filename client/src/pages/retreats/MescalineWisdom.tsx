@@ -16,7 +16,7 @@ export default function MescalineWisdom() {
       <div className="space-y-12" data-testid="section-mescaline-wisdom">
 
         <div className="card-glass rounded-md p-6 sm:p-8 space-y-4" data-testid="section-intro">
-          <p className="text-white/80 leading-relaxed text-base" data-testid="text-intro">
+          <p className="text-black/80 leading-relaxed text-base" data-testid="text-intro">
             Wachuma (San Pedro) has been used by Indigenous cultures for centuries, and there's a reason it's stood the test of time. Often called "Heart Medicine," it's less about a "trip" and more about clearing the static so you can finally connect with your Higher Self.
           </p>
         </div>
@@ -34,15 +34,15 @@ export default function MescalineWisdom() {
           <h3 className="font-display text-2xl font-bold text-gradient-purple" data-testid="text-shift-heading">
             The Shift
           </h3>
-          <p className="text-white/80 leading-relaxed text-base" data-testid="text-shift-intro">
+          <p className="text-black/80 leading-relaxed text-base" data-testid="text-shift-intro">
             In a world full of noise, this is a sacred space to get quiet and look at the patterns holding you back. We're talking about:
           </p>
           <ul className="space-y-4">
             {theShift.map((item, i) => (
               <li key={i} className="flex items-start gap-3" data-testid={`shift-item-${i}`}>
                 <Check className="w-5 h-5 text-[#c97a8e] shrink-0 mt-0.5" />
-                <p className="text-white/80 leading-relaxed text-base">
-                  <span className="text-white font-semibold">{item.label}:</span> {item.desc}
+                <p className="text-black/80 leading-relaxed text-base">
+                  <span className="text-black font-semibold">{item.label}:</span> {item.desc}
                 </p>
               </li>
             ))}
@@ -53,7 +53,7 @@ export default function MescalineWisdom() {
           <h3 className="font-display text-2xl font-bold text-gradient-purple" data-testid="text-result-heading">
             The Result
           </h3>
-          <p className="text-white/80 leading-relaxed text-base" data-testid="text-result">
+          <p className="text-black/80 leading-relaxed text-base" data-testid="text-result">
             You'll leave feeling grounded, empowered, and ready to move through life without that constant "brake" of fear or hesitation. It's about coming home to yourself.
           </p>
         </div>
@@ -65,20 +65,20 @@ export default function MescalineWisdom() {
           <div className="grid sm:grid-cols-2 gap-4">
             <div className="card-glass rounded-md p-5 text-center space-y-2" data-testid="card-rate-individual">
               <p className="text-[#e8a4b8] font-display font-semibold text-lg">Individual</p>
-              <p className="text-white font-bold text-2xl" data-testid="text-price-individual">USD $255/person</p>
+              <p className="text-black font-bold text-2xl" data-testid="text-price-individual">USD $255/person</p>
             </div>
             <div className="card-glass rounded-md p-5 text-center space-y-2" data-testid="card-rate-group">
               <p className="text-[#e8a4b8] font-display font-semibold text-lg">Groups of 3+</p>
-              <p className="text-white font-bold text-2xl" data-testid="text-price-group">USD $180/person</p>
+              <p className="text-black font-bold text-2xl" data-testid="text-price-group">USD $180/person</p>
             </div>
           </div>
-          <p className="text-white/60 text-sm text-center mt-2" data-testid="text-camping">
+          <p className="text-black/60 text-sm text-center mt-2" data-testid="text-camping">
             Camping included with all ceremonies.
           </p>
         </div>
 
         <div className="card-glass rounded-md p-6 sm:p-8 text-center space-y-4" data-testid="section-globetrotter">
-          <p className="text-white/70 leading-relaxed text-base">
+          <p className="text-black/70 leading-relaxed text-base">
             As a globetrotter, I am available to hold space worldwide. Whether you are in the US, Europe, or anywhere else on the planet, we can connect and work together.
           </p>
           <Link href="/contact">
@@ -92,7 +92,7 @@ export default function MescalineWisdom() {
         </div>
 
         <div className="card-glass rounded-md p-6 sm:p-8" data-testid="section-disclaimer">
-          <p className="text-white/40 text-xs leading-relaxed italic">
+          <p className="text-black/40 text-xs leading-relaxed italic">
             This educational material is provided under freedom of speech for your information only. It is not intended to substitute for the medical expertise and advice of your health practitioners from whom we encourage you to seek advice about treatment or care. These statements have not been evaluated by the Food and Drug Administration. This product is not intended to diagnose, treat, cure, or prevent any disease.
           </p>
         </div>

@@ -12,12 +12,12 @@ export default function About() {
             <img loading="lazy" decoding="async"
               src={edenPortrait}
               alt="Eden Laraki"
-              className="rounded-md w-[300px] h-auto border border-white/10"
+              className="rounded-md w-[300px] h-auto border border-black/10"
               data-testid="img-eden-portrait"
             />
           </div>
-          <div className="space-y-4 text-white/70 leading-relaxed">
-            <p data-testid="text-intro-1" className="text-white font-semibold text-lg">I'm Eden.</p>
+          <div className="space-y-4 text-black/70 leading-relaxed">
+            <p data-testid="text-intro-1" className="text-black font-semibold text-lg">I'm Eden.</p>
             <p data-testid="text-intro-2">
               Born in Morocco, raised at the crossroads of African, Middle Eastern, and European worlds. I've never fit neatly into one box. That restlessness took me everywhere: designing food forests across the UK and Canada, apprenticing with Shipibo shamans in the Peruvian jungle, being initiated into the Bwiti tradition in Gabon as one of the few Western women to enter the Sacred Wood (Iboga) lineage, studying Pranayama with yogis in India, and learning longevity herbs under Taoist Jing Master Truth Calkins.
             </p>
@@ -31,7 +31,7 @@ export default function About() {
           <h3 className="font-display text-2xl font-bold text-gradient-purple" data-testid="text-heading-what-i-found">
             What I found
           </h3>
-          <div className="space-y-4 text-white/70 leading-relaxed">
+          <div className="space-y-4 text-black/70 leading-relaxed">
             <p>
               Most wellness stops at the symptom. I kept going, into the body, the nervous system, the earth, the breath.
             </p>
@@ -48,7 +48,7 @@ export default function About() {
           <img loading="lazy" decoding="async"
             src={breathworkClass}
             alt="Breathwork class"
-            className="rounded-md w-full h-auto border border-white/10"
+            className="rounded-md w-full h-auto border border-black/10"
             data-testid="img-breathwork-class"
           />
         </div>
@@ -57,7 +57,7 @@ export default function About() {
           <h3 className="font-display text-2xl font-bold text-gradient-purple" data-testid="text-heading-what-i-do">
             What I do
           </h3>
-          <div className="space-y-4 text-white/70 leading-relaxed">
+          <div className="space-y-4 text-black/70 leading-relaxed">
             <p>
               I'm a breathwork guide, biohacker, and plant medicine facilitator. I help people who are done surviving and ready to thrive, cutting through the noise to find what actually moves the needle for energy, mood, and longevity.
             </p>
@@ -69,7 +69,7 @@ export default function About() {
             <Link href="/discount-codes">
               <button
                 data-testid="button-curated-list"
-                className="inline-flex items-center px-6 py-3 rounded-md bg-white/10 hover:bg-white/20 border border-white/20 text-white font-medium transition-colors duration-200"
+                className="inline-flex items-center px-6 py-3 rounded-md bg-black/5 hover:bg-black/10 border border-black/15 text-black font-medium transition-colors duration-200"
               >
                 → See the curated list
               </button>
@@ -77,7 +77,7 @@ export default function About() {
             <Link href="/events">
               <button
                 data-testid="button-retreats-workshops"
-                className="inline-flex items-center px-6 py-3 rounded-md bg-white/10 hover:bg-white/20 border border-white/20 text-white font-medium transition-colors duration-200"
+                className="inline-flex items-center px-6 py-3 rounded-md bg-black/5 hover:bg-black/10 border border-black/15 text-black font-medium transition-colors duration-200"
               >
                 → See the retreats & workshops
               </button>

@@ -19,7 +19,7 @@ export default function PsilocybinForestWalk() {
           <p className="text-[#e8a4b8] text-lg sm:text-xl font-display italic leading-relaxed" data-testid="text-duration">
             7 Hours of Nature & Neural Re-wiring
           </p>
-          <p className="text-white/80 leading-relaxed text-base" data-testid="text-opening">
+          <p className="text-black/80 leading-relaxed text-base" data-testid="text-opening">
             We all need a break from the noise. This is a day to slow down, leave the "hustle" behind, and actually reconnect with the world around you. We're heading into the forest for a mindful journey designed to open up those creative neural pathways and help you feel like you again.
           </p>
         </div>
@@ -37,10 +37,10 @@ export default function PsilocybinForestWalk() {
           <h3 className="font-display text-2xl font-bold text-gradient-purple" data-testid="text-flow-heading">
             The Flow
           </h3>
-          <p className="text-white/80 leading-relaxed text-base" data-testid="text-flow-1">
+          <p className="text-black/80 leading-relaxed text-base" data-testid="text-flow-1">
             Think of this as a gentle adventure in consciousness. As the mushrooms do their thing, the forest starts to look a bit different. You'll start to see how everything is connected and maybe find some new ways of thinking that weren't accessible behind a screen.
           </p>
-          <p className="text-white/80 leading-relaxed text-base" data-testid="text-flow-2">
+          <p className="text-black/80 leading-relaxed text-base" data-testid="text-flow-2">
             Whether you're dealing with a heavy headspace or just want to feel more "alive," I'll be there to hold space and keep the vibes grounded while we walk.
           </p>
         </div>
@@ -53,8 +53,8 @@ export default function PsilocybinForestWalk() {
             {included.map((item, i) => (
               <li key={i} className="flex items-start gap-3" data-testid={`included-item-${i}`}>
                 <Check className="w-5 h-5 text-[#c97a8e] shrink-0 mt-0.5" />
-                <p className="text-white/80 leading-relaxed text-base">
-                  <span className="text-white font-semibold">{item.label}:</span> {item.desc}
+                <p className="text-black/80 leading-relaxed text-base">
+                  <span className="text-black font-semibold">{item.label}:</span> {item.desc}
                 </p>
               </li>
             ))}
@@ -68,17 +68,17 @@ export default function PsilocybinForestWalk() {
           <div className="grid sm:grid-cols-2 gap-4">
             <div className="card-glass rounded-md p-5 text-center space-y-2" data-testid="card-rate-solo">
               <p className="text-[#e8a4b8] font-display font-semibold text-lg">Solo Journey</p>
-              <p className="text-white font-bold text-2xl" data-testid="text-price-solo">USD $320</p>
+              <p className="text-black font-bold text-2xl" data-testid="text-price-solo">USD $320</p>
             </div>
             <div className="card-glass rounded-md p-5 text-center space-y-2" data-testid="card-rate-group">
               <p className="text-[#e8a4b8] font-display font-semibold text-lg">Group Rate (3+ people)</p>
-              <p className="text-white font-bold text-2xl" data-testid="text-price-group">USD $260 / person</p>
+              <p className="text-black font-bold text-2xl" data-testid="text-price-group">USD $260 / person</p>
             </div>
           </div>
         </div>
 
         <div className="card-glass rounded-md p-6 sm:p-8 text-center space-y-4" data-testid="section-cta">
-          <p className="text-white/70 leading-relaxed text-base" data-testid="text-cta">
+          <p className="text-black/70 leading-relaxed text-base" data-testid="text-cta">
             Ready to clear your mental fog and uplift your vibes?
           </p>
           <Link href="/contact">
@@ -92,7 +92,7 @@ export default function PsilocybinForestWalk() {
         </div>
 
         <div className="card-glass rounded-md p-6 sm:p-8" data-testid="section-disclaimer">
-          <p className="text-white/40 text-xs leading-relaxed italic">
+          <p className="text-black/40 text-xs leading-relaxed italic">
             This educational material is provided under freedom of speech for your information only. It is not intended to substitute for the medical expertise and advice of your health practitioners from whom we encourage you to seek advice about treatment or care. These statements have not been evaluated by the Food and Drug Administration. This product is not intended to diagnose, treat, cure, or prevent any disease.
           </p>
         </div>

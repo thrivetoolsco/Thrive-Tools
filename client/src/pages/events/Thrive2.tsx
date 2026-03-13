@@ -19,7 +19,7 @@ export default function Thrive2() {
       <div className="space-y-12" data-testid="section-thrive2">
 
         <div className="card-glass rounded-md p-6 sm:p-8 space-y-4" data-testid="section-intro">
-          <p className="text-white/80 leading-relaxed text-base" data-testid="text-intro">
+          <p className="text-black/80 leading-relaxed text-base" data-testid="text-intro">
             I'm stoked to invite you to our weekly Docu Evenings. We're diving into <span className="text-[#e8a4b8] font-semibold">THRIVE II: This is What it Takes</span>, and honestly, it's the shift in perspective we all kind of need right now.
           </p>
         </div>
@@ -37,16 +37,16 @@ export default function Thrive2() {
           <h3 className="font-display text-2xl font-bold text-gradient-purple" data-testid="text-vibe-heading">
             The Vibe
           </h3>
-          <p className="text-white/80 leading-relaxed text-base" data-testid="text-vibe">
+          <p className="text-black/80 leading-relaxed text-base" data-testid="text-vibe">
             If the first film was about "what's going on," this one is about what we can actually do about it. It's a global journey looking at the legit breakthroughs in energy, health, and consciousness that the mainstream usually misses.
           </p>
-          <p className="text-white/70 font-medium" data-testid="text-vibe-talking">We're talking:</p>
+          <p className="text-black/70 font-medium" data-testid="text-vibe-talking">We're talking:</p>
           <ul className="space-y-4">
             {topics.map((item, i) => (
               <li key={i} className="flex items-start gap-3" data-testid={`topic-item-${i}`}>
                 <Check className="w-5 h-5 text-[#c97a8e] shrink-0 mt-0.5" />
-                <p className="text-white/80 leading-relaxed text-base">
-                  <span className="text-white font-semibold">{item.label}:</span> {item.desc}
+                <p className="text-black/80 leading-relaxed text-base">
+                  <span className="text-black font-semibold">{item.label}:</span> {item.desc}
                 </p>
               </li>
             ))}
@@ -58,14 +58,14 @@ export default function Thrive2() {
             The Essentials
           </h3>
           <div className="flex flex-col items-center gap-4">
-            <p className="text-white/80 leading-relaxed text-base" data-testid="text-cost">
-              <span className="text-[#e8a4b8] font-semibold">Cost:</span> Free <span className="text-white/50 text-sm">(It's about the community and the conversation).</span>
+            <p className="text-black/80 leading-relaxed text-base" data-testid="text-cost">
+              <span className="text-[#e8a4b8] font-semibold">Cost:</span> Free <span className="text-black/50 text-sm">(It's about the community and the conversation).</span>
             </p>
-            <p className="text-white/80 leading-relaxed text-base flex items-center gap-2" data-testid="text-duration">
+            <p className="text-black/80 leading-relaxed text-base flex items-center gap-2" data-testid="text-duration">
               <Clock className="w-4 h-4 text-[#c97a8e]" />
               <span><span className="text-[#e8a4b8] font-semibold">Duration:</span> 2h 30m of mind-bending info.</span>
             </p>
-            <p className="text-white/80 leading-relaxed text-base flex items-center gap-2" data-testid="text-registration">
+            <p className="text-black/80 leading-relaxed text-base flex items-center gap-2" data-testid="text-registration">
               <Mail className="w-4 h-4 text-[#c97a8e]" />
               <span>
                 <span className="text-[#e8a4b8] font-semibold">How to Join:</span> Shoot a quick email to{" "}

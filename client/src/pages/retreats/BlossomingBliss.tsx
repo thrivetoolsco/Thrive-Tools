@@ -60,13 +60,13 @@ export default function BlossomingBliss() {
           <p className="text-[#e8a4b8] text-lg sm:text-xl font-display italic leading-relaxed" data-testid="text-subtitle">
             Blossoming Bliss: The Full-System Reset
           </p>
-          <p className="text-white/60 font-medium text-base" data-testid="text-tagline">
+          <p className="text-black/60 font-medium text-base" data-testid="text-tagline">
             A Deep Dive into Living Well
           </p>
-          <p className="text-white/80 leading-relaxed text-base" data-testid="text-opening">
+          <p className="text-black/80 leading-relaxed text-base" data-testid="text-opening">
             This isn't just a getaway; it's a toolkit for a life that doesn't feel like a constant uphill battle. I've pulled together the most effective practices I know into one intensive experience designed to get you back in sync with yourself.
           </p>
-          <p className="text-white/80 leading-relaxed text-base" data-testid="text-pillars-intro">
+          <p className="text-black/80 leading-relaxed text-base" data-testid="text-pillars-intro">
             We're stripping back the noise and focusing on six pillars to help you feel human again:
           </p>
         </div>
@@ -82,7 +82,7 @@ export default function BlossomingBliss() {
                 <span className="text-[#c97a8e] mr-2">{pillar.number}.</span>
                 {pillar.title}
               </h3>
-              <p className="text-white/80 leading-relaxed text-base" data-testid={`text-pillar-desc-${pillar.number}`}>
+              <p className="text-black/80 leading-relaxed text-base" data-testid={`text-pillar-desc-${pillar.number}`}>
                 {pillar.description}
               </p>
             </div>
@@ -90,7 +90,7 @@ export default function BlossomingBliss() {
         </div>
 
         <div className="card-glass rounded-md p-6 sm:p-8 space-y-4" data-testid="section-closing">
-          <p className="text-white/80 leading-relaxed text-base" data-testid="text-closing">
+          <p className="text-black/80 leading-relaxed text-base" data-testid="text-closing">
             You'll leave with more than just good memories. You'll have a roadmap to stay blissful and grounded, no matter how chaotic the "real world" gets.
           </p>
         </div>
@@ -99,10 +99,10 @@ export default function BlossomingBliss() {
           <h3 className="font-display text-2xl font-bold text-gradient-purple" data-testid="text-details-heading">
             Retreat Details
           </h3>
-          <p className="text-white/80 leading-relaxed text-base" data-testid="text-duration">
+          <p className="text-black/80 leading-relaxed text-base" data-testid="text-duration">
             <span className="text-[#e8a4b8] font-semibold">Duration:</span> 7 days
           </p>
-          <p className="text-white/70 leading-relaxed text-base italic" data-testid="text-customizable">
+          <p className="text-black/70 leading-relaxed text-base italic" data-testid="text-customizable">
             All workshops & Retreats are customizable and are designed to meet your individual needs.
           </p>
         </div>
@@ -114,19 +114,19 @@ export default function BlossomingBliss() {
           <div className="grid sm:grid-cols-2 gap-4">
             <div className="card-glass rounded-md p-5 text-center space-y-2" data-testid="card-rate-zoom">
               <p className="text-[#e8a4b8] font-display font-semibold text-lg">Zoom</p>
-              <p className="text-white/70 text-sm">4 hours daily for 7 days</p>
-              <p className="text-white font-bold text-2xl" data-testid="text-price-zoom">USD $1,540</p>
+              <p className="text-black/70 text-sm">4 hours daily for 7 days</p>
+              <p className="text-black font-bold text-2xl" data-testid="text-price-zoom">USD $1,540</p>
             </div>
             <div className="card-glass rounded-md p-5 text-center space-y-2" data-testid="card-rate-inperson">
               <p className="text-[#e8a4b8] font-display font-semibold text-lg">In Person</p>
-              <p className="text-white/70 text-sm">Accommodation included</p>
-              <p className="text-white font-bold text-2xl" data-testid="text-price-inperson">USD $3,300</p>
+              <p className="text-black/70 text-sm">Accommodation included</p>
+              <p className="text-black font-bold text-2xl" data-testid="text-price-inperson">USD $3,300</p>
             </div>
           </div>
         </div>
 
         <div className="card-glass rounded-md p-6 sm:p-8 text-center space-y-4" data-testid="section-globetrotter">
-          <p className="text-white/70 leading-relaxed text-base">
+          <p className="text-black/70 leading-relaxed text-base">
             As a globetrotter, I am available for sessions worldwide. Whether you are in Canada, Asia, or anywhere in between, we can connect and work together :)
           </p>
           <Link href="/contact">
@@ -140,7 +140,7 @@ export default function BlossomingBliss() {
         </div>
 
         <div className="card-glass rounded-md p-6 sm:p-8" data-testid="section-disclaimer">
-          <p className="text-white/40 text-xs leading-relaxed italic">
+          <p className="text-black/40 text-xs leading-relaxed italic">
             This educational material is provided under freedom of speech for your information only. It is not intended to substitute for the medical expertise and advice of your health practitioners from whom we encourage you to seek advice about treatment or care. These statements have not been evaluated by the Food and Drug Administration. This product is not intended to diagnose, treat, cure, or prevent any disease.
           </p>
         </div>

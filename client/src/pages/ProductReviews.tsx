@@ -29,7 +29,7 @@ const blogPosts: BlogPost[] = [
     excerpt: "Breaking down the science behind IM8's formula — does this all-in-one supplement actually deliver on its longevity promises? Here's what the research says.",
     href: "/product-reviews/im8-health-review",
     badge: "In-Depth Review",
-    badgeColor: "bg-rose-500/15 text-rose-300 border-rose-500/25",
+    badgeColor: "bg-rose-500/15 text-rose-600 border-rose-500/25",
   },
   {
     id: "vielight-neuro-review",
@@ -76,15 +76,15 @@ export default function ProductReviews() {
                 {post.badge}
               </Badge>
               <h2
-                className="font-display text-xl sm:text-2xl font-bold text-white mb-3 group-hover:text-rose-300 transition-colors"
+                className="font-display text-xl sm:text-2xl font-bold text-black mb-3 group-hover:text-rose-600 transition-colors"
                 data-testid={`text-post-title-${post.id}`}
               >
                 {post.title}
               </h2>
-              <p className="text-white/50 text-sm sm:text-base leading-relaxed mb-4">
+              <p className="text-black/50 text-sm sm:text-base leading-relaxed mb-4">
                 {post.excerpt}
               </p>
-              <span className="inline-flex items-center text-rose-400 text-sm font-medium group-hover:text-rose-300 transition-colors">
+              <span className="inline-flex items-center text-rose-400 text-sm font-medium group-hover:text-rose-600 transition-colors">
                 Read Full Review <ArrowRight className="ml-2 w-4 h-4" />
               </span>
             </div>

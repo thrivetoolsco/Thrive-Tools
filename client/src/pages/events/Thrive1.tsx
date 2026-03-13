@@ -8,7 +8,7 @@ export default function Thrive1() {
       <div className="space-y-12" data-testid="section-thrive1">
 
         <div className="card-glass rounded-md p-6 sm:p-8 space-y-4" data-testid="section-intro">
-          <p className="text-white/80 leading-relaxed text-base" data-testid="text-intro">
+          <p className="text-black/80 leading-relaxed text-base" data-testid="text-intro">
             I'm stoked to invite you to a screening of <span className="text-[#e8a4b8] font-semibold">THRIVE 1: What on Earth Will It Take?</span> If you've ever felt like the "mainstream" story is missing a few chapters, this one's for you. It's an unconventional deep dive that follows the money to show how power is consolidated globally. But it doesn't just leave you hanging with the problems. It weaves together breakthroughs in science and consciousness to offer actual strategies for reclaiming our future.
           </p>
         </div>
@@ -26,10 +26,10 @@ export default function Thrive1() {
           <h3 className="font-display text-2xl font-bold text-gradient-purple" data-testid="text-why-heading">
             Why I'm Hosting This
           </h3>
-          <p className="text-white/80 leading-relaxed text-base" data-testid="text-why-1">
+          <p className="text-black/80 leading-relaxed text-base" data-testid="text-why-1">
             I've spent a lot of time digging into what it actually takes to thrive, not just survive the daily grind. This documentary was a massive "aha" moment for me. It connects the dots between global systems and our personal health in a way that's actually empowering instead of just overwhelming.
           </p>
-          <p className="text-white/80 leading-relaxed text-base" data-testid="text-why-2">
+          <p className="text-black/80 leading-relaxed text-base" data-testid="text-why-2">
             I wanted to create a space where we can watch this together, skip the small talk, and have some real conversations about where we're headed. Hope to see you there.
           </p>
         </div>
@@ -39,10 +39,10 @@ export default function Thrive1() {
             Event Details
           </h3>
           <div className="flex flex-col items-center gap-3">
-            <p className="text-white/80 leading-relaxed text-base" data-testid="text-cost">
-              <span className="text-[#e8a4b8] font-semibold">Cost:</span> Free <span className="text-white/50 text-sm">(This is about community and awareness).</span>
+            <p className="text-black/80 leading-relaxed text-base" data-testid="text-cost">
+              <span className="text-[#e8a4b8] font-semibold">Cost:</span> Free <span className="text-black/50 text-sm">(This is about community and awareness).</span>
             </p>
-            <p className="text-white/80 leading-relaxed text-base flex items-center gap-2" data-testid="text-duration">
+            <p className="text-black/80 leading-relaxed text-base flex items-center gap-2" data-testid="text-duration">
               <Clock className="w-4 h-4 text-[#c97a8e]" />
               <span><span className="text-[#e8a4b8] font-semibold">Duration:</span> 2h 15m of mind expanding info.</span>
             </p>
@@ -56,7 +56,7 @@ export default function Thrive1() {
               Grab Your Spot
             </h3>
           </div>
-          <p className="text-white/80 leading-relaxed text-base text-center" data-testid="text-registration">
+          <p className="text-black/80 leading-relaxed text-base text-center" data-testid="text-registration">
             Registration is required. Just shoot a quick email to{" "}
             <a
               href="mailto:thrivetools.co@gmail.com"
@@ -70,7 +70,7 @@ export default function Thrive1() {
         </div>
 
         <div className="card-glass rounded-md p-6 sm:p-8 text-center space-y-4" data-testid="section-newsletter">
-          <p className="text-white/70 leading-relaxed text-base" data-testid="text-newsletter">
+          <p className="text-black/70 leading-relaxed text-base" data-testid="text-newsletter">
             Want to stay in the loop on future dates and locations? Just send me an email and I'll add you to the list.
           </p>
           <a

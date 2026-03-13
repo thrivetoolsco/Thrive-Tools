@@ -23,11 +23,11 @@ export default function Events() {
         <section className="card-glass rounded-md p-8 sm:p-10 text-center" data-testid="section-newsletter">
           <div className="flex items-center justify-center gap-2 mb-4">
             <Mail className="w-5 h-5 text-[#c97a8e]" />
-            <h2 className="font-display text-2xl sm:text-3xl font-bold text-white" data-testid="text-newsletter-heading">
+            <h2 className="font-display text-2xl sm:text-3xl font-bold text-black" data-testid="text-newsletter-heading">
               Subscribe to my Newsletter
             </h2>
           </div>
-          <p className="text-white/60 text-base leading-relaxed mb-6 max-w-md mx-auto" data-testid="text-newsletter-subtitle">
+          <p className="text-black/60 text-base leading-relaxed mb-6 max-w-md mx-auto" data-testid="text-newsletter-subtitle">
             Want to stay in the loop? Just send me an email and I'll add you to the list. No forms, no fuss. Just real updates.
           </p>
           <div className="flex justify-center">
@@ -51,7 +51,7 @@ export default function Events() {
                 Future Events
               </h2>
             </div>
-            <p className="text-white/40 text-sm ml-7" data-testid="text-future-events-subtitle">(click any event to learn more)</p>
+            <p className="text-black/40 text-sm ml-7" data-testid="text-future-events-subtitle">(click any event to learn more)</p>
           </div>
 
           <div className="grid gap-4">
@@ -63,7 +63,7 @@ export default function Events() {
                 style={{ borderColor: "rgba(201,122,142,0.25)" }}
                 data-testid={`link-event-${event.id}`}
               >
-                <span className="text-white font-medium group-hover:text-[#e8a4b8] transition-colors" data-testid={`text-event-${event.id}`}>
+                <span className="text-black font-medium group-hover:text-[#e8a4b8] transition-colors" data-testid={`text-event-${event.id}`}>
                   {event.title}
                 </span>
                 <ArrowRight className="w-4 h-4 text-[#c97a8e] opacity-0 group-hover:opacity-100 transition-opacity shrink-0" />
@@ -82,7 +82,7 @@ export default function Events() {
                 Past Events
               </h2>
             </div>
-            <p className="text-white/40 text-sm ml-7" data-testid="text-past-events-subtitle">(click any event to learn more)</p>
+            <p className="text-black/40 text-sm ml-7" data-testid="text-past-events-subtitle">(click any event to learn more)</p>
           </div>
 
           <div className="grid gap-4">
@@ -94,7 +94,7 @@ export default function Events() {
                 style={{ borderColor: "rgba(155,111,165,0.25)" }}
                 data-testid={`link-event-${event.id}`}
               >
-                <span className="text-white/80 font-medium group-hover:text-[#c4a0d4] transition-colors" data-testid={`text-event-${event.id}`}>
+                <span className="text-black/80 font-medium group-hover:text-[#c4a0d4] transition-colors" data-testid={`text-event-${event.id}`}>
                   {event.title}
                 </span>
                 <ArrowRight className="w-4 h-4 text-[#9b6fa5] opacity-0 group-hover:opacity-100 transition-opacity shrink-0" />

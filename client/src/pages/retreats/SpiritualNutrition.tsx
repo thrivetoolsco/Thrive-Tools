@@ -23,7 +23,7 @@ export default function SpiritualNutrition() {
           <p className="text-[#e8a4b8] text-lg sm:text-xl font-display italic leading-relaxed" data-testid="text-subtitle">
             Spiritual Nutrition: The 3 Day Digital Intensive
           </p>
-          <p className="text-white/80 leading-relaxed text-base" data-testid="text-opening">
+          <p className="text-black/80 leading-relaxed text-base" data-testid="text-opening">
             We all know how hard it is to feel "aligned" when your body feels heavy or your brain is foggy. This isn't a typical diet or a restrictive detox. It's a 3 day deep dive into how what you consume physically, directly affects how you think, feel, and show up.
           </p>
         </div>
@@ -41,15 +41,15 @@ export default function SpiritualNutrition() {
           <h3 className="font-display text-2xl font-bold text-gradient-purple" data-testid="text-lowdown-heading">
             The Lowdown
           </h3>
-          <p className="text-white/80 leading-relaxed text-base" data-testid="text-lowdown-intro">
+          <p className="text-black/80 leading-relaxed text-base" data-testid="text-lowdown-intro">
             We're looking at nutrition as a tool for mental and emotional freedom. By lightening the load on your system, we're clearing the path to that "quiet mind" state where everything just clicks.
           </p>
           <ul className="space-y-4">
             {pillars.map((pillar, i) => (
               <li key={i} className="flex items-start gap-3" data-testid={`pillar-item-${i}`}>
                 <Check className="w-5 h-5 text-[#c97a8e] shrink-0 mt-0.5" />
-                <p className="text-white/80 leading-relaxed text-base">
-                  <span className="text-white font-semibold">{pillar.label}:</span> {pillar.desc}
+                <p className="text-black/80 leading-relaxed text-base">
+                  <span className="text-black font-semibold">{pillar.label}:</span> {pillar.desc}
                 </p>
               </li>
             ))}
@@ -87,7 +87,7 @@ export default function SpiritualNutrition() {
           <h3 className="font-display text-2xl font-bold text-gradient-purple" data-testid="text-join-heading">
             Join from Anywhere
           </h3>
-          <p className="text-white/80 leading-relaxed text-base" data-testid="text-join-desc">
+          <p className="text-black/80 leading-relaxed text-base" data-testid="text-join-desc">
             I'm currently wandering the globe, but this intensive is 100% online. Whether you're hanging in Canada, South America, or anywhere else on the map, we can jump in and do the work together.
           </p>
         </div>
@@ -98,10 +98,10 @@ export default function SpiritualNutrition() {
           </h3>
           <div className="card-glass rounded-md p-6 text-center space-y-3" data-testid="card-rate-zoom">
             <p className="text-[#e8a4b8] font-display font-semibold text-lg">3 days online Zoom workshop</p>
-            <p className="text-white/70 text-sm">From 10 am – 1 pm</p>
-            <p className="text-white font-bold text-3xl" data-testid="text-price">USD $396</p>
+            <p className="text-black/70 text-sm">From 10 am – 1 pm</p>
+            <p className="text-black font-bold text-3xl" data-testid="text-price">USD $396</p>
           </div>
-          <p className="text-center text-white/50 text-xs italic" data-testid="text-customizable">
+          <p className="text-center text-black/50 text-xs italic" data-testid="text-customizable">
             * All workshops & Retreats are customizable and are designed to meet your individual needs.
           </p>
         </div>
@@ -118,7 +118,7 @@ export default function SpiritualNutrition() {
         </div>
 
         <div className="card-glass rounded-md p-6 sm:p-8" data-testid="section-disclaimer">
-          <p className="text-white/40 text-xs leading-relaxed italic">
+          <p className="text-black/40 text-xs leading-relaxed italic">
             This educational material is provided under freedom of speech for your information only. It is not intended to substitute for the medical expertise and advice of your health practitioners from whom we encourage you to seek advice about treatment or care. These statements have not been evaluated by the Food and Drug Administration. This product is not intended to diagnose, treat, cure, or prevent any disease.
           </p>
         </div>

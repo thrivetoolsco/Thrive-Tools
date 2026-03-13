@@ -20,13 +20,13 @@ export default function Breathwork() {
         </div>
 
         <div className="card-glass rounded-md p-6 sm:p-8 space-y-6" data-testid="section-intro">
-          <p className="text-white/80 leading-relaxed text-base" data-testid="text-intro-1">
+          <p className="text-black/80 leading-relaxed text-base" data-testid="text-intro-1">
             Your breath has been with you since day one. It's the only thing that never leaves, yet most of us hardly notice it's there.
           </p>
-          <p className="text-white/80 leading-relaxed text-base" data-testid="text-intro-2">
+          <p className="text-black/80 leading-relaxed text-base" data-testid="text-intro-2">
             We spend so much time caught in the "hustle" or stuck in "fight or flight" mode without even realizing it. This 1 hour session is a chance to finally hit the brakes. Whether you're looking to heal old patterns, navigate the stress of a corporate job, or just want to feel a little more comfortable in your own skin, this space is for you.
           </p>
-          <p className="text-white/80 leading-relaxed text-base" data-testid="text-intro-3">
+          <p className="text-black/80 leading-relaxed text-base" data-testid="text-intro-3">
             We'll dive into simple, powerful techniques that you can actually use in your real life; not just on a yoga mat. It's about more than just "relaxing"; it's about shedding the versions of yourself that don't fit anymore so you can show up authentically. No fluff, just you and your breath, reconnecting.
           </p>
         </div>
@@ -47,7 +47,7 @@ export default function Breathwork() {
         <div className="card-glass rounded-md p-6 sm:p-8" data-testid="section-sessions">
           <Accordion type="single" collapsible className="w-full">
             <AccordionItem value="just-for-you" className="border-white/10" data-testid="accordion-just-for-you">
-              <AccordionTrigger className="text-white/90 text-lg font-display hover:no-underline hover:text-white" data-testid="trigger-just-for-you">
+              <AccordionTrigger className="text-black/90 text-lg font-display hover:no-underline hover:text-black" data-testid="trigger-just-for-you">
                 <div className="flex items-center gap-3">
                   <div className="w-8 h-8 rounded-full flex items-center justify-center bg-[#c97a8e]/20 text-[#e8a4b8] shrink-0">
                     <User className="w-4 h-4" />
@@ -55,7 +55,7 @@ export default function Breathwork() {
                   <span>Breathwork just for You</span>
                 </div>
               </AccordionTrigger>
-              <AccordionContent className="text-white/80 leading-relaxed text-base space-y-4 pt-2" data-testid="content-just-for-you">
+              <AccordionContent className="text-black/80 leading-relaxed text-base space-y-4 pt-2" data-testid="content-just-for-you">
                 <p data-testid="text-just-for-you-1">
                   This is for the people ready to stop skimming the surface and actually do the work. We aren't just "practicing breathing"; we're using your breath to get under the hood, unstick those old emotional blocks, and clear out the "noise" you've been carrying around.
                 </p>
@@ -66,7 +66,7 @@ export default function Breathwork() {
             </AccordionItem>
 
             <AccordionItem value="couples" className="border-white/10" data-testid="accordion-couples">
-              <AccordionTrigger className="text-white/90 text-lg font-display hover:no-underline hover:text-white" data-testid="trigger-couples">
+              <AccordionTrigger className="text-black/90 text-lg font-display hover:no-underline hover:text-black" data-testid="trigger-couples">
                 <div className="flex items-center gap-3">
                   <div className="w-8 h-8 rounded-full flex items-center justify-center bg-[#c97a8e]/20 text-[#e8a4b8] shrink-0">
                     <Heart className="w-4 h-4" />
@@ -74,7 +74,7 @@ export default function Breathwork() {
                   <span>Breathwork for Couples</span>
                 </div>
               </AccordionTrigger>
-              <AccordionContent className="text-white/80 leading-relaxed text-base space-y-4 pt-2" data-testid="content-couples">
+              <AccordionContent className="text-black/80 leading-relaxed text-base space-y-4 pt-2" data-testid="content-couples">
                 <p data-testid="text-couples-1">
                   Relationships can get noisy. This session is about hitting the "pause" button and actually getting back in sync with each other. By simply breathing together, you'll learn to pick up on each other's vibes without needing a million words to explain it.
                 </p>
@@ -85,7 +85,7 @@ export default function Breathwork() {
             </AccordionItem>
 
             <AccordionItem value="business" className="border-white/10 border-b-0" data-testid="accordion-business">
-              <AccordionTrigger className="text-white/90 text-lg font-display hover:no-underline hover:text-white" data-testid="trigger-business">
+              <AccordionTrigger className="text-black/90 text-lg font-display hover:no-underline hover:text-black" data-testid="trigger-business">
                 <div className="flex items-center gap-3">
                   <div className="w-8 h-8 rounded-full flex items-center justify-center bg-[#c97a8e]/20 text-[#e8a4b8] shrink-0">
                     <Briefcase className="w-4 h-4" />
@@ -93,7 +93,7 @@ export default function Breathwork() {
                   <span>Breathwork for Your Business</span>
                 </div>
               </AccordionTrigger>
-              <AccordionContent className="text-white/80 leading-relaxed text-base space-y-4 pt-2" data-testid="content-business">
+              <AccordionContent className="text-black/80 leading-relaxed text-base space-y-4 pt-2" data-testid="content-business">
                 <p data-testid="text-business-1">
                   Chronic stress isn't just a buzzword; it's the reason your team is tired, distracted, and checked out.
                 </p>
@@ -106,7 +106,7 @@ export default function Breathwork() {
         </div>
 
         <div className="card-glass rounded-md p-6 sm:p-8 text-center space-y-4" data-testid="section-globetrotter">
-          <p className="text-white/70 leading-relaxed text-base">
+          <p className="text-black/70 leading-relaxed text-base">
             As a globetrotter, I am available for sessions worldwide. Whether you are in Canada, Asia, or anywhere else on the planet, we can connect and work together :)
           </p>
           <Link href="/contact">
@@ -120,7 +120,7 @@ export default function Breathwork() {
         </div>
 
         <div className="card-glass rounded-md p-6 sm:p-8" data-testid="section-disclaimer">
-          <p className="text-white/40 text-xs leading-relaxed italic">
+          <p className="text-black/40 text-xs leading-relaxed italic">
             This educational material is provided under freedom of speech for your information only. It is not intended to substitute for the medical expertise and advice of your health practitioners from whom we encourage you to seek advice about treatment or care. These statements have not been evaluated by the Food and Drug Administration. This product is not intended to diagnose, treat, cure, or prevent any disease.
           </p>
         </div>

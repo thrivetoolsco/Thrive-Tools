@@ -26,7 +26,7 @@ export default function DrumCircle() {
           <p className="text-[#e8a4b8] text-lg font-display italic leading-relaxed" data-testid="text-opening">
             Every full moon this summer, we're heading to the bonfire to celebrate just being alive.
           </p>
-          <p className="text-white/80 leading-relaxed text-base" data-testid="text-description">
+          <p className="text-black/80 leading-relaxed text-base" data-testid="text-description">
             This isn't your typical breathwork session. We're pairing deep breathwork with the raw energy of live drumming to help you get out of your head and into a flow state. It's a space to shake off the stagnant vibes, clear out any heavy energy you've been carrying, and just... breathe.
           </p>
         </div>
@@ -35,15 +35,15 @@ export default function DrumCircle() {
           <h3 className="font-display text-2xl font-bold text-gradient-purple" data-testid="text-vibe-heading">
             The Vibe
           </h3>
-          <p className="text-white/80 leading-relaxed text-base" data-testid="text-vibe">
+          <p className="text-black/80 leading-relaxed text-base" data-testid="text-vibe">
             Expect some chanting, some "Aum-ing," and a lot of genuine connection. It's about finding that sense of wholeness within yourself while vibing with the people around you.
           </p>
           <ul className="space-y-4">
             {details.map((item, i) => (
               <li key={i} className="flex items-start gap-3" data-testid={`detail-item-${i}`}>
                 <Check className="w-5 h-5 text-[#c97a8e] shrink-0 mt-0.5" />
-                <p className="text-white/80 leading-relaxed text-base">
-                  <span className="text-white font-semibold">{item.label}:</span> {item.desc}
+                <p className="text-black/80 leading-relaxed text-base">
+                  <span className="text-black font-semibold">{item.label}:</span> {item.desc}
                 </p>
               </li>
             ))}
