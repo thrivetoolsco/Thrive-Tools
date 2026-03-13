@@ -252,10 +252,10 @@ function CopyableCode({ code }: { code: string }) {
       onClick={handleCopy}
       className={`inline-flex items-center gap-1.5 px-3 py-1.5 rounded-md text-xs font-mono font-semibold transition-all ${
         isLink
-          ? "bg-amber-500/10 text-amber-300 border border-amber-500/20 cursor-default"
+          ? "bg-amber-500/15 text-amber-700 border border-amber-500/30 cursor-default"
           : copied
-            ? "bg-green-500/20 text-green-300 border border-green-500/30"
-            : "bg-rose-500/15 text-rose-300 border border-rose-500/25 hover:bg-rose-500/25 cursor-pointer"
+            ? "bg-green-500/20 text-green-700 border border-green-500/30"
+            : "bg-rose-500/15 text-rose-600 border border-rose-500/25 hover:bg-rose-500/25 cursor-pointer"
       }`}
       data-testid={`button-copy-code-${code.replace(/\s+/g, "-").substring(0, 20)}`}
       title={isLink ? code : `Click to copy: ${code}`}
@@ -282,10 +282,10 @@ function DiscountCard({ item, index }: { item: DiscountItem; index: number }) {
       data-testid={`card-discount-${index}`}
     >
       <div>
-        <h3 className="text-white font-bold text-lg mb-2">{item.name}</h3>
-        <p className="text-white/50 text-sm leading-relaxed">{item.description}</p>
+        <h3 className="text-[#3d1a28] font-bold text-lg mb-2">{item.name}</h3>
+        <p className="text-[#3d1a28]/55 text-sm leading-relaxed">{item.description}</p>
       </div>
-      <div className="flex flex-wrap items-center justify-between gap-3 pt-3 border-t border-white/5">
+      <div className="flex flex-wrap items-center justify-between gap-3 pt-3 border-t border-[#3d1a28]/10">
         <CopyableCode code={item.code} />
         <a
           href={item.url}
@@ -296,7 +296,7 @@ function DiscountCard({ item, index }: { item: DiscountItem; index: number }) {
           <Button
             size="sm"
             variant="outline"
-            className="rounded-full text-xs border-white/15 text-white/70 bg-transparent px-4"
+            className="rounded-full text-xs border-[#3d1a28]/15 text-[#3d1a28]/70 bg-transparent px-4"
           >
             Visit <ExternalLink className="w-3 h-3 ml-1.5" />
           </Button>
@@ -331,17 +331,17 @@ function CategorySection({ icon: Icon, title, subtitle, items, badgeColor, gradi
           className="w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0"
           style={{ background: gradient, border: `1px solid ${borderColor}` }}
         >
-          <Icon className="w-5 h-5 text-rose-300" />
+          <Icon className="w-5 h-5 text-rose-500" />
         </div>
         <div className="text-left">
-          <h2 className="text-white font-bold text-2xl font-display">{title}</h2>
-          <p className="text-white/40 text-sm">{subtitle}</p>
+          <h2 className="text-[#3d1a28] font-bold text-2xl font-display">{title}</h2>
+          <p className="text-[#3d1a28]/50 text-sm">{subtitle}</p>
         </div>
         <Badge className={`${badgeColor} border rounded-full text-xs px-3 py-0.5 font-medium ml-auto hidden sm:inline-flex`}>
           {items.length} brands
         </Badge>
         <ChevronDown
-          className={`w-5 h-5 text-white/40 flex-shrink-0 transition-transform duration-300 ${open ? "rotate-180" : ""}`}
+          className={`w-5 h-5 text-[#3d1a28]/40 flex-shrink-0 transition-transform duration-300 ${open ? "rotate-180" : ""}`}
         />
       </button>
 
@@ -377,14 +377,14 @@ function TravelsSection() {
             border: "1px solid rgba(100,180,220,0.2)",
           }}
         >
-          <Plane className="w-5 h-5 text-sky-300" />
+          <Plane className="w-5 h-5 text-sky-500" />
         </div>
         <div className="text-left">
-          <h2 className="text-white font-bold text-2xl font-display">Travels</h2>
-          <p className="text-white/40 text-sm">I'm also passionate about Traveling.</p>
+          <h2 className="text-[#3d1a28] font-bold text-2xl font-display">Travels</h2>
+          <p className="text-[#3d1a28]/50 text-sm">I'm also passionate about Traveling.</p>
         </div>
         <ChevronDown
-          className={`w-5 h-5 text-white/40 flex-shrink-0 ml-auto transition-transform duration-300 ${open ? "rotate-180" : ""}`}
+          className={`w-5 h-5 text-[#3d1a28]/40 flex-shrink-0 ml-auto transition-transform duration-300 ${open ? "rotate-180" : ""}`}
         />
       </button>
 
@@ -415,19 +415,19 @@ function TravelsSection() {
 
 export default function Discounts() {
   return (
-    <div className="min-h-screen bg-[#0d0514] text-white overflow-x-hidden">
+    <div className="min-h-screen bg-[#fdf6f0] text-[#3d1a28] overflow-x-hidden">
       <Navigation />
 
       {/* Header */}
       <section
         className="pt-32 pb-16 px-4 sm:px-6 lg:px-8 relative overflow-hidden"
         style={{
-          background: "radial-gradient(ellipse 80% 50% at 50% 30%, #2d0e3e 0%, #1a0824 40%, #0d0514 100%)",
+          background: "radial-gradient(ellipse 80% 50% at 50% 30%, #f5e6f5 0%, #fdeef8 40%, #fdf6f0 100%)",
         }}
       >
         <div className="absolute inset-0 pointer-events-none overflow-hidden">
           <div
-            className="absolute top-1/3 left-1/3 w-64 h-64 rounded-full opacity-15"
+            className="absolute top-1/3 left-1/3 w-64 h-64 rounded-full opacity-30"
             style={{ background: "radial-gradient(circle, #c97a8e 0%, transparent 70%)", filter: "blur(50px)" }}
           />
         </div>
@@ -437,19 +437,19 @@ export default function Discounts() {
             <Button
               variant="outline"
               size="sm"
-              className="rounded-full border-white/15 text-white/60 bg-transparent mb-8 text-xs"
+              className="rounded-full border-[#3d1a28]/15 text-[#3d1a28]/60 bg-transparent mb-8 text-xs"
             >
               <ArrowLeft className="w-3 h-3 mr-2" /> Home
             </Button>
           </Link>
 
           <h1
-            className="font-display text-4xl sm:text-5xl lg:text-6xl font-bold mb-4 text-white"
+            className="font-display text-4xl sm:text-5xl lg:text-6xl font-bold mb-4"
             data-testid="text-discounts-headline"
           >
             <span className="text-gradient-rose">Discount Codes</span>
           </h1>
-          <p className="text-white/60 text-lg sm:text-xl max-w-3xl leading-relaxed font-medium" data-testid="text-discounts-subtitle">
+          <p className="text-[#3d1a28]/60 text-lg sm:text-xl max-w-3xl leading-relaxed font-medium" data-testid="text-discounts-subtitle">
             Top Biohacking Supplements, Longevity Tech & Conscious Fashion: 2026 Picks + Discount Codes
           </p>
         </div>
@@ -458,7 +458,7 @@ export default function Discounts() {
       {/* Content */}
       <section
         className="py-12 px-4 sm:px-6 lg:px-8"
-        style={{ background: "linear-gradient(180deg, #0d0514 0%, #160920 50%, #0d0514 100%)" }}
+        style={{ background: "linear-gradient(180deg, #fdf6f0 0%, #f8eef8 50%, #fdf6f0 100%)" }}
       >
         <div className="max-w-5xl mx-auto">
           <CategorySection
@@ -466,7 +466,7 @@ export default function Discounts() {
             title="Vitamins & Supplements"
             subtitle="Proven herbs, superfoods & targeted nutrition"
             items={vitaminsSupplements}
-            badgeColor="bg-rose-400/20 text-rose-300 border-rose-400/30"
+            badgeColor="bg-rose-400/20 text-rose-600 border-rose-400/30"
             gradient="linear-gradient(135deg, rgba(201,122,142,0.2) 0%, rgba(155,111,165,0.2) 100%)"
             startIndex={0}
           />
@@ -476,7 +476,7 @@ export default function Discounts() {
             title="Longevity Tech"
             subtitle="For cognitive power & cellular repair"
             items={healthTech}
-            badgeColor="bg-purple-400/20 text-purple-300 border-purple-400/30"
+            badgeColor="bg-purple-400/20 text-purple-600 border-purple-400/30"
             gradient="linear-gradient(135deg, rgba(155,111,165,0.2) 0%, rgba(100,80,180,0.2) 100%)"
             borderColor="rgba(155,111,165,0.2)"
             startIndex={vitaminsSupplements.length}
@@ -487,7 +487,7 @@ export default function Discounts() {
             title="Ethical Sources of Clothing"
             subtitle="Conscious fashion & grounding footwear"
             items={ethicalClothing}
-            badgeColor="bg-amber-400/20 text-amber-300 border-amber-400/30"
+            badgeColor="bg-amber-400/20 text-amber-700 border-amber-400/30"
             gradient="linear-gradient(135deg, rgba(212,168,103,0.2) 0%, rgba(201,122,142,0.2) 100%)"
             borderColor="rgba(212,168,103,0.2)"
             startIndex={vitaminsSupplements.length + healthTech.length}

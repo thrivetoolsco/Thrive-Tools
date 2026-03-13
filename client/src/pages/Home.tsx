@@ -29,13 +29,13 @@ export default function Home() {
   const visibleTestimonials = showAllTestimonials ? testimonials : testimonials.slice(0, 3);
 
   return (
-    <div className="min-h-screen bg-[#0d0514] text-white overflow-x-hidden">
+    <div className="min-h-screen bg-[#fdf6f0] text-[#3d1a28] overflow-x-hidden">
       <Navigation />
 
       {/* ─── HERO ─── */}
       <section
         className="relative min-h-screen flex items-center justify-center overflow-hidden"
-        style={{ background: "#0d0514" }}
+        style={{ background: "#fdf6f0" }}
       >
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
           <div
@@ -100,7 +100,7 @@ export default function Home() {
           <div
             className="absolute inset-0"
             style={{
-              background: "radial-gradient(ellipse 70% 50% at 50% 45%, transparent 0%, #0d0514 100%)",
+              background: "radial-gradient(ellipse 70% 50% at 50% 45%, transparent 0%, #fdf6f0 100%)",
             }}
           />
         </div>
@@ -126,16 +126,16 @@ export default function Home() {
           >
             <span className="text-gradient-rose">Still foggy? Still tired? </span>
             <br />
-            <span className="text-white/90">Still spending money on supplements that do nothing?</span>
+            <span className="text-[#3d1a28]/90">Still spending money on supplements that do nothing?</span>
           </h1>
 
           <p
-            className="text-white/60 text-base sm:text-lg lg:text-xl max-w-2xl mx-auto mb-10 leading-relaxed font-medium px-2"
+            className="text-[#3d1a28]/65 text-base sm:text-lg lg:text-xl max-w-2xl mx-auto mb-10 leading-relaxed font-medium px-2"
             data-testid="text-hero-subheadline"
           >
             I'm Eden. For 14 years I've been deep in the research — Taoist protocols, longevity science, biohacking — separating what actually works from what just sells.
             <br /><br />
-            And I've learned one thing: 90% of wellness is noise. The 10% that works? <Link href="/discount-codes" className="underline underline-offset-2 hover:text-white transition-colors">It's on this list.</Link>
+            And I've learned one thing: 90% of wellness is noise. The 10% that works? <Link href="/discount-codes" className="underline underline-offset-2 hover:text-[#c97a8e] transition-colors">It's on this list.</Link>
           </p>
 
           <div className="flex justify-center mb-10">
@@ -150,7 +150,7 @@ export default function Home() {
           </div>
 
           <p
-            className="text-white/60 text-base sm:text-lg lg:text-xl max-w-2xl mx-auto mb-10 leading-relaxed font-medium px-2"
+            className="text-[#3d1a28]/65 text-base sm:text-lg lg:text-xl max-w-2xl mx-auto mb-10 leading-relaxed font-medium px-2"
           >
             I don't sell supplements. I find the best ones and get you a discount on them. Getting access to the best products shouldn't mean paying full price for them.
             <br /><br />
@@ -192,7 +192,7 @@ export default function Home() {
             </div>
           </div>
 
-          <p className="text-white/60 text-base sm:text-lg lg:text-xl max-w-2xl mx-auto mb-6 leading-relaxed font-medium px-2" data-testid="text-retreats-intro">
+          <p className="text-[#3d1a28]/65 text-base sm:text-lg lg:text-xl max-w-2xl mx-auto mb-6 leading-relaxed font-medium px-2" data-testid="text-retreats-intro">
             Real transformation isn't just what you take. It's how you live.<br /><br />
             That's why I built spaces where the real work happens. In my retreats and workshops, we go deeper: nervous system reset, Taoist longevity practices, and cutting through the noise together, in person.
           </p>
@@ -215,18 +215,18 @@ export default function Home() {
       <section
         id="about"
         className="relative py-12 sm:py-20 px-6 sm:px-8 lg:px-8"
-        style={{ background: "linear-gradient(180deg, #0d0514 0%, #160920 50%, #0d0514 100%)" }}
+        style={{ background: "linear-gradient(180deg, #fdf6f0 0%, #f5eaf5 50%, #fdf6f0 100%)" }}
       >
         <div className="section-divider mb-12 sm:mb-16" />
         <div className="max-w-4xl mx-auto">
           <div className="mt-16 sm:mt-24 text-center">
-            <p className="text-white/60 text-lg font-medium mb-4">
+            <p className="text-[#3d1a28]/60 text-lg font-medium mb-4">
               Curious about my 14 year journey?
             </p>
             <Link href="/about" data-testid="link-full-story">
               <Button
                 variant="outline"
-                className="rounded-full px-8 text-sm tracking-widest uppercase font-semibold border-white/20 text-white/80 bg-transparent"
+                className="rounded-full px-8 text-sm tracking-widest uppercase font-semibold border-[#3d1a28]/20 text-[#3d1a28]/80 bg-transparent"
               >
                 Read the full story here
               </Button>
@@ -240,7 +240,7 @@ export default function Home() {
       <section
         className="py-16 sm:py-24 px-6 sm:px-8 lg:px-8 relative overflow-hidden"
         style={{
-          background: "linear-gradient(135deg, #1a0824 0%, #2d0e3e 50%, #1a0824 100%)",
+          background: "linear-gradient(135deg, #f8eef8 0%, #f0e4f5 50%, #f8eef8 100%)",
         }}
       >
         <div className="absolute inset-0 pointer-events-none overflow-hidden">
@@ -252,12 +252,12 @@ export default function Home() {
         <div className="max-w-5xl mx-auto relative z-10">
           <div className="text-center mb-12">
             <h2
-              className="font-display text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4"
+              className="font-display text-3xl sm:text-4xl lg:text-5xl font-bold mb-4"
               data-testid="text-results-headline"
             >
               <span className="text-gradient-rose">The Results</span>
             </h2>
-            <p className="text-white/50 text-base sm:text-lg max-w-xl mx-auto">
+            <p className="text-[#3d1a28]/55 text-base sm:text-lg max-w-xl mx-auto">
               Real stories from real people experiencing transformation.
             </p>
           </div>
@@ -281,7 +281,7 @@ export default function Home() {
                   />
                 </div>
                 <div className="p-4">
-                  <p className="text-white/70 text-sm font-medium" data-testid={`text-testimonial-name-${i}`}>
+                  <p className="text-[#3d1a28]/70 text-sm font-medium" data-testid={`text-testimonial-name-${i}`}>
                     {t.name}
                   </p>
                 </div>
@@ -294,7 +294,7 @@ export default function Home() {
               <Button
                 variant="outline"
                 onClick={() => setShowAllTestimonials(true)}
-                className="rounded-full px-8 text-sm tracking-widest uppercase font-semibold border-white/20 text-white/80 bg-transparent"
+                className="rounded-full px-8 text-sm tracking-widest uppercase font-semibold border-[#3d1a28]/20 text-[#3d1a28]/80 bg-transparent"
                 data-testid="button-more-testimonials"
               >
                 More <ChevronDown className="ml-2 w-4 h-4" />
@@ -307,7 +307,7 @@ export default function Home() {
               <Button
                 variant="outline"
                 onClick={() => setShowAllTestimonials(false)}
-                className="rounded-full px-8 text-sm tracking-widest uppercase font-semibold border-white/20 text-white/80 bg-transparent"
+                className="rounded-full px-8 text-sm tracking-widest uppercase font-semibold border-[#3d1a28]/20 text-[#3d1a28]/80 bg-transparent"
                 data-testid="button-less-testimonials"
               >
                 Show Less <ChevronDown className="ml-2 w-4 h-4 rotate-180" />
