@@ -83,7 +83,7 @@ export default function MescalineWisdom() {
           </p>
           <Link href="/contact">
             <Button
-              className="bg-[#c97a8e] border-[#c97a8e] text-white mt-2"
+              className="bg-violet-400 border-violet-400 text-white mt-2"
               data-testid="link-schedule-cta"
             >
               Sounds Great, Let's Schedule A Date <ArrowRight className="w-4 h-4 ml-2" />

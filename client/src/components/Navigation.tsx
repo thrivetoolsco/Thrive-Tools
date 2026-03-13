@@ -88,7 +88,7 @@ export default function Navigation() {
         }`}
         style={{ background: "rgba(253,246,240,0.99)" }}
       >
-        <div className="border-t border-[#c97a8e]/15 py-4 px-6 overflow-y-auto max-h-[75vh]">
+        <div className="border-t border-violet-400/15 py-4 px-6 overflow-y-auto max-h-[75vh]">
           <div className="flex flex-col gap-1">
             {navItems.map((item) => (
               <div key={item.label}>
@@ -125,7 +125,7 @@ export default function Navigation() {
                     href={item.href}
                     className={`text-sm uppercase tracking-[0.12em] font-medium block py-3 px-2 rounded-lg transition-all duration-200 ${
                       location === item.href
-                        ? "text-[#c97a8e] bg-[#c97a8e]/10"
+                        ? "text-[#c97a8e] bg-violet-400/10"
                         : "text-[#3d1a28]/60 hover:text-[#3d1a28] hover:bg-[#3d1a28]/5"
                     }`}
                     onClick={() => setMenuOpen(false)}

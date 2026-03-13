@@ -78,7 +78,7 @@ export default function HyperionHerbs() {
               </p>
             </div>
             <div className="card-glass rounded-xl p-5">
-              <div className="w-10 h-10 rounded-full bg-rose-500/20 border border-rose-500/30 flex items-center justify-center mb-3">
+              <div className="w-10 h-10 rounded-full bg-violet-400/20 border border-rose-500/30 flex items-center justify-center mb-3">
                 <Heart className="w-4 h-4 text-rose-600" />
               </div>
               <h3 className="text-black font-bold text-sm mb-2">One-Size-Fits-All Is a Lie</h3>
@@ -154,7 +154,7 @@ export default function HyperionHerbs() {
 
             <div className="card-glass rounded-xl p-6">
               <div className="flex items-start gap-3 mb-3">
-                <div className="w-8 h-8 rounded-full bg-rose-500/20 border border-rose-500/30 flex items-center justify-center flex-shrink-0 mt-0.5">
+                <div className="w-8 h-8 rounded-full bg-violet-400/20 border border-rose-500/30 flex items-center justify-center flex-shrink-0 mt-0.5">
                   <span className="text-rose-600 font-bold text-sm">3</span>
                 </div>
                 <h3 className="text-black font-bold text-lg">Real, Noticeable Results</h3>
@@ -228,7 +228,7 @@ export default function HyperionHerbs() {
         </section>
 
         <div className="flex justify-center pt-4">
-          <Button asChild size="lg" className="bg-rose-500 text-white border-0 rounded-full px-10 py-4 text-sm tracking-widest uppercase font-semibold whitespace-normal text-center leading-relaxed h-auto">
+          <Button asChild size="lg" className="bg-violet-400 text-white border-0 rounded-full px-10 py-4 text-sm tracking-widest uppercase font-semibold whitespace-normal text-center leading-relaxed h-auto">
             <a href="http://www.hyperionherbs.com/discount/eden10" target="_blank" rel="noopener noreferrer" data-testid="link-hyperion-shop">
               Try Hyperion Herbs — Use Code EDEN10 <ExternalLink className="ml-2 w-4 h-4 flex-shrink-0" />
             </a>

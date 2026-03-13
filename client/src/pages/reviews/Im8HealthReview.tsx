@@ -19,7 +19,7 @@ export default function Im8HealthReview() {
         </div>
 
         <div className="flex flex-wrap gap-3">
-          <Badge className="bg-rose-500/15 text-rose-600 border border-rose-500/25 rounded-full px-3 py-0.5 text-xs">
+          <Badge className="bg-violet-400/15 text-rose-600 border border-rose-500/25 rounded-full px-3 py-0.5 text-xs">
             In-Depth Review
           </Badge>
           <Badge className="bg-white/5 text-black/50 border border-white/10 rounded-full px-3 py-0.5 text-xs">
@@ -162,7 +162,7 @@ export default function Im8HealthReview() {
         </section>
 
         <div className="text-center pt-4">
-          <Button asChild size="lg" className="bg-rose-500 text-white border-0 rounded-full px-6 sm:px-8 py-4 text-sm tracking-widest uppercase font-semibold h-auto leading-relaxed">
+          <Button asChild size="lg" className="bg-violet-400 text-white border-0 rounded-full px-6 sm:px-8 py-4 text-sm tracking-widest uppercase font-semibold h-auto leading-relaxed">
             <a href="https://im8health.com/" target="_blank" rel="noopener noreferrer" data-testid="link-im8-shop" className="inline-flex items-center justify-center gap-2 flex-wrap">
               Get IM8 — Use Code THRIVE10 <ExternalLink className="w-4 h-4 flex-shrink-0" />
             </a>
