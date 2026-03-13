@@ -31,7 +31,7 @@ export default function PersonalizedGuidance() {
           <div className="pt-2">
             <Link href="/contact">
               <Button
-                className="bg-violet-400 border-violet-400 text-white"
+                className="btn-gradient-rose text-white"
                 data-testid="button-consultation-cta"
               >
                 Book a Consultation <ArrowRight className="w-4 h-4 ml-2" />

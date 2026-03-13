@@ -62,7 +62,7 @@ export default function FoodForest() {
         <div className="card-glass rounded-md p-6 sm:p-8 text-center space-y-4" data-testid="section-cta">
           <Link href="/contact">
             <Button
-              className="bg-violet-400 border-violet-400 text-white"
+              className="btn-gradient-rose text-white"
               data-testid="link-schedule-date"
             >
               Sounds great, let's schedule a date <ArrowRight className="w-4 h-4 ml-2" />

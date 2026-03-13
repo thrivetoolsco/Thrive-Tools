@@ -86,7 +86,7 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="pt-8 border-t border-violet-400/15 flex flex-wrap items-center justify-between gap-4 text-[#3d1a28]/35 text-xs">
+        <div className="pt-8 border-t/15 flex flex-wrap items-center justify-between gap-4 text-[#3d1a28]/35 text-xs">
           <span>© 2026 Thrive Tools. All rights reserved.</span>
           <div className="flex flex-wrap gap-5">
             <a href="#" className="hover:text-[#3d1a28]/60 transition-colors">Privacy Policy</a>

@@ -109,7 +109,7 @@ export default function SpiritualNutrition() {
         <div className="card-glass rounded-md p-6 sm:p-8 text-center space-y-4" data-testid="section-cta">
           <Link href="/contact">
             <Button
-              className="bg-violet-400 border-violet-400 text-white mt-2"
+              className="btn-gradient-rose text-white mt-2"
               data-testid="link-schedule-cta"
             >
               I Deserve This, Let's Schedule A Date <ArrowRight className="w-4 h-4 ml-2" />

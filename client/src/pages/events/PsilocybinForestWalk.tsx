@@ -83,7 +83,7 @@ export default function PsilocybinForestWalk() {
           </p>
           <Link href="/contact">
             <Button
-              className="bg-violet-400 border-violet-400 text-white mt-2"
+              className="btn-gradient-rose text-white mt-2"
               data-testid="link-schedule"
             >
               Sounds great, let's schedule a date <ArrowRight className="w-4 h-4 ml-2" />

@@ -163,7 +163,7 @@ export default function Home() {
             <Link href="/discount-codes" data-testid="button-hero-discounts">
               <Button
                 size="lg"
-                className="bg-violet-400 text-white border-0 rounded-full px-8 text-sm tracking-widest uppercase font-semibold w-full sm:w-auto"
+                className="btn-gradient-rose text-white border-0 rounded-full px-8 text-sm tracking-widest uppercase font-semibold w-full sm:w-auto"
               >
                 → See the full list + discounts
               </Button>
@@ -201,7 +201,7 @@ export default function Home() {
             <Link href="/retreats-workshops/blossoming-bliss" data-testid="button-explore-retreats">
               <Button
                 size="lg"
-                className="bg-violet-400 text-white border-0 rounded-full px-8 text-sm tracking-widest uppercase font-semibold w-full sm:w-auto"
+                className="btn-gradient-rose text-white border-0 rounded-full px-8 text-sm tracking-widest uppercase font-semibold w-full sm:w-auto"
               >
                 → Explore Retreats & Workshops
               </Button>
@@ -319,7 +319,7 @@ export default function Home() {
             <Link href="/discount-codes" data-testid="link-results-discounts">
               <Button
                 size="lg"
-                className="bg-violet-400 text-white border-0 rounded-full px-6 sm:px-10 text-xs sm:text-sm tracking-widest uppercase font-semibold whitespace-normal text-center leading-relaxed h-auto py-3"
+                className="btn-gradient-rose text-white border-0 rounded-full px-6 sm:px-10 text-xs sm:text-sm tracking-widest uppercase font-semibold whitespace-normal text-center leading-relaxed h-auto py-3"
               >
                 Vetted Biohacking Tech, Supplements & Conscious Fashion Discount Codes (2026)
                 <ArrowRight className="ml-2 w-4 h-4 flex-shrink-0" />

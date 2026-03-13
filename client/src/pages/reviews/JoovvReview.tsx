@@ -152,7 +152,7 @@ export default function JoovvReview() {
         </section>
 
         <div className="text-center pt-4">
-          <Button asChild size="lg" className="bg-violet-400 text-white border-0 rounded-full px-6 sm:px-8 py-4 text-sm tracking-widest uppercase font-semibold h-auto leading-relaxed">
+          <Button asChild size="lg" className="btn-gradient-rose text-white border-0 rounded-full px-6 sm:px-8 py-4 text-sm tracking-widest uppercase font-semibold h-auto leading-relaxed">
             <a href="https://joovv.com/" target="_blank" rel="noopener noreferrer" data-testid="link-joovv-shop" className="inline-flex items-center justify-center gap-2 flex-wrap">
               Get Joovv — Use Code THRIVETOOLS <ExternalLink className="w-4 h-4 flex-shrink-0" />
             </a>

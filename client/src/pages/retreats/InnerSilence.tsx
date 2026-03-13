@@ -97,7 +97,7 @@ export default function InnerSilence() {
           </p>
           <Link href="/contact">
             <Button
-              className="bg-violet-400 border-violet-400 text-white mt-2"
+              className="btn-gradient-rose text-white mt-2"
               data-testid="link-schedule-cta"
             >
               Sounds Amazing, Let's Schedule A Date <ArrowRight className="w-4 h-4 ml-2" />

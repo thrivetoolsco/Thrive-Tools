@@ -256,6 +256,18 @@
     background-clip: text;
   }
 
+  .btn-gradient-rose {
+    background: linear-gradient(135deg, #e8a4b8 0%, #c97a8e 40%, #d4a867 100%);
+    border: none;
+    color: white;
+    transition: opacity 0.2s ease, filter 0.2s ease;
+  }
+
+  .btn-gradient-rose:hover {
+    opacity: 0.9;
+    filter: brightness(1.05);
+  }
+
   .text-gradient-purple {
     background: linear-gradient(135deg, #c4a0d4 0%, #9b6fa5 50%, #e8a4b8 100%);
     -webkit-background-clip: text;

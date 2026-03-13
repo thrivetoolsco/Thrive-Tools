@@ -33,7 +33,7 @@ export default function Events() {
           <div className="flex justify-center">
             <a
               href="mailto:thrivetools.co@gmail.com?subject=Newsletter Subscription"
-              className="inline-flex items-center gap-2 bg-violet-400 hover:bg-violet-500 text-white font-semibold px-6 py-3 rounded-full transition-colors"
+              className="inline-flex items-center gap-2 btn-gradient-rose text-white font-semibold px-6 py-3 rounded-full transition-colors"
               data-testid="link-subscribe-email"
             >
               <Mail className="w-4 h-4 shrink-0" />

@@ -75,7 +75,7 @@ export default function Thrive1() {
           </p>
           <a
             href="mailto:thrivetools.co@gmail.com?subject=Newsletter Subscription"
-            className="inline-flex items-center gap-2 bg-violet-400 hover:bg-violet-500 text-white font-semibold px-6 py-3 rounded-full transition-colors mt-2"
+            className="inline-flex items-center gap-2 btn-gradient-rose text-white font-semibold px-6 py-3 rounded-full transition-colors mt-2"
             data-testid="link-events-subscribe"
           >
             thrivetools.co@gmail.com <ArrowRight className="w-4 h-4" />

@@ -69,7 +69,7 @@ export default function About() {
             <Link href="/discount-codes">
               <button
                 data-testid="button-curated-list"
-                className="inline-flex items-center px-6 py-3 rounded-md bg-violet-400 hover:bg-violet-500 border border-violet-400 text-white font-medium transition-colors duration-200"
+                className="inline-flex items-center px-6 py-3 rounded-md btn-gradient-rose text-white font-medium transition-colors duration-200"
               >
                 → See the curated list
               </button>
@@ -77,7 +77,7 @@ export default function About() {
             <Link href="/events">
               <button
                 data-testid="button-retreats-workshops"
-                className="inline-flex items-center px-6 py-3 rounded-md bg-violet-400 hover:bg-violet-500 border border-violet-400 text-white font-medium transition-colors duration-200"
+                className="inline-flex items-center px-6 py-3 rounded-md btn-gradient-rose text-white font-medium transition-colors duration-200"
               >
                 → See the retreats & workshops
               </button>

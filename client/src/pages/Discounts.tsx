@@ -255,7 +255,7 @@ function CopyableCode({ code }: { code: string }) {
           ? "bg-amber-500/15 text-amber-700 border border-amber-500/30 cursor-default"
           : copied
             ? "bg-green-500/20 text-green-700 border border-green-500/30"
-            : "bg-violet-400/15 text-rose-600 border border-rose-500/25 hover:bg-violet-400/25 cursor-pointer"
+            : "bg-[#c97a8e]/15 text-rose-600 border border-rose-500/25 hover:bg-[#c97a8e]/25 cursor-pointer"
       }`}
       data-testid={`button-copy-code-${code.replace(/\s+/g, "-").substring(0, 20)}`}
       title={isLink ? code : `Click to copy: ${code}`}
@@ -395,7 +395,7 @@ function TravelsSection() {
           <Button
             asChild
             size="lg"
-            className="bg-violet-400 text-white border-0 rounded-full px-6 sm:px-10 py-4 text-sm sm:text-base tracking-widest uppercase font-semibold whitespace-normal text-center leading-relaxed h-auto"
+            className="btn-gradient-rose text-white border-0 rounded-full px-6 sm:px-10 py-4 text-sm sm:text-base tracking-widest uppercase font-semibold whitespace-normal text-center leading-relaxed h-auto"
           >
             <a
               href="https://www.traveltipsexposed.com"
