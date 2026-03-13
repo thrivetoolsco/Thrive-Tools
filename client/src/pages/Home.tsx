@@ -121,7 +121,7 @@ export default function Home() {
           </div>
 
           <h1
-            className="font-display text-3xl sm:text-5xl lg:text-7xl font-bold mb-6 leading-tight"
+            className="font-display text-2xl sm:text-4xl lg:text-5xl font-bold mb-6 leading-tight"
             data-testid="text-hero-headline"
           >
             <span className="text-gradient-rose">Still foggy? Still tired? </span>
