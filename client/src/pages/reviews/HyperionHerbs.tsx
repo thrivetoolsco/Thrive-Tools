@@ -78,7 +78,7 @@ export default function HyperionHerbs() {
               </p>
             </div>
             <div className="card-glass rounded-xl p-5">
-              <div className="w-10 h-10 rounded-full bg-[#c97a8e]/20 border border-rose-500/30 flex items-center justify-center mb-3">
+              <div className="w-10 h-10 rounded-full bg-[#c49280]/20 border border-rose-500/30 flex items-center justify-center mb-3">
                 <Heart className="w-4 h-4 text-rose-600" />
               </div>
               <h3 className="text-black font-bold text-sm mb-2">One-Size-Fits-All Is a Lie</h3>
@@ -154,7 +154,7 @@ export default function HyperionHerbs() {
 
             <div className="card-glass rounded-xl p-6">
               <div className="flex items-start gap-3 mb-3">
-                <div className="w-8 h-8 rounded-full bg-[#c97a8e]/20 border border-rose-500/30 flex items-center justify-center flex-shrink-0 mt-0.5">
+                <div className="w-8 h-8 rounded-full bg-[#c49280]/20 border border-rose-500/30 flex items-center justify-center flex-shrink-0 mt-0.5">
                   <span className="text-rose-600 font-bold text-sm">3</span>
                 </div>
                 <h3 className="text-black font-bold text-lg">Real, Noticeable Results</h3>
@@ -201,7 +201,7 @@ export default function HyperionHerbs() {
                 Try their <strong className="text-black/90">Reishi Mushroom 8:1 Extract</strong>. It's the king of calming tonics.
               </p>
             </div>
-            <div className="card-glass rounded-xl p-6 border-l-4" style={{ borderLeftColor: "#c97a8e" }}>
+            <div className="card-glass rounded-xl p-6 border-l-4" style={{ borderLeftColor: "#c49280" }}>
               <div className="flex items-center gap-2 mb-3">
                 <Sparkles className="w-4 h-4 text-rose-600" />
                 <h3 className="text-rose-600 font-bold">Physical Vitality, Liver Support & Cognitive Clarity</h3>

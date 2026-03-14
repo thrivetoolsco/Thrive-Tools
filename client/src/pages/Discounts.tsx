@@ -255,7 +255,7 @@ function CopyableCode({ code }: { code: string }) {
           ? "bg-amber-500/15 text-amber-700 border border-amber-500/30 cursor-default"
           : copied
             ? "bg-green-500/20 text-green-700 border border-green-500/30"
-            : "bg-[#c97a8e]/15 text-rose-600 border border-rose-500/25 hover:bg-[#c97a8e]/25 cursor-pointer"
+            : "bg-[#c49280]/15 text-rose-600 border border-rose-500/25 hover:bg-[#c49280]/25 cursor-pointer"
       }`}
       data-testid={`button-copy-code-${code.replace(/\s+/g, "-").substring(0, 20)}`}
       title={isLink ? code : `Click to copy: ${code}`}
@@ -282,10 +282,10 @@ function DiscountCard({ item, index }: { item: DiscountItem; index: number }) {
       data-testid={`card-discount-${index}`}
     >
       <div>
-        <h3 className="text-[#3d1a28] font-bold text-lg mb-2">{item.name}</h3>
-        <p className="text-[#3d1a28]/55 text-sm leading-relaxed">{item.description}</p>
+        <h3 className="text-[#2d1f14] font-bold text-lg mb-2">{item.name}</h3>
+        <p className="text-[#2d1f14]/55 text-sm leading-relaxed">{item.description}</p>
       </div>
-      <div className="flex flex-wrap items-center justify-between gap-3 pt-3 border-t border-[#3d1a28]/10">
+      <div className="flex flex-wrap items-center justify-between gap-3 pt-3 border-t border-[#2d1f14]/10">
         <CopyableCode code={item.code} />
         <a
           href={item.url}
@@ -296,7 +296,7 @@ function DiscountCard({ item, index }: { item: DiscountItem; index: number }) {
           <Button
             size="sm"
             variant="outline"
-            className="rounded-full text-xs border-[#3d1a28]/15 text-[#3d1a28]/70 bg-transparent px-4"
+            className="rounded-full text-xs border-[#2d1f14]/15 text-[#2d1f14]/70 bg-transparent px-4"
           >
             Visit <ExternalLink className="w-3 h-3 ml-1.5" />
           </Button>
@@ -317,7 +317,7 @@ interface CategorySectionProps {
   borderColor?: string;
 }
 
-function CategorySection({ icon: Icon, title, subtitle, items, badgeColor, gradient, startIndex, borderColor = "rgba(201,122,142,0.2)" }: CategorySectionProps) {
+function CategorySection({ icon: Icon, title, subtitle, items, badgeColor, gradient, startIndex, borderColor = "rgba(196,146,128,0.2)" }: CategorySectionProps) {
   const [open, setOpen] = useState(true);
 
   return (
@@ -334,14 +334,14 @@ function CategorySection({ icon: Icon, title, subtitle, items, badgeColor, gradi
           <Icon className="w-5 h-5 text-rose-500" />
         </div>
         <div className="text-left">
-          <h2 className="text-[#3d1a28] font-bold text-2xl font-display">{title}</h2>
-          <p className="text-[#3d1a28]/50 text-sm">{subtitle}</p>
+          <h2 className="text-[#2d1f14] font-bold text-2xl font-display">{title}</h2>
+          <p className="text-[#2d1f14]/50 text-sm">{subtitle}</p>
         </div>
         <Badge className={`${badgeColor} border rounded-full text-xs px-3 py-0.5 font-medium ml-auto hidden sm:inline-flex`}>
           {items.length} brands
         </Badge>
         <ChevronDown
-          className={`w-5 h-5 text-[#3d1a28]/40 flex-shrink-0 transition-transform duration-300 ${open ? "rotate-180" : ""}`}
+          className={`w-5 h-5 text-[#2d1f14]/40 flex-shrink-0 transition-transform duration-300 ${open ? "rotate-180" : ""}`}
         />
       </button>
 
@@ -373,18 +373,18 @@ function TravelsSection() {
         <div
           className="w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0"
           style={{
-            background: "linear-gradient(135deg, rgba(100,180,220,0.2) 0%, rgba(155,111,165,0.2) 100%)",
+            background: "linear-gradient(135deg, rgba(100,180,220,0.2) 0%, rgba(176,152,128,0.2) 100%)",
             border: "1px solid rgba(100,180,220,0.2)",
           }}
         >
           <Plane className="w-5 h-5 text-sky-500" />
         </div>
         <div className="text-left">
-          <h2 className="text-[#3d1a28] font-bold text-2xl font-display">Travels</h2>
-          <p className="text-[#3d1a28]/50 text-sm">I'm also passionate about Traveling.</p>
+          <h2 className="text-[#2d1f14] font-bold text-2xl font-display">Travels</h2>
+          <p className="text-[#2d1f14]/50 text-sm">I'm also passionate about Traveling.</p>
         </div>
         <ChevronDown
-          className={`w-5 h-5 text-[#3d1a28]/40 flex-shrink-0 ml-auto transition-transform duration-300 ${open ? "rotate-180" : ""}`}
+          className={`w-5 h-5 text-[#2d1f14]/40 flex-shrink-0 ml-auto transition-transform duration-300 ${open ? "rotate-180" : ""}`}
         />
       </button>
 
@@ -415,20 +415,20 @@ function TravelsSection() {
 
 export default function Discounts() {
   return (
-    <div className="min-h-screen bg-[#fdf6f0] text-[#3d1a28] overflow-x-hidden">
+    <div className="min-h-screen bg-[#f5f0e8] text-[#2d1f14] overflow-x-hidden">
       <Navigation />
 
       {/* Header */}
       <section
         className="pt-32 pb-16 px-4 sm:px-6 lg:px-8 relative overflow-hidden"
         style={{
-          background: "radial-gradient(ellipse 80% 50% at 50% 30%, #f5e6f5 0%, #fdeef8 40%, #fdf6f0 100%)",
+          background: "radial-gradient(ellipse 80% 50% at 50% 30%, #ede0d4 0%, #f5ece4 40%, #f5f0e8 100%)",
         }}
       >
         <div className="absolute inset-0 pointer-events-none overflow-hidden">
           <div
             className="absolute top-1/3 left-1/3 w-64 h-64 rounded-full opacity-30"
-            style={{ background: "radial-gradient(circle, #c97a8e 0%, transparent 70%)", filter: "blur(50px)" }}
+            style={{ background: "radial-gradient(circle, #c49280 0%, transparent 70%)", filter: "blur(50px)" }}
           />
         </div>
 
@@ -437,7 +437,7 @@ export default function Discounts() {
             <Button
               variant="outline"
               size="sm"
-              className="rounded-full border-[#3d1a28]/15 text-[#3d1a28]/60 bg-transparent mb-8 text-xs"
+              className="rounded-full border-[#2d1f14]/15 text-[#2d1f14]/60 bg-transparent mb-8 text-xs"
             >
               <ArrowLeft className="w-3 h-3 mr-2" /> Home
             </Button>
@@ -449,7 +449,7 @@ export default function Discounts() {
           >
             <span className="text-gradient-rose">Discount Codes</span>
           </h1>
-          <p className="text-[#3d1a28]/60 text-lg sm:text-xl max-w-3xl leading-relaxed font-medium" data-testid="text-discounts-subtitle">
+          <p className="text-[#2d1f14]/60 text-lg sm:text-xl max-w-3xl leading-relaxed font-medium" data-testid="text-discounts-subtitle">
             Top Biohacking Supplements, Longevity Tech & Conscious Fashion: 2026 Picks + Discount Codes
           </p>
         </div>
@@ -458,7 +458,7 @@ export default function Discounts() {
       {/* Content */}
       <section
         className="py-12 px-4 sm:px-6 lg:px-8"
-        style={{ background: "linear-gradient(180deg, #fdf6f0 0%, #f8eef8 50%, #fdf6f0 100%)" }}
+        style={{ background: "linear-gradient(180deg, #f5f0e8 0%, #e8e2d6 50%, #f5f0e8 100%)" }}
       >
         <div className="max-w-5xl mx-auto">
           <CategorySection
@@ -467,7 +467,7 @@ export default function Discounts() {
             subtitle="Proven herbs, superfoods & targeted nutrition"
             items={vitaminsSupplements}
             badgeColor="bg-rose-400/20 text-rose-600 border-rose-400/30"
-            gradient="linear-gradient(135deg, rgba(201,122,142,0.2) 0%, rgba(155,111,165,0.2) 100%)"
+            gradient="linear-gradient(135deg, rgba(196,146,128,0.2) 0%, rgba(176,152,128,0.2) 100%)"
             startIndex={0}
           />
 
@@ -477,8 +477,8 @@ export default function Discounts() {
             subtitle="For cognitive power & cellular repair"
             items={healthTech}
             badgeColor="bg-purple-400/20 text-purple-600 border-purple-400/30"
-            gradient="linear-gradient(135deg, rgba(155,111,165,0.2) 0%, rgba(100,80,180,0.2) 100%)"
-            borderColor="rgba(155,111,165,0.2)"
+            gradient="linear-gradient(135deg, rgba(176,152,128,0.2) 0%, rgba(100,80,180,0.2) 100%)"
+            borderColor="rgba(176,152,128,0.2)"
             startIndex={vitaminsSupplements.length}
           />
 
@@ -488,7 +488,7 @@ export default function Discounts() {
             subtitle="Conscious fashion & grounding footwear"
             items={ethicalClothing}
             badgeColor="bg-amber-400/20 text-amber-700 border-amber-400/30"
-            gradient="linear-gradient(135deg, rgba(212,168,103,0.2) 0%, rgba(201,122,142,0.2) 100%)"
+            gradient="linear-gradient(135deg, rgba(212,168,103,0.2) 0%, rgba(196,146,128,0.2) 100%)"
             borderColor="rgba(212,168,103,0.2)"
             startIndex={vitaminsSupplements.length + healthTech.length}
           />

@@ -29,7 +29,7 @@ const blogPosts: BlogPost[] = [
     excerpt: "Breaking down the science behind IM8's formula — does this all-in-one supplement actually deliver on its longevity promises? Here's what the research says.",
     href: "/product-reviews/im8-health-review",
     badge: "In-Depth Review",
-    badgeColor: "bg-[#c97a8e]/15 text-rose-600 border-rose-500/25",
+    badgeColor: "bg-[#c49280]/15 text-rose-600 border-rose-500/25",
   },
   {
     id: "vielight-neuro-review",

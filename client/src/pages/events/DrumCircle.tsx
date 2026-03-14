@@ -41,7 +41,7 @@ export default function DrumCircle() {
           <ul className="space-y-4">
             {details.map((item, i) => (
               <li key={i} className="flex items-start gap-3" data-testid={`detail-item-${i}`}>
-                <Check className="w-5 h-5 text-[#c97a8e] shrink-0 mt-0.5" />
+                <Check className="w-5 h-5 text-[#c49280] shrink-0 mt-0.5" />
                 <p className="text-black/80 leading-relaxed text-base">
                   <span className="text-black font-semibold">{item.label}:</span> {item.desc}
                 </p>

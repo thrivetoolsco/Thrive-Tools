@@ -49,7 +49,7 @@ export default function Breathwork() {
             <AccordionItem value="just-for-you" className="border-white/10" data-testid="accordion-just-for-you">
               <AccordionTrigger className="text-black/90 text-lg font-display hover:no-underline hover:text-black" data-testid="trigger-just-for-you">
                 <div className="flex items-center gap-3">
-                  <div className="w-8 h-8 rounded-full flex items-center justify-center bg-[#c97a8e]/20 text-[#e8a4b8] shrink-0">
+                  <div className="w-8 h-8 rounded-full flex items-center justify-center bg-[#c49280]/20 text-[#e8a4b8] shrink-0">
                     <User className="w-4 h-4" />
                   </div>
                   <span>Breathwork just for You</span>
@@ -68,7 +68,7 @@ export default function Breathwork() {
             <AccordionItem value="couples" className="border-white/10" data-testid="accordion-couples">
               <AccordionTrigger className="text-black/90 text-lg font-display hover:no-underline hover:text-black" data-testid="trigger-couples">
                 <div className="flex items-center gap-3">
-                  <div className="w-8 h-8 rounded-full flex items-center justify-center bg-[#c97a8e]/20 text-[#e8a4b8] shrink-0">
+                  <div className="w-8 h-8 rounded-full flex items-center justify-center bg-[#c49280]/20 text-[#e8a4b8] shrink-0">
                     <Heart className="w-4 h-4" />
                   </div>
                   <span>Breathwork for Couples</span>
@@ -87,7 +87,7 @@ export default function Breathwork() {
             <AccordionItem value="business" className="border-white/10 border-b-0" data-testid="accordion-business">
               <AccordionTrigger className="text-black/90 text-lg font-display hover:no-underline hover:text-black" data-testid="trigger-business">
                 <div className="flex items-center gap-3">
-                  <div className="w-8 h-8 rounded-full flex items-center justify-center bg-[#c97a8e]/20 text-[#e8a4b8] shrink-0">
+                  <div className="w-8 h-8 rounded-full flex items-center justify-center bg-[#c49280]/20 text-[#e8a4b8] shrink-0">
                     <Briefcase className="w-4 h-4" />
                   </div>
                   <span>Breathwork for Your Business</span>

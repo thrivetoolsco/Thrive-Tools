@@ -14,20 +14,20 @@ interface PageLayoutProps {
 
 export default function PageLayout({ children, title, subtitle, backLabel = "Home", backHref = "/" }: PageLayoutProps) {
   return (
-    <div className="min-h-screen bg-[#fdf6f0] text-[#3d1a28] overflow-x-hidden">
+    <div className="min-h-screen bg-[#f5f0e8] text-[#2d1f14] overflow-x-hidden">
       <Navigation />
 
       {title && (
         <section
           className="pt-32 pb-16 px-4 sm:px-6 lg:px-8 relative overflow-hidden"
           style={{
-            background: "radial-gradient(ellipse 80% 50% at 50% 30%, #f5e6f5 0%, #fdeef8 40%, #fdf6f0 100%)",
+            background: "radial-gradient(ellipse 80% 50% at 50% 30%, #ede0d4 0%, #f5ece4 40%, #f5f0e8 100%)",
           }}
         >
           <div className="absolute inset-0 pointer-events-none overflow-hidden">
             <div
               className="absolute top-1/3 left-1/3 w-64 h-64 rounded-full opacity-30"
-              style={{ background: "radial-gradient(circle, #c97a8e 0%, transparent 70%)", filter: "blur(50px)" }}
+              style={{ background: "radial-gradient(circle, #c49280 0%, transparent 70%)", filter: "blur(50px)" }}
             />
           </div>
 
@@ -36,7 +36,7 @@ export default function PageLayout({ children, title, subtitle, backLabel = "Hom
               <Button
                 variant="outline"
                 size="sm"
-                className="rounded-full border-[#3d1a28]/15 text-[#3d1a28]/60 bg-transparent mb-8 text-xs"
+                className="rounded-full border-[#2d1f14]/15 text-[#2d1f14]/60 bg-transparent mb-8 text-xs"
                 data-testid="link-back"
               >
                 <ArrowLeft className="w-3 h-3 mr-2" /> {backLabel}
@@ -47,7 +47,7 @@ export default function PageLayout({ children, title, subtitle, backLabel = "Hom
               <span className="text-gradient-rose">{title}</span>
             </h1>
             {subtitle && (
-              <p className="text-[#3d1a28]/60 text-lg sm:text-xl max-w-3xl leading-relaxed font-medium" data-testid="text-page-subtitle">
+              <p className="text-[#2d1f14]/60 text-lg sm:text-xl max-w-3xl leading-relaxed font-medium" data-testid="text-page-subtitle">
                 {subtitle}
               </p>
             )}
@@ -57,7 +57,7 @@ export default function PageLayout({ children, title, subtitle, backLabel = "Hom
 
       <section
         className="py-16 px-4 sm:px-6 lg:px-8"
-        style={{ background: "linear-gradient(180deg, #fdf6f0 0%, #f8eef8 50%, #fdf6f0 100%)" }}
+        style={{ background: "linear-gradient(180deg, #f5f0e8 0%, #e8e2d6 50%, #f5f0e8 100%)" }}
       >
         <div className="max-w-4xl mx-auto">
           {children}

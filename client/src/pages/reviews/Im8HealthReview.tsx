@@ -19,7 +19,7 @@ export default function Im8HealthReview() {
         </div>
 
         <div className="flex flex-wrap gap-3">
-          <Badge className="bg-[#c97a8e]/15 text-rose-600 border border-rose-500/25 rounded-full px-3 py-0.5 text-xs">
+          <Badge className="bg-[#c49280]/15 text-rose-600 border border-rose-500/25 rounded-full px-3 py-0.5 text-xs">
             In-Depth Review
           </Badge>
           <Badge className="bg-white/5 text-black/50 border border-white/10 rounded-full px-3 py-0.5 text-xs">
@@ -101,21 +101,21 @@ export default function Im8HealthReview() {
             <img loading="lazy" decoding="async" src={im8ClinicalImg} alt="IM8 Health clinically proven third-party tested results" className="w-full h-auto object-cover" />
           </div>
 
-          <div className="card-glass rounded-xl p-5 mt-6 border-l-4" style={{ borderLeftColor: "#9b6fa5" }}>
+          <div className="card-glass rounded-xl p-5 mt-6 border-l-4" style={{ borderLeftColor: "#b09880" }}>
             <p className="text-black/50 text-xs uppercase tracking-wider mb-2">Scientific Reference</p>
             <p className="text-black/70 text-sm leading-relaxed">
               Chandrasekhar, K., Kapoor, J., & Anishetty, S. (2012). "A prospective, randomized double-blind, placebo-controlled study of safety and efficacy of a high-concentration full-spectrum extract of Ashwagandha root." <em>Indian Journal of Psychological Medicine</em>, 34(3), 255–262. doi:10.4103/0253-7176.106022
             </p>
           </div>
 
-          <div className="card-glass rounded-xl p-5 mt-4 border-l-4" style={{ borderLeftColor: "#9b6fa5" }}>
+          <div className="card-glass rounded-xl p-5 mt-4 border-l-4" style={{ borderLeftColor: "#b09880" }}>
             <p className="text-black/50 text-xs uppercase tracking-wider mb-2">Scientific Reference</p>
             <p className="text-black/70 text-sm leading-relaxed">
               Rao, A. V., & Rao, L. G. (2007). "Carotenoids and human health." <em>Pharmacological Research</em>, 55(3), 207–216. doi:10.1016/j.phrs.2007.01.012
             </p>
           </div>
 
-          <div className="card-glass rounded-xl p-5 mt-4 border-l-4" style={{ borderLeftColor: "#c97a8e" }}>
+          <div className="card-glass rounded-xl p-5 mt-4 border-l-4" style={{ borderLeftColor: "#c49280" }}>
             <p className="text-black/50 text-xs uppercase tracking-wider mb-2">Scientific Reference</p>
             <p className="text-black/70 text-sm leading-relaxed">
               Firenzuoli, F., & Gori, L. (2007). "Herbal Medicine Today: Clinical and Research Issues." <em>Evidence-Based Complementary and Alternative Medicine</em>, 4(S1), 37–40. doi:10.1093/ecam/nem096

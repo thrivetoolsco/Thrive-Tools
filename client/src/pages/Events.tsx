@@ -22,7 +22,7 @@ export default function Events() {
       <div className="space-y-16">
         <section className="card-glass rounded-md p-8 sm:p-10 text-center" data-testid="section-newsletter">
           <div className="flex items-center justify-center gap-2 mb-4">
-            <Mail className="w-5 h-5 text-[#c97a8e]" />
+            <Mail className="w-5 h-5 text-[#c49280]" />
             <h2 className="font-display text-2xl sm:text-3xl font-bold text-black" data-testid="text-newsletter-heading">
               Subscribe to my Newsletter
             </h2>
@@ -46,7 +46,7 @@ export default function Events() {
         <section data-testid="section-future-events">
           <div className="mb-6">
             <div className="flex items-center gap-2 mb-1">
-              <Calendar className="w-5 h-5 text-[#c97a8e]" />
+              <Calendar className="w-5 h-5 text-[#c49280]" />
               <h2 className="font-display text-2xl sm:text-3xl font-bold text-gradient-rose" data-testid="text-future-events-heading">
                 Future Events
               </h2>
@@ -60,13 +60,13 @@ export default function Events() {
                 key={event.id}
                 href={event.href}
                 className="card-glass hover-elevate rounded-md p-5 flex items-center justify-between gap-4 group transition-all duration-200"
-                style={{ borderColor: "rgba(201,122,142,0.25)" }}
+                style={{ borderColor: "rgba(196,146,128,0.25)" }}
                 data-testid={`link-event-${event.id}`}
               >
                 <span className="text-black font-medium group-hover:text-[#e8a4b8] transition-colors" data-testid={`text-event-${event.id}`}>
                   {event.title}
                 </span>
-                <ArrowRight className="w-4 h-4 text-[#c97a8e] opacity-0 group-hover:opacity-100 transition-opacity shrink-0" />
+                <ArrowRight className="w-4 h-4 text-[#c49280] opacity-0 group-hover:opacity-100 transition-opacity shrink-0" />
               </Link>
             ))}
           </div>
@@ -77,7 +77,7 @@ export default function Events() {
         <section data-testid="section-past-events">
           <div className="mb-6">
             <div className="flex items-center gap-2 mb-1">
-              <Calendar className="w-5 h-5 text-[#9b6fa5]" />
+              <Calendar className="w-5 h-5 text-[#b09880]" />
               <h2 className="font-display text-2xl sm:text-3xl font-bold text-gradient-purple" data-testid="text-past-events-heading">
                 Past Events
               </h2>
@@ -91,13 +91,13 @@ export default function Events() {
                 key={event.id}
                 href={event.href}
                 className="card-glass hover-elevate rounded-md p-5 flex items-center justify-between gap-4 group transition-all duration-200"
-                style={{ borderColor: "rgba(155,111,165,0.25)" }}
+                style={{ borderColor: "rgba(176,152,128,0.25)" }}
                 data-testid={`link-event-${event.id}`}
               >
                 <span className="text-black/80 font-medium group-hover:text-[#c4a0d4] transition-colors" data-testid={`text-event-${event.id}`}>
                   {event.title}
                 </span>
-                <ArrowRight className="w-4 h-4 text-[#9b6fa5] opacity-0 group-hover:opacity-100 transition-opacity shrink-0" />
+                <ArrowRight className="w-4 h-4 text-[#b09880] opacity-0 group-hover:opacity-100 transition-opacity shrink-0" />
               </Link>
             ))}
           </div>

@@ -53,11 +53,11 @@ export default function Navigation() {
       }`}
       style={{
         background: scrolled
-          ? "rgba(253,246,240,0.97)"
-          : "rgba(253,246,240,0.88)",
+          ? "rgba(245,240,232,0.97)"
+          : "rgba(245,240,232,0.88)",
         backdropFilter: "blur(20px)",
         WebkitBackdropFilter: "blur(20px)",
-        borderBottom: scrolled ? "1px solid rgba(201,122,142,0.15)" : "none",
+        borderBottom: scrolled ? "1px solid rgba(196,146,128,0.18)" : "none",
       }}
     >
       <div className="max-w-7xl mx-auto px-8 sm:px-12 lg:px-20">
@@ -73,7 +73,7 @@ export default function Navigation() {
           <div className="ml-auto">
             <button
               data-testid="button-menu"
-              className="relative w-10 h-10 flex items-center justify-center rounded-lg text-[#3d1a28]/70 hover:text-[#3d1a28] hover:bg-[#3d1a28]/5 transition-all duration-200"
+              className="relative w-10 h-10 flex items-center justify-center rounded-lg text-[#2d1f14]/70 hover:text-[#2d1f14] hover:bg-[#2d1f14]/5 transition-all duration-200"
               onClick={() => setMenuOpen(!menuOpen)}
             >
               {menuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
@@ -86,7 +86,7 @@ export default function Navigation() {
         className={`overflow-hidden transition-all duration-300 ease-in-out ${
           menuOpen ? "max-h-[80vh] opacity-100" : "max-h-0 opacity-0"
         }`}
-        style={{ background: "rgba(253,246,240,0.99)" }}
+        style={{ background: "rgba(245,240,232,0.99)" }}
       >
         <div className="border-t/15 py-4 px-6 overflow-y-auto max-h-[75vh]">
           <div className="flex flex-col gap-1">
@@ -95,7 +95,7 @@ export default function Navigation() {
                 {item.children ? (
                   <>
                     <button
-                      className="text-[#3d1a28]/60 hover:text-[#3d1a28] text-sm uppercase tracking-[0.12em] font-medium flex items-center justify-between w-full text-left py-3 px-2 rounded-lg hover:bg-[#3d1a28]/5 transition-all duration-200"
+                      className="text-[#2d1f14]/60 hover:text-[#2d1f14] text-sm uppercase tracking-[0.12em] font-medium flex items-center justify-between w-full text-left py-3 px-2 rounded-lg hover:bg-[#2d1f14]/5 transition-all duration-200"
                       onClick={() => setOpenDropdown(openDropdown === item.label ? null : item.label)}
                     >
                       {item.label}
@@ -111,7 +111,7 @@ export default function Navigation() {
                           <Link
                             key={child.label}
                             href={child.href}
-                            className="block text-[#3d1a28]/50 hover:text-[#3d1a28] text-xs py-2.5 px-3 rounded-lg hover:bg-[#3d1a28]/5 transition-all duration-200 tracking-wide"
+                            className="block text-[#2d1f14]/50 hover:text-[#2d1f14] text-xs py-2.5 px-3 rounded-lg hover:bg-[#2d1f14]/5 transition-all duration-200 tracking-wide"
                             onClick={() => setMenuOpen(false)}
                           >
                             {child.label}
@@ -125,8 +125,8 @@ export default function Navigation() {
                     href={item.href}
                     className={`text-sm uppercase tracking-[0.12em] font-medium block py-3 px-2 rounded-lg transition-all duration-200 ${
                       location === item.href
-                        ? "text-[#c97a8e] bg-[#c97a8e]/10"
-                        : "text-[#3d1a28]/60 hover:text-[#3d1a28] hover:bg-[#3d1a28]/5"
+                        ? "text-[#c49280] bg-[#c49280]/10"
+                        : "text-[#2d1f14]/60 hover:text-[#2d1f14] hover:bg-[#2d1f14]/5"
                     }`}
                     onClick={() => setMenuOpen(false)}
                   >

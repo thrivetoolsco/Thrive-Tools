@@ -115,7 +115,7 @@ export default function VielightNeuroReview() {
             </p>
           </div>
 
-          <div className="card-glass rounded-xl p-5 mt-4 border-l-4" style={{ borderLeftColor: "#c97a8e" }}>
+          <div className="card-glass rounded-xl p-5 mt-4 border-l-4" style={{ borderLeftColor: "#c49280" }}>
             <p className="text-black/50 text-xs uppercase tracking-wider mb-2">Scientific Reference</p>
             <p className="text-black/70 text-sm leading-relaxed">
               Saltmarche, A. E., et al. (2017). "Significant Improvement in Cognition in Patients with Dementia: Case Series." <em>Photomedicine and Laser Surgery</em>, 35(8), 432–441. doi:10.1089/pho.2016.4227

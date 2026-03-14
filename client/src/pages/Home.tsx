@@ -29,79 +29,92 @@ export default function Home() {
   const visibleTestimonials = showAllTestimonials ? testimonials : testimonials.slice(0, 3);
 
   return (
-    <div className="min-h-screen bg-[#fdf6f0] text-[#3d1a28] overflow-x-hidden">
+    <div className="min-h-screen bg-[#f5f0e8] text-[#2d1f14] overflow-x-hidden">
       <Navigation />
 
       {/* ─── HERO ─── */}
       <section
         className="relative min-h-screen flex items-center justify-center overflow-hidden"
-        style={{ background: "#fdf6f0" }}
+        style={{ background: "#f5f0e8" }}
       >
-        <div className="absolute inset-0 overflow-hidden pointer-events-none">
-          <div
-            className="absolute w-[600px] h-[600px] rounded-full"
-            style={{
-              top: "10%",
-              left: "15%",
-              background: "radial-gradient(circle, rgba(201,122,142,0.35) 0%, rgba(201,122,142,0.08) 40%, transparent 70%)",
-              filter: "blur(60px)",
-              animation: "hero-drift 20s ease-in-out infinite, hero-pulse 8s ease-in-out infinite",
-            }}
+        {/* Botanical / Sacred Geometry illustration */}
+        <div className="absolute inset-0 flex items-center justify-center pointer-events-none overflow-hidden">
+          <svg
+            viewBox="0 0 900 900"
+            className="absolute w-[min(130vw,960px)] h-[min(130vw,960px)] opacity-[0.12]"
+            xmlns="http://www.w3.org/2000/svg"
+            aria-hidden="true"
+          >
+            {/* Concentric rings */}
+            <circle cx="450" cy="450" r="420" fill="none" stroke="#c49280" strokeWidth="0.6"/>
+            <circle cx="450" cy="450" r="380" fill="none" stroke="#c9a560" strokeWidth="0.4"/>
+            <circle cx="450" cy="450" r="330" fill="none" stroke="#c49280" strokeWidth="0.8"/>
+            <circle cx="450" cy="450" r="270" fill="none" stroke="#c9a560" strokeWidth="0.5"/>
+            <circle cx="450" cy="450" r="210" fill="none" stroke="#c49280" strokeWidth="0.7"/>
+            <circle cx="450" cy="450" r="150" fill="none" stroke="#c9a560" strokeWidth="0.5"/>
+            <circle cx="450" cy="450" r="95"  fill="none" stroke="#c49280" strokeWidth="0.9"/>
+            <circle cx="450" cy="450" r="45"  fill="none" stroke="#c9a560" strokeWidth="0.6"/>
+            {/* Flower of Life — inner 6 petals at r=95 */}
+            {[0,60,120,180,240,300].map((deg, i) => {
+              const r = (deg * Math.PI) / 180;
+              return <circle key={`fp${i}`} cx={450+95*Math.cos(r)} cy={450+95*Math.sin(r)} r="95" fill="none" stroke="#c49280" strokeWidth="0.65"/>;
+            })}
+            {/* Outer petal ring at r=210 */}
+            {[30,90,150,210,270,330].map((deg, i) => {
+              const r = (deg * Math.PI) / 180;
+              return <circle key={`op${i}`} cx={450+210*Math.cos(r)} cy={450+210*Math.sin(r)} r="95" fill="none" stroke="#c9a560" strokeWidth="0.35"/>;
+            })}
+            {/* 12 radial spokes */}
+            {[0,30,60,90,120,150,180,210,240,270,300,330].map((deg, i) => {
+              const r = (deg * Math.PI) / 180;
+              return <line key={`sp${i}`}
+                x1={450+45*Math.cos(r)} y1={450+45*Math.sin(r)}
+                x2={450+420*Math.cos(r)} y2={450+420*Math.sin(r)}
+                stroke="#c49280" strokeWidth="0.35"
+              />;
+            })}
+            {/* Botanical leaves at r=305 */}
+            {[0,45,90,135,180,225,270,315].map((deg, i) => {
+              const r = (deg * Math.PI) / 180;
+              const lx = 450 + 305 * Math.cos(r);
+              const ly = 450 + 305 * Math.sin(r);
+              return (
+                <g key={`lf${i}`} transform={`translate(${lx},${ly}) rotate(${deg+90})`}>
+                  <ellipse cx="0" cy="0" rx="9" ry="36" fill="none" stroke="#c9a560" strokeWidth="0.65"/>
+                  <line x1="0" y1="-36" x2="0" y2="36" stroke="#c49280" strokeWidth="0.35"/>
+                  {[-24,-12,0,12,24].map((y, j) => (
+                    <line key={j} x1={-7*(1-Math.abs(y)/30)} y1={y} x2={7*(1-Math.abs(y)/30)} y2={y} stroke="#c9a560" strokeWidth="0.28"/>
+                  ))}
+                </g>
+              );
+            })}
+            {/* Accent dots */}
+            {[0,45,90,135,180,225,270,315].map((deg, i) => {
+              const r = (deg * Math.PI) / 180;
+              return <circle key={`d1${i}`} cx={450+150*Math.cos(r)} cy={450+150*Math.sin(r)} r="2.8" fill="#c49280" opacity="0.55"/>;
+            })}
+            {[0,60,120,180,240,300].map((deg, i) => {
+              const r = (deg * Math.PI) / 180;
+              return <circle key={`d2${i}`} cx={450+210*Math.cos(r)} cy={450+210*Math.sin(r)} r="2.2" fill="#c9a560" opacity="0.45"/>;
+            })}
+            {/* Centre bloom */}
+            <circle cx="450" cy="450" r="11" fill="none" stroke="#c49280" strokeWidth="0.9"/>
+            <circle cx="450" cy="450" r="5"  fill="#c49280" opacity="0.2"/>
+            {[0,60,120,180,240,300].map((deg, i) => {
+              const r = (deg * Math.PI) / 180;
+              const bx = 450 + 19 * Math.cos(r);
+              const by = 450 + 19 * Math.sin(r);
+              return <ellipse key={`bl${i}`} cx={bx} cy={by} rx="7" ry="3.5"
+                transform={`rotate(${deg},${bx},${by})`}
+                fill="none" stroke="#c9a560" strokeWidth="0.55"/>;
+            })}
+          </svg>
+          {/* Soft ambient glows */}
+          <div className="absolute w-[500px] h-[500px] rounded-full"
+            style={{ background: "radial-gradient(circle, rgba(196,146,128,0.15) 0%, transparent 70%)", filter: "blur(90px)" }}
           />
-          <div
-            className="absolute w-[500px] h-[500px] rounded-full"
-            style={{
-              bottom: "5%",
-              right: "10%",
-              background: "radial-gradient(circle, rgba(155,111,165,0.3) 0%, rgba(155,111,165,0.06) 40%, transparent 70%)",
-              filter: "blur(55px)",
-              animation: "hero-drift-reverse 25s ease-in-out infinite, hero-pulse 10s ease-in-out 2s infinite",
-            }}
-          />
-          <div
-            className="absolute w-[400px] h-[400px] rounded-full"
-            style={{
-              top: "40%",
-              right: "25%",
-              background: "radial-gradient(circle, rgba(212,168,103,0.2) 0%, transparent 60%)",
-              filter: "blur(50px)",
-              animation: "hero-drift 18s ease-in-out 3s infinite, hero-pulse 12s ease-in-out 4s infinite",
-            }}
-          />
-          <div
-            className="absolute w-[350px] h-[350px] rounded-full"
-            style={{
-              top: "60%",
-              left: "5%",
-              background: "radial-gradient(circle, rgba(100,140,200,0.15) 0%, transparent 60%)",
-              filter: "blur(45px)",
-              animation: "hero-drift-reverse 22s ease-in-out 5s infinite",
-            }}
-          />
-          <div
-            className="absolute w-[800px] h-[800px]"
-            style={{
-              top: "50%",
-              left: "50%",
-              marginTop: "-400px",
-              marginLeft: "-400px",
-              background: "conic-gradient(from 0deg, transparent 0%, rgba(201,122,142,0.04) 25%, transparent 50%, rgba(155,111,165,0.04) 75%, transparent 100%)",
-              animation: "hero-rotate 60s linear infinite",
-            }}
-          />
-          <div
-            className="absolute inset-0 opacity-[0.015]"
-            style={{
-              backgroundImage:
-                "radial-gradient(rgba(201,122,142,0.8) 1px, transparent 1px)",
-              backgroundSize: "40px 40px",
-            }}
-          />
-          <div
-            className="absolute inset-0"
-            style={{
-              background: "radial-gradient(ellipse 70% 50% at 50% 45%, transparent 0%, #fdf6f0 100%)",
-            }}
+          <div className="absolute w-[350px] h-[350px] rounded-full"
+            style={{ top: "12%", right: "8%", background: "radial-gradient(circle, rgba(201,165,96,0.1) 0%, transparent 70%)", filter: "blur(70px)" }}
           />
         </div>
 
@@ -126,16 +139,16 @@ export default function Home() {
           >
             <span className="text-gradient-rose">Still foggy? Still tired? </span>
             <br />
-            <span className="text-[#3d1a28]/90">Still spending money on supplements that do nothing?</span>
+            <span className="text-[#2d1f14]/90">Still spending money on supplements that do nothing?</span>
           </h1>
 
           <p
-            className="text-[#3d1a28]/65 text-base sm:text-lg lg:text-xl max-w-2xl mx-auto mb-10 leading-relaxed font-medium px-2"
+            className="text-[#2d1f14]/65 text-base sm:text-lg lg:text-xl max-w-2xl mx-auto mb-10 leading-relaxed font-medium px-2"
             data-testid="text-hero-subheadline"
           >
             I'm Eden. For 14 years I've been deep in the research — Taoist protocols, longevity science, biohacking — separating what actually works from what just sells.
             <br /><br />
-            And I've learned one thing: 90% of wellness is noise. The 10% that works? <Link href="/discount-codes" className="underline underline-offset-2 hover:text-[#c97a8e] transition-colors">It's on this list.</Link>
+            And I've learned one thing: 90% of wellness is noise. The 10% that works? <Link href="/discount-codes" className="underline underline-offset-2 hover:text-[#c49280] transition-colors">It's on this list.</Link>
           </p>
 
           <div className="flex justify-center mb-10">
@@ -150,7 +163,7 @@ export default function Home() {
           </div>
 
           <p
-            className="text-[#3d1a28]/65 text-base sm:text-lg lg:text-xl max-w-2xl mx-auto mb-10 leading-relaxed font-medium px-2"
+            className="text-[#2d1f14]/65 text-base sm:text-lg lg:text-xl max-w-2xl mx-auto mb-10 leading-relaxed font-medium px-2"
           >
             I don't sell supplements. I find the best ones and get you a discount on them. Getting access to the best products shouldn't mean paying full price for them.
             <br /><br />
@@ -174,11 +187,11 @@ export default function Home() {
             <div className="relative max-w-sm w-full" data-testid="img-eden-photo-2">
               <div
                 className="absolute inset-0 rounded-2xl opacity-25 glow-purple"
-                style={{ background: "radial-gradient(circle at 50% 50%, #9b6fa5 0%, transparent 70%)" }}
+                style={{ background: "radial-gradient(circle at 50% 50%, #b09880 0%, transparent 70%)" }}
               />
               <div
                 className="relative rounded-2xl overflow-hidden"
-                style={{ border: "1px solid rgba(155,111,165,0.2)" }}
+                style={{ border: "1px solid rgba(176,152,128,0.2)" }}
               >
                 <img
                   loading="eager"
@@ -192,7 +205,7 @@ export default function Home() {
             </div>
           </div>
 
-          <p className="text-[#3d1a28]/65 text-base sm:text-lg lg:text-xl max-w-2xl mx-auto mb-6 leading-relaxed font-medium px-2" data-testid="text-retreats-intro">
+          <p className="text-[#2d1f14]/65 text-base sm:text-lg lg:text-xl max-w-2xl mx-auto mb-6 leading-relaxed font-medium px-2" data-testid="text-retreats-intro">
             Real transformation isn't just what you take. It's how you live.<br /><br />
             That's why I built spaces where the real work happens. In my retreats and workshops, we go deeper: nervous system reset, Taoist longevity practices, and cutting through the noise together, in person.
           </p>
@@ -215,12 +228,12 @@ export default function Home() {
       <section
         id="about"
         className="relative py-12 sm:py-20 px-6 sm:px-8 lg:px-8"
-        style={{ background: "linear-gradient(180deg, #fdf6f0 0%, #f5eaf5 50%, #fdf6f0 100%)" }}
+        style={{ background: "linear-gradient(180deg, #f5f0e8 0%, #ede8df 50%, #f5f0e8 100%)" }}
       >
         <div className="section-divider mb-12 sm:mb-16" />
         <div className="max-w-4xl mx-auto">
           <div className="mt-16 sm:mt-24 text-center">
-            <p className="text-[#3d1a28]/60 text-lg font-medium mb-4">
+            <p className="text-[#2d1f14]/60 text-lg font-medium mb-4">
               Curious about my 14 year journey?
             </p>
             <Link href="/about" data-testid="link-full-story">
@@ -239,13 +252,13 @@ export default function Home() {
       <section
         className="py-16 sm:py-24 px-6 sm:px-8 lg:px-8 relative overflow-hidden"
         style={{
-          background: "linear-gradient(135deg, #f8eef8 0%, #f0e4f5 50%, #f8eef8 100%)",
+          background: "linear-gradient(135deg, #ede8df 0%, #e8e2d6 50%, #ede8df 100%)",
         }}
       >
         <div className="absolute inset-0 pointer-events-none overflow-hidden">
           <div
             className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 rounded-full opacity-20"
-            style={{ background: "radial-gradient(circle, #c97a8e 0%, transparent 70%)", filter: "blur(80px)" }}
+            style={{ background: "radial-gradient(circle, #c49280 0%, transparent 70%)", filter: "blur(80px)" }}
           />
         </div>
         <div className="max-w-5xl mx-auto relative z-10">
@@ -256,7 +269,7 @@ export default function Home() {
             >
               <span className="text-gradient-rose">The Results</span>
             </h2>
-            <p className="text-[#3d1a28]/55 text-base sm:text-lg max-w-xl mx-auto">
+            <p className="text-[#2d1f14]/55 text-base sm:text-lg max-w-xl mx-auto">
               Real stories from real people experiencing transformation.
             </p>
           </div>
@@ -280,7 +293,7 @@ export default function Home() {
                   />
                 </div>
                 <div className="p-4">
-                  <p className="text-[#3d1a28]/70 text-sm font-medium" data-testid={`text-testimonial-name-${i}`}>
+                  <p className="text-[#2d1f14]/70 text-sm font-medium" data-testid={`text-testimonial-name-${i}`}>
                     {t.name}
                   </p>
                 </div>
@@ -293,7 +306,7 @@ export default function Home() {
               <Button
                 variant="outline"
                 onClick={() => setShowAllTestimonials(true)}
-                className="rounded-full px-8 text-sm tracking-widest uppercase font-semibold border-[#3d1a28]/20 text-[#3d1a28]/80 bg-transparent"
+                className="rounded-full px-8 text-sm tracking-widest uppercase font-semibold border-[#2d1f14]/20 text-[#2d1f14]/80 bg-transparent"
                 data-testid="button-more-testimonials"
               >
                 More <ChevronDown className="ml-2 w-4 h-4" />
@@ -306,7 +319,7 @@ export default function Home() {
               <Button
                 variant="outline"
                 onClick={() => setShowAllTestimonials(false)}
-                className="rounded-full px-8 text-sm tracking-widest uppercase font-semibold border-[#3d1a28]/20 text-[#3d1a28]/80 bg-transparent"
+                className="rounded-full px-8 text-sm tracking-widest uppercase font-semibold border-[#2d1f14]/20 text-[#2d1f14]/80 bg-transparent"
                 data-testid="button-less-testimonials"
               >
                 Show Less <ChevronDown className="ml-2 w-4 h-4 rotate-180" />
