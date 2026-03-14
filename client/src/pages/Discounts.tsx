@@ -255,7 +255,7 @@ function CopyableCode({ code }: { code: string }) {
           ? "bg-amber-500/15 text-amber-700 border border-amber-500/30 cursor-default"
           : copied
             ? "bg-green-500/20 text-green-700 border border-green-500/30"
-            : "bg-[#8aaa7a]/15 text-[#5a7a4e] border border-[#8aaa7a]/25 hover:bg-[#8aaa7a]/25 cursor-pointer"
+            : "bg-[#c4622d]/15 text-[#8b3a1a] border border-[#c4622d]/25 hover:bg-[#c4622d]/25 cursor-pointer"
       }`}
       data-testid={`button-copy-code-${code.replace(/\s+/g, "-").substring(0, 20)}`}
       title={isLink ? code : `Click to copy: ${code}`}
@@ -331,7 +331,7 @@ function CategorySection({ icon: Icon, title, subtitle, items, badgeColor, gradi
           className="w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0"
           style={{ background: gradient, border: `1px solid ${borderColor}` }}
         >
-          <Icon className="w-5 h-5 text-[#8aaa7a]" />
+          <Icon className="w-5 h-5 text-[#c4622d]" />
         </div>
         <div className="text-left">
           <h2 className="text-[#3d1a28] font-bold text-2xl font-display">{title}</h2>
@@ -415,20 +415,20 @@ function TravelsSection() {
 
 export default function Discounts() {
   return (
-    <div className="min-h-screen bg-[#fdf8ef] text-[#3d1a28] overflow-x-hidden">
+    <div className="min-h-screen bg-[#fdf6eb] text-[#3d1a28] overflow-x-hidden">
       <Navigation />
 
       {/* Header */}
       <section
         className="pt-32 pb-16 px-4 sm:px-6 lg:px-8 relative overflow-hidden"
         style={{
-          background: "radial-gradient(ellipse 80% 50% at 50% 30%, #faf0e0 0%, #fdf8ef 40%, #fdf8ef 100%)",
+          background: "radial-gradient(ellipse 80% 50% at 50% 30%, #f8ece0 0%, #fdf6eb 40%, #fdf6eb 100%)",
         }}
       >
         <div className="absolute inset-0 pointer-events-none overflow-hidden">
           <div
             className="absolute top-1/3 left-1/3 w-64 h-64 rounded-full opacity-30"
-            style={{ background: "radial-gradient(circle, #8aaa7a 0%, transparent 70%)", filter: "blur(50px)" }}
+            style={{ background: "radial-gradient(circle, #c4622d 0%, transparent 70%)", filter: "blur(50px)" }}
           />
         </div>
 
@@ -458,7 +458,7 @@ export default function Discounts() {
       {/* Content */}
       <section
         className="py-12 px-4 sm:px-6 lg:px-8"
-        style={{ background: "linear-gradient(180deg, #fdf8ef 0%, #faf0e0 50%, #fdf8ef 100%)" }}
+        style={{ background: "linear-gradient(180deg, #fdf6eb 0%, #f8ece0 50%, #fdf6eb 100%)" }}
       >
         <div className="max-w-5xl mx-auto">
           <CategorySection
@@ -466,7 +466,7 @@ export default function Discounts() {
             title="Vitamins & Supplements"
             subtitle="Proven herbs, superfoods & targeted nutrition"
             items={vitaminsSupplements}
-            badgeColor="bg-rose-400/20 text-[#5a7a4e] border-rose-400/30"
+            badgeColor="bg-rose-400/20 text-[#8b3a1a] border-rose-400/30"
             gradient="linear-gradient(135deg, rgba(201,122,142,0.2) 0%, rgba(155,111,165,0.2) 100%)"
             startIndex={0}
           />
@@ -476,7 +476,7 @@ export default function Discounts() {
             title="Longevity Tech"
             subtitle="For cognitive power & cellular repair"
             items={healthTech}
-            badgeColor="bg-[#5a7a4e]/20 text-[#5a7a4e] border-[#5a7a4e]/30"
+            badgeColor="bg-[#8b3a1a]/20 text-[#8b3a1a] border-[#8b3a1a]/30"
             gradient="linear-gradient(135deg, rgba(155,111,165,0.2) 0%, rgba(100,80,180,0.2) 100%)"
             borderColor="rgba(155,111,165,0.2)"
             startIndex={vitaminsSupplements.length}
