@@ -84,17 +84,17 @@ export default function QuantumHealing() {
           </h3>
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
             <div className="card-glass rounded-md p-5 text-center space-y-2" data-testid="rate-1">
-              <p className="text-2xl font-bold" style={{ color: "#f97316" }}>$155 CAD</p>
+              <p className="text-2xl font-bold" style={{ background: "linear-gradient(135deg, #fbbf24 0%, #f97316 45%, #c45000 100%)", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent", backgroundClip: "text" }}>$155 CAD</p>
               <p className="text-black/60 text-sm font-medium">Single Session</p>
               <p className="text-black/40 text-xs">75 min</p>
             </div>
             <div className="card-glass rounded-md p-5 text-center space-y-2" data-testid="rate-2">
-              <p className="text-2xl font-bold" style={{ color: "#f97316" }}>$250 CAD</p>
+              <p className="text-2xl font-bold" style={{ background: "linear-gradient(135deg, #fbbf24 0%, #f97316 45%, #c45000 100%)", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent", backgroundClip: "text" }}>$250 CAD</p>
               <p className="text-black/60 text-sm font-medium">Deep Dive</p>
               <p className="text-black/40 text-xs">2 hrs</p>
             </div>
             <div className="card-glass rounded-md p-5 text-center space-y-2" data-testid="rate-3">
-              <p className="text-2xl font-bold" style={{ color: "#f97316" }}>$1080 CAD</p>
+              <p className="text-2xl font-bold" style={{ background: "linear-gradient(135deg, #fbbf24 0%, #f97316 45%, #c45000 100%)", WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent", backgroundClip: "text" }}>$1080 CAD</p>
               <p className="text-black/60 text-sm font-medium">The Transformation</p>
               <p className="text-black/40 text-xs">10 sessions</p>
             </div>
