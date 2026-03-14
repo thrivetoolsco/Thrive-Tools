@@ -23,7 +23,7 @@ export default function DrumCircle() {
         </div>
 
         <div className="card-glass rounded-md p-6 sm:p-8 space-y-4" data-testid="section-intro">
-          <p className="text-[#7a9e6e] text-lg font-display italic leading-relaxed" data-testid="text-opening">
+          <p className="text-[#c9a020] text-lg font-display italic leading-relaxed" data-testid="text-opening">
             Every full moon this summer, we're heading to the bonfire to celebrate just being alive.
           </p>
           <p className="text-black/80 leading-relaxed text-base" data-testid="text-description">
@@ -41,7 +41,7 @@ export default function DrumCircle() {
           <ul className="space-y-4">
             {details.map((item, i) => (
               <li key={i} className="flex items-start gap-3" data-testid={`detail-item-${i}`}>
-                <Check className="w-5 h-5 text-[#7a9e6e] shrink-0 mt-0.5" />
+                <Check className="w-5 h-5 text-[#c9a020] shrink-0 mt-0.5" />
                 <p className="text-black/80 leading-relaxed text-base">
                   <span className="text-black font-semibold">{item.label}:</span> {item.desc}
                 </p>
@@ -51,7 +51,7 @@ export default function DrumCircle() {
         </div>
 
         <div className="card-glass rounded-md p-6 sm:p-8 text-center" data-testid="section-closing">
-          <p className="text-[#7a9e6e] font-display text-lg italic" data-testid="text-closing">
+          <p className="text-[#c9a020] font-display text-lg italic" data-testid="text-closing">
             Come as you are. Let's make some noise and clear some space.
           </p>
         </div>
