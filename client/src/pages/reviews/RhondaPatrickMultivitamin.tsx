@@ -154,11 +154,11 @@ export default function RhondaPatrickMultivitamin() {
         <section data-testid="section-pick">
           <div className="flex items-center gap-3 mb-6">
             <ShieldCheck className="w-5 h-5 text-amber-500" />
-            <h2 className="font-display text-2xl font-bold text-black">Our Pick: IM8 Health</h2>
+            <h2 className="font-display text-2xl font-bold text-black">My Pick: IM8 Health</h2>
           </div>
           <div className="space-y-4 text-black/70 leading-relaxed">
             <p>
-              If you're going to do this, do it properly. <strong className="text-black/90">IM8 Health</strong> is the multivitamin we recommend without hesitation. Built with 75+ science-backed ingredients, in bioavailable forms, at doses that actually reflect what the research supports, it checks every box that researchers like Dr. Patrick and Dr. Ames have outlined. Comprehensive coverage, proper bioavailability, no cheap fillers.
+              If you're going to do this, do it properly. <strong className="text-black/90">IM8 Health</strong> is the multivitamin I recommend without hesitation. Built with 75+ science-backed ingredients, in bioavailable forms, at doses that actually reflect what the research supports, it checks every box that researchers like Dr. Patrick and Dr. Ames have outlined. Comprehensive coverage, proper bioavailability, no cheap fillers.
             </p>
             <p className="font-semibold text-[#c4622d]">Use code THRIVE10 for 10% off your first order.</p>
           </div>
