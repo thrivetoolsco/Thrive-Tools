@@ -122,19 +122,51 @@ export default function Home() {
           </p>
 
           {/* Unalome — enlightenment path symbol */}
-          <div className="flex flex-col items-center mb-2" style={{ opacity: 0.52 }}>
-            <svg width="20" height="64" viewBox="0 0 20 64" fill="none" aria-hidden="true">
-              {/* dots at top — nirvana */}
-              <circle cx="10" cy="2"   r="1.7" fill="#c97a8e"/>
-              <circle cx="10" cy="6.2" r="1.0" fill="#c97a8e" opacity="0.7"/>
-              {/* straight line descending */}
-              <line x1="10" y1="9" x2="10" y2="24" stroke="#c97a8e" strokeWidth="1.2" strokeLinecap="round"/>
-              {/* first gentle curve — right */}
-              <path d="M10,24 C14,28 14,33 10,36" stroke="#c97a8e" strokeWidth="1.2" strokeLinecap="round" fill="none"/>
-              {/* second curve — left, wider */}
-              <path d="M10,36 C6,39 5,44 10,47" stroke="#c97a8e" strokeWidth="1.2" strokeLinecap="round" fill="none"/>
-              {/* base spiral — the beginning of the path */}
-              <path d="M10,47 C16,48 18,52 18,56 C18,60 15,63 10,63 C5,63 2,60 2,56 C2,53 5,50 8,50" stroke="#c97a8e" strokeWidth="1.2" strokeLinecap="round" fill="none"/>
+          <div className="flex flex-col items-center mb-2" style={{ opacity: 0.55 }}>
+            <svg width="48" height="195" viewBox="0 0 60 230" fill="none" aria-hidden="true">
+              {/* ── top dots ── */}
+              <circle cx="30" cy="3"  r="1.9" fill="#c97a8e"/>
+              <circle cx="26" cy="7.5" r="1.4" fill="#c97a8e"/>
+              <circle cx="34" cy="7.5" r="1.4" fill="#c97a8e"/>
+
+              {/* ── long straight line ── */}
+              <line x1="30" y1="11" x2="30" y2="82" stroke="#c97a8e" strokeWidth="1.1" strokeLinecap="round"/>
+
+              {/* ── small open circle separator ── */}
+              <circle cx="30" cy="87" r="4.5" stroke="#c97a8e" strokeWidth="1.1" fill="none"/>
+
+              {/* ── 4-petal knot: two pairs of symmetric ribbon loops ── */}
+              {/* upper-right petal */}
+              <path d="M30,93 C39,92 47,97 47,105 C47,113 39,117 30,114"
+                    stroke="#c97a8e" strokeWidth="1.1" fill="none" strokeLinecap="round"/>
+              {/* upper-left petal */}
+              <path d="M30,93 C21,92 13,97 13,105 C13,113 21,117 30,114"
+                    stroke="#c97a8e" strokeWidth="1.1" fill="none" strokeLinecap="round"/>
+              {/* lower-right petal */}
+              <path d="M30,114 C39,113 47,118 47,126 C47,134 39,138 30,135"
+                    stroke="#c97a8e" strokeWidth="1.1" fill="none" strokeLinecap="round"/>
+              {/* lower-left petal */}
+              <path d="M30,114 C21,113 13,118 13,126 C13,134 21,138 30,135"
+                    stroke="#c97a8e" strokeWidth="1.1" fill="none" strokeLinecap="round"/>
+
+              {/* ── connector from knot to spiral ── */}
+              <line x1="30" y1="135" x2="30" y2="145" stroke="#c97a8e" strokeWidth="1.1" strokeLinecap="round"/>
+
+              {/* ── large nautilus spiral ── */}
+              <path d="M30,145
+                       C43,145 52,153 52,164
+                       C52,178 41,188 28,188
+                       C14,188 5,177 5,163
+                       C5,150 13,143 22,144"
+                    stroke="#c97a8e" strokeWidth="1.1" strokeLinecap="round" fill="none"/>
+
+              {/* ── bottom open circle ── */}
+              <circle cx="30" cy="196" r="4.2" stroke="#c97a8e" strokeWidth="1.1" fill="none"/>
+
+              {/* ── bottom dots ── */}
+              <circle cx="26" cy="204" r="1.5" fill="#c97a8e"/>
+              <circle cx="34" cy="204" r="1.5" fill="#c97a8e"/>
+              <circle cx="30" cy="208.5" r="1.0" fill="#c97a8e"/>
             </svg>
           </div>
         </div>
