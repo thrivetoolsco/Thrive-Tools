@@ -60,69 +60,75 @@ export default function Navigation() {
     >
       <div className="max-w-7xl mx-auto px-8 sm:px-12 lg:px-20">
         <div className="flex items-center justify-between h-20 sm:h-28">
-          <Link href="/" className="flex-shrink-0 group absolute left-1/2 -translate-x-1/2" data-testid="link-logo" aria-label="Thrive Tools — Home">
-            <div className="flex flex-col items-center gap-1 transition-transform duration-500 group-hover:scale-105 select-none">
+          {/* ── LOGO — Montserrat Light, single line, interlocked OO ── */}
+          <Link href="/" className="flex-shrink-0 group absolute left-1/2 -translate-x-1/2" data-testid="link-logo" aria-label="Thrive Tools">
+            <div
+              className="transition-opacity duration-300 group-hover:opacity-75 select-none"
+              style={{ display: "inline-flex", alignItems: "center", gap: 0 }}
+            >
+              {/* "THRIVE T" */}
+              <span style={{
+                fontFamily: "'Montserrat', 'Helvetica Neue', Arial, sans-serif",
+                fontWeight: 300,
+                fontSize: "clamp(11px, 2.1vw, 15px)",
+                letterSpacing: "0.26em",
+                textTransform: "uppercase",
+                background: "linear-gradient(135deg, #e8a4b8 0%, #c97a8e 45%, #d4a867 100%)",
+                WebkitBackgroundClip: "text",
+                WebkitTextFillColor: "transparent",
+                backgroundClip: "text",
+                lineHeight: 1,
+              }}>
+                THRIVE&nbsp;T
+              </span>
 
-              {/* ── Mark: concentric lotus rings with 6-spoke radial ── */}
-              <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              {/*
+                ── INTERLOCKED OO ──
+                O1 centre (8,8) r=5, O2 centre (16,8) r=5, d=8
+                Intersection: x=12, y=8±3  →  (12,5) and (12,11)
+                Layer 1: O2 full (behind)
+                Layer 2: O1 full (in front of O2's left arc)
+                Layer 3: O2 top-left arc clipped to rect(0,0,12,8) — appears over O1 → creates interlock
+              */}
+              <svg
+                width="24" height="16"
+                viewBox="0 0 24 16"
+                aria-hidden="true"
+                style={{ display: "block", flexShrink: 0, overflow: "visible" }}
+              >
                 <defs>
-                  <linearGradient id="lgNav" x1="0%" y1="0%" x2="100%" y2="100%">
-                    <stop offset="0%"   stopColor="#e8a4b8"/>
-                    <stop offset="45%"  stopColor="#c97a8e"/>
+                  <linearGradient id="ooG" x1="0%" y1="0%" x2="100%" y2="0%">
+                    <stop offset="0%" stopColor="#c97a8e"/>
                     <stop offset="100%" stopColor="#d4a867"/>
                   </linearGradient>
+                  {/* clip: left of intersection (x<12) AND top half (y<8) */}
+                  <clipPath id="ooLock">
+                    <rect x="0" y="0" width="12" height="8"/>
+                  </clipPath>
                 </defs>
-                {/* outer ring */}
-                <circle cx="17" cy="17" r="15.5" stroke="url(#lgNav)" strokeWidth="0.75"/>
-                {/* inner ring */}
-                <circle cx="17" cy="17" r="9.5"  stroke="url(#lgNav)" strokeWidth="0.6"/>
-                {/* centre dot */}
-                <circle cx="17" cy="17" r="2.8"  fill="url(#lgNav)" opacity="0.75"/>
-                {/* 6 radial spokes from inner to outer ring */}
-                {[0,60,120,180,240,300].map((deg, i) => {
-                  const r = (deg * Math.PI) / 180;
-                  return (
-                    <line key={i}
-                      x1={17 + 9.5  * Math.cos(r)} y1={17 + 9.5  * Math.sin(r)}
-                      x2={17 + 15.5 * Math.cos(r)} y2={17 + 15.5 * Math.sin(r)}
-                      stroke="url(#lgNav)" strokeWidth="0.75"
-                    />
-                  );
-                })}
+                {/* O2 — drawn first, sits behind O1 */}
+                <circle cx="16" cy="8" r="5" fill="none" stroke="url(#ooG)" strokeWidth="1.25"/>
+                {/* O1 — drawn on top, covers O2's left arc */}
+                <circle cx="8"  cy="8" r="5" fill="none" stroke="url(#ooG)" strokeWidth="1.25"/>
+                {/* O2 top-left arc redrawn over O1 — creates the "in front" interlock illusion */}
+                <circle cx="16" cy="8" r="5" fill="none" stroke="url(#ooG)" strokeWidth="1.25" clipPath="url(#ooLock)"/>
               </svg>
 
-              {/* ── Wordmark ── */}
-              <div className="text-center leading-none">
-                <div
-                  style={{
-                    fontFamily: "Georgia, 'Times New Roman', serif",
-                    fontStyle: "italic",
-                    fontWeight: 700,
-                    fontSize: "clamp(14px, 2.8vw, 20px)",
-                    letterSpacing: "0.04em",
-                    background: "linear-gradient(135deg, #e8a4b8 0%, #c97a8e 45%, #d4a867 100%)",
-                    WebkitBackgroundClip: "text",
-                    WebkitTextFillColor: "transparent",
-                    backgroundClip: "text",
-                    lineHeight: 1,
-                  }}
-                >
-                  Thrive
-                </div>
-                <div
-                  style={{
-                    fontSize: "clamp(6.5px, 1.1vw, 8.5px)",
-                    letterSpacing: "0.42em",
-                    textTransform: "uppercase",
-                    color: "rgba(61,26,40,0.42)",
-                    fontWeight: 500,
-                    marginTop: 2,
-                    paddingLeft: "0.42em",
-                  }}
-                >
-                  Tools
-                </div>
-              </div>
+              {/* "LS" */}
+              <span style={{
+                fontFamily: "'Montserrat', 'Helvetica Neue', Arial, sans-serif",
+                fontWeight: 300,
+                fontSize: "clamp(11px, 2.1vw, 15px)",
+                letterSpacing: "0.26em",
+                textTransform: "uppercase",
+                background: "linear-gradient(135deg, #c97a8e 0%, #d4a867 100%)",
+                WebkitBackgroundClip: "text",
+                WebkitTextFillColor: "transparent",
+                backgroundClip: "text",
+                lineHeight: 1,
+              }}>
+                LS
+              </span>
             </div>
           </Link>
 
