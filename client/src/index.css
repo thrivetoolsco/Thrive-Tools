@@ -268,6 +268,13 @@
     filter: brightness(1.05);
   }
 
+  .text-gradient-sage {
+    background: linear-gradient(135deg, #c4d4b0 0%, #8aaa7a 45%, #5a7a4e 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
   .text-gradient-purple {
     background: linear-gradient(135deg, #f08080 0%, #c94040 45%, #a01828 100%);
     -webkit-background-clip: text;
