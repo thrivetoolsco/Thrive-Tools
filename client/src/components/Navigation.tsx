@@ -116,7 +116,7 @@ export default function Navigation() {
               <div style={{
                 fontFamily: "'Montserrat', 'Helvetica Neue', Arial, sans-serif",
                 fontWeight: 400,
-                fontSize: "clamp(6px, 0.85vw, 7.5px)",
+                fontSize: "clamp(8px, 1.05vw, 10px)",
                 letterSpacing: "0.22em",
                 textTransform: "uppercase",
                 color: "#7a3848",
