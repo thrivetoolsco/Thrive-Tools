@@ -60,88 +60,73 @@ export default function Navigation() {
     >
       <div className="max-w-7xl mx-auto px-8 sm:px-12 lg:px-20">
         <div className="flex items-center justify-between h-20 sm:h-28">
-          {/* ── LOGO — Montserrat Light, single line, interlocked OO ── */}
+          {/* ══ LOGO ══ */}
           <Link href="/" className="flex-shrink-0 group absolute left-1/2 -translate-x-1/2" data-testid="link-logo" aria-label="Thrive Tools">
-            {/*
-              ── LOGO SYSTEM ──
-              Font: Montserrat 400 at 15px → cap-height ≈ 10.5px
-              Circles: r=5.2 → diameter ≈ 10.4px  (matches cap-height)
-              SVG viewBox 0 0 24 10.4 — circles flush to top & bottom edges
-              alignItems:"center" + marginTop nudge aligns circles with caps optically
-              THRIVE: vivid cherry rose  #d91558
-              TOOLS:  vivid amber gold   #c47e00
-            */}
             <div
               className="transition-opacity duration-300 group-hover:opacity-70 select-none"
-              style={{ display: "inline-flex", alignItems: "center", gap: 0, lineHeight: 1 }}
+              style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: 0 }}
             >
-              {/* ── THRIVE — vivid rose ── */}
-              <span style={{
-                fontFamily: "'Montserrat', 'Helvetica Neue', Arial, sans-serif",
-                fontWeight: 400,
-                fontSize: "clamp(11px, 2.2vw, 15px)",
-                letterSpacing: "0.22em",
-                textTransform: "uppercase",
-                color: "#d91558",
-                lineHeight: 1,
-                paddingRight: "0.22em",
-              }}>
-                THRIVE
-              </span>
 
-              {/* ── T (of TOOLS) — vivid gold ── */}
-              <span style={{
-                fontFamily: "'Montserrat', 'Helvetica Neue', Arial, sans-serif",
-                fontWeight: 400,
-                fontSize: "clamp(11px, 2.2vw, 15px)",
-                letterSpacing: "0",
-                textTransform: "uppercase",
-                color: "#c47e00",
-                lineHeight: 1,
-              }}>
-                T
-              </span>
-
-              {/*
-                ── INTERLOCKED OO ──
-                r=5.2, d=8  →  O1 cx=6.2  O2 cx=14.2
-                Intersection x = (6.2+14.2)/2 = 10.2
-                y_int = sqrt(5.2²-4²) = sqrt(27.04-16) = sqrt(11.04) ≈ 3.32
-                SVG: width=21 height=10.4 viewBox="0 0 21 10.4"
-                Circles at cy=5.2 → span y=0 to y=10.4 (flush, matches cap height)
-                Clip rect: x=0 y=0 width=10.2 height=5.2  (top-left quadrant of overlap)
-              */}
-              <svg
-                width="21" height="10.4"
-                viewBox="0 0 21 10.4"
-                aria-hidden="true"
-                style={{ display: "block", flexShrink: 0, marginTop: "-1px" }}
-              >
+              {/* ── 8-petal botanical bloom mark ── */}
+              <svg width="32" height="32" viewBox="0 0 40 40" aria-hidden="true" style={{ marginBottom: 3 }}>
                 <defs>
-                  <clipPath id="ooLock">
-                    <rect x="0" y="0" width="10.2" height="5.2"/>
-                  </clipPath>
+                  <radialGradient id="petalGrad" cx="50%" cy="50%" r="50%">
+                    <stop offset="0%"   stopColor="#e8a4b8"/>
+                    <stop offset="60%"  stopColor="#c97a8e"/>
+                    <stop offset="100%" stopColor="#d4a867"/>
+                  </radialGradient>
+                  <linearGradient id="dotGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%"   stopColor="#c97a8e"/>
+                    <stop offset="100%" stopColor="#d4a867"/>
+                  </linearGradient>
                 </defs>
-                {/* O2 behind */}
-                <circle cx="14.2" cy="5.2" r="5.2" fill="none" stroke="#c47e00" strokeWidth="1.3"/>
-                {/* O1 in front */}
-                <circle cx="6.2"  cy="5.2" r="5.2" fill="none" stroke="#c47e00" strokeWidth="1.3"/>
-                {/* O2 top-left arc over O1 → interlock */}
-                <circle cx="14.2" cy="5.2" r="5.2" fill="none" stroke="#c47e00" strokeWidth="1.3" clipPath="url(#ooLock)"/>
+
+                {/* 8 petals — each a thin ellipse rotated around center */}
+                {[0, 45, 90, 135, 180, 225, 270, 315].map((deg) => (
+                  <g key={deg} transform={`translate(20,20) rotate(${deg})`}>
+                    <ellipse cx="0" cy="-12" rx="2.6" ry="7" fill="url(#petalGrad)" opacity="0.82"/>
+                  </g>
+                ))}
+
+                {/* thin outer ring */}
+                <circle cx="20" cy="20" r="18" fill="none" stroke="#c97a8e" strokeWidth="0.5" opacity="0.35"/>
+
+                {/* centre circle */}
+                <circle cx="20" cy="20" r="3.5" fill="url(#dotGrad)"/>
               </svg>
 
-              {/* ── LS (of TOOLS) — vivid gold ── */}
-              <span style={{
-                fontFamily: "'Montserrat', 'Helvetica Neue', Arial, sans-serif",
-                fontWeight: 400,
-                fontSize: "clamp(11px, 2.2vw, 15px)",
-                letterSpacing: "0.22em",
+              {/* ── THRIVE TOOLS wordmark — Playfair Display ── */}
+              <div style={{
+                fontFamily: "'Playfair Display', Georgia, serif",
+                fontWeight: 700,
+                fontSize: "clamp(13px, 2.4vw, 18px)",
+                letterSpacing: "0.18em",
                 textTransform: "uppercase",
-                color: "#c47e00",
+                background: "linear-gradient(135deg, #c97a8e 0%, #9b5070 45%, #c4880a 100%)",
+                WebkitBackgroundClip: "text",
+                WebkitTextFillColor: "transparent",
+                backgroundClip: "text",
                 lineHeight: 1,
+                whiteSpace: "nowrap",
               }}>
-                LS
-              </span>
+                Thrive Tools
+              </div>
+
+              {/* ── Tagline ── */}
+              <div style={{
+                fontFamily: "'Montserrat', 'Helvetica Neue', Arial, sans-serif",
+                fontWeight: 300,
+                fontSize: "clamp(5.5px, 0.85vw, 7px)",
+                letterSpacing: "0.2em",
+                textTransform: "uppercase",
+                color: "rgba(61,26,40,0.42)",
+                lineHeight: 1,
+                marginTop: 5,
+                whiteSpace: "nowrap",
+              }}>
+                Biohacking &nbsp;–&nbsp; Longevity &nbsp;–&nbsp; Conscious Living
+              </div>
+
             </div>
           </Link>
 
