@@ -43,15 +43,15 @@ export default function IndoorGardening() {
         <div className="card-glass rounded-md p-6 sm:p-8 space-y-4" data-testid="section-details">
           <ul className="space-y-3 text-black/80 text-base" data-testid="list-details">
             <li className="flex items-center gap-3" data-testid="text-detail-0">
-              <Leaf className="w-4 h-4 text-[#c9a020] flex-shrink-0" />
+              <Leaf className="w-4 h-4 text-[#c94040] flex-shrink-0" />
               2 hours Workshop
             </li>
             <li className="flex items-center gap-3" data-testid="text-detail-1">
-              <Leaf className="w-4 h-4 text-[#c9a020] flex-shrink-0" />
+              <Leaf className="w-4 h-4 text-[#c94040] flex-shrink-0" />
               2 different indoor growing techniques
             </li>
             <li className="flex items-center gap-3" data-testid="text-detail-2">
-              <Leaf className="w-4 h-4 text-[#c9a020] flex-shrink-0" />
+              <Leaf className="w-4 h-4 text-[#c94040] flex-shrink-0" />
               Fun microgreen & sprouts tasting recipe making
             </li>
           </ul>
@@ -67,7 +67,7 @@ export default function IndoorGardening() {
         </div>
 
         <div className="card-glass rounded-md p-6 sm:p-8 space-y-4 text-center" data-testid="section-schedule">
-          <p className="text-[#c9a020] font-bold text-2xl font-display" data-testid="text-free-event">
+          <p className="text-[#c94040] font-bold text-2xl font-display" data-testid="text-free-event">
             FREE EVENT
           </p>
           <p className="text-black/80 text-base" data-testid="text-schedule">

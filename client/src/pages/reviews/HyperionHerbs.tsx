@@ -70,7 +70,7 @@ export default function HyperionHerbs() {
             </div>
             <div className="card-glass rounded-xl p-5">
               <div className="w-10 h-10 rounded-full bg-purple-500/20 border border-purple-500/30 flex items-center justify-center mb-3">
-                <Sparkles className="w-4 h-4 text-[#d4a030]" />
+                <Sparkles className="w-4 h-4 text-[#c41230]" />
               </div>
               <h3 className="text-black font-bold text-sm mb-2">Quality Is Invisible</h3>
               <p className="text-black/50 text-xs leading-relaxed">
@@ -78,7 +78,7 @@ export default function HyperionHerbs() {
               </p>
             </div>
             <div className="card-glass rounded-xl p-5">
-              <div className="w-10 h-10 rounded-full bg-[#c9a020]/20 border border-teal-500/30 flex items-center justify-center mb-3">
+              <div className="w-10 h-10 rounded-full bg-[#c94040]/20 border border-teal-500/30 flex items-center justify-center mb-3">
                 <Heart className="w-4 h-4 text-[#c41230]" />
               </div>
               <h3 className="text-black font-bold text-sm mb-2">One-Size-Fits-All Is a Lie</h3>
@@ -143,7 +143,7 @@ export default function HyperionHerbs() {
             <div className="card-glass rounded-xl p-6">
               <div className="flex items-start gap-3 mb-3">
                 <div className="w-8 h-8 rounded-full bg-purple-500/20 border border-purple-500/30 flex items-center justify-center flex-shrink-0 mt-0.5">
-                  <span className="text-[#d4a030] font-bold text-sm">2</span>
+                  <span className="text-[#c41230] font-bold text-sm">2</span>
                 </div>
                 <h3 className="text-black font-bold text-lg">Specialized (Read: Actually Powerful) Extraction</h3>
               </div>
@@ -154,7 +154,7 @@ export default function HyperionHerbs() {
 
             <div className="card-glass rounded-xl p-6">
               <div className="flex items-start gap-3 mb-3">
-                <div className="w-8 h-8 rounded-full bg-[#c9a020]/20 border border-teal-500/30 flex items-center justify-center flex-shrink-0 mt-0.5">
+                <div className="w-8 h-8 rounded-full bg-[#c94040]/20 border border-teal-500/30 flex items-center justify-center flex-shrink-0 mt-0.5">
                   <span className="text-[#c41230] font-bold text-sm">3</span>
                 </div>
                 <h3 className="text-black font-bold text-lg">Real, Noticeable Results</h3>
@@ -201,7 +201,7 @@ export default function HyperionHerbs() {
                 Try their <strong className="text-black/90">Reishi Mushroom 8:1 Extract</strong>. It's the king of calming tonics.
               </p>
             </div>
-            <div className="card-glass rounded-xl p-6 border-l-4" style={{ borderLeftColor: "#c9a020" }}>
+            <div className="card-glass rounded-xl p-6 border-l-4" style={{ borderLeftColor: "#c94040" }}>
               <div className="flex items-center gap-2 mb-3">
                 <Sparkles className="w-4 h-4 text-[#c41230]" />
                 <h3 className="text-[#c41230] font-bold">Physical Vitality, Liver Support & Cognitive Clarity</h3>
