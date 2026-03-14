@@ -57,7 +57,7 @@ export default function BlossomingBliss() {
         </div>
 
         <div className="card-glass rounded-md p-6 sm:p-8 space-y-6" data-testid="section-intro">
-          <p className="text-[#c41230] text-lg sm:text-xl font-display italic leading-relaxed" data-testid="text-subtitle">
+          <p className="text-[#8aaa7a] text-lg sm:text-xl font-display italic leading-relaxed" data-testid="text-subtitle">
             Blossoming Bliss: The Full-System Reset
           </p>
           <p className="text-black/60 font-medium text-base" data-testid="text-tagline">
@@ -79,7 +79,7 @@ export default function BlossomingBliss() {
               data-testid={`card-pillar-${pillar.number}`}
             >
               <h3 className="font-display text-xl font-bold text-gradient-rose" data-testid={`text-pillar-title-${pillar.number}`}>
-                <span className="text-[#c41230] mr-2">{pillar.number}.</span>
+                <span className="text-[#8aaa7a] mr-2">{pillar.number}.</span>
                 {pillar.title}
               </h3>
               <p className="text-black/80 leading-relaxed text-base" data-testid={`text-pillar-desc-${pillar.number}`}>
@@ -100,7 +100,7 @@ export default function BlossomingBliss() {
             Retreat Details
           </h3>
           <p className="text-black/80 leading-relaxed text-base" data-testid="text-duration">
-            <span className="text-[#c41230] font-semibold">Duration:</span> 7 days
+            <span className="text-[#8aaa7a] font-semibold">Duration:</span> 7 days
           </p>
           <p className="text-black/70 leading-relaxed text-base italic" data-testid="text-customizable">
             All workshops & Retreats are customizable and are designed to meet your individual needs.
@@ -113,12 +113,12 @@ export default function BlossomingBliss() {
           </h3>
           <div className="grid sm:grid-cols-2 gap-4">
             <div className="card-glass rounded-md p-5 text-center space-y-2" data-testid="card-rate-zoom">
-              <p className="text-[#c41230] font-display font-semibold text-lg">Zoom</p>
+              <p className="text-[#8aaa7a] font-display font-semibold text-lg">Zoom</p>
               <p className="text-black/70 text-sm">4 hours daily for 7 days</p>
               <p className="text-black font-bold text-2xl" data-testid="text-price-zoom">USD $1,540</p>
             </div>
             <div className="card-glass rounded-md p-5 text-center space-y-2" data-testid="card-rate-inperson">
-              <p className="text-[#c41230] font-display font-semibold text-lg">In Person</p>
+              <p className="text-[#8aaa7a] font-display font-semibold text-lg">In Person</p>
               <p className="text-black/70 text-sm">Accommodation included</p>
               <p className="text-black font-bold text-2xl" data-testid="text-price-inperson">USD $3,300</p>
             </div>

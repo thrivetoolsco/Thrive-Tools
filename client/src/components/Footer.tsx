@@ -59,7 +59,7 @@ export default function Footer() {
                 { label: "Events", href: "/events" },
               ].map((item) => (
                 <li key={item.label}>
-                  <Link href={item.href} className="hover:text-[#c41230] transition-colors">
+                  <Link href={item.href} className="hover:text-[#8aaa7a] transition-colors">
                     {item.label}
                   </Link>
                 </li>
@@ -77,7 +77,7 @@ export default function Footer() {
                 { label: "Contact", href: "/contact" },
               ].map((item) => (
                 <li key={item.label}>
-                  <Link href={item.href} className="hover:text-[#c41230] transition-colors">
+                  <Link href={item.href} className="hover:text-[#8aaa7a] transition-colors">
                     {item.label}
                   </Link>
                 </li>

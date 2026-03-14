@@ -24,7 +24,7 @@ export default function QuantumHealing() {
       <div className="space-y-12" data-testid="section-quantum-healing">
 
         <div className="card-glass rounded-md p-6 sm:p-8 space-y-4" data-testid="section-intro">
-          <p className="text-[#c41230] font-semibold text-lg" data-testid="text-tagline">
+          <p className="text-[#8aaa7a] font-semibold text-lg" data-testid="text-tagline">
             1hr 15min of Pure Cellular Bliss
           </p>
           <p className="text-black/80 leading-relaxed text-base" data-testid="text-intro">
@@ -41,19 +41,19 @@ export default function QuantumHealing() {
           </p>
           <ul className="space-y-4">
             <li className="flex items-start gap-3" data-testid="experience-item-1">
-              <Check className="w-5 h-5 text-[#c41230] shrink-0 mt-0.5" />
+              <Check className="w-5 h-5 text-[#8aaa7a] shrink-0 mt-0.5" />
               <p className="text-black/80 leading-relaxed text-base">
                 <span className="text-black font-semibold">15 Min Precision Breathwork:</span> To shut off the "fight or flight" and get you centered.
               </p>
             </li>
             <li className="flex items-start gap-3" data-testid="experience-item-2">
-              <Check className="w-5 h-5 text-[#c41230] shrink-0 mt-0.5" />
+              <Check className="w-5 h-5 text-[#8aaa7a] shrink-0 mt-0.5" />
               <p className="text-black/80 leading-relaxed text-base">
                 <span className="text-black font-semibold">The Tech Stack:</span> We use non-invasive tools like the Vielight Photobiomodulation device, and the Photon Genie. Think of it as a wireless charger for your cells, stimulating serotonin and clearing out the "junk" in your lymphatic system.
               </p>
             </li>
             <li className="flex items-start gap-3" data-testid="experience-item-3">
-              <Check className="w-5 h-5 text-[#c41230] shrink-0 mt-0.5" />
+              <Check className="w-5 h-5 text-[#8aaa7a] shrink-0 mt-0.5" />
               <p className="text-black/80 leading-relaxed text-base">
                 <span className="text-black font-semibold">The Tesla Touch:</span> We use Purple Harmony Plates to get your energy field back in alignment.
               </p>
@@ -71,7 +71,7 @@ export default function QuantumHealing() {
           <ul className="space-y-3">
             {benefits.map((benefit, i) => (
               <li key={i} className="flex items-center gap-3" data-testid={`benefit-item-${i}`}>
-                <Check className="w-4 h-4 text-[#c41230] shrink-0" />
+                <Check className="w-4 h-4 text-[#8aaa7a] shrink-0" />
                 <span className="text-black/80">{benefit}</span>
               </li>
             ))}

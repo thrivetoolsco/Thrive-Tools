@@ -78,7 +78,7 @@ export default function Navigation() {
                     fontSize: "clamp(14px, 2.6vw, 20px)",
                     letterSpacing: "0.12em",
                     textTransform: "uppercase",
-                    color: "#c41230",
+                    color: "#8aaa7a",
                     lineHeight: 1,
                     whiteSpace: "nowrap",
                   }}>
@@ -89,7 +89,7 @@ export default function Navigation() {
                   <span style={{
                     fontFamily: "Georgia, serif",
                     fontSize: "clamp(10px, 1.6vw, 13px)",
-                    color: "#c41230",
+                    color: "#8aaa7a",
                     margin: "0 10px",
                     opacity: 0.6,
                     verticalAlign: "middle",
@@ -105,7 +105,7 @@ export default function Navigation() {
                     fontSize: "clamp(14px, 2.6vw, 20px)",
                     letterSpacing: "0.28em",
                     textTransform: "uppercase",
-                    color: "#8b0000",
+                    color: "#5a7a4e",
                     lineHeight: 1,
                     whiteSpace: "nowrap",
                     paddingLeft: "0.05em",
@@ -121,7 +121,7 @@ export default function Navigation() {
                   fontSize: "clamp(8px, 1.05vw, 10px)",
                   letterSpacing: "0.22em",
                   textTransform: "uppercase",
-                  color: "#6b0010",
+                  color: "#4a6a3e",
                   lineHeight: 1,
                   whiteSpace: "nowrap",
                   paddingLeft: "0.22em",
@@ -187,7 +187,7 @@ export default function Navigation() {
                     href={item.href}
                     className={`text-sm uppercase tracking-[0.12em] font-medium block py-3 px-2 rounded-lg transition-all duration-200 ${
                       location === item.href
-                        ? "text-[#c41230] bg-[#c41230]/10"
+                        ? "text-[#8aaa7a] bg-[#8aaa7a]/10"
                         : "text-[#3d1a28]/60 hover:text-[#3d1a28] hover:bg-[#3d1a28]/5"
                     }`}
                     onClick={() => setMenuOpen(false)}

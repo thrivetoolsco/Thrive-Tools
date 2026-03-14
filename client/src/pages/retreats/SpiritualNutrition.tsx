@@ -20,7 +20,7 @@ export default function SpiritualNutrition() {
       <div className="space-y-12" data-testid="section-spiritual-nutrition">
 
         <div className="card-glass rounded-md p-6 sm:p-8 space-y-6" data-testid="section-intro">
-          <p className="text-[#c41230] text-lg sm:text-xl font-display italic leading-relaxed" data-testid="text-subtitle">
+          <p className="text-[#8aaa7a] text-lg sm:text-xl font-display italic leading-relaxed" data-testid="text-subtitle">
             Spiritual Nutrition: The 3 Day Digital Intensive
           </p>
           <p className="text-black/80 leading-relaxed text-base" data-testid="text-opening">
@@ -47,7 +47,7 @@ export default function SpiritualNutrition() {
           <ul className="space-y-4">
             {pillars.map((pillar, i) => (
               <li key={i} className="flex items-start gap-3" data-testid={`pillar-item-${i}`}>
-                <Check className="w-5 h-5 text-[#c41230] shrink-0 mt-0.5" />
+                <Check className="w-5 h-5 text-[#8aaa7a] shrink-0 mt-0.5" />
                 <p className="text-black/80 leading-relaxed text-base">
                   <span className="text-black font-semibold">{pillar.label}:</span> {pillar.desc}
                 </p>
@@ -97,7 +97,7 @@ export default function SpiritualNutrition() {
             Investment
           </h3>
           <div className="card-glass rounded-md p-6 text-center space-y-3" data-testid="card-rate-zoom">
-            <p className="text-[#c41230] font-display font-semibold text-lg">3 days online Zoom workshop</p>
+            <p className="text-[#8aaa7a] font-display font-semibold text-lg">3 days online Zoom workshop</p>
             <p className="text-black/70 text-sm">From 10 am – 1 pm</p>
             <p className="text-black font-bold text-3xl" data-testid="text-price">USD $396</p>
           </div>

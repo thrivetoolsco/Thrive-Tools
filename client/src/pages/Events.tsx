@@ -22,7 +22,7 @@ export default function Events() {
       <div className="space-y-16">
         <section className="card-glass rounded-md p-8 sm:p-10 text-center" data-testid="section-newsletter">
           <div className="flex items-center justify-center gap-2 mb-4">
-            <Mail className="w-5 h-5 text-[#c41230]" />
+            <Mail className="w-5 h-5 text-[#8aaa7a]" />
             <h2 className="font-display text-2xl sm:text-3xl font-bold text-black" data-testid="text-newsletter-heading">
               Subscribe to my Newsletter
             </h2>
@@ -46,7 +46,7 @@ export default function Events() {
         <section data-testid="section-future-events">
           <div className="mb-6">
             <div className="flex items-center gap-2 mb-1">
-              <Calendar className="w-5 h-5 text-[#c41230]" />
+              <Calendar className="w-5 h-5 text-[#8aaa7a]" />
               <h2 className="font-display text-2xl sm:text-3xl font-bold text-gradient-rose" data-testid="text-future-events-heading">
                 Future Events
               </h2>
@@ -63,10 +63,10 @@ export default function Events() {
                 style={{ borderColor: "rgba(201,122,142,0.25)" }}
                 data-testid={`link-event-${event.id}`}
               >
-                <span className="text-black font-medium group-hover:text-[#c41230] transition-colors" data-testid={`text-event-${event.id}`}>
+                <span className="text-black font-medium group-hover:text-[#8aaa7a] transition-colors" data-testid={`text-event-${event.id}`}>
                   {event.title}
                 </span>
-                <ArrowRight className="w-4 h-4 text-[#c41230] opacity-0 group-hover:opacity-100 transition-opacity shrink-0" />
+                <ArrowRight className="w-4 h-4 text-[#8aaa7a] opacity-0 group-hover:opacity-100 transition-opacity shrink-0" />
               </Link>
             ))}
           </div>
@@ -77,7 +77,7 @@ export default function Events() {
         <section data-testid="section-past-events">
           <div className="mb-6">
             <div className="flex items-center gap-2 mb-1">
-              <Calendar className="w-5 h-5 text-[#c41230]" />
+              <Calendar className="w-5 h-5 text-[#8aaa7a]" />
               <h2 className="font-display text-2xl sm:text-3xl font-bold text-gradient-purple" data-testid="text-past-events-heading">
                 Past Events
               </h2>
@@ -94,10 +94,10 @@ export default function Events() {
                 style={{ borderColor: "rgba(155,111,165,0.25)" }}
                 data-testid={`link-event-${event.id}`}
               >
-                <span className="text-black/80 font-medium group-hover:text-[#e85070] transition-colors" data-testid={`text-event-${event.id}`}>
+                <span className="text-black/80 font-medium group-hover:text-[#c4d4b0] transition-colors" data-testid={`text-event-${event.id}`}>
                   {event.title}
                 </span>
-                <ArrowRight className="w-4 h-4 text-[#c41230] opacity-0 group-hover:opacity-100 transition-opacity shrink-0" />
+                <ArrowRight className="w-4 h-4 text-[#8aaa7a] opacity-0 group-hover:opacity-100 transition-opacity shrink-0" />
               </Link>
             ))}
           </div>
