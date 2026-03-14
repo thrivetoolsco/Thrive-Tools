@@ -56,6 +56,14 @@ const blogPosts: BlogPost[] = [
     badgeColor: "bg-red-500/15 text-red-300 border-red-500/25",
   },
   {
+    id: "biohacking-beginners-guide",
+    title: "Biohacking for Beginners: The Complete 2026 Starter Guide",
+    excerpt: "No jargon, no overwhelm. A clear, step-by-step framework for taking control of your biology, from free foundations to the right supplements, in the right order.",
+    href: "/product-reviews/biohacking-beginners-guide",
+    badge: "Beginner's Guide",
+    badgeColor: "bg-[#c4622d]/15 text-[#8b3a1a] border-[#c4622d]/25",
+  },
+  {
     id: "biohacking-supplements-2026",
     title: "Best Biohacking Supplements in 2026: The Optimizer's Evidence-Based Guide",
     excerpt: "The real, research-backed compounds that elite biohackers keep coming back to. Five brands, five layers, one complete stack with the science to back it up.",
