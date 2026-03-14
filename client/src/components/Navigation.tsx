@@ -78,7 +78,7 @@ export default function Navigation() {
                     fontSize: "clamp(14px, 2.6vw, 20px)",
                     letterSpacing: "0.12em",
                     textTransform: "uppercase",
-                    color: "#c41230",
+                    color: "#8aaa7a",
                     lineHeight: 1,
                     whiteSpace: "nowrap",
                   }}>
@@ -90,9 +90,9 @@ export default function Navigation() {
                     display: "inline-block",
                     width: 1,
                     height: "1em",
-                    background: "#c41230",
+                    background: "#8aaa7a",
                     margin: "0 10px",
-                    opacity: 0.35,
+                    opacity: 0.45,
                     verticalAlign: "middle",
                   }}/>
 
@@ -104,7 +104,7 @@ export default function Navigation() {
                     fontSize: "clamp(14px, 2.6vw, 20px)",
                     letterSpacing: "0.28em",
                     textTransform: "uppercase",
-                    color: "#3d1a28",
+                    color: "#c41230",
                     lineHeight: 1,
                     whiteSpace: "nowrap",
                     paddingLeft: "0.05em",
