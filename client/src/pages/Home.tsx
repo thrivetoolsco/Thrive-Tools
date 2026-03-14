@@ -5,7 +5,7 @@ import { ArrowRight, ChevronDown } from "lucide-react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import edenPhoto2 from "@assets/Generate_a_new_image_so_that_the_resolution_looks__delpmaspu~4_1772975930027.png";
-import edenHatPhoto from "@assets/Screenshot_20250718_120603_Photos_1773457345513.jpg";
+import edenHatPhoto from "@assets/Screenshot_20241217_123326_Instagram~2_1773457901515.jpg";
 import edenPortrait from "@assets/IMG-20251218-WA0018_1773456075795.jpg";
 
 const testimonials = [

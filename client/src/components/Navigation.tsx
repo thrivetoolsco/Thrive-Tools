@@ -59,85 +59,86 @@ export default function Navigation() {
       }}
     >
       <div className="max-w-7xl mx-auto px-8 sm:px-12 lg:px-20">
-        <div className="flex items-center justify-between h-20 sm:h-28">
-          {/* ══ LOGO ══ */}
-          <Link href="/" className="flex-shrink-0 group absolute left-1/2 -translate-x-1/2" data-testid="link-logo" aria-label="Thrive Tools">
-            <div
-              className="transition-opacity duration-300 group-hover:opacity-80 select-none"
-              style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: 6 }}
-            >
+        <div className="flex items-center justify-center h-28 sm:h-36">
+          {/* ══ LOGO + MENU BUTTON — all centered together ══ */}
+          <div className="flex flex-col items-center" style={{ gap: 0 }}>
 
-              {/* wordmark row */}
-              <div style={{ display: "flex", alignItems: "center", gap: 0, lineHeight: 1 }}>
-                {/* THRIVE */}
-                <span style={{
-                  fontFamily: "'Lora', Georgia, serif",
-                  fontWeight: 700,
-                  fontStyle: "normal",
-                  fontSize: "clamp(14px, 2.6vw, 20px)",
-                  letterSpacing: "0.12em",
-                  textTransform: "uppercase",
-                  color: "#c0294f",
-                  lineHeight: 1,
-                  whiteSpace: "nowrap",
-                }}>
-                  Thrive
-                </span>
+            <Link href="/" className="group" data-testid="link-logo" aria-label="Thrive Tools">
+              <div
+                className="transition-opacity duration-300 group-hover:opacity-80 select-none"
+                style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: 6 }}
+              >
+                {/* wordmark row */}
+                <div style={{ display: "flex", alignItems: "center", gap: 0, lineHeight: 1 }}>
+                  {/* THRIVE */}
+                  <span style={{
+                    fontFamily: "'Lora', Georgia, serif",
+                    fontWeight: 700,
+                    fontStyle: "normal",
+                    fontSize: "clamp(14px, 2.6vw, 20px)",
+                    letterSpacing: "0.12em",
+                    textTransform: "uppercase",
+                    color: "#c0294f",
+                    lineHeight: 1,
+                    whiteSpace: "nowrap",
+                  }}>
+                    Thrive
+                  </span>
 
-                {/* thin vertical divider */}
-                <span style={{
-                  display: "inline-block",
-                  width: 1,
-                  height: "1em",
-                  background: "#c0294f",
-                  margin: "0 10px",
-                  opacity: 0.35,
-                  verticalAlign: "middle",
-                }}/>
+                  {/* thin vertical divider */}
+                  <span style={{
+                    display: "inline-block",
+                    width: 1,
+                    height: "1em",
+                    background: "#c0294f",
+                    margin: "0 10px",
+                    opacity: 0.35,
+                    verticalAlign: "middle",
+                  }}/>
 
-                {/* TOOLS */}
-                <span style={{
-                  fontFamily: "'Lora', Georgia, serif",
+                  {/* TOOLS */}
+                  <span style={{
+                    fontFamily: "'Lora', Georgia, serif",
+                    fontWeight: 400,
+                    fontStyle: "normal",
+                    fontSize: "clamp(14px, 2.6vw, 20px)",
+                    letterSpacing: "0.28em",
+                    textTransform: "uppercase",
+                    color: "#3d1a28",
+                    lineHeight: 1,
+                    whiteSpace: "nowrap",
+                    paddingLeft: "0.05em",
+                  }}>
+                    Tools
+                  </span>
+                </div>
+
+                {/* tagline */}
+                <div style={{
+                  fontFamily: "'Montserrat', 'Helvetica Neue', Arial, sans-serif",
                   fontWeight: 400,
-                  fontStyle: "normal",
-                  fontSize: "clamp(14px, 2.6vw, 20px)",
-                  letterSpacing: "0.28em",
+                  fontSize: "clamp(8px, 1.05vw, 10px)",
+                  letterSpacing: "0.22em",
                   textTransform: "uppercase",
-                  color: "#3d1a28",
+                  color: "#7a3848",
                   lineHeight: 1,
                   whiteSpace: "nowrap",
-                  paddingLeft: "0.05em",
+                  paddingLeft: "0.22em",
                 }}>
-                  Tools
-                </span>
+                  Biohacking &nbsp;—&nbsp; Longevity &nbsp;—&nbsp; Conscious Living
+                </div>
               </div>
+            </Link>
 
-              {/* tagline — solid, fully readable */}
-              <div style={{
-                fontFamily: "'Montserrat', 'Helvetica Neue', Arial, sans-serif",
-                fontWeight: 400,
-                fontSize: "clamp(8px, 1.05vw, 10px)",
-                letterSpacing: "0.22em",
-                textTransform: "uppercase",
-                color: "#7a3848",
-                lineHeight: 1,
-                whiteSpace: "nowrap",
-                paddingLeft: "0.22em",
-              }}>
-                Biohacking &nbsp;—&nbsp; Longevity &nbsp;—&nbsp; Conscious Living
-              </div>
-
-            </div>
-          </Link>
-
-          <div className="ml-auto">
+            {/* Menu button — directly below "Living" */}
             <button
               data-testid="button-menu"
-              className="relative w-10 h-10 flex items-center justify-center rounded-lg text-[#3d1a28]/70 hover:text-[#3d1a28] hover:bg-[#3d1a28]/5 transition-all duration-200"
+              className="mt-2 flex items-center justify-center rounded-lg text-[#3d1a28]/60 hover:text-[#3d1a28] hover:bg-[#3d1a28]/5 transition-all duration-200 px-3 py-1"
               onClick={() => setMenuOpen(!menuOpen)}
             >
-              {menuOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
+              {menuOpen ? <X className="w-4 h-4" /> : <Menu className="w-4 h-4" />}
             </button>
+
           </div>
         </div>
       </div>
