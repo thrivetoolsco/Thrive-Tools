@@ -63,58 +63,53 @@ export default function Navigation() {
           {/* ══ LOGO ══ */}
           <Link href="/" className="flex-shrink-0 group absolute left-1/2 -translate-x-1/2" data-testid="link-logo" aria-label="Thrive Tools">
             <div
-              className="transition-opacity duration-300 group-hover:opacity-70 select-none"
+              className="transition-opacity duration-300 group-hover:opacity-80 select-none"
               style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: 0 }}
             >
-              {/* top rule */}
-              <div style={{ width: "100%", height: 1, background: "linear-gradient(90deg, transparent, #c97a8e, transparent)", marginBottom: 5 }}/>
-
-              {/* THRIVE — bold, dark, commanding */}
-              <div style={{
-                fontFamily: "'Montserrat', 'Helvetica Neue', Arial, sans-serif",
-                fontWeight: 700,
-                fontSize: "clamp(14px, 2.6vw, 20px)",
-                letterSpacing: "0.38em",
-                textTransform: "uppercase",
-                color: "#3d1a28",
-                lineHeight: 1,
-                paddingLeft: "0.38em",
-                whiteSpace: "nowrap",
-              }}>
-                Thrive
+              {/* wordmark: THRIVE (black) + TOOLS (italic) — same line, aligned at baseline */}
+              <div style={{ display: "flex", alignItems: "baseline", gap: "0.25em", lineHeight: 1 }}>
+                <span style={{
+                  fontFamily: "'Playfair Display', Georgia, serif",
+                  fontWeight: 900,
+                  fontStyle: "normal",
+                  fontSize: "clamp(15px, 2.8vw, 22px)",
+                  letterSpacing: "0.06em",
+                  textTransform: "uppercase",
+                  color: "#bf1f4a",
+                  lineHeight: 1,
+                  whiteSpace: "nowrap",
+                }}>
+                  Thrive
+                </span>
+                <span style={{
+                  fontFamily: "'Playfair Display', Georgia, serif",
+                  fontWeight: 400,
+                  fontStyle: "italic",
+                  fontSize: "clamp(15px, 2.8vw, 22px)",
+                  letterSpacing: "0.06em",
+                  textTransform: "uppercase",
+                  color: "#b07808",
+                  lineHeight: 1,
+                  whiteSpace: "nowrap",
+                }}>
+                  Tools
+                </span>
               </div>
 
-              {/* TOOLS — featherweight, rose, airy */}
+              {/* hairline rule */}
+              <div style={{ width: "100%", height: "0.75px", background: "linear-gradient(90deg, #bf1f4a, #b07808)", marginTop: 5, marginBottom: 5, opacity: 0.55 }}/>
+
+              {/* tagline — vivid enough to read clearly */}
               <div style={{
                 fontFamily: "'Montserrat', 'Helvetica Neue', Arial, sans-serif",
-                fontWeight: 200,
-                fontSize: "clamp(8px, 1.4vw, 11px)",
-                letterSpacing: "0.55em",
+                fontWeight: 400,
+                fontSize: "clamp(5.5px, 0.8vw, 7px)",
+                letterSpacing: "0.22em",
                 textTransform: "uppercase",
-                color: "#c97a8e",
+                color: "rgba(61,26,40,0.70)",
                 lineHeight: 1,
-                paddingLeft: "0.55em",
-                marginTop: 3,
                 whiteSpace: "nowrap",
-              }}>
-                Tools
-              </div>
-
-              {/* bottom rule */}
-              <div style={{ width: "100%", height: 1, background: "linear-gradient(90deg, transparent, #c97a8e, transparent)", marginTop: 5 }}/>
-
-              {/* tagline */}
-              <div style={{
-                fontFamily: "'Montserrat', 'Helvetica Neue', Arial, sans-serif",
-                fontWeight: 300,
-                fontSize: "clamp(5px, 0.75vw, 6.5px)",
-                letterSpacing: "0.18em",
-                textTransform: "uppercase",
-                color: "rgba(61,26,40,0.38)",
-                lineHeight: 1,
-                marginTop: 5,
-                whiteSpace: "nowrap",
-                paddingLeft: "0.18em",
+                paddingLeft: "0.22em",
               }}>
                 Biohacking &nbsp;—&nbsp; Longevity &nbsp;—&nbsp; Conscious Living
               </div>
