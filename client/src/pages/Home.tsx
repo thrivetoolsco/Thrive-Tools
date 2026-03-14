@@ -121,10 +121,22 @@ export default function Home() {
             And I've learned one thing: 90% of wellness is noise. The 10% that works? <Link href="/discount-codes" className="underline underline-offset-2 hover:text-[#c97a8e] transition-colors">It's on this list.</Link>
           </p>
 
-          <div className="flex items-center gap-3 mb-2 opacity-30">
-            <div className="w-px h-8 bg-[#3d1a28]"/>
+          {/* Unalome — enlightenment path symbol */}
+          <div className="flex flex-col items-center mb-2" style={{ opacity: 0.52 }}>
+            <svg width="20" height="64" viewBox="0 0 20 64" fill="none" aria-hidden="true">
+              {/* dots at top — nirvana */}
+              <circle cx="10" cy="2"   r="1.7" fill="#c97a8e"/>
+              <circle cx="10" cy="6.2" r="1.0" fill="#c97a8e" opacity="0.7"/>
+              {/* straight line descending */}
+              <line x1="10" y1="9" x2="10" y2="24" stroke="#c97a8e" strokeWidth="1.2" strokeLinecap="round"/>
+              {/* first gentle curve — right */}
+              <path d="M10,24 C14,28 14,33 10,36" stroke="#c97a8e" strokeWidth="1.2" strokeLinecap="round" fill="none"/>
+              {/* second curve — left, wider */}
+              <path d="M10,36 C6,39 5,44 10,47" stroke="#c97a8e" strokeWidth="1.2" strokeLinecap="round" fill="none"/>
+              {/* base spiral — the beginning of the path */}
+              <path d="M10,47 C16,48 18,52 18,56 C18,60 15,63 10,63 C5,63 2,60 2,56 C2,53 5,50 8,50" stroke="#c97a8e" strokeWidth="1.2" strokeLinecap="round" fill="none"/>
+            </svg>
           </div>
-          <ChevronDown className="w-4 h-4 text-[#3d1a28]/30 mb-2"/>
         </div>
 
         {/* ── DESKTOP layout (split, shown at lg+) ── */}
