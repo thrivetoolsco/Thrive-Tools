@@ -44,7 +44,7 @@ export default function Thrive2() {
           <ul className="space-y-4">
             {topics.map((item, i) => (
               <li key={i} className="flex items-start gap-3" data-testid={`topic-item-${i}`}>
-                <Check className="w-5 h-5 text-[#c49280] shrink-0 mt-0.5" />
+                <Check className="w-5 h-5 text-[#c97a8e] shrink-0 mt-0.5" />
                 <p className="text-black/80 leading-relaxed text-base">
                   <span className="text-black font-semibold">{item.label}:</span> {item.desc}
                 </p>
@@ -62,16 +62,16 @@ export default function Thrive2() {
               <span className="text-[#e8a4b8] font-semibold">Cost:</span> Free <span className="text-black/50 text-sm">(It's about the community and the conversation).</span>
             </p>
             <p className="text-black/80 leading-relaxed text-base flex items-center gap-2" data-testid="text-duration">
-              <Clock className="w-4 h-4 text-[#c49280]" />
+              <Clock className="w-4 h-4 text-[#c97a8e]" />
               <span><span className="text-[#e8a4b8] font-semibold">Duration:</span> 2h 30m of mind-bending info.</span>
             </p>
             <p className="text-black/80 leading-relaxed text-base flex items-center gap-2" data-testid="text-registration">
-              <Mail className="w-4 h-4 text-[#c49280]" />
+              <Mail className="w-4 h-4 text-[#c97a8e]" />
               <span>
                 <span className="text-[#e8a4b8] font-semibold">How to Join:</span> Shoot a quick email to{" "}
                 <a
                   href="mailto:thrivetools.co@gmail.com"
-                  className="text-[#e8a4b8] underline underline-offset-4 decoration-[#c49280]/40"
+                  className="text-[#e8a4b8] underline underline-offset-4 decoration-[#c97a8e]/40"
                   data-testid="link-email"
                 >
                   thrivetools.co@gmail.com

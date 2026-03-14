@@ -43,7 +43,7 @@ export default function Thrive1() {
               <span className="text-[#e8a4b8] font-semibold">Cost:</span> Free <span className="text-black/50 text-sm">(This is about community and awareness).</span>
             </p>
             <p className="text-black/80 leading-relaxed text-base flex items-center gap-2" data-testid="text-duration">
-              <Clock className="w-4 h-4 text-[#c49280]" />
+              <Clock className="w-4 h-4 text-[#c97a8e]" />
               <span><span className="text-[#e8a4b8] font-semibold">Duration:</span> 2h 15m of mind expanding info.</span>
             </p>
           </div>
@@ -51,7 +51,7 @@ export default function Thrive1() {
 
         <div className="card-glass rounded-md p-6 sm:p-8 space-y-4" data-testid="section-registration">
           <div className="flex items-center justify-center gap-2 mb-2">
-            <Mail className="w-5 h-5 text-[#c49280]" />
+            <Mail className="w-5 h-5 text-[#c97a8e]" />
             <h3 className="font-display text-2xl font-bold text-gradient-rose" data-testid="text-registration-heading">
               Grab Your Spot
             </h3>
@@ -60,7 +60,7 @@ export default function Thrive1() {
             Registration is required. Just shoot a quick email to{" "}
             <a
               href="mailto:thrivetools.co@gmail.com"
-              className="text-[#e8a4b8] underline underline-offset-4 decoration-[#c49280]/40"
+              className="text-[#e8a4b8] underline underline-offset-4 decoration-[#c97a8e]/40"
               data-testid="link-email-registration"
             >
               thrivetools.co@gmail.com

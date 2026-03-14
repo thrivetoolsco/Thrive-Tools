@@ -79,7 +79,7 @@ export default function BlossomingBliss() {
               data-testid={`card-pillar-${pillar.number}`}
             >
               <h3 className="font-display text-xl font-bold text-gradient-rose" data-testid={`text-pillar-title-${pillar.number}`}>
-                <span className="text-[#c49280] mr-2">{pillar.number}.</span>
+                <span className="text-[#c97a8e] mr-2">{pillar.number}.</span>
                 {pillar.title}
               </h3>
               <p className="text-black/80 leading-relaxed text-base" data-testid={`text-pillar-desc-${pillar.number}`}>

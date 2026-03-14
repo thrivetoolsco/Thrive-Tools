@@ -10,7 +10,7 @@ export default function Contact() {
         </p>
 
         <div className="card-glass rounded-md p-8 flex flex-col items-center gap-4" data-testid="card-contact-email">
-          <Mail className="w-8 h-8 text-[#c49280]" />
+          <Mail className="w-8 h-8 text-[#c97a8e]" />
           <p className="text-black/50 text-sm tracking-widest uppercase font-medium">Drop a line</p>
           <a
             href="mailto:thrivetools.co@gmail.com"
