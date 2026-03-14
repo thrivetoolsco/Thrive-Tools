@@ -78,7 +78,7 @@ export default function Navigation() {
                     fontSize: "clamp(14px, 2.6vw, 20px)",
                     letterSpacing: "0.12em",
                     textTransform: "uppercase",
-                    color: "#c0294f",
+                    color: "#c9a020",
                     lineHeight: 1,
                     whiteSpace: "nowrap",
                   }}>
@@ -90,9 +90,9 @@ export default function Navigation() {
                     display: "inline-block",
                     width: 1,
                     height: "1em",
-                    background: "#c0294f",
+                    background: "#c9a020",
                     margin: "0 10px",
-                    opacity: 0.35,
+                    opacity: 0.4,
                     verticalAlign: "middle",
                   }}/>
 
@@ -104,7 +104,7 @@ export default function Navigation() {
                     fontSize: "clamp(14px, 2.6vw, 20px)",
                     letterSpacing: "0.28em",
                     textTransform: "uppercase",
-                    color: "#3d1a28",
+                    color: "#c41230",
                     lineHeight: 1,
                     whiteSpace: "nowrap",
                     paddingLeft: "0.05em",
@@ -120,7 +120,7 @@ export default function Navigation() {
                   fontSize: "clamp(8px, 1.05vw, 10px)",
                   letterSpacing: "0.22em",
                   textTransform: "uppercase",
-                  color: "#7a3848",
+                  color: "#8b3020",
                   lineHeight: 1,
                   whiteSpace: "nowrap",
                   paddingLeft: "0.22em",
