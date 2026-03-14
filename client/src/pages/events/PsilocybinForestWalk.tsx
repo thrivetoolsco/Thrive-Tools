@@ -16,7 +16,7 @@ export default function PsilocybinForestWalk() {
       <div className="space-y-12" data-testid="section-psilocybin-forest-walk">
 
         <div className="card-glass rounded-md p-6 sm:p-8 space-y-4" data-testid="section-intro">
-          <p className="text-[#f97316] text-lg sm:text-xl font-display italic leading-relaxed" data-testid="text-duration">
+          <p className="text-[#c4622d] text-lg sm:text-xl font-display italic leading-relaxed" data-testid="text-duration">
             7 Hours of Nature & Neural Re-wiring
           </p>
           <p className="text-black/80 leading-relaxed text-base" data-testid="text-opening">
@@ -52,7 +52,7 @@ export default function PsilocybinForestWalk() {
           <ul className="space-y-4">
             {included.map((item, i) => (
               <li key={i} className="flex items-start gap-3" data-testid={`included-item-${i}`}>
-                <Check className="w-5 h-5 text-[#f97316] shrink-0 mt-0.5" />
+                <Check className="w-5 h-5 text-[#c4622d] shrink-0 mt-0.5" />
                 <p className="text-black/80 leading-relaxed text-base">
                   <span className="text-black font-semibold">{item.label}:</span> {item.desc}
                 </p>
@@ -67,11 +67,11 @@ export default function PsilocybinForestWalk() {
           </h3>
           <div className="grid sm:grid-cols-2 gap-4">
             <div className="card-glass rounded-md p-5 text-center space-y-2" data-testid="card-rate-solo">
-              <p className="text-[#f97316] font-display font-semibold text-lg">Solo Journey</p>
+              <p className="text-[#c4622d] font-display font-semibold text-lg">Solo Journey</p>
               <p className="text-black font-bold text-2xl" data-testid="text-price-solo">USD $320</p>
             </div>
             <div className="card-glass rounded-md p-5 text-center space-y-2" data-testid="card-rate-group">
-              <p className="text-[#f97316] font-display font-semibold text-lg">Group Rate (3+ people)</p>
+              <p className="text-[#c4622d] font-display font-semibold text-lg">Group Rate (3+ people)</p>
               <p className="text-black font-bold text-2xl" data-testid="text-price-group">USD $260 / person</p>
             </div>
           </div>

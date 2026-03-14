@@ -55,7 +55,7 @@ export default function Navigation() {
           : "rgba(253,246,240,0.88)",
         backdropFilter: "blur(20px)",
         WebkitBackdropFilter: "blur(20px)",
-        borderBottom: scrolled ? "1px solid rgba(201,122,142,0.15)" : "none",
+        borderBottom: scrolled ? "1px solid rgba(196,98,45,0.15)" : "none",
       }}
     >
       <div className="max-w-7xl mx-auto px-8 sm:px-12 lg:px-20">
@@ -78,23 +78,24 @@ export default function Navigation() {
                     fontSize: "clamp(14px, 2.6vw, 20px)",
                     letterSpacing: "0.12em",
                     textTransform: "uppercase",
-                    color: "#f97316",
+                    color: "#c4622d",
                     lineHeight: 1,
                     whiteSpace: "nowrap",
                   }}>
                     Thrive
                   </span>
 
-                  {/* thin vertical divider */}
+                  {/* decorative separator */}
                   <span style={{
-                    display: "inline-block",
-                    width: 1,
-                    height: "1em",
-                    background: "#f97316",
+                    fontFamily: "Georgia, serif",
+                    fontSize: "clamp(10px, 1.6vw, 13px)",
+                    color: "#c4622d",
                     margin: "0 10px",
-                    opacity: 0.45,
+                    opacity: 0.6,
                     verticalAlign: "middle",
-                  }}/>
+                    lineHeight: 1,
+                    userSelect: "none",
+                  }}>✦</span>
 
                   {/* TOOLS */}
                   <span style={{
@@ -104,7 +105,7 @@ export default function Navigation() {
                     fontSize: "clamp(14px, 2.6vw, 20px)",
                     letterSpacing: "0.28em",
                     textTransform: "uppercase",
-                    color: "#c45000",
+                    color: "#8b3a1a",
                     lineHeight: 1,
                     whiteSpace: "nowrap",
                     paddingLeft: "0.05em",
@@ -120,7 +121,7 @@ export default function Navigation() {
                   fontSize: "clamp(8px, 1.05vw, 10px)",
                   letterSpacing: "0.22em",
                   textTransform: "uppercase",
-                  color: "#7a3800",
+                  color: "#6b2d0f",
                   lineHeight: 1,
                   whiteSpace: "nowrap",
                   paddingLeft: "0.22em",
@@ -186,7 +187,7 @@ export default function Navigation() {
                     href={item.href}
                     className={`text-sm uppercase tracking-[0.12em] font-medium block py-3 px-2 rounded-lg transition-all duration-200 ${
                       location === item.href
-                        ? "text-[#f97316] bg-[#f97316]/10"
+                        ? "text-[#c4622d] bg-[#c4622d]/10"
                         : "text-[#3d1a28]/60 hover:text-[#3d1a28] hover:bg-[#3d1a28]/5"
                     }`}
                     onClick={() => setMenuOpen(false)}

@@ -29,7 +29,7 @@ const blogPosts: BlogPost[] = [
     excerpt: "Breaking down the science behind IM8's formula — does this all-in-one supplement actually deliver on its longevity promises? Here's what the research says.",
     href: "/product-reviews/im8-health-review",
     badge: "In-Depth Review",
-    badgeColor: "bg-[#f97316]/15 text-[#c45000] border-[#f97316]/25",
+    badgeColor: "bg-[#c4622d]/15 text-[#8b3a1a] border-[#c4622d]/25",
   },
   {
     id: "vielight-neuro-review",
@@ -37,7 +37,7 @@ const blogPosts: BlogPost[] = [
     excerpt: "Testing the Vielight Neuro Alpha and Gamma devices — examining the clinical research on transcranial photobiomodulation and my personal 6-month experience.",
     href: "/product-reviews/vielight-neuro-review",
     badge: "Tech Review",
-    badgeColor: "bg-[#f97316]/15 text-[#c45000] border-[#f97316]/25",
+    badgeColor: "bg-[#c4622d]/15 text-[#8b3a1a] border-[#c4622d]/25",
   },
   {
     id: "hyperion-herbs",
@@ -76,7 +76,7 @@ export default function ProductReviews() {
                 {post.badge}
               </Badge>
               <h2
-                className="font-display text-xl sm:text-2xl font-bold text-black mb-3 group-hover:text-[#c45000] transition-colors"
+                className="font-display text-xl sm:text-2xl font-bold text-black mb-3 group-hover:text-[#8b3a1a] transition-colors"
                 data-testid={`text-post-title-${post.id}`}
               >
                 {post.title}
@@ -84,7 +84,7 @@ export default function ProductReviews() {
               <p className="text-black/50 text-sm sm:text-base leading-relaxed mb-4">
                 {post.excerpt}
               </p>
-              <span className="inline-flex items-center text-[#c45000] text-sm font-medium group-hover:text-[#c45000] transition-colors">
+              <span className="inline-flex items-center text-[#8b3a1a] text-sm font-medium group-hover:text-[#8b3a1a] transition-colors">
                 Read Full Review <ArrowRight className="ml-2 w-4 h-4" />
               </span>
             </div>

@@ -41,19 +41,19 @@ export default function FoodForest() {
             Rates
           </h3>
           <div className="space-y-2">
-            <p className="text-[#f97316] font-semibold" data-testid="text-schedule">
+            <p className="text-[#c4622d] font-semibold" data-testid="text-schedule">
               Starts every Monday in August & September 2022
             </p>
-            <p className="text-[#f97316] font-semibold" data-testid="text-location">
+            <p className="text-[#c4622d] font-semibold" data-testid="text-location">
               Location : Ucluelet, Canada
             </p>
-            <p className="text-[#f97316] font-semibold" data-testid="text-price-single">
+            <p className="text-[#c4622d] font-semibold" data-testid="text-price-single">
               $260/ person
             </p>
-            <p className="text-[#f97316] font-semibold" data-testid="text-price-group">
+            <p className="text-[#c4622d] font-semibold" data-testid="text-price-group">
               $200/ person if you're a group of 2 or more
             </p>
-            <p className="text-[#f97316] font-semibold" data-testid="text-includes">
+            <p className="text-[#c4622d] font-semibold" data-testid="text-includes">
               1 meal everyday + Camping included (please bring your own camping gear)
             </p>
           </div>
