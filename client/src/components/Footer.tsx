@@ -7,7 +7,7 @@ export default function Footer() {
   return (
     <footer
       className="py-16 px-4 sm:px-6 lg:px-8"
-      style={{ background: "#f5eaf5", borderTop: "1px solid rgba(201,122,142,0.2)" }}
+      style={{ background: "#ffe8e8", borderTop: "1px solid rgba(201,122,142,0.2)" }}
     >
       <div className="max-w-6xl mx-auto">
         <div className="grid md:grid-cols-4 gap-12 mb-12">

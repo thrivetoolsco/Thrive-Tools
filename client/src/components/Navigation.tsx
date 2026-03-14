@@ -51,8 +51,8 @@ export default function Navigation() {
       }`}
       style={{
         background: scrolled
-          ? "rgba(253,246,240,0.97)"
-          : "rgba(253,246,240,0.88)",
+          ? "rgba(255,240,240,0.97)"
+          : "rgba(255,240,240,0.88)",
         backdropFilter: "blur(20px)",
         WebkitBackdropFilter: "blur(20px)",
         borderBottom: scrolled ? "1px solid rgba(196,98,45,0.15)" : "none",
@@ -148,7 +148,7 @@ export default function Navigation() {
         className={`overflow-hidden transition-all duration-300 ease-in-out ${
           menuOpen ? "max-h-[80vh] opacity-100" : "max-h-0 opacity-0"
         }`}
-        style={{ background: "rgba(253,246,240,0.99)" }}
+        style={{ background: "rgba(255,240,240,0.99)" }}
       >
         <div className="border-t/15 py-4 px-6 overflow-y-auto max-h-[75vh]">
           <div className="flex flex-col gap-1">

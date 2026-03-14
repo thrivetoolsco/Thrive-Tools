@@ -415,14 +415,14 @@ function TravelsSection() {
 
 export default function Discounts() {
   return (
-    <div className="min-h-screen bg-[#fdf6f0] text-[#3d1a28] overflow-x-hidden">
+    <div className="min-h-screen bg-[#fff0f0] text-[#3d1a28] overflow-x-hidden">
       <Navigation />
 
       {/* Header */}
       <section
         className="pt-32 pb-16 px-4 sm:px-6 lg:px-8 relative overflow-hidden"
         style={{
-          background: "radial-gradient(ellipse 80% 50% at 50% 30%, #f5e6f5 0%, #fdeef8 40%, #fdf6f0 100%)",
+          background: "radial-gradient(ellipse 80% 50% at 50% 30%, #ffe8e8 0%, #fff0f0 40%, #fff0f0 100%)",
         }}
       >
         <div className="absolute inset-0 pointer-events-none overflow-hidden">
@@ -458,7 +458,7 @@ export default function Discounts() {
       {/* Content */}
       <section
         className="py-12 px-4 sm:px-6 lg:px-8"
-        style={{ background: "linear-gradient(180deg, #fdf6f0 0%, #f8eef8 50%, #fdf6f0 100%)" }}
+        style={{ background: "linear-gradient(180deg, #fff0f0 0%, #ffe8e8 50%, #fff0f0 100%)" }}
       >
         <div className="max-w-5xl mx-auto">
           <CategorySection

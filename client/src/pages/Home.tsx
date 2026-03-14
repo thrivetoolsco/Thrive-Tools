@@ -29,13 +29,13 @@ export default function Home() {
   const visibleTestimonials = showAllTestimonials ? testimonials : testimonials.slice(0, 3);
 
   return (
-    <div className="min-h-screen bg-[#fdf6f0] text-[#3d1a28] overflow-x-hidden">
+    <div className="min-h-screen bg-[#fff0f0] text-[#3d1a28] overflow-x-hidden">
       <Navigation />
 
       {/* ═══════════════════════════════════════════
           HERO — portrait-first editorial split
       ═══════════════════════════════════════════ */}
-      <section className="relative min-h-screen flex items-center overflow-hidden bg-[#fdf6f0]">
+      <section className="relative min-h-screen flex items-center overflow-hidden bg-[#fff0f0]">
 
         {/* Botanical mandala watermark */}
         <svg
@@ -94,7 +94,7 @@ export default function Home() {
                 borderRadius: "50%",
                 overflow: "hidden",
                 border: "1px solid rgba(201,64,64,0.22)",
-                boxShadow: "0 0 0 8px rgba(253,246,240,1), 0 0 0 9px rgba(201,64,64,0.1)",
+                boxShadow: "0 0 0 8px rgba(255,240,240,1), 0 0 0 9px rgba(201,64,64,0.1)",
                 position: "relative",
               }}
             >
@@ -135,7 +135,7 @@ export default function Home() {
                   borderRadius: 24,
                   overflow: "hidden",
                   border: "1px solid rgba(201,64,64,0.18)",
-                  boxShadow: "0 24px 60px rgba(61,26,40,0.1), 0 0 0 10px rgba(253,246,240,1), 0 0 0 11px rgba(201,64,64,0.08)",
+                  boxShadow: "0 24px 60px rgba(61,26,40,0.1), 0 0 0 10px rgba(255,240,240,1), 0 0 0 11px rgba(201,64,64,0.08)",
                   position: "relative",
                 }}
               >
@@ -187,7 +187,7 @@ export default function Home() {
       {/* ═══════════════════════════════════════════
           SPLIT 1 — Hat photo + "I don't sell" copy
       ═══════════════════════════════════════════ */}
-      <section className="relative overflow-hidden" style={{ background: "linear-gradient(180deg, #fdf6f0 0%, #f8eef8 50%, #fdf6f0 100%)" }}>
+      <section className="relative overflow-hidden" style={{ background: "linear-gradient(180deg, #fff0f0 0%, #ffe8e8 50%, #fff0f0 100%)" }}>
         <div className="max-w-6xl mx-auto px-6 sm:px-10 lg:px-16 py-20 sm:py-28 lg:py-32">
 
           {/* Thin top divider */}
@@ -246,7 +246,7 @@ export default function Home() {
       {/* ═══════════════════════════════════════════
           SPLIT 2 — Retreats text + edenPhoto2
       ═══════════════════════════════════════════ */}
-      <section className="relative overflow-hidden" style={{ background: "#fdf6f0" }}>
+      <section className="relative overflow-hidden" style={{ background: "#fff0f0" }}>
         <div className="max-w-6xl mx-auto px-6 sm:px-10 lg:px-16 py-20 sm:py-28 lg:py-32">
 
           <div className="flex flex-col lg:flex-row-reverse items-center gap-14 lg:gap-20">
@@ -290,7 +290,7 @@ export default function Home() {
       {/* ═══════════════════════════════════════════
           STORY CTA
       ═══════════════════════════════════════════ */}
-      <section id="about" className="relative py-20 sm:py-28 px-6 sm:px-10 text-center" style={{ background: "linear-gradient(180deg, #fdf6f0 0%, #f5eaf5 50%, #fdf6f0 100%)" }}>
+      <section id="about" className="relative py-20 sm:py-28 px-6 sm:px-10 text-center" style={{ background: "linear-gradient(180deg, #fff0f0 0%, #ffe8e8 50%, #fff0f0 100%)" }}>
         <div className="flex items-center gap-6 mb-14 opacity-25 max-w-2xl mx-auto">
           <div className="h-px flex-1 bg-gradient-to-r from-transparent via-[#c4622d] to-transparent"/>
           <svg width="14" height="14" viewBox="0 0 14 14"><circle cx="7" cy="7" r="6" fill="none" stroke="#c4622d" strokeWidth="0.8"/><circle cx="7" cy="7" r="2.2" fill="#c4622d" opacity="0.5"/></svg>
@@ -320,7 +320,7 @@ export default function Home() {
       ═══════════════════════════════════════════ */}
       <section
         className="py-20 sm:py-28 px-6 sm:px-10 relative overflow-hidden"
-        style={{ background: "linear-gradient(135deg, #f8eef8 0%, #f0e4f5 50%, #f8eef8 100%)" }}
+        style={{ background: "linear-gradient(135deg, #ffe8e8 0%, #f0e4f5 50%, #ffe8e8 100%)" }}
       >
         <div className="absolute inset-0 pointer-events-none">
           <div style={{ position: "absolute", top: "50%", left: "50%", transform: "translate(-50%,-50%)", width: 500, height: 500, borderRadius: "50%", background: "radial-gradient(circle, rgba(201,64,64,0.07) 0%, transparent 70%)", filter: "blur(70px)" }}/>
