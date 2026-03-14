@@ -63,10 +63,10 @@ export default function RhondaPatrickMultivitamin() {
           <div className="space-y-4 text-black/70 leading-relaxed">
             <p>Here's the part that should genuinely concern you.</p>
             <p>
-              Dr. Patrick's mentor, biochemist Dr. Bruce Ames, developed something called the <strong className="text-black/90">"Triage Theory"</strong> — and it's one of the most important ideas in modern nutrition that most people have never heard of.
+              Dr. Patrick's mentor, biochemist Dr. Bruce Ames, developed something called the <strong className="text-black/90">"Triage Theory"</strong>, one of the most important ideas in modern nutrition that most people have never heard of.
             </p>
             <p>
-              The concept is this: when your body is low on a nutrient, it rations it. It keeps the lights on for the functions you need to survive <em>right now</em>, and quietly deprioritizes things like DNA repair, cellular maintenance, and protecting your arteries. You feel totally fine. Meanwhile, damage is slowly accumulating at the cellular level — the kind that shows up 20 or 30 years later as the diseases we call "aging."
+              The concept is this: when your body is low on a nutrient, it rations it. It keeps the lights on for the functions you need to survive <em>right now</em>, and quietly deprioritizes things like DNA repair, cellular maintenance, and protecting your arteries. You feel totally fine. Meanwhile, damage is slowly accumulating at the cellular level, the kind that shows up 20 or 30 years later as the diseases we call "aging."
             </p>
           </div>
 
@@ -89,11 +89,11 @@ export default function RhondaPatrickMultivitamin() {
           <div className="grid sm:grid-cols-3 gap-5 mb-8">
             <div className="card-glass rounded-xl p-5 text-center" data-testid="stat-vitamin-d">
               <p className="text-3xl font-bold text-gradient-rose mb-2">70%</p>
-              <p className="text-black/60 text-sm leading-relaxed">of Americans don't get enough Vitamin D — a nutrient that directly regulates over 1,000 of your genes</p>
+              <p className="text-black/60 text-sm leading-relaxed">of Americans don't get enough Vitamin D, a nutrient that directly regulates over 1,000 of your genes</p>
             </div>
             <div className="card-glass rounded-xl p-5 text-center" data-testid="stat-magnesium">
               <p className="text-3xl font-bold text-gradient-rose mb-2">&gt;50%</p>
-              <p className="text-black/60 text-sm leading-relaxed">of adults fall short on magnesium — needed for energy production, sleep, and DNA repair</p>
+              <p className="text-black/60 text-sm leading-relaxed">of adults fall short on magnesium, needed for energy production, sleep, and DNA repair</p>
             </div>
             <div className="card-glass rounded-xl p-5 text-center" data-testid="stat-nutrients">
               <p className="text-3xl font-bold text-gradient-rose mb-2">B, Zn, I</p>
@@ -103,7 +103,7 @@ export default function RhondaPatrickMultivitamin() {
 
           <div className="space-y-4 text-black/70 leading-relaxed">
             <p>
-              Dr. Patrick describes a daily multivitamin as <strong className="text-black/90">"great insurance."</strong> Not a substitute for a good diet — an upgrade on top of one, filling the gaps that are nearly impossible to consistently close through food alone in the modern world.
+              Dr. Patrick describes a daily multivitamin as <strong className="text-black/90">"great insurance."</strong> Not a substitute for a good diet. An upgrade on top of one, filling the gaps that are nearly impossible to consistently close through food alone in the modern world.
             </p>
           </div>
         </section>
@@ -117,7 +117,7 @@ export default function RhondaPatrickMultivitamin() {
           </div>
           <div className="space-y-4 text-black/70 leading-relaxed">
             <p>
-              The COSMOS trials — a major clinical study series — found that adults taking a daily multivitamin showed measurably better memory and cognitive function than those on a placebo. The researchers estimated it effectively <strong className="text-black/90">slowed brain aging by around two years.</strong>
+              The COSMOS trials, a major clinical study series, found that adults taking a daily multivitamin showed measurably better memory and cognitive function than those on a placebo. The researchers estimated it effectively <strong className="text-black/90">slowed brain aging by around two years.</strong>
             </p>
             <p>
               Two years. From a daily supplement. If a drug did that, everyone would be talking about it.
@@ -141,7 +141,7 @@ export default function RhondaPatrickMultivitamin() {
           </div>
           <div className="space-y-4 text-black/70 leading-relaxed">
             <p>
-              Not all multivitamins work the same. Most cheap ones use nutrient forms your body can barely absorb — magnesium oxide, cyanocobalamin, folic acid instead of its active methylated form. You're essentially paying for something that passes through you.
+              Not all multivitamins work the same. Most cheap ones use nutrient forms your body can barely absorb. Magnesium oxide, cyanocobalamin, folic acid instead of its active methylated form. You're essentially paying for something that passes through you.
             </p>
             <p>
               Dr. Patrick is firm on this point: look for <strong className="text-black/90">methylated B vitamins, chelated minerals, and active-form nutrients.</strong> That's the difference between a supplement that works and one that just makes expensive urine.
@@ -158,7 +158,7 @@ export default function RhondaPatrickMultivitamin() {
           </div>
           <div className="space-y-4 text-black/70 leading-relaxed">
             <p>
-              If you're going to do this, do it properly. <strong className="text-black/90">IM8 Health</strong> is the multivitamin we recommend without hesitation. Built with 75+ science-backed ingredients, in bioavailable forms, at doses that actually reflect what the research supports, it checks every box that researchers like Dr. Patrick and Dr. Ames have outlined — comprehensive coverage, proper bioavailability, no cheap fillers.
+              If you're going to do this, do it properly. <strong className="text-black/90">IM8 Health</strong> is the multivitamin we recommend without hesitation. Built with 75+ science-backed ingredients, in bioavailable forms, at doses that actually reflect what the research supports, it checks every box that researchers like Dr. Patrick and Dr. Ames have outlined. Comprehensive coverage, proper bioavailability, no cheap fillers.
             </p>
             <p className="font-semibold text-[#c4622d]">Use code THRIVE10 for 10% off your first order.</p>
           </div>
@@ -167,7 +167,7 @@ export default function RhondaPatrickMultivitamin() {
         <div className="text-center pt-4">
           <Button asChild size="lg" className="btn-gradient-rose text-white border-0 rounded-full px-6 sm:px-8 py-4 text-sm tracking-widest uppercase font-semibold h-auto leading-relaxed">
             <a href="https://im8health.com" target="_blank" rel="noopener noreferrer" data-testid="link-im8-shop" className="inline-flex items-center justify-center gap-2 flex-wrap">
-              Shop IM8 Health — Use Code THRIVE10 <ExternalLink className="w-4 h-4 flex-shrink-0" />
+              Shop IM8 Health. Use Code THRIVE10 <ExternalLink className="w-4 h-4 flex-shrink-0" />
             </a>
           </Button>
         </div>

@@ -57,8 +57,8 @@ const blogPosts: BlogPost[] = [
   },
   {
     id: "rhonda-patrick-multivitamin",
-    title: "Why Your \"Healthy\" Diet Probably Has Gaps — And What To Do About It",
-    excerpt: "Dr. Rhonda Patrick takes a multivitamin every single day. Here's the science behind why — from the Triage Theory to the COSMOS trials — and what to look for in a quality supplement.",
+    title: "Why Your \"Healthy\" Diet Probably Has Gaps. And What To Do About It",
+    excerpt: "Dr. Rhonda Patrick takes a multivitamin every single day. Here's the science behind why, from the Triage Theory to the COSMOS trials, and what to look for in a quality supplement.",
     href: "/product-reviews/rhonda-patrick-multivitamin",
     badge: "Science-Backed",
     badgeColor: "bg-[#c4622d]/15 text-[#8b3a1a] border-[#c4622d]/25",
