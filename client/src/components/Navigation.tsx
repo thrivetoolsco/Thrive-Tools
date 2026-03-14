@@ -62,69 +62,82 @@ export default function Navigation() {
         <div className="flex items-center justify-between h-20 sm:h-28">
           {/* ── LOGO — Montserrat Light, single line, interlocked OO ── */}
           <Link href="/" className="flex-shrink-0 group absolute left-1/2 -translate-x-1/2" data-testid="link-logo" aria-label="Thrive Tools">
+            {/*
+              ── LOGO SYSTEM ──
+              Font: Montserrat 400 at 15px → cap-height ≈ 10.5px
+              Circles: r=5.2 → diameter ≈ 10.4px  (matches cap-height)
+              SVG viewBox 0 0 24 10.4 — circles flush to top & bottom edges
+              alignItems:"center" + marginTop nudge aligns circles with caps optically
+              THRIVE: vivid cherry rose  #d91558
+              TOOLS:  vivid amber gold   #c47e00
+            */}
             <div
-              className="transition-opacity duration-300 group-hover:opacity-75 select-none"
-              style={{ display: "inline-flex", alignItems: "center", gap: 0 }}
+              className="transition-opacity duration-300 group-hover:opacity-70 select-none"
+              style={{ display: "inline-flex", alignItems: "center", gap: 0, lineHeight: 1 }}
             >
-              {/* "THRIVE T" */}
+              {/* ── THRIVE — vivid rose ── */}
               <span style={{
                 fontFamily: "'Montserrat', 'Helvetica Neue', Arial, sans-serif",
-                fontWeight: 300,
-                fontSize: "clamp(11px, 2.1vw, 15px)",
-                letterSpacing: "0.26em",
+                fontWeight: 400,
+                fontSize: "clamp(11px, 2.2vw, 15px)",
+                letterSpacing: "0.22em",
                 textTransform: "uppercase",
-                background: "linear-gradient(135deg, #e8a4b8 0%, #c97a8e 45%, #d4a867 100%)",
-                WebkitBackgroundClip: "text",
-                WebkitTextFillColor: "transparent",
-                backgroundClip: "text",
+                color: "#d91558",
+                lineHeight: 1,
+                paddingRight: "0.22em",
+              }}>
+                THRIVE
+              </span>
+
+              {/* ── T (of TOOLS) — vivid gold ── */}
+              <span style={{
+                fontFamily: "'Montserrat', 'Helvetica Neue', Arial, sans-serif",
+                fontWeight: 400,
+                fontSize: "clamp(11px, 2.2vw, 15px)",
+                letterSpacing: "0",
+                textTransform: "uppercase",
+                color: "#c47e00",
                 lineHeight: 1,
               }}>
-                THRIVE&nbsp;T
+                T
               </span>
 
               {/*
                 ── INTERLOCKED OO ──
-                O1 centre (8,8) r=5, O2 centre (16,8) r=5, d=8
-                Intersection: x=12, y=8±3  →  (12,5) and (12,11)
-                Layer 1: O2 full (behind)
-                Layer 2: O1 full (in front of O2's left arc)
-                Layer 3: O2 top-left arc clipped to rect(0,0,12,8) — appears over O1 → creates interlock
+                r=5.2, d=8  →  O1 cx=6.2  O2 cx=14.2
+                Intersection x = (6.2+14.2)/2 = 10.2
+                y_int = sqrt(5.2²-4²) = sqrt(27.04-16) = sqrt(11.04) ≈ 3.32
+                SVG: width=21 height=10.4 viewBox="0 0 21 10.4"
+                Circles at cy=5.2 → span y=0 to y=10.4 (flush, matches cap height)
+                Clip rect: x=0 y=0 width=10.2 height=5.2  (top-left quadrant of overlap)
               */}
               <svg
-                width="24" height="16"
-                viewBox="0 0 24 16"
+                width="21" height="10.4"
+                viewBox="0 0 21 10.4"
                 aria-hidden="true"
-                style={{ display: "block", flexShrink: 0, overflow: "visible" }}
+                style={{ display: "block", flexShrink: 0, marginTop: "-1px" }}
               >
                 <defs>
-                  <linearGradient id="ooG" x1="0%" y1="0%" x2="100%" y2="0%">
-                    <stop offset="0%" stopColor="#c97a8e"/>
-                    <stop offset="100%" stopColor="#d4a867"/>
-                  </linearGradient>
-                  {/* clip: left of intersection (x<12) AND top half (y<8) */}
                   <clipPath id="ooLock">
-                    <rect x="0" y="0" width="12" height="8"/>
+                    <rect x="0" y="0" width="10.2" height="5.2"/>
                   </clipPath>
                 </defs>
-                {/* O2 — drawn first, sits behind O1 */}
-                <circle cx="16" cy="8" r="5" fill="none" stroke="url(#ooG)" strokeWidth="1.25"/>
-                {/* O1 — drawn on top, covers O2's left arc */}
-                <circle cx="8"  cy="8" r="5" fill="none" stroke="url(#ooG)" strokeWidth="1.25"/>
-                {/* O2 top-left arc redrawn over O1 — creates the "in front" interlock illusion */}
-                <circle cx="16" cy="8" r="5" fill="none" stroke="url(#ooG)" strokeWidth="1.25" clipPath="url(#ooLock)"/>
+                {/* O2 behind */}
+                <circle cx="14.2" cy="5.2" r="5.2" fill="none" stroke="#c47e00" strokeWidth="1.3"/>
+                {/* O1 in front */}
+                <circle cx="6.2"  cy="5.2" r="5.2" fill="none" stroke="#c47e00" strokeWidth="1.3"/>
+                {/* O2 top-left arc over O1 → interlock */}
+                <circle cx="14.2" cy="5.2" r="5.2" fill="none" stroke="#c47e00" strokeWidth="1.3" clipPath="url(#ooLock)"/>
               </svg>
 
-              {/* "LS" */}
+              {/* ── LS (of TOOLS) — vivid gold ── */}
               <span style={{
                 fontFamily: "'Montserrat', 'Helvetica Neue', Arial, sans-serif",
-                fontWeight: 300,
-                fontSize: "clamp(11px, 2.1vw, 15px)",
-                letterSpacing: "0.26em",
+                fontWeight: 400,
+                fontSize: "clamp(11px, 2.2vw, 15px)",
+                letterSpacing: "0.22em",
                 textTransform: "uppercase",
-                background: "linear-gradient(135deg, #c97a8e 0%, #d4a867 100%)",
-                WebkitBackgroundClip: "text",
-                WebkitTextFillColor: "transparent",
-                backgroundClip: "text",
+                color: "#c47e00",
                 lineHeight: 1,
               }}>
                 LS
