@@ -34,6 +34,7 @@ import JoovvReview from "@/pages/reviews/JoovvReview";
 import RhondaPatrickMultivitamin from "@/pages/reviews/RhondaPatrickMultivitamin";
 import BiohackingSupplements2026 from "@/pages/reviews/BiohackingSupplements2026";
 import BiohackingBeginnersGuide from "@/pages/reviews/BiohackingBeginnersGuide";
+import BreathworkBeginnersGuide from "@/pages/reviews/BreathworkBeginnersGuide";
 
 function ScrollToTop() {
   const [location] = useLocation();
@@ -77,6 +78,7 @@ function Router() {
       <Route path="/product-reviews/rhonda-patrick-multivitamin" component={RhondaPatrickMultivitamin} />
       <Route path="/product-reviews/biohacking-supplements-2026" component={BiohackingSupplements2026} />
       <Route path="/product-reviews/biohacking-beginners-guide" component={BiohackingBeginnersGuide} />
+      <Route path="/product-reviews/breathwork-beginners-guide" component={BreathworkBeginnersGuide} />
       <Route component={NotFound} />
     </Switch>
   );

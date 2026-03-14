@@ -56,6 +56,14 @@ const blogPosts: BlogPost[] = [
     badgeColor: "bg-red-500/15 text-red-300 border-red-500/25",
   },
   {
+    id: "breathwork-beginners-guide",
+    title: "Breathwork for Beginners: The Complete Science-Backed Guide (2026)",
+    excerpt: "5 techniques you can start today, backed by peer-reviewed research on stress, sleep, cognition, and HRV. No equipment, no experience, no courses needed.",
+    href: "/product-reviews/breathwork-beginners-guide",
+    badge: "Beginner's Guide",
+    badgeColor: "bg-[#c4622d]/15 text-[#8b3a1a] border-[#c4622d]/25",
+  },
+  {
     id: "biohacking-beginners-guide",
     title: "Biohacking for Beginners: The Complete 2026 Starter Guide",
     excerpt: "No jargon, no overwhelm. A clear, step-by-step framework for taking control of your biology, from free foundations to the right supplements, in the right order.",
