@@ -6,6 +6,8 @@ import {
   ChevronDown,
 } from "lucide-react";
 
+const logoImg = "/logo.webp";
+
 const navItems = [
   { label: "Home", href: "/" },
   { label: "Discount Codes (2026)", href: "/discount-codes" },
@@ -61,52 +63,11 @@ export default function Navigation() {
       <div className="max-w-7xl mx-auto px-8 sm:px-12 lg:px-20">
         <div className="flex items-center justify-between h-20 sm:h-28">
           <Link href="/" className="flex-shrink-0 group absolute left-1/2 -translate-x-1/2" data-testid="link-logo">
-            <div className="flex flex-col items-center gap-0.5 transition-transform duration-300 group-hover:scale-105 select-none">
-              {/* Mark — delicate lotus ring */}
-              <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-                <defs>
-                  <linearGradient id="logoGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-                    <stop offset="0%" stopColor="#e8a4b8"/>
-                    <stop offset="45%" stopColor="#c97a8e"/>
-                    <stop offset="100%" stopColor="#d4a867"/>
-                  </linearGradient>
-                </defs>
-                <circle cx="14" cy="14" r="12.5" stroke="url(#logoGrad)" strokeWidth="0.8"/>
-                <circle cx="14" cy="14" r="8" stroke="url(#logoGrad)" strokeWidth="0.6"/>
-                <circle cx="14" cy="14" r="2.5" fill="url(#logoGrad)" opacity="0.7"/>
-                {[0,60,120,180,240,300].map((deg, i) => {
-                  const r = (deg * Math.PI) / 180;
-                  return <line key={i} x1={14+8*Math.cos(r)} y1={14+8*Math.sin(r)} x2={14+12.5*Math.cos(r)} y2={14+12.5*Math.sin(r)} stroke="url(#logoGrad)" strokeWidth="0.7"/>;
-                })}
-              </svg>
-              {/* Wordmark */}
-              <div className="text-center leading-none">
-                <div
-                  className="font-display italic font-bold tracking-wide"
-                  style={{
-                    fontSize: "clamp(15px, 3vw, 22px)",
-                    background: "linear-gradient(135deg, #e8a4b8 0%, #c97a8e 40%, #d4a867 100%)",
-                    WebkitBackgroundClip: "text",
-                    WebkitTextFillColor: "transparent",
-                    backgroundClip: "text",
-                  }}
-                >
-                  Thrive
-                </div>
-                <div
-                  className="font-medium"
-                  style={{
-                    fontSize: "clamp(7px, 1.2vw, 9px)",
-                    letterSpacing: "0.38em",
-                    textTransform: "uppercase",
-                    color: "rgba(61,26,40,0.45)",
-                    marginTop: "-1px",
-                  }}
-                >
-                  Tools
-                </div>
-              </div>
-            </div>
+            <img
+              src={logoImg}
+              alt="Thrive Tools"
+              className="h-16 sm:h-24 w-auto max-w-[260px] sm:max-w-[400px] object-contain transition-transform duration-300 group-hover:scale-105"
+            />
           </Link>
 
           <div className="ml-auto">
