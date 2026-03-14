@@ -66,67 +66,58 @@ export default function Navigation() {
               className="transition-opacity duration-300 group-hover:opacity-70 select-none"
               style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: 0 }}
             >
+              {/* top rule */}
+              <div style={{ width: "100%", height: 1, background: "linear-gradient(90deg, transparent, #c97a8e, transparent)", marginBottom: 5 }}/>
 
-              {/* ── 8-petal botanical bloom mark ── */}
-              <svg width="32" height="32" viewBox="0 0 40 40" aria-hidden="true" style={{ marginBottom: 3 }}>
-                <defs>
-                  <radialGradient id="petalGrad" cx="50%" cy="50%" r="50%">
-                    <stop offset="0%"   stopColor="#e8a4b8"/>
-                    <stop offset="60%"  stopColor="#c97a8e"/>
-                    <stop offset="100%" stopColor="#d4a867"/>
-                  </radialGradient>
-                  <linearGradient id="dotGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-                    <stop offset="0%"   stopColor="#c97a8e"/>
-                    <stop offset="100%" stopColor="#d4a867"/>
-                  </linearGradient>
-                </defs>
-
-                {/* 8 petals — each a thin ellipse rotated around center */}
-                {[0, 45, 90, 135, 180, 225, 270, 315].map((deg) => (
-                  <g key={deg} transform={`translate(20,20) rotate(${deg})`}>
-                    <ellipse cx="0" cy="-12" rx="2.6" ry="7" fill="url(#petalGrad)" opacity="0.82"/>
-                  </g>
-                ))}
-
-                {/* thin outer ring */}
-                <circle cx="20" cy="20" r="18" fill="none" stroke="#c97a8e" strokeWidth="0.5" opacity="0.35"/>
-
-                {/* centre circle */}
-                <circle cx="20" cy="20" r="3.5" fill="url(#dotGrad)"/>
-              </svg>
-
-              {/* ── THRIVE TOOLS wordmark — Playfair Display ── */}
+              {/* THRIVE — bold, dark, commanding */}
               <div style={{
-                fontFamily: "'Playfair Display', Georgia, serif",
+                fontFamily: "'Montserrat', 'Helvetica Neue', Arial, sans-serif",
                 fontWeight: 700,
-                fontSize: "clamp(13px, 2.4vw, 18px)",
-                letterSpacing: "0.18em",
+                fontSize: "clamp(14px, 2.6vw, 20px)",
+                letterSpacing: "0.38em",
                 textTransform: "uppercase",
-                background: "linear-gradient(135deg, #c97a8e 0%, #9b5070 45%, #c4880a 100%)",
-                WebkitBackgroundClip: "text",
-                WebkitTextFillColor: "transparent",
-                backgroundClip: "text",
+                color: "#3d1a28",
                 lineHeight: 1,
+                paddingLeft: "0.38em",
                 whiteSpace: "nowrap",
               }}>
-                Thrive Tools
+                Thrive
               </div>
 
-              {/* ── Tagline ── */}
+              {/* TOOLS — featherweight, rose, airy */}
+              <div style={{
+                fontFamily: "'Montserrat', 'Helvetica Neue', Arial, sans-serif",
+                fontWeight: 200,
+                fontSize: "clamp(8px, 1.4vw, 11px)",
+                letterSpacing: "0.55em",
+                textTransform: "uppercase",
+                color: "#c97a8e",
+                lineHeight: 1,
+                paddingLeft: "0.55em",
+                marginTop: 3,
+                whiteSpace: "nowrap",
+              }}>
+                Tools
+              </div>
+
+              {/* bottom rule */}
+              <div style={{ width: "100%", height: 1, background: "linear-gradient(90deg, transparent, #c97a8e, transparent)", marginTop: 5 }}/>
+
+              {/* tagline */}
               <div style={{
                 fontFamily: "'Montserrat', 'Helvetica Neue', Arial, sans-serif",
                 fontWeight: 300,
-                fontSize: "clamp(5.5px, 0.85vw, 7px)",
-                letterSpacing: "0.2em",
+                fontSize: "clamp(5px, 0.75vw, 6.5px)",
+                letterSpacing: "0.18em",
                 textTransform: "uppercase",
-                color: "rgba(61,26,40,0.42)",
+                color: "rgba(61,26,40,0.38)",
                 lineHeight: 1,
                 marginTop: 5,
                 whiteSpace: "nowrap",
+                paddingLeft: "0.18em",
               }}>
-                Biohacking &nbsp;–&nbsp; Longevity &nbsp;–&nbsp; Conscious Living
+                Biohacking &nbsp;—&nbsp; Longevity &nbsp;—&nbsp; Conscious Living
               </div>
-
             </div>
           </Link>
 
