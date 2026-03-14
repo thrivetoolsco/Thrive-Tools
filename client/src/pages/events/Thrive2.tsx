@@ -20,7 +20,7 @@ export default function Thrive2() {
 
         <div className="card-glass rounded-md p-6 sm:p-8 space-y-4" data-testid="section-intro">
           <p className="text-black/80 leading-relaxed text-base" data-testid="text-intro">
-            I'm stoked to invite you to our weekly Docu Evenings. We're diving into <span className="text-[#e8a4b8] font-semibold">THRIVE II: This is What it Takes</span>, and honestly, it's the shift in perspective we all kind of need right now.
+            I'm stoked to invite you to our weekly Docu Evenings. We're diving into <span className="text-[#14b8a6] font-semibold">THRIVE II: This is What it Takes</span>, and honestly, it's the shift in perspective we all kind of need right now.
           </p>
         </div>
 
@@ -44,7 +44,7 @@ export default function Thrive2() {
           <ul className="space-y-4">
             {topics.map((item, i) => (
               <li key={i} className="flex items-start gap-3" data-testid={`topic-item-${i}`}>
-                <Check className="w-5 h-5 text-[#c97a8e] shrink-0 mt-0.5" />
+                <Check className="w-5 h-5 text-[#14b8a6] shrink-0 mt-0.5" />
                 <p className="text-black/80 leading-relaxed text-base">
                   <span className="text-black font-semibold">{item.label}:</span> {item.desc}
                 </p>
@@ -59,19 +59,19 @@ export default function Thrive2() {
           </h3>
           <div className="flex flex-col items-center gap-4">
             <p className="text-black/80 leading-relaxed text-base" data-testid="text-cost">
-              <span className="text-[#e8a4b8] font-semibold">Cost:</span> Free <span className="text-black/50 text-sm">(It's about the community and the conversation).</span>
+              <span className="text-[#14b8a6] font-semibold">Cost:</span> Free <span className="text-black/50 text-sm">(It's about the community and the conversation).</span>
             </p>
             <p className="text-black/80 leading-relaxed text-base flex items-center gap-2" data-testid="text-duration">
-              <Clock className="w-4 h-4 text-[#c97a8e]" />
-              <span><span className="text-[#e8a4b8] font-semibold">Duration:</span> 2h 30m of mind-bending info.</span>
+              <Clock className="w-4 h-4 text-[#14b8a6]" />
+              <span><span className="text-[#14b8a6] font-semibold">Duration:</span> 2h 30m of mind-bending info.</span>
             </p>
             <p className="text-black/80 leading-relaxed text-base flex items-center gap-2" data-testid="text-registration">
-              <Mail className="w-4 h-4 text-[#c97a8e]" />
+              <Mail className="w-4 h-4 text-[#14b8a6]" />
               <span>
-                <span className="text-[#e8a4b8] font-semibold">How to Join:</span> Shoot a quick email to{" "}
+                <span className="text-[#14b8a6] font-semibold">How to Join:</span> Shoot a quick email to{" "}
                 <a
                   href="mailto:thrivetools.co@gmail.com"
-                  className="text-[#e8a4b8] underline underline-offset-4 decoration-[#c97a8e]/40"
+                  className="text-[#14b8a6] underline underline-offset-4 decoration-[#14b8a6]/40"
                   data-testid="link-email"
                 >
                   thrivetools.co@gmail.com
@@ -83,7 +83,7 @@ export default function Thrive2() {
         </div>
 
         <div className="card-glass rounded-md p-6 sm:p-8 text-center" data-testid="section-closing">
-          <p className="text-[#e8a4b8] font-display text-lg italic" data-testid="text-closing">
+          <p className="text-[#14b8a6] font-display text-lg italic" data-testid="text-closing">
             Come with an open mind. See you Thursday!
           </p>
         </div>

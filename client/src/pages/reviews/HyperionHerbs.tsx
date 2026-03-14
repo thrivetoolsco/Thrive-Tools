@@ -70,7 +70,7 @@ export default function HyperionHerbs() {
             </div>
             <div className="card-glass rounded-xl p-5">
               <div className="w-10 h-10 rounded-full bg-purple-500/20 border border-purple-500/30 flex items-center justify-center mb-3">
-                <Sparkles className="w-4 h-4 text-purple-300" />
+                <Sparkles className="w-4 h-4 text-teal-400" />
               </div>
               <h3 className="text-black font-bold text-sm mb-2">Quality Is Invisible</h3>
               <p className="text-black/50 text-xs leading-relaxed">
@@ -78,8 +78,8 @@ export default function HyperionHerbs() {
               </p>
             </div>
             <div className="card-glass rounded-xl p-5">
-              <div className="w-10 h-10 rounded-full bg-[#c97a8e]/20 border border-rose-500/30 flex items-center justify-center mb-3">
-                <Heart className="w-4 h-4 text-rose-600" />
+              <div className="w-10 h-10 rounded-full bg-[#14b8a6]/20 border border-teal-500/30 flex items-center justify-center mb-3">
+                <Heart className="w-4 h-4 text-teal-600" />
               </div>
               <h3 className="text-black font-bold text-sm mb-2">One-Size-Fits-All Is a Lie</h3>
               <p className="text-black/50 text-xs leading-relaxed">
@@ -143,7 +143,7 @@ export default function HyperionHerbs() {
             <div className="card-glass rounded-xl p-6">
               <div className="flex items-start gap-3 mb-3">
                 <div className="w-8 h-8 rounded-full bg-purple-500/20 border border-purple-500/30 flex items-center justify-center flex-shrink-0 mt-0.5">
-                  <span className="text-purple-300 font-bold text-sm">2</span>
+                  <span className="text-teal-400 font-bold text-sm">2</span>
                 </div>
                 <h3 className="text-black font-bold text-lg">Specialized (Read: Actually Powerful) Extraction</h3>
               </div>
@@ -154,8 +154,8 @@ export default function HyperionHerbs() {
 
             <div className="card-glass rounded-xl p-6">
               <div className="flex items-start gap-3 mb-3">
-                <div className="w-8 h-8 rounded-full bg-[#c97a8e]/20 border border-rose-500/30 flex items-center justify-center flex-shrink-0 mt-0.5">
-                  <span className="text-rose-600 font-bold text-sm">3</span>
+                <div className="w-8 h-8 rounded-full bg-[#14b8a6]/20 border border-teal-500/30 flex items-center justify-center flex-shrink-0 mt-0.5">
+                  <span className="text-teal-600 font-bold text-sm">3</span>
                 </div>
                 <h3 className="text-black font-bold text-lg">Real, Noticeable Results</h3>
               </div>
@@ -182,7 +182,7 @@ export default function HyperionHerbs() {
 
         <section data-testid="section-getting-started">
           <div className="flex items-center gap-3 mb-6">
-            <User className="w-5 h-5 text-rose-600" />
+            <User className="w-5 h-5 text-teal-600" />
             <h2 className="font-display text-2xl font-bold text-black">How to Get Started</h2>
           </div>
           <div className="space-y-4 text-black/70 leading-relaxed">
@@ -201,10 +201,10 @@ export default function HyperionHerbs() {
                 Try their <strong className="text-black/90">Reishi Mushroom 8:1 Extract</strong>. It's the king of calming tonics.
               </p>
             </div>
-            <div className="card-glass rounded-xl p-6 border-l-4" style={{ borderLeftColor: "#c97a8e" }}>
+            <div className="card-glass rounded-xl p-6 border-l-4" style={{ borderLeftColor: "#14b8a6" }}>
               <div className="flex items-center gap-2 mb-3">
-                <Sparkles className="w-4 h-4 text-rose-600" />
-                <h3 className="text-rose-600 font-bold">Physical Vitality, Liver Support & Cognitive Clarity</h3>
+                <Sparkles className="w-4 h-4 text-teal-600" />
+                <h3 className="text-teal-600 font-bold">Physical Vitality, Liver Support & Cognitive Clarity</h3>
               </div>
               <p className="text-black/60 text-sm leading-relaxed">
                 Try their <strong className="text-black/90">Schisandra Berry 10:1 Extract</strong>. It's the perfect all-around adaptogen for our high-paced lives.

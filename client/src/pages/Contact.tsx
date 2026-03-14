@@ -10,11 +10,11 @@ export default function Contact() {
         </p>
 
         <div className="card-glass rounded-md p-8 flex flex-col items-center gap-4" data-testid="card-contact-email">
-          <Mail className="w-8 h-8 text-[#c97a8e]" />
+          <Mail className="w-8 h-8 text-[#14b8a6]" />
           <p className="text-black/50 text-sm tracking-widest uppercase font-medium">Drop a line</p>
           <a
             href="mailto:thrivetools.co@gmail.com"
-            className="text-[#e8a4b8] hover:text-black transition-colors text-xl font-display font-semibold break-all"
+            className="text-[#14b8a6] hover:text-black transition-colors text-xl font-display font-semibold break-all"
             data-testid="link-contact-email"
           >
             thrivetools.co@gmail.com
