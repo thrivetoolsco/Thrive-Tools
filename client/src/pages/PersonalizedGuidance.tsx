@@ -20,7 +20,7 @@ export default function PersonalizedGuidance() {
             You don't need to work harder to be happy. You just need the right resources to help you feel centered, energized, and dare I say, actually stoked for the day.
           </p>
 
-          <p className="text-[#c94040] font-display text-lg font-semibold" data-testid="text-guidance-ready">
+          <p className="text-[#f97316] font-display text-lg font-semibold" data-testid="text-guidance-ready">
             Ready to upgrade your human experience?
           </p>
 

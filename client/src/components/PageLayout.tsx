@@ -27,7 +27,7 @@ export default function PageLayout({ children, title, subtitle, backLabel = "Hom
           <div className="absolute inset-0 pointer-events-none overflow-hidden">
             <div
               className="absolute top-1/3 left-1/3 w-64 h-64 rounded-full opacity-30"
-              style={{ background: "radial-gradient(circle, #c94040 0%, transparent 70%)", filter: "blur(50px)" }}
+              style={{ background: "radial-gradient(circle, #f97316 0%, transparent 70%)", filter: "blur(50px)" }}
             />
           </div>
 

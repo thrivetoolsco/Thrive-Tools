@@ -40,7 +40,7 @@ export default function MescalineWisdom() {
           <ul className="space-y-4">
             {theShift.map((item, i) => (
               <li key={i} className="flex items-start gap-3" data-testid={`shift-item-${i}`}>
-                <Check className="w-5 h-5 text-[#c94040] shrink-0 mt-0.5" />
+                <Check className="w-5 h-5 text-[#f97316] shrink-0 mt-0.5" />
                 <p className="text-black/80 leading-relaxed text-base">
                   <span className="text-black font-semibold">{item.label}:</span> {item.desc}
                 </p>
@@ -64,11 +64,11 @@ export default function MescalineWisdom() {
           </h3>
           <div className="grid sm:grid-cols-2 gap-4">
             <div className="card-glass rounded-md p-5 text-center space-y-2" data-testid="card-rate-individual">
-              <p className="text-[#c94040] font-display font-semibold text-lg">Individual</p>
+              <p className="text-[#f97316] font-display font-semibold text-lg">Individual</p>
               <p className="text-black font-bold text-2xl" data-testid="text-price-individual">USD $255/person</p>
             </div>
             <div className="card-glass rounded-md p-5 text-center space-y-2" data-testid="card-rate-group">
-              <p className="text-[#c94040] font-display font-semibold text-lg">Groups of 3+</p>
+              <p className="text-[#f97316] font-display font-semibold text-lg">Groups of 3+</p>
               <p className="text-black font-bold text-2xl" data-testid="text-price-group">USD $180/person</p>
             </div>
           </div>

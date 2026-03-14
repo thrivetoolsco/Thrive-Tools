@@ -255,7 +255,7 @@ function CopyableCode({ code }: { code: string }) {
           ? "bg-amber-500/15 text-amber-700 border border-amber-500/30 cursor-default"
           : copied
             ? "bg-green-500/20 text-green-700 border border-green-500/30"
-            : "bg-[#c94040]/15 text-[#c41230] border border-[#c94040]/25 hover:bg-[#c94040]/25 cursor-pointer"
+            : "bg-[#f97316]/15 text-[#c45000] border border-[#f97316]/25 hover:bg-[#f97316]/25 cursor-pointer"
       }`}
       data-testid={`button-copy-code-${code.replace(/\s+/g, "-").substring(0, 20)}`}
       title={isLink ? code : `Click to copy: ${code}`}
@@ -331,7 +331,7 @@ function CategorySection({ icon: Icon, title, subtitle, items, badgeColor, gradi
           className="w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0"
           style={{ background: gradient, border: `1px solid ${borderColor}` }}
         >
-          <Icon className="w-5 h-5 text-[#c94040]" />
+          <Icon className="w-5 h-5 text-[#f97316]" />
         </div>
         <div className="text-left">
           <h2 className="text-[#3d1a28] font-bold text-2xl font-display">{title}</h2>
@@ -428,7 +428,7 @@ export default function Discounts() {
         <div className="absolute inset-0 pointer-events-none overflow-hidden">
           <div
             className="absolute top-1/3 left-1/3 w-64 h-64 rounded-full opacity-30"
-            style={{ background: "radial-gradient(circle, #c94040 0%, transparent 70%)", filter: "blur(50px)" }}
+            style={{ background: "radial-gradient(circle, #f97316 0%, transparent 70%)", filter: "blur(50px)" }}
           />
         </div>
 
@@ -466,7 +466,7 @@ export default function Discounts() {
             title="Vitamins & Supplements"
             subtitle="Proven herbs, superfoods & targeted nutrition"
             items={vitaminsSupplements}
-            badgeColor="bg-rose-400/20 text-[#c41230] border-rose-400/30"
+            badgeColor="bg-rose-400/20 text-[#c45000] border-rose-400/30"
             gradient="linear-gradient(135deg, rgba(201,122,142,0.2) 0%, rgba(155,111,165,0.2) 100%)"
             startIndex={0}
           />
@@ -476,7 +476,7 @@ export default function Discounts() {
             title="Longevity Tech"
             subtitle="For cognitive power & cellular repair"
             items={healthTech}
-            badgeColor="bg-[#c41230]/20 text-[#c41230] border-[#c41230]/30"
+            badgeColor="bg-[#c45000]/20 text-[#c45000] border-[#c45000]/30"
             gradient="linear-gradient(135deg, rgba(155,111,165,0.2) 0%, rgba(100,80,180,0.2) 100%)"
             borderColor="rgba(155,111,165,0.2)"
             startIndex={vitaminsSupplements.length}

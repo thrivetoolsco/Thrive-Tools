@@ -50,18 +50,18 @@ export default function Home() {
             opacity: 0.045,
           }}
         >
-          <circle cx="400" cy="400" r="370" fill="none" stroke="#c94040" strokeWidth="0.8"/>
+          <circle cx="400" cy="400" r="370" fill="none" stroke="#f97316" strokeWidth="0.8"/>
           <circle cx="400" cy="400" r="300" fill="none" stroke="#d4a867" strokeWidth="0.5"/>
-          <circle cx="400" cy="400" r="230" fill="none" stroke="#c94040" strokeWidth="0.7"/>
+          <circle cx="400" cy="400" r="230" fill="none" stroke="#f97316" strokeWidth="0.7"/>
           <circle cx="400" cy="400" r="160" fill="none" stroke="#d4a867" strokeWidth="0.5"/>
-          <circle cx="400" cy="400" r="90"  fill="none" stroke="#c94040" strokeWidth="0.7"/>
+          <circle cx="400" cy="400" r="90"  fill="none" stroke="#f97316" strokeWidth="0.7"/>
           {[0,60,120,180,240,300].map((deg, i) => {
             const rd = (deg * Math.PI) / 180;
-            return <circle key={i} cx={400 + 90 * Math.cos(rd)} cy={400 + 90 * Math.sin(rd)} r={90} fill="none" stroke="#c94040" strokeWidth="0.45"/>;
+            return <circle key={i} cx={400 + 90 * Math.cos(rd)} cy={400 + 90 * Math.sin(rd)} r={90} fill="none" stroke="#f97316" strokeWidth="0.45"/>;
           })}
           {[0,30,60,90,120,150,180,210,240,270,300,330].map((deg, i) => {
             const rd = (deg * Math.PI) / 180;
-            return <line key={i} x1={400 + 35 * Math.cos(rd)} y1={400 + 35 * Math.sin(rd)} x2={400 + 370 * Math.cos(rd)} y2={400 + 370 * Math.sin(rd)} stroke="#c94040" strokeWidth="0.35"/>;
+            return <line key={i} x1={400 + 35 * Math.cos(rd)} y1={400 + 35 * Math.sin(rd)} x2={400 + 370 * Math.cos(rd)} y2={400 + 370 * Math.sin(rd)} stroke="#f97316" strokeWidth="0.35"/>;
           })}
           {[0,45,90,135,180,225,270,315].map((deg, i) => {
             const rd = (deg * Math.PI) / 180;
@@ -70,12 +70,12 @@ export default function Home() {
             return (
               <g key={i} transform={`translate(${lx},${ly}) rotate(${deg + 90})`}>
                 <ellipse cx="0" cy="0" rx="7" ry="28" fill="none" stroke="#d4a867" strokeWidth="0.6"/>
-                <line x1="0" y1="-28" x2="0" y2="28" stroke="#c94040" strokeWidth="0.3"/>
+                <line x1="0" y1="-28" x2="0" y2="28" stroke="#f97316" strokeWidth="0.3"/>
               </g>
             );
           })}
-          <circle cx="400" cy="400" r="10" fill="none" stroke="#c94040" strokeWidth="0.8"/>
-          <circle cx="400" cy="400" r="4"  fill="#c94040" opacity="0.4"/>
+          <circle cx="400" cy="400" r="10" fill="none" stroke="#f97316" strokeWidth="0.8"/>
+          <circle cx="400" cy="400" r="4"  fill="#f97316" opacity="0.4"/>
         </svg>
 
         {/* Very soft ambient glow blobs */}
@@ -110,15 +110,15 @@ export default function Home() {
           </h1>
 
           <div className="flex items-center gap-3 mb-7 opacity-60">
-            <div className="h-px w-10 bg-[#c94040]"/>
-            <svg width="10" height="10" viewBox="0 0 10 10"><circle cx="5" cy="5" r="4" fill="none" stroke="#c94040" strokeWidth="0.8"/><circle cx="5" cy="5" r="1.5" fill="#c94040"/></svg>
-            <div className="h-px w-10 bg-[#c94040]"/>
+            <div className="h-px w-10 bg-[#f97316]"/>
+            <svg width="10" height="10" viewBox="0 0 10 10"><circle cx="5" cy="5" r="4" fill="none" stroke="#f97316" strokeWidth="0.8"/><circle cx="5" cy="5" r="1.5" fill="#f97316"/></svg>
+            <div className="h-px w-10 bg-[#f97316]"/>
           </div>
 
           <p className="text-[#3d1a28]/62 text-base sm:text-lg max-w-xl leading-relaxed mb-4" data-testid="text-hero-subheadline">
             I'm Eden. For 14 years I've been deep in the research — Taoist protocols, longevity science, biohacking — separating what actually works from what just sells.
             <br/><br/>
-            And I've learned one thing: 90% of wellness is noise. The 10% that works? <Link href="/discount-codes" className="underline underline-offset-2 hover:text-[#c94040] transition-colors">It's on this list.</Link>
+            And I've learned one thing: 90% of wellness is noise. The 10% that works? <Link href="/discount-codes" className="underline underline-offset-2 hover:text-[#f97316] transition-colors">It's on this list.</Link>
           </p>
         </div>
 
@@ -144,9 +144,9 @@ export default function Home() {
               </div>
               {/* Small ornament below photo */}
               <div className="flex justify-center mt-6 gap-2 opacity-40">
-                <div className="h-px w-16 bg-gradient-to-r from-transparent to-[#c94040] self-center"/>
-                <svg width="10" height="10" viewBox="0 0 10 10"><circle cx="5" cy="5" r="4" fill="none" stroke="#c94040" strokeWidth="0.8"/><circle cx="5" cy="5" r="1.5" fill="#c94040"/></svg>
-                <div className="h-px w-16 bg-gradient-to-l from-transparent to-[#c94040] self-center"/>
+                <div className="h-px w-16 bg-gradient-to-r from-transparent to-[#f97316] self-center"/>
+                <svg width="10" height="10" viewBox="0 0 10 10"><circle cx="5" cy="5" r="4" fill="none" stroke="#f97316" strokeWidth="0.8"/><circle cx="5" cy="5" r="1.5" fill="#f97316"/></svg>
+                <div className="h-px w-16 bg-gradient-to-l from-transparent to-[#f97316] self-center"/>
               </div>
             </div>
           </div>
@@ -161,18 +161,18 @@ export default function Home() {
 
             {/* Thin ornamental divider */}
             <div className="flex items-center gap-4 mb-8">
-              <div className="h-px w-12 bg-gradient-to-r from-transparent to-[#c94040]/50"/>
+              <div className="h-px w-12 bg-gradient-to-r from-transparent to-[#f97316]/50"/>
               <svg width="12" height="12" viewBox="0 0 12 12">
-                <circle cx="6" cy="6" r="5" fill="none" stroke="#c94040" strokeWidth="0.8"/>
-                <circle cx="6" cy="6" r="2" fill="#c94040" opacity="0.5"/>
+                <circle cx="6" cy="6" r="5" fill="none" stroke="#f97316" strokeWidth="0.8"/>
+                <circle cx="6" cy="6" r="2" fill="#f97316" opacity="0.5"/>
               </svg>
-              <div className="h-px w-12 bg-gradient-to-l from-transparent to-[#c94040]/50"/>
+              <div className="h-px w-12 bg-gradient-to-l from-transparent to-[#f97316]/50"/>
             </div>
 
             <p className="text-[#3d1a28]/60 text-lg leading-relaxed max-w-lg" data-testid="text-hero-subheadline-desktop">
               I'm Eden. For 14 years I've been deep in the research — Taoist protocols, longevity science, biohacking — separating what actually works from what just sells.
               <br/><br/>
-              And I've learned one thing: 90% of wellness is noise. The 10% that works? <Link href="/discount-codes" className="underline underline-offset-2 hover:text-[#c94040] transition-colors">It's on this list.</Link>
+              And I've learned one thing: 90% of wellness is noise. The 10% that works? <Link href="/discount-codes" className="underline underline-offset-2 hover:text-[#f97316] transition-colors">It's on this list.</Link>
             </p>
 
             {/* Scroll hint */}
@@ -192,12 +192,12 @@ export default function Home() {
 
           {/* Thin top divider */}
           <div className="flex items-center gap-6 mb-20 opacity-30">
-            <div className="h-px flex-1 bg-gradient-to-r from-transparent via-[#c94040] to-transparent"/>
+            <div className="h-px flex-1 bg-gradient-to-r from-transparent via-[#f97316] to-transparent"/>
             <svg width="16" height="16" viewBox="0 0 16 16">
-              <circle cx="8" cy="8" r="6.5" fill="none" stroke="#c94040" strokeWidth="0.8"/>
-              <circle cx="8" cy="8" r="2.5" fill="#c94040" opacity="0.5"/>
+              <circle cx="8" cy="8" r="6.5" fill="none" stroke="#f97316" strokeWidth="0.8"/>
+              <circle cx="8" cy="8" r="2.5" fill="#f97316" opacity="0.5"/>
             </svg>
-            <div className="h-px flex-1 bg-gradient-to-r from-transparent via-[#c94040] to-transparent"/>
+            <div className="h-px flex-1 bg-gradient-to-r from-transparent via-[#f97316] to-transparent"/>
           </div>
 
           <div className="flex flex-col lg:flex-row items-center gap-14 lg:gap-20">
@@ -292,9 +292,9 @@ export default function Home() {
       ═══════════════════════════════════════════ */}
       <section id="about" className="relative py-20 sm:py-28 px-6 sm:px-10 text-center" style={{ background: "linear-gradient(180deg, #fdf6f0 0%, #f5eaf5 50%, #fdf6f0 100%)" }}>
         <div className="flex items-center gap-6 mb-14 opacity-25 max-w-2xl mx-auto">
-          <div className="h-px flex-1 bg-gradient-to-r from-transparent via-[#c94040] to-transparent"/>
-          <svg width="14" height="14" viewBox="0 0 14 14"><circle cx="7" cy="7" r="6" fill="none" stroke="#c94040" strokeWidth="0.8"/><circle cx="7" cy="7" r="2.2" fill="#c94040" opacity="0.5"/></svg>
-          <div className="h-px flex-1 bg-gradient-to-r from-transparent via-[#c94040] to-transparent"/>
+          <div className="h-px flex-1 bg-gradient-to-r from-transparent via-[#f97316] to-transparent"/>
+          <svg width="14" height="14" viewBox="0 0 14 14"><circle cx="7" cy="7" r="6" fill="none" stroke="#f97316" strokeWidth="0.8"/><circle cx="7" cy="7" r="2.2" fill="#f97316" opacity="0.5"/></svg>
+          <div className="h-px flex-1 bg-gradient-to-r from-transparent via-[#f97316] to-transparent"/>
         </div>
 
         <div className="max-w-xl mx-auto">
@@ -309,9 +309,9 @@ export default function Home() {
         </div>
 
         <div className="flex items-center gap-6 mt-14 opacity-25 max-w-2xl mx-auto">
-          <div className="h-px flex-1 bg-gradient-to-r from-transparent via-[#c94040] to-transparent"/>
-          <svg width="14" height="14" viewBox="0 0 14 14"><circle cx="7" cy="7" r="6" fill="none" stroke="#c94040" strokeWidth="0.8"/><circle cx="7" cy="7" r="2.2" fill="#c94040" opacity="0.5"/></svg>
-          <div className="h-px flex-1 bg-gradient-to-r from-transparent via-[#c94040] to-transparent"/>
+          <div className="h-px flex-1 bg-gradient-to-r from-transparent via-[#f97316] to-transparent"/>
+          <svg width="14" height="14" viewBox="0 0 14 14"><circle cx="7" cy="7" r="6" fill="none" stroke="#f97316" strokeWidth="0.8"/><circle cx="7" cy="7" r="2.2" fill="#f97316" opacity="0.5"/></svg>
+          <div className="h-px flex-1 bg-gradient-to-r from-transparent via-[#f97316] to-transparent"/>
         </div>
       </section>
 
