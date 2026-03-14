@@ -14,20 +14,20 @@ interface PageLayoutProps {
 
 export default function PageLayout({ children, title, subtitle, backLabel = "Home", backHref = "/" }: PageLayoutProps) {
   return (
-    <div className="min-h-screen bg-[#fff0f0] text-[#3d1a28] overflow-x-hidden">
+    <div className="min-h-screen bg-[#fdf8ef] text-[#3d1a28] overflow-x-hidden">
       <Navigation />
 
       {title && (
         <section
           className="pt-32 pb-16 px-4 sm:px-6 lg:px-8 relative overflow-hidden"
           style={{
-            background: "radial-gradient(ellipse 80% 50% at 50% 30%, #ffe8e8 0%, #fff0f0 40%, #fff0f0 100%)",
+            background: "radial-gradient(ellipse 80% 50% at 50% 30%, #faf0e0 0%, #fdf8ef 40%, #fdf8ef 100%)",
           }}
         >
           <div className="absolute inset-0 pointer-events-none overflow-hidden">
             <div
               className="absolute top-1/3 left-1/3 w-64 h-64 rounded-full opacity-30"
-              style={{ background: "radial-gradient(circle, #c4622d 0%, transparent 70%)", filter: "blur(50px)" }}
+              style={{ background: "radial-gradient(circle, #c41230 0%, transparent 70%)", filter: "blur(50px)" }}
             />
           </div>
 
@@ -57,7 +57,7 @@ export default function PageLayout({ children, title, subtitle, backLabel = "Hom
 
       <section
         className="py-16 px-4 sm:px-6 lg:px-8"
-        style={{ background: "linear-gradient(180deg, #fff0f0 0%, #ffe8e8 50%, #fff0f0 100%)" }}
+        style={{ background: "linear-gradient(180deg, #fdf8ef 0%, #faf0e0 50%, #fdf8ef 100%)" }}
       >
         <div className="max-w-4xl mx-auto">
           {children}

@@ -9,7 +9,7 @@ export default function Thrive1() {
 
         <div className="card-glass rounded-md p-6 sm:p-8 space-y-4" data-testid="section-intro">
           <p className="text-black/80 leading-relaxed text-base" data-testid="text-intro">
-            I'm stoked to invite you to a screening of <span className="text-[#c4622d] font-semibold">THRIVE 1: What on Earth Will It Take?</span> If you've ever felt like the "mainstream" story is missing a few chapters, this one's for you. It's an unconventional deep dive that follows the money to show how power is consolidated globally. But it doesn't just leave you hanging with the problems. It weaves together breakthroughs in science and consciousness to offer actual strategies for reclaiming our future.
+            I'm stoked to invite you to a screening of <span className="text-[#c41230] font-semibold">THRIVE 1: What on Earth Will It Take?</span> If you've ever felt like the "mainstream" story is missing a few chapters, this one's for you. It's an unconventional deep dive that follows the money to show how power is consolidated globally. But it doesn't just leave you hanging with the problems. It weaves together breakthroughs in science and consciousness to offer actual strategies for reclaiming our future.
           </p>
         </div>
 
@@ -40,18 +40,18 @@ export default function Thrive1() {
           </h3>
           <div className="flex flex-col items-center gap-3">
             <p className="text-black/80 leading-relaxed text-base" data-testid="text-cost">
-              <span className="text-[#c4622d] font-semibold">Cost:</span> Free <span className="text-black/50 text-sm">(This is about community and awareness).</span>
+              <span className="text-[#c41230] font-semibold">Cost:</span> Free <span className="text-black/50 text-sm">(This is about community and awareness).</span>
             </p>
             <p className="text-black/80 leading-relaxed text-base flex items-center gap-2" data-testid="text-duration">
-              <Clock className="w-4 h-4 text-[#c4622d]" />
-              <span><span className="text-[#c4622d] font-semibold">Duration:</span> 2h 15m of mind expanding info.</span>
+              <Clock className="w-4 h-4 text-[#c41230]" />
+              <span><span className="text-[#c41230] font-semibold">Duration:</span> 2h 15m of mind expanding info.</span>
             </p>
           </div>
         </div>
 
         <div className="card-glass rounded-md p-6 sm:p-8 space-y-4" data-testid="section-registration">
           <div className="flex items-center justify-center gap-2 mb-2">
-            <Mail className="w-5 h-5 text-[#c4622d]" />
+            <Mail className="w-5 h-5 text-[#c41230]" />
             <h3 className="font-display text-2xl font-bold text-gradient-rose" data-testid="text-registration-heading">
               Grab Your Spot
             </h3>
@@ -60,7 +60,7 @@ export default function Thrive1() {
             Registration is required. Just shoot a quick email to{" "}
             <a
               href="mailto:thrivetools.co@gmail.com"
-              className="text-[#c4622d] underline underline-offset-4 decoration-[#c4622d]/40"
+              className="text-[#c41230] underline underline-offset-4 decoration-[#c41230]/40"
               data-testid="link-email-registration"
             >
               thrivetools.co@gmail.com

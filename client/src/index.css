@@ -9,15 +9,15 @@
   --opaque-button-border-intensity: -8;
   --elevate-1: rgba(0,0,0, .03);
   --elevate-2: rgba(0,0,0, .08);
-  --background: 0 80% 97%;
-  --foreground: 10 20% 12%;
-  --border: 5 30% 90%;
-  --card: 0 60% 99%;
-  --card-foreground: 10 20% 12%;
-  --card-border: 5 25% 93%;
-  --sidebar: 0 60% 96%;
-  --sidebar-foreground: 10 20% 12%;
-  --sidebar-border: 5 25% 91%;
+  --background: 38 65% 97%;
+  --foreground: 0 60% 20%;
+  --border: 38 30% 90%;
+  --card: 38 50% 99%;
+  --card-foreground: 0 60% 20%;
+  --card-border: 38 25% 93%;
+  --sidebar: 38 50% 96%;
+  --sidebar-foreground: 0 60% 20%;
+  --sidebar-border: 38 25% 91%;
   --sidebar-primary: 330 45% 58%;
   --sidebar-primary-foreground: 0 0% 100%;
   --sidebar-accent: 280 15% 85%;
@@ -250,14 +250,14 @@
   }
 
   .text-gradient-rose {
-    background: linear-gradient(135deg, #e8956d 0%, #c4622d 45%, #8b3a1a 100%);
+    background: linear-gradient(135deg, #e85070 0%, #c41230 50%, #8b0000 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
   }
 
   .btn-gradient-rose {
-    background: linear-gradient(135deg, #e8956d 0%, #c4622d 45%, #8b3a1a 100%);
+    background: linear-gradient(135deg, #e85070 0%, #c41230 50%, #8b0000 100%);
     border: none;
     color: white;
     transition: opacity 0.2s ease, filter 0.2s ease;
@@ -269,14 +269,14 @@
   }
 
   .text-gradient-sage {
-    background: linear-gradient(135deg, #e8956d 0%, #c4622d 45%, #8b3a1a 100%);
+    background: linear-gradient(135deg, #e85070 0%, #c41230 50%, #8b0000 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
   }
 
   .text-gradient-purple {
-    background: linear-gradient(135deg, #e8956d 0%, #c4622d 45%, #8b3a1a 100%);
+    background: linear-gradient(135deg, #e85070 0%, #c41230 50%, #8b0000 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;

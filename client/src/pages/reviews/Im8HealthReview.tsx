@@ -19,7 +19,7 @@ export default function Im8HealthReview() {
         </div>
 
         <div className="flex flex-wrap gap-3">
-          <Badge className="bg-[#c4622d]/15 text-[#8b3a1a] border border-[#c4622d]/25 rounded-full px-3 py-0.5 text-xs">
+          <Badge className="bg-[#c41230]/15 text-[#8b0000] border border-[#c41230]/25 rounded-full px-3 py-0.5 text-xs">
             In-Depth Review
           </Badge>
           <Badge className="bg-white/5 text-black/50 border border-white/10 rounded-full px-3 py-0.5 text-xs">
@@ -57,7 +57,7 @@ export default function Im8HealthReview() {
             </div>
             <div className="card-glass rounded-xl p-5 text-center">
               <div className="w-12 h-12 rounded-full bg-purple-500/20 border border-purple-500/30 flex items-center justify-center mx-auto mb-3">
-                <Heart className="w-5 h-5 text-[#8b3a1a]" />
+                <Heart className="w-5 h-5 text-[#8b0000]" />
               </div>
               <h3 className="text-black font-bold mb-2">15B CFU Probiotics</h3>
               <p className="text-black/50 text-xs leading-relaxed">Multi-strain probiotic blend with prebiotic fiber for gut health</p>
@@ -85,7 +85,7 @@ export default function Im8HealthReview() {
 
         <section data-testid="section-science">
           <div className="flex items-center gap-3 mb-6">
-            <FlaskConical className="w-5 h-5 text-[#8b3a1a]" />
+            <FlaskConical className="w-5 h-5 text-[#8b0000]" />
             <h2 className="font-display text-2xl font-bold text-black">The Science Behind It</h2>
           </div>
           <div className="space-y-4 text-black/70 leading-relaxed">
@@ -101,21 +101,21 @@ export default function Im8HealthReview() {
             <img loading="lazy" decoding="async" src={im8ClinicalImg} alt="IM8 Health clinically proven third-party tested results" className="w-full h-auto object-cover" />
           </div>
 
-          <div className="card-glass rounded-xl p-5 mt-6 border-l-4" style={{ borderLeftColor: "#c4622d" }}>
+          <div className="card-glass rounded-xl p-5 mt-6 border-l-4" style={{ borderLeftColor: "#c41230" }}>
             <p className="text-black/50 text-xs uppercase tracking-wider mb-2">Scientific Reference</p>
             <p className="text-black/70 text-sm leading-relaxed">
               Chandrasekhar, K., Kapoor, J., & Anishetty, S. (2012). "A prospective, randomized double-blind, placebo-controlled study of safety and efficacy of a high-concentration full-spectrum extract of Ashwagandha root." <em>Indian Journal of Psychological Medicine</em>, 34(3), 255–262. doi:10.4103/0253-7176.106022
             </p>
           </div>
 
-          <div className="card-glass rounded-xl p-5 mt-4 border-l-4" style={{ borderLeftColor: "#c4622d" }}>
+          <div className="card-glass rounded-xl p-5 mt-4 border-l-4" style={{ borderLeftColor: "#c41230" }}>
             <p className="text-black/50 text-xs uppercase tracking-wider mb-2">Scientific Reference</p>
             <p className="text-black/70 text-sm leading-relaxed">
               Rao, A. V., & Rao, L. G. (2007). "Carotenoids and human health." <em>Pharmacological Research</em>, 55(3), 207–216. doi:10.1016/j.phrs.2007.01.012
             </p>
           </div>
 
-          <div className="card-glass rounded-xl p-5 mt-4 border-l-4" style={{ borderLeftColor: "#c4622d" }}>
+          <div className="card-glass rounded-xl p-5 mt-4 border-l-4" style={{ borderLeftColor: "#c41230" }}>
             <p className="text-black/50 text-xs uppercase tracking-wider mb-2">Scientific Reference</p>
             <p className="text-black/70 text-sm leading-relaxed">
               Firenzuoli, F., & Gori, L. (2007). "Herbal Medicine Today: Clinical and Research Issues." <em>Evidence-Based Complementary and Alternative Medicine</em>, 4(S1), 37–40. doi:10.1093/ecam/nem096
@@ -127,7 +127,7 @@ export default function Im8HealthReview() {
 
         <section data-testid="section-personal">
           <div className="flex items-center gap-3 mb-6">
-            <User className="w-5 h-5 text-[#8b3a1a]" />
+            <User className="w-5 h-5 text-[#8b0000]" />
             <h2 className="font-display text-2xl font-bold text-black">My Personal Experience</h2>
           </div>
           <div className="space-y-4 text-black/70 leading-relaxed">

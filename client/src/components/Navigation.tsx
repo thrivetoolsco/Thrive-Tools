@@ -51,8 +51,8 @@ export default function Navigation() {
       }`}
       style={{
         background: scrolled
-          ? "rgba(255,240,240,0.97)"
-          : "rgba(255,240,240,0.88)",
+          ? "rgba(253,248,239,0.97)"
+          : "rgba(253,248,239,0.88)",
         backdropFilter: "blur(20px)",
         WebkitBackdropFilter: "blur(20px)",
         borderBottom: scrolled ? "1px solid rgba(196,98,45,0.15)" : "none",
@@ -78,7 +78,7 @@ export default function Navigation() {
                     fontSize: "clamp(14px, 2.6vw, 20px)",
                     letterSpacing: "0.12em",
                     textTransform: "uppercase",
-                    color: "#c4622d",
+                    color: "#c41230",
                     lineHeight: 1,
                     whiteSpace: "nowrap",
                   }}>
@@ -89,7 +89,7 @@ export default function Navigation() {
                   <span style={{
                     fontFamily: "Georgia, serif",
                     fontSize: "clamp(10px, 1.6vw, 13px)",
-                    color: "#c4622d",
+                    color: "#c41230",
                     margin: "0 10px",
                     opacity: 0.6,
                     verticalAlign: "middle",
@@ -105,7 +105,7 @@ export default function Navigation() {
                     fontSize: "clamp(14px, 2.6vw, 20px)",
                     letterSpacing: "0.28em",
                     textTransform: "uppercase",
-                    color: "#8b3a1a",
+                    color: "#8b0000",
                     lineHeight: 1,
                     whiteSpace: "nowrap",
                     paddingLeft: "0.05em",
@@ -121,7 +121,7 @@ export default function Navigation() {
                   fontSize: "clamp(8px, 1.05vw, 10px)",
                   letterSpacing: "0.22em",
                   textTransform: "uppercase",
-                  color: "#6b2d0f",
+                  color: "#6b0010",
                   lineHeight: 1,
                   whiteSpace: "nowrap",
                   paddingLeft: "0.22em",
@@ -148,7 +148,7 @@ export default function Navigation() {
         className={`overflow-hidden transition-all duration-300 ease-in-out ${
           menuOpen ? "max-h-[80vh] opacity-100" : "max-h-0 opacity-0"
         }`}
-        style={{ background: "rgba(255,240,240,0.99)" }}
+        style={{ background: "rgba(253,248,239,0.99)" }}
       >
         <div className="border-t/15 py-4 px-6 overflow-y-auto max-h-[75vh]">
           <div className="flex flex-col gap-1">
@@ -187,7 +187,7 @@ export default function Navigation() {
                     href={item.href}
                     className={`text-sm uppercase tracking-[0.12em] font-medium block py-3 px-2 rounded-lg transition-all duration-200 ${
                       location === item.href
-                        ? "text-[#c4622d] bg-[#c4622d]/10"
+                        ? "text-[#c41230] bg-[#c41230]/10"
                         : "text-[#3d1a28]/60 hover:text-[#3d1a28] hover:bg-[#3d1a28]/5"
                     }`}
                     onClick={() => setMenuOpen(false)}
