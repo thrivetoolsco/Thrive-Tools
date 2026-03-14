@@ -6,7 +6,7 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import edenPhoto2 from "@assets/Generate_a_new_image_so_that_the_resolution_looks__delpmaspu~4_1772975930027.png";
 import edenHatPhoto from "@assets/IMG-20251218-WA0018_1773256125844.jpg";
-import edenPortrait from "@assets/eden_portrait_1.jpg";
+import edenPortrait from "@assets/IMG-20251218-WA0018_1773456075795.jpg";
 
 const testimonials = [
   { name: "Client Testimonial 1", videoId: "QNrE8TVVCf8", isShort: true },
