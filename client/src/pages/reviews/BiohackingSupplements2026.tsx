@@ -168,7 +168,7 @@ export default function BiohackingSupplements2026() {
             </p>
           </div>
           <StackTip>
-            5g daily, no loading phase required. Creatine is calorie-free and doesn't trigger an insulin response, making it compatible with intermittent fasting protocols.
+            10g daily, no loading phase required. Creatine is calorie-free and doesn't trigger an insulin response, making it compatible with intermittent fasting protocols.
           </StackTip>
         </section>
 
@@ -285,15 +285,15 @@ export default function BiohackingSupplements2026() {
               Supplements are powerful, but they work best as part of a broader optimization protocol. At ThriveTools, we combine breathwork, biohacking tools, and personalized guidance to help you build a system that works for your unique physiology, not a generic wellness checklist.
             </p>
             <p>
-              Explore our Personalized Guidance program to get a supplement and lifestyle protocol tailored to your biology, not someone else's.
+              Explore my <a href="/personalized-guidance" className="underline text-[#c4622d] hover:text-[#8b3a1a] transition-colors">Personalized Guidance</a> program to get a supplement and lifestyle protocol tailored to your biology, not someone else's.
             </p>
           </div>
         </section>
 
         <div className="text-center pt-4">
           <Button asChild size="lg" className="btn-gradient-rose text-white border-0 rounded-full px-6 sm:px-8 py-4 text-sm tracking-widest uppercase font-semibold h-auto leading-relaxed">
-            <a href="/services" data-testid="link-personalized-guidance" className="inline-flex items-center justify-center gap-2 flex-wrap">
-              Explore Personalized Guidance <ExternalLink className="w-4 h-4 flex-shrink-0" />
+            <a href="/discount-codes" data-testid="link-discount-codes" className="inline-flex items-center justify-center gap-2 flex-wrap">
+              Explore Discount Codes <ExternalLink className="w-4 h-4 flex-shrink-0" />
             </a>
           </Button>
         </div>
