@@ -6,8 +6,6 @@ import {
   ChevronDown,
 } from "lucide-react";
 
-const logoImg = "/logo.webp";
-
 const navItems = [
   { label: "Home", href: "/" },
   { label: "Discount Codes (2026)", href: "/discount-codes" },
@@ -62,12 +60,70 @@ export default function Navigation() {
     >
       <div className="max-w-7xl mx-auto px-8 sm:px-12 lg:px-20">
         <div className="flex items-center justify-between h-20 sm:h-28">
-          <Link href="/" className="flex-shrink-0 group absolute left-1/2 -translate-x-1/2" data-testid="link-logo">
-            <img
-              src={logoImg}
-              alt="Thrive Tools"
-              className="h-16 sm:h-24 w-auto max-w-[260px] sm:max-w-[400px] object-contain transition-transform duration-300 group-hover:scale-105"
-            />
+          <Link href="/" className="flex-shrink-0 group absolute left-1/2 -translate-x-1/2" data-testid="link-logo" aria-label="Thrive Tools — Home">
+            <div className="flex flex-col items-center gap-1 transition-transform duration-500 group-hover:scale-105 select-none">
+
+              {/* ── Mark: concentric lotus rings with 6-spoke radial ── */}
+              <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                <defs>
+                  <linearGradient id="lgNav" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%"   stopColor="#e8a4b8"/>
+                    <stop offset="45%"  stopColor="#c97a8e"/>
+                    <stop offset="100%" stopColor="#d4a867"/>
+                  </linearGradient>
+                </defs>
+                {/* outer ring */}
+                <circle cx="17" cy="17" r="15.5" stroke="url(#lgNav)" strokeWidth="0.75"/>
+                {/* inner ring */}
+                <circle cx="17" cy="17" r="9.5"  stroke="url(#lgNav)" strokeWidth="0.6"/>
+                {/* centre dot */}
+                <circle cx="17" cy="17" r="2.8"  fill="url(#lgNav)" opacity="0.75"/>
+                {/* 6 radial spokes from inner to outer ring */}
+                {[0,60,120,180,240,300].map((deg, i) => {
+                  const r = (deg * Math.PI) / 180;
+                  return (
+                    <line key={i}
+                      x1={17 + 9.5  * Math.cos(r)} y1={17 + 9.5  * Math.sin(r)}
+                      x2={17 + 15.5 * Math.cos(r)} y2={17 + 15.5 * Math.sin(r)}
+                      stroke="url(#lgNav)" strokeWidth="0.75"
+                    />
+                  );
+                })}
+              </svg>
+
+              {/* ── Wordmark ── */}
+              <div className="text-center leading-none">
+                <div
+                  style={{
+                    fontFamily: "Georgia, 'Times New Roman', serif",
+                    fontStyle: "italic",
+                    fontWeight: 700,
+                    fontSize: "clamp(14px, 2.8vw, 20px)",
+                    letterSpacing: "0.04em",
+                    background: "linear-gradient(135deg, #e8a4b8 0%, #c97a8e 45%, #d4a867 100%)",
+                    WebkitBackgroundClip: "text",
+                    WebkitTextFillColor: "transparent",
+                    backgroundClip: "text",
+                    lineHeight: 1,
+                  }}
+                >
+                  Thrive
+                </div>
+                <div
+                  style={{
+                    fontSize: "clamp(6.5px, 1.1vw, 8.5px)",
+                    letterSpacing: "0.42em",
+                    textTransform: "uppercase",
+                    color: "rgba(61,26,40,0.42)",
+                    fontWeight: 500,
+                    marginTop: 2,
+                    paddingLeft: "0.42em",
+                  }}
+                >
+                  Tools
+                </div>
+              </div>
+            </div>
           </Link>
 
           <div className="ml-auto">

@@ -5,8 +5,8 @@ import { ArrowRight, ChevronDown } from "lucide-react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import edenPhoto2 from "@assets/Generate_a_new_image_so_that_the_resolution_looks__delpmaspu~4_1772975930027.png";
-import edenPhoto1 from "@assets/eden_portrait_1.jpg";
 import edenHatPhoto from "@assets/IMG-20251218-WA0018_1773256125844.jpg";
+import edenPortrait from "@assets/eden_portrait_1.jpg";
 
 const testimonials = [
   { name: "Client Testimonial 1", videoId: "QNrE8TVVCf8", isShort: true },
@@ -32,228 +32,308 @@ export default function Home() {
     <div className="min-h-screen bg-[#fdf6f0] text-[#3d1a28] overflow-x-hidden">
       <Navigation />
 
-      {/* ─── HERO ─── */}
-      <section
-        className="relative min-h-screen flex items-center justify-center overflow-hidden"
-        style={{ background: "#fdf6f0" }}
-      >
-        <div className="absolute inset-0 overflow-hidden pointer-events-none">
-          <div
-            className="absolute w-[600px] h-[600px] rounded-full"
-            style={{
-              top: "10%",
-              left: "15%",
-              background: "radial-gradient(circle, rgba(201,122,142,0.35) 0%, rgba(201,122,142,0.08) 40%, transparent 70%)",
-              filter: "blur(60px)",
-              animation: "hero-drift 20s ease-in-out infinite, hero-pulse 8s ease-in-out infinite",
-            }}
-          />
-          <div
-            className="absolute w-[500px] h-[500px] rounded-full"
-            style={{
-              bottom: "5%",
-              right: "10%",
-              background: "radial-gradient(circle, rgba(155,111,165,0.3) 0%, rgba(155,111,165,0.06) 40%, transparent 70%)",
-              filter: "blur(55px)",
-              animation: "hero-drift-reverse 25s ease-in-out infinite, hero-pulse 10s ease-in-out 2s infinite",
-            }}
-          />
-          <div
-            className="absolute w-[400px] h-[400px] rounded-full"
-            style={{
-              top: "40%",
-              right: "25%",
-              background: "radial-gradient(circle, rgba(212,168,103,0.2) 0%, transparent 60%)",
-              filter: "blur(50px)",
-              animation: "hero-drift 18s ease-in-out 3s infinite, hero-pulse 12s ease-in-out 4s infinite",
-            }}
-          />
-          <div
-            className="absolute w-[350px] h-[350px] rounded-full"
-            style={{
-              top: "60%",
-              left: "5%",
-              background: "radial-gradient(circle, rgba(100,140,200,0.15) 0%, transparent 60%)",
-              filter: "blur(45px)",
-              animation: "hero-drift-reverse 22s ease-in-out 5s infinite",
-            }}
-          />
-          <div
-            className="absolute w-[800px] h-[800px]"
-            style={{
-              top: "50%",
-              left: "50%",
-              marginTop: "-400px",
-              marginLeft: "-400px",
-              background: "conic-gradient(from 0deg, transparent 0%, rgba(201,122,142,0.04) 25%, transparent 50%, rgba(155,111,165,0.04) 75%, transparent 100%)",
-              animation: "hero-rotate 60s linear infinite",
-            }}
-          />
-          <div
-            className="absolute inset-0 opacity-[0.015]"
-            style={{
-              backgroundImage:
-                "radial-gradient(rgba(201,122,142,0.8) 1px, transparent 1px)",
-              backgroundSize: "40px 40px",
-            }}
-          />
-          <div
-            className="absolute inset-0"
-            style={{
-              background: "radial-gradient(ellipse 70% 50% at 50% 45%, transparent 0%, #fdf6f0 100%)",
-            }}
-          />
-        </div>
+      {/* ═══════════════════════════════════════════
+          HERO — portrait-first editorial split
+      ═══════════════════════════════════════════ */}
+      <section className="relative min-h-screen flex items-center overflow-hidden bg-[#fdf6f0]">
 
-        <div className="relative z-10 w-full max-w-5xl mx-auto px-6 sm:px-8 text-center pt-32 pb-8">
-          <div className="mb-8 flex justify-center">
-            <div className="w-full max-w-3xl shadow-2xl shadow-black/40" data-testid="video-hero">
-              <video
-                autoPlay
-                loop
-                muted
-                playsInline
-                preload="auto"
-                className="w-full h-auto"
-                src="/hero-video.mp4"
-              />
+        {/* Botanical mandala watermark */}
+        <svg
+          viewBox="0 0 800 800"
+          aria-hidden="true"
+          className="absolute pointer-events-none"
+          style={{
+            width: "clamp(500px, 80vw, 900px)",
+            height: "clamp(500px, 80vw, 900px)",
+            top: "50%", left: "50%",
+            transform: "translate(-50%, -50%)",
+            opacity: 0.045,
+          }}
+        >
+          <circle cx="400" cy="400" r="370" fill="none" stroke="#c97a8e" strokeWidth="0.8"/>
+          <circle cx="400" cy="400" r="300" fill="none" stroke="#d4a867" strokeWidth="0.5"/>
+          <circle cx="400" cy="400" r="230" fill="none" stroke="#c97a8e" strokeWidth="0.7"/>
+          <circle cx="400" cy="400" r="160" fill="none" stroke="#d4a867" strokeWidth="0.5"/>
+          <circle cx="400" cy="400" r="90"  fill="none" stroke="#c97a8e" strokeWidth="0.7"/>
+          {[0,60,120,180,240,300].map((deg, i) => {
+            const rd = (deg * Math.PI) / 180;
+            return <circle key={i} cx={400 + 90 * Math.cos(rd)} cy={400 + 90 * Math.sin(rd)} r={90} fill="none" stroke="#c97a8e" strokeWidth="0.45"/>;
+          })}
+          {[0,30,60,90,120,150,180,210,240,270,300,330].map((deg, i) => {
+            const rd = (deg * Math.PI) / 180;
+            return <line key={i} x1={400 + 35 * Math.cos(rd)} y1={400 + 35 * Math.sin(rd)} x2={400 + 370 * Math.cos(rd)} y2={400 + 370 * Math.sin(rd)} stroke="#c97a8e" strokeWidth="0.35"/>;
+          })}
+          {[0,45,90,135,180,225,270,315].map((deg, i) => {
+            const rd = (deg * Math.PI) / 180;
+            const lx = 400 + 280 * Math.cos(rd);
+            const ly = 400 + 280 * Math.sin(rd);
+            return (
+              <g key={i} transform={`translate(${lx},${ly}) rotate(${deg + 90})`}>
+                <ellipse cx="0" cy="0" rx="7" ry="28" fill="none" stroke="#d4a867" strokeWidth="0.6"/>
+                <line x1="0" y1="-28" x2="0" y2="28" stroke="#c97a8e" strokeWidth="0.3"/>
+              </g>
+            );
+          })}
+          <circle cx="400" cy="400" r="10" fill="none" stroke="#c97a8e" strokeWidth="0.8"/>
+          <circle cx="400" cy="400" r="4"  fill="#c97a8e" opacity="0.4"/>
+        </svg>
+
+        {/* Very soft ambient glow blobs */}
+        <div className="absolute pointer-events-none" style={{ top: "15%", left: "8%", width: 420, height: 420, borderRadius: "50%", background: "radial-gradient(circle, rgba(201,122,142,0.14) 0%, transparent 70%)", filter: "blur(80px)" }}/>
+        <div className="absolute pointer-events-none" style={{ bottom: "10%", right: "8%", width: 360, height: 360, borderRadius: "50%", background: "radial-gradient(circle, rgba(212,168,103,0.1) 0%, transparent 70%)", filter: "blur(70px)" }}/>
+
+        {/* ── MOBILE layout (stacked, shown below lg) ── */}
+        <div className="relative z-10 w-full px-6 sm:px-10 pt-32 pb-16 flex flex-col items-center text-center lg:hidden">
+          {/* Portrait circle */}
+          <div className="relative mb-10">
+            <div style={{ position: "absolute", inset: -12, borderRadius: "50%", background: "radial-gradient(circle, rgba(201,122,142,0.2) 0%, transparent 70%)", filter: "blur(18px)" }}/>
+            <div
+              style={{
+                width: "clamp(200px, 55vw, 280px)",
+                height: "clamp(200px, 55vw, 280px)",
+                borderRadius: "50%",
+                overflow: "hidden",
+                border: "1px solid rgba(201,122,142,0.22)",
+                boxShadow: "0 0 0 8px rgba(253,246,240,1), 0 0 0 9px rgba(201,122,142,0.1)",
+                position: "relative",
+              }}
+            >
+              <img src={edenPortrait} alt="Eden" loading="eager" fetchPriority="high"
+                className="w-full h-full object-cover object-top" data-testid="img-eden-portrait-mobile"/>
             </div>
           </div>
 
-          <h1
-            className="font-display text-2xl sm:text-4xl lg:text-5xl font-bold mb-6 leading-tight"
-            data-testid="text-hero-headline"
-          >
+          <h1 className="font-display text-3xl sm:text-4xl font-bold mb-6 leading-tight" data-testid="text-hero-headline">
             <span className="text-gradient-rose">Still foggy? Still tired? </span>
-            <br />
-            <span className="text-[#3d1a28]/90">Still spending money on supplements that do nothing?</span>
+            <br/>
+            <span className="text-[#3d1a28]/85">Still spending money on supplements that do nothing?</span>
           </h1>
 
-          <p
-            className="text-[#3d1a28]/65 text-base sm:text-lg lg:text-xl max-w-2xl mx-auto mb-10 leading-relaxed font-medium px-2"
-            data-testid="text-hero-subheadline"
-          >
+          <div className="flex items-center gap-3 mb-7 opacity-60">
+            <div className="h-px w-10 bg-[#c97a8e]"/>
+            <svg width="10" height="10" viewBox="0 0 10 10"><circle cx="5" cy="5" r="4" fill="none" stroke="#c97a8e" strokeWidth="0.8"/><circle cx="5" cy="5" r="1.5" fill="#c97a8e"/></svg>
+            <div className="h-px w-10 bg-[#c97a8e]"/>
+          </div>
+
+          <p className="text-[#3d1a28]/62 text-base sm:text-lg max-w-xl leading-relaxed mb-10" data-testid="text-hero-subheadline">
             I'm Eden. For 14 years I've been deep in the research — Taoist protocols, longevity science, biohacking — separating what actually works from what just sells.
-            <br /><br />
+            <br/><br/>
             And I've learned one thing: 90% of wellness is noise. The 10% that works? <Link href="/discount-codes" className="underline underline-offset-2 hover:text-[#c97a8e] transition-colors">It's on this list.</Link>
           </p>
 
-          <div className="flex justify-center mb-10">
-            <img
-              src={edenHatPhoto}
-              alt="Eden"
-              loading="eager"
-              fetchPriority="high"
-              className="w-64 h-64 sm:w-72 sm:h-72 object-cover object-top rounded-full shadow-lg"
-              data-testid="img-eden-hat"
-            />
+          <div className="flex items-center gap-3 mb-2 opacity-30">
+            <div className="w-px h-8 bg-[#3d1a28]"/>
           </div>
+          <ChevronDown className="w-4 h-4 text-[#3d1a28]/30 mb-2"/>
+        </div>
 
-          <p
-            className="text-[#3d1a28]/65 text-base sm:text-lg lg:text-xl max-w-2xl mx-auto mb-10 leading-relaxed font-medium px-2"
-          >
-            I don't sell supplements. I find the best ones and get you a discount on them. Getting access to the best products shouldn't mean paying full price for them.
-            <br /><br />
-            This is my curated list of the supplements, longevity tools, and brands I personally trust, with exclusive discount codes built in. No fluff. No affiliate bro science. Just the good stuff, cheaper.
-            <br /><br />
-            Supplements. Vitamins. Longevity tech. Conscious fashion. All vetted. All discounted.
-          </p>
-
-          <div className="flex justify-center mb-8">
-            <Link href="/discount-codes" data-testid="button-hero-discounts">
-              <Button
-                size="lg"
-                className="btn-gradient-rose text-white border-0 rounded-full px-8 text-sm tracking-widest uppercase font-semibold w-full sm:w-auto"
-              >
-                → See the full list + discounts
-              </Button>
-            </Link>
-          </div>
-
-          <div className="flex justify-center mb-8">
-            <div className="relative max-w-sm w-full" data-testid="img-eden-photo-2">
+        {/* ── DESKTOP layout (split, shown at lg+) ── */}
+        <div className="relative z-10 hidden lg:grid lg:grid-cols-2 w-full max-w-7xl mx-auto px-16 xl:px-24 gap-16 items-center min-h-screen pt-28">
+          {/* LEFT — portrait */}
+          <div className="flex justify-center items-center">
+            <div className="relative">
+              <div style={{ position: "absolute", inset: -20, borderRadius: "28px", background: "radial-gradient(circle, rgba(201,122,142,0.18) 0%, transparent 70%)", filter: "blur(30px)" }}/>
               <div
-                className="absolute inset-0 rounded-2xl opacity-25 glow-purple"
-                style={{ background: "radial-gradient(circle at 50% 50%, #9b6fa5 0%, transparent 70%)" }}
-              />
-              <div
-                className="relative rounded-2xl overflow-hidden"
-                style={{ border: "1px solid rgba(155,111,165,0.2)" }}
+                style={{
+                  width: 380,
+                  height: 500,
+                  borderRadius: 24,
+                  overflow: "hidden",
+                  border: "1px solid rgba(201,122,142,0.18)",
+                  boxShadow: "0 24px 60px rgba(61,26,40,0.1), 0 0 0 10px rgba(253,246,240,1), 0 0 0 11px rgba(201,122,142,0.08)",
+                  position: "relative",
+                }}
               >
-                <img
-                  loading="eager"
-                  fetchPriority="high"
-                  decoding="async"
-                  src={edenPhoto2}
-                  alt="Eden - Thrive Tools"
-                  className="w-full h-full object-cover"
-                />
+                <img src={edenPortrait} alt="Eden" loading="eager" fetchPriority="high"
+                  className="w-full h-full object-cover object-top" data-testid="img-eden-portrait-desktop"/>
+              </div>
+              {/* Small ornament below photo */}
+              <div className="flex justify-center mt-6 gap-2 opacity-40">
+                <div className="h-px w-16 bg-gradient-to-r from-transparent to-[#c97a8e] self-center"/>
+                <svg width="10" height="10" viewBox="0 0 10 10"><circle cx="5" cy="5" r="4" fill="none" stroke="#c97a8e" strokeWidth="0.8"/><circle cx="5" cy="5" r="1.5" fill="#c97a8e"/></svg>
+                <div className="h-px w-16 bg-gradient-to-l from-transparent to-[#c97a8e] self-center"/>
               </div>
             </div>
           </div>
 
-          <p className="text-[#3d1a28]/65 text-base sm:text-lg lg:text-xl max-w-2xl mx-auto mb-6 leading-relaxed font-medium px-2" data-testid="text-retreats-intro">
-            Real transformation isn't just what you take. It's how you live.<br /><br />
-            That's why I built spaces where the real work happens. In my retreats and workshops, we go deeper: nervous system reset, Taoist longevity practices, and cutting through the noise together, in person.
-          </p>
+          {/* RIGHT — headline + first paragraph */}
+          <div className="flex flex-col justify-center py-16">
+            <h1 className="font-display text-4xl xl:text-5xl font-bold mb-8 leading-[1.15]" data-testid="text-hero-headline-desktop">
+              <span className="text-gradient-rose">Still foggy?<br/>Still tired? </span>
+              <br/>
+              <span className="text-[#3d1a28]/80 text-3xl xl:text-4xl">Still spending money on supplements that do nothing?</span>
+            </h1>
 
-          <div className="flex justify-center mb-8">
-            <Link href="/retreats-workshops/blossoming-bliss" data-testid="button-explore-retreats">
-              <Button
-                size="lg"
-                className="btn-gradient-rose text-white border-0 rounded-full px-8 text-sm tracking-widest uppercase font-semibold w-full sm:w-auto"
-              >
-                → Explore Retreats & Workshops
-              </Button>
-            </Link>
-          </div>
-        </div>
+            {/* Thin ornamental divider */}
+            <div className="flex items-center gap-4 mb-8">
+              <div className="h-px w-12 bg-gradient-to-r from-transparent to-[#c97a8e]/50"/>
+              <svg width="12" height="12" viewBox="0 0 12 12">
+                <circle cx="6" cy="6" r="5" fill="none" stroke="#c97a8e" strokeWidth="0.8"/>
+                <circle cx="6" cy="6" r="2" fill="#c97a8e" opacity="0.5"/>
+              </svg>
+              <div className="h-px w-12 bg-gradient-to-l from-transparent to-[#c97a8e]/50"/>
+            </div>
 
-      </section>
-
-      {/* ─── PHOTOS ─── */}
-      <section
-        id="about"
-        className="relative py-12 sm:py-20 px-6 sm:px-8 lg:px-8"
-        style={{ background: "linear-gradient(180deg, #fdf6f0 0%, #f5eaf5 50%, #fdf6f0 100%)" }}
-      >
-        <div className="section-divider mb-12 sm:mb-16" />
-        <div className="max-w-4xl mx-auto">
-          <div className="mt-16 sm:mt-24 text-center">
-            <p className="text-[#3d1a28]/60 text-lg font-medium mb-4">
-              Curious about my 14 year journey?
+            <p className="text-[#3d1a28]/60 text-lg leading-relaxed max-w-lg" data-testid="text-hero-subheadline-desktop">
+              I'm Eden. For 14 years I've been deep in the research — Taoist protocols, longevity science, biohacking — separating what actually works from what just sells.
+              <br/><br/>
+              And I've learned one thing: 90% of wellness is noise. The 10% that works? <Link href="/discount-codes" className="underline underline-offset-2 hover:text-[#c97a8e] transition-colors">It's on this list.</Link>
             </p>
-            <Link href="/about" data-testid="link-full-story">
-              <Button
-                className="btn-gradient-rose rounded-full px-8 text-sm tracking-widest uppercase font-semibold text-white border-0"
-              >
-                Read the full story here
-              </Button>
-            </Link>
+
+            {/* Scroll hint */}
+            <div className="flex items-center gap-3 mt-12 opacity-25">
+              <div className="w-px h-10 bg-[#3d1a28]"/>
+              <ChevronDown className="w-4 h-4 text-[#3d1a28]"/>
+            </div>
           </div>
         </div>
-        <div className="section-divider mt-16 sm:mt-24" />
       </section>
 
-      {/* ─── THE RESULTS — Testimonial Videos ─── */}
-      <section
-        className="py-16 sm:py-24 px-6 sm:px-8 lg:px-8 relative overflow-hidden"
-        style={{
-          background: "linear-gradient(135deg, #f8eef8 0%, #f0e4f5 50%, #f8eef8 100%)",
-        }}
-      >
-        <div className="absolute inset-0 pointer-events-none overflow-hidden">
-          <div
-            className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 rounded-full opacity-20"
-            style={{ background: "radial-gradient(circle, #c97a8e 0%, transparent 70%)", filter: "blur(80px)" }}
-          />
+      {/* ═══════════════════════════════════════════
+          SPLIT 1 — Hat photo + "I don't sell" copy
+      ═══════════════════════════════════════════ */}
+      <section className="relative overflow-hidden" style={{ background: "linear-gradient(180deg, #fdf6f0 0%, #f8eef8 50%, #fdf6f0 100%)" }}>
+        <div className="max-w-6xl mx-auto px-6 sm:px-10 lg:px-16 py-20 sm:py-28 lg:py-32">
+
+          {/* Thin top divider */}
+          <div className="flex items-center gap-6 mb-20 opacity-30">
+            <div className="h-px flex-1 bg-gradient-to-r from-transparent via-[#c97a8e] to-transparent"/>
+            <svg width="16" height="16" viewBox="0 0 16 16">
+              <circle cx="8" cy="8" r="6.5" fill="none" stroke="#c97a8e" strokeWidth="0.8"/>
+              <circle cx="8" cy="8" r="2.5" fill="#c97a8e" opacity="0.5"/>
+            </svg>
+            <div className="h-px flex-1 bg-gradient-to-r from-transparent via-[#c97a8e] to-transparent"/>
+          </div>
+
+          <div className="flex flex-col lg:flex-row items-center gap-14 lg:gap-20">
+            {/* Photo */}
+            <div className="flex-shrink-0 w-full lg:w-auto flex justify-center">
+              <div className="relative">
+                <div style={{ position: "absolute", inset: -16, borderRadius: "20px", background: "radial-gradient(circle, rgba(201,122,142,0.16) 0%, transparent 70%)", filter: "blur(22px)" }}/>
+                <img
+                  src={edenHatPhoto}
+                  alt="Eden"
+                  loading="lazy"
+                  data-testid="img-eden-hat"
+                  className="relative object-cover object-top"
+                  style={{
+                    width: "clamp(240px, 38vw, 340px)",
+                    height: "clamp(290px, 46vw, 420px)",
+                    borderRadius: 18,
+                    border: "1px solid rgba(201,122,142,0.15)",
+                    boxShadow: "0 20px 50px rgba(61,26,40,0.09)",
+                  }}
+                />
+              </div>
+            </div>
+
+            {/* Text */}
+            <div className="flex-1 max-w-lg text-left">
+              <p className="text-[#3d1a28]/62 text-base sm:text-lg leading-relaxed mb-5">
+                I don't sell supplements. I find the best ones and get you a discount on them. Getting access to the best products shouldn't mean paying full price for them.
+              </p>
+              <p className="text-[#3d1a28]/62 text-base sm:text-lg leading-relaxed mb-5">
+                This is my curated list of the supplements, longevity tools, and brands I personally trust, with exclusive discount codes built in. No fluff. No affiliate bro science. Just the good stuff, cheaper.
+              </p>
+              <p className="text-[#3d1a28]/62 text-base sm:text-lg leading-relaxed mb-10">
+                Supplements. Vitamins. Longevity tech. Conscious fashion. All vetted. All discounted.
+              </p>
+              <Link href="/discount-codes" data-testid="button-hero-discounts">
+                <Button size="lg" className="btn-gradient-rose text-white border-0 rounded-full px-8 text-sm tracking-widest uppercase font-semibold h-auto py-3.5">
+                  → See the full list + discounts
+                </Button>
+              </Link>
+            </div>
+          </div>
         </div>
+      </section>
+
+      {/* ═══════════════════════════════════════════
+          SPLIT 2 — Retreats text + edenPhoto2
+      ═══════════════════════════════════════════ */}
+      <section className="relative overflow-hidden" style={{ background: "#fdf6f0" }}>
+        <div className="max-w-6xl mx-auto px-6 sm:px-10 lg:px-16 py-20 sm:py-28 lg:py-32">
+
+          <div className="flex flex-col lg:flex-row-reverse items-center gap-14 lg:gap-20">
+            {/* Photo */}
+            <div className="flex-shrink-0 w-full lg:w-auto flex justify-center">
+              <div className="relative" data-testid="img-eden-photo-2">
+                <div style={{ position: "absolute", inset: -16, borderRadius: "20px", background: "radial-gradient(circle, rgba(155,111,165,0.15) 0%, transparent 70%)", filter: "blur(22px)" }}/>
+                <img
+                  src={edenPhoto2}
+                  alt="Eden - Thrive Tools"
+                  loading="lazy"
+                  className="relative object-cover"
+                  style={{
+                    width: "clamp(240px, 38vw, 340px)",
+                    height: "clamp(290px, 46vw, 420px)",
+                    borderRadius: 18,
+                    border: "1px solid rgba(155,111,165,0.15)",
+                    boxShadow: "0 20px 50px rgba(61,26,40,0.09)",
+                  }}
+                />
+              </div>
+            </div>
+
+            {/* Text */}
+            <div className="flex-1 max-w-lg text-left">
+              <p className="text-[#3d1a28]/62 text-base sm:text-lg leading-relaxed mb-10" data-testid="text-retreats-intro">
+                Real transformation isn't just what you take. It's how you live.
+                <br/><br/>
+                That's why I built spaces where the real work happens. In my retreats and workshops, we go deeper: nervous system reset, Taoist longevity practices, and cutting through the noise together, in person.
+              </p>
+              <Link href="/retreats-workshops/blossoming-bliss" data-testid="button-explore-retreats">
+                <Button size="lg" className="btn-gradient-rose text-white border-0 rounded-full px-8 text-sm tracking-widest uppercase font-semibold h-auto py-3.5">
+                  → Explore Retreats & Workshops
+                </Button>
+              </Link>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ═══════════════════════════════════════════
+          STORY CTA
+      ═══════════════════════════════════════════ */}
+      <section id="about" className="relative py-20 sm:py-28 px-6 sm:px-10 text-center" style={{ background: "linear-gradient(180deg, #fdf6f0 0%, #f5eaf5 50%, #fdf6f0 100%)" }}>
+        <div className="flex items-center gap-6 mb-14 opacity-25 max-w-2xl mx-auto">
+          <div className="h-px flex-1 bg-gradient-to-r from-transparent via-[#c97a8e] to-transparent"/>
+          <svg width="14" height="14" viewBox="0 0 14 14"><circle cx="7" cy="7" r="6" fill="none" stroke="#c97a8e" strokeWidth="0.8"/><circle cx="7" cy="7" r="2.2" fill="#c97a8e" opacity="0.5"/></svg>
+          <div className="h-px flex-1 bg-gradient-to-r from-transparent via-[#c97a8e] to-transparent"/>
+        </div>
+
+        <div className="max-w-xl mx-auto">
+          <p className="text-[#3d1a28]/60 text-lg font-medium mb-6">
+            Curious about my 14 year journey?
+          </p>
+          <Link href="/about" data-testid="link-full-story">
+            <Button className="btn-gradient-rose rounded-full px-10 text-sm tracking-widest uppercase font-semibold text-white border-0 h-auto py-3.5">
+              Read the full story here
+            </Button>
+          </Link>
+        </div>
+
+        <div className="flex items-center gap-6 mt-14 opacity-25 max-w-2xl mx-auto">
+          <div className="h-px flex-1 bg-gradient-to-r from-transparent via-[#c97a8e] to-transparent"/>
+          <svg width="14" height="14" viewBox="0 0 14 14"><circle cx="7" cy="7" r="6" fill="none" stroke="#c97a8e" strokeWidth="0.8"/><circle cx="7" cy="7" r="2.2" fill="#c97a8e" opacity="0.5"/></svg>
+          <div className="h-px flex-1 bg-gradient-to-r from-transparent via-[#c97a8e] to-transparent"/>
+        </div>
+      </section>
+
+      {/* ═══════════════════════════════════════════
+          THE RESULTS — Testimonials
+      ═══════════════════════════════════════════ */}
+      <section
+        className="py-20 sm:py-28 px-6 sm:px-10 relative overflow-hidden"
+        style={{ background: "linear-gradient(135deg, #f8eef8 0%, #f0e4f5 50%, #f8eef8 100%)" }}
+      >
+        <div className="absolute inset-0 pointer-events-none">
+          <div style={{ position: "absolute", top: "50%", left: "50%", transform: "translate(-50%,-50%)", width: 500, height: 500, borderRadius: "50%", background: "radial-gradient(circle, rgba(201,122,142,0.07) 0%, transparent 70%)", filter: "blur(70px)" }}/>
+        </div>
+
         <div className="max-w-5xl mx-auto relative z-10">
-          <div className="text-center mb-12">
-            <h2
-              className="font-display text-3xl sm:text-4xl lg:text-5xl font-bold mb-4"
-              data-testid="text-results-headline"
-            >
+          <div className="text-center mb-14">
+            <h2 className="font-display text-3xl sm:text-4xl lg:text-5xl font-bold mb-4" data-testid="text-results-headline">
               <span className="text-gradient-rose">The Results</span>
             </h2>
             <p className="text-[#3d1a28]/55 text-base sm:text-lg max-w-xl mx-auto">
@@ -261,14 +341,10 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6 mb-6">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6 mb-8">
             {visibleTestimonials.map((t, i) => (
-              <div
-                key={i}
-                className="card-glass rounded-xl overflow-hidden"
-                data-testid={`card-testimonial-${i}`}
-              >
-                <div className={`relative w-full ${t.isShort ? 'aspect-[9/16] max-h-[400px]' : 'aspect-video'}`}>
+              <div key={i} className="card-glass rounded-xl overflow-hidden" data-testid={`card-testimonial-${i}`}>
+                <div className={`relative w-full ${t.isShort ? "aspect-[9/16] max-h-[400px]" : "aspect-video"}`}>
                   <iframe
                     src={`https://www.youtube.com/embed/${t.videoId}`}
                     title={t.name}
@@ -280,9 +356,7 @@ export default function Home() {
                   />
                 </div>
                 <div className="p-4">
-                  <p className="text-[#3d1a28]/70 text-sm font-medium" data-testid={`text-testimonial-name-${i}`}>
-                    {t.name}
-                  </p>
+                  <p className="text-[#3d1a28]/70 text-sm font-medium" data-testid={`text-testimonial-name-${i}`}>{t.name}</p>
                 </div>
               </div>
             ))}
@@ -290,12 +364,9 @@ export default function Home() {
 
           {!showAllTestimonials && testimonials.length > 3 && (
             <div className="text-center mb-10">
-              <Button
-                variant="outline"
-                onClick={() => setShowAllTestimonials(true)}
+              <Button variant="outline" onClick={() => setShowAllTestimonials(true)}
                 className="rounded-full px-8 text-sm tracking-widest uppercase font-semibold border-[#3d1a28]/20 text-[#3d1a28]/80 bg-transparent"
-                data-testid="button-more-testimonials"
-              >
+                data-testid="button-more-testimonials">
                 More <ChevronDown className="ml-2 w-4 h-4" />
               </Button>
             </div>
@@ -303,12 +374,9 @@ export default function Home() {
 
           {showAllTestimonials && (
             <div className="text-center mb-10">
-              <Button
-                variant="outline"
-                onClick={() => setShowAllTestimonials(false)}
+              <Button variant="outline" onClick={() => setShowAllTestimonials(false)}
                 className="rounded-full px-8 text-sm tracking-widest uppercase font-semibold border-[#3d1a28]/20 text-[#3d1a28]/80 bg-transparent"
-                data-testid="button-less-testimonials"
-              >
+                data-testid="button-less-testimonials">
                 Show Less <ChevronDown className="ml-2 w-4 h-4 rotate-180" />
               </Button>
             </div>
@@ -316,10 +384,7 @@ export default function Home() {
 
           <div className="text-center">
             <Link href="/discount-codes" data-testid="link-results-discounts">
-              <Button
-                size="lg"
-                className="btn-gradient-rose text-white border-0 rounded-full px-6 sm:px-10 text-xs sm:text-sm tracking-widest uppercase font-semibold whitespace-normal text-center leading-relaxed h-auto py-3"
-              >
+              <Button size="lg" className="btn-gradient-rose text-white border-0 rounded-full px-6 sm:px-10 text-xs sm:text-sm tracking-widest uppercase font-semibold whitespace-normal text-center leading-relaxed h-auto py-3">
                 Vetted Biohacking Tech, Supplements & Conscious Fashion Discount Codes (2026)
                 <ArrowRight className="ml-2 w-4 h-4 flex-shrink-0" />
               </Button>
