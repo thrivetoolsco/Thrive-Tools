@@ -44,7 +44,7 @@ export default function PageLayout({ children, title, subtitle, backLabel = "Hom
             </Link>
 
             <h1 className="font-display text-4xl sm:text-5xl lg:text-6xl font-bold mb-4" data-testid="text-page-title">
-              <span className="text-gradient-rose">{title}</span>
+              <span className="text-gradient-sage">{title}</span>
             </h1>
             {subtitle && (
               <p className="text-[#3d1a28]/60 text-lg sm:text-xl max-w-3xl leading-relaxed font-medium" data-testid="text-page-subtitle">
