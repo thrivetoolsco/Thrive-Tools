@@ -13,7 +13,7 @@ export default function CacaoCeremonies() {
       <div className="space-y-12" data-testid="section-cacao-ceremonies">
 
         <div className="card-glass rounded-md p-6 sm:p-8 space-y-4" data-testid="section-intro">
-          <p className="text-[#14b8a6] text-lg sm:text-xl font-display italic leading-relaxed" data-testid="text-subtitle">
+          <p className="text-[#7a9e6e] text-lg sm:text-xl font-display italic leading-relaxed" data-testid="text-subtitle">
             Cacao & Ecstatic Dance: The Heart Reset
           </p>
           <p className="text-black/80 leading-relaxed text-base" data-testid="text-opening">
@@ -52,7 +52,7 @@ export default function CacaoCeremonies() {
           <ul className="space-y-4 pt-2">
             {details.map((item, i) => (
               <li key={i} className="flex items-start gap-3" data-testid={`detail-item-${i}`}>
-                <Check className="w-5 h-5 text-[#14b8a6] shrink-0 mt-0.5" />
+                <Check className="w-5 h-5 text-[#7a9e6e] shrink-0 mt-0.5" />
                 <p className="text-black/80 leading-relaxed text-base">
                   <span className="text-black font-semibold">{item.label}:</span> {item.desc}
                 </p>

@@ -250,7 +250,7 @@
   }
 
   .text-gradient-rose {
-    background: linear-gradient(135deg, #7fe7dc 0%, #20b2aa 45%, #0d9488 100%);
+    background: linear-gradient(135deg, #c4d4b0 0%, #8aaa7a 45%, #5a7a4e 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -269,7 +269,7 @@
   }
 
   .text-gradient-purple {
-    background: linear-gradient(135deg, #7fe7dc 0%, #20b2aa 45%, #0d9488 100%);
+    background: linear-gradient(135deg, #c4d4b0 0%, #8aaa7a 45%, #5a7a4e 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;

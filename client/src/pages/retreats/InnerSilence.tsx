@@ -17,7 +17,7 @@ export default function InnerSilence() {
       <div className="space-y-12" data-testid="section-inner-silence">
 
         <div className="card-glass rounded-md p-6 sm:p-8 space-y-4" data-testid="section-intro">
-          <p className="text-[#14b8a6] text-lg sm:text-xl font-display italic leading-relaxed" data-testid="text-subtitle">
+          <p className="text-[#7a9e6e] text-lg sm:text-xl font-display italic leading-relaxed" data-testid="text-subtitle">
             The Big Quiet: An Off-Grid Silent Retreat
           </p>
           <p className="text-black/60 font-medium text-base" data-testid="text-tagline">
@@ -56,7 +56,7 @@ export default function InnerSilence() {
           <ul className="space-y-4">
             {toolkit.map((item, i) => (
               <li key={i} className="flex items-start gap-3" data-testid={`toolkit-item-${i}`}>
-                <Check className="w-5 h-5 text-[#14b8a6] shrink-0 mt-0.5" />
+                <Check className="w-5 h-5 text-[#7a9e6e] shrink-0 mt-0.5" />
                 <p className="text-black/80 leading-relaxed text-base">
                   <span className="text-black font-semibold">{item.label}:</span> {item.desc}
                 </p>
@@ -74,15 +74,15 @@ export default function InnerSilence() {
           </h3>
           <div className="grid sm:grid-cols-3 gap-4">
             <div className="card-glass rounded-md p-5 text-center space-y-2" data-testid="card-rate-14days">
-              <p className="text-[#14b8a6] font-display font-semibold text-lg">14 Days</p>
+              <p className="text-[#7a9e6e] font-display font-semibold text-lg">14 Days</p>
               <p className="text-black font-bold text-2xl" data-testid="text-price-14days">USD $3,300</p>
             </div>
             <div className="card-glass rounded-md p-5 text-center space-y-2" data-testid="card-rate-21days">
-              <p className="text-[#14b8a6] font-display font-semibold text-lg">21 Days</p>
+              <p className="text-[#7a9e6e] font-display font-semibold text-lg">21 Days</p>
               <p className="text-black font-bold text-2xl" data-testid="text-price-21days">USD $4,100</p>
             </div>
             <div className="card-glass rounded-md p-5 text-center space-y-2" data-testid="card-rate-1month">
-              <p className="text-[#14b8a6] font-display font-semibold text-lg">1 Month</p>
+              <p className="text-[#7a9e6e] font-display font-semibold text-lg">1 Month</p>
               <p className="text-black font-bold text-2xl" data-testid="text-price-1month">USD $5,000</p>
             </div>
           </div>

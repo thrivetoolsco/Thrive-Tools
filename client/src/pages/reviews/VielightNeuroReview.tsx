@@ -19,7 +19,7 @@ export default function VielightNeuroReview() {
         </div>
 
         <div className="flex flex-wrap gap-3">
-          <Badge className="bg-teal-500/15 text-teal-400 border border-teal-500/25 rounded-full px-3 py-0.5 text-xs">
+          <Badge className="bg-[#7a9e6e]/15 text-[#8aaa7a] border border-[#7a9e6e]/25 rounded-full px-3 py-0.5 text-xs">
             Tech Review
           </Badge>
           <Badge className="bg-white/5 text-black/50 border border-white/10 rounded-full px-3 py-0.5 text-xs">
@@ -82,7 +82,7 @@ export default function VielightNeuroReview() {
 
         <section data-testid="section-clinical">
           <div className="flex items-center gap-3 mb-6">
-            <FlaskConical className="w-5 h-5 text-teal-400" />
+            <FlaskConical className="w-5 h-5 text-[#8aaa7a]" />
             <h2 className="font-display text-2xl font-bold text-black">Clinical Evidence</h2>
           </div>
           <div className="card-glass rounded-2xl overflow-hidden mb-6" data-testid="img-vielight-brain">
@@ -115,7 +115,7 @@ export default function VielightNeuroReview() {
             </p>
           </div>
 
-          <div className="card-glass rounded-xl p-5 mt-4 border-l-4" style={{ borderLeftColor: "#14b8a6" }}>
+          <div className="card-glass rounded-xl p-5 mt-4 border-l-4" style={{ borderLeftColor: "#7a9e6e" }}>
             <p className="text-black/50 text-xs uppercase tracking-wider mb-2">Scientific Reference</p>
             <p className="text-black/70 text-sm leading-relaxed">
               Saltmarche, A. E., et al. (2017). "Significant Improvement in Cognition in Patients with Dementia: Case Series." <em>Photomedicine and Laser Surgery</em>, 35(8), 432–441. doi:10.1089/pho.2016.4227
@@ -127,7 +127,7 @@ export default function VielightNeuroReview() {
 
         <section data-testid="section-personal">
           <div className="flex items-center gap-3 mb-6">
-            <User className="w-5 h-5 text-teal-600" />
+            <User className="w-5 h-5 text-[#5a7a4e]" />
             <h2 className="font-display text-2xl font-bold text-black">My 6-Month Experience</h2>
           </div>
           <div className="space-y-4 text-black/70 leading-relaxed">
@@ -143,7 +143,7 @@ export default function VielightNeuroReview() {
             </div>
 
             <div className="card-glass rounded-xl p-5 my-6">
-              <h3 className="text-teal-400 font-bold mb-3">Neuro Gamma (40Hz — Focus & Cognition)</h3>
+              <h3 className="text-[#8aaa7a] font-bold mb-3">Neuro Gamma (40Hz — Focus & Cognition)</h3>
               <p className="text-black/60 text-sm leading-relaxed">
                 I use this in the morning before deep work sessions. The cognitive clarity is remarkable — I describe it as the mental equivalent of putting on prescription glasses for the first time. Complex ideas connect faster, writing flows more naturally, and I can sustain focused attention for longer periods without fatigue.
               </p>
