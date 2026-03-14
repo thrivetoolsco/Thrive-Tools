@@ -32,6 +32,7 @@ import VielightNeuroReview from "@/pages/reviews/VielightNeuroReview";
 import HyperionHerbs from "@/pages/reviews/HyperionHerbs";
 import JoovvReview from "@/pages/reviews/JoovvReview";
 import RhondaPatrickMultivitamin from "@/pages/reviews/RhondaPatrickMultivitamin";
+import BiohackingSupplements2026 from "@/pages/reviews/BiohackingSupplements2026";
 
 function ScrollToTop() {
   const [location] = useLocation();
@@ -73,6 +74,7 @@ function Router() {
       <Route path="/product-reviews/hyperion-herbs" component={HyperionHerbs} />
       <Route path="/product-reviews/joovv-review" component={JoovvReview} />
       <Route path="/product-reviews/rhonda-patrick-multivitamin" component={RhondaPatrickMultivitamin} />
+      <Route path="/product-reviews/biohacking-supplements-2026" component={BiohackingSupplements2026} />
       <Route component={NotFound} />
     </Switch>
   );
