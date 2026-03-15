@@ -17,8 +17,8 @@ interface BlogPost {
 const blogPosts: BlogPost[] = [
   {
     id: "im8-vs-ag1",
-    title: "IM8 vs AG1: Is David Beckham's Multivitamin Actually Better?",
-    excerpt: "A deep dive comparing two popular all-in-one supplements — ingredient quality, bioavailability, and real-world results after months of testing both.",
+    title: "IM8 vs AG1 (2026): An Honest, Science-Based Comparison",
+    excerpt: "We break down ingredients, dosing transparency, quality certifications, taste, price, and who each product is actually right for. No sponsored bias, just the facts.",
     href: "/product-reviews/im8-vs-ag1",
     badge: "Comparison",
     badgeColor: "bg-amber-500/15 text-amber-300 border-amber-500/25",
