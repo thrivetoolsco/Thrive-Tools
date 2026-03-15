@@ -25,7 +25,7 @@ const blogPosts: BlogPost[] = [
   },
   {
     id: "im8-health-review",
-    title: "IM8 Health: Longevity Science or Just Marketing?",
+    title: "IM8 Health Review (2026): Is It Worth It? An Honest, Science-Based Deep Dive",
     excerpt: "Breaking down the science behind IM8's formula — does this all-in-one supplement actually deliver on its longevity promises? Here's what the research says.",
     href: "/product-reviews/im8-health-review",
     badge: "In-Depth Review",
