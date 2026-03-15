@@ -315,13 +315,14 @@ interface CategorySectionProps {
   gradient: string;
   startIndex: number;
   borderColor?: string;
+  id?: string;
 }
 
-function CategorySection({ icon: Icon, title, subtitle, items, badgeColor, gradient, startIndex, borderColor = "rgba(201,122,142,0.2)" }: CategorySectionProps) {
+function CategorySection({ icon: Icon, title, subtitle, items, badgeColor, gradient, startIndex, borderColor = "rgba(201,122,142,0.2)", id }: CategorySectionProps) {
   const [open, setOpen] = useState(true);
 
   return (
-    <section className="mb-8">
+    <section id={id} className="mb-8">
       <button
         onClick={() => setOpen(!open)}
         className="w-full flex items-center gap-4 mb-0 group cursor-pointer"
@@ -452,6 +453,24 @@ export default function Discounts() {
           <p className="text-[#3d1a28]/60 text-lg sm:text-xl max-w-3xl leading-relaxed font-medium" data-testid="text-discounts-subtitle">
             Top Biohacking Supplements, Longevity Tech & Conscious Fashion: 2026 Picks + Discount Codes
           </p>
+
+          <div className="flex flex-wrap gap-3 mt-8" data-testid="category-jump-nav">
+            <a href="#vitamins-supplements" data-testid="jump-vitamins-supplements">
+              <Button variant="outline" size="sm" className="rounded-full border-[#c4622d]/30 text-[#8b3a1a] bg-[#c4622d]/8 hover:bg-[#c4622d]/15 text-xs font-semibold px-4 h-9 gap-2">
+                <Pill className="w-3.5 h-3.5" /> Vitamins &amp; Supplements
+              </Button>
+            </a>
+            <a href="#longevity-tech" data-testid="jump-longevity-tech">
+              <Button variant="outline" size="sm" className="rounded-full border-[#8b3a1a]/25 text-[#8b3a1a] bg-[#8b3a1a]/8 hover:bg-[#8b3a1a]/15 text-xs font-semibold px-4 h-9 gap-2">
+                <Cpu className="w-3.5 h-3.5" /> Longevity Tech
+              </Button>
+            </a>
+            <a href="#conscious-fashion" data-testid="jump-conscious-fashion">
+              <Button variant="outline" size="sm" className="rounded-full border-amber-600/30 text-amber-700 bg-amber-500/8 hover:bg-amber-500/15 text-xs font-semibold px-4 h-9 gap-2">
+                <Shirt className="w-3.5 h-3.5" /> Conscious Fashion
+              </Button>
+            </a>
+          </div>
         </div>
       </section>
 
@@ -462,6 +481,7 @@ export default function Discounts() {
       >
         <div className="max-w-5xl mx-auto">
           <CategorySection
+            id="vitamins-supplements"
             icon={Pill}
             title="Vitamins & Supplements"
             subtitle="Proven herbs, superfoods & targeted nutrition"
@@ -472,6 +492,7 @@ export default function Discounts() {
           />
 
           <CategorySection
+            id="longevity-tech"
             icon={Cpu}
             title="Longevity Tech"
             subtitle="For cognitive power & cellular repair"
@@ -483,6 +504,7 @@ export default function Discounts() {
           />
 
           <CategorySection
+            id="conscious-fashion"
             icon={Shirt}
             title="Ethical Sources of Clothing"
             subtitle="Conscious fashion & grounding footwear"
