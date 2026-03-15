@@ -39,6 +39,7 @@ import SomaticResetGuide from "@/pages/reviews/SomaticResetGuide";
 import CreatineDosageForBrain from "@/pages/reviews/CreatineDosageForBrain";
 import MouthBreathingGuide from "@/pages/reviews/MouthBreathingGuide";
 import MctOilGuide from "@/pages/reviews/MctOilGuide";
+import TonicHerbsGuide from "@/pages/reviews/TonicHerbsGuide";
 
 function ScrollToTop() {
   const [location] = useLocation();
@@ -91,6 +92,8 @@ function Router() {
       <Route path="/blog/mouth-breathing-mouth-taping" component={MouthBreathingGuide} />
       <Route path="/product-reviews/mct-oil-benefits-c8-vs-c10-powder-vs-oil" component={MctOilGuide} />
       <Route path="/blog/mct-oil-benefits-c8-vs-c10-powder-vs-oil" component={MctOilGuide} />
+      <Route path="/product-reviews/tonic-herbs-guide" component={TonicHerbsGuide} />
+      <Route path="/blog/tonic-herbs-guide" component={TonicHerbsGuide} />
       <Route component={NotFound} />
     </Switch>
   );

@@ -56,6 +56,14 @@ const blogPosts: BlogPost[] = [
     badgeColor: "bg-red-500/15 text-red-300 border-red-500/25",
   },
   {
+    id: "tonic-herbs-guide",
+    title: "Tonic Herbs: The Ancient System of Deep Nourishment Modern Biohackers Are Rediscovering (2026)",
+    excerpt: "The highest class of medicine in Traditional Chinese Medicine, used daily for thousands of years to build vitality and extend longevity. The 7 most important herbs, the quality problem, and how to build your protocol.",
+    href: "/product-reviews/tonic-herbs-guide",
+    badge: "Complete Guide",
+    badgeColor: "bg-[#c4622d]/15 text-[#8b3a1a] border-[#c4622d]/25",
+  },
+  {
     id: "mct-oil-benefits-c8-vs-c10-powder-vs-oil",
     title: "MCT Oil Benefits, C8 vs C10, and Oil vs Powder: The Complete Biohacker's Guide (2026)",
     excerpt: "The real science behind MCT oil's benefits, the difference between C8 and C10, whether oil or powder is right for you, and the two products I recommend.",
