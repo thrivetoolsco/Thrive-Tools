@@ -72,7 +72,7 @@ export default function Footer() {
             <ul className="space-y-3 text-sm text-[#3d1a28]/45">
               {[
                 { label: "Discount Codes (2026)", href: "/discount-codes" },
-                { label: "Blog", href: "/product-reviews" },
+                { label: "Blog", href: "/blog" },
                 { label: "About", href: "/about" },
                 { label: "Contact", href: "/contact" },
               ].map((item) => (

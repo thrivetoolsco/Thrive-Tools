@@ -100,8 +100,8 @@ const blogPosts: BlogPost[] = [
 export default function ProductReviews() {
   return (
     <PageLayout
-      title="Products Reviews"
-      subtitle="Honest, science-backed reviews of the wellness products I actually use."
+      title="Blog"
+      subtitle="Evidence based guides for the biohacker, the curious, and the committed."
     >
       <div className="space-y-8">
         {blogPosts.map((post) => (

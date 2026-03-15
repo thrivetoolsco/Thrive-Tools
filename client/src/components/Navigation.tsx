@@ -23,7 +23,7 @@ const navItems = [
     ],
   },
   { label: "Events", href: "/events" },
-  { label: "Blog", href: "/product-reviews" },
+  { label: "Blog", href: "/blog" },
   { label: "About", href: "/about" },
   { label: "Contact", href: "/contact" },
 ];

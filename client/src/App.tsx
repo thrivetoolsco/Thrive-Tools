@@ -71,6 +71,7 @@ function Router() {
       <Route path="/events/indoor-gardening" component={IndoorGardening} />
       <Route path="/events/food-forest" component={FoodForest} />
       <Route path="/product-reviews" component={ProductReviews} />
+      <Route path="/blog" component={ProductReviews} />
       <Route path="/product-reviews/im8-vs-ag1" component={Im8VsAg1} />
       <Route path="/product-reviews/im8-health-review" component={Im8HealthReview} />
       <Route path="/product-reviews/vielight-neuro-review" component={VielightNeuroReview} />
