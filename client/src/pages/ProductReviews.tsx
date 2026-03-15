@@ -56,6 +56,14 @@ const blogPosts: BlogPost[] = [
     badgeColor: "bg-red-500/15 text-red-300 border-red-500/25",
   },
   {
+    id: "mct-oil-benefits-c8-vs-c10-powder-vs-oil",
+    title: "MCT Oil Benefits, C8 vs C10, and Oil vs Powder: The Complete Biohacker's Guide (2026)",
+    excerpt: "The real science behind MCT oil's benefits, the difference between C8 and C10, whether oil or powder is right for you, and the two products I recommend.",
+    href: "/product-reviews/mct-oil-benefits-c8-vs-c10-powder-vs-oil",
+    badge: "Complete Guide",
+    badgeColor: "bg-[#c4622d]/15 text-[#8b3a1a] border-[#c4622d]/25",
+  },
+  {
     id: "mouth-breathing-mouth-taping",
     title: "Mouth Breathing Is Quietly Ruining Your Health, And Most People Have No Idea They're Doing It",
     excerpt: "Chronic mouth breathing silently destroys sleep quality, cognitive function, and facial structure. Here's the science and why mouth taping with MyoTape from Oxygen Advantage is the simplest fix.",
