@@ -1,6 +1,7 @@
 import type { Express } from "express";
 import { type Server } from "http";
 import rateLimit from "express-rate-limit";
+import path from "path";
 
 const contactRateLimit = rateLimit({
   windowMs: 15 * 60 * 1000,
@@ -33,6 +34,15 @@ export async function registerRoutes(
   httpServer: Server,
   app: Express
 ): Promise<Server> {
+  const sitemapPath = process.env.NODE_ENV === "production"
+    ? path.resolve(__dirname, "public/sitemap.xml")
+    : path.resolve(process.cwd(), "client/public/sitemap.xml");
+
+  app.get("/sitemap.xml", (_req, res) => {
+    res.header("Content-Type", "application/xml");
+    res.sendFile(sitemapPath);
+  });
+
   app.post("/api/contact", contactRateLimit, async (req, res) => {
     const { name, email, subject, message } = req.body;
 
