@@ -56,6 +56,14 @@ const blogPosts: BlogPost[] = [
     badgeColor: "bg-red-500/15 text-red-300 border-red-500/25",
   },
   {
+    id: "somatic-reset-guide",
+    title: "Best Somatic Reset Techniques in 2026: A Science-Backed Comparison Guide",
+    excerpt: "7 techniques compared side by side: somatic breathwork, pendulation, TRE, grounding, cold exposure, and more. What each one does, the science behind it, and how to choose.",
+    href: "/product-reviews/somatic-reset-guide",
+    badge: "Comparison Guide",
+    badgeColor: "bg-[#c4622d]/15 text-[#8b3a1a] border-[#c4622d]/25",
+  },
+  {
     id: "breathwork-beginners-guide",
     title: "Breathwork for Beginners: The Complete Science-Backed Guide (2026)",
     excerpt: "5 techniques you can start today, backed by peer-reviewed research on stress, sleep, cognition, and HRV. No equipment, no experience, no courses needed.",
