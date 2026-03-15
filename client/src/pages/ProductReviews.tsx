@@ -56,6 +56,14 @@ const blogPosts: BlogPost[] = [
     badgeColor: "bg-red-500/15 text-red-300 border-red-500/25",
   },
   {
+    id: "mouth-breathing-mouth-taping",
+    title: "Mouth Breathing Is Quietly Ruining Your Health, And Most People Have No Idea They're Doing It",
+    excerpt: "Chronic mouth breathing silently destroys sleep quality, cognitive function, and facial structure. Here's the science and why mouth taping with MyoTape from Oxygen Advantage is the simplest fix.",
+    href: "/product-reviews/mouth-breathing-mouth-taping",
+    badge: "Health Guide",
+    badgeColor: "bg-[#c4622d]/15 text-[#8b3a1a] border-[#c4622d]/25",
+  },
+  {
     id: "creatine-dosage-for-brain",
     title: "Why 5g of Creatine Isn't Enough for Your Brain: The Case for 10g (2026)",
     excerpt: "You've been taking 5g of creatine for your muscles. But new research, backed by Dr. Rhonda Patrick, Andrew Huberman, and Dr. Darren Candow, shows your brain needs more. Here's why.",

@@ -37,6 +37,7 @@ import BiohackingBeginnersGuide from "@/pages/reviews/BiohackingBeginnersGuide";
 import BreathworkBeginnersGuide from "@/pages/reviews/BreathworkBeginnersGuide";
 import SomaticResetGuide from "@/pages/reviews/SomaticResetGuide";
 import CreatineDosageForBrain from "@/pages/reviews/CreatineDosageForBrain";
+import MouthBreathingGuide from "@/pages/reviews/MouthBreathingGuide";
 
 function ScrollToTop() {
   const [location] = useLocation();
@@ -85,6 +86,8 @@ function Router() {
       <Route path="/product-reviews/somatic-reset-guide" component={SomaticResetGuide} />
       <Route path="/product-reviews/creatine-dosage-for-brain" component={CreatineDosageForBrain} />
       <Route path="/blog/creatine-dosage-for-brain" component={CreatineDosageForBrain} />
+      <Route path="/product-reviews/mouth-breathing-mouth-taping" component={MouthBreathingGuide} />
+      <Route path="/blog/mouth-breathing-mouth-taping" component={MouthBreathingGuide} />
       <Route component={NotFound} />
     </Switch>
   );
