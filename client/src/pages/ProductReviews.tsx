@@ -56,6 +56,14 @@ const blogPosts: BlogPost[] = [
     badgeColor: "bg-red-500/15 text-red-300 border-red-500/25",
   },
   {
+    id: "creatine-dosage-for-brain",
+    title: "Why 5g of Creatine Isn't Enough for Your Brain: The Case for 10g (2026)",
+    excerpt: "You've been taking 5g of creatine for your muscles. But new research, backed by Dr. Rhonda Patrick, Andrew Huberman, and Dr. Darren Candow, shows your brain needs more. Here's why.",
+    href: "/product-reviews/creatine-dosage-for-brain",
+    badge: "Deep Dive",
+    badgeColor: "bg-[#c4622d]/15 text-[#8b3a1a] border-[#c4622d]/25",
+  },
+  {
     id: "somatic-reset-guide",
     title: "Best Somatic Reset Techniques in 2026: A Science-Backed Comparison Guide",
     excerpt: "7 techniques compared side by side: somatic breathwork, pendulation, TRE, grounding, cold exposure, and more. What each one does, the science behind it, and how to choose.",
