@@ -486,6 +486,11 @@ export default function Discounts() {
                 <Shirt className="w-3.5 h-3.5" /> Conscious Fashion
               </Button>
             </a>
+            <a href="#nontoxic-cookware" data-testid="jump-nontoxic-cookware">
+              <Button variant="outline" size="sm" className="rounded-full border-green-600/30 text-green-800 bg-green-500/8 hover:bg-green-500/15 text-xs font-semibold px-4 h-9 gap-2">
+                <UtensilsCrossed className="w-3.5 h-3.5" /> Non Toxic Cookware
+              </Button>
+            </a>
           </div>
         </div>
       </section>
