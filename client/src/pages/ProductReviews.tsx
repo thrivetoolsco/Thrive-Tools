@@ -18,11 +18,11 @@ const blogPosts: BlogPost[] = [
   {
     id: "reishi-schisandra-daily-tonic-herbs",
     title: "Reishi and Schisandra: The Only Two Plants Beneficial for Every Single Organ in Your Body",
-    excerpt: "In 14 years of researching herbs I have never found a more definitive answer to \"what should I take every day for life?\" than these two plants. The 4,000-year-old science behind why they sit at the top of the highest tier of medicine.",
+    excerpt: "In 14 years of researching herbs I have never found a more definitive answer to \"what should I take every day for life?\" than these two plants. The 4000 year old science behind why they sit at the top of the highest tier of medicine.",
     href: "/blog/reishi-schisandra-daily-tonic-herbs",
     badge: "Tonic Herbs Guide",
     badgeColor: "bg-green-500/15 text-green-300 border-green-500/25",
-    date: "March 30, 2026",
+    date: "March 15, 2026",
   },
   {
     id: "bacillus-subtilis-bacillus-coagulans-probiotic-guide",
@@ -31,7 +31,7 @@ const blogPosts: BlogPost[] = [
     href: "/blog/bacillus-subtilis-bacillus-coagulans-probiotic-guide",
     badge: "Science Deep Dive",
     badgeColor: "bg-[#c4622d]/15 text-[#8b3a1a] border-[#c4622d]/25",
-    date: "March 23, 2026",
+    date: "March 8, 2026",
   },
   {
     id: "energybits-spirulina-chlorella-review",
