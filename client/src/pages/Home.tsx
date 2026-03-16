@@ -231,7 +231,7 @@ export default function Home() {
                 This is my curated list of the supplements, longevity tools, and brands I personally trust, with exclusive discount codes built in. No fluff. No affiliate bro science. Just the good stuff, cheaper.
               </p>
               <p className="text-[#3d1a28]/62 text-base sm:text-lg leading-relaxed mb-10">
-                Supplements. Vitamins. Longevity tech. Conscious fashion. All vetted. All discounted.
+                Supplements. Vitamins. Longevity tech. Conscious fashion. Non toxic cookware. All vetted. All discounted.
               </p>
               <Link href="/discount-codes" data-testid="button-hero-discounts">
                 <Button size="lg" className="btn-gradient-rose text-white border-0 rounded-full px-8 text-sm tracking-widest uppercase font-semibold h-auto py-3.5">
