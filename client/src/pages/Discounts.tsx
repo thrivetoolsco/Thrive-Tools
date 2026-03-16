@@ -486,6 +486,11 @@ export default function Discounts() {
         style={{ background: "linear-gradient(180deg, #fdf6eb 0%, #f8ece0 50%, #fdf6eb 100%)" }}
       >
         <div className="max-w-5xl mx-auto">
+          <p className="text-black/60 text-sm leading-relaxed mb-8" data-testid="text-blog-disclaimer">
+            Every product I recommend on this page has a full science-backed breakdown on the{" "}
+            <a href="/blog" className="underline text-[#c4622d] hover:text-[#8b3a1a] transition-colors">blog</a>{" "}
+            page: peer reviewed research, honest reviews and years of personal testing behind every single recommendation.
+          </p>
           <CategorySection
             id="vitamins-supplements"
             icon={Pill}
