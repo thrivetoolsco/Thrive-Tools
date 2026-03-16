@@ -44,6 +44,7 @@ import EarthRunnersReview from "@/pages/reviews/EarthRunnersReview";
 import EnergyBitsReview from "@/pages/reviews/EnergyBitsReview";
 import JustThriveProbiotic from "@/pages/reviews/JustThriveProbiotic";
 import ReishiSchisandraGuide from "@/pages/reviews/ReishiSchisandraGuide";
+import MagnesiumGuide from "@/pages/reviews/MagnesiumGuide";
 
 function ScrollToTop() {
   const [location] = useLocation();
@@ -106,6 +107,8 @@ function Router() {
       <Route path="/blog/bacillus-subtilis-bacillus-coagulans-probiotic-guide" component={JustThriveProbiotic} />
       <Route path="/product-reviews/reishi-schisandra-daily-tonic-herbs" component={ReishiSchisandraGuide} />
       <Route path="/blog/reishi-schisandra-daily-tonic-herbs" component={ReishiSchisandraGuide} />
+      <Route path="/product-reviews/magnesium-deficiency-supplement-guide" component={MagnesiumGuide} />
+      <Route path="/blog/magnesium-deficiency-supplement-guide" component={MagnesiumGuide} />
       <Route component={NotFound} />
     </Switch>
   );

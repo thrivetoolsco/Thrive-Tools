@@ -16,6 +16,15 @@ interface BlogPost {
 
 const blogPosts: BlogPost[] = [
   {
+    id: "magnesium-deficiency-supplement-guide",
+    title: "Magnesium: The Most Important Mineral You're Almost Certainly Deficient In",
+    excerpt: "Over 31% of the global population is magnesium deficient, and most people supplementing are still deficient because they're taking the wrong forms. Here's the complete science and the only magnesium supplement I personally recommend.",
+    href: "/blog/magnesium-deficiency-supplement-guide",
+    badge: "Supplements Guide",
+    badgeColor: "bg-[#c4622d]/15 text-[#8b3a1a] border-[#c4622d]/25",
+    date: "March 16, 2026",
+  },
+  {
     id: "reishi-schisandra-daily-tonic-herbs",
     title: "Reishi and Schisandra: The Only Two Plants Beneficial for Every Single Organ in Your Body",
     excerpt: "In 14 years of researching herbs I have never found a more definitive answer to \"what should I take every day for life?\" than these two plants. The 4000 year old science behind why they sit at the top of the highest tier of medicine.",
