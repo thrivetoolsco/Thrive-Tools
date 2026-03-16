@@ -40,6 +40,7 @@ import CreatineDosageForBrain from "@/pages/reviews/CreatineDosageForBrain";
 import MouthBreathingGuide from "@/pages/reviews/MouthBreathingGuide";
 import MctOilGuide from "@/pages/reviews/MctOilGuide";
 import TonicHerbsGuide from "@/pages/reviews/TonicHerbsGuide";
+import EarthRunnersReview from "@/pages/reviews/EarthRunnersReview";
 
 function ScrollToTop() {
   const [location] = useLocation();
@@ -94,6 +95,8 @@ function Router() {
       <Route path="/blog/mct-oil-benefits-c8-vs-c10-powder-vs-oil" component={MctOilGuide} />
       <Route path="/product-reviews/tonic-herbs-guide" component={TonicHerbsGuide} />
       <Route path="/blog/tonic-herbs-guide" component={TonicHerbsGuide} />
+      <Route path="/product-reviews/earthrunners-review" component={EarthRunnersReview} />
+      <Route path="/blog/earthrunners-review" component={EarthRunnersReview} />
       <Route component={NotFound} />
     </Switch>
   );

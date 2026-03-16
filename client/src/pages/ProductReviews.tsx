@@ -56,6 +56,14 @@ const blogPosts: BlogPost[] = [
     badgeColor: "bg-red-500/15 text-red-300 border-red-500/25",
   },
   {
+    id: "earthrunners-review",
+    title: "EarthRunners Review (2026): The Only Sandals I Travel, Hike and Run In",
+    excerpt: "My honest take after years of daily use — the grounding technology, minimalist design, durability across hiking and jogging, and why one pair does it all.",
+    href: "/product-reviews/earthrunners-review",
+    badge: "Honest Review",
+    badgeColor: "bg-[#c4622d]/15 text-[#8b3a1a] border-[#c4622d]/25",
+  },
+  {
     id: "tonic-herbs-guide",
     title: "Tonic Herbs: The Ancient System of Deep Nourishment Modern Biohackers Are Rediscovering (2026)",
     excerpt: "The highest class of medicine in Traditional Chinese Medicine, used daily for thousands of years to build vitality and extend longevity. The 7 most important herbs, the quality problem, and how to build your protocol.",
