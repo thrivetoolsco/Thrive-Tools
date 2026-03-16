@@ -43,6 +43,7 @@ import TonicHerbsGuide from "@/pages/reviews/TonicHerbsGuide";
 import EarthRunnersReview from "@/pages/reviews/EarthRunnersReview";
 import EnergyBitsReview from "@/pages/reviews/EnergyBitsReview";
 import JustThriveProbiotic from "@/pages/reviews/JustThriveProbiotic";
+import ReishiSchisandraGuide from "@/pages/reviews/ReishiSchisandraGuide";
 
 function ScrollToTop() {
   const [location] = useLocation();
@@ -103,6 +104,8 @@ function Router() {
       <Route path="/blog/energybits-spirulina-chlorella-review" component={EnergyBitsReview} />
       <Route path="/product-reviews/bacillus-subtilis-bacillus-coagulans-probiotic-guide" component={JustThriveProbiotic} />
       <Route path="/blog/bacillus-subtilis-bacillus-coagulans-probiotic-guide" component={JustThriveProbiotic} />
+      <Route path="/product-reviews/reishi-schisandra-daily-tonic-herbs" component={ReishiSchisandraGuide} />
+      <Route path="/blog/reishi-schisandra-daily-tonic-herbs" component={ReishiSchisandraGuide} />
       <Route component={NotFound} />
     </Switch>
   );
