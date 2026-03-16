@@ -67,10 +67,7 @@ export default function EnergyBitsReview() {
               Most of what you'll find on Amazon or in health food stores is the second type.
             </p>
             <p>
-              This article explains why that distinction matters enormously, what spirulina and chlorella actually do when they're processed correctly, and why ENERGYbits is the only algae brand I personally recommend after years of researching and using both. For context on how algae fits into a complete supplement stack, see my{" "}
-              <a href="/product-reviews/biohacking-supplements-2026" className="underline text-[#c4622d] hover:text-[#8b3a1a] transition-colors">best biohacking supplements guide</a>{" "}
-              and my{" "}
-              <a href="/product-reviews/biohacking-beginners-guide" className="underline text-[#c4622d] hover:text-[#8b3a1a] transition-colors">biohacking beginners guide</a>.
+              This article explains why that distinction matters enormously, what spirulina and chlorella actually do when they're processed correctly, and why ENERGYbits is the only algae brand I personally recommend after years of researching and using both.
             </p>
           </div>
         </section>
@@ -234,63 +231,12 @@ export default function EnergyBitsReview() {
 
         <div className="section-divider" />
 
-        {/* Product Range */}
-        <section data-testid="section-product-range">
-          <SectionHeader icon={<Leaf className="w-5 h-5" />} title="The ENERGYbits Product Range" />
-          <div className="grid sm:grid-cols-2 gap-5">
-            {[
-              {
-                name: "ENERGYbits",
-                sub: "100% pure spirulina",
-                badge: "My daily choice",
-                body: "For daytime energy, cognitive performance, pre-workout fuel, and protein density. Take 10 to 20 tablets in the morning or pre-workout. Start with 10 to 15 tablets daily and work up to 20 to 30 for stronger benefits.",
-              },
-              {
-                name: "RECOVERYbits",
-                sub: "100% pure chlorella",
-                badge: null,
-                body: "For post-workout recovery, detoxification, immune support, and evening gut health. Take 10 to 20 tablets after meals or before bed.",
-              },
-              {
-                name: "VITALITYbits",
-                sub: "50/50 spirulina + chlorella blend",
-                badge: "Most versatile",
-                body: "These blended tablets contain so much nutrition you will effortlessly start to live each day with more clarity, vitality and energy. The most versatile option for daily all-around use.",
-              },
-              {
-                name: "BEAUTYbits",
-                sub: "Spirulina-forward blend",
-                badge: null,
-                body: "Specifically formulated for skin, hair, and nail health from the inside out.",
-              },
-            ].map((product, i) => (
-              <div key={i} className="card-glass rounded-2xl p-6 space-y-3" data-testid={`card-product-${i}`}>
-                <div className="flex items-center gap-2 flex-wrap">
-                  <p className="font-semibold text-black/90">{product.name}</p>
-                  {product.badge && (
-                    <Badge className="bg-[#c4622d]/15 text-[#8b3a1a] border border-[#c4622d]/25 rounded-full px-2 py-0.5 text-xs">
-                      {product.badge}
-                    </Badge>
-                  )}
-                </div>
-                <p className="text-black/50 text-xs uppercase tracking-wider">{product.sub}</p>
-                <p className="text-black/65 text-sm leading-relaxed">{product.body}</p>
-              </div>
-            ))}
-          </div>
-          <p className="mt-6 text-black/60 text-sm leading-relaxed">
-            My personal daily protocol is ENERGYbits with meals throughout the day and RECOVERYbits in the evening. I literally add them to everything, they've become as habitual as eating itself.
-          </p>
-        </section>
-
-        <div className="section-divider" />
-
         {/* How to Take Them */}
         <section data-testid="section-how-to">
           <SectionHeader icon={<Zap className="w-5 h-5" />} title="How to Take Them" />
           <div className="space-y-4 text-black/70 leading-relaxed">
             <p>
-              Swallow with water, that's the easiest, no-taste method. You can also blend them into a smoothie, stir into yogurt or oatmeal, or take with a sip of water between bites of a meal. New to algae? Start low at 5 to 10 tablets per day and increase over a week. If you're taste-sensitive, swallow rather than chew.
+              Swallow with water, that's the easiest, no-taste method.
             </p>
             <p>
               The tablet format is one of ENERGYbits' most practical advantages. No mixing, no blending, no preparation. It takes 10 seconds to consume them and there is no effort involved. For travel especially this is invaluable, a bag of ENERGYbits is the most nutritionally dense thing you can pack in a carry-on.
@@ -327,13 +273,6 @@ export default function EnergyBitsReview() {
             </p>
             <p>
               I add them to every meal. After years of taking them I'm not sure I could tell you exactly what they do because at this point they're just part of how I feel every day. Which is probably the highest compliment you can give any supplement.
-            </p>
-            <p className="text-black/55 text-sm">
-              To see how algae fits into a full daily protocol, read my{" "}
-              <a href="/product-reviews/im8-health-review" className="underline text-[#c4622d] hover:text-[#8b3a1a] transition-colors">IM8 Health review</a>{" "}
-              for the best all-in-one foundation to build on, or visit{" "}
-              <a href="/personalized-guidance" className="underline text-[#c4622d] hover:text-[#8b3a1a] transition-colors">Personalized Guidance</a>{" "}
-              for a complete protocol built around your biology.
             </p>
           </div>
         </section>
