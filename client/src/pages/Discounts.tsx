@@ -67,10 +67,10 @@ const vitaminsSupplements: DiscountItem[] = [
     url: "https://bioptimizers.com/shop/products/magnesium-breakthrough",
   },
   {
-    name: "Maximum Vitality",
-    description: "CBD & Other Nootropics To Optimize Performance",
-    code: "thrivetools25",
-    url: "https://www.maximumvitality.com/ref/68/",
+    name: "EnergyBits Chlorella & Spirulina",
+    description: "The only company who uses low heat drying to preserve 100% of the algae's delicate enzymes and nutrients that high heat commercial processing destroys",
+    code: "THRIVE25",
+    url: "https://energybits.com/discount/THRIVE25?rfsn=9026872.b2b124&utm_source=refersion&utm_medium=affiliate&utm_campaign=9026872.b2b124",
   },
   {
     name: "Organic Nori Seaweed Sushi",
@@ -95,6 +95,12 @@ const vitaminsSupplements: DiscountItem[] = [
     description: "Premium Organic Pumpkin Oil, Seeds & Protein Powders",
     code: "THRIVETOOLS-10",
     url: "http://www.styriangold.ca/shop/?",
+  },
+  {
+    name: "Maximum Vitality",
+    description: "CBD & Other Nootropics To Optimize Performance",
+    code: "thrivetools25",
+    url: "https://www.maximumvitality.com/ref/68/",
   },
 ];
 
