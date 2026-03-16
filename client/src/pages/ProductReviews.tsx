@@ -1,9 +1,8 @@
-import { useState } from "react";
 import { Link } from "wouter";
 import PageLayout from "@/components/PageLayout";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { ArrowRight, ArrowLeft, BookOpen, Star, FlaskConical, User } from "lucide-react";
+import { ArrowRight, CalendarDays } from "lucide-react";
 
 interface BlogPost {
   id: string;
@@ -12,9 +11,19 @@ interface BlogPost {
   href: string;
   badge: string;
   badgeColor: string;
+  date: string;
 }
 
 const blogPosts: BlogPost[] = [
+  {
+    id: "energybits-spirulina-chlorella-review",
+    title: "Spirulina and Chlorella: Why Low-Heat Processing Is the Difference Between a Superfood and an Expensive Disappointment",
+    excerpt: "Most spirulina and chlorella supplements destroy their most valuable nutrients with high-heat drying. Here's what that means for your health, and why ENERGYbits is the only brand I trust for algae.",
+    href: "/product-reviews/energybits-spirulina-chlorella-review",
+    badge: "Honest Review",
+    badgeColor: "bg-[#c4622d]/15 text-[#8b3a1a] border-[#c4622d]/25",
+    date: "March 16, 2026",
+  },
   {
     id: "im8-vs-ag1",
     title: "IM8 vs AG1 (2026): An Honest, Science-Based Comparison",
@@ -22,6 +31,7 @@ const blogPosts: BlogPost[] = [
     href: "/product-reviews/im8-vs-ag1",
     badge: "Comparison",
     badgeColor: "bg-amber-500/15 text-amber-300 border-amber-500/25",
+    date: "March 9, 2026",
   },
   {
     id: "im8-health-review",
@@ -30,6 +40,7 @@ const blogPosts: BlogPost[] = [
     href: "/product-reviews/im8-health-review",
     badge: "In-Depth Review",
     badgeColor: "bg-[#c4622d]/15 text-[#8b3a1a] border-[#c4622d]/25",
+    date: "March 2, 2026",
   },
   {
     id: "vielight-neuro-review",
@@ -38,6 +49,7 @@ const blogPosts: BlogPost[] = [
     href: "/product-reviews/vielight-neuro-review",
     badge: "Tech Review",
     badgeColor: "bg-[#c4622d]/15 text-[#8b3a1a] border-[#c4622d]/25",
+    date: "February 23, 2026",
   },
   {
     id: "hyperion-herbs",
@@ -46,6 +58,7 @@ const blogPosts: BlogPost[] = [
     href: "/product-reviews/hyperion-herbs",
     badge: "Herbal Review",
     badgeColor: "bg-green-500/15 text-green-300 border-green-500/25",
+    date: "February 16, 2026",
   },
   {
     id: "joovv-review",
@@ -54,6 +67,7 @@ const blogPosts: BlogPost[] = [
     href: "/product-reviews/joovv-review",
     badge: "Tech Review",
     badgeColor: "bg-red-500/15 text-red-300 border-red-500/25",
+    date: "February 9, 2026",
   },
   {
     id: "earthrunners-review",
@@ -62,6 +76,7 @@ const blogPosts: BlogPost[] = [
     href: "/product-reviews/earthrunners-review",
     badge: "Honest Review",
     badgeColor: "bg-[#c4622d]/15 text-[#8b3a1a] border-[#c4622d]/25",
+    date: "February 2, 2026",
   },
   {
     id: "tonic-herbs-guide",
@@ -70,6 +85,7 @@ const blogPosts: BlogPost[] = [
     href: "/product-reviews/tonic-herbs-guide",
     badge: "Complete Guide",
     badgeColor: "bg-[#c4622d]/15 text-[#8b3a1a] border-[#c4622d]/25",
+    date: "January 26, 2026",
   },
   {
     id: "mct-oil-benefits-c8-vs-c10-powder-vs-oil",
@@ -78,6 +94,7 @@ const blogPosts: BlogPost[] = [
     href: "/product-reviews/mct-oil-benefits-c8-vs-c10-powder-vs-oil",
     badge: "Complete Guide",
     badgeColor: "bg-[#c4622d]/15 text-[#8b3a1a] border-[#c4622d]/25",
+    date: "January 19, 2026",
   },
   {
     id: "mouth-breathing-mouth-taping",
@@ -86,6 +103,7 @@ const blogPosts: BlogPost[] = [
     href: "/product-reviews/mouth-breathing-mouth-taping",
     badge: "Health Guide",
     badgeColor: "bg-[#c4622d]/15 text-[#8b3a1a] border-[#c4622d]/25",
+    date: "January 12, 2026",
   },
   {
     id: "creatine-dosage-for-brain",
@@ -94,6 +112,7 @@ const blogPosts: BlogPost[] = [
     href: "/product-reviews/creatine-dosage-for-brain",
     badge: "Deep Dive",
     badgeColor: "bg-[#c4622d]/15 text-[#8b3a1a] border-[#c4622d]/25",
+    date: "January 5, 2026",
   },
   {
     id: "somatic-reset-guide",
@@ -102,6 +121,7 @@ const blogPosts: BlogPost[] = [
     href: "/product-reviews/somatic-reset-guide",
     badge: "Comparison Guide",
     badgeColor: "bg-[#c4622d]/15 text-[#8b3a1a] border-[#c4622d]/25",
+    date: "December 29, 2025",
   },
   {
     id: "breathwork-beginners-guide",
@@ -110,6 +130,7 @@ const blogPosts: BlogPost[] = [
     href: "/product-reviews/breathwork-beginners-guide",
     badge: "Beginner's Guide",
     badgeColor: "bg-[#c4622d]/15 text-[#8b3a1a] border-[#c4622d]/25",
+    date: "December 22, 2025",
   },
   {
     id: "biohacking-beginners-guide",
@@ -118,6 +139,7 @@ const blogPosts: BlogPost[] = [
     href: "/product-reviews/biohacking-beginners-guide",
     badge: "Beginner's Guide",
     badgeColor: "bg-[#c4622d]/15 text-[#8b3a1a] border-[#c4622d]/25",
+    date: "December 15, 2025",
   },
   {
     id: "biohacking-supplements-2026",
@@ -126,6 +148,7 @@ const blogPosts: BlogPost[] = [
     href: "/product-reviews/biohacking-supplements-2026",
     badge: "Full Stack Guide",
     badgeColor: "bg-[#c4622d]/15 text-[#8b3a1a] border-[#c4622d]/25",
+    date: "December 8, 2025",
   },
   {
     id: "rhonda-patrick-multivitamin",
@@ -134,6 +157,7 @@ const blogPosts: BlogPost[] = [
     href: "/product-reviews/rhonda-patrick-multivitamin",
     badge: "Science-Backed",
     badgeColor: "bg-[#c4622d]/15 text-[#8b3a1a] border-[#c4622d]/25",
+    date: "December 1, 2025",
   },
 ];
 
@@ -150,11 +174,17 @@ export default function ProductReviews() {
               className="card-glass rounded-2xl p-6 sm:p-8 hover-elevate transition-all duration-300 group cursor-pointer"
               data-testid={`card-post-${post.id}`}
             >
-              <Badge
-                className={`${post.badgeColor} border rounded-full px-3 py-0.5 text-xs tracking-widest uppercase font-medium mb-4`}
-              >
-                {post.badge}
-              </Badge>
+              <div className="flex items-center gap-3 mb-4 flex-wrap">
+                <Badge
+                  className={`${post.badgeColor} border rounded-full px-3 py-0.5 text-xs tracking-widest uppercase font-medium`}
+                >
+                  {post.badge}
+                </Badge>
+                <span className="flex items-center gap-1.5 text-black/35 text-xs">
+                  <CalendarDays className="w-3.5 h-3.5" />
+                  {post.date}
+                </span>
+              </div>
               <h2
                 className="font-display text-xl sm:text-2xl font-bold text-black mb-3 group-hover:text-[#8b3a1a] transition-colors"
                 data-testid={`text-post-title-${post.id}`}

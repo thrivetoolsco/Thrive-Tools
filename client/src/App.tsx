@@ -41,6 +41,7 @@ import MouthBreathingGuide from "@/pages/reviews/MouthBreathingGuide";
 import MctOilGuide from "@/pages/reviews/MctOilGuide";
 import TonicHerbsGuide from "@/pages/reviews/TonicHerbsGuide";
 import EarthRunnersReview from "@/pages/reviews/EarthRunnersReview";
+import EnergyBitsReview from "@/pages/reviews/EnergyBitsReview";
 
 function ScrollToTop() {
   const [location] = useLocation();
@@ -97,6 +98,8 @@ function Router() {
       <Route path="/blog/tonic-herbs-guide" component={TonicHerbsGuide} />
       <Route path="/product-reviews/earthrunners-review" component={EarthRunnersReview} />
       <Route path="/blog/earthrunners-review" component={EarthRunnersReview} />
+      <Route path="/product-reviews/energybits-spirulina-chlorella-review" component={EnergyBitsReview} />
+      <Route path="/blog/energybits-spirulina-chlorella-review" component={EnergyBitsReview} />
       <Route component={NotFound} />
     </Switch>
   );
