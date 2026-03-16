@@ -371,6 +371,30 @@ export default function ReishiSchisandraGuide() {
 
         <div className="section-divider" />
 
+        {/* CTA */}
+        <section className="card-glass rounded-2xl p-6 sm:p-8 space-y-5" data-testid="section-cta">
+          <p className="font-display text-xl font-bold text-black">Get Hyperion Herbs Reishi and Schisandra With My Discount Code</p>
+          <div className="space-y-3 text-black/70 leading-relaxed text-sm">
+            <p>
+              There is no shortcut to the quality standard that makes these herbs worth taking. Hyperion Herbs is the only brand I recommend without reservation, properly extracted, Di Tao sourced, and produced without fillers, binders, or flow agents.
+            </p>
+          </div>
+          <div className="flex flex-col sm:flex-row items-center gap-4 pt-2">
+            <CopyCodeButton />
+            <Button asChild size="lg" className="btn-gradient-rose text-white border-0 rounded-full px-6 sm:px-8 py-4 text-sm tracking-widest uppercase font-semibold h-auto leading-relaxed w-full sm:w-auto">
+              <a href={SHOP_URL} target="_blank" rel="noopener noreferrer" data-testid="link-hyperion-shop" className="inline-flex items-center justify-center gap-2 flex-wrap">
+                Shop Hyperion Herbs <ExternalLink className="w-4 h-4 flex-shrink-0" />
+              </a>
+            </Button>
+          </div>
+          <p className="text-black/35 text-xs">
+            Visit{" "}
+            <a href={SHOP_URL} target="_blank" rel="noopener noreferrer" className="underline text-[#c4622d]/60 hover:text-[#8b3a1a] transition-colors">hyperionherbs.com/discount/eden10</a>
+          </p>
+        </section>
+
+        <div className="section-divider" />
+
         {/* Sources */}
         <section data-testid="section-sources">
           <SectionHeader icon={<BookOpen className="w-5 h-5" />} title="Further Reading and Sources" />
@@ -409,28 +433,6 @@ export default function ReishiSchisandraGuide() {
               </div>
             ))}
           </div>
-        </section>
-
-        {/* CTA */}
-        <section className="card-glass rounded-2xl p-6 sm:p-8 space-y-5" data-testid="section-cta">
-          <p className="font-display text-xl font-bold text-black">Get Hyperion Herbs Reishi and Schisandra With My Discount Code</p>
-          <div className="space-y-3 text-black/70 leading-relaxed text-sm">
-            <p>
-              There is no shortcut to the quality standard that makes these herbs worth taking. Hyperion Herbs is the only brand I recommend without reservation, properly extracted, Di Tao sourced, and produced without fillers, binders, or flow agents.
-            </p>
-          </div>
-          <div className="flex flex-col sm:flex-row items-center gap-4 pt-2">
-            <CopyCodeButton />
-            <Button asChild size="lg" className="btn-gradient-rose text-white border-0 rounded-full px-6 sm:px-8 py-4 text-sm tracking-widest uppercase font-semibold h-auto leading-relaxed w-full sm:w-auto">
-              <a href={SHOP_URL} target="_blank" rel="noopener noreferrer" data-testid="link-hyperion-shop" className="inline-flex items-center justify-center gap-2 flex-wrap">
-                Shop Hyperion Herbs <ExternalLink className="w-4 h-4 flex-shrink-0" />
-              </a>
-            </Button>
-          </div>
-          <p className="text-black/35 text-xs">
-            Visit{" "}
-            <a href={SHOP_URL} target="_blank" rel="noopener noreferrer" className="underline text-[#c4622d]/60 hover:text-[#8b3a1a] transition-colors">hyperionherbs.com/discount/eden10</a>
-          </p>
         </section>
 
         <div className="space-y-3">

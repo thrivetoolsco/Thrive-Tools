@@ -362,6 +362,33 @@ export default function JustThriveProbiotic() {
 
         <div className="section-divider" />
 
+        {/* Verdict + CTA */}
+        <section data-testid="section-verdict" className="card-glass rounded-2xl p-6 sm:p-8 space-y-5">
+          <p className="font-display text-xl font-bold text-black">Get Just Thrive With My Discount Code</p>
+          <div className="space-y-3 text-black/70 leading-relaxed text-sm">
+            <p>
+              If you've tried conventional probiotics and noticed nothing, this is why. The strains matter, the survivability matters, and the clinical evidence behind the specific combination matters.
+            </p>
+            <p>
+              Just Thrive is the product I recommend to everyone who asks me about probiotics. One capsule daily with your largest meal. Give it 90 days and track your digestion, immunity, and energy. The research is compelling. The personal experience across 14 years of recommending it to people is even more so.
+            </p>
+          </div>
+          <div className="flex flex-col sm:flex-row items-center gap-4 pt-2">
+            <CopyCodeButton />
+            <Button asChild size="lg" className="btn-gradient-rose text-white border-0 rounded-full px-6 sm:px-8 py-4 text-sm tracking-widest uppercase font-semibold h-auto leading-relaxed w-full sm:w-auto">
+              <a href={SHOP_URL} target="_blank" rel="noopener noreferrer" data-testid="link-just-thrive-shop" className="inline-flex items-center justify-center gap-2 flex-wrap">
+                Shop Just Thrive <ExternalLink className="w-4 h-4 flex-shrink-0" />
+              </a>
+            </Button>
+          </div>
+          <p className="text-black/35 text-xs">
+            Visit{" "}
+            <a href={SHOP_URL} target="_blank" rel="noopener noreferrer" className="underline text-[#c4622d]/60 hover:text-[#8b3a1a] transition-colors">justthrivehealth.com/THRIVETOOLS</a>
+          </p>
+        </section>
+
+        <div className="section-divider" />
+
         {/* Sources */}
         <section data-testid="section-sources">
           <SectionHeader icon={<BookOpen className="w-5 h-5" />} title="Further Reading and Sources" />
@@ -400,31 +427,6 @@ export default function JustThriveProbiotic() {
               </div>
             ))}
           </div>
-        </section>
-
-        {/* Verdict + CTA */}
-        <section data-testid="section-verdict" className="card-glass rounded-2xl p-6 sm:p-8 space-y-5">
-          <p className="font-display text-xl font-bold text-black">Get Just Thrive With My Discount Code</p>
-          <div className="space-y-3 text-black/70 leading-relaxed text-sm">
-            <p>
-              If you've tried conventional probiotics and noticed nothing, this is why. The strains matter, the survivability matters, and the clinical evidence behind the specific combination matters.
-            </p>
-            <p>
-              Just Thrive is the product I recommend to everyone who asks me about probiotics. One capsule daily with your largest meal. Give it 90 days and track your digestion, immunity, and energy. The research is compelling. The personal experience across 14 years of recommending it to people is even more so.
-            </p>
-          </div>
-          <div className="flex flex-col sm:flex-row items-center gap-4 pt-2">
-            <CopyCodeButton />
-            <Button asChild size="lg" className="btn-gradient-rose text-white border-0 rounded-full px-6 sm:px-8 py-4 text-sm tracking-widest uppercase font-semibold h-auto leading-relaxed w-full sm:w-auto">
-              <a href={SHOP_URL} target="_blank" rel="noopener noreferrer" data-testid="link-just-thrive-shop" className="inline-flex items-center justify-center gap-2 flex-wrap">
-                Shop Just Thrive <ExternalLink className="w-4 h-4 flex-shrink-0" />
-              </a>
-            </Button>
-          </div>
-          <p className="text-black/35 text-xs">
-            Visit{" "}
-            <a href={SHOP_URL} target="_blank" rel="noopener noreferrer" className="underline text-[#c4622d]/60 hover:text-[#8b3a1a] transition-colors">justthrivehealth.com/THRIVETOOLS</a>
-          </p>
         </section>
 
         <div className="space-y-3">

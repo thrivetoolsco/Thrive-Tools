@@ -361,6 +361,30 @@ export default function MagnesiumGuide() {
 
         <div className="section-divider" />
 
+        {/* CTA */}
+        <section className="card-glass rounded-2xl p-6 sm:p-8 space-y-5" data-testid="section-cta">
+          <p className="font-display text-xl font-bold text-black">Get BiOptimizers Magnesium Breakthrough With My Discount Code</p>
+          <div className="space-y-3 text-black/70 leading-relaxed text-sm">
+            <p>
+              Magnesium is the supplement I recommend before almost anything else, and Magnesium Breakthrough is the only product I trust to actually address deficiency comprehensively rather than partially. Seven bioavailable forms, clinically validated cofactors, free from artificial ingredients and heavy metals, and a 365-day money-back guarantee. There is no more complete magnesium supplement available anywhere.
+            </p>
+          </div>
+          <div className="flex flex-col sm:flex-row items-center gap-4 pt-2">
+            <CopyCodeButton />
+            <Button asChild size="lg" className="btn-gradient-rose text-white border-0 rounded-full px-6 sm:px-8 py-4 text-sm tracking-widest uppercase font-semibold h-auto leading-relaxed w-full sm:w-auto">
+              <a href={SHOP_URL} target="_blank" rel="noopener noreferrer" data-testid="link-bioptimizers-shop" className="inline-flex items-center justify-center gap-2 flex-wrap">
+                Shop Magnesium Breakthrough <ExternalLink className="w-4 h-4 flex-shrink-0" />
+              </a>
+            </Button>
+          </div>
+          <p className="text-black/35 text-xs">
+            Visit{" "}
+            <a href={SHOP_URL} target="_blank" rel="noopener noreferrer" className="underline text-[#c4622d]/60 hover:text-[#8b3a1a] transition-colors">bioptimizers.com/magnesium-breakthrough</a>
+          </p>
+        </section>
+
+        <div className="section-divider" />
+
         {/* Sources */}
         <section data-testid="section-sources">
           <SectionHeader icon={<BookOpen className="w-5 h-5" />} title="Further Reading and Sources" />
@@ -399,28 +423,6 @@ export default function MagnesiumGuide() {
               </div>
             ))}
           </div>
-        </section>
-
-        {/* CTA */}
-        <section className="card-glass rounded-2xl p-6 sm:p-8 space-y-5" data-testid="section-cta">
-          <p className="font-display text-xl font-bold text-black">Get BiOptimizers Magnesium Breakthrough With My Discount Code</p>
-          <div className="space-y-3 text-black/70 leading-relaxed text-sm">
-            <p>
-              Magnesium is the supplement I recommend before almost anything else, and Magnesium Breakthrough is the only product I trust to actually address deficiency comprehensively rather than partially. Seven bioavailable forms, clinically validated cofactors, free from artificial ingredients and heavy metals, and a 365-day money-back guarantee. There is no more complete magnesium supplement available anywhere.
-            </p>
-          </div>
-          <div className="flex flex-col sm:flex-row items-center gap-4 pt-2">
-            <CopyCodeButton />
-            <Button asChild size="lg" className="btn-gradient-rose text-white border-0 rounded-full px-6 sm:px-8 py-4 text-sm tracking-widest uppercase font-semibold h-auto leading-relaxed w-full sm:w-auto">
-              <a href={SHOP_URL} target="_blank" rel="noopener noreferrer" data-testid="link-bioptimizers-shop" className="inline-flex items-center justify-center gap-2 flex-wrap">
-                Shop Magnesium Breakthrough <ExternalLink className="w-4 h-4 flex-shrink-0" />
-              </a>
-            </Button>
-          </div>
-          <p className="text-black/35 text-xs">
-            Visit{" "}
-            <a href={SHOP_URL} target="_blank" rel="noopener noreferrer" className="underline text-[#c4622d]/60 hover:text-[#8b3a1a] transition-colors">bioptimizers.com/magnesium-breakthrough</a>
-          </p>
         </section>
 
         <div className="space-y-3">
