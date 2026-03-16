@@ -22,7 +22,7 @@ const blogPosts: BlogPost[] = [
     href: "/blog/magnesium-deficiency-supplement-guide",
     badge: "Supplements Guide",
     badgeColor: "bg-[#c4622d]/15 text-[#8b3a1a] border-[#c4622d]/25",
-    date: "March 16, 2026",
+    date: "November 5, 2025",
   },
   {
     id: "reishi-schisandra-daily-tonic-herbs",
