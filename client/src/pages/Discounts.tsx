@@ -13,6 +13,7 @@ import {
   Plane,
   ArrowLeft,
   ChevronDown,
+  UtensilsCrossed,
 } from "lucide-react";
 import { useState } from "react";
 
@@ -166,12 +167,6 @@ const healthTech: DiscountItem[] = [
     url: "https://www.healthandyoga.com/spike-acupressure-mat?",
   },
   {
-    name: "Inside Tracker",
-    description: "Personalized Diet & Supplement Plan Based on Your Biomarker Analysis – Blood, DNA, Biological Age",
-    code: "THRIVETOOLS",
-    url: "https://store.insidetracker.com/?sscid=a1k7_6e106",
-  },
-  {
     name: "Self Decode",
     description: "Detailed DNA Analysis",
     code: "THRIVETOOLS10",
@@ -200,6 +195,15 @@ const healthTech: DiscountItem[] = [
     description: "Breathe 528 hz",
     code: "thrive15",
     url: "https://lddy.no/1i55c",
+  },
+];
+
+const nontoxicCookware: DiscountItem[] = [
+  {
+    name: "Alva Cookware",
+    description: "Non toxic cookware",
+    code: "Follow This Link",
+    url: "https://www.awin1.com/cread.php?awinmid=50999&awinaffid=2421431",
   },
 ];
 
@@ -239,6 +243,12 @@ const ethicalClothing: DiscountItem[] = [
     description: "Grounding Sheets & Footwear",
     code: "THRIVENOW",
     url: "https://earthingharmony.com/?ref=hxaqgkso",
+  },
+  {
+    name: "Promeed",
+    description: "Organic bedding",
+    code: "Follow This Link",
+    url: "https://www.awin1.com/cread.php?awinmid=100833&awinaffid=2421431",
   },
 ];
 
@@ -524,6 +534,18 @@ export default function Discounts() {
             gradient="linear-gradient(135deg, rgba(212,168,103,0.2) 0%, rgba(201,122,142,0.2) 100%)"
             borderColor="rgba(212,168,103,0.2)"
             startIndex={vitaminsSupplements.length + healthTech.length}
+          />
+
+          <CategorySection
+            id="nontoxic-cookware"
+            icon={UtensilsCrossed}
+            title="Non Toxic Cookware"
+            subtitle="Clean cooking, no harmful coatings"
+            items={nontoxicCookware}
+            badgeColor="bg-green-400/20 text-green-800 border-green-400/30"
+            gradient="linear-gradient(135deg, rgba(134,187,120,0.2) 0%, rgba(100,160,90,0.2) 100%)"
+            borderColor="rgba(134,187,120,0.2)"
+            startIndex={vitaminsSupplements.length + healthTech.length + ethicalClothing.length}
           />
 
           <TravelsSection />
