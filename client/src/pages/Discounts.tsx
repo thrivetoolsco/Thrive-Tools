@@ -554,6 +554,16 @@ export default function Discounts() {
           />
 
           <TravelsSection />
+
+          <div className="flex justify-center pt-8 pb-2">
+            <button
+              onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+              data-testid="button-return-to-top"
+              className="inline-flex items-center gap-2 text-sm font-semibold text-[#c4622d] hover:text-[#8b3a1a] border border-[#c4622d]/30 hover:border-[#c4622d]/60 bg-[#c4622d]/8 hover:bg-[#c4622d]/15 px-6 py-2.5 rounded-full transition-colors"
+            >
+              Return to top
+            </button>
+          </div>
         </div>
       </section>
 
