@@ -16,6 +16,15 @@ interface BlogPost {
 
 const blogPosts: BlogPost[] = [
   {
+    id: "bacillus-subtilis-bacillus-coagulans-probiotic-guide",
+    title: "Why Most Probiotics Never Reach Your Gut. The Two Strains That Always Do",
+    excerpt: "Most probiotic supplements are dead before they reach your gut. Here's the science behind Bacillus subtilis and Bacillus coagulans, the two spore-forming strains that actually survive, and why they're in the only probiotic I personally recommend.",
+    href: "/blog/bacillus-subtilis-bacillus-coagulans-probiotic-guide",
+    badge: "Science Deep Dive",
+    badgeColor: "bg-[#c4622d]/15 text-[#8b3a1a] border-[#c4622d]/25",
+    date: "March 23, 2026",
+  },
+  {
     id: "energybits-spirulina-chlorella-review",
     title: "Spirulina and Chlorella: Why Low-Heat Processing Is the Difference Between a Superfood and an Expensive Disappointment",
     excerpt: "Most spirulina and chlorella supplements destroy their most valuable nutrients with high-heat drying. Here's what that means for your health, and why ENERGYbits is the only brand I trust for algae.",

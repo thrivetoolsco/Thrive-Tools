@@ -42,6 +42,7 @@ import MctOilGuide from "@/pages/reviews/MctOilGuide";
 import TonicHerbsGuide from "@/pages/reviews/TonicHerbsGuide";
 import EarthRunnersReview from "@/pages/reviews/EarthRunnersReview";
 import EnergyBitsReview from "@/pages/reviews/EnergyBitsReview";
+import JustThriveProbiotic from "@/pages/reviews/JustThriveProbiotic";
 
 function ScrollToTop() {
   const [location] = useLocation();
@@ -100,6 +101,8 @@ function Router() {
       <Route path="/blog/earthrunners-review" component={EarthRunnersReview} />
       <Route path="/product-reviews/energybits-spirulina-chlorella-review" component={EnergyBitsReview} />
       <Route path="/blog/energybits-spirulina-chlorella-review" component={EnergyBitsReview} />
+      <Route path="/product-reviews/bacillus-subtilis-bacillus-coagulans-probiotic-guide" component={JustThriveProbiotic} />
+      <Route path="/blog/bacillus-subtilis-bacillus-coagulans-probiotic-guide" component={JustThriveProbiotic} />
       <Route component={NotFound} />
     </Switch>
   );
