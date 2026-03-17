@@ -41,7 +41,7 @@ const vitaminsSupplements: DiscountItem[] = [
     name: "Superfeast",
     description: "Mushrooms & Tonic herbs (HyperionHerbs has better quality but Superfeast has a more complete selection + already made blends)",
     code: "THRIVE33",
-    url: "https://superfeast.com.au/?rfsn=7706129.0975bd&utm_source=refersion&utm_medium=affiliate&utm_campaign=7706129.0975bd",
+    url: "https://www.awin1.com/cread.php?awinmid=77776&awinaffid=2813108",
   },
   {
     name: "Justthrivehealth",
