@@ -16,6 +16,15 @@ interface BlogPost {
 
 const blogPosts: BlogPost[] = [
   {
+    id: "pumpkin-seed-oil-supplement-stack-benefits",
+    title: "Why Pumpkin Seed Oil Belongs in Every Serious Supplement Stack",
+    excerpt: "Brain-protective tryptophan, therapeutic zinc, prostate-specific phytosterols, and deep Kidney Jing nourishment, all in one daily oil. Here's the complete science and the only brand I recommend.",
+    href: "/blog/pumpkin-seed-oil-supplement-stack-benefits",
+    badge: "Product Review",
+    badgeColor: "bg-[#c4622d]/15 text-[#8b3a1a] border-[#c4622d]/25",
+    date: "March 16, 2026",
+  },
+  {
     id: "magnesium-deficiency-supplement-guide",
     title: "Magnesium: The Most Important Mineral You're Almost Certainly Deficient In",
     excerpt: "Over 31% of the global population is magnesium deficient, and most people supplementing are still deficient because they're taking the wrong forms. Here's the complete science and the only magnesium supplement I personally recommend.",

@@ -45,6 +45,7 @@ import EnergyBitsReview from "@/pages/reviews/EnergyBitsReview";
 import JustThriveProbiotic from "@/pages/reviews/JustThriveProbiotic";
 import ReishiSchisandraGuide from "@/pages/reviews/ReishiSchisandraGuide";
 import MagnesiumGuide from "@/pages/reviews/MagnesiumGuide";
+import PumpkinSeedOilGuide from "@/pages/reviews/PumpkinSeedOilGuide";
 
 function ScrollToTop() {
   const [location] = useLocation();
@@ -109,6 +110,8 @@ function Router() {
       <Route path="/blog/reishi-schisandra-daily-tonic-herbs" component={ReishiSchisandraGuide} />
       <Route path="/product-reviews/magnesium-deficiency-supplement-guide" component={MagnesiumGuide} />
       <Route path="/blog/magnesium-deficiency-supplement-guide" component={MagnesiumGuide} />
+      <Route path="/product-reviews/pumpkin-seed-oil-supplement-stack-benefits" component={PumpkinSeedOilGuide} />
+      <Route path="/blog/pumpkin-seed-oil-supplement-stack-benefits" component={PumpkinSeedOilGuide} />
       <Route component={NotFound} />
     </Switch>
   );
