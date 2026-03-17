@@ -9,7 +9,7 @@ const details = [
 
 export default function CacaoCeremonies() {
   return (
-    <PageLayout title="Cacao Ceremonies" backLabel="Events" backHref="/events">
+    <PageLayout showShare title="Cacao Ceremonies" backLabel="Events" backHref="/events">
       <div className="space-y-12" data-testid="section-cacao-ceremonies">
 
         <div className="card-glass rounded-md p-6 sm:p-8 space-y-4" data-testid="section-intro">

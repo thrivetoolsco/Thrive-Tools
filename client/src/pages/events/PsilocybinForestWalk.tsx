@@ -12,7 +12,7 @@ const included = [
 
 export default function PsilocybinForestWalk() {
   return (
-    <PageLayout title="Psilocybin Forest Walk" backLabel="Events" backHref="/events">
+    <PageLayout showShare title="Psilocybin Forest Walk" backLabel="Events" backHref="/events">
       <div className="space-y-12" data-testid="section-psilocybin-forest-walk">
 
         <div className="card-glass rounded-md p-6 sm:p-8 space-y-4" data-testid="section-intro">

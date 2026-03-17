@@ -17,7 +17,7 @@ const tableRows = [
 
 export default function Im8VsAg1() {
   return (
-    <PageLayout
+    <PageLayout showShare
       title="IM8 vs AG1 (2026): An Honest, Science-Based Comparison"
       subtitle="No sponsored bias. Just the facts."
       backLabel="Blog"

@@ -3,6 +3,7 @@ import Footer from "@/components/Footer";
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { ArrowLeft } from "lucide-react";
+import ShareButton from "@/components/ShareButton";
 
 interface PageLayoutProps {
   children: React.ReactNode;
@@ -10,9 +11,10 @@ interface PageLayoutProps {
   subtitle?: string;
   backLabel?: string;
   backHref?: string;
+  showShare?: boolean;
 }
 
-export default function PageLayout({ children, title, subtitle, backLabel = "Home", backHref = "/" }: PageLayoutProps) {
+export default function PageLayout({ children, title, subtitle, backLabel = "Home", backHref = "/", showShare = false }: PageLayoutProps) {
   return (
     <div className="min-h-screen bg-[#fdf6eb] text-[#3d1a28] overflow-x-hidden">
       <Navigation />
@@ -50,6 +52,11 @@ export default function PageLayout({ children, title, subtitle, backLabel = "Hom
               <p className="text-[#3d1a28]/60 text-lg sm:text-xl max-w-3xl leading-relaxed font-medium" data-testid="text-page-subtitle">
                 {subtitle}
               </p>
+            )}
+            {showShare && (
+              <div className="mt-5">
+                <ShareButton />
+              </div>
             )}
           </div>
         </section>

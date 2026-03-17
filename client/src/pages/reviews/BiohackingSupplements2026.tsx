@@ -14,7 +14,7 @@ function StackTip({ children }: { children: React.ReactNode }) {
 
 export default function BiohackingSupplements2026() {
   return (
-    <PageLayout
+    <PageLayout showShare
       title="Best Biohacking Supplements in 2026"
       subtitle="The Optimizer's Evidence-Based Guide"
       backLabel="Product Reviews"

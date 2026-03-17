@@ -17,7 +17,7 @@ function SectionHeader({ icon, title }: { icon: React.ReactNode; title: string }
 
 export default function EarthRunnersReview() {
   return (
-    <PageLayout
+    <PageLayout showShare
       title="EarthRunners Review (2026): The Only Sandals I Travel, Hike and Run In"
       subtitle="My honest take after years of daily use — why one pair covers everything."
       backLabel="Blog"

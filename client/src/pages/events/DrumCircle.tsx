@@ -10,7 +10,7 @@ const details = [
 
 export default function DrumCircle() {
   return (
-    <PageLayout title="Drum Circle Breathwork" backLabel="Events" backHref="/events">
+    <PageLayout showShare title="Drum Circle Breathwork" backLabel="Events" backHref="/events">
       <div className="space-y-12" data-testid="section-drum-circle">
 
         <div className="flex justify-center">

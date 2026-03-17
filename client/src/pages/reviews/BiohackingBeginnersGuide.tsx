@@ -67,7 +67,7 @@ const avoidItems = [
 
 export default function BiohackingBeginnersGuide() {
   return (
-    <PageLayout
+    <PageLayout showShare
       title="Biohacking for Beginners"
       subtitle="The Complete 2026 Starter Guide"
       backLabel="Product Reviews"

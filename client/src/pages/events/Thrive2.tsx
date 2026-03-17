@@ -10,7 +10,7 @@ const topics = [
 
 export default function Thrive2() {
   return (
-    <PageLayout
+    <PageLayout showShare
       title="Docu Evening: Thrive 2"
       subtitle="Thursday Night Docs: Let's Talk Solutions — Weekly at 6:30 PM"
       backLabel="Events"

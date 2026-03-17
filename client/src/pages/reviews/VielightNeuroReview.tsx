@@ -7,7 +7,7 @@ import vielightBrainImg from "@assets/image_1772841283095.png";
 
 export default function VielightNeuroReview() {
   return (
-    <PageLayout
+    <PageLayout showShare
       title="Vielight Neuro Review 2026"
       subtitle="Can Photobiomodulation Reverse Brain Aging?"
       backLabel="Products Reviews"

@@ -46,6 +46,7 @@ import JustThriveProbiotic from "@/pages/reviews/JustThriveProbiotic";
 import ReishiSchisandraGuide from "@/pages/reviews/ReishiSchisandraGuide";
 import MagnesiumGuide from "@/pages/reviews/MagnesiumGuide";
 import PumpkinSeedOilGuide from "@/pages/reviews/PumpkinSeedOilGuide";
+import Omega3Guide from "@/pages/reviews/Omega3Guide";
 
 function ScrollToTop() {
   const [location] = useLocation();
@@ -112,6 +113,8 @@ function Router() {
       <Route path="/blog/magnesium-deficiency-supplement-guide" component={MagnesiumGuide} />
       <Route path="/product-reviews/pumpkin-seed-oil-supplement-stack-benefits" component={PumpkinSeedOilGuide} />
       <Route path="/blog/pumpkin-seed-oil-supplement-stack-benefits" component={PumpkinSeedOilGuide} />
+      <Route path="/product-reviews/omega-3-complete-guide-epa-dha-fish-oil-vs-algae" component={Omega3Guide} />
+      <Route path="/blog/omega-3-complete-guide-epa-dha-fish-oil-vs-algae" component={Omega3Guide} />
       <Route component={NotFound} />
     </Switch>
   );

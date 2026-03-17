@@ -176,7 +176,7 @@ const chooseItems = [
 
 export default function SomaticResetGuide() {
   return (
-    <PageLayout
+    <PageLayout showShare
       title="Best Somatic Reset Techniques in 2026"
       subtitle="A Science-Backed Comparison Guide"
       backLabel="Product Reviews"

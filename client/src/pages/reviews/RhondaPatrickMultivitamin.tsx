@@ -5,7 +5,7 @@ import { ExternalLink, FlaskConical, User, ShieldCheck, Brain, AlertTriangle } f
 
 export default function RhondaPatrickMultivitamin() {
   return (
-    <PageLayout
+    <PageLayout showShare
       title={"Why Your \u201cHealthy\u201d Diet Probably Has Gaps"}
       subtitle="And What To Do About It"
       backLabel="Products Reviews"

@@ -58,7 +58,7 @@ function CopyCodeButton() {
 
 export default function ReishiSchisandraGuide() {
   return (
-    <PageLayout
+    <PageLayout showShare
       title="Reishi and Schisandra: The Only Two Plants Beneficial for Every Single Organ in Your Body"
       subtitle="The 4000 year old science behind why I take both every single day for life."
       backLabel="Blog"

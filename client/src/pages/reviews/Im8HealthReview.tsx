@@ -35,7 +35,7 @@ function Stars({ count }: { count: number }) {
 
 export default function Im8HealthReview() {
   return (
-    <PageLayout
+    <PageLayout showShare
       title="IM8 Health Review (2026): Is It Worth It?"
       subtitle="My honest, unsponsored take — ingredients, clinical evidence, taste, price, and real-world results."
       backLabel="Blog"

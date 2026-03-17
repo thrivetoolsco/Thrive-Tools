@@ -41,7 +41,7 @@ const organikaUrl = "https://organika.com/?rfsn=8403940.a276a1f&utm_source=refer
 
 export default function CreatineDosageForBrain() {
   return (
-    <PageLayout
+    <PageLayout showShare
       title="Why 5g of Creatine Isn't Enough for Your Brain: The Case for 10g"
       subtitle="2026 Edition"
       backLabel="Blog"

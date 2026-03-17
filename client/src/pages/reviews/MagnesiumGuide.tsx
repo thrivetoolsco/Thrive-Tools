@@ -67,7 +67,7 @@ function CopyCodeButton() {
 
 export default function MagnesiumGuide() {
   return (
-    <PageLayout
+    <PageLayout showShare
       title="Magnesium: The Most Important Mineral You're Almost Certainly Deficient In"
       subtitle="Over 31% of the global population is magnesium deficient, and most people supplementing are still deficient because they're taking the wrong forms. Here's the complete science and the only magnesium supplement I personally recommend."
       backLabel="Blog"

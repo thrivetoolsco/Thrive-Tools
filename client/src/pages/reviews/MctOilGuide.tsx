@@ -70,7 +70,7 @@ const tableRows = [
 
 export default function MctOilGuide() {
   return (
-    <PageLayout
+    <PageLayout showShare
       title="MCT Oil Benefits, C8 vs C10, and Oil vs Powder: The Complete Biohacker's Guide (2026)"
       subtitle="Everything you need to know, in one place"
       backLabel="Blog"

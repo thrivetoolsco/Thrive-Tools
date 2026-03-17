@@ -34,7 +34,7 @@ const organikaUrl = "https://oxygenadvantage.com";
 
 export default function MouthBreathingGuide() {
   return (
-    <PageLayout
+    <PageLayout showShare
       title="Mouth Breathing Is Quietly Ruining Your Health, And Most People Have No Idea They're Doing It"
       subtitle="2026 Edition"
       backLabel="Blog"

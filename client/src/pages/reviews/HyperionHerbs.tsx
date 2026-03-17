@@ -6,7 +6,7 @@ import hyperionReishiImg from "@assets/image_1772841296371.png";
 
 export default function HyperionHerbs() {
   return (
-    <PageLayout
+    <PageLayout showShare
       title="Hyperion Herbs"
       subtitle="Experience True Potency: Why I Recommend Hyperion Herbs for Tonic Herbs"
       backLabel="Products Reviews"

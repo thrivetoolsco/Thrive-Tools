@@ -17,6 +17,15 @@ interface BlogPost {
 
 const blogPosts: BlogPost[] = [
   {
+    id: "omega-3-complete-guide-epa-dha-fish-oil-vs-algae",
+    title: "Omega-3: Everything You Actually Need to Know",
+    excerpt: "EPA, DHA, fish oil vs algae oil, optimal dosing, and why most supplements fail. The complete science including the 2025 bioavailability research, the omega-3 index, and the only brand I recommend.",
+    href: "/blog/omega-3-complete-guide-epa-dha-fish-oil-vs-algae",
+    badge: "Supplements Guide",
+    badgeColor: "bg-[#c4622d]/15 text-[#8b3a1a] border-[#c4622d]/25",
+    date: "March 17, 2026",
+  },
+  {
     id: "pumpkin-seed-oil-supplement-stack-benefits",
     title: "Why Pumpkin Seed Oil Belongs in Every Serious Supplement Stack",
     excerpt: "Brain-protective tryptophan, therapeutic zinc, prostate-specific phytosterols, and deep Kidney Jing nourishment, all in one daily oil. Here's the complete science and the only brand I recommend.",

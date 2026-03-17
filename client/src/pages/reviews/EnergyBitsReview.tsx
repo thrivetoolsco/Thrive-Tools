@@ -28,7 +28,7 @@ function ResearchCard({ label, text }: { label: string; text: string }) {
 
 export default function EnergyBitsReview() {
   return (
-    <PageLayout
+    <PageLayout showShare
       title="Spirulina and Chlorella: Why Low-Heat Processing Is the Difference Between a Superfood and an Expensive Disappointment"
       subtitle="Most algae supplements destroy their most valuable nutrients before the bottle even reaches you."
       backLabel="Blog"

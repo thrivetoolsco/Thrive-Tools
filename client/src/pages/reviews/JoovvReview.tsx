@@ -7,7 +7,7 @@ import joovvBenefitsImg from "@assets/image_1772900170720.png";
 
 export default function JoovvReview() {
   return (
-    <PageLayout
+    <PageLayout showShare
       title="Is Joovv Worth It?"
       subtitle="A Deep Dive into the Benefits and Results (2026 Edition)"
       backLabel="Products Reviews"

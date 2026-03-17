@@ -16,6 +16,7 @@ import {
   UtensilsCrossed,
 } from "lucide-react";
 import { useState } from "react";
+import ShareButton from "@/components/ShareButton";
 
 interface DiscountItem {
   name: string;
@@ -470,7 +471,11 @@ export default function Discounts() {
             Top Biohacking Supplements, Longevity Tech & Conscious Fashion: 2026 Picks + Discount Codes
           </p>
 
-          <div className="flex flex-wrap gap-3 mt-8" data-testid="category-jump-nav">
+          <div className="mt-5">
+            <ShareButton />
+          </div>
+
+          <div className="flex flex-wrap gap-3 mt-6" data-testid="category-jump-nav">
             <a href="#vitamins-supplements" data-testid="jump-vitamins-supplements">
               <Button variant="outline" size="sm" className="rounded-full border-[#c4622d]/30 text-[#8b3a1a] bg-[#c4622d]/8 hover:bg-[#c4622d]/15 text-xs font-semibold px-4 h-9 gap-2">
                 <Pill className="w-3.5 h-3.5" /> Vitamins &amp; Supplements

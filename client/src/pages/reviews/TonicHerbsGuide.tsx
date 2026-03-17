@@ -75,7 +75,7 @@ function ProtocolCard({ label, text }: { label: string; text: string }) {
 
 export default function TonicHerbsGuide() {
   return (
-    <PageLayout
+    <PageLayout showShare
       title="Tonic Herbs: The Ancient System of Deep Nourishment Modern Biohackers Are Rediscovering"
       subtitle="2026 Edition"
       backLabel="Blog"

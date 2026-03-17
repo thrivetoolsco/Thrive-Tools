@@ -55,7 +55,7 @@ function CopyCodeButton() {
 
 export default function PumpkinSeedOilGuide() {
   return (
-    <PageLayout
+    <PageLayout showShare
       title="Why Pumpkin Seed Oil Belongs in Every Serious Supplement Stack"
       subtitle="Pumpkin seed oil delivers brain-protective tryptophan, therapeutic zinc, prostate-specific phytosterols, and deep Kidney Jing nourishment, all in one daily oil. Here's the science and the only brand I recommend."
       backLabel="Blog"

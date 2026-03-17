@@ -7,7 +7,7 @@ import foodForest2 from "@assets/food-1_1773178753025.jpeg";
 
 export default function FoodForest() {
   return (
-    <PageLayout title="Thriving Food Forest" backLabel="Events" backHref="/events">
+    <PageLayout showShare title="Thriving Food Forest" backLabel="Events" backHref="/events">
       <div className="space-y-12" data-testid="section-food-forest">
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6" data-testid="section-images">
           <img loading="lazy" decoding="async"

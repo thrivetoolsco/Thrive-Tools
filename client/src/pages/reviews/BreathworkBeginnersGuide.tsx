@@ -187,7 +187,7 @@ const safetyItems = [
 
 export default function BreathworkBeginnersGuide() {
   return (
-    <PageLayout
+    <PageLayout showShare
       title="Breathwork for Beginners"
       subtitle="The Complete Science-Backed Guide (2026)"
       backLabel="Product Reviews"

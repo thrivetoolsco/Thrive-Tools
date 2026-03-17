@@ -3,7 +3,7 @@ import ayahuascaImg from "@assets/Ayahuasca_Flyer-1_1773178753075.jpeg";
 
 export default function AyahuascaJourney() {
   return (
-    <PageLayout
+    <PageLayout showShare
       title="Ayahuasca Journey Peru"
       backLabel="Events"
       backHref="/events"

@@ -49,7 +49,7 @@ function CopyCodeButton() {
 
 export default function JustThriveProbiotic() {
   return (
-    <PageLayout
+    <PageLayout showShare
       title="Why Most Probiotics Never Reach Your Gut. The Two Strains That Always Do"
       subtitle="The survivability problem the probiotic industry quietly ignores, and the science behind the only strains that solve it."
       backLabel="Blog"
