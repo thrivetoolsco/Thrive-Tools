@@ -1,0 +1,289 @@
+const SITE = "https://thrivetools.co";
+
+export interface BlogPost {
+  id: string;
+  title: string;
+  excerpt: string;
+  href: string;
+  canonical: string;
+  badge: string;
+  badgeColor: string;
+  date: string;
+  lastmod: string;
+}
+
+export interface StaticRoute {
+  path: string;
+  changefreq: string;
+  priority: number;
+  lastmod?: string;
+}
+
+export interface EventRoute {
+  path: string;
+  changefreq: string;
+  priority: number;
+}
+
+export const SITE_URL = SITE;
+
+export const staticRoutes: StaticRoute[] = [
+  { path: "/", changefreq: "weekly", priority: 1.0 },
+  { path: "/blog", changefreq: "weekly", priority: 0.9 },
+  { path: "/discounts", changefreq: "weekly", priority: 0.9 },
+  { path: "/about", changefreq: "monthly", priority: 0.7 },
+  { path: "/contact", changefreq: "monthly", priority: 0.5 },
+  { path: "/breathwork", changefreq: "monthly", priority: 0.7 },
+  { path: "/events", changefreq: "weekly", priority: 0.7 },
+  { path: "/personalized-guidance", changefreq: "monthly", priority: 0.7 },
+  { path: "/somatic-reset", changefreq: "monthly", priority: 0.7 },
+];
+
+export const eventRoutes: EventRoute[] = [
+  { path: "/events/ayahuasca-journey", changefreq: "monthly", priority: 0.6 },
+  { path: "/events/drum-circle", changefreq: "monthly", priority: 0.6 },
+  { path: "/events/indoor-gardening", changefreq: "monthly", priority: 0.6 },
+  { path: "/events/thrive-1", changefreq: "monthly", priority: 0.6 },
+  { path: "/events/cacao-ceremonies", changefreq: "monthly", priority: 0.6 },
+  { path: "/events/food-forest", changefreq: "monthly", priority: 0.6 },
+  { path: "/events/psilocybin-forest-walk", changefreq: "monthly", priority: 0.6 },
+  { path: "/events/thrive-2", changefreq: "monthly", priority: 0.6 },
+  { path: "/retreats-workshops/blossoming-bliss", changefreq: "monthly", priority: 0.6 },
+  { path: "/retreats-workshops/spiritual-nutrition", changefreq: "monthly", priority: 0.6 },
+  { path: "/retreats-workshops/mescaline-wisdom", changefreq: "monthly", priority: 0.6 },
+  { path: "/retreats-workshops/inner-silence", changefreq: "monthly", priority: 0.6 },
+];
+
+export const blogPosts: BlogPost[] = [
+  {
+    id: "omega-3-complete-guide-epa-dha-fish-oil-vs-algae",
+    title: "Omega-3: Everything You Actually Need to Know",
+    excerpt: "EPA, DHA, fish oil vs algae oil, optimal dosing, and why most supplements fail. The complete science including the 2025 bioavailability research, the omega-3 index, and the only brand I recommend.",
+    href: "/blog/omega-3-complete-guide-epa-dha-fish-oil-vs-algae",
+    canonical: "/blog/omega-3-complete-guide-epa-dha-fish-oil-vs-algae",
+    badge: "Supplements Guide",
+    badgeColor: "bg-[#c4622d]/15 text-[#8b3a1a] border-[#c4622d]/25",
+    date: "March 17, 2026",
+    lastmod: "2026-03-17",
+  },
+  {
+    id: "pumpkin-seed-oil-supplement-stack-benefits",
+    title: "Why Pumpkin Seed Oil Belongs in Every Serious Supplement Stack",
+    excerpt: "Brain-protective tryptophan, therapeutic zinc, prostate-specific phytosterols, and deep Kidney Jing nourishment, all in one daily oil. Here's the complete science and the only brand I recommend.",
+    href: "/blog/pumpkin-seed-oil-supplement-stack-benefits",
+    canonical: "/blog/pumpkin-seed-oil-supplement-stack-benefits",
+    badge: "Product Review",
+    badgeColor: "bg-[#c4622d]/15 text-[#8b3a1a] border-[#c4622d]/25",
+    date: "March 16, 2026",
+    lastmod: "2026-03-16",
+  },
+  {
+    id: "magnesium-deficiency-supplement-guide",
+    title: "Magnesium: The Most Important Mineral You're Almost Certainly Deficient In",
+    excerpt: "Over 31% of the global population is magnesium deficient, and most people supplementing are still deficient because they're taking the wrong forms. Here's the complete science and the only magnesium supplement I personally recommend.",
+    href: "/blog/magnesium-deficiency-supplement-guide",
+    canonical: "/blog/magnesium-deficiency-supplement-guide",
+    badge: "Supplements Guide",
+    badgeColor: "bg-[#c4622d]/15 text-[#8b3a1a] border-[#c4622d]/25",
+    date: "November 5, 2025",
+    lastmod: "2025-11-05",
+  },
+  {
+    id: "reishi-schisandra-daily-tonic-herbs",
+    title: "Reishi and Schisandra: The Only Two Plants Beneficial for Every Single Organ in Your Body",
+    excerpt: "In 14 years of researching herbs I have never found a more definitive answer to \"what should I take every day for life?\" than these two plants. The 4000 year old science behind why they sit at the top of the highest tier of medicine.",
+    href: "/blog/reishi-schisandra-daily-tonic-herbs",
+    canonical: "/blog/reishi-schisandra-daily-tonic-herbs",
+    badge: "Tonic Herbs Guide",
+    badgeColor: "bg-green-500/15 text-green-300 border-green-500/25",
+    date: "March 15, 2026",
+    lastmod: "2026-03-15",
+  },
+  {
+    id: "bacillus-subtilis-bacillus-coagulans-probiotic-guide",
+    title: "Why Most Probiotics Never Reach Your Gut. The Two Strains That Always Do",
+    excerpt: "Most probiotic supplements are dead before they reach your gut. Here's the science behind Bacillus subtilis and Bacillus coagulans, the two spore-forming strains that actually survive, and why they're in the only probiotic I personally recommend.",
+    href: "/blog/bacillus-subtilis-bacillus-coagulans-probiotic-guide",
+    canonical: "/blog/bacillus-subtilis-bacillus-coagulans-probiotic-guide",
+    badge: "Science Deep Dive",
+    badgeColor: "bg-[#c4622d]/15 text-[#8b3a1a] border-[#c4622d]/25",
+    date: "March 8, 2026",
+    lastmod: "2026-03-08",
+  },
+  {
+    id: "energybits-spirulina-chlorella-review",
+    title: "Spirulina and Chlorella: Why Low-Heat Processing Is the Difference Between a Superfood and an Expensive Disappointment",
+    excerpt: "Most spirulina and chlorella supplements destroy their most valuable nutrients with high-heat drying. Here's what that means for your health, and why ENERGYbits is the only brand I trust for algae.",
+    href: "/product-reviews/energybits-spirulina-chlorella-review",
+    canonical: "/blog/energybits-spirulina-chlorella-review",
+    badge: "Honest Review",
+    badgeColor: "bg-[#c4622d]/15 text-[#8b3a1a] border-[#c4622d]/25",
+    date: "March 16, 2026",
+    lastmod: "2026-03-16",
+  },
+  {
+    id: "im8-vs-ag1",
+    title: "IM8 vs AG1 (2026): An Honest, Science-Based Comparison",
+    excerpt: "We break down ingredients, dosing transparency, quality certifications, taste, price, and who each product is actually right for. No sponsored bias, just the facts.",
+    href: "/product-reviews/im8-vs-ag1",
+    canonical: "/product-reviews/im8-vs-ag1",
+    badge: "Comparison",
+    badgeColor: "bg-amber-500/15 text-amber-300 border-amber-500/25",
+    date: "March 9, 2026",
+    lastmod: "2026-03-09",
+  },
+  {
+    id: "im8-health-review",
+    title: "IM8 Health Review (2026): Is It Worth It? An Honest, Science-Based Deep Dive",
+    excerpt: "Breaking down the science behind IM8's formula — does this all-in-one supplement actually deliver on its longevity promises? Here's what the research says.",
+    href: "/product-reviews/im8-health-review",
+    canonical: "/product-reviews/im8-health-review",
+    badge: "In-Depth Review",
+    badgeColor: "bg-[#c4622d]/15 text-[#8b3a1a] border-[#c4622d]/25",
+    date: "March 2, 2026",
+    lastmod: "2026-03-02",
+  },
+  {
+    id: "vielight-neuro-review",
+    title: "Vielight Neuro Review 2026: Can Photobiomodulation Reverse Brain Aging?",
+    excerpt: "Testing the Vielight Neuro Alpha and Gamma devices — examining the clinical research on transcranial photobiomodulation and my personal 6-month experience.",
+    href: "/product-reviews/vielight-neuro-review",
+    canonical: "/product-reviews/vielight-neuro-review",
+    badge: "Tech Review",
+    badgeColor: "bg-[#c4622d]/15 text-[#8b3a1a] border-[#c4622d]/25",
+    date: "February 23, 2026",
+    lastmod: "2026-02-23",
+  },
+  {
+    id: "hyperion-herbs",
+    title: "Experience True Potency: Why I Recommend Hyperion Herbs for Tonic Herbs",
+    excerpt: "Why most supplements fail, what makes Hyperion Herbs different, and my personal experience with their Reishi and Schisandra extracts.",
+    href: "/product-reviews/hyperion-herbs",
+    canonical: "/product-reviews/hyperion-herbs",
+    badge: "Herbal Review",
+    badgeColor: "bg-green-500/15 text-green-300 border-green-500/25",
+    date: "February 16, 2026",
+    lastmod: "2026-02-16",
+  },
+  {
+    id: "joovv-review",
+    title: "Is Joovv Worth It? A Deep Dive into the Benefits and Results (2026 Edition)",
+    excerpt: "Red light therapy has taken the biohacking world by storm — but is Joovv's premium price tag justified? My unfiltered experience after months of daily use.",
+    href: "/product-reviews/joovv-review",
+    canonical: "/product-reviews/joovv-review",
+    badge: "Tech Review",
+    badgeColor: "bg-red-500/15 text-red-300 border-red-500/25",
+    date: "February 9, 2026",
+    lastmod: "2026-02-09",
+  },
+  {
+    id: "earthrunners-review",
+    title: "EarthRunners Review (2026): The Only Sandals I Travel, Hike and Run In",
+    excerpt: "My honest take after years of daily use — the grounding technology, minimalist design, durability across hiking and jogging, and why one pair does it all.",
+    href: "/product-reviews/earthrunners-review",
+    canonical: "/blog/earthrunners-review",
+    badge: "Honest Review",
+    badgeColor: "bg-[#c4622d]/15 text-[#8b3a1a] border-[#c4622d]/25",
+    date: "February 2, 2026",
+    lastmod: "2026-02-02",
+  },
+  {
+    id: "tonic-herbs-guide",
+    title: "Tonic Herbs: The Ancient System of Deep Nourishment Modern Biohackers Are Rediscovering (2026)",
+    excerpt: "The highest class of medicine in Traditional Chinese Medicine, used daily for thousands of years to build vitality and extend longevity. The 7 most important herbs, the quality problem, and how to build your protocol.",
+    href: "/product-reviews/tonic-herbs-guide",
+    canonical: "/blog/tonic-herbs-guide",
+    badge: "Complete Guide",
+    badgeColor: "bg-[#c4622d]/15 text-[#8b3a1a] border-[#c4622d]/25",
+    date: "January 26, 2026",
+    lastmod: "2026-01-26",
+  },
+  {
+    id: "mct-oil-benefits-c8-vs-c10-powder-vs-oil",
+    title: "MCT Oil Benefits, C8 vs C10, and Oil vs Powder: The Complete Biohacker's Guide (2026)",
+    excerpt: "The real science behind MCT oil's benefits, the difference between C8 and C10, whether oil or powder is right for you, and the two products I recommend.",
+    href: "/product-reviews/mct-oil-benefits-c8-vs-c10-powder-vs-oil",
+    canonical: "/blog/mct-oil-benefits-c8-vs-c10-powder-vs-oil",
+    badge: "Complete Guide",
+    badgeColor: "bg-[#c4622d]/15 text-[#8b3a1a] border-[#c4622d]/25",
+    date: "January 19, 2026",
+    lastmod: "2026-01-19",
+  },
+  {
+    id: "mouth-breathing-mouth-taping",
+    title: "Mouth Breathing Is Quietly Ruining Your Health, And Most People Have No Idea They're Doing It",
+    excerpt: "Chronic mouth breathing silently destroys sleep quality, cognitive function, and facial structure. Here's the science and why mouth taping with MyoTape from Oxygen Advantage is the simplest fix.",
+    href: "/product-reviews/mouth-breathing-mouth-taping",
+    canonical: "/blog/mouth-breathing-mouth-taping",
+    badge: "Health Guide",
+    badgeColor: "bg-[#c4622d]/15 text-[#8b3a1a] border-[#c4622d]/25",
+    date: "January 12, 2026",
+    lastmod: "2026-01-12",
+  },
+  {
+    id: "creatine-dosage-for-brain",
+    title: "Why 5g of Creatine Isn't Enough for Your Brain: The Case for 10g (2026)",
+    excerpt: "You've been taking 5g of creatine for your muscles. But new research, backed by Dr. Rhonda Patrick, Andrew Huberman, and Dr. Darren Candow, shows your brain needs more. Here's why.",
+    href: "/product-reviews/creatine-dosage-for-brain",
+    canonical: "/blog/creatine-dosage-for-brain",
+    badge: "Deep Dive",
+    badgeColor: "bg-[#c4622d]/15 text-[#8b3a1a] border-[#c4622d]/25",
+    date: "January 5, 2026",
+    lastmod: "2026-01-05",
+  },
+  {
+    id: "somatic-reset-guide",
+    title: "Best Somatic Reset Techniques in 2026: A Science-Backed Comparison Guide",
+    excerpt: "7 techniques compared side by side: somatic breathwork, pendulation, TRE, grounding, cold exposure, and more. What each one does, the science behind it, and how to choose.",
+    href: "/product-reviews/somatic-reset-guide",
+    canonical: "/product-reviews/somatic-reset-guide",
+    badge: "Comparison Guide",
+    badgeColor: "bg-[#c4622d]/15 text-[#8b3a1a] border-[#c4622d]/25",
+    date: "December 29, 2025",
+    lastmod: "2025-12-29",
+  },
+  {
+    id: "breathwork-beginners-guide",
+    title: "Breathwork for Beginners: The Complete Science-Backed Guide (2026)",
+    excerpt: "5 techniques you can start today, backed by peer-reviewed research on stress, sleep, cognition, and HRV. No equipment, no experience, no courses needed.",
+    href: "/product-reviews/breathwork-beginners-guide",
+    canonical: "/product-reviews/breathwork-beginners-guide",
+    badge: "Beginner's Guide",
+    badgeColor: "bg-[#c4622d]/15 text-[#8b3a1a] border-[#c4622d]/25",
+    date: "December 22, 2025",
+    lastmod: "2025-12-22",
+  },
+  {
+    id: "biohacking-beginners-guide",
+    title: "Biohacking for Beginners: The Complete 2026 Starter Guide",
+    excerpt: "No jargon, no overwhelm. A clear, step-by-step framework for taking control of your biology, from free foundations to the right supplements, in the right order.",
+    href: "/product-reviews/biohacking-beginners-guide",
+    canonical: "/product-reviews/biohacking-beginners-guide",
+    badge: "Beginner's Guide",
+    badgeColor: "bg-[#c4622d]/15 text-[#8b3a1a] border-[#c4622d]/25",
+    date: "December 15, 2025",
+    lastmod: "2025-12-15",
+  },
+  {
+    id: "biohacking-supplements-2026",
+    title: "Best Biohacking Supplements in 2026: The Optimizer's Evidence-Based Guide",
+    excerpt: "The real, research-backed compounds that elite biohackers keep coming back to. Five brands, five layers, one complete stack with the science to back it up.",
+    href: "/product-reviews/biohacking-supplements-2026",
+    canonical: "/product-reviews/biohacking-supplements-2026",
+    badge: "Full Stack Guide",
+    badgeColor: "bg-[#c4622d]/15 text-[#8b3a1a] border-[#c4622d]/25",
+    date: "December 8, 2025",
+    lastmod: "2025-12-08",
+  },
+  {
+    id: "rhonda-patrick-multivitamin",
+    title: "Why Your \"Healthy\" Diet Probably Has Gaps. And What To Do About It",
+    excerpt: "Dr. Rhonda Patrick takes a multivitamin every single day. Here's the science behind why, from the Triage Theory to the COSMOS trials, and what to look for in a quality supplement.",
+    href: "/product-reviews/rhonda-patrick-multivitamin",
+    canonical: "/product-reviews/rhonda-patrick-multivitamin",
+    badge: "Science-Backed",
+    badgeColor: "bg-[#c4622d]/15 text-[#8b3a1a] border-[#c4622d]/25",
+    date: "December 1, 2025",
+    lastmod: "2025-12-01",
+  },
+];

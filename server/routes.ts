@@ -1,7 +1,7 @@
 import type { Express } from "express";
 import { type Server } from "http";
 import rateLimit from "express-rate-limit";
-import path from "path";
+import { blogPosts, staticRoutes, eventRoutes, SITE_URL } from "../shared/site-routes";
 
 const contactRateLimit = rateLimit({
   windowMs: 15 * 60 * 1000,
@@ -34,13 +34,43 @@ export async function registerRoutes(
   httpServer: Server,
   app: Express
 ): Promise<Server> {
-  const sitemapPath = process.env.NODE_ENV === "production"
-    ? path.resolve(__dirname, "public/sitemap.xml")
-    : path.resolve(process.cwd(), "client/public/sitemap.xml");
-
   app.get("/sitemap.xml", (_req, res) => {
-    res.header("Content-Type", "application/xml");
-    res.sendFile(sitemapPath);
+    const today = new Date().toISOString().split("T")[0];
+
+    const staticEntries = staticRoutes.map((r) => `
+  <url>
+    <loc>${SITE_URL}${r.path}</loc>
+    <lastmod>${r.lastmod ?? today}</lastmod>
+    <changefreq>${r.changefreq}</changefreq>
+    <priority>${r.priority.toFixed(1)}</priority>
+  </url>`).join("");
+
+    const eventEntries = eventRoutes.map((r) => `
+  <url>
+    <loc>${SITE_URL}${r.path}</loc>
+    <lastmod>${today}</lastmod>
+    <changefreq>${r.changefreq}</changefreq>
+    <priority>${r.priority.toFixed(1)}</priority>
+  </url>`).join("");
+
+    const blogEntries = blogPosts.map((p) => `
+  <url>
+    <loc>${SITE_URL}${p.canonical}</loc>
+    <lastmod>${p.lastmod}</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>`).join("");
+
+    const xml = `<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+${staticEntries}
+${eventEntries}
+${blogEntries}
+</urlset>`;
+
+    res.setHeader("Content-Type", "application/xml; charset=utf-8");
+    res.setHeader("Cache-Control", "public, max-age=3600");
+    res.send(xml);
   });
 
   app.post("/api/contact", contactRateLimit, async (req, res) => {
