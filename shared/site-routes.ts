@@ -56,6 +56,17 @@ export const eventRoutes: EventRoute[] = [
 
 export const blogPosts: BlogPost[] = [
   {
+    id: "cordyceps-cs4-vs-wild-cordyceps-sinensis",
+    title: "Cordyceps CS-4 vs Wild Cordyceps Sinensis: Is the Price Difference Worth It?",
+    excerpt: "Wild Cordyceps sinensis can cost $50,000 per kilo. CS-4 costs a fraction of that, and the chemistry research may surprise you. Here is my honest verdict after 10 years of daily use.",
+    href: "/blog/cordyceps-cs4-vs-wild-cordyceps-sinensis",
+    canonical: "/blog/cordyceps-cs4-vs-wild-cordyceps-sinensis",
+    badge: "Tonic Herbs Guide",
+    badgeColor: "bg-[#c4622d]/15 text-[#8b3a1a] border-[#c4622d]/25",
+    date: "March 18, 2026",
+    lastmod: "2026-03-18",
+  },
+  {
     id: "omega-3-complete-guide-epa-dha-fish-oil-vs-algae",
     title: "Omega-3: Everything You Actually Need to Know",
     excerpt: "EPA, DHA, fish oil vs algae oil, optimal dosing, and why most supplements fail. The complete science including the 2025 bioavailability research, the omega-3 index, and the only brand I recommend.",
