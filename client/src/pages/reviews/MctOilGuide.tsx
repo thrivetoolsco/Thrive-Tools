@@ -323,13 +323,7 @@ export default function MctOilGuide() {
 
         <section data-testid="section-products">
           <SectionHeader icon={<Zap className="w-5 h-5" />} title="The Products I Recommend at ThriveTools" />
-          <div className="grid sm:grid-cols-2 gap-6">
-            <ProductCard
-              title="Bulletproof Brain Octane C8 MCT Oil"
-              description="Bulletproof is the brand that put MCT oil on the mainstream biohacking map, and their Brain Octane C8 MCT Oil remains the benchmark for quality in the liquid category. Triple-distilled C8 MCT oil, expeller-pressed, sourced completely from coconuts, and not mixed with any unnecessary chemicals. Pure C8, nothing else, delivering the fastest possible ketone conversion and the strongest acute cognitive effect of any MCT oil on the market. The product I personally use for fasted mornings, bulletproof coffee, and pre-cognitive-work fuel."
-              linkHref="https://bulletproof.fdf2.net/DKAdJ2"
-              linkLabel="Shop Bulletproof C8 MCT Oil"
-            />
+          <div className="grid gap-6">
             <ProductCard
               title="Bulletproof MCT Oil Powder"
               description="When you need the benefits of MCT oil in a format that travels, blends creamlessly into coffee or shakes, and is gentler on the gut, Bulletproof's MCT Oil Powder is the powder I trust. Same commitment to quality sourcing and purity as their liquid oil, in a convenient powder form that creates a rich, creamy texture without the oily layer. Ideal for travel days, office mornings, and anyone who found the liquid form too hard on their digestive system when starting out."
