@@ -18,7 +18,7 @@ export default function InnerSilence() {
       backLabel="Home"
       backHref="/"
       seo={{
-        title: "Inner Silence Retreat | Deep Meditation & Stillness — Thrive Tools",
+        title: "Inner Silence: A Deep Meditation Retreat | Thrive Tools",
         description: "The Inner Silence retreat with Eden Laraki. A guided, immersive experience in meditation, stillness, and disconnection from the noise of modern life.",
         canonical: "/retreats-workshops/inner-silence",
       }}

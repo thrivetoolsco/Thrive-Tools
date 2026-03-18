@@ -21,7 +21,7 @@ export default function SpiritualNutrition() {
       backLabel="Home"
       backHref="/"
       seo={{
-        title: "Spiritual Nutrition Retreat | Food, Energy & Consciousness — Thrive Tools",
+        title: "Spiritual Nutrition Retreat | Thrive Tools",
         description: "Spiritual Nutrition with Eden Laraki. Explore the connection between food, frequency, and consciousness. Learn to nourish your body and spirit with intention.",
         canonical: "/retreats-workshops/spiritual-nutrition",
       }}

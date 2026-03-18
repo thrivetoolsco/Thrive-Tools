@@ -17,7 +17,7 @@ export default function MescalineWisdom() {
       backLabel="Home"
       backHref="/"
       seo={{
-        title: "Wachuma: Heart Centered Medicine | Plant Medicine Retreat — Thrive Tools",
+        title: "Wachuma San Pedro Retreat | Heart Medicine | Thrive Tools",
         description: "A ceremonial Wachuma (San Pedro cactus) retreat with Eden Laraki. Heart-centered, deeply healing plant medicine for emotional clearing and expanded awareness.",
         canonical: "/retreats-workshops/mescaline-wisdom",
       }}

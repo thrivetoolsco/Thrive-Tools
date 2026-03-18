@@ -20,7 +20,7 @@ export default function IndoorGardening() {
       backLabel="Events"
       backHref="/events"
       seo={{
-        title: "Indoor Edible Gardening Workshop | Thrive Tools with Eden Laraki",
+        title: "Indoor Edible Gardening Workshop | Thrive Tools",
         description: "Learn to grow your own food indoors. A hands-on workshop covering edible plants, setup, soil health, and growing food in any living space.",
         canonical: "/events/indoor-gardening",
       }}

@@ -18,7 +18,7 @@ export default function PsilocybinForestWalk() {
       backLabel="Events"
       backHref="/events"
       seo={{
-        title: "Psilocybin Forest Walk | Guided Nature Immersion — Thrive Tools",
+        title: "Psilocybin Forest Walk | Thrive Tools",
         description: "A guided psilocybin forest walk with Eden Laraki. A ceremonial, nature-immersed experience for healing, clarity, and reconnection.",
         canonical: "/events/psilocybin-forest-walk",
       }}

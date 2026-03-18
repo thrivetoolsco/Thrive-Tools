@@ -21,8 +21,8 @@ export default function EarthRunnersReview() {
       title="EarthRunners Review (2026): The Only Sandals I Travel, Hike and Run In"
       subtitle="My honest take after years of daily use — why one pair covers everything."
       seo={{
-        title: "EarthRunners Review (2026): The Only Sandals I Travel, Hike, and Run In | Thrive Tools",
-        description: "My honest review of EarthRunners grounding sandals after years of daily use. Why they're the only pair I own, what makes them different, and who they're best for.",
+        title: "EarthRunners Review 2026: Grounding Sandals | Thrive Tools",
+        description: "Honest EarthRunners review after years of daily use. Why they are the only pair I own, what makes them different, and who they are best for.",
         canonical: "/blog/earthrunners-review",
         ogType: "article",
         datePublished: "2026-02-01",

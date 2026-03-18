@@ -18,7 +18,7 @@ export default function BiohackingSupplements2026() {
       title="Best Biohacking Supplements in 2026"
       subtitle="The Optimizer's Evidence-Based Guide"
       seo={{
-        title: "Best Biohacking Supplements in 2026: The Evidence-Based Guide | Thrive Tools",
+        title: "Best Biohacking Supplements 2026 | Thrive Tools",
         description: "The most effective biohacking supplements ranked by evidence: creatine, magnesium, omega-3s, adaptogens, and more. What to take, why, and in what doses.",
         canonical: "/product-reviews/biohacking-supplements-2026",
         ogType: "article",

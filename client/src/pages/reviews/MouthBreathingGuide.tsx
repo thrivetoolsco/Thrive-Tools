@@ -38,8 +38,8 @@ export default function MouthBreathingGuide() {
       title="Mouth Breathing Is Quietly Ruining Your Health, And Most People Have No Idea They're Doing It"
       subtitle="2026 Edition"
       seo={{
-        title: "Mouth Breathing Is Quietly Ruining Your Health | Thrive Tools",
-        description: "The science of mouth breathing, nasal physiology, and why mouth taping works. What Andrew Huberman, Patrick McKeown, and James Nestor say — and how to start tonight.",
+        title: "Mouth Breathing Is Ruining Your Health | Thrive Tools",
+        description: "The science of mouth breathing and nasal physiology. What Huberman, McKeown, and Nestor say about mouth taping — and how to fix it starting tonight.",
         canonical: "/blog/mouth-breathing-mouth-taping",
         ogType: "article",
         datePublished: "2025-12-01",

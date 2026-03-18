@@ -50,8 +50,8 @@ export default function BlossomingBliss() {
       backLabel="Home"
       backHref="/"
       seo={{
-        title: "Blossoming Bliss Transformation Retreat | Thrive Tools with Eden Laraki",
-        description: "The Blossoming Bliss Transformation retreat with Eden Laraki. A deeply immersive journey for inner transformation, healing, and expanding into your fullest self.",
+        title: "Blossoming Bliss Retreat | Thrive Tools",
+        description: "A deeply immersive retreat with Eden Laraki for inner transformation, healing, and expanding into your fullest self. Plant medicine, breathwork, and more.",
         canonical: "/retreats-workshops/blossoming-bliss",
       }}
     >

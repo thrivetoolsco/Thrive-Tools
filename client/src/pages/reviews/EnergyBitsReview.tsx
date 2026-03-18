@@ -32,8 +32,8 @@ export default function EnergyBitsReview() {
       title="Spirulina and Chlorella: Why Low-Heat Processing Is the Difference Between a Superfood and an Expensive Disappointment"
       subtitle="Most algae supplements destroy their most valuable nutrients before the bottle even reaches you."
       seo={{
-        title: "Spirulina and Chlorella: Why Low-Heat Processing Makes All the Difference | Thrive Tools",
-        description: "Most spirulina and chlorella supplements destroy their nutrients before they reach you. Why low-heat processing matters, what ENERGYbits does differently, and the real benefits of algae.",
+        title: "ENERGYbits Spirulina & Chlorella Review | Thrive Tools",
+        description: "Most algae supplements destroy nutrients with high heat. Why ENERGYbits low-heat processing matters and why it is the only brand I trust for spirulina.",
         canonical: "/blog/energybits-spirulina-chlorella-review",
         ogType: "article",
         datePublished: "2026-03-16",

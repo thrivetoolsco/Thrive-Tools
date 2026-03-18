@@ -62,8 +62,8 @@ export default function ReishiSchisandraGuide() {
       title="Reishi and Schisandra: The Only Two Plants Beneficial for Every Single Organ in Your Body"
       subtitle="The 4000 year old science behind why I take both every single day for life."
       seo={{
-        title: "Reishi and Schisandra: The Only Two Plants Beneficial for Every Organ | Thrive Tools",
-        description: "The 4000-year science behind reishi and schisandra. Two plants used in every organ system in the body — the research, the dosing, and why I take both every single day.",
+        title: "Reishi & Schisandra: Daily Tonic Herbs Guide | Thrive Tools",
+        description: "The 4000-year science behind reishi and schisandra — two plants that benefit every organ system. The research, dosing, and why I take both every day.",
         canonical: "/blog/reishi-schisandra-daily-tonic-herbs",
         ogType: "article",
         datePublished: "2026-03-15",

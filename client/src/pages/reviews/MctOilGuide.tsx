@@ -74,8 +74,8 @@ export default function MctOilGuide() {
       title="MCT Oil Benefits, C8 vs C10, and Oil vs Powder: The Complete Biohacker's Guide (2026)"
       subtitle="Everything you need to know, in one place"
       seo={{
-        title: "MCT Oil: C8 vs C10, Oil vs Powder — The Complete Biohacker's Guide (2026) | Thrive Tools",
-        description: "Everything you need to know about MCT oil. C8 vs C10, oil vs powder, ketone production, cognitive benefits, dosing, and the best products. A complete evidence-based guide.",
+        title: "MCT Oil: C8 vs C10, Oil vs Powder Guide | Thrive Tools",
+        description: "What you need to know about MCT oil: C8 vs C10, oil vs powder, ketone production, cognitive benefits, and dosing. A complete evidence-based guide.",
         canonical: "/blog/mct-oil-benefits-c8-vs-c10-powder-vs-oil",
         ogType: "article",
         datePublished: "2026-01-01",

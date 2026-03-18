@@ -59,8 +59,8 @@ export default function PumpkinSeedOilGuide() {
       title="Why Pumpkin Seed Oil Belongs in Every Serious Supplement Stack"
       subtitle="Pumpkin seed oil delivers brain-protective tryptophan, therapeutic zinc, prostate-specific phytosterols, and deep Kidney Jing nourishment, all in one daily oil. Here's the science and the only brand I recommend."
       seo={{
-        title: "Why Pumpkin Seed Oil Belongs in Every Serious Supplement Stack | Thrive Tools",
-        description: "Pumpkin seed oil — tryptophan, zinc, phytosterols, and Kidney Jing nourishment in one daily oil. The science behind its benefits and the only brand worth buying (Styrian Gold, code THRIVETOOLS-10).",
+        title: "Pumpkin Seed Oil: Complete Supplement Guide | Thrive Tools",
+        description: "Pumpkin seed oil: tryptophan, zinc, phytosterols, and Kidney Jing nourishment in one daily oil. The science, benefits, and the only brand I recommend.",
         canonical: "/blog/pumpkin-seed-oil-supplement-stack-benefits",
         ogType: "article",
         datePublished: "2026-03-16",

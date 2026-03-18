@@ -15,7 +15,7 @@ export default function CacaoCeremonies() {
       backLabel="Events"
       backHref="/events"
       seo={{
-        title: "Cacao Ceremonies | Heart-Opening Plant Medicine — Thrive Tools",
+        title: "Cacao Ceremonies | Plant Medicine | Thrive Tools",
         description: "Sacred cacao ceremony with Eden Laraki. Heart-opening, ceremonial-grade cacao with breathwork, meditation, and community connection.",
         canonical: "/events/cacao-ceremonies",
       }}

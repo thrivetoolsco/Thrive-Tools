@@ -71,8 +71,8 @@ export default function MagnesiumGuide() {
       title="Magnesium: The Most Important Mineral You're Almost Certainly Deficient In"
       subtitle="Over 31% of the global population is magnesium deficient, and most people supplementing are still deficient because they're taking the wrong forms. Here's the complete science and the only magnesium supplement I personally recommend."
       seo={{
-        title: "Magnesium Deficiency: The Most Important Mineral You're Almost Certainly Lacking | Thrive Tools",
-        description: "31% of people are magnesium deficient. Most supplementing are still deficient because they take the wrong forms. The complete science of magnesium: types, dosing, and the only brand I recommend.",
+        title: "Magnesium Deficiency Guide: Types & Dosing | Thrive Tools",
+        description: "Over 31% of people are magnesium deficient, and most take the wrong forms. The complete science: types, bioavailability, dosing, and the brand I recommend.",
         canonical: "/blog/magnesium-deficiency-supplement-guide",
         ogType: "article",
         datePublished: "2025-11-05",

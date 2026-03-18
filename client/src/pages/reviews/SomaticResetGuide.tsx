@@ -180,7 +180,7 @@ export default function SomaticResetGuide() {
       title="Best Somatic Reset Techniques in 2026"
       subtitle="A Science-Backed Comparison Guide"
       seo={{
-        title: "Best Somatic Reset Techniques in 2026: A Science-Backed Guide | Thrive Tools",
+        title: "Best Somatic Reset Techniques 2026 | Thrive Tools",
         description: "The most effective somatic reset techniques for nervous system regulation in 2026. TRE, cold exposure, breathwork, and vagal toning — what the research shows.",
         canonical: "/product-reviews/somatic-reset-guide",
         ogType: "article",

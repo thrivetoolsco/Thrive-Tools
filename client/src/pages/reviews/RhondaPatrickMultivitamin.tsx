@@ -10,7 +10,7 @@ export default function RhondaPatrickMultivitamin() {
       subtitle="And What To Do About It"
       seo={{
         title: "Why Your 'Healthy' Diet Probably Has Gaps | Thrive Tools",
-        description: "Most people eating 'healthy' still have micronutrient gaps. The science behind why, Dr. Rhonda Patrick's multivitamin recommendations, and what to actually do about it.",
+        description: "Most people eating healthy still have micronutrient gaps. The science behind why, what Dr. Rhonda Patrick recommends for multivitamins, and what to do.",
         canonical: "/product-reviews/rhonda-patrick-multivitamin",
         ogType: "article",
         datePublished: "2025-09-01",

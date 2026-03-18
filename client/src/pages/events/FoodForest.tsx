@@ -13,7 +13,7 @@ export default function FoodForest() {
       backLabel="Events"
       backHref="/events"
       seo={{
-        title: "Thriving Food Forest Event | Permaculture & Regenerative Growing — Thrive Tools",
+        title: "Thriving Food Forest | Permaculture Event | Thrive Tools",
         description: "An immersive day in a thriving food forest. Learn permaculture principles, regenerative food growing, and how to design your own edible ecosystem.",
         canonical: "/events/food-forest",
       }}

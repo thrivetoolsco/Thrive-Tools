@@ -11,7 +11,7 @@ export default function VielightNeuroReview() {
       title="Vielight Neuro Review 2026"
       subtitle="Can Photobiomodulation Reverse Brain Aging?"
       seo={{
-        title: "Vielight Neuro Review 2026: Can Photobiomodulation Reverse Brain Aging? | Thrive Tools",
+        title: "Vielight Neuro 2026: Brain Light Therapy | Thrive Tools",
         description: "A science-backed review of the Vielight Neuro. What the research says about near-infrared photobiomodulation for brain aging, cognition, and neuroprotection.",
         canonical: "/product-reviews/vielight-neuro-review",
         ogType: "article",

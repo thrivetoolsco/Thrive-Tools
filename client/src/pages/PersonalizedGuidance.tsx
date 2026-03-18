@@ -8,7 +8,7 @@ export default function PersonalizedGuidance() {
     <PageLayout
       title="Personalized Guidance"
       seo={{
-        title: "Personalized Wellness Guidance | One-on-One with Eden Laraki — Thrive Tools",
+        title: "Personalized Wellness Guidance | Thrive Tools",
         description: "Work directly with Eden Laraki to build a personalized supplement stack, biohacking protocol, and wellness plan tailored to your biology and goals.",
         canonical: "/personalized-guidance",
       }}

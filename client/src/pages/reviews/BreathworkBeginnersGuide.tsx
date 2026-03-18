@@ -191,7 +191,7 @@ export default function BreathworkBeginnersGuide() {
       title="Breathwork for Beginners"
       subtitle="The Complete Science-Backed Guide (2026)"
       seo={{
-        title: "Breathwork for Beginners: The Complete Science-Backed Guide (2026) | Thrive Tools",
+        title: "Breathwork for Beginners: A Complete Guide | Thrive Tools",
         description: "A science-backed introduction to breathwork. Box breathing, Wim Hof, physiological sighs, and nasal breathing — what the research shows and how to start.",
         canonical: "/product-reviews/breathwork-beginners-guide",
         ogType: "article",

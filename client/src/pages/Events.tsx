@@ -21,7 +21,7 @@ export default function Events() {
     <PageLayout
       title="Events & Workshops"
       seo={{
-        title: "Wellness Events & Workshops | Breathwork, Plant Medicine & Biohacking — Thrive Tools",
+        title: "Wellness Events & Workshops | Thrive Tools",
         description: "Upcoming and past wellness events by Eden Laraki. Breathwork circles, plant medicine journeys, documentary evenings, and community workshops.",
         canonical: "/events",
       }}
