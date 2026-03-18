@@ -36,7 +36,7 @@ export default function EnergyBitsReview() {
         description: "Most algae supplements destroy nutrients with high heat. Why ENERGYbits low-heat processing matters and why it is the only brand I trust for spirulina.",
         canonical: "/blog/energybits-spirulina-chlorella-review",
         ogType: "article",
-        datePublished: "2026-03-16",
+        datePublished: "2026-02-04",
       }}
       backLabel="Blog"
       backHref="/blog"

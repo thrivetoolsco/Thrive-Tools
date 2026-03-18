@@ -66,7 +66,7 @@ export default function ReishiSchisandraGuide() {
         description: "The 4000-year science behind reishi and schisandra — two plants that benefit every organ system. The research, dosing, and why I take both every day.",
         canonical: "/blog/reishi-schisandra-daily-tonic-herbs",
         ogType: "article",
-        datePublished: "2026-03-15",
+        datePublished: "2026-02-18",
       }}
       backLabel="Blog"
       backHref="/blog"

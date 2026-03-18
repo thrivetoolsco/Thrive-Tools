@@ -63,7 +63,7 @@ export default function PumpkinSeedOilGuide() {
         description: "Pumpkin seed oil: tryptophan, zinc, phytosterols, and Kidney Jing nourishment in one daily oil. The science, benefits, and the only brand I recommend.",
         canonical: "/blog/pumpkin-seed-oil-supplement-stack-benefits",
         ogType: "article",
-        datePublished: "2026-03-16",
+        datePublished: "2026-03-04",
       }}
       backLabel="Blog"
       backHref="/blog"

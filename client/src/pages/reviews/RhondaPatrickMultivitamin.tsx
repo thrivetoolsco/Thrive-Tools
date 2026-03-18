@@ -13,7 +13,7 @@ export default function RhondaPatrickMultivitamin() {
         description: "Most people eating healthy still have micronutrient gaps. The science behind why, what Dr. Rhonda Patrick recommends for multivitamins, and what to do.",
         canonical: "/product-reviews/rhonda-patrick-multivitamin",
         ogType: "article",
-        datePublished: "2025-09-01",
+        datePublished: "2025-10-22",
       }}
       backLabel="Products Reviews"
       backHref="/product-reviews"

@@ -42,7 +42,7 @@ export default function MouthBreathingGuide() {
         description: "The science of mouth breathing and nasal physiology. What Huberman, McKeown, and Nestor say about mouth taping — and how to fix it starting tonight.",
         canonical: "/blog/mouth-breathing-mouth-taping",
         ogType: "article",
-        datePublished: "2025-12-01",
+        datePublished: "2025-12-03",
       }}
       backLabel="Blog"
       backHref="/blog"

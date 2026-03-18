@@ -43,7 +43,7 @@ export default function Im8HealthReview() {
         description: "Honest, unsponsored IM8 review. Ingredients, clinical trial evidence, taste, price, and real-world results after daily use. Use code THRIVE10 for 10% off.",
         canonical: "/product-reviews/im8-health-review",
         ogType: "article",
-        datePublished: "2025-10-01",
+        datePublished: "2026-01-21",
       }}
       backLabel="Blog"
       backHref="/blog"

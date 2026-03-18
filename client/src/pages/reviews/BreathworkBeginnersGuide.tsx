@@ -195,7 +195,7 @@ export default function BreathworkBeginnersGuide() {
         description: "A science-backed introduction to breathwork. Box breathing, Wim Hof, physiological sighs, and nasal breathing — what the research shows and how to start.",
         canonical: "/product-reviews/breathwork-beginners-guide",
         ogType: "article",
-        datePublished: "2026-01-01",
+        datePublished: "2025-11-12",
       }}
       backLabel="Product Reviews"
       backHref="/product-reviews"

@@ -49,7 +49,7 @@ export default function CreatineDosageForBrain() {
         description: "The research on creatine and the brain. Why the standard 5g dose does not saturate brain tissue, what Patrick and Huberman recommend, and the case for 10g.",
         canonical: "/blog/creatine-dosage-for-brain",
         ogType: "article",
-        datePublished: "2025-12-01",
+        datePublished: "2025-11-26",
       }}
       backLabel="Blog"
       backHref="/blog"

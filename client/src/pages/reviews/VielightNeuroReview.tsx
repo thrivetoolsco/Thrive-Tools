@@ -15,7 +15,7 @@ export default function VielightNeuroReview() {
         description: "A science-backed review of the Vielight Neuro. What the research says about near-infrared photobiomodulation for brain aging, cognition, and neuroprotection.",
         canonical: "/product-reviews/vielight-neuro-review",
         ogType: "article",
-        datePublished: "2025-09-01",
+        datePublished: "2026-01-14",
       }}
       backLabel="Products Reviews"
       backHref="/product-reviews"

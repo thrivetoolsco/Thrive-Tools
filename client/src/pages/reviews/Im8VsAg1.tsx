@@ -25,7 +25,7 @@ export default function Im8VsAg1() {
         description: "IM8 vs AG1 — unsponsored comparison of ingredients, clinical evidence, price, taste, and real-world results. Which greens powder is worth it?",
         canonical: "/product-reviews/im8-vs-ag1",
         ogType: "article",
-        datePublished: "2025-11-01",
+        datePublished: "2026-01-28",
       }}
       backLabel="Blog"
       backHref="/blog"

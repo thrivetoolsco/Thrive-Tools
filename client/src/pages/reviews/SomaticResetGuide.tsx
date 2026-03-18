@@ -184,7 +184,7 @@ export default function SomaticResetGuide() {
         description: "The most effective somatic reset techniques for nervous system regulation in 2026. TRE, cold exposure, breathwork, and vagal toning — what the research shows.",
         canonical: "/product-reviews/somatic-reset-guide",
         ogType: "article",
-        datePublished: "2026-01-01",
+        datePublished: "2025-11-19",
       }}
       backLabel="Product Reviews"
       backHref="/product-reviews"

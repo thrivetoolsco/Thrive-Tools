@@ -75,7 +75,7 @@ export default function MagnesiumGuide() {
         description: "Over 31% of people are magnesium deficient, and most take the wrong forms. The complete science: types, bioavailability, dosing, and the brand I recommend.",
         canonical: "/blog/magnesium-deficiency-supplement-guide",
         ogType: "article",
-        datePublished: "2025-11-05",
+        datePublished: "2026-02-25",
       }}
       backLabel="Blog"
       backHref="/blog"

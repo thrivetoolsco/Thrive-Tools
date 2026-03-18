@@ -63,7 +63,7 @@ export default function Omega3Guide() {
         description: "Everything you need to know about omega-3s. EPA vs DHA, fish oil vs algae, why most supplements fail, optimal doses, and the only brand I recommend — AquaOmega.",
         canonical: "/blog/omega-3-complete-guide-epa-dha-fish-oil-vs-algae",
         ogType: "article",
-        datePublished: "2026-03-17",
+        datePublished: "2026-03-11",
       }}
       backLabel="Blog"
       backHref="/blog"

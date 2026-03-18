@@ -57,7 +57,7 @@ export default function JustThriveProbiotic() {
         description: "Most probiotics die before reaching your gut. Why spore-forming strains like Bacillus subtilis and B. coagulans are the only ones that consistently work.",
         canonical: "/blog/bacillus-subtilis-bacillus-coagulans-probiotic-guide",
         ogType: "article",
-        datePublished: "2026-03-08",
+        datePublished: "2026-02-11",
       }}
       backLabel="Blog"
       backHref="/blog"

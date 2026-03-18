@@ -13,7 +13,7 @@ export default function HyperionHerbs() {
         description: "Why Hyperion Herbs is the brand I recommend for tonic herb extracts. The potency, the sourcing, and the specific products worth adding to your daily stack.",
         canonical: "/product-reviews/hyperion-herbs",
         ogType: "article",
-        datePublished: "2025-08-01",
+        datePublished: "2026-01-07",
       }}
       subtitle="Experience True Potency: Why I Recommend Hyperion Herbs for Tonic Herbs"
       backLabel="Products Reviews"
