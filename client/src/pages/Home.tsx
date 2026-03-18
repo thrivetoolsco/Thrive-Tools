@@ -230,7 +230,7 @@ export default function Home() {
             </div>
 
             {/* Text */}
-            <div className="flex-1 max-w-lg text-left">
+            <div className="flex-1 max-w-lg w-full text-center lg:text-left flex flex-col items-center lg:items-start mx-auto lg:mx-0">
               <p className="text-[#3d1a28]/62 text-base sm:text-lg leading-relaxed mb-5">
                 I don't sell supplements. I find the best ones and get you a discount on them. Getting access to the best products shouldn't mean paying full price for them.
               </p>
@@ -278,7 +278,7 @@ export default function Home() {
             </div>
 
             {/* Text */}
-            <div className="flex-1 max-w-lg text-left">
+            <div className="flex-1 max-w-lg w-full text-center lg:text-left flex flex-col items-center lg:items-start mx-auto lg:mx-0">
               <p className="text-[#3d1a28]/62 text-base sm:text-lg leading-relaxed mb-10" data-testid="text-retreats-intro">
                 Real transformation isn't just what you take. It's how you live.
                 <br/><br/>
