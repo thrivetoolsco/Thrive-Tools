@@ -14,7 +14,17 @@ const images = [
 
 export default function IndoorGardening() {
   return (
-    <PageLayout showShare title="Indoor Edible Gardening" backLabel="Events" backHref="/events">
+    <PageLayout
+      showShare
+      title="Indoor Edible Gardening"
+      backLabel="Events"
+      backHref="/events"
+      seo={{
+        title: "Indoor Edible Gardening Workshop | Thrive Tools with Eden Laraki",
+        description: "Learn to grow your own food indoors. A hands-on workshop covering edible plants, setup, soil health, and growing food in any living space.",
+        canonical: "/events/indoor-gardening",
+      }}
+    >
       <div className="space-y-10" data-testid="section-indoor-gardening">
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-4" data-testid="section-images">
           {images.map((img, index) => (

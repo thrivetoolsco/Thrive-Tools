@@ -52,6 +52,13 @@ export default function JustThriveProbiotic() {
     <PageLayout showShare
       title="Why Most Probiotics Never Reach Your Gut. The Two Strains That Always Do"
       subtitle="The survivability problem the probiotic industry quietly ignores, and the science behind the only strains that solve it."
+      seo={{
+        title: "Why Most Probiotics Never Reach Your Gut: Bacillus Subtilis and Coagulans | Thrive Tools",
+        description: "The survivability problem most probiotics have, and why spore-forming strains like Bacillus subtilis and B. coagulans are the only ones that consistently reach the gut alive.",
+        canonical: "/blog/bacillus-subtilis-bacillus-coagulans-probiotic-guide",
+        ogType: "article",
+        datePublished: "2026-03-08",
+      }}
       backLabel="Blog"
       backHref="/blog"
     >

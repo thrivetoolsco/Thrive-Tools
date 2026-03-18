@@ -4,6 +4,7 @@ import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { ArrowLeft } from "lucide-react";
 import ShareButton from "@/components/ShareButton";
+import SeoHead, { SeoProps } from "@/components/SeoHead";
 
 interface PageLayoutProps {
   children: React.ReactNode;
@@ -12,11 +13,21 @@ interface PageLayoutProps {
   backLabel?: string;
   backHref?: string;
   showShare?: boolean;
+  seo?: SeoProps;
 }
 
-export default function PageLayout({ children, title, subtitle, backLabel = "Home", backHref = "/", showShare = false }: PageLayoutProps) {
+export default function PageLayout({
+  children,
+  title,
+  subtitle,
+  backLabel = "Home",
+  backHref = "/",
+  showShare = false,
+  seo,
+}: PageLayoutProps) {
   return (
     <div className="min-h-screen bg-[#fdf6eb] text-[#3d1a28] overflow-x-hidden">
+      {seo && <SeoHead {...seo} />}
       <Navigation />
 
       {title && (

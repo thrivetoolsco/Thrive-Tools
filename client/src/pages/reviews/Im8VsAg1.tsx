@@ -20,6 +20,13 @@ export default function Im8VsAg1() {
     <PageLayout showShare
       title="IM8 vs AG1 (2026): An Honest, Science-Based Comparison"
       subtitle="No sponsored bias. Just the facts."
+      seo={{
+        title: "IM8 vs AG1 (2026): An Honest, Science-Based Comparison | Thrive Tools",
+        description: "IM8 vs AG1 — a detailed, unsponsored comparison of ingredients, clinical evidence, price, taste, and real-world results. Which greens powder is actually worth it?",
+        canonical: "/product-reviews/im8-vs-ag1",
+        ogType: "article",
+        datePublished: "2025-11-01",
+      }}
       backLabel="Blog"
       backHref="/blog"
     >

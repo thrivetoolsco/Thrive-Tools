@@ -12,7 +12,16 @@ const theShift = [
 
 export default function MescalineWisdom() {
   return (
-    <PageLayout title="Wachuma: Heart Centered Medicine" backLabel="Home" backHref="/">
+    <PageLayout
+      title="Wachuma: Heart Centered Medicine"
+      backLabel="Home"
+      backHref="/"
+      seo={{
+        title: "Wachuma: Heart Centered Medicine | Plant Medicine Retreat — Thrive Tools",
+        description: "A ceremonial Wachuma (San Pedro cactus) retreat with Eden Laraki. Heart-centered, deeply healing plant medicine for emotional clearing and expanded awareness.",
+        canonical: "/retreats-workshops/mescaline-wisdom",
+      }}
+    >
       <div className="space-y-12" data-testid="section-mescaline-wisdom">
 
         <div className="card-glass rounded-md p-6 sm:p-8 space-y-4" data-testid="section-intro">

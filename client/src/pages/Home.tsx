@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { ArrowRight, ChevronDown } from "lucide-react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
+import SeoHead from "@/components/SeoHead";
 import edenPhoto2 from "@assets/Generate_a_new_image_so_that_the_resolution_looks__delpmaspu~4_1772975930027.png";
 import edenHatPhoto from "@assets/Screenshot_20241217_123326_Instagram~2_1773457901515.jpg";
 import edenPortrait from "@assets/IMG-20251218-WA0018_1773456075795.jpg";
@@ -30,6 +31,12 @@ export default function Home() {
 
   return (
     <div className="min-h-screen bg-[#fdf6eb] text-[#3d1a28] overflow-x-hidden">
+      <SeoHead
+        title="Thrive Tools | Eden Laraki — Biohacking, Supplements & Wellness"
+        description="Evidence-based supplement guides, biohacking protocols, breathwork, and wellness tools by Eden Laraki. No hype — just what actually works."
+        canonical="/"
+        noSuffix
+      />
       <Navigation />
 
       {/* ═══════════════════════════════════════════
@@ -98,7 +105,7 @@ export default function Home() {
                 position: "relative",
               }}
             >
-              <img src={edenPortrait} alt="Eden" loading="eager" fetchPriority="high"
+              <img src={edenPortrait} alt="Eden Laraki wellness researcher" loading="eager" fetchPriority="high"
                 className="w-full h-full object-cover object-top" data-testid="img-eden-portrait-mobile"/>
             </div>
           </div>
@@ -139,7 +146,7 @@ export default function Home() {
                   position: "relative",
                 }}
               >
-                <img src={edenPortrait} alt="Eden" loading="eager" fetchPriority="high"
+                <img src={edenPortrait} alt="Eden Laraki biohacking researcher portrait" loading="eager" fetchPriority="high"
                   className="w-full h-full object-cover object-top" data-testid="img-eden-portrait-desktop"/>
               </div>
               {/* Small ornament below photo */}
@@ -153,11 +160,11 @@ export default function Home() {
 
           {/* RIGHT — headline + first paragraph */}
           <div className="flex flex-col justify-center py-16">
-            <h1 className="font-display text-4xl xl:text-5xl font-bold mb-8 leading-[1.15]" data-testid="text-hero-headline-desktop">
+            <div className="font-display text-4xl xl:text-5xl font-bold mb-8 leading-[1.15]" role="presentation" data-testid="text-hero-headline-desktop">
               <span className="text-gradient-rose">Still foggy?<br/>Still tired? </span>
               <br/>
               <span className="text-[#3d1a28]/80 text-3xl xl:text-4xl">Still spending money on supplements that do nothing?</span>
-            </h1>
+            </div>
 
             {/* Thin ornamental divider */}
             <div className="flex items-center gap-4 mb-8">
@@ -207,7 +214,7 @@ export default function Home() {
                 <div style={{ position: "absolute", inset: -16, borderRadius: "20px", background: "radial-gradient(circle, rgba(201,64,64,0.16) 0%, transparent 70%)", filter: "blur(22px)" }}/>
                 <img
                   src={edenHatPhoto}
-                  alt="Eden"
+                  alt="Eden Laraki at outdoor wellness gathering"
                   loading="lazy"
                   data-testid="img-eden-hat"
                   className="relative object-cover object-top"

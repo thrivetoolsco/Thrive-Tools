@@ -12,7 +12,17 @@ const included = [
 
 export default function PsilocybinForestWalk() {
   return (
-    <PageLayout showShare title="Psilocybin Forest Walk" backLabel="Events" backHref="/events">
+    <PageLayout
+      showShare
+      title="Psilocybin Forest Walk"
+      backLabel="Events"
+      backHref="/events"
+      seo={{
+        title: "Psilocybin Forest Walk | Guided Nature Immersion — Thrive Tools",
+        description: "A guided psilocybin forest walk with Eden Laraki. A ceremonial, nature-immersed experience for healing, clarity, and reconnection.",
+        canonical: "/events/psilocybin-forest-walk",
+      }}
+    >
       <div className="space-y-12" data-testid="section-psilocybin-forest-walk">
 
         <div className="card-glass rounded-md p-6 sm:p-8 space-y-4" data-testid="section-intro">

@@ -223,6 +223,11 @@ export default function ProductReviews() {
     <PageLayout
       title="Blog"
       subtitle="Evidence based guides for the biohacker, the curious, and the committed."
+      seo={{
+        title: "Supplement Reviews & Biohacking Guides | Blog — Thrive Tools",
+        description: "Evidence-based supplement reviews and biohacking guides by Eden Laraki. Creatine, magnesium, MCT oil, tonic herbs, breathwork, probiotics, and more.",
+        canonical: "/blog",
+      }}
     >
       {/* Search */}
       <div className="relative mb-8" data-testid="search-container">

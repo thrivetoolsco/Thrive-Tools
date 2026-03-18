@@ -44,6 +44,13 @@ export default function CreatineDosageForBrain() {
     <PageLayout showShare
       title="Why 5g of Creatine Isn't Enough for Your Brain: The Case for 10g"
       subtitle="2026 Edition"
+      seo={{
+        title: "Why 5g of Creatine Isn't Enough for Your Brain: The Case for 10g | Thrive Tools",
+        description: "The research on creatine and the brain. Why the standard 5g dose doesn't saturate brain tissue, what Dr. Rhonda Patrick and Andrew Huberman recommend, and the case for 10g.",
+        canonical: "/blog/creatine-dosage-for-brain",
+        ogType: "article",
+        datePublished: "2025-12-01",
+      }}
       backLabel="Blog"
       backHref="/blog"
     >

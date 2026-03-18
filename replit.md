@@ -42,7 +42,9 @@ Redesigned landing page for ThriveTools.co — a wellness and biohacking brand b
 
 - `client/src/components/Navigation.tsx` — Fixed nav bar with logo, nav links matching original site structure, mobile menu with dropdowns
 - `client/src/components/Footer.tsx` — Logo, social links, navigation links
-- `client/src/components/PageLayout.tsx` — Shared page layout with title/subtitle hero, back button, gradient backgrounds
+- `client/src/components/PageLayout.tsx` — Shared page layout with title/subtitle hero, back button, gradient backgrounds. Accepts optional `seo` prop (SeoProps) that renders SeoHead.
+- `client/src/components/SeoHead.tsx` — SEO meta component (react-helmet-async). Outputs title, description, canonical, og:*, twitter:*, JSON-LD (BlogPosting / WebPage / Organization+WebSite schemas).
+- `client/src/components/ShareButton.tsx` — Web Share API share button with clipboard fallback.
 
 ## Design System
 
@@ -68,6 +70,19 @@ Redesigned landing page for ThriveTools.co — a wellness and biohacking brand b
 ## Navigation Structure (matches original site)
 
 Home, My Top Picks, Personalized Guidance, Quantum Healing, Breathwork, Retreats & Workshops (submenu), Events, About, Contact
+
+## SEO
+
+- **Package**: `react-helmet-async` — HelmetProvider wraps the app in `client/src/main.tsx`.
+- **SeoHead component**: all pages have unique `title`, `description`, and `canonical` tags. Articles use `ogType: "article"` + `datePublished` for BlogPosting JSON-LD.
+- **Canonical strategy**: blog articles with dual routing (/blog/ and /product-reviews/) always canonical to `/blog/[slug]`. Articles only at /product-reviews/ canonical to `/product-reviews/[slug]`.
+- **Robots.txt**: `client/public/robots.txt` — allows all bots, points to sitemap.
+- **Sitemap**: `client/public/sitemap.xml` — all 40+ pages with lastmod dates.
+- **index.html**: OG tags fixed to use `property=` attribute, Twitter cards added.
+- **Double H1 fix**: Home page desktop hero headline changed from `<h1>` to `<div role="presentation">` — only the mobile h1 is the real heading element.
+- **H1 improvements**: About → "About Eden Laraki", Events → "Events & Workshops", Breathwork → "Breathwork with Eden".
+- **SubHead fix**: SubHead components in Omega3Guide and PumpkinSeedOilGuide changed from `<p>` to `<h3>`.
+- **Alt text**: SpiritualNutrition food images now have unique alt texts; Home Eden portrait images improved.
 
 ## Email / Newsletter
 

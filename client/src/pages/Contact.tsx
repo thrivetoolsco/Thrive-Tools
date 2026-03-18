@@ -3,7 +3,14 @@ import { Mail } from "lucide-react";
 
 export default function Contact() {
   return (
-    <PageLayout title="Contact">
+    <PageLayout
+      title="Contact"
+      seo={{
+        title: "Contact Thrive Tools | Eden Laraki",
+        description: "Get in touch with Eden Laraki at Thrive Tools for questions about supplements, biohacking protocols, wellness guidance, or retreat inquiries.",
+        canonical: "/contact",
+      }}
+    >
       <div className="max-w-lg mx-auto text-center space-y-8" data-testid="section-contact">
         <p className="text-black/70 text-lg leading-relaxed" data-testid="text-contact-intro">
           If you want to talk shop, ask about a tool, or just say hey, hit me up directly. No "required" fields, just me on the other end.

@@ -10,6 +10,13 @@ export default function JoovvReview() {
     <PageLayout showShare
       title="Is Joovv Worth It?"
       subtitle="A Deep Dive into the Benefits and Results (2026 Edition)"
+      seo={{
+        title: "Is Joovv Worth It? A Deep Dive into Red Light Therapy (2026) | Thrive Tools",
+        description: "An honest look at Joovv red light therapy — what the research actually shows, real results, protocols, and whether the investment is worth it in 2026.",
+        canonical: "/product-reviews/joovv-review",
+        ogType: "article",
+        datePublished: "2025-09-01",
+      }}
       backLabel="Products Reviews"
       backHref="/product-reviews"
     >

@@ -13,7 +13,16 @@ const toolkit = [
 
 export default function InnerSilence() {
   return (
-    <PageLayout title="Inner Silence" backLabel="Home" backHref="/">
+    <PageLayout
+      title="Inner Silence"
+      backLabel="Home"
+      backHref="/"
+      seo={{
+        title: "Inner Silence Retreat | Deep Meditation & Stillness — Thrive Tools",
+        description: "The Inner Silence retreat with Eden Laraki. A guided, immersive experience in meditation, stillness, and disconnection from the noise of modern life.",
+        canonical: "/retreats-workshops/inner-silence",
+      }}
+    >
       <div className="space-y-12" data-testid="section-inner-silence">
 
         <div className="card-glass rounded-md p-6 sm:p-8 space-y-4" data-testid="section-intro">

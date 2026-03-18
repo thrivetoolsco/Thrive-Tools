@@ -7,7 +7,17 @@ import foodForest2 from "@assets/food-1_1773178753025.jpeg";
 
 export default function FoodForest() {
   return (
-    <PageLayout showShare title="Thriving Food Forest" backLabel="Events" backHref="/events">
+    <PageLayout
+      showShare
+      title="Thriving Food Forest"
+      backLabel="Events"
+      backHref="/events"
+      seo={{
+        title: "Thriving Food Forest Event | Permaculture & Regenerative Growing — Thrive Tools",
+        description: "An immersive day in a thriving food forest. Learn permaculture principles, regenerative food growing, and how to design your own edible ecosystem.",
+        canonical: "/events/food-forest",
+      }}
+    >
       <div className="space-y-12" data-testid="section-food-forest">
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-6" data-testid="section-images">
           <img loading="lazy" decoding="async"

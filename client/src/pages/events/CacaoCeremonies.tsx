@@ -9,7 +9,17 @@ const details = [
 
 export default function CacaoCeremonies() {
   return (
-    <PageLayout showShare title="Cacao Ceremonies" backLabel="Events" backHref="/events">
+    <PageLayout
+      showShare
+      title="Cacao Ceremonies"
+      backLabel="Events"
+      backHref="/events"
+      seo={{
+        title: "Cacao Ceremonies | Heart-Opening Plant Medicine — Thrive Tools",
+        description: "Sacred cacao ceremony with Eden Laraki. Heart-opening, ceremonial-grade cacao with breathwork, meditation, and community connection.",
+        canonical: "/events/cacao-ceremonies",
+      }}
+    >
       <div className="space-y-12" data-testid="section-cacao-ceremonies">
 
         <div className="card-glass rounded-md p-6 sm:p-8 space-y-4" data-testid="section-intro">

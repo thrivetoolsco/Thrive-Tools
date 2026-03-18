@@ -20,6 +20,11 @@ export default function QuantumHealing() {
     <PageLayout
       title="Somatic Reset"
       subtitle="The High Vibe Nervous System Reset: Breathwork + Electro-Therapy"
+      seo={{
+        title: "Somatic Reset | Nervous System Reset with Breathwork and Electro-Therapy — Thrive Tools",
+        description: "The High Vibe Somatic Reset combines breathwork and electro-therapy to regulate the nervous system, reduce chronic stress, and restore HRV. Sessions with Eden Laraki.",
+        canonical: "/somatic-reset",
+      }}
     >
       <div className="space-y-12" data-testid="section-quantum-healing">
 

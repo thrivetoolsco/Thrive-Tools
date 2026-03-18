@@ -16,7 +16,16 @@ const pillars = [
 
 export default function SpiritualNutrition() {
   return (
-    <PageLayout title="Spiritual Nutrition" backLabel="Home" backHref="/">
+    <PageLayout
+      title="Spiritual Nutrition"
+      backLabel="Home"
+      backHref="/"
+      seo={{
+        title: "Spiritual Nutrition Retreat | Food, Energy & Consciousness — Thrive Tools",
+        description: "Spiritual Nutrition with Eden Laraki. Explore the connection between food, frequency, and consciousness. Learn to nourish your body and spirit with intention.",
+        canonical: "/retreats-workshops/spiritual-nutrition",
+      }}
+    >
       <div className="space-y-12" data-testid="section-spiritual-nutrition">
 
         <div className="card-glass rounded-md p-6 sm:p-8 space-y-6" data-testid="section-intro">
@@ -59,25 +68,25 @@ export default function SpiritualNutrition() {
         <div className="grid grid-cols-2 gap-3 sm:gap-4" data-testid="section-food-images">
           <img loading="lazy" decoding="async"
             src={img2}
-            alt="Spiritual nutrition food"
+            alt="Colorful whole foods for spiritual nourishment"
             className="rounded-md w-full object-cover glow-rose"
             data-testid="img-spiritual-2"
           />
           <img loading="lazy" decoding="async"
             src={img3}
-            alt="Spiritual nutrition food"
+            alt="Fresh plant-based ingredients for conscious eating"
             className="rounded-md w-full object-cover glow-purple"
             data-testid="img-spiritual-3"
           />
           <img loading="lazy" decoding="async"
             src={img4}
-            alt="Spiritual nutrition food"
+            alt="Raw vegetables and herbs for high-vibration nutrition"
             className="rounded-md w-full object-cover glow-purple"
             data-testid="img-spiritual-4"
           />
           <img loading="lazy" decoding="async"
             src={img5}
-            alt="Spiritual nutrition food"
+            alt="Vibrant superfoods on a spiritual nutrition retreat"
             className="rounded-md w-full object-cover glow-rose"
             data-testid="img-spiritual-5"
           />

@@ -19,7 +19,7 @@ function SectionHeader({ icon, title }: { icon: React.ReactNode; title: string }
 
 function SubHead({ title }: { title: string }) {
   return (
-    <p className="text-xs font-semibold uppercase tracking-wider text-[#c4622d] mb-2 mt-5">{title}</p>
+    <h3 className="text-xs font-semibold uppercase tracking-wider text-[#c4622d] mb-2 mt-5">{title}</h3>
   );
 }
 
@@ -58,6 +58,13 @@ export default function PumpkinSeedOilGuide() {
     <PageLayout showShare
       title="Why Pumpkin Seed Oil Belongs in Every Serious Supplement Stack"
       subtitle="Pumpkin seed oil delivers brain-protective tryptophan, therapeutic zinc, prostate-specific phytosterols, and deep Kidney Jing nourishment, all in one daily oil. Here's the science and the only brand I recommend."
+      seo={{
+        title: "Why Pumpkin Seed Oil Belongs in Every Serious Supplement Stack | Thrive Tools",
+        description: "Pumpkin seed oil — tryptophan, zinc, phytosterols, and Kidney Jing nourishment in one daily oil. The science behind its benefits and the only brand worth buying (Styrian Gold, code THRIVETOOLS-10).",
+        canonical: "/blog/pumpkin-seed-oil-supplement-stack-benefits",
+        ogType: "article",
+        datePublished: "2026-03-16",
+      }}
       backLabel="Blog"
       backHref="/blog"
     >

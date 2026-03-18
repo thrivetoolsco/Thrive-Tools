@@ -5,7 +5,15 @@ import breathworkClass from "@assets/Screenshot_20241217_123326_Instagram~2_1773
 
 export default function About() {
   return (
-    <PageLayout title="About" subtitle="Eden Laraki">
+    <PageLayout
+      title="About Eden Laraki"
+      subtitle="Wellness researcher and biohacker"
+      seo={{
+        title: "About Eden Laraki | Thrive Tools",
+        description: "Eden Laraki is a wellness researcher and biohacker with 14 years of experience in Taoist protocols, longevity science, and evidence-based supplement research.",
+        canonical: "/about",
+      }}
+    >
       <div className="space-y-12">
         <div className="flex flex-col md:flex-row gap-8 items-start">
           <div className="flex-shrink-0">

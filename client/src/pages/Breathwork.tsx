@@ -8,7 +8,14 @@ import breathworkPortrait from "@assets/breathwork_1773178753092.jpeg";
 
 export default function Breathwork() {
   return (
-    <PageLayout title="Breathwork">
+    <PageLayout
+      title="Breathwork with Eden"
+      seo={{
+        title: "Breathwork Sessions with Eden Laraki | Thrive Tools",
+        description: "Science-backed breathwork techniques for stress relief, sleep improvement, and nervous system regulation. One-on-one and group sessions with Eden Laraki.",
+        canonical: "/breathwork",
+      }}
+    >
       <div className="space-y-12" data-testid="section-breathwork">
         <div className="flex justify-center">
           <img loading="lazy" decoding="async"

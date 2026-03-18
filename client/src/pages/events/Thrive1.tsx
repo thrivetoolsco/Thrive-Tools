@@ -4,7 +4,17 @@ import thriveImg from "@assets/IMG-20260307-WA0015_1772934779859.jpg";
 
 export default function Thrive1() {
   return (
-    <PageLayout showShare title="Docu Evening: Thrive 1" backLabel="Events" backHref="/events">
+    <PageLayout
+      showShare
+      title="Docu Evening: Thrive 1"
+      backLabel="Events"
+      backHref="/events"
+      seo={{
+        title: "Docu Evening: Thrive 1 | Community Screening — Thrive Tools",
+        description: "A community documentary evening screening Thrive (2011). Join Eden Laraki and fellow wellness seekers for discussion and connection after the film.",
+        canonical: "/events/thrive-1",
+      }}
+    >
       <div className="space-y-12" data-testid="section-thrive1">
 
         <div className="card-glass rounded-md p-6 sm:p-8 space-y-4" data-testid="section-intro">

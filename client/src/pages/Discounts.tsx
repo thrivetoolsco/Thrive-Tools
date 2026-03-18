@@ -1,6 +1,7 @@
 import { Link } from "wouter";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
+import SeoHead from "@/components/SeoHead";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import {
@@ -434,6 +435,11 @@ function TravelsSection() {
 export default function Discounts() {
   return (
     <div className="min-h-screen bg-[#fdf6eb] text-[#3d1a28] overflow-x-hidden">
+      <SeoHead
+        title="Best Supplement Discount Codes 2026 | Biohacking Deals — Thrive Tools"
+        description="Exclusive discount codes for the best biohacking and wellness supplements: IM8, ENERGYbits, BiOptimizers, Hyperion Herbs, AquaOmega, Superfeast, EarthRunners, and more."
+        canonical="/discounts"
+      />
       <Navigation />
 
       {/* Header */}

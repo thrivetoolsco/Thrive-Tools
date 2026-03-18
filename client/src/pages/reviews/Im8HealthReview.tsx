@@ -38,6 +38,13 @@ export default function Im8HealthReview() {
     <PageLayout showShare
       title="IM8 Health Review (2026): Is It Worth It?"
       subtitle="My honest, unsponsored take — ingredients, clinical evidence, taste, price, and real-world results."
+      seo={{
+        title: "IM8 Health Review (2026): Is It Worth It? | Thrive Tools",
+        description: "Honest, unsponsored IM8 review. Ingredients, clinical trial evidence, taste, price, and real-world results after daily use. Use code THRIVE10 for 10% off.",
+        canonical: "/product-reviews/im8-health-review",
+        ogType: "article",
+        datePublished: "2025-10-01",
+      }}
       backLabel="Blog"
       backHref="/blog"
     >

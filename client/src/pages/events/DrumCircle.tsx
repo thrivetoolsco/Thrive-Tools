@@ -10,7 +10,17 @@ const details = [
 
 export default function DrumCircle() {
   return (
-    <PageLayout showShare title="Drum Circle Breathwork" backLabel="Events" backHref="/events">
+    <PageLayout
+      showShare
+      title="Drum Circle Breathwork"
+      backLabel="Events"
+      backHref="/events"
+      seo={{
+        title: "Drum Circle Breathwork Event | Thrive Tools with Eden Laraki",
+        description: "A guided breathwork session with live drumming. Combine rhythmic breathwork and percussion for a nervous system reset and altered state experience.",
+        canonical: "/events/drum-circle",
+      }}
+    >
       <div className="space-y-12" data-testid="section-drum-circle">
 
         <div className="flex justify-center">

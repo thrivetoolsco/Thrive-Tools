@@ -45,7 +45,16 @@ const pillars = [
 
 export default function BlossomingBliss() {
   return (
-    <PageLayout title="Blossoming Bliss Transformation" backLabel="Home" backHref="/">
+    <PageLayout
+      title="Blossoming Bliss Transformation"
+      backLabel="Home"
+      backHref="/"
+      seo={{
+        title: "Blossoming Bliss Transformation Retreat | Thrive Tools with Eden Laraki",
+        description: "The Blossoming Bliss Transformation retreat with Eden Laraki. A deeply immersive journey for inner transformation, healing, and expanding into your fullest self.",
+        canonical: "/retreats-workshops/blossoming-bliss",
+      }}
+    >
       <div className="space-y-12" data-testid="section-blossoming-bliss">
         <div className="flex justify-center">
           <img loading="lazy" decoding="async"

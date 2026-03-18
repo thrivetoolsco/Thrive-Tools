@@ -5,7 +5,14 @@ import { ArrowRight } from "lucide-react";
 
 export default function PersonalizedGuidance() {
   return (
-    <PageLayout title="Personalized Guidance">
+    <PageLayout
+      title="Personalized Guidance"
+      seo={{
+        title: "Personalized Wellness Guidance | One-on-One with Eden Laraki — Thrive Tools",
+        description: "Work directly with Eden Laraki to build a personalized supplement stack, biohacking protocol, and wellness plan tailored to your biology and goals.",
+        canonical: "/personalized-guidance",
+      }}
+    >
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
         <div className="space-y-6" data-testid="section-guidance-text">
           <p className="text-black/80 leading-relaxed text-base" data-testid="text-guidance-intro">

@@ -15,6 +15,11 @@ export default function Thrive2() {
       subtitle="Thursday Night Docs: Let's Talk Solutions — Weekly at 6:30 PM"
       backLabel="Events"
       backHref="/events"
+      seo={{
+        title: "Docu Evening: Thrive 2 | Community Screening — Thrive Tools",
+        description: "Thrive 2: This Is What It Takes — a community documentary evening with discussion, connection, and solutions-focused conversation with Eden Laraki.",
+        canonical: "/events/thrive-2",
+      }}
     >
       <div className="space-y-12" data-testid="section-thrive2">
 

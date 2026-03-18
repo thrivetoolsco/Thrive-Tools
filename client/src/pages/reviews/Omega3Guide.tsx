@@ -19,7 +19,7 @@ function SectionHeader({ icon, title }: { icon: React.ReactNode; title: string }
 
 function SubHead({ title }: { title: string }) {
   return (
-    <p className="text-xs font-semibold uppercase tracking-wider text-[#c4622d] mb-2 mt-5">{title}</p>
+    <h3 className="text-xs font-semibold uppercase tracking-wider text-[#c4622d] mb-2 mt-5">{title}</h3>
   );
 }
 
@@ -58,6 +58,13 @@ export default function Omega3Guide() {
     <PageLayout showShare
       title="Omega-3: Everything You Actually Need to Know"
       subtitle="EPA, DHA, fish oil vs algae oil, and why most supplements fail. Here's the complete science and the only brand I recommend."
+      seo={{
+        title: "Omega-3 Complete Guide: EPA, DHA, Fish Oil vs Algae Oil | Thrive Tools",
+        description: "Everything you need to know about omega-3s. EPA vs DHA, fish oil vs algae, why most supplements fail, optimal doses, and the only brand I recommend — AquaOmega.",
+        canonical: "/blog/omega-3-complete-guide-epa-dha-fish-oil-vs-algae",
+        ogType: "article",
+        datePublished: "2026-03-17",
+      }}
       backLabel="Blog"
       backHref="/blog"
     >

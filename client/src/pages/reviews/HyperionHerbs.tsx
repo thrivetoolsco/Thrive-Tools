@@ -8,6 +8,13 @@ export default function HyperionHerbs() {
   return (
     <PageLayout showShare
       title="Hyperion Herbs"
+      seo={{
+        title: "Hyperion Herbs Review: Why I Recommend Them for Tonic Herbs | Thrive Tools",
+        description: "Why Hyperion Herbs is the brand I recommend for tonic herb extracts. Potency, sourcing, and the specific products worth adding to your daily stack. Use code EDEN10.",
+        canonical: "/product-reviews/hyperion-herbs",
+        ogType: "article",
+        datePublished: "2025-08-01",
+      }}
       subtitle="Experience True Potency: Why I Recommend Hyperion Herbs for Tonic Herbs"
       backLabel="Products Reviews"
       backHref="/product-reviews"

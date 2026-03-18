@@ -18,7 +18,14 @@ const pastEvents = [
 
 export default function Events() {
   return (
-    <PageLayout title="Events">
+    <PageLayout
+      title="Events & Workshops"
+      seo={{
+        title: "Wellness Events & Workshops | Breathwork, Plant Medicine & Biohacking — Thrive Tools",
+        description: "Upcoming and past wellness events by Eden Laraki. Breathwork circles, plant medicine journeys, documentary evenings, and community workshops.",
+        canonical: "/events",
+      }}
+    >
       <div className="space-y-16">
         <section className="card-glass rounded-md p-8 sm:p-10 text-center" data-testid="section-newsletter">
           <div className="flex items-center justify-center gap-2 mb-4">
