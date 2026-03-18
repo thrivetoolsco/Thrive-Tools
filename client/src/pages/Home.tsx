@@ -280,7 +280,7 @@ export default function Home() {
             {/* Text */}
             <div className="flex-1 max-w-lg w-full text-center lg:text-left flex flex-col items-center lg:items-start mx-auto lg:mx-0">
               <p className="text-[#3d1a28]/62 text-base sm:text-lg leading-relaxed mb-10" style={{ textWrap: "pretty" } as React.CSSProperties} data-testid="text-retreats-intro">
-                Real transformation isn't just what you take. It's how you live.
+                Real transformation isn't just what you take. It's how you{"\u00A0"}live.
                 <br/><br/>
                 That's why I built spaces where the real work happens. In my retreats and workshops, we go deeper: nervous system reset, Taoist longevity practices, and cutting through the noise together, in person.
               </p>
