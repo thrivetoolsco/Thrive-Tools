@@ -7,7 +7,7 @@ export default function About() {
   return (
     <PageLayout
       title="About Eden Laraki"
-      subtitle="Wellness researcher and biohacker"
+      subtitle="Breathwork guide, plant medicine facilitator & biohacker helping you find what actually moves the needle for energy, mood & longevity"
       seo={{
         title: "About Eden Laraki | Thrive Tools",
         description: "Eden Laraki is a wellness researcher and biohacker with 14 years of experience in Taoist protocols, longevity science, and evidence-based supplement research.",
