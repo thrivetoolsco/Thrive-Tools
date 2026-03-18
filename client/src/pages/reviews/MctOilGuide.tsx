@@ -237,7 +237,7 @@ export default function MctOilGuide() {
             <div className="card-glass rounded-2xl p-6 space-y-4" data-testid="card-liquid">
               <h3 className="font-display text-lg font-bold text-black">MCT Oil (Liquid)</h3>
               <p className="text-black/70 text-sm leading-relaxed">
-                With MCT oil, what you see is what you get. It doesn't require a carrier oil or extra additives. Liquid MCT oil is great for recipes and blending into Bulletproof Coffee at home. The purity of MCT oil in liquid form can't be beat. Nearly all of the published research on the benefits of MCTs has been done on MCT oil rather than MCT powder, which means the evidence base you read about in studies is specifically for the liquid form.
+                With MCT oil, what you see is what you get. It doesn't require a carrier oil or extra additives. Liquid MCT oil is great for recipes and blending into MCT coffee at home. The purity of MCT oil in liquid form can't be beat. Nearly all of the published research on the benefits of MCTs has been done on MCT oil rather than MCT powder, which means the evidence base you read about in studies is specifically for the liquid form.
               </p>
               <div className="grid sm:grid-cols-2 gap-4">
                 <div>
@@ -325,10 +325,10 @@ export default function MctOilGuide() {
           <SectionHeader icon={<Zap className="w-5 h-5" />} title="The Products I Recommend at ThriveTools" />
           <div className="grid gap-6">
             <ProductCard
-              title="Bulletproof MCT Oil Powder"
-              description="When you need the benefits of MCT oil in a format that travels, blends creamlessly into coffee or shakes, and is gentler on the gut, Bulletproof's MCT Oil Powder is the powder I trust. Same commitment to quality sourcing and purity as their liquid oil, in a convenient powder form that creates a rich, creamy texture without the oily layer. Ideal for travel days, office mornings, and anyone who found the liquid form too hard on their digestive system when starting out."
+              title="Intentionally Bare MCT Oil Powder"
+              description="When you need the benefits of MCT oil in a format that travels, blends creamlessly into coffee or shakes, and is gentler on the gut, Intentionally Bare's MCT Oil Powder is the powder I trust. Same commitment to quality sourcing and purity as their liquid oil, in a convenient powder form that creates a rich, creamy texture without the oily layer. Ideal for travel days, office mornings, and anyone who found the liquid form too hard on their digestive system when starting out."
               linkHref="https://bit.ly/4bsgdYC"
-              linkLabel="Shop Bulletproof MCT Powder"
+              linkLabel="Shop Intentionally Bare MCT Powder"
             />
           </div>
         </section>
@@ -421,7 +421,7 @@ export default function MctOilGuide() {
               MCT oil is one of the most evidence-backed, versatile, and practical supplements in the biohacking toolkit, but only if you're using the right type, the right form, and the right dose consistently. C8 for rapid cognitive fuel, C10 for sustained energy and gut health, C8+C10 for daily all-around use. Liquid for purity and home use, powder for travel and digestive comfort. 12 to 18g per day for meaningful cognitive benefit, built up gradually.
             </p>
             <p>
-              Both Bulletproof products I've linked above meet every quality standard that matters: coconut-sourced, expeller-pressed, pure C8 or C8/C10, no fillers, no shortcuts.
+              The Intentionally Bare product I've linked above meets every quality standard that matters: coconut-sourced, expeller-pressed, pure C8 or C8/C10, no fillers, no shortcuts.
             </p>
             <p>
               Check out our{" "}
@@ -437,15 +437,10 @@ export default function MctOilGuide() {
           </div>
         </section>
 
-        <div className="grid sm:grid-cols-2 gap-4 pt-4">
+        <div className="flex justify-center pt-4">
           <Button asChild size="lg" className="btn-gradient-rose text-white border-0 rounded-full px-6 py-4 text-xs tracking-widest uppercase font-semibold h-auto leading-relaxed">
-            <a href="https://bulletproof.fdf2.net/DKAdJ2" target="_blank" rel="noopener noreferrer" data-testid="link-bulletproof-oil" className="inline-flex items-center justify-center gap-2 flex-wrap">
-              Shop Bulletproof C8 MCT Oil <ExternalLink className="w-4 h-4 flex-shrink-0" />
-            </a>
-          </Button>
-          <Button asChild size="lg" className="btn-gradient-rose text-white border-0 rounded-full px-6 py-4 text-xs tracking-widest uppercase font-semibold h-auto leading-relaxed">
-            <a href="https://bit.ly/4bsgdYC" target="_blank" rel="noopener noreferrer" data-testid="link-bulletproof-powder" className="inline-flex items-center justify-center gap-2 flex-wrap">
-              Shop Bulletproof MCT Powder <ExternalLink className="w-4 h-4 flex-shrink-0" />
+            <a href="https://bit.ly/4bsgdYC" target="_blank" rel="noopener noreferrer" data-testid="link-intentionally-bare-powder" className="inline-flex items-center justify-center gap-2 flex-wrap">
+              Shop Intentionally Bare MCT Powder <ExternalLink className="w-4 h-4 flex-shrink-0" />
             </a>
           </Button>
         </div>
