@@ -82,10 +82,10 @@ const vitaminsSupplements: DiscountItem[] = [
     url: "https://rawnori.com/thrivetools",
   },
   {
-    name: "Bulletproof",
-    description: "Best Coffee & MCT Oil",
+    name: "Intentionally Bare",
+    description: "MCT oil in all its forms",
     code: "Follow This Link",
-    url: "https://bulletproof.fdf2.net/DKAdJ2",
+    url: "https://bit.ly/4bsgdYC",
   },
   {
     name: "Koracao Ceremonial Cacao",
