@@ -60,7 +60,7 @@ export default function PageLayout({
               <span className="text-gradient-rose">{title}</span>
             </h1>
             {subtitle && (
-              <p className="text-[#3d1a28]/60 text-lg sm:text-xl max-w-3xl leading-relaxed font-medium" data-testid="text-page-subtitle">
+              <p className="text-[#3d1a28]/60 text-lg sm:text-xl max-w-2xl leading-relaxed font-medium" style={{ textWrap: "balance" } as React.CSSProperties} data-testid="text-page-subtitle">
                 {subtitle}
               </p>
             )}

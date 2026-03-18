@@ -25,7 +25,7 @@ export default function About() {
             />
           </div>
           <div className="space-y-4 text-black/70 leading-relaxed">
-            <p data-testid="text-intro-1" className="text-black font-semibold text-lg">I'm Eden.</p>
+            <p data-testid="text-intro-1" className="text-black font-semibold text-lg">My story.</p>
             <p data-testid="text-intro-2">
               Born in Morocco, raised at the crossroads of African, Middle Eastern, and European worlds. I've never fit neatly into one box. That restlessness took me everywhere: designing food forests across the UK and Canada, apprenticing with Shipibo shamans in the Peruvian jungle, being initiated into the Bwiti tradition in Gabon as one of the few Western women to enter the Sacred Wood (Iboga) lineage, studying Pranayama with yogis in India, and learning longevity herbs under Taoist Jing Master Truth Calkins.
             </p>
