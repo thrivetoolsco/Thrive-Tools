@@ -30,7 +30,7 @@ export const SITE_URL = SITE;
 export const staticRoutes: StaticRoute[] = [
   { path: "/", changefreq: "weekly", priority: 1.0 },
   { path: "/blog", changefreq: "weekly", priority: 0.9 },
-  { path: "/discounts", changefreq: "weekly", priority: 0.9 },
+  { path: "/discount-codes", changefreq: "weekly", priority: 0.9 },
   { path: "/about", changefreq: "monthly", priority: 0.7 },
   { path: "/contact", changefreq: "monthly", priority: 0.5 },
   { path: "/breathwork", changefreq: "monthly", priority: 0.7 },

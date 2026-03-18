@@ -438,7 +438,7 @@ export default function Discounts() {
       <SeoHead
         title="Best Supplement Discount Codes 2026 | Biohacking Deals — Thrive Tools"
         description="Exclusive discount codes for the best biohacking and wellness supplements: IM8, ENERGYbits, BiOptimizers, Hyperion Herbs, AquaOmega, Superfeast, EarthRunners, and more."
-        canonical="/discounts"
+        canonical="/discount-codes"
       />
       <Navigation />
 

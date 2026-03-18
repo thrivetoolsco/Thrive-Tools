@@ -263,7 +263,7 @@ export default function Home() {
                 <div style={{ position: "absolute", inset: -16, borderRadius: "20px", background: "radial-gradient(circle, rgba(155,111,165,0.15) 0%, transparent 70%)", filter: "blur(22px)" }}/>
                 <img
                   src={edenPhoto2}
-                  alt="Eden - Thrive Tools"
+                  alt="Eden Laraki wellness and biohacking researcher"
                   loading="lazy"
                   className="relative object-cover"
                   style={{

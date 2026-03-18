@@ -33,7 +33,9 @@ export default function SeoHead({
           "@type": "BlogPosting",
           headline: title,
           description,
+          image: DEFAULT_OG_IMAGE,
           datePublished: datePublished ?? "2026-01-01",
+          dateModified: datePublished ?? "2026-01-01",
           author: {
             "@type": "Person",
             name: "Eden Laraki",
@@ -45,7 +47,7 @@ export default function SeoHead({
             url: SITE_URL,
             logo: { "@type": "ImageObject", url: `${SITE_URL}/logo.webp` },
           },
-          ...(canonicalUrl && { url: canonicalUrl, mainEntityOfPage: canonicalUrl }),
+          ...(canonicalUrl && { url: canonicalUrl, mainEntityOfPage: { "@type": "WebPage", "@id": canonicalUrl } }),
         }
       : ogType === "website" && canonical === "/"
       ? {
