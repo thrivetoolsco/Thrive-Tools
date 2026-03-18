@@ -122,7 +122,7 @@ export default function Home() {
             <div className="h-px w-10 bg-[#c4622d]"/>
           </div>
 
-          <p className="text-[#3d1a28]/62 text-base sm:text-lg max-w-xl leading-relaxed mb-4" data-testid="text-hero-subheadline">
+          <p className="text-[#3d1a28]/62 text-base sm:text-lg max-w-xl leading-relaxed mb-4" style={{ textWrap: "pretty" } as React.CSSProperties} data-testid="text-hero-subheadline">
             I'm Eden. For 14 years I've been deep in the research — Taoist protocols, longevity science, biohacking — separating what actually works from what just sells.
             <br/><br/>
             And I've learned one thing: 90% of wellness is noise. The 10% that works? <Link href="/discount-codes" className="underline underline-offset-2 hover:text-[#c4622d] transition-colors">It's on this list.</Link>
@@ -176,7 +176,7 @@ export default function Home() {
               <div className="h-px w-12 bg-gradient-to-l from-transparent to-[#c4622d]/50"/>
             </div>
 
-            <p className="text-[#3d1a28]/60 text-lg leading-relaxed max-w-lg" data-testid="text-hero-subheadline-desktop">
+            <p className="text-[#3d1a28]/60 text-lg leading-relaxed max-w-lg" style={{ textWrap: "pretty" } as React.CSSProperties} data-testid="text-hero-subheadline-desktop">
               I'm Eden. For 14 years I've been deep in the research — Taoist protocols, longevity science, biohacking — separating what actually works from what just sells.
               <br/><br/>
               And I've learned one thing: 90% of wellness is noise. The 10% that works? <Link href="/discount-codes" className="underline underline-offset-2 hover:text-[#c4622d] transition-colors">It's on this list.</Link>
@@ -231,13 +231,13 @@ export default function Home() {
 
             {/* Text */}
             <div className="flex-1 max-w-lg w-full text-center lg:text-left flex flex-col items-center lg:items-start mx-auto lg:mx-0">
-              <p className="text-[#3d1a28]/62 text-base sm:text-lg leading-relaxed mb-5">
+              <p className="text-[#3d1a28]/62 text-base sm:text-lg leading-relaxed mb-5" style={{ textWrap: "pretty" } as React.CSSProperties}>
                 I don't sell supplements. I find the best ones and get you a discount on them. Getting access to the best products shouldn't mean paying full price for them.
               </p>
-              <p className="text-[#3d1a28]/62 text-base sm:text-lg leading-relaxed mb-5">
+              <p className="text-[#3d1a28]/62 text-base sm:text-lg leading-relaxed mb-5" style={{ textWrap: "pretty" } as React.CSSProperties}>
                 This is my curated list of the supplements, longevity tools, and brands I personally trust, with exclusive discount codes built in. No fluff. No affiliate bro science. Just the good stuff, cheaper.
               </p>
-              <p className="text-[#3d1a28]/62 text-base sm:text-lg leading-relaxed mb-10">
+              <p className="text-[#3d1a28]/62 text-base sm:text-lg leading-relaxed mb-10" style={{ textWrap: "pretty" } as React.CSSProperties}>
                 Supplements. Vitamins. Longevity tech. Conscious fashion. Non toxic cookware. All vetted. All discounted.
               </p>
               <Link href="/discount-codes" data-testid="button-hero-discounts">
@@ -279,7 +279,7 @@ export default function Home() {
 
             {/* Text */}
             <div className="flex-1 max-w-lg w-full text-center lg:text-left flex flex-col items-center lg:items-start mx-auto lg:mx-0">
-              <p className="text-[#3d1a28]/62 text-base sm:text-lg leading-relaxed mb-10" data-testid="text-retreats-intro">
+              <p className="text-[#3d1a28]/62 text-base sm:text-lg leading-relaxed mb-10" style={{ textWrap: "pretty" } as React.CSSProperties} data-testid="text-retreats-intro">
                 Real transformation isn't just what you take. It's how you live.
                 <br/><br/>
                 That's why I built spaces where the real work happens. In my retreats and workshops, we go deeper: nervous system reset, Taoist longevity practices, and cutting through the noise together, in person.
