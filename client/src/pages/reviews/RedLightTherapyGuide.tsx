@@ -42,7 +42,6 @@ function CopyCodeButton({ code, href, label, testId }: { code: string; href: str
 function VisitButton({ href, label, testId }: { href: string; label: string; testId: string }) {
   return (
     <div className="card-glass rounded-2xl p-6 sm:p-8 flex flex-col items-center gap-5 text-center" data-testid="section-affiliate-visit">
-      <p className="text-black/60 text-sm uppercase tracking-widest font-semibold">Shop via Affiliate Link</p>
       <Button asChild size="lg" className="btn-gradient-rose text-white border-0 rounded-full px-8 text-sm tracking-widest uppercase font-semibold h-auto py-3.5">
         <a href={href} target="_blank" rel="noopener noreferrer" data-testid={testId} className="inline-flex items-center gap-2">
           {label} <ExternalLink className="w-4 h-4" />
