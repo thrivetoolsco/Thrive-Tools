@@ -122,7 +122,7 @@ const healthTech: DiscountItem[] = [
   },
   {
     name: "RedTherapy",
-    description: "Red therapy panels",
+    description: "Red light panels",
     code: "THRIVETOOLS",
     url: "https://redtherapy.co/?rfsn=7676047.c07132&utm_source=refersion&utm_medium=affiliate&utm_campaign=7676047.c07132",
   },
