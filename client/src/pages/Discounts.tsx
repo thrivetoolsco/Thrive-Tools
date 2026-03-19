@@ -110,9 +110,21 @@ const vitaminsSupplements: DiscountItem[] = [
 const healthTech: DiscountItem[] = [
   {
     name: "Joovv",
-    description: "Red Light & Infrared Devices",
+    description: "Handheld portable therapy and full body panels",
     code: "THRIVETOOLS",
     url: "https://joovv.com",
+  },
+  {
+    name: "Mito Red Light",
+    description: "Red Light masks",
+    code: "Follow This Link",
+    url: "https://www.mitoredlight.com/EDEN27299",
+  },
+  {
+    name: "RedTherapy",
+    description: "Red therapy panels",
+    code: "THRIVETOOLS",
+    url: "https://redtherapy.co/?rfsn=7676047.c07132&utm_source=refersion&utm_medium=affiliate&utm_campaign=7676047.c07132",
   },
   {
     name: "VieLight Neuro",
