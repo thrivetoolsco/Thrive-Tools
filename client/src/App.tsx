@@ -48,6 +48,7 @@ import MagnesiumGuide from "@/pages/reviews/MagnesiumGuide";
 import PumpkinSeedOilGuide from "@/pages/reviews/PumpkinSeedOilGuide";
 import Omega3Guide from "@/pages/reviews/Omega3Guide";
 import CordycepsGuide from "@/pages/reviews/CordycepsGuide";
+import RedLightTherapyGuide from "@/pages/reviews/RedLightTherapyGuide";
 
 function ScrollToTop() {
   const [location] = useLocation();
@@ -117,6 +118,7 @@ function Router() {
       <Route path="/product-reviews/omega-3-complete-guide-epa-dha-fish-oil-vs-algae" component={Omega3Guide} />
       <Route path="/blog/omega-3-complete-guide-epa-dha-fish-oil-vs-algae" component={Omega3Guide} />
       <Route path="/blog/cordyceps-cs4-vs-wild-cordyceps-sinensis" component={CordycepsGuide} />
+      <Route path="/blog/red-light-therapy-science-benefits-devices" component={RedLightTherapyGuide} />
       <Route component={NotFound} />
     </Switch>
   );

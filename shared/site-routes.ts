@@ -287,6 +287,17 @@ export const blogPosts: BlogPost[] = [
     lastmod: "2025-10-29",
   },
   {
+    id: "red-light-therapy-science-benefits-devices",
+    title: "Red Light Therapy: The Science, the Benefits, and the Devices Worth Buying in 2026",
+    excerpt: "Red light therapy is one of the most researched biohacking tools available. Here is what the science actually shows, what it will not do, and the three brands I personally recommend with exclusive discount codes.",
+    href: "/blog/red-light-therapy-science-benefits-devices",
+    canonical: "/blog/red-light-therapy-science-benefits-devices",
+    badge: "Complete Guide",
+    badgeColor: "bg-[#c4622d]/15 text-[#8b3a1a] border-[#c4622d]/25",
+    date: "October 15, 2025",
+    lastmod: "2025-10-15",
+  },
+  {
     id: "rhonda-patrick-multivitamin",
     title: "Why Your \"Healthy\" Diet Probably Has Gaps. And What To Do About It",
     excerpt: "Dr. Rhonda Patrick takes a multivitamin every single day. Here's the science behind why, from the Triage Theory to the COSMOS trials, and what to look for in a quality supplement.",
