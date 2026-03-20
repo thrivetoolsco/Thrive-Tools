@@ -99,12 +99,6 @@ const vitaminsSupplements: DiscountItem[] = [
     code: "THRIVETOOLS-10",
     url: "http://www.styriangold.ca/shop/?",
   },
-  {
-    name: "Maximum Vitality",
-    description: "CBD & Other Nootropics To Optimize Performance",
-    code: "thrivetools25",
-    url: "https://www.maximumvitality.com/ref/68/",
-  },
 ];
 
 const healthTech: DiscountItem[] = [
