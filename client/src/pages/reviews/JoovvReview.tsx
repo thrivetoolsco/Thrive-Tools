@@ -15,7 +15,7 @@ export default function JoovvReview() {
         description: "An honest look at Joovv red light therapy — what the research actually shows, real results, protocols, and whether the investment is worth it in 2026.",
         canonical: "/product-reviews/joovv-review",
         ogType: "article",
-        datePublished: "2025-12-31",
+        datePublished: "2025-12-24",
       }}
       backLabel="Products Reviews"
       backHref="/product-reviews"

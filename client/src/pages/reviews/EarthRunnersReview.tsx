@@ -25,7 +25,7 @@ export default function EarthRunnersReview() {
         description: "Honest EarthRunners review after years of daily use. Why they are the only pair I own, what makes them different, and who they are best for.",
         canonical: "/blog/earthrunners-review",
         ogType: "article",
-        datePublished: "2025-12-24",
+        datePublished: "2025-12-17",
       }}
       backLabel="Blog"
       backHref="/blog"

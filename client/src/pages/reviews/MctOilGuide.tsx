@@ -78,7 +78,7 @@ export default function MctOilGuide() {
         description: "What you need to know about MCT oil: C8 vs C10, oil vs powder, ketone production, cognitive benefits, and dosing. A complete evidence-based guide.",
         canonical: "/blog/mct-oil-benefits-c8-vs-c10-powder-vs-oil",
         ogType: "article",
-        datePublished: "2025-12-10",
+        datePublished: "2025-12-03",
       }}
       backLabel="Blog"
       backHref="/blog"

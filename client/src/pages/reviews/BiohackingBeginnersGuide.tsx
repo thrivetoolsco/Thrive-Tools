@@ -75,7 +75,7 @@ export default function BiohackingBeginnersGuide() {
         description: "New to biohacking? Start here. The core principles, beginner-friendly supplements, sleep optimization, breathwork, and light therapy — without the overwhelm.",
         canonical: "/product-reviews/biohacking-beginners-guide",
         ogType: "article",
-        datePublished: "2025-11-05",
+        datePublished: "2025-10-29",
       }}
       backLabel="Product Reviews"
       backHref="/product-reviews"

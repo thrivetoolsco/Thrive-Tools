@@ -83,7 +83,7 @@ export default function TonicHerbsGuide() {
         description: "What are tonic herbs? The TCM system of Superior Medicine — reishi, he shou wu, astragalus, schisandra, and more. The science, sourcing, and daily protocols.",
         canonical: "/blog/tonic-herbs-guide",
         ogType: "article",
-        datePublished: "2025-12-17",
+        datePublished: "2025-12-10",
       }}
       backLabel="Blog"
       backHref="/blog"

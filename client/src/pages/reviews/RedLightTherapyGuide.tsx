@@ -64,7 +64,7 @@ export default function RedLightTherapyGuide() {
         description: "Red light therapy is one of the most researched biohacking tools available. Here's the science, the honest limitations, and the three devices I recommend.",
         canonical: "/blog/red-light-therapy-science-benefits-devices",
         ogType: "article",
-        datePublished: "2025-10-15",
+        datePublished: "2025-10-08",
       }}
     >
       <article className="space-y-12">

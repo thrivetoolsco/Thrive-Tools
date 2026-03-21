@@ -22,7 +22,7 @@ export default function BiohackingSupplements2026() {
         description: "The most effective biohacking supplements ranked by evidence: creatine, magnesium, omega-3s, adaptogens, and more. What to take, why, and in what doses.",
         canonical: "/product-reviews/biohacking-supplements-2026",
         ogType: "article",
-        datePublished: "2025-10-29",
+        datePublished: "2025-10-22",
       }}
       backLabel="Product Reviews"
       backHref="/product-reviews"
