@@ -145,12 +145,6 @@ const healthTech: DiscountItem[] = [
     url: "https://bluecubebaths.com/?ref=CM-ZEsM_ayIJbh",
   },
   {
-    name: "n.o.w Tone Therapy System",
-    description: "Tone Therapy System",
-    code: "thrive10",
-    url: "https://nowbysolu.com/?ref=GZr9nFoK_hpzmY",
-  },
-  {
     name: "GlowMane",
     description: "Incredible evidence backed tech to address hair concerns",
     code: "EDEN58101",
