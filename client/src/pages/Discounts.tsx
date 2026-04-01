@@ -198,6 +198,12 @@ const healthTech: DiscountItem[] = [
     code: "thrive15",
     url: "https://lddy.no/1i55c",
   },
+  {
+    name: "Muse Headband",
+    description: "EEG device providing real time neurofeedback",
+    code: "THRIVE25",
+    url: "https://choosemuse.com/thrive25",
+  },
 ];
 
 const nontoxicCookware: DiscountItem[] = [
