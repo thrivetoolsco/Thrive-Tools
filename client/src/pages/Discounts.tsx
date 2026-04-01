@@ -25,6 +25,7 @@ interface DiscountItem {
   description: string;
   code: string;
   url: string;
+  blogHref?: string;
 }
 
 const vitaminsSupplements: DiscountItem[] = [
@@ -33,12 +34,14 @@ const vitaminsSupplements: DiscountItem[] = [
     description: "The most complete supplement on the market. Vitamins, probiotics, adaptogens & CoQ10 in one scoop.",
     code: "THRIVE10",
     url: "https://im8health.com/",
+    blogHref: "/product-reviews/im8-health-review",
   },
   {
     name: "HyperionHerbs",
     description: "The gold standard for tonic herbs. Dual extracted, fruiting body only: the difference is noticeable. My go-to for Reishi, Cordyceps, Lion's Mane, and their incredible coffee formula.",
     code: "EDEN10",
     url: "http://www.hyperionherbs.com/discount/eden10",
+    blogHref: "/product-reviews/hyperion-herbs",
   },
   {
     name: "Superfeast",
@@ -51,6 +54,7 @@ const vitaminsSupplements: DiscountItem[] = [
     description: "Spore based probiotics that actually survive stomach acid and reach your gut intact. The most researched strains for real microbiome results.",
     code: "THRIVETOOLS",
     url: "https://justthrivehealth.com/THRIVETOOLS",
+    blogHref: "/product-reviews/bacillus-subtilis-bacillus-coagulans-probiotic-guide",
   },
   {
     name: "Organika",
@@ -63,18 +67,21 @@ const vitaminsSupplements: DiscountItem[] = [
     description: "The most concentrated plant based omega 3 on the market. Algae sourced, triglyceride form, IFOS certified. Fish oil options also available.",
     code: "Follow the link to get $30 off your first subscription",
     url: "https://aquaomega.refr.cc/default/u/thrivetoolsco?s=rp&t=cp",
+    blogHref: "/product-reviews/omega-3-complete-guide-epa-dha-fish-oil-vs-algae",
   },
   {
     name: "Bioptimizers",
     description: "The most advanced magnesium supplement available: 7 bioavailable forms in one formula to cover every cellular function. Also excellent nootropics.",
     code: "THRIVETOOLS",
     url: "https://bioptimizers.com/shop/products/magnesium-breakthrough",
+    blogHref: "/product-reviews/magnesium-deficiency-supplement-guide",
   },
   {
     name: "EnergyBits Chlorella & Spirulina",
     description: "The only company who uses low heat drying to preserve 100% of the algae's delicate enzymes and nutrients that high heat commercial processing destroys",
     code: "THRIVE25",
     url: "https://energybits.com/discount/THRIVE25?rfsn=9026872.b2b124&utm_source=refersion&utm_medium=affiliate&utm_campaign=9026872.b2b124",
+    blogHref: "/product-reviews/energybits-spirulina-chlorella-review",
   },
   {
     name: "Organic Nori Seaweed Sushi",
@@ -87,18 +94,21 @@ const vitaminsSupplements: DiscountItem[] = [
     description: "Pure MCT oil in every form: powder, liquid, and blends. Clean fuel for brain and body with zero fillers.",
     code: "Follow This Link",
     url: "https://bit.ly/4bsgdYC",
+    blogHref: "/product-reviews/mct-oil-benefits-c8-vs-c10-powder-vs-oil",
   },
   {
     name: "Koracao Ceremonial Cacao",
     description: "Ceremonial grade cacao for heart opening rituals, focus and mood. A sacred plant medicine hiding in plain sight.",
     code: "EDENKAWTHARLARAKI123",
     url: "https://koracao.com/THRIVE33",
+    blogHref: "/blog/ceremonial-cacao-benefits-science-review",
   },
   {
     name: "StyrianGold",
     description: "Cold pressed organic pumpkin seed oil, seeds and protein powder. Nutrient dense and completely underrated.",
     code: "THRIVETOOLS-10",
     url: "http://www.styriangold.ca/shop/?",
+    blogHref: "/product-reviews/pumpkin-seed-oil-supplement-stack-benefits",
   },
   {
     name: "Zentein Nutrition",
@@ -114,30 +124,35 @@ const healthTech: DiscountItem[] = [
     description: "Clinical grade red light therapy from handheld devices to full body panels. The most trusted name in photobiomodulation.",
     code: "THRIVETOOLS",
     url: "https://joovv.com",
+    blogHref: "/product-reviews/joovv-review",
   },
   {
     name: "Mito Red Light",
     description: "Medical grade red light masks for targeted facial recovery, skin health and cellular repair.",
     code: "Follow This Link",
     url: "https://www.mitoredlight.com/EDEN27299",
+    blogHref: "/blog/red-light-therapy-science-benefits-devices",
   },
   {
     name: "RedTherapy",
     description: "Full body red light panels built for serious photobiomodulation practice. Powerful, reliable and competitively priced.",
     code: "THRIVETOOLS",
     url: "https://redtherapy.co/?rfsn=7676047.c07132&utm_source=refersion&utm_medium=affiliate&utm_campaign=7676047.c07132",
+    blogHref: "/blog/red-light-therapy-science-benefits-devices",
   },
   {
     name: "VieLight Neuro",
     description: "Transcranial photobiomodulation for concussion recovery, cognitive decline and deepened meditation states. Backed by published clinical research.",
     code: "THRIVETOOLS",
     url: "https://www.vielight.com/devices/",
+    blogHref: "/product-reviews/vielight-neuro-review",
   },
   {
     name: "Oxygen Advantage",
     description: "The most evidence based breathwork courses available online, plus MyoTape for nasal breathing training. Completely changed how I breathe.",
     code: "THRIVETOOLS",
     url: "https://oxygenadvantage.com/?ref=159",
+    blogHref: "/product-reviews/breathwork-beginners-guide",
   },
   {
     name: "Neurosity",
@@ -181,12 +196,14 @@ const healthTech: DiscountItem[] = [
     description: "Water Hydrogenator",
     code: "THRIVE10",
     url: "https://www.piurify.com/?sca_ref=4509873.CyVUQonn5r",
+    blogHref: "/blog/hydrogen-water-benefits-science-review",
   },
   {
     name: "Molecular Hydrogen Technologies",
     description: "Hydrogen Water & Inhalation Technology",
     code: "Follow This Link",
     url: "https://tidd.ly/3NVu95C",
+    blogHref: "/blog/hydrogen-water-benefits-science-review",
   },
   {
     name: "NeuroVizr",
@@ -206,6 +223,7 @@ const healthTech: DiscountItem[] = [
     description: "EEG device providing real time neurofeedback",
     code: "THRIVE25",
     url: "https://choosemuse.com/thrive25",
+    blogHref: "/blog/muse-headband-review-eeg-neurofeedback",
   },
 ];
 
@@ -239,6 +257,7 @@ const ethicalClothing: DiscountItem[] = [
     description: "Grounding, lifetime durable Sandals",
     code: "THRIVETOOLS",
     url: "https://earthrunners.com/?rfsn=7676227.de5b78",
+    blogHref: "/product-reviews/earthrunners-review",
   },
   {
     name: "The Good Tee",
@@ -335,20 +354,33 @@ function DiscountCard({ item, index }: { item: DiscountItem; index: number }) {
       </div>
       <div className="flex flex-wrap items-center justify-between gap-3 pt-3 border-t border-[#3d1a28]/10">
         <CopyableCode code={item.code} />
-        <a
-          href={item.url}
-          target="_blank"
-          rel="noopener noreferrer"
-          data-testid={`link-visit-${index}`}
-        >
-          <Button
-            size="sm"
-            variant="outline"
-            className="rounded-full text-xs border-[#3d1a28]/15 text-[#3d1a28]/70 bg-transparent px-4"
+        <div className="flex items-center gap-2">
+          {item.blogHref && (
+            <Link href={item.blogHref} data-testid={`link-benefits-${index}`}>
+              <Button
+                size="sm"
+                variant="ghost"
+                className="rounded-full text-xs text-[#c4622d] hover:bg-[#c4622d]/10 px-3"
+              >
+                Benefits
+              </Button>
+            </Link>
+          )}
+          <a
+            href={item.url}
+            target="_blank"
+            rel="noopener noreferrer"
+            data-testid={`link-visit-${index}`}
           >
-            Visit <ExternalLink className="w-3 h-3 ml-1.5" />
-          </Button>
-        </a>
+            <Button
+              size="sm"
+              variant="outline"
+              className="rounded-full text-xs border-[#3d1a28]/15 text-[#3d1a28]/70 bg-transparent px-4"
+            >
+              Visit <ExternalLink className="w-3 h-3 ml-1.5" />
+            </Button>
+          </a>
+        </div>
       </div>
     </div>
   );
