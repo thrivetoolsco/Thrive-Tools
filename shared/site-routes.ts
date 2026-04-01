@@ -56,6 +56,17 @@ export const eventRoutes: EventRoute[] = [
 
 export const blogPosts: BlogPost[] = [
   {
+    id: "muse-headband-review-eeg-neurofeedback",
+    title: "Muse Headband Review: The Science-Backed EEG Device That's Changing How We Meditate",
+    excerpt: "After 14 years in the biohacking world, the Muse EEG headband is one of the rare devices that earns its place. Here is what 200+ peer-reviewed studies actually say, and my honest verdict.",
+    href: "/blog/muse-headband-review-eeg-neurofeedback",
+    canonical: "/blog/muse-headband-review-eeg-neurofeedback",
+    badge: "Tech Review",
+    badgeColor: "bg-[#c4622d]/15 text-[#8b3a1a] border-[#c4622d]/25",
+    date: "March 25, 2026",
+    lastmod: "2026-03-25",
+  },
+  {
     id: "cordyceps-cs4-vs-wild-cordyceps-sinensis",
     title: "Cordyceps CS-4 vs Wild Cordyceps Sinensis: Is the Price Difference Worth It?",
     excerpt: "Wild Cordyceps sinensis can cost $50,000 per kilo. CS-4 costs a fraction of that, and the chemistry research may surprise you. Here is my honest verdict after 10 years of daily use.",

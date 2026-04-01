@@ -51,6 +51,7 @@ import Omega3Guide from "@/pages/reviews/Omega3Guide";
 import CordycepsGuide from "@/pages/reviews/CordycepsGuide";
 import RedLightTherapyGuide from "@/pages/reviews/RedLightTherapyGuide";
 import KetamineGuide from "@/pages/reviews/KetamineGuide";
+import MuseHeadbandReview from "@/pages/reviews/MuseHeadbandReview";
 
 function ScrollToTop() {
   const [location] = useLocation();
@@ -123,6 +124,7 @@ function Router() {
       <Route path="/blog/cordyceps-cs4-vs-wild-cordyceps-sinensis" component={CordycepsGuide} />
       <Route path="/blog/red-light-therapy-science-benefits-devices" component={RedLightTherapyGuide} />
       <Route path="/blog/ketamine-brain-science-nmda-receptors-neuron-regrowth" component={KetamineGuide} />
+      <Route path="/blog/muse-headband-review-eeg-neurofeedback" component={MuseHeadbandReview} />
       <Route component={NotFound} />
     </Switch>
   );
