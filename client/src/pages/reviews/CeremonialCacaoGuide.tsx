@@ -16,11 +16,11 @@ function CopyCodeButton({ code, href }: { code: string; href: string }) {
   return (
     <div className="card-glass rounded-2xl p-6 sm:p-8 flex flex-col items-center gap-5 text-center" data-testid="section-affiliate-code">
       <p className="text-black/60 text-sm uppercase tracking-widest font-semibold">Discount Code</p>
-      <div className="flex items-center gap-3 bg-white/60 border border-black/10 rounded-xl px-6 py-3">
-        <span className="font-mono font-bold text-2xl text-[#c4622d] tracking-widest" data-testid="text-discount-code">{code}</span>
+      <div className="flex items-center gap-2 bg-white/60 border border-black/10 rounded-xl px-4 py-3 w-full max-w-full overflow-hidden">
+        <span className="font-mono font-bold text-base sm:text-xl text-[#c4622d] tracking-wide break-all flex-1 text-center" data-testid="text-discount-code">{code}</span>
         <button
           onClick={handleCopy}
-          className="ml-2 p-2 rounded-lg hover:bg-black/5 transition-colors text-black/40 hover:text-black/70"
+          className="flex-shrink-0 p-2 rounded-lg hover:bg-black/5 transition-colors text-black/40 hover:text-black/70"
           aria-label="Copy discount code"
           data-testid="button-copy-code"
         >
