@@ -200,12 +200,7 @@ const healthTech: DiscountItem[] = [
     code: "THRIVE101",
     url: "https://heatbit.com/?ref=EDENKAWTHARLARAKI",
   },
-  {
-    name: "Lovetuner",
-    description: "Breathe 528 hz",
-    code: "thrive15",
-    url: "https://lddy.no/1i55c",
-  },
+
   {
     name: "Muse Headband",
     description: "EEG device providing real time neurofeedback",
