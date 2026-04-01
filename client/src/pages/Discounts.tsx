@@ -351,37 +351,35 @@ function DiscountCard({ item, index }: { item: DiscountItem; index: number }) {
     >
       <div>
         <h3 className="text-[#3d1a28] font-bold text-lg mb-2">{item.name}</h3>
-        <p className="text-[#3d1a28]/55 text-sm leading-relaxed">{item.description}</p>
+        <p className="text-[#3d1a28]/55 text-sm leading-relaxed">
+          {item.description}
+          {item.blogHref && (
+            <> <a
+              href={item.blogHref}
+              target="_blank"
+              rel="noopener noreferrer"
+              data-testid={`link-benefits-${index}`}
+              className="text-[#c4622d] font-medium hover:underline"
+            >Benefits</a></>
+          )}
+        </p>
       </div>
       <div className="flex flex-wrap items-center justify-between gap-3 pt-3 border-t border-[#3d1a28]/10">
         <CopyableCode code={item.code} />
-        <div className="flex items-center gap-2">
-          {item.blogHref && (
-            <a href={item.blogHref} target="_blank" rel="noopener noreferrer" data-testid={`link-benefits-${index}`}>
-              <Button
-                size="sm"
-                variant="ghost"
-                className="rounded-full text-xs text-[#c4622d] hover:bg-[#c4622d]/10 px-3"
-              >
-                Benefits
-              </Button>
-            </a>
-          )}
-          <a
-            href={item.url}
-            target="_blank"
-            rel="noopener noreferrer"
-            data-testid={`link-visit-${index}`}
+        <a
+          href={item.url}
+          target="_blank"
+          rel="noopener noreferrer"
+          data-testid={`link-visit-${index}`}
+        >
+          <Button
+            size="sm"
+            variant="outline"
+            className="rounded-full text-xs border-[#3d1a28]/15 text-[#3d1a28]/70 bg-transparent px-4"
           >
-            <Button
-              size="sm"
-              variant="outline"
-              className="rounded-full text-xs border-[#3d1a28]/15 text-[#3d1a28]/70 bg-transparent px-4"
-            >
-              Visit <ExternalLink className="w-3 h-3 ml-1.5" />
-            </Button>
-          </a>
-        </div>
+            Visit <ExternalLink className="w-3 h-3 ml-1.5" />
+          </Button>
+        </a>
       </div>
     </div>
   );
