@@ -12,7 +12,7 @@ export default function VielightNeuroReview() {
       subtitle="Can Photobiomodulation Reverse Brain Aging?"
       seo={{
         title: "Vielight Neuro 2026: Brain Light Therapy | Thrive Tools",
-        description: "A science-backed review of the Vielight Neuro. What the research says about near-infrared photobiomodulation for brain aging, cognition, and neuroprotection.",
+        description: "A science-backed review of the Vielight Neuro. What the research says about NIR photobiomodulation for brain aging, cognition, and neuroprotection.",
         canonical: "/product-reviews/vielight-neuro-review",
         ogType: "article",
         datePublished: "2026-01-14",
@@ -42,6 +42,15 @@ export default function VielightNeuroReview() {
             </p>
             <p>
               Photobiomodulation isn't fringe science — it's been the subject of over 5,000 peer-reviewed studies. The question is whether Vielight's specific implementation delivers meaningful results for brain health and cognitive enhancement.
+            </p>
+            <p className="text-sm text-black/50">
+              For related reading, see my{" "}
+              <a href="/blog/muse-headband-review-eeg-neurofeedback" className="underline text-[#c4622d] hover:text-[#8b3a1a] transition-colors">Muse EEG headband review</a>,{" "}
+              my{" "}
+              <a href="/blog/red-light-therapy-science-benefits-devices" className="underline text-[#c4622d] hover:text-[#8b3a1a] transition-colors">complete red light therapy guide</a>,{" "}
+              and the{" "}
+              <a href="/discount-codes" className="underline text-[#c4622d] hover:text-[#8b3a1a] transition-colors">longevity tech discount codes</a>{" "}
+              for my affiliate links.
             </p>
           </div>
         </section>
@@ -98,7 +107,9 @@ export default function VielightNeuroReview() {
 
           <div className="space-y-4 text-black/70 leading-relaxed">
             <p>
-              The most compelling evidence comes from Alzheimer's research. A randomized controlled trial by Lim et al. (2021) using the Vielight Neuro Gamma on patients with mild to moderate Alzheimer's showed statistically significant improvements in cognitive function (measured by ADAS-cog scores) after 12 weeks of treatment.
+              The most compelling evidence comes from Alzheimer's research. A{" "}
+              <a href="https://pubmed.ncbi.nlm.nih.gov/34219718/" target="_blank" rel="noopener noreferrer" className="underline text-[#c4622d] hover:text-[#8b3a1a] transition-colors" data-testid="link-pubmed-vielight-alzheimer">randomized controlled trial by Lim et al. (2021)</a>{" "}
+              using the Vielight Neuro Gamma on patients with mild to moderate Alzheimer's showed statistically significant improvements in cognitive function (measured by ADAS-cog scores) after 12 weeks of treatment.
             </p>
             <p>
               Separate research from Harvard Medical School demonstrated that transcranial PBM at 810nm increased cerebral blood flow, enhanced default mode network connectivity, and improved executive function in healthy adults — suggesting benefits extend well beyond treating disease.

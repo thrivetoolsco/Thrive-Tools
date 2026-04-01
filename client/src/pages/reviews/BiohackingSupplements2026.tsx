@@ -106,8 +106,11 @@ export default function BiohackingSupplements2026() {
             <h2 className="font-display text-2xl font-bold text-black">Layer 2. Magnesium: BiOptimizers Magnesium Breakthrough</h2>
           </div>
           <div className="space-y-4 text-black/70 leading-relaxed">
+            <h3 className="font-display text-xl font-bold text-black mb-2">Why Multi-Form Magnesium Works</h3>
             <p>
-              Magnesium is involved in over 600 enzymatic reactions in the body, yet the vast majority of people are deficient. The problem isn't just quantity, it's form. Different tissues absorb different forms of magnesium, meaning a single-form supplement leaves most of your body underserved.
+              Magnesium is involved in{" "}
+              <a href="https://pubmed.ncbi.nlm.nih.gov/27910808/" target="_blank" rel="noopener noreferrer" className="underline text-[#c4622d] hover:text-[#8b3a1a] transition-colors" data-testid="link-pubmed-magnesium-reactions">over 600 enzymatic reactions in the body</a>,{" "}
+              yet the vast majority of people are deficient. The problem isn't just quantity, it's form. Different tissues absorb different forms of magnesium, meaning a single-form supplement leaves most of your body underserved.
             </p>
             <p>
               BiOptimizers Magnesium Breakthrough delivers 500mg across 7 bioavailable forms: chelate, glycinate, malate, citrate, orotate, sucrosomial, and taurate, providing full-spectrum magnesium support across multiple body systems.

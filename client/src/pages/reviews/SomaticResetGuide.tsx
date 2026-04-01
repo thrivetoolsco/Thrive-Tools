@@ -229,7 +229,9 @@ export default function SomaticResetGuide() {
               A somatic reset is any deliberate, body-based practice that interrupts a dysregulated nervous system state, fight-or-flight, freeze, shutdown, and guides it back toward what researchers call the ventral vagal state: calm, connected, present, and capable of clear thought.
             </p>
             <p>
-              Somatic therapy works by engaging a bottom-up process from the nervous system to the subconscious brain. The Polyvagal Theory, as proposed by Stephen Porges, describes how our autonomic nervous system has evolved layered responses, social engagement and safety, sympathetic mobilization, and dorsal vagal shutdown, and how trauma and chronic stress disrupt or bias these responses.
+              Somatic therapy works by engaging a bottom-up process from the nervous system to the subconscious brain.{" "}
+              <a href="https://pubmed.ncbi.nlm.nih.gov/32956448/" target="_blank" rel="noopener noreferrer" className="underline text-[#c4622d] hover:text-[#8b3a1a] transition-colors" data-testid="link-pubmed-somatic-polyvagal">The Polyvagal Theory, as proposed by Stephen Porges</a>,{" "}
+              describes how our autonomic nervous system has evolved layered responses, social engagement and safety, sympathetic mobilization, and dorsal vagal shutdown, and how trauma and chronic stress disrupt or bias these responses.
             </p>
             <p>
               The key insight is this: trauma is stored in the nervous system and can be resolved by integrating non-verbal, physiological impulses into the therapeutic process. You cannot think your way out of a physiological state. You have to move through it, literally.

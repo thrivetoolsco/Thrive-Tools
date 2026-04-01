@@ -149,6 +149,7 @@ export default function MagnesiumGuide() {
             </p>
             <p>Here is what the research shows happens to each major body system when magnesium is chronically insufficient:</p>
           </div>
+          <h3 className="font-display text-xl font-bold text-black mb-5">System-by-System Effects</h3>
           <div className="space-y-4">
             <OrganCard
               title="The Nervous System and Mental Health"

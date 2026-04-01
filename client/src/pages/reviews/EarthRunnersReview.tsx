@@ -93,6 +93,7 @@ export default function EarthRunnersReview() {
         <section data-testid="section-grounding">
           <SectionHeader icon={<Zap className="w-5 h-5" />} title="The Grounding Technology: What It Actually Does" />
           <div className="space-y-4 text-black/70 leading-relaxed">
+            <h3 className="font-display text-xl font-bold text-black mb-2">The Earthing Research</h3>
             <p>
               I'll be upfront: when I first heard about grounding sandals I was skeptical. It sounds like wellness marketing. But I looked at the research, and the science behind earthing is considerably more substantive than I expected.
             </p>

@@ -140,7 +140,9 @@ export default function Im8VsAg1() {
                   AG1 uses proprietary blends, so you can't see exact dosages for many ingredients. It also relies on some synthetic vitamins rather than the most bioavailable forms. When you can't see the dose, you can't assess whether a therapeutic amount is present — and with dozens of ingredients in a single scoop, the math often doesn't add up to meaningful doses of everything listed.
                 </p>
                 <p>
-                  Independent testing by ConsumerLab in 2025 flagged AG1 for heavy metal content, including lead, arsenic, and cadmium, at levels some experts say should be avoided. This is worth noting, particularly for daily use. Heavy metals concentrate in plant material, and greens powders are among the supplement categories most susceptible to contamination if testing standards aren't rigorous.
+                  Independent testing by ConsumerLab in 2025 flagged AG1 for heavy metal content, including lead, arsenic, and cadmium, at levels some experts say should be avoided. This is worth noting, particularly for daily use.{" "}
+                  <a href="https://pubmed.ncbi.nlm.nih.gov/20648045/" target="_blank" rel="noopener noreferrer" className="underline text-[#c4622d] hover:text-[#8b3a1a] transition-colors" data-testid="link-pubmed-im8vsag1-metals">Heavy metals concentrate in plant material</a>,{" "}
+                  and greens powders are among the supplement categories most susceptible to contamination if testing standards aren't rigorous.
                 </p>
               </div>
             </div>

@@ -260,7 +260,8 @@ export default function BreathworkBeginnersGuide() {
               Here's what makes breathwork genuinely remarkable as a health tool, it gives you direct, real-time access to your autonomic nervous system. That's the system that controls heart rate, digestion, stress hormones, immune function, and dozens of other processes you normally have no conscious control over. Your breath is the bridge.
             </p>
             <p>
-              Controlled breathwork practices have emerged as powerful tools for stress management and well-being. Our understanding of the effects of breathing on the brain and body allows us to design specific science-supported breath practices to improve stress tolerance and sleep, enhance energy, focus, and creativity, and regulate emotional and cognitive states.
+              <a href="https://pubmed.ncbi.nlm.nih.gov/28096222/" target="_blank" rel="noopener noreferrer" className="underline text-[#c4622d] hover:text-[#8b3a1a] transition-colors" data-testid="link-pubmed-breathwork-science">Controlled breathwork practices have emerged as powerful tools for stress management and well-being.</a>{" "}
+              Our understanding of the effects of breathing on the brain and body allows us to design specific science-supported breath practices to improve stress tolerance and sleep, enhance energy, focus, and creativity, and regulate emotional and cognitive states.
             </p>
             <p>The research is compelling across multiple areas:</p>
           </div>

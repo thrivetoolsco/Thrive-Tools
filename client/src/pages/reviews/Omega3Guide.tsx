@@ -60,7 +60,7 @@ export default function Omega3Guide() {
       subtitle="EPA, DHA, fish oil vs algae oil, and why most supplements fail. Here's the complete science and the only brand I recommend."
       seo={{
         title: "Omega-3 Guide: EPA, DHA & Fish Oil vs Algae | Thrive Tools",
-        description: "Everything you need to know about omega-3s. EPA vs DHA, fish oil vs algae, why most supplements fail, optimal doses, and the only brand I recommend — AquaOmega.",
+        description: "Everything about omega-3s. EPA vs DHA, fish oil vs algae, why most supplements fail, optimal doses, and the brand I recommend: AquaOmega.",
         canonical: "/blog/omega-3-complete-guide-epa-dha-fish-oil-vs-algae",
         ogType: "article",
         datePublished: "2026-03-11",

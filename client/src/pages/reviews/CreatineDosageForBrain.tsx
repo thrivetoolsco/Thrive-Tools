@@ -84,6 +84,7 @@ export default function CreatineDosageForBrain() {
         <section data-testid="section-brain">
           <SectionHeader icon={<Brain className="w-5 h-5" />} title="What Creatine Actually Does in the Brain" />
           <div className="space-y-4 text-black/70 leading-relaxed">
+            <h3 className="font-display text-xl font-bold text-black mb-2">How Creatine Powers the Brain</h3>
             <p>
               Most people think of creatine as a muscle supplement. But the brain is, by any measure, the most energy-hungry organ in your body, accounting for 20% of your daily energy needs despite representing only about 2% of your body weight.
             </p>

@@ -67,7 +67,9 @@ export default function Im8HealthReview() {
         <section data-testid="section-intro">
           <div className="space-y-4 text-black/70 leading-relaxed">
             <p>
-              When a supplement is co-founded by David Beckham, developed with scientists from Mayo Clinic, NASA, Yale, and Cedars-Sinai, and claims to replace 16 separate daily supplements in a single morning drink, the skepticism is warranted.
+              When a supplement is co-founded by David Beckham, developed with scientists from Mayo Clinic, NASA, Yale, and Cedars-Sinai, and claims to replace 16 separate daily supplements in a single morning drink, the skepticism is warranted.{" "}
+              <a href="https://pubmed.ncbi.nlm.nih.gov/30402831/" target="_blank" rel="noopener noreferrer" className="underline text-[#c4622d] hover:text-[#8b3a1a] transition-colors" data-testid="link-pubmed-im8-multivitamin">Research published in JAMA</a>{" "}
+              consistently shows that most adults fall short on multiple micronutrients simultaneously, making the case for comprehensive supplementation stronger than most people realize.
             </p>
             <p>
               That's exactly the mindset I brought to this review. I've spent time with IM8 Daily Ultimate Essentials Pro, digging into its ingredients, its clinical trial, its certifications, and what it actually feels like to take it daily. This is not a sponsored review. No brand relationship influences what you're about to read.
@@ -84,6 +86,7 @@ export default function Im8HealthReview() {
         <section data-testid="section-what-is-im8">
           <SectionHeader icon={<Leaf className="w-5 h-5" />} title="What Is IM8 Health?" />
           <div className="space-y-4 text-black/70 leading-relaxed">
+            <h3 className="font-display text-xl font-bold text-black mb-2">Origins and Formulation Philosophy</h3>
             <p>
               Launched in January 2025 by former Manchester United player David Beckham and Prenetics, a leading biotechnology company, IM8 describes itself as "the pinnacle of core nutrition."
             </p>

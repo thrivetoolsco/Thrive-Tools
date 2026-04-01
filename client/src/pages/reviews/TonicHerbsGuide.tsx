@@ -80,7 +80,7 @@ export default function TonicHerbsGuide() {
       subtitle="2026 Edition"
       seo={{
         title: "Tonic Herbs: The Ancient System of Vitality | Thrive Tools",
-        description: "What are tonic herbs? The TCM system of Superior Medicine — reishi, he shou wu, astragalus, schisandra, and more. The science, sourcing, and daily protocols.",
+        description: "What are tonic herbs? The TCM system of Superior Medicine — reishi, astragalus, schisandra, and more. The science, sourcing, and daily protocols.",
         canonical: "/blog/tonic-herbs-guide",
         ogType: "article",
         datePublished: "2025-12-10",
@@ -122,7 +122,9 @@ export default function TonicHerbsGuide() {
           <SectionHeader icon={<Leaf className="w-5 h-5" />} title="What Are Tonic Herbs? The Most Misunderstood Category in Wellness" />
           <div className="space-y-4 text-black/70 leading-relaxed mb-8">
             <p>
-              In herbal medicine, a tonic herb is used to help restore, tone, and invigorate systems in the body, or to promote general health and well-being. Herbal tonics can be dated as far back as 4,000 years ago, as a practice thought to have originated within Traditional Chinese Medicine. The use of tonic herbs extends as far back as ancient times, embedded within TCM, which categorized tonic herbs according to Jing, Qi, and Shen, which can be translated as body, mind, and soul.
+              In herbal medicine, a tonic herb is used to help restore, tone, and invigorate systems in the body, or to promote general health and well-being.{" "}
+              <a href="https://pubmed.ncbi.nlm.nih.gov/28850053/" target="_blank" rel="noopener noreferrer" className="underline text-[#c4622d] hover:text-[#8b3a1a] transition-colors" data-testid="link-pubmed-tonic-herbs-tcm">Herbal tonics can be dated as far back as 4,000 years ago</a>,{" "}
+              as a practice thought to have originated within Traditional Chinese Medicine. The use of tonic herbs extends as far back as ancient times, embedded within TCM, which categorized tonic herbs according to Jing, Qi, and Shen, which can be translated as body, mind, and soul.
             </p>
             <p>
               That three-part framework is worth understanding, because it's the organizing principle of the entire tonic herb system:

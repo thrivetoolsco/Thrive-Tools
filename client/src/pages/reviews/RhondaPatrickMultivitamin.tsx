@@ -37,6 +37,15 @@ export default function RhondaPatrickMultivitamin() {
             <p>
               This is exactly why <strong className="text-black/90">Dr. Rhonda Patrick takes a multivitamin every single day.</strong> And when someone like her does something, it's worth paying attention.
             </p>
+            <p className="text-sm text-black/50">
+              For related reading, see my full{" "}
+              <a href="/product-reviews/im8-health-review" className="underline text-[#c4622d] hover:text-[#8b3a1a] transition-colors">IM8 Health review</a>,{" "}
+              my{" "}
+              <a href="/blog/magnesium-deficiency-supplement-guide" className="underline text-[#c4622d] hover:text-[#8b3a1a] transition-colors">magnesium deficiency guide</a>,{" "}
+              and the{" "}
+              <a href="/discount-codes" className="underline text-[#c4622d] hover:text-[#8b3a1a] transition-colors">full discount codes page</a>{" "}
+              for supplement savings.
+            </p>
           </div>
         </section>
 
@@ -70,7 +79,9 @@ export default function RhondaPatrickMultivitamin() {
           <div className="space-y-4 text-black/70 leading-relaxed">
             <p>Here's the part that should genuinely concern you.</p>
             <p>
-              Dr. Patrick's mentor, biochemist Dr. Bruce Ames, developed something called the <strong className="text-black/90">"Triage Theory"</strong>, one of the most important ideas in modern nutrition that most people have never heard of.
+              Dr. Patrick's mentor, biochemist Dr. Bruce Ames, developed something called the{" "}
+              <a href="https://pubmed.ncbi.nlm.nih.gov/17101959/" target="_blank" rel="noopener noreferrer" className="underline text-[#c4622d] hover:text-[#8b3a1a] transition-colors" data-testid="link-pubmed-triage-theory"><strong className="text-black/90">"Triage Theory"</strong></a>,{" "}
+              one of the most important ideas in modern nutrition that most people have never heard of.
             </p>
             <p>
               The concept is this: when your body is low on a nutrient, it rations it. It keeps the lights on for the functions you need to survive <em>right now</em>, and quietly deprioritizes things like DNA repair, cellular maintenance, and protecting your arteries. You feel totally fine. Meanwhile, damage is slowly accumulating at the cellular level, the kind that shows up 20 or 30 years later as the diseases we call "aging."
@@ -92,6 +103,8 @@ export default function RhondaPatrickMultivitamin() {
             <FlaskConical className="w-5 h-5 text-[#c4622d]" />
             <h2 className="font-display text-2xl font-bold text-black">The Gaps Are More Common Than You Think</h2>
           </div>
+
+          <h3 className="font-display text-xl font-bold text-black mb-5">The Most Common Deficiencies in 2026</h3>
 
           <div className="grid sm:grid-cols-3 gap-5 mb-8">
             <div className="card-glass rounded-xl p-5 text-center" data-testid="stat-vitamin-d">

@@ -125,6 +125,7 @@ export default function JustThriveProbiotic() {
         <section data-testid="section-spore">
           <SectionHeader icon={<ShieldCheck className="w-5 h-5" />} title="What Makes Spore-Forming Probiotics Categorically Different" />
           <div className="space-y-4 text-black/70 leading-relaxed">
+            <h3 className="font-display text-xl font-bold text-black mb-2">Why Bacillus Species Outperform Lactobacillus</h3>
             <p>
               Bacillus bacteria have strong scientific data which substantiates the validity of their use as preferred probiotics. In recent times, there has been significant progress in scientific evaluation and studies on probiotic Bacillus subtilis, revealing possible mechanisms of action including antimicrobial effect by synthesis of antimicrobial substances, antidiarrheal effect, immunostimulatory effect, competitive exclusion of pathogens, prevention of intestinal inflammation, and normalization of intestinal flora.
             </p>

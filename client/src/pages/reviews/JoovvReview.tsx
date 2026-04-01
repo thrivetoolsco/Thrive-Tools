@@ -45,6 +45,13 @@ export default function JoovvReview() {
             <p>
               I've spent the last few months standing naked in front of a red light (for science!), and here is the unfiltered truth about whether Joovv lives up to the 2026 hype.
             </p>
+            <p className="text-sm text-black/50">
+              See also:{" "}
+              <a href="/blog/red-light-therapy-science-benefits-devices" className="underline text-[#c4622d] hover:text-[#8b3a1a] transition-colors">the complete red light therapy science guide</a>,{" "}
+              <a href="/product-reviews/vielight-neuro-review" className="underline text-[#c4622d] hover:text-[#8b3a1a] transition-colors">Vielight Neuro brain light review</a>,{" "}
+              and my{" "}
+              <a href="/discount-codes" className="underline text-[#c4622d] hover:text-[#8b3a1a] transition-colors">Joovv discount code</a>.
+            </p>
           </div>
         </section>
 
@@ -65,7 +72,9 @@ export default function JoovvReview() {
           <h2 className="font-display text-2xl font-bold text-black mb-4" data-testid="text-benefits-heading">The Benefits: What's Actually Happening?</h2>
           <div className="space-y-4 text-black/70 leading-relaxed">
             <p>
-              We aren't just standing in the dark with a red bulb. Joovv uses medical grade LEDs to blast your cells with specific wavelengths: 660nm (Red) and 850nm (Near-Infrared). In 2026 lingo, we call this "charging your cellular batteries."
+              We aren't just standing in the dark with a red bulb. Joovv uses medical grade LEDs to blast your cells with specific wavelengths: 660nm (Red) and 850nm (Near-Infrared). In 2026 lingo, we call this "charging your cellular batteries." A{" "}
+              <a href="https://pubmed.ncbi.nlm.nih.gov/28856484/" target="_blank" rel="noopener noreferrer" className="underline text-[#c4622d] hover:text-[#8b3a1a] transition-colors" data-testid="link-pubmed-joovv-rlt">comprehensive review in Seminars in Cutaneous Medicine</a>{" "}
+              confirmed that red and NIR light stimulates cytochrome c oxidase, dramatically increasing cellular ATP production, collagen synthesis, and tissue repair.
             </p>
           </div>
           <div className="card-glass rounded-2xl overflow-hidden mt-6" data-testid="img-joovv-benefits">

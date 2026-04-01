@@ -1,0 +1,51 @@
+Look at server/index.ts, server/static.ts, server/routes.ts, and every blog post 
+template file. Then make ALL of the following changes in one go:
+
+1. GZIP: Run `npm install compression @types/compression`, then add 
+`import compression from 'compression'` and `app.use(compression())` as the 
+very first middleware in server/index.ts.
+
+2. CANONICAL URL: In every blog post template or route handler, generate the 
+canonical tag dynamically using the actual request URL, like this:
+<link rel="canonical" href="https://www.thrivetools.co${req.path}" />
+Never hardcode it to the homepage.
+
+3. H1 TAG: Ensure every blog post has exactly ONE H1 tag containing the primary 
+keyword. Confirm it exists in the rendered HTML output, not just the editor.
+
+4. HEADING STRUCTURE: Every post must have a minimum of 3 H2 subheadings and 
+at least 1 H3. No skipping heading levels.
+
+5. META TITLE: Unique per post, under 60 characters, includes the primary keyword, 
+different wording from the H1.
+
+6. META DESCRIPTION: Unique per post, 120-155 characters, includes primary keyword 
+and a call to action.
+
+7. OPEN GRAPH TAGS: Add og:title, og:description, og:image, og:url (matching the 
+canonical), og:type=article to every blog post.
+
+8. JSON-LD SCHEMA: Add BlogPosting structured data to every post with: headline, 
+description, author, datePublished, dateModified, image, and url fields.
+
+9. INTERNAL LINKS: Insert 2-3 internal links within every blog post body pointing 
+to related thrivetools.co pages. Use descriptive anchor text. Verify they render 
+in published HTML.
+
+10. EXTERNAL LINKS: Add 1-2 outbound links to authoritative sources (PubMed, NIH) 
+relevant to each post topic. Use target="_blank" rel="noopener noreferrer".
+
+11. IMAGE ALT TEXT: Every image in every post must have descriptive, 
+keyword-relevant alt text. No empty alt attributes.
+
+12. PAGE TITLE TAG: Every post must have a unique, descriptive <title> tag — 
+never generic like "ThriveTools Blog".
+
+13. SITEMAP: Confirm every blog post URL is in sitemap.xml with correct <loc>, 
+<lastmod>, and <changefreq> values.
+
+14. IMAGE SIZE: Compress all images so none exceed 150KB.
+
+Apply all of these to every existing blog post AND to the default template used 
+for all future blog posts. When done, give me a checklist confirming each item 
+was completed.

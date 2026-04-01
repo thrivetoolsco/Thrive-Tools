@@ -48,6 +48,14 @@ export default function HyperionHerbs() {
             <p>
               Then I found Hyperion Herbs. And I realized I had been doing it wrong. I hadn't been feeling anything because I wasn't taking real, potent tonic herbs. I was taking marketing fluff.
             </p>
+            <p className="text-sm text-black/50">
+              For more context on adaptogenic herbs and the science behind them, see my{" "}
+              <a href="/blog/tonic-herbs-complete-guide" className="underline text-[#c4622d] hover:text-[#8b3a1a] transition-colors">complete tonic herbs guide</a>,{" "}
+              the{" "}
+              <a href="/blog/reishi-schisandra-review-stress-immunity" className="underline text-[#c4622d] hover:text-[#8b3a1a] transition-colors">Reishi and Schisandra review</a>,{" "}
+              and my{" "}
+              <a href="/discount-codes" className="underline text-[#c4622d] hover:text-[#8b3a1a] transition-colors">Hyperion Herbs discount code</a>.
+            </p>
           </div>
         </section>
 
@@ -60,7 +68,9 @@ export default function HyperionHerbs() {
           </div>
           <div className="space-y-4 text-black/70 leading-relaxed">
             <p>
-              We are a generation obsessed with authenticity and optimization, yet the wellness industry often serves us watered-down compromises. The issue isn't that herbs don't work; it's that the commercial process destroys what makes them special.
+              We are a generation obsessed with authenticity and optimization, yet the wellness industry often serves us watered-down compromises. The issue isn't that herbs don't work; it's that the commercial process destroys what makes them special. A{" "}
+              <a href="https://pubmed.ncbi.nlm.nih.gov/31140227/" target="_blank" rel="noopener noreferrer" className="underline text-[#c4622d] hover:text-[#8b3a1a] transition-colors" data-testid="link-pubmed-adaptogens">2019 review in Pharmaceuticals</a>{" "}
+              confirmed that adaptogen efficacy is heavily dependent on the concentration of active compounds like triterpenes and polysaccharides, precisely what cheap processing destroys.
             </p>
             <p>Here's the unfiltered truth:</p>
           </div>

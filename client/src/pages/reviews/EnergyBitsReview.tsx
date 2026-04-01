@@ -76,6 +76,13 @@ export default function EnergyBitsReview() {
             <p>
               This article explains why that distinction matters enormously, what spirulina and chlorella actually do when they're processed correctly, and why ENERGYbits is the only algae brand I personally recommend after years of researching and using both.
             </p>
+            <p className="text-sm text-black/50">
+              Related:{" "}
+              <a href="/blog/biohacking-supplements-2026" className="underline text-[#c4622d] hover:text-[#8b3a1a] transition-colors">best biohacking supplements 2026</a>,{" "}
+              <a href="/blog/omega-3-complete-guide-epa-dha-fish-oil-vs-algae" className="underline text-[#c4622d] hover:text-[#8b3a1a] transition-colors">the omega-3 guide for algae lovers</a>,{" "}
+              and the{" "}
+              <a href="/discount-codes" className="underline text-[#c4622d] hover:text-[#8b3a1a] transition-colors">ENERGYbits discount code THRIVE25</a>.
+            </p>
           </div>
         </section>
 
@@ -130,6 +137,7 @@ export default function EnergyBitsReview() {
         <section data-testid="section-spirulina">
           <SectionHeader icon={<Zap className="w-5 h-5" />} title="What Spirulina Actually Does" />
           <div className="space-y-4 text-black/70 leading-relaxed">
+            <h3 className="font-display text-xl font-bold text-black mb-2">The Research Behind the Claims</h3>
             <p>
               Spirulina is a blue-green cyanobacterium, one of the oldest life forms on Earth, dating back over 3.6 billion years. Packed with 60% plant-based protein, iron, B vitamins, and antioxidants, it's your body's natural fuel source. Originally used by ancient civilizations for strength and endurance, spirulina delivers clean energy, sharp focus, and immune support, all without caffeine, sugar, or crash.
             </p>

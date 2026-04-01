@@ -96,6 +96,7 @@ export default function MouthBreathingGuide() {
           <p className="text-black/70 leading-relaxed mb-8">
             The effects of habitual mouth breathing extend far beyond a dry throat in the morning. The research paints a surprisingly comprehensive picture of systemic damage.
           </p>
+          <h3 className="font-display text-xl font-bold text-black mb-5">How Mouth Breathing Damages Each Body System</h3>
           <div className="space-y-8">
             <SubSection label="Sleep and the nervous system">
               <p className="text-black/70 text-sm leading-relaxed">
@@ -103,7 +104,7 @@ export default function MouthBreathingGuide() {
               </p>
               <div className="card-glass rounded-xl p-5 border-l-4" style={{ borderLeftColor: "#c4622d" }}>
                 <p className="text-black/75 text-sm leading-relaxed italic">
-                  "Mouth breathing during sleep is not just undesirable; it is actually dangerous, as it is associated with sleep apnea, which puts people at risk for numerous cardiovascular issues, impaired craniofacial development in kids, and effects on aesthetics, tooth and gut health in adults, and more."
+                  <a href="https://pubmed.ncbi.nlm.nih.gov/29606785/" target="_blank" rel="noopener noreferrer" className="not-italic underline text-[#c4622d] hover:text-[#8b3a1a] transition-colors" data-testid="link-pubmed-mouth-breathing">"Mouth breathing during sleep is not just undesirable; it is actually dangerous, as it is associated with sleep apnea, which puts people at risk for numerous cardiovascular issues, impaired craniofacial development in kids, and effects on aesthetics, tooth and gut health in adults, and more."</a>
                 </p>
                 <p className="text-xs text-[#c4622d] font-semibold mt-3">Dr. Andrew Huberman, Stanford University</p>
               </div>

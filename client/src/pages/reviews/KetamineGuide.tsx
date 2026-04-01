@@ -87,7 +87,9 @@ export default function KetamineGuide() {
           <h2 className="text-2xl font-semibold text-black/90 mb-5">How Ketamine Works: The Cascade</h2>
           <div className="space-y-4 text-black/70 leading-relaxed">
             <p className="text-pretty">
-              Ketamine's mechanism is more complex than simple NMDA receptor blockade. Understanding the full cascade explains both why it works so rapidly and why the effects can persist well beyond the drug's presence in the system.
+              Ketamine's mechanism is more complex than simple NMDA receptor blockade.{" "}
+              <a href="https://pubmed.ncbi.nlm.nih.gov/29447482/" target="_blank" rel="noopener noreferrer" className="underline text-[#c4622d] hover:text-[#8b3a1a] transition-colors" data-testid="link-pubmed-ketamine-mechanism">Understanding the full cascade</a>{" "}
+              explains both why it works so rapidly and why the effects can persist well beyond the drug's presence in the system.
             </p>
           </div>
 

@@ -72,7 +72,7 @@ export default function BiohackingBeginnersGuide() {
       subtitle="The Complete 2026 Starter Guide"
       seo={{
         title: "Biohacking for Beginners: 2026 Starter Guide | Thrive Tools",
-        description: "New to biohacking? Start here. The core principles, beginner-friendly supplements, sleep optimization, breathwork, and light therapy — without the overwhelm.",
+        description: "New to biohacking? Start here. Core principles, beginner supplements, sleep optimization, breathwork, and light therapy, without the overwhelm.",
         canonical: "/product-reviews/biohacking-beginners-guide",
         ogType: "article",
         datePublished: "2025-10-29",
@@ -156,7 +156,9 @@ export default function BiohackingBeginnersGuide() {
           <SectionHeader icon={<Moon className="w-5 h-5" />} title="Layer 1: Sleep. The Most Powerful Biohack in Existence" />
           <div className="space-y-4 text-black/70 leading-relaxed">
             <p>
-              Sleep is the most important biohack of all. While you sleep, you cannot eat, fight, flee, or reproduce, and yet sleep has prevailed in evolution because it is simply necessary. It is the basis for all regeneration processes in the body. Without it, nothing works properly.
+              Sleep is the most important biohack of all. While you sleep, you cannot eat, fight, flee, or reproduce, and yet sleep has prevailed in evolution because it is simply necessary. It is the basis for all regeneration processes in the body. Without it, nothing works properly. A{" "}
+              <a href="https://pubmed.ncbi.nlm.nih.gov/28222228/" target="_blank" rel="noopener noreferrer" className="underline text-[#c4622d] hover:text-[#8b3a1a] transition-colors" data-testid="link-pubmed-sleep-health">landmark review in Science</a>{" "}
+              found that even a single night of poor sleep impairs glucose metabolism, inflammatory markers, and cognitive performance, laying out why sleep is the non-negotiable foundation of any biohacking protocol.
             </p>
             <p>Before you add anything else, get your sleep dialed in:</p>
           </div>
@@ -243,6 +245,8 @@ export default function BiohackingBeginnersGuide() {
               Here's the beginner-friendly stack we recommend at ThriveTools, built around five of the most credible brands in the space:
             </p>
           </div>
+
+          <h3 className="font-display text-xl font-bold text-black mb-5">The Beginner's Priority Stack</h3>
 
           <div className="space-y-5">
             <SupplementCard title="Start Here: IM8 Daily Ultimate Essentials Pro">

@@ -171,6 +171,7 @@ export default function ReishiSchisandraGuide() {
         <section data-testid="section-reishi">
           <SectionHeader icon={<ShieldCheck className="w-5 h-5" />} title="Reishi: The Mushroom of Immortality. What It Actually Does to Every Organ" />
           <div className="space-y-4 text-black/70 leading-relaxed mb-6">
+            <h3 className="font-display text-xl font-bold text-black mb-2">Bioactive Compounds and Organ Effects</h3>
             <p>
               The name Ling Zhi, Reishi's Chinese name, means herb of spiritual potency. It has been called the Mushroom of Immortality for over 2,000 years. Among cultivated mushrooms, Ganoderma lucidum is unique in that its pharmaceutical rather than nutritional value is paramount. Its specific applications and attributed health benefits include control of blood glucose levels, modulation of the immune system, hepatoprotection, bacteriostasis, and more.
             </p>

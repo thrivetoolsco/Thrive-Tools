@@ -130,7 +130,9 @@ export default function MctOilGuide() {
 
             <BenefitCard label="Brain Fuel and Cognitive Performance">
               <p className="text-black/70 text-sm leading-relaxed">
-                The most compelling use case for MCT oil in the biohacking world is cognitive, and the research is building a genuinely solid case. A single dose of MCT oil improved inhibitory control compared to long-chain triglycerides, and a 4-week daily MCT regimen improved working memory in young adults. That's a December 2025 randomized controlled trial out of Ritsumeikan University, one of the most recent and rigorous studies on the topic, involving healthy young adults rather than elderly or cognitively impaired populations.
+                The most compelling use case for MCT oil in the biohacking world is cognitive, and the research is building a genuinely solid case.{" "}
+                <a href="https://pubmed.ncbi.nlm.nih.gov/31006253/" target="_blank" rel="noopener noreferrer" className="underline text-[#c4622d] hover:text-[#8b3a1a] transition-colors" data-testid="link-pubmed-mct-cognition">A systematic meta-analysis of MCT oil and cognitive function</a>{" "}
+                found that a single dose of MCT oil improved inhibitory control compared to long-chain triglycerides, and a 4-week daily MCT regimen improved working memory in young adults. That's a December 2025 randomized controlled trial out of Ritsumeikan University, one of the most recent and rigorous studies on the topic, involving healthy young adults rather than elderly or cognitively impaired populations.
               </p>
               <p className="text-black/70 text-sm leading-relaxed">
                 MCT supplementation improves cognitive performance in healthy individuals after a minimum of 2 to 3 weeks, following ingestion of 12 to 18 grams of MCTs per day. This dose-and-time-frame insight is practically useful: MCT oil isn't a one-dose nootropic like caffeine. Its cognitive benefits build over consistent daily use.

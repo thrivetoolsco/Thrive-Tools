@@ -164,6 +164,7 @@ export default function CordycepsGuide() {
             <h2 className="font-display text-2xl font-bold text-black">What the Chemistry Actually Shows</h2>
           </div>
           <div className="space-y-4 text-black/70 leading-relaxed">
+            <h3 className="font-display text-xl font-bold text-black mb-2">Active Compounds: What the Science Shows</h3>
             <p>
               This is the most important section, and the one most content on this topic gets wrong.
             </p>
