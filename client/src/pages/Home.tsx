@@ -284,7 +284,7 @@ export default function Home() {
                 <br/><br/>
                 That's why I built spaces where the real work happens. In my retreats and workshops, we go deeper: nervous system reset, Taoist longevity practices, and cutting through the noise together, in person.
               </p>
-              <Link href="/retreats-workshops/blossoming-bliss" data-testid="button-explore-retreats">
+              <Link href="/retreats-workshops" data-testid="button-explore-retreats">
                 <Button size="lg" className="btn-gradient-rose text-white border-0 rounded-full px-8 text-sm tracking-widest uppercase font-semibold h-auto py-3.5">
                   → Explore Retreats & Workshops
                 </Button>
