@@ -151,12 +151,7 @@ const healthTech: DiscountItem[] = [
     code: "thrive35 to get $250 Discount",
     url: "https://bluecubebaths.com/?ref=CM-ZEsM_ayIJbh",
   },
-  {
-    name: "GlowMane",
-    description: "Incredible evidence backed tech to address hair concerns",
-    code: "EDEN58101",
-    url: "https://www.glowmane.com/discount/EDEN58101",
-  },
+
   {
     name: "Mytrex",
     description: "Massagers for eyes, scalp, neck, etc.",
