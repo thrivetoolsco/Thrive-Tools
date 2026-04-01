@@ -15,6 +15,7 @@ import {
   ArrowLeft,
   ChevronDown,
   UtensilsCrossed,
+  Sparkles,
 } from "lucide-react";
 import { useState } from "react";
 import ShareButton from "@/components/ShareButton";
@@ -224,6 +225,21 @@ const nontoxicCookware: DiscountItem[] = [
     description: "Non toxic cookware",
     code: "Follow This Link",
     url: "https://www.awin1.com/cread.php?awinmid=50999&awinaffid=2421431",
+  },
+];
+
+const cleanBeauty: DiscountItem[] = [
+  {
+    name: "ISUN Skincare",
+    description: "Botanical skincare designed",
+    code: "ISUNTHRIVE",
+    url: "https://isunskincare.com/thrivetools",
+  },
+  {
+    name: "Davids-usa",
+    description: "Premium Oral Care",
+    code: "EDEN81783",
+    url: "https://www.davids-usa.com/EDEN34969",
   },
 ];
 
@@ -526,6 +542,11 @@ export default function Discounts() {
                 <UtensilsCrossed className="w-3.5 h-3.5" /> Non Toxic Cookware
               </Button>
             </a>
+            <a href="#clean-beauty" data-testid="jump-clean-beauty">
+              <Button variant="outline" size="sm" className="rounded-full border-pink-400/30 text-pink-800 bg-pink-400/8 hover:bg-pink-400/15 text-xs font-semibold px-4 h-9 gap-2">
+                <Sparkles className="w-3.5 h-3.5" /> Clean Beauty & Body
+              </Button>
+            </a>
           </div>
         </div>
       </section>
@@ -586,6 +607,18 @@ export default function Discounts() {
             gradient="linear-gradient(135deg, rgba(134,187,120,0.2) 0%, rgba(100,160,90,0.2) 100%)"
             borderColor="rgba(134,187,120,0.2)"
             startIndex={vitaminsSupplements.length + healthTech.length + ethicalClothing.length}
+          />
+
+          <CategorySection
+            id="clean-beauty"
+            icon={Sparkles}
+            title="Clean Beauty & Body"
+            subtitle="Non-toxic skincare & oral care"
+            items={cleanBeauty}
+            badgeColor="bg-pink-400/20 text-pink-800 border-pink-400/30"
+            gradient="linear-gradient(135deg, rgba(244,114,182,0.2) 0%, rgba(201,122,142,0.2) 100%)"
+            borderColor="rgba(244,114,182,0.2)"
+            startIndex={vitaminsSupplements.length + healthTech.length + ethicalClothing.length + nontoxicCookware.length}
           />
 
           <TravelsSection />
