@@ -11,6 +11,7 @@ import About from "@/pages/About";
 import QuantumHealing from "@/pages/QuantumHealing";
 import PersonalizedGuidance from "@/pages/PersonalizedGuidance";
 import Events from "@/pages/Events";
+import Retreats from "@/pages/Retreats";
 import Breathwork from "@/pages/Breathwork";
 import Contact from "@/pages/Contact";
 import BlossomingBliss from "@/pages/retreats/BlossomingBliss";
@@ -72,6 +73,7 @@ function Router() {
       <Route path="/contact" component={Contact} />
       <Route path="/discounts-coupon-codes" component={() => { window.location.replace("/discount-codes"); return null; }} />
       <Route path="/discount-codes" component={Discounts} />
+      <Route path="/retreats-workshops" component={Retreats} />
       <Route path="/retreats-workshops/blossoming-bliss" component={BlossomingBliss} />
       <Route path="/retreats-workshops/spiritual-nutrition" component={SpiritualNutrition} />
       <Route path="/retreats-workshops/mescaline-wisdom" component={MescalineWisdom} />

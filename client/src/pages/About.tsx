@@ -82,7 +82,7 @@ export default function About() {
                 → See the curated list
               </button>
             </Link>
-            <Link href="/events">
+            <Link href="/retreats-workshops">
               <button
                 data-testid="button-retreats-workshops"
                 className="inline-flex items-center px-6 py-3 rounded-md btn-gradient-rose text-white font-medium transition-colors duration-200"
