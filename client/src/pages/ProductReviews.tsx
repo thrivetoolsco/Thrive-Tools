@@ -5,6 +5,59 @@ import { Badge } from "@/components/ui/badge";
 import { ArrowRight, CalendarDays, Search, X } from "lucide-react";
 import { useState } from "react";
 import { blogPosts } from "@shared/site-routes";
+import { useMutation } from "@tanstack/react-query";
+import { apiRequest } from "@/lib/queryClient";
+
+function EmailCapture() {
+  const [email, setEmail] = useState("");
+  const [done, setDone] = useState(false);
+
+  const { mutate, isPending, isError } = useMutation({
+    mutationFn: () => apiRequest("POST", "/api/newsletter", { email }),
+    onSuccess: () => { setDone(true); setEmail(""); },
+  });
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    if (email.trim()) mutate();
+  };
+
+  return (
+    <div className="mt-16 card-glass rounded-2xl px-8 py-10 text-center" data-testid="section-email-capture">
+      <h2 className="font-display text-2xl sm:text-3xl font-bold text-[#3d1a28] mb-2">
+        New post? You&apos;ll know first.
+      </h2>
+      {done ? (
+        <p className="text-[#c4622d] font-medium mt-4 text-sm" data-testid="text-subscribe-success">
+          You&apos;re in. We&apos;ll let you know when something new drops.
+        </p>
+      ) : (
+        <form onSubmit={handleSubmit} className="mt-6 flex flex-col sm:flex-row gap-3 max-w-md mx-auto" data-testid="form-subscribe">
+          <input
+            type="email"
+            required
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+            placeholder="your@email.com"
+            data-testid="input-subscribe-email"
+            className="flex-1 bg-white/70 border border-black/10 rounded-full px-5 py-3 text-sm text-black placeholder-black/30 focus:outline-none focus:border-[#c4622d]/40 focus:ring-2 focus:ring-[#c4622d]/10 transition-all"
+          />
+          <Button
+            type="submit"
+            disabled={isPending}
+            data-testid="button-notify-me"
+            className="btn-gradient-rose text-white border-0 rounded-full px-7 text-sm font-semibold tracking-wide h-auto py-3 shrink-0"
+          >
+            {isPending ? "Sending…" : "Notify Me"}
+          </Button>
+        </form>
+      )}
+      {isError && (
+        <p className="text-red-500 text-xs mt-2" data-testid="text-subscribe-error">Something went wrong. Please try again.</p>
+      )}
+    </div>
+  );
+}
 
 export default function ProductReviews() {
   const [query, setQuery] = useState("");
@@ -90,6 +143,8 @@ export default function ProductReviews() {
           </Link>
         ))}
       </div>
+
+      <EmailCapture />
     </PageLayout>
   );
 }
