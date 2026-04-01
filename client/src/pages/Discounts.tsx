@@ -13,6 +13,7 @@ import {
   Shirt,
   Plane,
   ArrowLeft,
+  ChevronDown,
   UtensilsCrossed,
   Sparkles,
 } from "lucide-react";
@@ -366,9 +367,15 @@ interface CategorySectionProps {
 }
 
 function CategorySection({ icon: Icon, title, subtitle, items, badgeColor, gradient, startIndex, borderColor = "rgba(201,122,142,0.2)", id }: CategorySectionProps) {
+  const [open, setOpen] = useState(false);
+
   return (
     <section id={id} className="mb-8">
-      <div className="w-full flex items-center gap-4 mb-0">
+      <button
+        onClick={() => setOpen(!open)}
+        className="w-full flex items-center gap-4 mb-0 group cursor-pointer"
+        data-testid={`accordion-toggle-${title.replace(/\s+/g, "-").toLowerCase()}`}
+      >
         <div
           className="w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0"
           style={{ background: gradient, border: `1px solid ${borderColor}` }}
@@ -382,9 +389,14 @@ function CategorySection({ icon: Icon, title, subtitle, items, badgeColor, gradi
         <Badge className={`${badgeColor} border rounded-full text-xs px-3 py-0.5 font-medium ml-auto hidden sm:inline-flex`}>
           {items.length} brands
         </Badge>
-      </div>
+        <ChevronDown
+          className={`w-5 h-5 text-[#3d1a28]/40 flex-shrink-0 transition-transform duration-300 ${open ? "rotate-180" : ""}`}
+        />
+      </button>
 
-      <div className="mt-8">
+      <div
+        className={`overflow-hidden transition-all duration-500 ease-in-out ${open ? "max-h-[9999px] opacity-100 mt-8" : "max-h-0 opacity-0 mt-0"}`}
+      >
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
           {items.map((item, i) => (
             <DiscountCard key={i} item={item} index={startIndex + i} />
@@ -398,9 +410,15 @@ function CategorySection({ icon: Icon, title, subtitle, items, badgeColor, gradi
 }
 
 function TravelsSection() {
+  const [open, setOpen] = useState(false);
+
   return (
     <section className="mb-8" data-testid="section-traveling">
-      <div className="w-full flex items-center gap-4 mb-0">
+      <button
+        onClick={() => setOpen(!open)}
+        className="w-full flex items-center gap-4 mb-0 group cursor-pointer"
+        data-testid="accordion-toggle-travels"
+      >
         <div
           className="w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0"
           style={{
@@ -414,9 +432,14 @@ function TravelsSection() {
           <h2 className="text-[#3d1a28] font-bold text-2xl font-display">Travels</h2>
           <p className="text-[#3d1a28]/50 text-sm">I'm also passionate about Traveling.</p>
         </div>
-      </div>
+        <ChevronDown
+          className={`w-5 h-5 text-[#3d1a28]/40 flex-shrink-0 ml-auto transition-transform duration-300 ${open ? "rotate-180" : ""}`}
+        />
+      </button>
 
-      <div className="mt-8">
+      <div
+        className={`overflow-hidden transition-all duration-500 ease-in-out ${open ? "max-h-[9999px] opacity-100 mt-8" : "max-h-0 opacity-0 mt-0"}`}
+      >
         <div className="card-glass rounded-2xl p-6 sm:p-10 flex items-center justify-center">
           <Button
             asChild
