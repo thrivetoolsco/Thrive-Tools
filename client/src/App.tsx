@@ -52,6 +52,7 @@ import CordycepsGuide from "@/pages/reviews/CordycepsGuide";
 import RedLightTherapyGuide from "@/pages/reviews/RedLightTherapyGuide";
 import KetamineGuide from "@/pages/reviews/KetamineGuide";
 import MuseHeadbandReview from "@/pages/reviews/MuseHeadbandReview";
+import HydrogenWaterGuide from "@/pages/reviews/HydrogenWaterGuide";
 
 function ScrollToTop() {
   const [location] = useLocation();
@@ -125,6 +126,7 @@ function Router() {
       <Route path="/blog/red-light-therapy-science-benefits-devices" component={RedLightTherapyGuide} />
       <Route path="/blog/ketamine-brain-science-nmda-receptors-neuron-regrowth" component={KetamineGuide} />
       <Route path="/blog/muse-headband-review-eeg-neurofeedback" component={MuseHeadbandReview} />
+      <Route path="/blog/hydrogen-water-benefits-science-review" component={HydrogenWaterGuide} />
       <Route component={NotFound} />
     </Switch>
   );

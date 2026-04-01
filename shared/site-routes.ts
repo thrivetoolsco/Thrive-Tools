@@ -287,6 +287,17 @@ export const blogPosts: BlogPost[] = [
     lastmod: "2025-11-05",
   },
   {
+    id: "hydrogen-water-benefits-science-review",
+    title: "Hydrogen Water Benefits: What the Science Actually Says (2025 Review)",
+    excerpt: "Over 100 published clinical studies, a 2024 systematic review of 25 human trials, and a mechanism that makes molecular hydrogen unlike any other antioxidant. Here's what the evidence actually supports.",
+    href: "/blog/hydrogen-water-benefits-science-review",
+    canonical: "/blog/hydrogen-water-benefits-science-review",
+    badge: "Science Review",
+    badgeColor: "bg-[#c4622d]/15 text-[#8b3a1a] border-[#c4622d]/25",
+    date: "April 1, 2026",
+    lastmod: "2026-04-01",
+  },
+  {
     id: "biohacking-beginners-guide",
     title: "Biohacking for Beginners: The Complete 2026 Starter Guide",
     excerpt: "No jargon, no overwhelm. A clear, step-by-step framework for taking control of your biology, from free foundations to the right supplements, in the right order.",
