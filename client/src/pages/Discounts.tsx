@@ -48,7 +48,7 @@ const vitaminsSupplements: DiscountItem[] = [
   },
   {
     name: "Justthrivehealth",
-    description: "Most powerful strains of probiotics & prebiotics",
+    description: "Spore based probiotics that actually survive stomach acid and reach your gut intact. The most researched strains for real microbiome results.",
     code: "THRIVETOOLS",
     url: "https://justthrivehealth.com/THRIVETOOLS",
   },
