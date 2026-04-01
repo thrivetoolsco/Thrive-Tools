@@ -36,7 +36,7 @@ const vitaminsSupplements: DiscountItem[] = [
   },
   {
     name: "HyperionHerbs",
-    description: "Unmatched quality for mushrooms and other tonic herbs. If you're looking for a Reishi and cordyceps you can actually feel, that's the website to get it. They also have an amazing coffee formula.",
+    description: "The gold standard for tonic herbs. Dual extracted, fruiting body only: the difference is noticeable. My go-to for Reishi, Cordyceps, Lion's Mane, and their incredible coffee formula.",
     code: "EDEN10",
     url: "http://www.hyperionherbs.com/discount/eden10",
   },
