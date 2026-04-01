@@ -511,33 +511,6 @@ export default function Discounts() {
             <ShareButton />
           </div>
 
-          <div className="flex flex-wrap gap-3 mt-6" data-testid="category-jump-nav">
-            <a href="#vitamins-supplements" data-testid="jump-vitamins-supplements">
-              <Button variant="outline" size="sm" className="rounded-full border-[#c4622d]/30 text-[#8b3a1a] bg-[#c4622d]/8 hover:bg-[#c4622d]/15 text-xs font-semibold px-4 h-9 gap-2">
-                <Pill className="w-3.5 h-3.5" /> Vitamins &amp; Supplements
-              </Button>
-            </a>
-            <a href="#longevity-tech" data-testid="jump-longevity-tech">
-              <Button variant="outline" size="sm" className="rounded-full border-[#8b3a1a]/25 text-[#8b3a1a] bg-[#8b3a1a]/8 hover:bg-[#8b3a1a]/15 text-xs font-semibold px-4 h-9 gap-2">
-                <Cpu className="w-3.5 h-3.5" /> Longevity Tech
-              </Button>
-            </a>
-            <a href="#conscious-fashion" data-testid="jump-conscious-fashion">
-              <Button variant="outline" size="sm" className="rounded-full border-amber-600/30 text-amber-700 bg-amber-500/8 hover:bg-amber-500/15 text-xs font-semibold px-4 h-9 gap-2">
-                <Shirt className="w-3.5 h-3.5" /> Conscious Fashion
-              </Button>
-            </a>
-            <a href="#nontoxic-cookware" data-testid="jump-nontoxic-cookware">
-              <Button variant="outline" size="sm" className="rounded-full border-green-600/30 text-green-800 bg-green-500/8 hover:bg-green-500/15 text-xs font-semibold px-4 h-9 gap-2">
-                <UtensilsCrossed className="w-3.5 h-3.5" /> Non Toxic Cookware
-              </Button>
-            </a>
-            <a href="#clean-beauty" data-testid="jump-clean-beauty">
-              <Button variant="outline" size="sm" className="rounded-full border-pink-400/30 text-pink-800 bg-pink-400/8 hover:bg-pink-400/15 text-xs font-semibold px-4 h-9 gap-2">
-                <Sparkles className="w-3.5 h-3.5" /> Clean Beauty & Body
-              </Button>
-            </a>
-          </div>
         </div>
       </section>
 
