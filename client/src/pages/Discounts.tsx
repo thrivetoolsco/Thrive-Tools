@@ -264,6 +264,12 @@ const ethicalClothing: DiscountItem[] = [
     code: "Follow This Link",
     url: "https://www.awin1.com/cread.php?awinmid=100833&awinaffid=2421431",
   },
+  {
+    name: "Havn by Lambs",
+    description: "EMF Blocking Clothing",
+    code: "Follow This Link",
+    url: "https://snwbl.io/lambs/EDEN50761",
+  },
 ];
 
 function CopyableCode({ code }: { code: string }) {
