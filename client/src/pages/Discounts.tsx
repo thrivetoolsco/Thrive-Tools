@@ -181,6 +181,12 @@ const healthTech: DiscountItem[] = [
     url: "https://www.piurify.com/?sca_ref=4509873.CyVUQonn5r",
   },
   {
+    name: "Molecular Hydrogen Technologies",
+    description: "Hydrogen Water & Inhalation Technology",
+    code: "Follow This Link",
+    url: "https://tidd.ly/3NVu95C",
+  },
+  {
     name: "NeuroVizr",
     description: "Light & Sound Therapy Device",
     code: "thrive33",
