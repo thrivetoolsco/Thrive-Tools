@@ -1,7 +1,7 @@
 import { Link } from "wouter";
 import logoImg from "@assets/image_1772756046665.png";
 import { Mail, Instagram } from "lucide-react";
-import { SiTiktok } from "react-icons/si";
+import { SiTiktok, SiReddit } from "react-icons/si";
 
 export default function Footer() {
   return (
