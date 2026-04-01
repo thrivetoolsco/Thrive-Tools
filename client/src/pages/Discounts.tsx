@@ -42,7 +42,7 @@ const vitaminsSupplements: DiscountItem[] = [
   },
   {
     name: "Superfeast",
-    description: "Mushrooms & Tonic herbs (HyperionHerbs has better quality but Superfeast has a more complete selection + already made blends)",
+    description: "Premium tonic herb blends. Convenient pre-made formulas. Great if you want a complete herbal protocol in one product.",
     code: "THRIVE33",
     url: "https://www.awin1.com/cread.php?awinmid=77776&awinaffid=2813108",
   },
