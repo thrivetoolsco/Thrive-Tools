@@ -53,6 +53,7 @@ import RedLightTherapyGuide from "@/pages/reviews/RedLightTherapyGuide";
 import KetamineGuide from "@/pages/reviews/KetamineGuide";
 import MuseHeadbandReview from "@/pages/reviews/MuseHeadbandReview";
 import HydrogenWaterGuide from "@/pages/reviews/HydrogenWaterGuide";
+import CeremonialCacaoGuide from "@/pages/reviews/CeremonialCacaoGuide";
 
 function ScrollToTop() {
   const [location] = useLocation();
@@ -127,6 +128,7 @@ function Router() {
       <Route path="/blog/ketamine-brain-science-nmda-receptors-neuron-regrowth" component={KetamineGuide} />
       <Route path="/blog/muse-headband-review-eeg-neurofeedback" component={MuseHeadbandReview} />
       <Route path="/blog/hydrogen-water-benefits-science-review" component={HydrogenWaterGuide} />
+      <Route path="/blog/ceremonial-cacao-benefits-science-review" component={CeremonialCacaoGuide} />
       <Route component={NotFound} />
     </Switch>
   );

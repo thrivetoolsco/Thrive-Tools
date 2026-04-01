@@ -287,6 +287,17 @@ export const blogPosts: BlogPost[] = [
     lastmod: "2025-11-05",
   },
   {
+    id: "ceremonial-cacao-benefits-science-review",
+    title: "Ceremonial Cacao Benefits: The Ancient Plant Medicine Backed by Modern Science",
+    excerpt: "Theobromine, anandamide, magnesium, and over 300 bioactive compounds. What the science says about the most underrated plant medicine in the wellness world, and where to source it.",
+    href: "/blog/ceremonial-cacao-benefits-science-review",
+    canonical: "/blog/ceremonial-cacao-benefits-science-review",
+    badge: "Plant Medicine",
+    badgeColor: "bg-[#c4622d]/15 text-[#8b3a1a] border-[#c4622d]/25",
+    date: "April 8, 2026",
+    lastmod: "2026-04-08",
+  },
+  {
     id: "hydrogen-water-benefits-science-review",
     title: "Hydrogen Water Benefits: What the Science Actually Says (2025 Review)",
     excerpt: "Over 100 published clinical studies, a 2024 systematic review of 25 human trials, and a mechanism that makes molecular hydrogen unlike any other antioxidant. Here's what the evidence actually supports.",

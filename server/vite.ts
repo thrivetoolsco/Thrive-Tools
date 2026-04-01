@@ -46,6 +46,7 @@ const BLOG_ROUTE_MAP: Record<string, string> = {
   "/blog/ketamine-brain-science-nmda-receptors-neuron-regrowth": "/src/pages/reviews/KetamineGuide.tsx",
   "/blog/muse-headband-review-eeg-neurofeedback": "/src/pages/reviews/MuseHeadbandReview.tsx",
   "/blog/hydrogen-water-benefits-science-review": "/src/pages/reviews/HydrogenWaterGuide.tsx",
+  "/blog/ceremonial-cacao-benefits-science-review": "/src/pages/reviews/CeremonialCacaoGuide.tsx",
 };
 
 async function ssrRenderBlogPost(
