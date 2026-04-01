@@ -61,6 +61,7 @@ const vitaminsSupplements: DiscountItem[] = [
     description: "Clean creatine and premium marine collagen: the 2 I actually use. Always marine over bovine for purity and bioavailability.",
     code: "EDEN_25",
     url: "https://organika.com/?rfsn=8403940.a276a1f&utm_source=refersion&utm_medium=affiliate&utm_campaign=8403940.a276a1f",
+    blogHref: "/product-reviews/creatine-dosage-for-brain",
   },
   {
     name: "AquaOmega",
@@ -356,7 +357,7 @@ function DiscountCard({ item, index }: { item: DiscountItem; index: number }) {
         <CopyableCode code={item.code} />
         <div className="flex items-center gap-2">
           {item.blogHref && (
-            <Link href={item.blogHref} data-testid={`link-benefits-${index}`}>
+            <a href={item.blogHref} target="_blank" rel="noopener noreferrer" data-testid={`link-benefits-${index}`}>
               <Button
                 size="sm"
                 variant="ghost"
@@ -364,7 +365,7 @@ function DiscountCard({ item, index }: { item: DiscountItem; index: number }) {
               >
                 Benefits
               </Button>
-            </Link>
+            </a>
           )}
           <a
             href={item.url}
