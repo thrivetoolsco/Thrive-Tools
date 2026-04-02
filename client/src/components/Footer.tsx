@@ -1,7 +1,7 @@
 import { Link } from "wouter";
 import logoImg from "@assets/image_1772756046665.png";
-import { Mail, Instagram } from "lucide-react";
-import { SiTiktok, SiReddit } from "react-icons/si";
+import { Mail } from "lucide-react";
+import { SiReddit } from "react-icons/si";
 
 export default function Footer() {
   return (
@@ -17,26 +17,6 @@ export default function Footer() {
               Your 2.0 starts here.
             </p>
             <div className="flex items-center gap-3 mt-5">
-              <a
-                href="https://www.tiktok.com/@thrivetools.co?_r=1&_t=ZS-94RwhlhXkNl"
-                target="_blank"
-                rel="noopener noreferrer"
-                data-testid="link-social-tiktok"
-                className="w-9 h-9 rounded-full flex items-center justify-center transition-colors"
-                style={{ background: "rgba(61,26,40,0.06)", border: "1px solid rgba(201,122,142,0.25)" }}
-              >
-                <SiTiktok className="w-4 h-4 text-[#3d1a28]/50 hover:text-[#3d1a28] transition-colors" />
-              </a>
-              <a
-                href="https://www.instagram.com/thrivetools.co?igsh=cnZ6MWRxbzJkaXNt"
-                target="_blank"
-                rel="noopener noreferrer"
-                data-testid="link-social-instagram"
-                className="w-9 h-9 rounded-full flex items-center justify-center transition-colors"
-                style={{ background: "rgba(61,26,40,0.06)", border: "1px solid rgba(201,122,142,0.25)" }}
-              >
-                <Instagram className="w-4 h-4 text-[#3d1a28]/50 hover:text-[#3d1a28] transition-colors" />
-              </a>
               <a
                 href="https://www.reddit.com/u/ThriveTools?utm_source=share&utm_medium=android_app&utm_name=androidcss&utm_term=1&utm_content=1"
                 target="_blank"
