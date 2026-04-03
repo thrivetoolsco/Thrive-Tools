@@ -87,8 +87,8 @@ const vitaminsSupplements: DiscountItem[] = [
   {
     name: "Organic Nori Seaweed Sushi",
     description: "One of the most nutrient dense foods on the planet and this brand tests for heavy metals so you can actually eat it without concern.",
-    code: "EDENL5",
-    url: "https://rawnori.com/thrivetools",
+    code: "Follow This Link",
+    url: "https://rawnori.com?p=jeFAQZWBn",
   },
   {
     name: "Intentionally Bare",
