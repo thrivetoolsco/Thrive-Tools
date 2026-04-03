@@ -235,6 +235,12 @@ const nontoxicCookware: DiscountItem[] = [
     code: "Follow This Link",
     url: "https://www.awin1.com/cread.php?awinmid=50999&awinaffid=2421431",
   },
+  {
+    name: "360 Cookware",
+    description: "Stainless steel cookware and bakeware, free from PFAS and chemical coatings.",
+    code: "THRIVETOOLS",
+    url: "https://www.360cookware.com/THRIVETOOLS",
+  },
 ];
 
 const cleanBeauty: DiscountItem[] = [
