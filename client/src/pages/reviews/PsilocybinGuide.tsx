@@ -194,20 +194,20 @@ export default function PsilocybinGuide() {
               Microdosing research is genuinely less developed than full-dose research. The challenges are significant: blinding is difficult, placebo effects are substantial, and self-selection bias is a real issue in observational studies. With those caveats clearly stated, here is what the evidence currently suggests.
             </p>
             <ul className="space-y-4 text-[#3d1a28]/70 text-base leading-relaxed">
-              <li className="flex gap-3">
-                <span className="text-[#c4622d] font-bold shrink-0 mt-0.5">Mood and well-being:</span>
+              <li className="flex flex-col gap-1">
+                <span className="text-[#c4622d] font-bold">Mood and well-being:</span>
                 <span>Survey and observational data consistently report improved mood, reduced anxiety, and greater emotional stability in people who microdose. Several small trials have found mood improvements beyond placebo.</span>
               </li>
-              <li className="flex gap-3">
-                <span className="text-[#c4622d] font-bold shrink-0 mt-0.5">Cognitive function:</span>
+              <li className="flex flex-col gap-1">
+                <span className="text-[#c4622d] font-bold">Cognitive function:</span>
                 <span>Microdoses showed a trend toward creative enhancement, particularly on tasks measuring divergent thinking, generating multiple solutions to open-ended problems.</span>
               </li>
-              <li className="flex gap-3">
-                <span className="text-[#c4622d] font-bold shrink-0 mt-0.5">Default mode network:</span>
+              <li className="flex flex-col gap-1">
+                <span className="text-[#c4622d] font-bold">Default mode network:</span>
                 <span>Early evidence suggests sub-hallucinogenic doses reduce DMN activity subtly rather than dramatically: the same mechanism that drives full-dose antidepressant effects, expressed at a much lower amplitude. This may partly explain the mood and rumination benefits reported by microdosers.</span>
               </li>
-              <li className="flex gap-3">
-                <span className="text-[#c4622d] font-bold shrink-0 mt-0.5">The Stamets Stack:</span>
+              <li className="flex flex-col gap-1">
+                <span className="text-[#c4622d] font-bold">The Stamets Stack:</span>
                 <span>The combination of psilocybin microdose, Lion's Mane mushroom (which independently stimulates NGF and BDNF), and niacin (which acts as a peripheral vasodilator potentially enhancing compound delivery) has gained significant attention for synergistic neuroplasticity support. Human trial data on the stack specifically is limited but growing.</span>
               </li>
             </ul>
@@ -268,24 +268,24 @@ export default function PsilocybinGuide() {
             Psilocybin has a strong safety profile relative to most pharmaceuticals and other psychoactive substances. It is not physically addictive, not toxic at therapeutic doses, and has no established lethal dose in humans. Across hundreds of clinical trials involving thousands of participants, serious adverse events have been rare. That said, real risks exist and should be understood clearly.
           </p>
           <ul className="space-y-4 text-[#3d1a28]/70 text-base leading-relaxed">
-            <li className="flex gap-3">
-              <span className="text-[#c4622d] font-bold shrink-0">Psychological distress:</span>
+            <li className="flex flex-col gap-1">
+              <span className="text-[#c4622d] font-bold">Psychological distress:</span>
               <span>Full-dose experiences can be intensely challenging. Panic reactions, paranoia, and acute distress can occur. These require a supportive set and setting to navigate safely.</span>
             </li>
-            <li className="flex gap-3">
-              <span className="text-[#c4622d] font-bold shrink-0">Medication interactions:</span>
+            <li className="flex flex-col gap-1">
+              <span className="text-[#c4622d] font-bold">Medication interactions:</span>
               <span>Psilocybin should not be combined with SSRIs, MAOIs, lithium, or other serotonergic medications without medical supervision. Serotonin syndrome is a serious concern. People on SSRIs often experience significantly blunted psilocybin effects due to receptor downregulation.</span>
             </li>
-            <li className="flex gap-3">
-              <span className="text-[#c4622d] font-bold shrink-0">Personal history contraindications:</span>
+            <li className="flex flex-col gap-1">
+              <span className="text-[#c4622d] font-bold">Personal history contraindications:</span>
               <span>Anyone with a personal or family history of psychosis, schizophrenia, or bipolar disorder with psychotic features should approach psilocybin with extreme caution. These conditions are typically exclusion criteria in clinical trials for good reason.</span>
             </li>
-            <li className="flex gap-3">
-              <span className="text-[#c4622d] font-bold shrink-0">Cardiovascular:</span>
+            <li className="flex flex-col gap-1">
+              <span className="text-[#c4622d] font-bold">Cardiovascular:</span>
               <span>Psilocybin produces temporary increases in heart rate and blood pressure. Anyone with cardiovascular conditions should consult their physician.</span>
             </li>
-            <li className="flex gap-3">
-              <span className="text-[#c4622d] font-bold shrink-0">Set and setting:</span>
+            <li className="flex flex-col gap-1">
+              <span className="text-[#c4622d] font-bold">Set and setting:</span>
               <span>The environment, mindset, and support structure around a psilocybin experience profoundly shape its outcome. Unsupported use outside appropriate contexts carries higher risk of challenging experiences without the integration support needed to process them.</span>
             </li>
           </ul>
@@ -310,24 +310,24 @@ export default function PsilocybinGuide() {
             If you are considering psilocybin, whether in a legal therapeutic context, a retreat setting in a permissive jurisdiction, or any other context, here is what the research and clinical experience collectively suggest matters most.
           </p>
           <ul className="space-y-4 text-[#3d1a28]/70 text-base leading-relaxed">
-            <li className="flex gap-3">
-              <span className="text-[#c4622d] font-bold shrink-0">Work with professionals where possible.</span>
+            <li className="flex flex-col gap-1">
+              <span className="text-[#c4622d] font-bold">Work with professionals where possible.</span>
               <span>The therapeutic outcomes in clinical trials are significantly associated with the quality of preparation and integration support. Trained guides, therapists, or facilitators provide something that makes a real difference.</span>
             </li>
-            <li className="flex gap-3">
-              <span className="text-[#c4622d] font-bold shrink-0">Address foundational health first.</span>
+            <li className="flex flex-col gap-1">
+              <span className="text-[#c4622d] font-bold">Address foundational health first.</span>
               <span>Sleep, nutrition, gut health, nervous system regulation, and existing somatic practices all influence how psilocybin is received and integrated. A depleted, dysregulated system does not create ideal conditions.</span>
             </li>
-            <li className="flex gap-3">
-              <span className="text-[#c4622d] font-bold shrink-0">Know your contraindications.</span>
+            <li className="flex flex-col gap-1">
+              <span className="text-[#c4622d] font-bold">Know your contraindications.</span>
               <span>If you have a personal or family history of psychosis or are on serotonergic medications, this is genuinely important, not a formality. These are the conditions where psilocybin carries real risk.</span>
             </li>
-            <li className="flex gap-3">
-              <span className="text-[#c4622d] font-bold shrink-0">Intention and integration are as important as the experience itself.</span>
+            <li className="flex flex-col gap-1">
+              <span className="text-[#c4622d] font-bold">Intention and integration are as important as the experience itself.</span>
               <span>What do you want to understand or heal? What will you do with what arises? Having answers to these questions before going in, and a clear plan for the weeks afterward, matters more than most people realize.</span>
             </li>
-            <li className="flex gap-3">
-              <span className="text-[#c4622d] font-bold shrink-0">Verify the legal status where you are.</span>
+            <li className="flex flex-col gap-1">
+              <span className="text-[#c4622d] font-bold">Verify the legal status where you are.</span>
               <span>Accessing psilocybin legally through Oregon or Colorado service centers, therapeutic programs in approved countries, or properly conducted clinical trials is meaningfully different from illegal self-administration in terms of both safety and legal risk.</span>
             </li>
           </ul>
