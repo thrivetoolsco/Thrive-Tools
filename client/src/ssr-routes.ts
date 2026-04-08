@@ -26,6 +26,7 @@ import KetamineGuide from "./pages/reviews/KetamineGuide";
 import MuseHeadbandReview from "./pages/reviews/MuseHeadbandReview";
 import HydrogenWaterGuide from "./pages/reviews/HydrogenWaterGuide";
 import CeremonialCacaoGuide from "./pages/reviews/CeremonialCacaoGuide";
+import PsilocybinGuide from "./pages/reviews/PsilocybinGuide";
 
 export const SSR_ROUTE_COMPONENTS: Record<string, ComponentType> = {
   "/product-reviews/im8-vs-ag1": Im8VsAg1,
@@ -70,4 +71,5 @@ export const SSR_ROUTE_COMPONENTS: Record<string, ComponentType> = {
   "/blog/muse-headband-review-eeg-neurofeedback": MuseHeadbandReview,
   "/blog/hydrogen-water-benefits-science-review": HydrogenWaterGuide,
   "/blog/ceremonial-cacao-benefits-science-review": CeremonialCacaoGuide,
+  "/blog/psilocybin-science-research-2025": PsilocybinGuide,
 };

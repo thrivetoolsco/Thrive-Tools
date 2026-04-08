@@ -342,6 +342,17 @@ export const blogPosts: BlogPost[] = [
     lastmod: "2025-10-08",
   },
   {
+    id: "psilocybin-science-research-2025",
+    title: "Psilocybin: The Science, the Research, and What's Actually Happening in 2025",
+    excerpt: "Johns Hopkins, Imperial College, the FDA's Breakthrough Therapy Designation, and clinical trials across four continents. Here is what the research actually shows about psilocybin, from brain science to microdosing and the legal landscape.",
+    href: "/blog/psilocybin-science-research-2025",
+    canonical: "/blog/psilocybin-science-research-2025",
+    badge: "Plant Medicine",
+    badgeColor: "bg-[#c4622d]/15 text-[#8b3a1a] border-[#c4622d]/25",
+    date: "October 1, 2025",
+    lastmod: "2025-10-01",
+  },
+  {
     id: "rhonda-patrick-multivitamin",
     title: "Why Your \"Healthy\" Diet Probably Has Gaps. And What To Do About It",
     excerpt: "Dr. Rhonda Patrick takes a multivitamin every single day. Here's the science behind why, from the Triage Theory to the COSMOS trials, and what to look for in a quality supplement.",
