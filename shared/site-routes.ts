@@ -56,6 +56,17 @@ export const eventRoutes: EventRoute[] = [
 
 export const blogPosts: BlogPost[] = [
   {
+    id: "waterdrop-k19-h-aquatru-rkin-reverse-osmosis-review",
+    title: "Waterdrop vs. AquaTru vs. RKIN: The Truth About Zero Installation Reverse Osmosis",
+    excerpt: "The genuine, no BS breakdown of the only three countertop RO systems worth considering. UV sterilization, PFAS removal, instant hot water, and why I finally cleared counter space for the Waterdrop K19.H.",
+    href: "/blog/waterdrop-k19-h-aquatru-rkin-reverse-osmosis-review",
+    canonical: "/blog/waterdrop-k19-h-aquatru-rkin-reverse-osmosis-review",
+    badge: "Product Review",
+    badgeColor: "bg-[#c4622d]/15 text-[#8b3a1a] border-[#c4622d]/25",
+    date: "September 24, 2025",
+    lastmod: "2025-09-24",
+  },
+  {
     id: "muse-headband-review-eeg-neurofeedback",
     title: "Muse Headband Review: The Science-Backed EEG Device That's Changing How We Meditate",
     excerpt: "After 14 years in the biohacking world, the Muse EEG headband is one of the rare devices that earns its place. Here is what 200+ peer-reviewed studies actually say, and my honest verdict.",

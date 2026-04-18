@@ -55,6 +55,7 @@ import MuseHeadbandReview from "@/pages/reviews/MuseHeadbandReview";
 import HydrogenWaterGuide from "@/pages/reviews/HydrogenWaterGuide";
 import CeremonialCacaoGuide from "@/pages/reviews/CeremonialCacaoGuide";
 import PsilocybinGuide from "@/pages/reviews/PsilocybinGuide";
+import WaterdropK19HReview from "@/pages/reviews/WaterdropK19HReview";
 
 function ScrollToTop() {
   const [location] = useLocation();
@@ -131,6 +132,7 @@ function Router() {
       <Route path="/blog/hydrogen-water-benefits-science-review" component={HydrogenWaterGuide} />
       <Route path="/blog/ceremonial-cacao-benefits-science-review" component={CeremonialCacaoGuide} />
       <Route path="/blog/psilocybin-science-research-2025" component={PsilocybinGuide} />
+      <Route path="/blog/waterdrop-k19-h-aquatru-rkin-reverse-osmosis-review" component={WaterdropK19HReview} />
       <Route component={NotFound} />
     </Switch>
   );
