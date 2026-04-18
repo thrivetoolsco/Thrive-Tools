@@ -121,6 +121,13 @@ const vitaminsSupplements: DiscountItem[] = [
 
 const healthTech: DiscountItem[] = [
   {
+    name: "WaterDropFilter",
+    description: "Ultra Reverse Osmosis + UV Sterilization + Instant heating & cooling options. Countertop with no installation options available.",
+    code: "KAWTHARLARAKI",
+    url: "https://www.waterdropfilter.ca/?ref=ozpbpmdp",
+    blogHref: "/blog/waterdrop-k19-h-aquatru-rkin-reverse-osmosis-review",
+  },
+  {
     name: "Joovv",
     description: "Clinical grade red light therapy from handheld devices to full body panels. The most trusted name in photobiomodulation.",
     code: "THRIVETOOLS",
