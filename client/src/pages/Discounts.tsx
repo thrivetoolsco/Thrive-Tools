@@ -129,6 +129,12 @@ const vitaminsSupplements: DiscountItem[] = [
     code: "Follow This Link",
     url: "https://clicks.trackcb.com/aff_c?offer_id=208&aff_id=4192",
   },
+  {
+    name: "Pack Boys",
+    description: "Cannabis flower & edibles. US based.",
+    code: "Follow This Link",
+    url: "https://clicks.trackcb.com/aff_c?offer_id=329&aff_id=4192",
+  },
 ];
 
 const healthTech: DiscountItem[] = [
