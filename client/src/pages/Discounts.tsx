@@ -131,7 +131,7 @@ const vitaminsSupplements: DiscountItem[] = [
   },
   {
     name: "Seventh Sense",
-    description: "CBD topical products, tinctures, gummies and pet drops.",
+    description: "CBD topical products, tinctures, gummies and pet drops. USA based.",
     code: "Follow This Link",
     url: "https://clicks.trackcb.com/aff_c?offer_id=208&aff_id=4192",
   },
