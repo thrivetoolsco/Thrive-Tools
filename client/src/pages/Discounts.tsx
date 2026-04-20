@@ -124,6 +124,12 @@ const vitaminsSupplements: DiscountItem[] = [
     url: "https://clicks.trackcb.com/aff_c?offer_id=202&aff_id=4192",
   },
   {
+    name: "CBDMagic",
+    description: "Pure CBD Oil Online in Canada. Free shipping on all orders.",
+    code: "Follow This Link",
+    url: "https://cbdmagic.co/cbd/1046/",
+  },
+  {
     name: "Seventh Sense",
     description: "CBD topical products, tinctures, gummies and pet drops.",
     code: "Follow This Link",
