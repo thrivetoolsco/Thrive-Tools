@@ -141,6 +141,12 @@ const vitaminsSupplements: DiscountItem[] = [
     code: "Follow This Link",
     url: "https://clicks.trackcb.com/aff_c?offer_id=324&aff_id=4192",
   },
+  {
+    name: "Primal Focus",
+    description: "Psilocybin mushrooms, San Pedro Cactus, LSD, Grow Kits. Delivers to EU countries only.",
+    code: "Follow This Link",
+    url: "https://clicks.trackcb.com/aff_c?offer_id=259&aff_id=4192",
+  },
 ];
 
 const healthTech: DiscountItem[] = [
