@@ -136,6 +136,12 @@ const vitaminsSupplements: DiscountItem[] = [
     url: "https://clicks.trackcb.com/aff_c?offer_id=329&aff_id=4192",
   },
   {
+    name: "United Strains Of America",
+    description: "Lab tested cannabis.",
+    code: "Follow This Link",
+    url: "https://clicks.trackcb.com/aff_c?offer_id=339&aff_id=4192",
+  },
+  {
     name: "ILGM",
     description: "Cannabis seeds.",
     code: "Follow This Link",
