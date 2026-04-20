@@ -63,8 +63,8 @@ export const blogPosts: BlogPost[] = [
     canonical: "/blog/kratom-replacing-alcohol-cannabis-social-pivot-2026",
     badge: "Plant Medicine",
     badgeColor: "bg-[#c4622d]/15 text-[#8b3a1a] border-[#c4622d]/25",
-    date: "September 17, 2025",
-    lastmod: "2025-09-17",
+    date: "April 20, 2026",
+    lastmod: "2026-04-20",
   },
   {
     id: "waterdrop-k19-h-aquatru-rkin-reverse-osmosis-review",

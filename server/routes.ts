@@ -761,8 +761,8 @@ const KRATOM_SSR_HTML = `<!DOCTYPE html>
     "@context": "https://schema.org",
     "@type": "Article",
     "headline": "The Ultimate Social Pivot: Why Kratom is Replacing Alcohol and Cannabis in 2026",
-    "datePublished": "2025-09-17",
-    "dateModified": "2025-09-17",
+    "datePublished": "2026-04-20",
+    "dateModified": "2026-04-20",
     "author": { "@type": "Person", "name": "Eden Laraki" },
     "publisher": { "@type": "Organization", "name": "Thrive Tools", "url": "https://thrivetools.co" },
     "image": "https://thrivetools.co/images/kratom/kratom-plant.jpg",
@@ -1039,62 +1039,99 @@ const KRATOM_SSR_HTML = `<!DOCTYPE html>
     /* ── FOOTER ── */
     footer {
       background: #f8ece0;
-      border-top: 1px solid rgba(196,98,45,0.12);
-      padding: 3rem 1.5rem 2rem;
+      border-top: 1px solid rgba(201,122,142,0.2);
+      padding: 4rem 1.5rem;
     }
-    .footer-inner { max-width: 1280px; margin: 0 auto; }
-    .footer-top {
+    .footer-inner { max-width: 1152px; margin: 0 auto; }
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      gap: 3rem;
+      margin-bottom: 3rem;
+    }
+    @media (max-width: 768px) { .footer-grid { grid-template-columns: 1fr 1fr; gap: 2rem; } }
+    @media (max-width: 480px) { .footer-grid { grid-template-columns: 1fr; } }
+    .footer-brand { grid-column: span 2; }
+    @media (max-width: 768px) { .footer-brand { grid-column: span 2; } }
+    .footer-logo { height: 48px; width: auto; object-fit: contain; margin-bottom: 1rem; }
+    .footer-tagline { color: rgba(61,26,40,0.5); font-size: 0.875rem; line-height: 1.6; max-width: 240px; }
+    .footer-socials { display: flex; gap: 0.75rem; margin-top: 1.25rem; }
+    .social-btn {
+      width: 36px; height: 36px;
+      border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      background: rgba(61,26,40,0.06);
+      border: 1px solid rgba(201,122,142,0.25);
+      transition: background 0.2s;
+      text-decoration: none;
+    }
+    .social-btn:hover { background: rgba(61,26,40,0.1); }
+    .social-btn svg { width: 16px; height: 16px; color: rgba(61,26,40,0.5); }
+    .footer-col-title {
+      font-size: 0.7rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: rgba(61,26,40,0.6);
+      margin-bottom: 1rem;
+    }
+    .footer-links { list-style: none; display: flex; flex-direction: column; gap: 0.75rem; }
+    .footer-links a {
+      font-size: 0.875rem;
+      color: rgba(61,26,40,0.45);
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+    .footer-links a:hover { color: #c4622d; }
+    .footer-bottom {
+      padding-top: 2rem;
+      border-top: 1px solid rgba(61,26,40,0.08);
       display: flex;
       flex-wrap: wrap;
-      gap: 2rem;
+      align-items: center;
       justify-content: space-between;
-      margin-bottom: 2rem;
+      gap: 1rem;
+      font-size: 0.75rem;
+      color: rgba(61,26,40,0.35);
     }
-    .footer-logo { font-family: 'Lora', serif; font-weight: 700; font-size: 1.1rem; color: #c4622d; text-decoration: none; letter-spacing: 0.1em; text-transform: uppercase; }
-    .footer-tagline { font-size: 0.72rem; color: rgba(61,26,40,0.45); letter-spacing: 0.18em; text-transform: uppercase; margin-top: 4px; }
-    .footer-socials { display: flex; gap: 1rem; margin-top: 1rem; }
-    .footer-social { color: rgba(61,26,40,0.5); font-size: 1.1rem; text-decoration: none; transition: color 0.2s; }
-    .footer-social:hover { color: #c4622d; }
-    .footer-col-title { font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.12em; color: rgba(61,26,40,0.4); margin-bottom: 0.75rem; }
-    .footer-links { list-style: none; padding: 0; }
-    .footer-links li { margin-bottom: 0.5rem; }
-    .footer-links a { font-size: 0.82rem; color: rgba(61,26,40,0.6); text-decoration: none; transition: color 0.2s; }
-    .footer-links a:hover { color: #c4622d; }
-    .footer-bottom { border-top: 1px solid rgba(61,26,40,0.08); padding-top: 1.5rem; display: flex; flex-wrap: wrap; gap: 1rem; justify-content: space-between; align-items: center; }
-    .footer-bottom span { font-size: 0.75rem; color: rgba(61,26,40,0.4); }
-    .footer-bottom-links { display: flex; gap: 1.25rem; }
-    .footer-bottom-links a { font-size: 0.75rem; color: rgba(61,26,40,0.4); text-decoration: none; }
-    .footer-bottom-links a:hover { color: #c4622d; }
+    .footer-bottom-links { display: flex; flex-wrap: wrap; gap: 1.25rem; }
+    .footer-bottom-links a { color: rgba(61,26,40,0.35); text-decoration: none; transition: color 0.2s; }
+    .footer-bottom-links a:hover { color: rgba(61,26,40,0.6); }
   </style>
 </head>
 <body>
   <div class="page-wrap">
 
-    <nav id="site-nav">
+    <nav id="site-nav" aria-label="Main navigation">
       <div class="nav-inner">
-        <a href="/" class="nav-logo-wrap" aria-label="Thrive Tools home">
+        <a class="nav-logo-wrap" href="/" aria-label="Thrive Tools home">
           <div class="nav-wordmark">
             <span class="nav-thrive">Thrive</span>
-            <span class="nav-sep">&#10022;</span>
+            <span class="nav-sep" aria-hidden="true">&#10022;</span>
             <span class="nav-tools">Tools</span>
           </div>
-          <span class="nav-tagline">Biohacking &mdash; Longevity &mdash; Conscious Living</span>
+          <div class="nav-tagline">Biohacking &nbsp;&mdash;&nbsp; Longevity &nbsp;&mdash;&nbsp; Conscious Living</div>
         </a>
-        <button id="menu-btn" aria-label="Toggle menu" aria-expanded="false">
-          <svg id="icon-menu" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
-          <svg id="icon-close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:none"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+        <button id="menu-btn" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="nav-dropdown">
+          <svg id="icon-menu" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+          </svg>
+          <svg id="icon-close" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor" style="display:none;">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+          </svg>
         </button>
       </div>
-      <div id="nav-dropdown">
+      <div id="nav-dropdown" role="menu">
         <div class="nav-menu-inner">
-          <a href="/" class="nav-item">Home</a>
-          <a href="/blog" class="nav-item active">Blog</a>
-          <a href="/discount-codes" class="nav-item">Discount Codes</a>
-          <a href="/about" class="nav-item">About</a>
-          <a href="/breathwork" class="nav-item">Breathwork</a>
-          <a href="/events" class="nav-item">Events</a>
-          <a href="/personalized-guidance" class="nav-item">Personalized Guidance</a>
-          <a href="/contact" class="nav-item">Contact</a>
+          <a class="nav-item" href="/" role="menuitem">Home</a>
+          <a class="nav-item" href="/discount-codes" role="menuitem">Discount Codes (2026)</a>
+          <a class="nav-item" href="/personalized-guidance" role="menuitem">Personalized Guidance</a>
+          <a class="nav-item" href="/somatic-reset" role="menuitem">Somatic Reset</a>
+          <a class="nav-item" href="/breathwork" role="menuitem">Breathwork</a>
+          <a class="nav-item" href="/events" role="menuitem">Events</a>
+          <a class="nav-item active" href="/blog" role="menuitem">Blog</a>
+          <a class="nav-item" href="/about" role="menuitem">About</a>
+          <a class="nav-item" href="/contact" role="menuitem">Contact</a>
         </div>
       </div>
     </nav>
@@ -1102,14 +1139,18 @@ const KRATOM_SSR_HTML = `<!DOCTYPE html>
     <div class="hero-section">
       <div class="hero-glow"></div>
       <div class="hero-inner">
-        <a href="/blog" class="back-btn">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
-          All Posts
+        <a class="back-btn" href="/blog" data-testid="link-back">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 19.5 3 12m0 0 7.5-7.5M3 12h18" />
+          </svg>
+          Blog
         </a>
-        <span class="badge">Plant Medicine</span>
+        <div style="display:flex;flex-wrap:wrap;gap:0.5rem;margin-bottom:1rem;">
+          <span class="badge">Plant Medicine</span>
+          <span class="date-badge">April 2026</span>
+        </div>
         <h1>The Ultimate Social Pivot: Why Kratom is Replacing Alcohol and Cannabis in 2026</h1>
         <p class="hero-subtitle">The search for a "middle ground" has led a massive wave of people toward kratom. Here is the full breakdown — the science, the risks, and how to do it right.</p>
-        <span class="date-badge">September 17, 2025</span>
       </div>
     </div>
 
@@ -1192,21 +1233,29 @@ const KRATOM_SSR_HTML = `<!DOCTYPE html>
 
     <footer>
       <div class="footer-inner">
-        <div class="footer-top">
-          <div>
-            <a href="/" class="footer-logo">Thrive &#10022; Tools</a>
-            <p class="footer-tagline">Biohacking &mdash; Longevity &mdash; Conscious Living</p>
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <img src="/thrive-tools-logo.png" alt="Thrive Tools" class="footer-logo" />
+            <p class="footer-tagline">Your 2.0 starts here.</p>
             <div class="footer-socials">
-              <a href="https://www.instagram.com/thrive.tools/" target="_blank" rel="noopener noreferrer" class="footer-social" aria-label="Instagram">&#9825;</a>
-              <a href="https://www.youtube.com/@ThriveTools" target="_blank" rel="noopener noreferrer" class="footer-social" aria-label="YouTube">&#9654;</a>
+              <a href="https://www.reddit.com/u/ThriveTools" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="Thrive Tools on Reddit" data-testid="link-social-reddit">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" style="width:16px;height:16px;color:rgba(61,26,40,0.5);">
+                  <path d="M12 0A12 12 0 0 0 0 12a12 12 0 0 0 12 12 12 12 0 0 0 12-12A12 12 0 0 0 12 0zm5.01 4.744c.688 0 1.25.561 1.25 1.249a1.25 1.25 0 0 1-2.498.056l-2.597-.547-.8 3.747c1.824.07 3.48.632 4.674 1.488.308-.309.73-.491 1.207-.491.968 0 1.754.786 1.754 1.754 0 .716-.435 1.333-1.01 1.614a3.111 3.111 0 0 1 .042.52c0 2.694-3.13 4.87-7.004 4.87-3.874 0-7.004-2.176-7.004-4.87 0-.183.015-.366.043-.534A1.748 1.748 0 0 1 4.028 12c0-.968.786-1.754 1.754-1.754.463 0 .898.196 1.207.49 1.207-.883 2.878-1.43 4.744-1.487l.885-4.182a.342.342 0 0 1 .14-.197.35.35 0 0 1 .238-.042l2.906.617a1.214 1.214 0 0 1 1.108-.701zM9.25 12C8.561 12 8 12.562 8 13.25c0 .687.561 1.248 1.25 1.248.687 0 1.248-.561 1.248-1.249 0-.688-.561-1.249-1.249-1.249zm5.5 0c-.687 0-1.248.561-1.248 1.25 0 .687.561 1.248 1.249 1.248.688 0 1.249-.561 1.249-1.249 0-.687-.562-1.249-1.25-1.249zm-5.466 3.99a.327.327 0 0 0-.231.094.33.33 0 0 0 0 .463c.842.842 2.484.913 2.961.913.477 0 2.105-.056 2.961-.913a.361.361 0 0 0 .029-.463.33.33 0 0 0-.464 0c-.547.533-1.684.73-2.512.73-.828 0-1.979-.196-2.512-.73a.326.326 0 0 0-.232-.095z"/>
+                </svg>
+              </a>
+              <a href="mailto:Thrivetools.co@gmail.com" class="social-btn" aria-label="Email Thrive Tools" data-testid="link-social-email">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor" style="width:16px;height:16px;color:rgba(61,26,40,0.5);">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
+                </svg>
+              </a>
             </div>
           </div>
           <div>
             <p class="footer-col-title">Navigate</p>
             <ul class="footer-links">
               <li><a href="/">Home</a></li>
-              <li><a href="/blog">Blog</a></li>
-              <li><a href="/discount-codes">Discount Codes</a></li>
+              <li><a href="/personalized-guidance">Personalized Guidance</a></li>
+              <li><a href="/somatic-reset">Somatic Reset</a></li>
               <li><a href="/breathwork">Breathwork</a></li>
               <li><a href="/events">Events</a></li>
             </ul>
