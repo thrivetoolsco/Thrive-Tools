@@ -147,6 +147,12 @@ const vitaminsSupplements: DiscountItem[] = [
     code: "Follow This Link",
     url: "https://clicks.trackcb.com/aff_c?offer_id=259&aff_id=4192",
   },
+  {
+    name: "Trusted Mushrooms",
+    description: "Amanita in all its forms. Worldwide delivery.",
+    code: "Follow This Link",
+    url: "https://clicks.trackcb.com/aff_c?offer_id=270&aff_id=4192",
+  },
 ];
 
 const healthTech: DiscountItem[] = [
