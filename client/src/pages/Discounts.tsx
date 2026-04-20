@@ -122,6 +122,7 @@ const vitaminsSupplements: DiscountItem[] = [
     description: "Premium kratom products for energy, focus and relaxation.",
     code: "Follow This Link",
     url: "https://clicks.trackcb.com/aff_c?offer_id=202&aff_id=4192",
+    blogHref: "/blog/kratom-replacing-alcohol-cannabis-social-pivot-2026",
   },
   {
     name: "CBDMagic",
