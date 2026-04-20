@@ -123,6 +123,12 @@ const vitaminsSupplements: DiscountItem[] = [
     code: "Follow This Link",
     url: "https://clicks.trackcb.com/aff_c?offer_id=202&aff_id=4192",
   },
+  {
+    name: "Emerald Bay Extracts",
+    description: "Full spectrum cannabis oil. Precision dosed. Triple lab tested. USA based.",
+    code: "Follow This Link",
+    url: "https://clicks.trackcb.com/aff_c?offer_id=313&aff_id=4192",
+  },
 ];
 
 const healthTech: DiscountItem[] = [
