@@ -117,6 +117,12 @@ const vitaminsSupplements: DiscountItem[] = [
     code: "Follow This Link",
     url: "https://www.awin1.com/cread.php?awinmid=120852&awinaffid=2813108",
   },
+  {
+    name: "Just Kratom",
+    description: "Premium kratom products for energy, focus and relaxation.",
+    code: "Follow This Link",
+    url: "https://clicks.trackcb.com/aff_c?offer_id=202&aff_id=4192",
+  },
 ];
 
 const healthTech: DiscountItem[] = [
