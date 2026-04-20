@@ -737,10 +737,527 @@ const WATERDROP_SSR_HTML = `<!DOCTYPE html>
 </body>
 </html>`;
 
+const KRATOM_SSR_HTML = `<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kratom vs Alcohol &amp; Cannabis in 2026 | Thrive Tools</title>
+  <meta name="description" content="Why kratom is replacing alcohol and cannabis in 2026: the honest science, real side effects, smart dosing protocol, and where to source lab-tested kratom safely." />
+  <link rel="canonical" href="https://thrivetools.co/blog/kratom-replacing-alcohol-cannabis-social-pivot-2026" />
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Kratom vs Alcohol &amp; Cannabis in 2026 | Thrive Tools" />
+  <meta property="og:description" content="Why kratom is replacing alcohol and cannabis in 2026: the honest science, real side effects, smart dosing protocol, and where to source lab-tested kratom safely." />
+  <meta property="og:url" content="https://thrivetools.co/blog/kratom-replacing-alcohol-cannabis-social-pivot-2026" />
+  <meta property="og:site_name" content="Thrive Tools" />
+  <meta property="og:image" content="https://thrivetools.co/images/kratom/kratom-plant.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Kratom vs Alcohol &amp; Cannabis in 2026 | Thrive Tools" />
+  <meta name="twitter:description" content="Why kratom is replacing alcohol and cannabis in 2026: honest science, real side effects, and where to source lab-tested kratom." />
+  <meta name="twitter:image" content="https://thrivetools.co/images/kratom/kratom-plant.jpg" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "The Ultimate Social Pivot: Why Kratom is Replacing Alcohol and Cannabis in 2026",
+    "datePublished": "2025-09-17",
+    "dateModified": "2025-09-17",
+    "author": { "@type": "Person", "name": "Eden Laraki" },
+    "publisher": { "@type": "Organization", "name": "Thrive Tools", "url": "https://thrivetools.co" },
+    "image": "https://thrivetools.co/images/kratom/kratom-plant.jpg",
+    "url": "https://thrivetools.co/blog/kratom-replacing-alcohol-cannabis-social-pivot-2026"
+  }
+  </script>
+  <link rel="icon" type="image/png" href="/favicon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:wght@400;500;600;700;800&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background: #fdf6eb;
+      color: #3d1a28;
+      line-height: 1.75;
+      font-size: 16px;
+      overflow-x: hidden;
+    }
+    a { color: #8b3a1a; text-decoration: underline; }
+    a:hover { color: #c4622d; }
+
+    /* ── NAVIGATION ── */
+    #site-nav {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 50;
+      background: rgba(253,246,235,0.88);
+      backdrop-filter: blur(20px);
+      -webkit-backdrop-filter: blur(20px);
+      transition: background 0.3s, box-shadow 0.3s, border-bottom 0.3s;
+    }
+    #site-nav.scrolled {
+      background: rgba(253,246,235,0.97);
+      box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+      border-bottom: 1px solid rgba(196,98,45,0.18);
+    }
+    .nav-inner {
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 0 2rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 7rem;
+    }
+    .nav-logo-wrap { display: flex; flex-direction: column; align-items: center; gap: 4px; text-decoration: none; }
+    .nav-wordmark { display: flex; align-items: center; gap: 0; line-height: 1; }
+    .nav-thrive {
+      font-family: 'Lora', Georgia, serif;
+      font-weight: 700;
+      font-size: clamp(14px, 2.6vw, 20px);
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: #c4622d;
+      white-space: nowrap;
+    }
+    .nav-sep {
+      font-family: Georgia, serif;
+      font-size: clamp(10px, 1.6vw, 13px);
+      color: #c4622d;
+      margin: 0 10px;
+      opacity: 0.6;
+      line-height: 1;
+    }
+    .nav-tools {
+      font-family: 'Lora', Georgia, serif;
+      font-weight: 400;
+      font-size: clamp(14px, 2.6vw, 20px);
+      letter-spacing: 0.28em;
+      text-transform: uppercase;
+      color: #8b3a1a;
+      white-space: nowrap;
+    }
+    .nav-tagline {
+      font-family: 'Montserrat', sans-serif;
+      font-weight: 400;
+      font-size: clamp(8px, 1.05vw, 10px);
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: #6b2d0f;
+      white-space: nowrap;
+    }
+    #menu-btn {
+      margin-top: 6px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 8px;
+      background: none;
+      border: none;
+      cursor: pointer;
+      color: rgba(61,26,40,0.6);
+      padding: 4px 12px;
+      transition: color 0.2s, background 0.2s;
+    }
+    #menu-btn:hover { color: #3d1a28; background: rgba(61,26,40,0.05); }
+    #menu-btn svg { width: 16px; height: 16px; }
+    #nav-dropdown {
+      background: rgba(253,246,235,0.99);
+      overflow: hidden;
+      max-height: 0;
+      transition: max-height 0.3s ease, opacity 0.3s ease;
+      opacity: 0;
+    }
+    #nav-dropdown.open { max-height: 80vh; opacity: 1; overflow-y: auto; }
+    .nav-menu-inner { padding: 1rem 1.5rem; display: flex; flex-direction: column; gap: 4px; }
+    .nav-item {
+      display: block;
+      font-size: 0.8rem;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      font-weight: 500;
+      color: rgba(61,26,40,0.6);
+      padding: 10px 8px;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: color 0.2s, background 0.2s;
+    }
+    .nav-item:hover { color: #3d1a28; background: rgba(61,26,40,0.05); }
+    .nav-item.active { color: #c4622d; background: rgba(196,98,45,0.1); }
+
+    /* ── PAGE LAYOUT ── */
+    .page-wrap { min-height: 100vh; padding-top: 7rem; }
+    .hero-section {
+      background: radial-gradient(ellipse 80% 50% at 50% 30%, #f8ece0 0%, #fdf6eb 40%, #fdf6eb 100%);
+      padding: 4rem 1.5rem 3rem;
+      position: relative;
+      overflow: hidden;
+    }
+    .hero-glow {
+      position: absolute;
+      top: 33%;
+      left: 33%;
+      width: 256px;
+      height: 256px;
+      border-radius: 50%;
+      background: radial-gradient(circle, #c4622d 0%, transparent 70%);
+      filter: blur(50px);
+      opacity: 0.3;
+      pointer-events: none;
+    }
+    .hero-inner { max-width: 896px; margin: 0 auto; position: relative; z-index: 1; }
+    .back-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      border: 1px solid rgba(61,26,40,0.15);
+      color: rgba(61,26,40,0.6);
+      background: transparent;
+      border-radius: 999px;
+      padding: 5px 14px;
+      font-size: 0.72rem;
+      font-weight: 500;
+      text-decoration: none;
+      margin-bottom: 2rem;
+      transition: color 0.2s, border-color 0.2s;
+    }
+    .back-btn:hover { color: #3d1a28; border-color: rgba(61,26,40,0.3); }
+    .back-btn svg { width: 12px; height: 12px; }
+    h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(2rem, 5vw, 3.75rem);
+      font-weight: 700;
+      line-height: 1.15;
+      margin-bottom: 1rem;
+      background: linear-gradient(135deg, #e8956d 0%, #c4622d 45%, #8b3a1a 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .hero-subtitle {
+      color: rgba(61,26,40,0.6);
+      font-size: 1.1rem;
+      max-width: 640px;
+      line-height: 1.7;
+      font-weight: 500;
+    }
+    .content-section {
+      background: linear-gradient(180deg, #fdf6eb 0%, #f8ece0 50%, #fdf6eb 100%);
+      padding: 4rem 1.5rem;
+    }
+    .content-inner { max-width: 896px; margin: 0 auto; }
+    article { display: flex; flex-direction: column; gap: 2.5rem; }
+    section { display: flex; flex-direction: column; gap: 0.75rem; }
+    h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(1.35rem, 3.5vw, 1.75rem);
+      font-weight: 700;
+      color: #3d1a28;
+      margin-bottom: 0.25rem;
+    }
+    h3 {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 0.82rem;
+      font-weight: 700;
+      color: #8b3a1a;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      margin-bottom: 0.25rem;
+    }
+    p { color: #3d1a28; margin-bottom: 0.75rem; }
+    .badge {
+      display: inline-block;
+      background: rgba(196,98,45,0.12);
+      color: #8b3a1a;
+      border: 1px solid rgba(196,98,45,0.22);
+      border-radius: 999px;
+      padding: 0.2em 0.85em;
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.07em;
+      text-transform: uppercase;
+      margin-bottom: 1rem;
+    }
+    .date-badge {
+      display: inline-block;
+      background: rgba(255,255,255,0.05);
+      color: rgba(61,26,40,0.45);
+      font-size: 0.78rem;
+      font-weight: 500;
+      margin-bottom: 1.5rem;
+    }
+    img {
+      width: 100%;
+      height: auto;
+      border-radius: 16px;
+      display: block;
+      margin: 1rem 0;
+    }
+    .img-caption {
+      font-size: 0.78rem;
+      color: rgba(61,26,40,0.45);
+      text-align: center;
+      margin-top: -0.25rem;
+    }
+    ul, ol { padding-left: 1.5rem; color: #3d1a28; }
+    li { margin-bottom: 0.5rem; line-height: 1.7; }
+
+    /* ── CTA BUTTON ── */
+    .cta-box {
+      background: linear-gradient(135deg, rgba(196,98,45,0.08) 0%, rgba(139,58,26,0.12) 100%);
+      border: 1px solid rgba(196,98,45,0.25);
+      border-radius: 20px;
+      padding: 2.5rem 2rem;
+      text-align: center;
+      margin-top: 1rem;
+    }
+    .cta-box h2 { margin-bottom: 0.5rem; }
+    .cta-box p { color: rgba(61,26,40,0.65); margin-bottom: 1.5rem; }
+    .cta-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: linear-gradient(135deg, #e8956d 0%, #c4622d 50%, #8b3a1a 100%);
+      color: #fff;
+      border: none;
+      border-radius: 999px;
+      padding: 0.85rem 2rem;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 0.9rem;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      text-decoration: none;
+      cursor: pointer;
+      transition: opacity 0.2s, transform 0.2s;
+      margin-bottom: 0.75rem;
+    }
+    .cta-btn:hover { opacity: 0.88; transform: translateY(-1px); color: #fff; text-decoration: none; }
+
+    /* ── FOOTER ── */
+    footer {
+      background: #f8ece0;
+      border-top: 1px solid rgba(196,98,45,0.12);
+      padding: 3rem 1.5rem 2rem;
+    }
+    .footer-inner { max-width: 1280px; margin: 0 auto; }
+    .footer-top {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      justify-content: space-between;
+      margin-bottom: 2rem;
+    }
+    .footer-logo { font-family: 'Lora', serif; font-weight: 700; font-size: 1.1rem; color: #c4622d; text-decoration: none; letter-spacing: 0.1em; text-transform: uppercase; }
+    .footer-tagline { font-size: 0.72rem; color: rgba(61,26,40,0.45); letter-spacing: 0.18em; text-transform: uppercase; margin-top: 4px; }
+    .footer-socials { display: flex; gap: 1rem; margin-top: 1rem; }
+    .footer-social { color: rgba(61,26,40,0.5); font-size: 1.1rem; text-decoration: none; transition: color 0.2s; }
+    .footer-social:hover { color: #c4622d; }
+    .footer-col-title { font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.12em; color: rgba(61,26,40,0.4); margin-bottom: 0.75rem; }
+    .footer-links { list-style: none; padding: 0; }
+    .footer-links li { margin-bottom: 0.5rem; }
+    .footer-links a { font-size: 0.82rem; color: rgba(61,26,40,0.6); text-decoration: none; transition: color 0.2s; }
+    .footer-links a:hover { color: #c4622d; }
+    .footer-bottom { border-top: 1px solid rgba(61,26,40,0.08); padding-top: 1.5rem; display: flex; flex-wrap: wrap; gap: 1rem; justify-content: space-between; align-items: center; }
+    .footer-bottom span { font-size: 0.75rem; color: rgba(61,26,40,0.4); }
+    .footer-bottom-links { display: flex; gap: 1.25rem; }
+    .footer-bottom-links a { font-size: 0.75rem; color: rgba(61,26,40,0.4); text-decoration: none; }
+    .footer-bottom-links a:hover { color: #c4622d; }
+  </style>
+</head>
+<body>
+  <div class="page-wrap">
+
+    <nav id="site-nav">
+      <div class="nav-inner">
+        <a href="/" class="nav-logo-wrap" aria-label="Thrive Tools home">
+          <div class="nav-wordmark">
+            <span class="nav-thrive">Thrive</span>
+            <span class="nav-sep">&#10022;</span>
+            <span class="nav-tools">Tools</span>
+          </div>
+          <span class="nav-tagline">Biohacking &mdash; Longevity &mdash; Conscious Living</span>
+        </a>
+        <button id="menu-btn" aria-label="Toggle menu" aria-expanded="false">
+          <svg id="icon-menu" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+          <svg id="icon-close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:none"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+        </button>
+      </div>
+      <div id="nav-dropdown">
+        <div class="nav-menu-inner">
+          <a href="/" class="nav-item">Home</a>
+          <a href="/blog" class="nav-item active">Blog</a>
+          <a href="/discount-codes" class="nav-item">Discount Codes</a>
+          <a href="/about" class="nav-item">About</a>
+          <a href="/breathwork" class="nav-item">Breathwork</a>
+          <a href="/events" class="nav-item">Events</a>
+          <a href="/personalized-guidance" class="nav-item">Personalized Guidance</a>
+          <a href="/contact" class="nav-item">Contact</a>
+        </div>
+      </div>
+    </nav>
+
+    <div class="hero-section">
+      <div class="hero-glow"></div>
+      <div class="hero-inner">
+        <a href="/blog" class="back-btn">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"/></svg>
+          All Posts
+        </a>
+        <span class="badge">Plant Medicine</span>
+        <h1>The Ultimate Social Pivot: Why Kratom is Replacing Alcohol and Cannabis in 2026</h1>
+        <p class="hero-subtitle">The search for a "middle ground" has led a massive wave of people toward kratom. Here is the full breakdown — the science, the risks, and how to do it right.</p>
+        <span class="date-badge">September 17, 2025</span>
+      </div>
+    </div>
+
+    <div class="content-section">
+      <div class="content-inner">
+
+        <img src="/images/kratom/kratom-plant.jpg" alt="Mitragyna speciosa kratom plant with large green leaves native to Southeast Asia" loading="eager" />
+
+        <article>
+
+          <section>
+            <p>We have all been there. You want to unwind after a long week, but you know that two glasses of wine will wreck your sleep, or a gummy will leave you glued to the couch for four hours.</p>
+            <p>The search for a "middle ground" has led a massive wave of people toward kratom. It is not "sober" in the traditional sense, but it is a completely different experience than alcohol or cannabis. If you are looking to swap your evening drink for something that actually lets you wake up fresh the next morning, here is the breakdown of why this botanical is taking over the social scene.</p>
+            <p>But before you make the switch, you need to understand exactly what you are putting in your body — and more importantly — what happens if you overdo it.</p>
+          </section>
+
+          <section>
+            <h2>What Exactly Is Kratom?</h2>
+            <p>Kratom (<em>Mitragyna speciosa</em>) is a tropical tree in the coffee family, native to Southeast Asia. While it is related to coffee, it does not just give you a caffeine buzz.</p>
+            <p>The leaves contain active compounds called alkaloids — specifically mitragynine and 7-hydroxymitragynine. These compounds are unique because they are biphasic: at low doses (1–3g) kratom acts as a stimulant, boosting sociability and focus, while at high doses (5g+) it shifts into a sedative, providing physical relaxation and comfort.</p>
+            <p>This versatility is why it works as both a pre-party energy boost and a post-work way to unwind. The <a href="https://pubmed.ncbi.nlm.nih.gov/26981239/" target="_blank" rel="noopener noreferrer">alkaloid profile of Mitragyna speciosa</a> has been studied for its unique receptor activity, distinguishing it from classical opioids.</p>
+
+            <img src="/images/kratom/green-maeng-da.jpg" alt="Green Maeng Da Kratom powder infographic from Just Kratom showing energy and focus benefits" loading="lazy" />
+            <p class="img-caption">Green Maeng Da: the go-to strain for daytime energy and social lift.</p>
+          </section>
+
+          <section>
+            <h2>Why the Social Swap Works</h2>
+            <p>The reason people are ditching alcohol and cannabis for kratom comes down to control.</p>
+
+            <h3>The Alcohol Swap</h3>
+            <p>Alcohol is a "sloppy" molecule. It hits your motor skills and your judgment simultaneously. Kratom provides a warm social lift while leaving your cognitive faculties largely intact. You can hold a deep conversation without the slurring or the empty-calorie bloat. For anyone who has woken up at 3am with their heart racing after two glasses of wine, the difference is immediately noticeable.</p>
+
+            <h3>The Cannabis Swap</h3>
+            <p>Many people find that modern high-THC cannabis makes them too "in their head" or anxious in social settings. Kratom offers a more grounded, physical sense of well-being. It is relaxation without the mental static — you stay present in the room rather than lost in your own thoughts.</p>
+
+            <img src="/images/kratom/red-maeng-da.jpg" alt="Red Maeng Da Kratom powder infographic showing relaxation and mood elevation effects" loading="lazy" />
+            <p class="img-caption">Red Maeng Da: longer-lasting, stronger relaxation — best for evenings.</p>
+          </section>
+
+          <section>
+            <h2>The Reality Check: Long-Term Side Effects</h2>
+            <p>If you are reading a blog that tells you kratom is a risk-free miracle herb, they are lying to you. Because it interacts with your brain's receptors, long-term or heavy use comes with a real set of consequences. <a href="https://www.nccih.nih.gov/health/kratom" target="_blank" rel="noopener noreferrer">The NIH's overview of kratom</a> acknowledges both its reported benefits and its documented risks.</p>
+            <p>If you want to keep this as a Thrive Tool and not a crutch, you need to be aware of the following long-term risks:</p>
+            <ul>
+              <li><strong>Tolerance and Dependency:</strong> This is the big one. If you use kratom every single day, your brain will stop producing its own feel-good chemicals. Over time, you will need more just to feel normal.</li>
+              <li><strong>Hormonal Shifts:</strong> Some long-term heavy users report a drop in libido or changes in testosterone levels. If you are optimizing for longevity, daily high-dose use is a counter-productive strategy.</li>
+              <li><strong>Digestive Issues:</strong> Kratom is highly astringent and slow-moving through the gut. Chronic use without massive hydration can lead to persistent constipation. Pair it with a <a href="/blog/bacillus-subtilis-bacillus-coagulans-probiotic-guide">quality spore-based probiotic</a> if you use it regularly.</li>
+              <li><strong>The Kratom Fog:</strong> While low doses help with focus, using it daily can eventually lead to a muted emotional state where you feel flat or unmotivated.</li>
+            </ul>
+          </section>
+
+          <section>
+            <h2>The Professional Protocol</h2>
+            <p>The secret to using kratom as an alcohol or cannabis alternative without hitting the side effects is spacing.</p>
+            <p>Treat it like a guest, not a resident. Use it 2–3 times a week for social events or high-stress days — never as a daily habit. This keeps your tolerance low and prevents the dependency cycle from starting.</p>
+            <p>Stay with the leaf. Avoid the high-potency "gas station" extracts that are designed to hook you. Stick to plain, raw leaf powder that has been independently tested for purity. The difference in the experience — and your safety — is significant.</p>
+
+            <img src="/images/kratom/trainwreck.jpg" alt="Trainwreck Kratom powder infographic showing the blend of all three major kratom strains for balanced mood and focus" loading="lazy" />
+            <p class="img-caption">Trainwreck: a blend of all three major kratom strains — balanced mood and sustained focus.</p>
+          </section>
+
+          <section>
+            <h2>Sourcing and Purity</h2>
+            <p>Because the industry is still catching up with regulations, a significant portion of kratom on the market is contaminated with heavy metals (including lead) or mold. If you are using this for your health, you cannot afford to buy budget powder.</p>
+            <p>Only trust sources that provide full-panel lab results for every single batch. You want to know exactly what you are consuming before it goes into your body. See the full range of products we recommend on the <a href="/discount-codes">discount codes page</a>.</p>
+          </section>
+
+          <div class="cta-box">
+            <h2>Get Lab-Tested, Premium Kratom</h2>
+            <p>Full-panel tested for heavy metals and mold. Raw leaf powder only. No extracts, no gimmicks.</p>
+            <a href="https://clicks.trackcb.com/aff_c?offer_id=202&aff_id=4192" target="_blank" rel="noopener noreferrer" class="cta-btn">
+              Shop Just Kratom &rarr;
+            </a>
+          </div>
+
+        </article>
+      </div>
+    </div>
+
+    <footer>
+      <div class="footer-inner">
+        <div class="footer-top">
+          <div>
+            <a href="/" class="footer-logo">Thrive &#10022; Tools</a>
+            <p class="footer-tagline">Biohacking &mdash; Longevity &mdash; Conscious Living</p>
+            <div class="footer-socials">
+              <a href="https://www.instagram.com/thrive.tools/" target="_blank" rel="noopener noreferrer" class="footer-social" aria-label="Instagram">&#9825;</a>
+              <a href="https://www.youtube.com/@ThriveTools" target="_blank" rel="noopener noreferrer" class="footer-social" aria-label="YouTube">&#9654;</a>
+            </div>
+          </div>
+          <div>
+            <p class="footer-col-title">Navigate</p>
+            <ul class="footer-links">
+              <li><a href="/">Home</a></li>
+              <li><a href="/blog">Blog</a></li>
+              <li><a href="/discount-codes">Discount Codes</a></li>
+              <li><a href="/breathwork">Breathwork</a></li>
+              <li><a href="/events">Events</a></li>
+            </ul>
+          </div>
+          <div>
+            <p class="footer-col-title">More</p>
+            <ul class="footer-links">
+              <li><a href="/discount-codes">Discount Codes (2026)</a></li>
+              <li><a href="/blog">Blog</a></li>
+              <li><a href="/about">About</a></li>
+              <li><a href="/contact">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <span>&copy; 2026 Thrive Tools. All rights reserved.</span>
+          <div class="footer-bottom-links">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+  </div>
+
+  <script>
+    window.addEventListener('scroll', function() {
+      document.getElementById('site-nav').classList.toggle('scrolled', window.scrollY > 20);
+    }, { passive: true });
+    document.getElementById('menu-btn').addEventListener('click', function() {
+      var dropdown = document.getElementById('nav-dropdown');
+      var isOpen = dropdown.classList.toggle('open');
+      this.setAttribute('aria-expanded', isOpen);
+      document.getElementById('icon-menu').style.display = isOpen ? 'none' : 'block';
+      document.getElementById('icon-close').style.display = isOpen ? 'block' : 'none';
+    });
+  </script>
+</body>
+</html>`;
+
 export async function registerRoutes(
   httpServer: Server,
   app: Express
 ): Promise<Server> {
+  app.get("/blog/kratom-replacing-alcohol-cannabis-social-pivot-2026", (_req, res) => {
+    res.setHeader("Content-Type", "text/html; charset=utf-8");
+    res.setHeader("Cache-Control", "public, max-age=3600");
+    res.send(KRATOM_SSR_HTML);
+  });
+
   app.get("/blog/waterdrop-k19-h-aquatru-rkin-reverse-osmosis-review", (_req, res) => {
     res.setHeader("Content-Type", "text/html; charset=utf-8");
     res.setHeader("Cache-Control", "public, max-age=3600");

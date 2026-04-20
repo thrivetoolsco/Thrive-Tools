@@ -56,6 +56,17 @@ export const eventRoutes: EventRoute[] = [
 
 export const blogPosts: BlogPost[] = [
   {
+    id: "kratom-replacing-alcohol-cannabis-social-pivot-2026",
+    title: "The Ultimate Social Pivot: Why Kratom is Replacing Alcohol and Cannabis in 2026",
+    excerpt: "The search for a middle ground has led millions toward kratom. Here is the honest breakdown of the science, the real long-term risks, the professional protocol, and where to source it safely.",
+    href: "/blog/kratom-replacing-alcohol-cannabis-social-pivot-2026",
+    canonical: "/blog/kratom-replacing-alcohol-cannabis-social-pivot-2026",
+    badge: "Plant Medicine",
+    badgeColor: "bg-[#c4622d]/15 text-[#8b3a1a] border-[#c4622d]/25",
+    date: "September 17, 2025",
+    lastmod: "2025-09-17",
+  },
+  {
     id: "waterdrop-k19-h-aquatru-rkin-reverse-osmosis-review",
     title: "Waterdrop vs. AquaTru vs. RKIN: The Truth About Zero Installation Reverse Osmosis",
     excerpt: "The genuine, no BS breakdown of the only three countertop RO systems worth considering. UV sterilization, PFAS removal, instant hot water, and why I finally cleared counter space for the Waterdrop K19.H.",
