@@ -114,8 +114,8 @@ const vitaminsSupplements: DiscountItem[] = [
   {
     name: "Zentein Nutrition",
     description: "Protein snacks with no artificial ingredients",
-    code: "Follow This Link",
-    url: "https://www.awin1.com/cread.php?awinmid=120852&awinaffid=2813108",
+    code: "THRIVETOOLS10",
+    url: "https://zentein.ca/?ref=THRIVETOOLSCO",
   },
   {
     name: "Just Kratom",
