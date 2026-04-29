@@ -118,6 +118,12 @@ const vitaminsSupplements: DiscountItem[] = [
     url: "https://zentein.ca/?ref=THRIVETOOLSCO",
   },
   {
+    name: "Prana Foods",
+    description: "Organic superfoods & snacks.",
+    code: "THRIVETOOLSCO",
+    url: "https://pranafoods.ca/thrivetoolsco",
+  },
+  {
     name: "Just Kratom",
     description: "Premium kratom products for energy, focus and relaxation.",
     code: "Follow This Link",
