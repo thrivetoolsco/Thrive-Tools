@@ -56,6 +56,17 @@ export const eventRoutes: EventRoute[] = [
 
 export const blogPosts: BlogPost[] = [
   {
+    id: "miso-myth-biologically-dead-fermented-foods",
+    title: "The Miso Myth: Why Your Fermented Foods Are Likely Biologically Dead",
+    excerpt: "Most miso is pasteurized and biologically inactive. Learn the science of Bacillus subtilis, why raw chickpea miso is superior, and how to make your own living ferment.",
+    href: "/blog/miso-myth-biologically-dead-fermented-foods",
+    canonical: "/blog/miso-myth-biologically-dead-fermented-foods",
+    badge: "Science Deep Dive",
+    badgeColor: "bg-[#c4622d]/15 text-[#8b3a1a] border-[#c4622d]/25",
+    date: "May 8, 2026",
+    lastmod: "2026-05-08",
+  },
+  {
     id: "kratom-replacing-alcohol-cannabis-social-pivot-2026",
     title: "The Ultimate Social Pivot: Why Kratom is Replacing Alcohol and Cannabis in 2026",
     excerpt: "The search for a middle ground has led millions toward kratom. Here is the honest breakdown of the science, the real long-term risks, the professional protocol, and where to source it safely.",
