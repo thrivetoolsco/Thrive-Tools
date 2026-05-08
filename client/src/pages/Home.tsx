@@ -427,16 +427,16 @@ export default function Home() {
             </Link>
 
             {/* Post 2 */}
-            <Link href="/product-reviews/breathwork-beginners-guide" data-testid="link-featured-post-1">
+            <Link href="/blog/kratom-replacing-alcohol-cannabis-social-pivot-2026" data-testid="link-featured-post-1">
               <div className="card-glass rounded-2xl p-6 flex flex-col gap-3 h-full hover-elevate transition-all duration-300 cursor-pointer group">
                 <span className="inline-block self-start text-[10px] font-bold tracking-widest uppercase rounded-full px-3 py-1 bg-[#c4622d]/12 text-[#8b3a1a] border border-[#c4622d]/22">
-                  Beginner&apos;s Guide
+                  Plant Medicine
                 </span>
                 <h3 className="font-display text-lg font-bold text-[#3d1a28] leading-snug group-hover:text-[#c4622d] transition-colors duration-200">
-                  Breathwork for Beginners
+                  Why Kratom is Replacing Alcohol and Cannabis in 2026
                 </h3>
                 <p className="text-[#3d1a28]/55 text-sm leading-relaxed flex-1">
-                  The Complete Science-Backed Guide (2026)
+                  The Ultimate Social Pivot
                 </p>
                 <div className="flex items-center gap-1 text-[#c4622d] text-xs font-semibold tracking-wide uppercase mt-1">
                   Read More <ArrowRight className="w-3 h-3" />
