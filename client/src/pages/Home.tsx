@@ -395,6 +395,85 @@ export default function Home() {
         </div>
       </section>
 
+      {/* ── FEATURED BLOG POSTS ── */}
+      <section className="py-16 sm:py-20 px-4 sm:px-6" style={{ background: "linear-gradient(180deg, #fdf6eb 0%, #f8ece0 60%, #fdf6eb 100%)" }}>
+        <div className="max-w-5xl mx-auto">
+          <div className="text-center mb-10">
+            <h2 className="font-display text-3xl sm:text-4xl font-bold text-[#3d1a28] mb-3">
+              Featured Blog Posts
+            </h2>
+            <p className="text-[#3d1a28]/55 text-base max-w-lg mx-auto">
+              Science-backed guides to help you take control of your biology.
+            </p>
+          </div>
+
+          <div className="grid sm:grid-cols-3 gap-5 sm:gap-6 mb-10">
+            {/* Post 1 */}
+            <Link href="/product-reviews/biohacking-beginners-guide" data-testid="link-featured-post-0">
+              <div className="card-glass rounded-2xl p-6 flex flex-col gap-3 h-full hover-elevate transition-all duration-300 cursor-pointer group">
+                <span className="inline-block self-start text-[10px] font-bold tracking-widest uppercase rounded-full px-3 py-1 bg-[#c4622d]/12 text-[#8b3a1a] border border-[#c4622d]/22">
+                  Beginner&apos;s Guide
+                </span>
+                <h3 className="font-display text-lg font-bold text-[#3d1a28] leading-snug group-hover:text-[#c4622d] transition-colors duration-200">
+                  Biohacking for Beginners
+                </h3>
+                <p className="text-[#3d1a28]/55 text-sm leading-relaxed flex-1">
+                  The Complete 2026 Starter Guide
+                </p>
+                <div className="flex items-center gap-1 text-[#c4622d] text-xs font-semibold tracking-wide uppercase mt-1">
+                  Read More <ArrowRight className="w-3 h-3" />
+                </div>
+              </div>
+            </Link>
+
+            {/* Post 2 */}
+            <Link href="/product-reviews/breathwork-beginners-guide" data-testid="link-featured-post-1">
+              <div className="card-glass rounded-2xl p-6 flex flex-col gap-3 h-full hover-elevate transition-all duration-300 cursor-pointer group">
+                <span className="inline-block self-start text-[10px] font-bold tracking-widest uppercase rounded-full px-3 py-1 bg-[#c4622d]/12 text-[#8b3a1a] border border-[#c4622d]/22">
+                  Beginner&apos;s Guide
+                </span>
+                <h3 className="font-display text-lg font-bold text-[#3d1a28] leading-snug group-hover:text-[#c4622d] transition-colors duration-200">
+                  Breathwork for Beginners
+                </h3>
+                <p className="text-[#3d1a28]/55 text-sm leading-relaxed flex-1">
+                  The Complete Science-Backed Guide (2026)
+                </p>
+                <div className="flex items-center gap-1 text-[#c4622d] text-xs font-semibold tracking-wide uppercase mt-1">
+                  Read More <ArrowRight className="w-3 h-3" />
+                </div>
+              </div>
+            </Link>
+
+            {/* Post 3 */}
+            <Link href="/blog/bacillus-subtilis-bacillus-coagulans-probiotic-guide" data-testid="link-featured-post-2">
+              <div className="card-glass rounded-2xl p-6 flex flex-col gap-3 h-full hover-elevate transition-all duration-300 cursor-pointer group">
+                <span className="inline-block self-start text-[10px] font-bold tracking-widest uppercase rounded-full px-3 py-1 bg-[#c4622d]/12 text-[#8b3a1a] border border-[#c4622d]/22">
+                  Science Deep Dive
+                </span>
+                <h3 className="font-display text-lg font-bold text-[#3d1a28] leading-snug group-hover:text-[#c4622d] transition-colors duration-200">
+                  Why Most Probiotics Never Reach Your Gut
+                </h3>
+                <p className="text-[#3d1a28]/55 text-sm leading-relaxed flex-1">
+                  The Two Strains That Always Do
+                </p>
+                <div className="flex items-center gap-1 text-[#c4622d] text-xs font-semibold tracking-wide uppercase mt-1">
+                  Read More <ArrowRight className="w-3 h-3" />
+                </div>
+              </div>
+            </Link>
+          </div>
+
+          <div className="text-center">
+            <Link href="/blog" data-testid="link-all-blog-posts">
+              <Button size="lg" variant="outline" className="rounded-full px-10 text-sm tracking-widest uppercase font-semibold border-[#c4622d]/40 text-[#8b3a1a] bg-transparent hover:bg-[#c4622d]/08">
+                More Blog Posts
+                <ArrowRight className="ml-2 w-4 h-4" />
+              </Button>
+            </Link>
+          </div>
+        </div>
+      </section>
+
       <Footer />
     </div>
   );
