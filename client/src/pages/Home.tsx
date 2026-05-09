@@ -407,7 +407,36 @@ export default function Home() {
           </div>
 
           <div className="grid sm:grid-cols-3 gap-6 sm:gap-7 mb-12">
-            {/* Post 1 — Biohacking */}
+            {/* Post 1 — Probiotics */}
+            <Link href="/blog/bacillus-subtilis-bacillus-coagulans-probiotic-guide" data-testid="link-featured-post-0">
+              <article className="group flex flex-col h-full rounded-2xl overflow-hidden bg-white/70 shadow-sm hover:shadow-md transition-all duration-300 cursor-pointer border border-[#c4622d]/10">
+                <div className="relative overflow-hidden aspect-[4/3]">
+                  <img
+                    src="/images/blog/probiotic-gut-health.jpg"
+                    alt="Probiotic gut health bacteria"
+                    loading="lazy"
+                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent" />
+                  <span className="absolute top-3 left-3 text-[9px] font-bold tracking-widest uppercase rounded-full px-2.5 py-1 bg-[#c4622d] text-white shadow">
+                    Science Deep Dive
+                  </span>
+                </div>
+                <div className="flex flex-col flex-1 p-5 gap-2">
+                  <h3 className="font-display text-lg font-bold text-[#3d1a28] leading-snug group-hover:text-[#c4622d] transition-colors duration-200">
+                    Why Most Probiotics Never Reach Your Gut
+                  </h3>
+                  <p className="text-[#3d1a28]/55 text-sm leading-relaxed flex-1">
+                    The Two Strains That Always Do
+                  </p>
+                  <div className="flex items-center gap-1 text-[#c4622d] text-xs font-semibold tracking-wide uppercase pt-2 border-t border-[#c4622d]/10">
+                    Read More <ArrowRight className="w-3 h-3" />
+                  </div>
+                </div>
+              </article>
+            </Link>
+
+            {/* Post 2 — Biohacking */}
             <Link href="/product-reviews/biohacking-beginners-guide" data-testid="link-featured-post-1">
               <article className="group flex flex-col h-full rounded-2xl overflow-hidden bg-white/70 shadow-sm hover:shadow-md transition-all duration-300 cursor-pointer border border-[#c4622d]/10">
                 <div className="relative overflow-hidden aspect-[4/3]">
@@ -437,7 +466,7 @@ export default function Home() {
             </Link>
 
             {/* Post 3 — Kratom */}
-            <Link href="/blog/kratom-replacing-alcohol-cannabis-social-pivot-2026" data-testid="link-featured-post-1">
+            <Link href="/blog/kratom-replacing-alcohol-cannabis-social-pivot-2026" data-testid="link-featured-post-2">
               <article className="group flex flex-col h-full rounded-2xl overflow-hidden bg-white/70 shadow-sm hover:shadow-md transition-all duration-300 cursor-pointer border border-[#c4622d]/10">
                 <div className="relative overflow-hidden aspect-[4/3]">
                   <img
@@ -457,35 +486,6 @@ export default function Home() {
                   </h3>
                   <p className="text-[#3d1a28]/55 text-sm leading-relaxed flex-1">
                     The Ultimate Social Pivot
-                  </p>
-                  <div className="flex items-center gap-1 text-[#c4622d] text-xs font-semibold tracking-wide uppercase pt-2 border-t border-[#c4622d]/10">
-                    Read More <ArrowRight className="w-3 h-3" />
-                  </div>
-                </div>
-              </article>
-            </Link>
-
-            {/* Post 3 — Probiotics */}
-            <Link href="/blog/bacillus-subtilis-bacillus-coagulans-probiotic-guide" data-testid="link-featured-post-2">
-              <article className="group flex flex-col h-full rounded-2xl overflow-hidden bg-white/70 shadow-sm hover:shadow-md transition-all duration-300 cursor-pointer border border-[#c4622d]/10">
-                <div className="relative overflow-hidden aspect-[4/3]">
-                  <img
-                    src="/images/blog/probiotic-gut-health.jpg"
-                    alt="Probiotic gut health bacteria"
-                    loading="lazy"
-                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent" />
-                  <span className="absolute top-3 left-3 text-[9px] font-bold tracking-widest uppercase rounded-full px-2.5 py-1 bg-[#c4622d] text-white shadow">
-                    Science Deep Dive
-                  </span>
-                </div>
-                <div className="flex flex-col flex-1 p-5 gap-2">
-                  <h3 className="font-display text-lg font-bold text-[#3d1a28] leading-snug group-hover:text-[#c4622d] transition-colors duration-200">
-                    Why Most Probiotics Never Reach Your Gut
-                  </h3>
-                  <p className="text-[#3d1a28]/55 text-sm leading-relaxed flex-1">
-                    The Two Strains That Always Do
                   </p>
                   <div className="flex items-center gap-1 text-[#c4622d] text-xs font-semibold tracking-wide uppercase pt-2 border-t border-[#c4622d]/10">
                     Read More <ArrowRight className="w-3 h-3" />
