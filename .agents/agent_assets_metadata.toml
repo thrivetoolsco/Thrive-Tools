@@ -1,0 +1,14 @@
+uploads = []
+generated = []
+
+[[outputs]]
+id = "DoZIhtuZfwt1SLR50CHFQ"
+uri = "file://attached_assets/stock_images/biohacking_beginners.jpg"
+type = "image"
+title = "biohacking supplements nootropics smart devices wellness technology lab"
+
+[[outputs]]
+id = "OPxJPSyrN4EDG17KK5YUf"
+uri = "file://attached_assets/stock_images/probiotic_gut_health.jpg"
+type = "image"
+title = "probiotic gut health bacteria fermented food science microscope"

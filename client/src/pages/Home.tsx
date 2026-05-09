@@ -396,76 +396,108 @@ export default function Home() {
       </section>
 
       {/* ── FEATURED BLOG POSTS ── */}
-      <section className="py-16 sm:py-20 px-4 sm:px-6" style={{ background: "linear-gradient(180deg, #fdf6eb 0%, #f8ece0 60%, #fdf6eb 100%)" }}>
+      <section className="py-16 sm:py-20 px-4 sm:px-6" style={{ background: "linear-gradient(180deg, #fdf6eb 0%, #f3e6d5 60%, #fdf6eb 100%)" }}>
         <div className="max-w-5xl mx-auto">
-          <div className="text-center mb-10">
-            <h2 className="font-display text-3xl sm:text-4xl font-bold text-[#3d1a28] mb-3">
-              Featured Blog Posts
+          <div className="text-center mb-12">
+            <p className="text-[10px] font-bold tracking-widest uppercase text-[#c4622d]/70 mb-3">From the Blog</p>
+            <h2 className="font-display text-3xl sm:text-4xl font-bold text-[#3d1a28] mb-4">
+              Featured Reads
             </h2>
-            <p className="text-[#3d1a28]/55 text-base max-w-lg mx-auto">
-              Science-backed guides to help you take control of your biology.
-            </p>
+            <div className="w-12 h-px bg-[#c4622d]/40 mx-auto" />
           </div>
 
-          <div className="grid sm:grid-cols-3 gap-5 sm:gap-6 mb-10">
-            {/* Post 1 */}
+          <div className="grid sm:grid-cols-3 gap-6 sm:gap-7 mb-12">
+            {/* Post 1 — Biohacking */}
             <Link href="/product-reviews/biohacking-beginners-guide" data-testid="link-featured-post-0">
-              <div className="card-glass rounded-2xl p-6 flex flex-col gap-3 h-full hover-elevate transition-all duration-300 cursor-pointer group">
-                <span className="inline-block self-start text-[10px] font-bold tracking-widest uppercase rounded-full px-3 py-1 bg-[#c4622d]/12 text-[#8b3a1a] border border-[#c4622d]/22">
-                  Beginner&apos;s Guide
-                </span>
-                <h3 className="font-display text-lg font-bold text-[#3d1a28] leading-snug group-hover:text-[#c4622d] transition-colors duration-200">
-                  Biohacking for Beginners
-                </h3>
-                <p className="text-[#3d1a28]/55 text-sm leading-relaxed flex-1">
-                  The Complete 2026 Starter Guide
-                </p>
-                <div className="flex items-center gap-1 text-[#c4622d] text-xs font-semibold tracking-wide uppercase mt-1">
-                  Read More <ArrowRight className="w-3 h-3" />
+              <article className="group flex flex-col h-full rounded-2xl overflow-hidden bg-white/70 shadow-sm hover:shadow-md transition-all duration-300 cursor-pointer border border-[#c4622d]/10">
+                <div className="relative overflow-hidden aspect-[4/3]">
+                  <img
+                    src="/images/blog/biohacking-beginners.jpg"
+                    alt="Biohacking supplements and technology"
+                    loading="lazy"
+                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent" />
+                  <span className="absolute top-3 left-3 text-[9px] font-bold tracking-widest uppercase rounded-full px-2.5 py-1 bg-[#c4622d] text-white shadow">
+                    Beginner&apos;s Guide
+                  </span>
                 </div>
-              </div>
+                <div className="flex flex-col flex-1 p-5 gap-2">
+                  <h3 className="font-display text-lg font-bold text-[#3d1a28] leading-snug group-hover:text-[#c4622d] transition-colors duration-200">
+                    Biohacking for Beginners
+                  </h3>
+                  <p className="text-[#3d1a28]/55 text-sm leading-relaxed flex-1">
+                    The Complete 2026 Starter Guide
+                  </p>
+                  <div className="flex items-center gap-1 text-[#c4622d] text-xs font-semibold tracking-wide uppercase pt-2 border-t border-[#c4622d]/10">
+                    Read More <ArrowRight className="w-3 h-3" />
+                  </div>
+                </div>
+              </article>
             </Link>
 
-            {/* Post 2 */}
+            {/* Post 2 — Kratom */}
             <Link href="/blog/kratom-replacing-alcohol-cannabis-social-pivot-2026" data-testid="link-featured-post-1">
-              <div className="card-glass rounded-2xl p-6 flex flex-col gap-3 h-full hover-elevate transition-all duration-300 cursor-pointer group">
-                <span className="inline-block self-start text-[10px] font-bold tracking-widest uppercase rounded-full px-3 py-1 bg-[#c4622d]/12 text-[#8b3a1a] border border-[#c4622d]/22">
-                  Plant Medicine
-                </span>
-                <h3 className="font-display text-lg font-bold text-[#3d1a28] leading-snug group-hover:text-[#c4622d] transition-colors duration-200">
-                  Why Kratom is Replacing Alcohol and Cannabis in 2026
-                </h3>
-                <p className="text-[#3d1a28]/55 text-sm leading-relaxed flex-1">
-                  The Ultimate Social Pivot
-                </p>
-                <div className="flex items-center gap-1 text-[#c4622d] text-xs font-semibold tracking-wide uppercase mt-1">
-                  Read More <ArrowRight className="w-3 h-3" />
+              <article className="group flex flex-col h-full rounded-2xl overflow-hidden bg-white/70 shadow-sm hover:shadow-md transition-all duration-300 cursor-pointer border border-[#c4622d]/10">
+                <div className="relative overflow-hidden aspect-[4/3]">
+                  <img
+                    src="/images/kratom/kratom-plant.jpg"
+                    alt="Kratom plant leaves"
+                    loading="lazy"
+                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent" />
+                  <span className="absolute top-3 left-3 text-[9px] font-bold tracking-widest uppercase rounded-full px-2.5 py-1 bg-[#c4622d] text-white shadow">
+                    Plant Medicine
+                  </span>
                 </div>
-              </div>
+                <div className="flex flex-col flex-1 p-5 gap-2">
+                  <h3 className="font-display text-lg font-bold text-[#3d1a28] leading-snug group-hover:text-[#c4622d] transition-colors duration-200">
+                    Why Kratom is Replacing Alcohol and Cannabis in 2026
+                  </h3>
+                  <p className="text-[#3d1a28]/55 text-sm leading-relaxed flex-1">
+                    The Ultimate Social Pivot
+                  </p>
+                  <div className="flex items-center gap-1 text-[#c4622d] text-xs font-semibold tracking-wide uppercase pt-2 border-t border-[#c4622d]/10">
+                    Read More <ArrowRight className="w-3 h-3" />
+                  </div>
+                </div>
+              </article>
             </Link>
 
-            {/* Post 3 */}
+            {/* Post 3 — Probiotics */}
             <Link href="/blog/bacillus-subtilis-bacillus-coagulans-probiotic-guide" data-testid="link-featured-post-2">
-              <div className="card-glass rounded-2xl p-6 flex flex-col gap-3 h-full hover-elevate transition-all duration-300 cursor-pointer group">
-                <span className="inline-block self-start text-[10px] font-bold tracking-widest uppercase rounded-full px-3 py-1 bg-[#c4622d]/12 text-[#8b3a1a] border border-[#c4622d]/22">
-                  Science Deep Dive
-                </span>
-                <h3 className="font-display text-lg font-bold text-[#3d1a28] leading-snug group-hover:text-[#c4622d] transition-colors duration-200">
-                  Why Most Probiotics Never Reach Your Gut
-                </h3>
-                <p className="text-[#3d1a28]/55 text-sm leading-relaxed flex-1">
-                  The Two Strains That Always Do
-                </p>
-                <div className="flex items-center gap-1 text-[#c4622d] text-xs font-semibold tracking-wide uppercase mt-1">
-                  Read More <ArrowRight className="w-3 h-3" />
+              <article className="group flex flex-col h-full rounded-2xl overflow-hidden bg-white/70 shadow-sm hover:shadow-md transition-all duration-300 cursor-pointer border border-[#c4622d]/10">
+                <div className="relative overflow-hidden aspect-[4/3]">
+                  <img
+                    src="/images/blog/probiotic-gut-health.jpg"
+                    alt="Probiotic gut health bacteria"
+                    loading="lazy"
+                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent" />
+                  <span className="absolute top-3 left-3 text-[9px] font-bold tracking-widest uppercase rounded-full px-2.5 py-1 bg-[#c4622d] text-white shadow">
+                    Science Deep Dive
+                  </span>
                 </div>
-              </div>
+                <div className="flex flex-col flex-1 p-5 gap-2">
+                  <h3 className="font-display text-lg font-bold text-[#3d1a28] leading-snug group-hover:text-[#c4622d] transition-colors duration-200">
+                    Why Most Probiotics Never Reach Your Gut
+                  </h3>
+                  <p className="text-[#3d1a28]/55 text-sm leading-relaxed flex-1">
+                    The Two Strains That Always Do
+                  </p>
+                  <div className="flex items-center gap-1 text-[#c4622d] text-xs font-semibold tracking-wide uppercase pt-2 border-t border-[#c4622d]/10">
+                    Read More <ArrowRight className="w-3 h-3" />
+                  </div>
+                </div>
+              </article>
             </Link>
           </div>
 
           <div className="text-center">
             <Link href="/blog" data-testid="link-all-blog-posts">
-              <Button size="lg" variant="outline" className="rounded-full px-10 text-sm tracking-widest uppercase font-semibold border-[#c4622d]/40 text-[#8b3a1a] bg-transparent hover:bg-[#c4622d]/08">
+              <Button size="lg" variant="outline" className="rounded-full px-10 text-sm tracking-widest uppercase font-semibold border-[#c4622d]/40 text-[#8b3a1a] bg-transparent hover:bg-[#c4622d]/10">
                 More Blog Posts
                 <ArrowRight className="ml-2 w-4 h-4" />
               </Button>
