@@ -259,7 +259,6 @@ const healthTech: DiscountItem[] = [
     description: "Water Hydrogenator",
     code: "THRIVE10",
     url: "https://www.piurify.com/?sca_ref=4509873.CyVUQonn5r",
-    blogHref: "/blog/hydrogen-water-benefits-science-review",
   },
   {
     name: "NeuroVizr",

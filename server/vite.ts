@@ -49,7 +49,6 @@ const BLOG_ROUTE_MAP: Record<string, string> = {
   "/blog/red-light-therapy-science-benefits-devices": "/src/pages/reviews/RedLightTherapyGuide.tsx",
   "/blog/ketamine-brain-science-nmda-receptors-neuron-regrowth": "/src/pages/reviews/KetamineGuide.tsx",
   "/blog/muse-headband-review-eeg-neurofeedback": "/src/pages/reviews/MuseHeadbandReview.tsx",
-  "/blog/hydrogen-water-benefits-science-review": "/src/pages/reviews/HydrogenWaterGuide.tsx",
   "/blog/ceremonial-cacao-benefits-science-review": "/src/pages/reviews/CeremonialCacaoGuide.tsx",
   "/blog/psilocybin-science-research-2025": "/src/pages/reviews/PsilocybinGuide.tsx",
 };

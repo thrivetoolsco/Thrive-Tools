@@ -579,7 +579,6 @@ const WATERDROP_SSR_HTML = `<!DOCTYPE html>
             <h2>Purity vs. "Dead" Water</h2>
             <p>I get asked a lot if RO water is "dead" because it has zero minerals. Look: I would rather have a blank slate than a mineral.rich cocktail of lead and nitrates. The RO membrane in the Waterdrop is 0.0001 microns. That is a physical wall. It rejects things at a molecular level.</p>
             <p>My strategy: I use the Waterdrop to get the junk out, then I restructure my water with a pinch of Celtic sea salt or trace mineral drops. That way, I am choosing my mineral intake instead of letting the city pipes decide for me.</p>
-            <p>If you are interested in the broader conversation on water quality and longevity optimization, our deep dive into <a href="/blog/hydrogen-water-benefits-science-review">hydrogen water benefits and the science behind it</a> is worth your time as a companion read.</p>
             <figure class="img-card">
               <img
                 src="/images/waterdrop/k19h-purification.jpg"

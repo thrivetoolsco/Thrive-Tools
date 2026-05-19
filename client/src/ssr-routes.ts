@@ -24,7 +24,6 @@ import CordycepsGuide from "./pages/reviews/CordycepsGuide";
 import RedLightTherapyGuide from "./pages/reviews/RedLightTherapyGuide";
 import KetamineGuide from "./pages/reviews/KetamineGuide";
 import MuseHeadbandReview from "./pages/reviews/MuseHeadbandReview";
-import HydrogenWaterGuide from "./pages/reviews/HydrogenWaterGuide";
 import CeremonialCacaoGuide from "./pages/reviews/CeremonialCacaoGuide";
 import PsilocybinGuide from "./pages/reviews/PsilocybinGuide";
 
@@ -69,7 +68,6 @@ export const SSR_ROUTE_COMPONENTS: Record<string, ComponentType> = {
   "/blog/red-light-therapy-science-benefits-devices": RedLightTherapyGuide,
   "/blog/ketamine-brain-science-nmda-receptors-neuron-regrowth": KetamineGuide,
   "/blog/muse-headband-review-eeg-neurofeedback": MuseHeadbandReview,
-  "/blog/hydrogen-water-benefits-science-review": HydrogenWaterGuide,
   "/blog/ceremonial-cacao-benefits-science-review": CeremonialCacaoGuide,
   "/blog/psilocybin-science-research-2025": PsilocybinGuide,
 };
