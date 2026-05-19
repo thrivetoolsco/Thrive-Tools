@@ -44,12 +44,6 @@ const vitaminsSupplements: DiscountItem[] = [
     blogHref: "/product-reviews/hyperion-herbs",
   },
   {
-    name: "Superfeast",
-    description: "Premium tonic herb blends. Convenient pre-made formulas. Great if you want a complete herbal protocol in one product.",
-    code: "THRIVE33",
-    url: "https://www.awin1.com/cread.php?awinmid=77776&awinaffid=2813108",
-  },
-  {
     name: "Justthrivehealth",
     description: "Spore based probiotics that actually survive stomach acid and reach your gut intact. The most researched strains for real microbiome results.",
     code: "THRIVETOOLS",
