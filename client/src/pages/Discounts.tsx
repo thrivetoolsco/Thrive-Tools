@@ -262,13 +262,6 @@ const healthTech: DiscountItem[] = [
     blogHref: "/blog/hydrogen-water-benefits-science-review",
   },
   {
-    name: "Molecular Hydrogen Technologies",
-    description: "Hydrogen Water & Inhalation Technology",
-    code: "Follow This Link",
-    url: "https://tidd.ly/3NVu95C",
-    blogHref: "/blog/hydrogen-water-benefits-science-review",
-  },
-  {
     name: "NeuroVizr",
     description: "Light and sound therapy device for altered states, stress relief and neurological stimulation. Genuinely unlike anything else.",
     code: "thrive33",

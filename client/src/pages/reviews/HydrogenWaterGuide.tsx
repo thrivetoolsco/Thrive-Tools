@@ -265,9 +265,6 @@ export default function HydrogenWaterGuide() {
             <p>
               A U.S. study found that prolonged inhalation of 2.4% hydrogen gas in healthy adults was safe and well-tolerated with no serious adverse events. Japan has approved hydrogen inhalation as an advanced medical treatment.
             </p>
-            <p>
-              For those looking to go beyond drinking hydrogen water into inhalation therapy, Molecular Hydrogen Technologies offers both hydrogen water and inhalation technology, the most comprehensive approach currently available to consumers.
-            </p>
           </div>
         </section>
 
@@ -297,9 +294,9 @@ export default function HydrogenWaterGuide() {
         </section>
 
         <section data-testid="section-recommendations">
-          <h2 className="text-2xl font-bold text-[#3d1a28] font-display mb-6">The Two Hydrogen Devices I Recommend</h2>
+          <h2 className="text-2xl font-bold text-[#3d1a28] font-display mb-6">The Hydrogen Device I Recommend</h2>
           <p className="text-black/70 leading-relaxed mb-6">
-            After researching the market and the underlying technology, these are the two I stand behind.
+            After researching the market and the underlying technology, this is the one I stand behind.
           </p>
 
           <div className="space-y-8">
@@ -313,20 +310,6 @@ export default function HydrogenWaterGuide() {
                 <p className="text-sm text-black/50 italic">
                   Disclosure: I'm affiliated with Piurify and receive a commission on purchases through my link. I only recommend products I've researched thoroughly and genuinely believe in.
                 </p>
-              </div>
-            </div>
-
-            <div className="card-glass rounded-2xl p-6 sm:p-8" data-testid="section-molecular-hydrogen">
-              <h3 className="text-xl font-bold text-[#3d1a28] font-display mb-3">Molecular Hydrogen Technologies</h3>
-              <div className="space-y-4 text-black/70 leading-relaxed">
-                <p>
-                  For those wanting to go further, into both hydrogen water and hydrogen inhalation therapy, Molecular Hydrogen Technologies offers the most comprehensive approach currently available to consumers. Inhalation significantly increases the speed and volume of H₂ delivery and opens up applications that drinking alone cannot match.
-                </p>
-                <Button asChild size="lg" variant="outline" className="mt-2 rounded-full border-[#c4622d]/30 text-[#8b3a1a] hover:bg-[#c4622d]/10">
-                  <a href="https://tidd.ly/3NVu95C" target="_blank" rel="noopener noreferrer" data-testid="link-molecular-hydrogen" className="inline-flex items-center gap-2">
-                    Shop Molecular Hydrogen Technologies <ExternalLink className="w-4 h-4" />
-                  </a>
-                </Button>
               </div>
             </div>
 
