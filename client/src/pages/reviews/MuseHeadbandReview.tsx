@@ -3,9 +3,9 @@ import PageLayout from "@/components/PageLayout";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { ExternalLink, Copy, Check, Brain, Activity, Zap, ShieldCheck, Moon, Users } from "lucide-react";
-import museSpecsImg from "@assets/Muse2-Specs-Web_1775022703894.jpg";
-import museWearImg from "@assets/muse-headband-3_1775022703919.jpg";
-import museAppImg from "@assets/81kz1qOZd2L_1775022703932.jpg";
+const museSpecsImg = "/images/muse-specs.jpg";
+const museWearImg = "/images/muse-headband-3.jpg";
+const museAppImg = "/images/muse-app.jpg";
 
 const SHOP_URL = "https://choosemuse.com/thrive25";
 const DISCOUNT_CODE = "THRIVE25";
