@@ -1744,8 +1744,8 @@ ${blogEntries}
 
       res.json({ success: true });
     } catch (err) {
-      console.log("Newsletter subscription (email failed, logged safely)");
-      res.json({ success: true });
+      console.error("Newsletter email failed:", err);
+      res.status(500).json({ error: "Failed to subscribe. Please try again later." });
     }
   });
 
