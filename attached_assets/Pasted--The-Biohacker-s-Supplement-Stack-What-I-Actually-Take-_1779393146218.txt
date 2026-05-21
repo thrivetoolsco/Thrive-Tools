@@ -1,0 +1,325 @@
+# The Biohacker's Supplement Stack: What I Actually Take and Why (2026)
+
+*By Eden Laraki | ThriveTools.co*
+
+---
+
+After 14 years of testing supplements, tracking results, and reading more PubMed studies than I care to admit — I've landed on a stack that I actually believe in. Not one built around hype cycles or whatever's trending on wellness TikTok, but one grounded in mechanism, evidence, and how things feel in real life.
+
+This is what I take, why I take it, what I've dropped, and what the research says going into 2026.
+
+It's longer than most supplement guides because I'm not going to give you a listicle without explaining the reasoning. Understanding *why* something works is the only way to make intelligent decisions about your own stack.
+
+---
+
+## How to Think About a Supplement Stack Before Buying Anything
+
+Most people build their supplement protocol backwards — they read about something interesting and add it to the pile. After a while they're taking 12 things, spending a fortune, and genuinely unsure what's working.
+
+The layered approach makes more sense:
+
+**Layer 1 — Foundation:** Address the highest-prevalence deficiencies first. Magnesium, vitamin D, omega-3s, and a quality B-complex cover the gaps that most people have and that affect everything else downstream.
+
+**Layer 2 — System support:** Once the foundation is solid, add targeted support for gut health, energy, inflammation, and cognitive function. Probiotics, CoQ10, adaptogens, creatine.
+
+**Layer 3 — Longevity and optimization:** NAD+ precursors, senolytic compounds, advanced mitochondrial support. These work best when layers 1 and 2 are already in place.
+
+**Layer 4 — Advanced interventions:** Peptides, photobiomodulation, hydrogen water, neurofeedback. These are the performance edge — meaningful, but they won't compensate for a broken foundation.
+
+The mistake most people make is jumping to layer 4 before layer 1 is solid. Fix the foundation first. Everything else lands harder when you do.
+
+---
+
+## Layer 1: The Foundation Stack
+
+### Magnesium
+
+Magnesium deficiency affects an estimated 75% of people in Western countries. It's required for over 300 enzymatic reactions in the body — energy metabolism, protein synthesis, nervous system function, sleep regulation, blood pressure, and more.
+
+The form matters enormously. Magnesium oxide — the form in most cheap supplements — has roughly 4% bioavailability. It's essentially useless for anything except as a laxative.
+
+**Forms worth taking:**
+
+*Magnesium glycinate* — Best all-around form. Well-absorbed, calming due to the glycine component, no GI issues. This is my daily baseline and what I recommend for most people. Take at night — the glycine content supports sleep architecture meaningfully.
+
+*Magnesium L-threonate* — The only form clinically demonstrated to cross the blood-brain barrier. Research from MIT shows it increases synaptic density and improves cognitive function. Stack it with glycinate rather than replacing it — threonate delivers less elemental magnesium but superior brain penetration.
+
+*Magnesium malate* — Best for energy and muscle function. Malate is involved in the Krebs cycle (cellular energy production). Good option if fatigue is your primary complaint.
+
+**BiOptimizers Magnesium Breakthrough** uses 7 forms of magnesium in one formula — glycinate, malate, taurate, threonate, orotate, sucrosomial, and citrate — each targeting different systems. It's the most comprehensive magnesium supplement I've come across and what I use personally. No other single product covers the full spectrum this way.
+
+[→ **Shop BiOptimizers Magnesium Breakthrough — Use code THRIVETOOLS**](https://bioptimizers.com)
+
+**Dose:** 300-400mg elemental magnesium daily. Most people benefit from splitting morning and evening doses.
+
+---
+
+### Omega-3 Fatty Acids (EPA + DHA)
+
+Omega-3 deficiency is one of the most widespread nutrient gaps in the developed world and one of the most consequential. Low omega-3 levels correlate with increased cardiovascular disease risk, elevated inflammation, poor cognitive function, and faster biological aging.
+
+**EPA** is the primary anti-inflammatory fatty acid — it drives prostaglandin metabolism and cytokine regulation. For mood, depression, and systemic inflammation, EPA is the key variable.
+
+**DHA** is the structural component — it makes up roughly 40% of the polyunsaturated fatty acids in the brain and 60% in the retina. Critical for neurological function, cognitive performance, and fetal development.
+
+Most omega-3 supplements are fish oil in ethyl ester form — a synthetic form that has roughly 25-30% lower absorption than the naturally occurring triglyceride form.
+
+**AquaOmega** is what I use for plant-based omega-3. Their vegan algae softgels are exceptionally high in DHA — algae is actually where fish get their omega-3s, so you're going to the source directly. Triglyceride form, IFOS certified at 94% purity, and no heavy metal concerns from the marine supply chain.
+
+[→ **Shop AquaOmega Vegan Omega-3**](https://aquaomega.refr.cc/default/u/thrivetoolsco?s=rp&t=cp)
+
+**Dose:** 1-3g EPA+DHA combined daily. Aim for a 2:1 EPA:DHA ratio for anti-inflammatory goals; higher DHA ratios for cognitive and neurological support.
+
+---
+
+### Vitamin D3 + K2
+
+Vitamin D deficiency affects an estimated 40% of adults in Western countries, rising to over 80% in populations with limited sun exposure. This isn't a minor nutrient gap — vitamin D functions as a hormone, influencing gene expression, immune regulation, bone metabolism, mood, and cardiovascular health.
+
+The K2 pairing matters. Vitamin D3 increases calcium absorption; K2 (specifically MK-7 form) directs that calcium to bones and teeth rather than soft tissues and arterial walls. Taking high-dose D3 without K2 over time carries real cardiovascular risk. Always take them together.
+
+**Dose:** 2,000-5,000 IU D3 daily depending on blood levels. Test your 25(OH)D and target 50-70 ng/mL. 100-200mcg MK-7 K2 alongside.
+
+---
+
+### B-Complex in Bioactive Forms
+
+The standard B vitamins in most supplements — folic acid and cyanocobalamin — require enzymatic conversion to their active forms (methylfolate and methylcobalamin respectively). People with MTHFR gene variants (40-60% of the population) convert these inefficiently, meaning much of what they take is unavailable.
+
+What you want: methylcobalamin (B12), methylfolate or Quatrefolic (B9), and P5P (pyridoxal-5-phosphate) for B6. These are the active, ready-to-use forms that bypass the conversion step.
+
+This is one of the reasons I moved to **IM8 Daily Ultimate Essentials PRO** as my daily foundation. The PRO formula uses methylcobalamin at 200mcg (one of the highest doses I've seen in an all-in-one), P5P for B6, and Quatrefolic for folate — alongside 90+ other ingredients including CoQ10, spore-based probiotics, electrolytes, MSM, amino acids, saffron extract, and a complete greens complex. No proprietary blends. Full label transparency.
+
+For anyone who currently takes a multivitamin, a separate probiotic, a B-complex, CoQ10, and electrolytes — IM8 consolidates all of that.
+
+[→ **Shop IM8 Daily Ultimate Essentials PRO — Use code THRIVE10**](https://im8health.com/thrive10)
+
+---
+
+## Layer 2: System Support
+
+### Creatine Monohydrate
+
+Creatine has more peer-reviewed research behind it than almost any other supplement in existence — and most people still think of it as just a gym supplement.
+
+The cognitive data alone makes it worth taking regardless of whether you train. A 2023 double-blind trial in sleep-deprived subjects found that 5g creatine improved working memory accuracy compared to placebo. A 2022 umbrella review of 53 randomized controlled trials confirmed approximately 7% improvements in strength measures with daily creatine. Research in older adults consistently shows meaningful preservation of both muscle mass and cognitive function.
+
+Mechanism: creatine saturates phosphocreatine stores in muscle and brain, accelerating ATP recycling during high-intensity demand. The brain uses an enormous amount of ATP — any compound that improves ATP availability will have cognitive effects.
+
+**Form:** Creatine monohydrate only. Creatine HCL, buffered creatine, and similar forms offer no demonstrated advantage and cost more. Monohydrate has the research, the safety record, and the price.
+
+**Dose:** 5g daily for muscle performance and recovery. 10g daily if your primary goal is brain health and cognitive function — emerging research supports the higher dose for neurological benefits specifically. Timing is flexible. I take mine in the morning.
+
+**Organika** makes a clean marine collagen and creatine I use and recommend. Always marine over bovine for purity and bioavailability.
+
+[→ **Shop Organika Creatine — Use code EDEN_25**](https://organika.com/?rfsn=8403940.a276a1f)
+
+---
+
+### Gut Health Protocol
+
+The microbiome field has moved fast enough that most people's understanding of it is already outdated. The gut-brain axis, the immune connection, and the metabolic implications of gut health are no longer fringe — they're mainstream science with hundreds of clinical trials behind them.
+
+The problem with most probiotic supplements is survival. Standard Lactobacillus and Bifidobacterium strains are fragile — they're largely destroyed by stomach acid before reaching the colon where they need to work. This is why many people report "not feeling anything" from probiotics. They're taking dead bacteria.
+
+**Spore-based probiotics** are different. Bacillus strains (particularly Bacillus subtilis and Bacillus coagulans) produce an endospore — a protective shell that survives stomach acid, heat, and antibiotics, reaching the colon intact and actually colonizing.
+
+**Just Thrive** is the standalone probiotic I recommend. Specifically formulated around spore-based strains with published clinical research on survival rates and gut colonization. This is a genuinely different category from standard probiotics.
+
+[→ **Shop Just Thrive — Use code THRIVETOOLS**](https://justthrivehealth.com)
+
+Beyond probiotics, don't neglect prebiotic fiber — diverse plant fiber is the primary driver of microbiome diversity over time. No probiotic supplement can compensate for a low-fiber diet.
+
+---
+
+### CoQ10
+
+Coenzyme Q10 is essential for mitochondrial function — it's a key component of the electron transport chain that produces ATP in every cell. CoQ10 production declines with age, and statin drugs deplete it significantly (one of the most underappreciated side effects of statins).
+
+At 100mg or above, CoQ10 has consistent clinical support for cardiovascular function, cellular energy production, and antioxidant protection. Below that, you're in token territory.
+
+The form matters: ubiquinol is the reduced, active form and is better absorbed than ubiquinone — particularly relevant for older adults whose conversion capacity declines.
+
+CoQ10 is one of the supplements I value most in IM8's formula — 100mg is a clinically meaningful dose, and most all-in-one products either skip it entirely or include 10-20mg.
+
+[→ **Shop IM8 Daily Ultimate Essentials PRO — Use code THRIVE10**](https://im8health.com/thrive10)
+
+---
+
+### Adaptogens: The Tonic Herb Protocol
+
+I've been working with tonic herbs for over a decade — trained in Daoist herbalism with Truth Calkins, and these plants are the backbone of my daily protocol. I want to give you the honest version of what each does, not the hype version.
+
+**Reishi (Ganoderma lucidum)** — I've taken reishi every day for over 10 years and attribute to it the most significant and sustained shift in my nervous system regulation of anything I've tried. Not stimulating, not sedating — a deep, gradual recalibration toward baseline calm. The research supports immunomodulation, cortisol regulation, liver support, and anti-inflammatory activity through triterpenoids. This is the tonic herb I'd recommend first for anyone dealing with chronic stress or nervous system dysregulation.
+
+**Lion's Mane (Hericium erinaceus)** — The cognitive mushroom. Contains hericenones and erinacines that stimulate NGF (nerve growth factor) and BDNF production — both critical for neuroplasticity, memory, and mood. Human trials show improvements in mild cognitive impairment. The most clinically researched mushroom for brain health.
+
+**Cordyceps (CS-4 strain)** — Mitochondrial support and oxygen utilization. Research demonstrates improvements in VO2 max, endurance, and ATP production. The CS-4 strain has the most clinical research behind it for performance. Particularly relevant for anyone dealing with fatigue or training adaptation.
+
+**Schisandra (Schisandra chinensis)** — Adaptogen par excellence for adrenal support and stress resilience. The five flavors of Schisandra reflect its breadth of action. Liver protective, cortisol modulating, and uniquely supportive of both energy and calm simultaneously.
+
+**Astragalus** — Immune modulation and telomere support. TA-65, the most researched telomerase activator in human trials, is derived from astragalus. Daily use over time is associated with meaningful immune and longevity markers.
+
+**For all mushrooms and tonic herbs — quality is everything.** Most products on the market use mycelium grown on grain, which is mostly starch with minimal active compounds. You want fruiting body only, dual-extracted (both water and alcohol extraction to capture the full compound spectrum).
+
+**Hyperion Herbs** is my go-to. Reishi at 2% triterpenes and 12% polysaccharides, fruiting body only, dual-extracted. The quality difference is noticeable.
+
+[→ **Shop Hyperion Herbs — Use code EDEN10**](https://hyperionherbs.com)
+
+---
+
+## Layer 3: Longevity Protocols
+
+### NAD+ Precursors (NMN / NR)
+
+NAD+ (nicotinamide adenine dinucleotide) is a coenzyme essential to DNA repair, mitochondrial function, and metabolism. NAD+ levels decline approximately 50% between ages 20 and 50 — a decline directly associated with the cellular hallmarks of aging.
+
+NMN (nicotinamide mononucleotide) and NR (nicotinamide riboside) are both direct precursors to NAD+. Both have human trial data showing they increase circulating NAD+ levels meaningfully.
+
+Andrew Huberman has confirmed he takes approximately 2 grams of NMN each morning sublingually, reporting a "definite, subjective feeling of an increase in energy." David Sinclair, arguably the most prominent longevity researcher working today, has discussed taking NMN as part of his protocol for years.
+
+The honest caveat: while NAD+ precursors clearly raise NAD+ levels in humans, direct evidence of longevity extension in humans is still accumulating. The mechanism is sound. The human outcome data is promising but not definitive.
+
+**IM8 Daily Ultimate Longevity** contains 300mg pharmaceutical-grade NMN alongside 10mg PQQ in its NMN NAD+ Energy Booster complex — the same combination and dosage range used in multiple clinical trials to elevate NAD+ levels and enhance mitochondrial function. It also includes a triple senolytic complex (trans-resveratrol 250mg, quercetin 250mg, fisetin 100mg), dihydroberberine at 5x the bioavailability of standard berberine, spermidine for autophagy activation, and glycine and taurine at clinical doses for cellular longevity. If you want NMN as part of a comprehensive longevity protocol rather than a standalone, this is the most complete formula I've seen.
+
+[→ **Shop IM8 Daily Ultimate Longevity — Use code THRIVE10**](https://im8health.com/thrive10)
+
+**Standalone NMN dose:** 500-1000mg daily, taken in the morning. Sublingual delivery may improve absorption.
+
+---
+
+### Berberine
+
+Berberine activates AMPK — the cellular energy sensor that responds to caloric restriction — and is one of the most extensively studied compounds for metabolic health. Human trials show meaningful reductions in fasting blood glucose, HbA1c, and LDL cholesterol. It's also anti-inflammatory, antimicrobial, and has research supporting gut microbiome diversity.
+
+Note: berberine has real drug interactions, particularly with blood thinners and diabetes medications. Don't take it alongside those without consulting your doctor. IM8 Daily Ultimate Longevity uses dihydroberberine — a more bioavailable form shown to be effective at 100mg — as part of its formula, which is a meaningful inclusion for anyone already on the longevity stack.
+
+**Dose:** 500mg standard berberine 2-3x daily with meals to minimize GI side effects, or 100mg dihydroberberine (equivalent effect at lower dose). Cycle it — 8-12 weeks on, 4 weeks off.
+
+---
+
+### Urolithin A
+
+Urolithin A is a postbiotic compound produced when gut bacteria metabolize ellagitannins from pomegranates and walnuts. It's the most potent known activator of mitophagy — the cellular process that clears damaged mitochondria and replaces them with healthy ones. This is one of the core mechanisms of cellular aging.
+
+Only about 40% of people have gut microbiomes that produce urolithin A efficiently from food. For everyone else, supplementation is the practical path.
+
+Human trials show improvements in muscle strength, endurance, and mitochondrial function in older adults.
+
+---
+
+## Layer 4: Advanced Tools
+
+### Hydrogen Water
+
+Molecular hydrogen (H₂) is a selective antioxidant that specifically neutralizes the most cytotoxic reactive oxygen species — particularly hydroxyl radicals — while leaving beneficial oxidative processes intact. Its small size allows it to cross the blood-brain barrier and mitochondrial membrane, something most antioxidants cannot do.
+
+Over 100 clinical studies support benefits for oxidative stress reduction, metabolic health, athletic recovery, and potentially cognitive function. Device quality matters enormously — you need SPE/PEM technology producing at least 1-3 ppm dissolved hydrogen.
+
+**Piurify** uses SPE/PEM technology for clean, high-concentration H₂ output.
+
+[→ **Shop Piurify Water Hydrogenator — Use code THRIVE10**](https://www.piurify.com/?sca_ref=4509873.CyVUQonn5r)
+
+---
+
+### Red Light Therapy (Photobiomodulation)
+
+Red and near-infrared light (630-850nm range) penetrates tissue and stimulates cytochrome c oxidase in the mitochondrial membrane — directly enhancing cellular energy production and accelerating tissue repair.
+
+The research base is substantial: wound healing, inflammation reduction, skin collagen synthesis, muscle recovery, cognitive function, and sleep quality all have clinical trial support.
+
+**Joovv** — Clinical-grade panels from handheld devices to full-body systems. The most established brand in consumer photobiomodulation.
+
+[→ **Shop Joovv — Use code THRIVETOOLS**](https://joovv.com)
+
+**Mito Red Light** — Red light masks for targeted facial recovery and skin health.
+
+[→ **Shop Mito Red Light**](https://mitopro.com)
+
+**RedTherapy** — Full-body panels at a competitive price point.
+
+[→ **Shop RedTherapy — Use code THRIVETOOLS**](https://redtherapy.com)
+
+---
+
+### Transcranial Photobiomodulation (Vielight Neuro)
+
+This is the advanced end of photobiomodulation — applying near-infrared light directly to the brain through transcranial and intranasal devices. The research includes published clinical trials for concussion recovery, cognitive decline, Alzheimer's, and deepened meditation states.
+
+**Vielight Neuro** is the only brand with published peer-reviewed clinical research in this category.
+
+[→ **Shop Vielight Neuro — Use code THRIVETOOLS**](https://vielight.com)
+
+---
+
+### Ceremonial Cacao as Daily Plant Medicine
+
+Not a supplement in the conventional sense — but a daily ritual with real neurochemical effects that belongs in this guide.
+
+Theobromine, anandamide (and its FAAH inhibitors), PEA, magnesium, flavanols, and L-tryptophan make ceremonial cacao one of the most multifaceted mood and cognitive tools available without a prescription. Longer-lasting than caffeine, non-cortisol-spiking, and heart-opening in a way that's hard to quantify but consistently reported.
+
+I use cacao in breathwork circles, morning rituals, and any practice requiring emotional presence. The ORAC score of 95,000 per 100g makes it one of the most antioxidant-dense foods on the planet.
+
+**Koracao** sources heirloom criollo beans from Peruvian and Colombian indigenous communities. Minimal processing preserves the full active compound profile.
+
+[→ **Shop Koracao Ceremonial Cacao — Use code EDENKAWTHARLARAKI123**](https://koracao.com/THRIVE33)
+
+---
+
+## The Stack in Summary
+
+**Daily non-negotiables:**
+IM8 Daily Ultimate Essentials PRO (foundation), BiOptimizers Magnesium Breakthrough (evening), AquaOmega omega-3 (DHA-forward), tonic herb protocol (Reishi, Lion's Mane, Cordyceps, Schisandra, Astragalus), creatine 5-10g, ceremonial cacao ritual
+
+**Gut health:**
+Just Thrive spore-based probiotics, diverse prebiotic fiber from whole food sources
+
+**Longevity layer (cycled):**
+IM8 Daily Ultimate Longevity (NMN 300mg, senolytics, dihydroberberine, spermidine), additional standalone NMN 500-1000mg if desired, berberine (cycled 8-12 weeks on/off), urolithin A
+
+**Advanced tools:**
+Red light therapy (Joovv panels), hydrogen water (Piurify), Vielight Neuro for meditation and cognitive support
+
+---
+
+## What I Don't Take (And Why)
+
+**Melatonin daily** — Exogenous melatonin suppresses your body's own production over time. Reserve it for jet lag at low doses (0.5mg). Not a daily supplement.
+
+**Collagen** — Overmarketed for the biohacking audience. The peptides are largely broken down in digestion before reaching target tissues. Marine collagen from a clean source is fine as food; I don't prioritize it as a supplement.
+
+**Most proprietary blend products** — If I can't verify what's in it and at what dose, I don't take it.
+
+**More than I need** — The goal isn't the most impressive supplement stack. It's the minimum effective protocol that covers real gaps. Everything else is noise.
+
+---
+
+## Frequently Asked Questions
+
+**What supplements should I start with as a beginner?**
+Start with layer 1: magnesium glycinate, vitamin D3 + K2, omega-3s in triglyceride form, and a B-complex in bioactive forms (or an all-in-one like IM8 that covers all of these). Get a basic blood panel to confirm deficiencies before going further.
+
+**Is it safe to take all of these together?**
+Most foundational supplements have excellent safety profiles and no significant interactions. The exceptions are berberine (drug interactions), high-dose vitamin D without K2, and anything serotonergic. Always consult your doctor if you're on medications.
+
+**How long before I feel a difference?**
+Magnesium: 1-2 weeks for sleep and anxiety. Omega-3s: 4-8 weeks for inflammation markers. Tonic herbs: 4-6 weeks for noticeable adaptation effects. Creatine: 1-2 weeks for energy, longer for full saturation. NMN and longevity compounds: these are long-game plays — months to years.
+
+**Do I need all of this?**
+No. Start with layer 1, stay consistent for 90 days, and assess. Most people get 80% of the benefit from the foundation supplements alone. The longevity and advanced layers are for people who already have the basics dialed in.
+
+**How do I know if a supplement is working?**
+Track biomarkers before and after — not just how you feel. Blood work every 6 months minimum. Sleep tracking, HRV data, and cognitive benchmarks give you objective data to work with. Subjective experience matters but it's unreliable on its own.
+
+**What is the best creatine dose for brain health?**
+Emerging research supports 10g daily for neurological and cognitive benefits specifically — higher than the standard 5g muscle performance dose. If cognitive function is your primary goal, the higher dose is worth considering. Creatine monohydrate at either dose is safe and well-tolerated.
+
+---
+
+*Disclosure: This post contains affiliate links to brands I personally use and recommend. I receive a commission if you purchase through my links. My recommendations are based on genuine belief in the products — I only partner with brands whose formulations I've researched and trust.*
+
+---
+
+*Eden Laraki is the founder of ThriveTools.co — a science-backed wellness and biohacking platform covering supplements, tonic herbs, breathwork, plant medicine, and cognitive optimization, built from 14 years of personal research and self-experimentation.*
+
+*→ [Explore ThriveTools.co](https://thrivetools.co)*

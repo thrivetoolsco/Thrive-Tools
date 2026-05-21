@@ -56,6 +56,17 @@ export const eventRoutes: EventRoute[] = [
 
 export const blogPosts: BlogPost[] = [
   {
+    id: "biohacker-supplement-stack-2026",
+    title: "The Biohacker's Supplement Stack: What I Actually Take and Why (2026)",
+    excerpt: "After 14 years of testing supplements, this is the exact stack I take — layered by foundation, system support, longevity, and advanced tools. The science behind every choice, what I've dropped, and what the research says.",
+    href: "/blog/biohacker-supplement-stack-2026",
+    canonical: "/blog/biohacker-supplement-stack-2026",
+    badge: "Full Stack Guide",
+    badgeColor: "bg-[#c4622d]/15 text-[#8b3a1a] border-[#c4622d]/25",
+    date: "May 21, 2026",
+    lastmod: "2026-05-21",
+  },
+  {
     id: "miso-myth-biologically-dead-fermented-foods",
     title: "The Miso Myth: Why Your Fermented Foods Are Likely Biologically Dead",
     excerpt: "Most miso is pasteurized and biologically inactive. Learn the science of Bacillus subtilis, why raw chickpea miso is superior, and how to make your own living ferment.",

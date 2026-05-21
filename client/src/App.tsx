@@ -57,6 +57,7 @@ import PsilocybinGuide from "@/pages/reviews/PsilocybinGuide";
 import WaterdropK19HReview from "@/pages/reviews/WaterdropK19HReview";
 import KratomSocialPivotGuide from "@/pages/reviews/KratomSocialPivotGuide";
 import MisoMythGuide from "@/pages/reviews/MisoMythGuide";
+import BiohackerSupplementStack from "@/pages/reviews/BiohackerSupplementStack";
 
 function ScrollToTop() {
   const [location] = useLocation();
@@ -135,6 +136,7 @@ function Router() {
       <Route path="/blog/waterdrop-k19-h-aquatru-rkin-reverse-osmosis-review" component={WaterdropK19HReview} />
       <Route path="/blog/miso-myth-biologically-dead-fermented-foods" component={MisoMythGuide} />
       <Route path="/blog/kratom-replacing-alcohol-cannabis-social-pivot-2026" component={KratomSocialPivotGuide} />
+      <Route path="/blog/biohacker-supplement-stack-2026" component={BiohackerSupplementStack} />
       <Route component={NotFound} />
     </Switch>
   );
