@@ -36,11 +36,11 @@ function Stars({ count }: { count: number }) {
 export default function Im8HealthReview() {
   return (
     <PageLayout showShare
-      title="IM8 Health Review (2026): Is It Worth It?"
-      subtitle="My honest, unsponsored take — ingredients, clinical evidence, taste, price, and real-world results."
+      title="IM8 Health Review (2026): Is It Actually Worth It?"
+      subtitle="By Eden Laraki | ThriveTools.co"
       seo={{
-        title: "IM8 Health Review (2026): Is It Worth It? | Thrive Tools",
-        description: "Honest, unsponsored IM8 review. Ingredients, clinical trial evidence, taste, price, and real-world results after daily use. Use code THRIVE10 for 10% off.",
+        title: "IM8 Health Review (2026): Is It Actually Worth It? | Thrive Tools",
+        description: "Honest, science-based IM8 review. Ingredients, bioactive forms, gut protocol, CoQ10, saffron extract, certifications, and real-world results. Use code THRIVE10 for a discount.",
         canonical: "/product-reviews/im8-health-review",
         ogType: "article",
         datePublished: "2026-01-21",
@@ -48,10 +48,10 @@ export default function Im8HealthReview() {
       backLabel="Blog"
       backHref="/blog"
     >
-      <article className="space-y-12">
+      <article className="space-y-10">
 
         <div className="card-glass rounded-2xl overflow-hidden" data-testid="img-hero-im8">
-          <img loading="lazy" decoding="async" src={im8ProductImg} alt="IM8 Health Daily Ultimate Essentials" className="w-full h-auto object-cover" />
+          <img loading="lazy" decoding="async" src={im8ProductImg} alt="IM8 Health Daily Ultimate Essentials PRO" className="w-full h-auto object-cover" />
         </div>
 
         <div className="flex flex-wrap gap-3">
@@ -67,16 +67,29 @@ export default function Im8HealthReview() {
         <section data-testid="section-intro">
           <div className="space-y-4 text-black/70 leading-relaxed">
             <p>
-              When a supplement is co-founded by David Beckham, developed with scientists from Mayo Clinic, NASA, Yale, and Cedars-Sinai, and claims to replace 16 separate daily supplements in a single morning drink, the skepticism is warranted.{" "}
-              <a href="https://pubmed.ncbi.nlm.nih.gov/30402831/" target="_blank" rel="noopener noreferrer" className="underline text-[#c4622d] hover:text-[#8b3a1a] transition-colors" data-testid="link-pubmed-im8-multivitamin">Research published in JAMA</a>{" "}
-              consistently shows that most adults fall short on multiple micronutrients simultaneously, making the case for comprehensive supplementation stronger than most people realize.
+              I want to give you the kind of review I wish existed when I first heard about IM8 — one that goes past the marketing, actually digs into the formula, and tells you when it's worth it and when it isn't.
             </p>
             <p>
-              That's exactly the mindset I brought to this review. I've spent time with IM8 Daily Ultimate Essentials Pro, digging into its ingredients, its clinical trial, its certifications, and what it actually feels like to take it daily. This is not a sponsored review. No brand relationship influences what you're about to read.
+              I'm affiliated with IM8, so I'll say that upfront. But I've been in the wellness and biohacking space for 14 years. I don't recommend things I don't believe in, and I've turned down partnerships with brands I couldn't stand behind. The reason I partnered with IM8 is because when I pulled apart the formula, it held up. This review is my honest attempt to show you why — and where the legitimate criticisms land too.
             </p>
-            <p>
-              My short take: IM8 is one of the most genuinely impressive all-in-one supplements on the market in 2026, but it's not for everyone, it's not cheap, and there are a few things worth knowing before you buy. Here's the full picture.
-            </p>
+            <p>Let's get into it.</p>
+          </div>
+        </section>
+
+        <div className="section-divider" />
+
+        {/* Ratings */}
+        <section data-testid="section-ratings">
+          <div className="card-glass rounded-2xl p-6">
+            <h2 className="font-display text-xl font-bold text-black mb-4">Quick Ratings</h2>
+            <div className="space-y-3">
+              {ratingRows.map((row, i) => (
+                <div key={i} className="flex items-center justify-between text-sm" data-testid={`rating-row-${i}`}>
+                  <span className="text-black/70">{row.label}</span>
+                  <Stars count={row.stars} />
+                </div>
+              ))}
+            </div>
           </div>
         </section>
 
@@ -84,20 +97,16 @@ export default function Im8HealthReview() {
 
         {/* What Is IM8 */}
         <section data-testid="section-what-is-im8">
-          <SectionHeader icon={<Leaf className="w-5 h-5" />} title="What Is IM8 Health?" />
+          <SectionHeader icon={<Leaf className="w-5 h-5" />} title="What Is IM8?" />
           <div className="space-y-4 text-black/70 leading-relaxed">
-            <h3 className="font-display text-xl font-bold text-black mb-2">Origins and Formulation Philosophy</h3>
             <p>
-              Launched in January 2025 by former Manchester United player David Beckham and Prenetics, a leading biotechnology company, IM8 describes itself as "the pinnacle of core nutrition."
+              IM8 is an all-in-one daily supplement powder engineered to replace up to 16 separate supplements in a single morning drink. The flagship product, Daily Ultimate Essentials, was co-founded by David Beckham and developed in collaboration with a scientific advisory board drawn from Mayo Clinic, NASA, Cedars-Sinai, Yale University, and the University of Connecticut.
             </p>
             <p>
-              The origin story is worth knowing because it's unusually authentic for the supplements world. The brand originated from Beckham's desire to streamline his own routine. Before IM8, he was reportedly taking over a dozen different supplements daily, many of which didn't taste great. That's where Daily Essentials comes in.
+              In February 2026, IM8 launched the Daily Ultimate Essentials PRO — a significantly upgraded version of the original formula with higher dosages, bioactive ingredient forms, and a new cognitive support ingredient. Existing subscribers were automatically upgraded at no extra cost and the price didn't change.
             </p>
             <p>
-              The scientists affiliated with Mayo Clinic, NASA, Yale University, Cedars-Sinai Medical Center, the University of Florida, and the University of Connecticut first engineered an all-in-one powder with 92 ingredients to replace 16 separate daily supplements. The PRO version, the current flagship, represents the second major iteration of that formula, upgraded with more bioactive nutrient forms, higher clinical doses, and a new cognitive support ingredient.
-            </p>
-            <p>
-              IM8 currently offers two products: Daily Ultimate Essentials Pro (the daily nutritional foundation) and Daily Ultimate Longevity (the anti-aging and hallmarks-of-aging supplement). This review focuses primarily on Essentials Pro, with a section on Longevity for those considering the full stack.
+              Over 10,000 five-star reviews, more than 670,000 customer purchases, and over 20 million servings served since launch. That's not nothing — but popularity isn't the same as quality, so let's look at what's actually in it.
             </p>
           </div>
         </section>
@@ -106,13 +115,13 @@ export default function Im8HealthReview() {
 
         {/* Scientific Advisory Board */}
         <section data-testid="section-science-board">
-          <SectionHeader icon={<FlaskConical className="w-5 h-5" />} title="The Scientific Advisory Board: Why It Matters" />
+          <SectionHeader icon={<FlaskConical className="w-5 h-5" />} title="The Scientific Advisory Board" />
           <div className="space-y-5 text-black/70 leading-relaxed">
             <p>
-              Most supplements are built by marketing teams working backwards from a trend. IM8 is built differently, and the scientific advisory board is the clearest evidence of that. IM8 was co-developed with a world-class scientific advisory team from Mayo Clinic, NASA, Cedars-Sinai, and Yale, each collaborating to develop a formula at the cutting edge of nutritional science.
+              Most supplements are built by marketing teams working backwards from a trend. IM8 is built differently. The scientific advisory board includes researchers and clinicians from Mayo Clinic, NASA, Cedars-Sinai, Yale University, and the University of Connecticut — people with specific expertise in the areas the formula targets.
             </p>
             <div className="card-glass rounded-xl p-5 border-l-4" style={{ borderLeftColor: "#c4622d" }}>
-              <p className="text-xs font-semibold uppercase tracking-wider text-[#c4622d] mb-1">Dr. Dawn Mussallem — Chief Medical Officer, Fountain Life / Mayo Clinic</p>
+              <p className="text-xs font-semibold uppercase tracking-wider text-[#c4622d] mb-1">Dr. Dawn Mussallem — Mayo Clinic / CMO, Fountain Life (Longevity Clinic of the Year 2025)</p>
               <p className="text-black/70 text-sm italic leading-relaxed">
                 "By upgrading to bioactive forms like P5P and significantly increasing key dosages like B12, MSM and Vitamin D, we are delivering a level of cellular support that is rarely seen in a single product."
               </p>
@@ -124,7 +133,7 @@ export default function Im8HealthReview() {
               </p>
             </div>
             <p>
-              This caliber of scientific oversight is genuinely rare in the supplement industry. It doesn't guarantee the product works, but it does mean the formulation decisions are being made by people whose reputations are staked on the science being sound.
+              The distinction between scientific communicators (who endorse products) and active research clinicians who designed the formula is meaningful. IM8's advisory board falls clearly in the second category.
             </p>
           </div>
         </section>
@@ -133,40 +142,71 @@ export default function Im8HealthReview() {
 
         {/* What's In It */}
         <section data-testid="section-ingredients">
-          <SectionHeader icon={<Zap className="w-5 h-5" />} title="What's Actually in It" />
-          <div className="space-y-4 text-black/70 leading-relaxed mb-6">
-            <p>
-              IM8 Daily Ultimate Essentials is a science-backed, all-in-one supplement designed to simplify daily nutrition with 92 nutrient-rich ingredients, including essential vitamins, minerals, superfoods, and clinically studied doses of CoQ10 and MSM, supporting hydration, digestion, energy metabolism, immune function, and overall wellbeing including key nutrients for hair, skin, nails, joints, muscles, and heart health.
-            </p>
-          </div>
-          <div className="space-y-5">
-            {[
-              {
-                label: "Bioactive vitamins — not the cheap versions",
-                text: "Vitamin B12 is included as Methylcobalamin, a highly effective, biologically active form that is readily absorbed and utilized by the body, enhancing energy production and reducing fatigue. This is meaningfully better than cyanocobalamin, the cheap synthetic form most multivitamins use. The PRO formula upgrades include 733% more B12 at 200mcg Methylcobalamin, a new 30mg Saffron Extract for focus, bioactive Vitamin B6 as P5P instead of HCl, increased Vitamin D3, K2, Magnesium, and MSM, plus 300% more of the CRT8 Complex, all at the same price.",
-              },
-              {
-                label: "Gut health — prebiotics, probiotics, and postbiotics together",
-                text: "IM8 provides a comprehensive approach to gut health by including prebiotics, probiotics, and postbiotics working together synergistically. Prebiotics act as food for beneficial gut bacteria, probiotics are live beneficial bacteria that support a healthy microbiome, and postbiotics are the beneficial compounds produced by probiotics. The formula delivers 10 billion CFUs of two clinically studied probiotic strains, Bacillus coagulans BC99 and Bacillus subtilis DE111, which work synergistically to support gut balance, digestion, and immune function. Both strains are heat-stable, meaning they survive the manufacturing process and reach the gut intact.",
-              },
-              {
-                label: "CoQ10 and MSM — what most greens powders skip",
-                text: "These two ingredients are what put IM8 in a different category for me personally. IM8 includes clinically studied doses of CoQ10 for mitochondrial and heart health and MSM for joint and muscle support. Neither appears at meaningful doses in AG1 or most competing all-in-ones. For anyone training hard or thinking about long-term cardiovascular health, these additions represent real functional value.",
-              },
-              {
-                label: "Saffron extract — the standout PRO addition",
-                text: "The 30mg Saffron Extract in the PRO formula is one of its most interesting upgrades. Saffron has growing clinical evidence for supporting mood, focus, and cognitive clarity, with several RCTs showing effects comparable to low-dose antidepressants for mild mood disturbances. It's a thoughtful, evidence-backed addition that gives Essentials Pro a genuine brain health dimension the original formula lacked.",
-              },
-              {
-                label: "Superfoods, greens, and antioxidants",
-                text: "IM8 contains a broad spectrum of antioxidants that work together in a network to protect cells from oxidative stress, alongside a 4,100mg Raw Superfoods, Greens, Fruits and Herbs Complex containing prebiotic fiber from Guar Fiber and Agave Inulin.",
-              },
-            ].map((item, i) => (
-              <div key={i} className="card-glass rounded-xl p-5" data-testid={`ingredient-card-${i}`}>
-                <p className="font-semibold text-black/90 text-sm mb-2 capitalize">{item.label}</p>
-                <p className="text-black/65 text-sm leading-relaxed">{item.text}</p>
+          <SectionHeader icon={<Zap className="w-5 h-5" />} title="What's in IM8 Daily Ultimate Essentials PRO?" />
+          <p className="text-black/70 leading-relaxed mb-6">This is where most reviews go shallow. Here are the key systems the formula targets and what's actually there.</p>
+
+          <div className="space-y-6">
+
+            <div data-testid="section-vitamins">
+              <h3 className="font-display text-xl font-bold text-black mb-3">Vitamins and Minerals — The Foundation</h3>
+              <div className="space-y-4 text-black/70 leading-relaxed">
+                <p>
+                  The PRO formula uses P5P (pyridoxal-5-phosphate) for B6, methylcobalamin for B12, and Quatrefolic for folate — all bioactive forms at clinical doses. Vitamin D3 is dosed at 1,200 IU paired with 40mcg of K2.
+                </p>
+                <p>
+                  Why does this matter? A large portion of the population has reduced ability to convert synthetic vitamin forms into usable ones. People with MTHFR gene variants — roughly 40–60% of the population — convert folic acid to methylfolate poorly or not at all. If your supplement uses the synthetic versions, you may be absorbing far less than the label suggests.
+                </p>
+                <p>
+                  The most notable upgrade in the PRO version is B12, which increased from 24mcg to 200mcg and switched to methylcobalamin — a 733% increase in potency. That's not a cosmetic update.
+                </p>
               </div>
-            ))}
+            </div>
+
+            <div data-testid="section-gut">
+              <h3 className="font-display text-xl font-bold text-black mb-3">Gut Health — A Four-Layer System</h3>
+              <div className="space-y-4 text-black/70 leading-relaxed">
+                <p>
+                  IM8 uses a 4-layer gut health system: 3g prebiotics, 10 billion CFU from 2 spore-forming strains, FloraSMART postbiotics at 25mg, plus digestive enzymes.
+                </p>
+                <p>
+                  The spore-based probiotic strains (Bacillus subtilis DE111 and Bacillus coagulans BC99) are what separate IM8's gut protocol from most competitors. Standard Lactobacillus strains are fragile — largely destroyed by stomach acid before reaching the colon. Spore-forming bacteria produce a protective endospore that survives digestion and colonizes the gut. The inclusion of postbiotics and digestive enzymes makes this a complete gut protocol, not just a probiotic add-on.
+                </p>
+              </div>
+            </div>
+
+            <div data-testid="section-coq10-msm">
+              <h3 className="font-display text-xl font-bold text-black mb-3">Cardiovascular, Mitochondrial, and Joint Support</h3>
+              <div className="space-y-4 text-black/70 leading-relaxed">
+                <p>
+                  CoQ10 is dosed at 100mg — a clinically meaningful amount for cardiovascular support and cellular energy production. Most all-in-one supplements either skip CoQ10 entirely or include token amounts of 10–20mg. 100mg is what appears in the research on energy metabolism and heart health.
+                </p>
+                <p>
+                  MSM (methylsulfonylmethane) is dosed at 1,000mg — enough to support joint health, connective tissue integrity, and post-exercise recovery. Neither CoQ10 nor MSM at these doses appears in AG1 or most competing all-in-ones.
+                </p>
+              </div>
+            </div>
+
+            <div data-testid="section-saffron">
+              <h3 className="font-display text-xl font-bold text-black mb-3">Cognitive Support — The PRO Addition</h3>
+              <div className="space-y-4 text-black/70 leading-relaxed">
+                <p>
+                  The genuinely new addition in the PRO formula is 30mg of Saffron Extract, added specifically to support cognitive function and mood balance. Saffron at 30mg has a growing body of human research behind it — particularly for mood regulation, with several trials showing effects comparable to low-dose SSRIs in mild-to-moderate depression. It's an unconventional but genuinely interesting addition.
+                </p>
+              </div>
+            </div>
+
+            <div data-testid="section-greens-aminos">
+              <h3 className="font-display text-xl font-bold text-black mb-3">Greens, Superfoods, Electrolytes, and Amino Acids</h3>
+              <div className="space-y-4 text-black/70 leading-relaxed">
+                <p>
+                  The Raw Superfoods, Greens, Fruits &amp; Herbs Complex covers beet root, spinach, carrot, blueberry, pomegranate, acai, green tea extract, elderberry, turmeric, ginger, dandelion, ginkgo biloba, grape seed extract, sea moss, and more. AstaPure astaxanthin is included as a potent carotenoid antioxidant with research supporting skin health, eye health, and inflammation reduction.
+                </p>
+                <p>
+                  The electrolyte complex includes potassium citrate, magnesium bisglycinate, calcium citrate, and calcium phosphate. The amino acid complex adds L-glutamine, L-leucine, L-isoleucine, L-valine, L-lysine, L-taurine, L-proline, and L-citrulline — supporting muscle recovery, gut lining integrity, and circulation.
+                </p>
+              </div>
+            </div>
+
           </div>
         </section>
 
@@ -177,7 +217,7 @@ export default function Im8HealthReview() {
           <SectionHeader icon={<FlaskConical className="w-5 h-5" />} title="The Clinical Trial" />
           <div className="space-y-4 text-black/70 leading-relaxed">
             <p>
-              Unlike most supplement brands that rely solely on ingredient-level studies, IM8 commissioned its own product-level clinical trial. Results are based on a 12-week randomized, controlled, clinical trial conducted by the San Francisco Research Institute, giving it a level of evidence most competitors simply don't have.
+              Unlike most supplement brands that rely solely on ingredient-level studies, IM8 commissioned its own product-level clinical trial — a 12-week randomized, controlled study conducted by the San Francisco Research Institute.
             </p>
           </div>
           <div className="card-glass rounded-2xl overflow-hidden my-6" data-testid="img-im8-clinical">
@@ -197,21 +237,132 @@ export default function Im8HealthReview() {
             ))}
           </div>
           <p className="mt-4 text-black/45 text-xs leading-relaxed">
-            Subjective self-report outcomes from a 12-week controlled trial — worth noting the methodology, but considerably stronger than cherry-picked testimonials.
+            Subjective self-report outcomes from a 12-week controlled trial — considerably stronger evidence than cherry-picked testimonials.
           </p>
+        </section>
+
+        <div className="section-divider" />
+
+        {/* What's Genuinely Good */}
+        <section data-testid="section-strengths">
+          <SectionHeader icon={<ShieldCheck className="w-5 h-5" />} title="What's Genuinely Good About IM8" />
+          <div className="space-y-4">
+            {[
+              { label: "Full label transparency", text: "No proprietary blends, no hidden dosages — every ingredient and its amount is disclosed. You can actually verify what you're taking." },
+              { label: "Bioactive forms throughout", text: "Methylcobalamin, P5P, Quatrefolic, and magnesium bisglycinate — the difference between a supplement that works for people with impaired conversion pathways and one that doesn't." },
+              { label: "A real gut protocol", text: "Spore-based probiotics plus prebiotics, postbiotics, and digestive enzymes is the most complete gut health approach I've seen in an all-in-one format." },
+              { label: "CoQ10 at a therapeutic dose", text: "100mg is what the research uses. Most competitors skip it entirely or include token amounts of 10–20mg." },
+              { label: "NSF Certified with published CoA", text: "The Eurofins Certificate of Analysis is published on their site. Third-party verification that what's on the label is in the product." },
+              { label: "The PRO upgrade came free", text: "Existing subscribers were automatically upgraded to the PRO formula at no extra cost, with the same price maintained. Unusual in this industry." },
+            ].map((item, i) => (
+              <div key={i} className="card-glass rounded-xl p-5" data-testid={`strength-${i}`}>
+                <p className="font-semibold text-black/90 text-sm mb-1">{item.label}</p>
+                <p className="text-black/65 text-sm leading-relaxed">{item.text}</p>
+              </div>
+            ))}
+          </div>
+        </section>
+
+        <div className="section-divider" />
+
+        {/* Honest Criticisms */}
+        <section data-testid="section-criticisms">
+          <SectionHeader icon={<FlaskConical className="w-5 h-5" />} title="The Honest Criticisms" />
+          <p className="text-black/70 leading-relaxed mb-5">No review worth reading skips this part.</p>
+          <div className="space-y-4">
+            {[
+              { label: "Some secondary ingredients are in supporting rather than therapeutic doses", text: "The adaptogen and digestive enzyme inclusions may be below fully therapeutic levels. The core vitamins, minerals, CoQ10, MSM, and probiotic doses are solid — but some of the secondary inclusions are more 'supporting cast' than starring roles." },
+              { label: "The celebrity co-founder angle is real marketing", text: "David Beckham is a co-founder and his name and face are front and center. It's fair to wonder how much of the premium goes toward brand-building versus formulation quality. My read: the scientific advisory board's involvement is genuine and the formula reflects it — but the marketing machine is also real." },
+              { label: "It's not cheap", text: "At roughly $2.61 per serving on the quarterly plan, it's a premium product. The cost-per-supplement-replaced math works in its favour if you're already running a comprehensive stack — but if you just want a basic multivitamin, you can find solid options for less." },
+              { label: "Not NSF Certified for Sport specifically", text: "IM8 is NSF Certified but doesn't currently hold the NSF Certified for Sport designation specifically relevant for competitive athletes subject to drug testing. For the general population this doesn't matter — but worth knowing." },
+            ].map((item, i) => (
+              <div key={i} className="card-glass rounded-xl p-5" data-testid={`criticism-${i}`}>
+                <p className="font-semibold text-black/90 text-sm mb-1">{item.label}</p>
+                <p className="text-black/65 text-sm leading-relaxed">{item.text}</p>
+              </div>
+            ))}
+          </div>
+        </section>
+
+        <div className="section-divider" />
+
+        {/* Personal Experience */}
+        <section data-testid="section-personal">
+          <SectionHeader icon={<User className="w-5 h-5" />} title="My Personal Experience" />
+          <div className="space-y-4 text-black/70 leading-relaxed">
+            <p>
+              I'm going to keep this short because I think people over-index on subjective experience and under-index on formulation quality. But here's what I noticed.
+            </p>
+            <p>
+              The taste is genuinely good. Acai berry is the original — earthy, slightly tart, not sweet. The new Lemon + Orange and Mango + Passionfruit flavors add variety without compromising the formula.
+            </p>
+            <p>
+              Energy is the first thing most people notice. Not a sharp stimulant spike — more like a sustained underlying energy that makes a difference by mid-morning. I attribute most of this to the B-complex in bioactive forms hitting properly, plus the CoQ10 and electrolytes.
+            </p>
+            <p>
+              Gut function improved within the first week for me. Less bloating, more regularity. The spore-based probiotic protocol tends to work faster than standard Lactobacillus blends in my experience.
+            </p>
+            <p>
+              The saffron addition in the PRO formula is subtle but real over time — I notice it most in mood stability, particularly in the late afternoon when energy can dip.
+            </p>
+          </div>
+        </section>
+
+        <div className="section-divider" />
+
+        {/* Who Is It For */}
+        <section data-testid="section-who-for">
+          <SectionHeader icon={<User className="w-5 h-5" />} title="Who IM8 Is Actually For" />
+          <div className="grid sm:grid-cols-2 gap-6">
+            <div className="card-glass rounded-2xl p-6 space-y-3" data-testid="section-im8-right-for">
+              <p className="font-semibold text-black/90 text-sm">IM8 makes the most sense if you:</p>
+              <ul className="space-y-2.5 text-sm text-black/70">
+                {[
+                  "Are currently taking 5+ separate supplements and want to simplify without sacrificing quality",
+                  "Have an MTHFR variant or know you don't absorb synthetic vitamin forms well",
+                  "Want a comprehensive gut protocol — spore-based probiotics, prebiotics, postbiotics, and enzymes — in one product",
+                  "Are serious enough about health to care what's actually on the label",
+                  "Want CoQ10, MSM, and amino acids included without adding more bottles to your shelf",
+                ].map((item, i) => (
+                  <li key={i} className="flex items-start gap-2.5">
+                    <span className="mt-1 flex-shrink-0 w-4 h-4 rounded-full flex items-center justify-center text-white text-xs" style={{ background: "linear-gradient(135deg,#e8956d,#c4622d)" }}>✓</span>
+                    <span>{item}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+            <div className="card-glass rounded-2xl p-6 space-y-3" data-testid="section-im8-not-for">
+              <p className="font-semibold text-black/90 text-sm">IM8 is probably not the right fit if you:</p>
+              <ul className="space-y-2.5 text-sm text-black/70">
+                {[
+                  "Are a competitive athlete who specifically needs NSF Certified for Sport",
+                  "Just want a basic multivitamin at a lower price point — there are solid options for less",
+                  "Have specific therapeutic needs (high-dose omega-3s, therapeutic magnesium, targeted adaptogens at clinical doses) that require dedicated supplementation anyway",
+                ].map((item, i) => (
+                  <li key={i} className="flex items-start gap-2.5">
+                    <span className="mt-1 flex-shrink-0 w-4 h-4 rounded-full flex items-center justify-center text-black/40 text-xs border border-black/20 rounded-full">✕</span>
+                    <span>{item}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
         </section>
 
         <div className="section-divider" />
 
         {/* Longevity Formula */}
         <section data-testid="section-longevity">
-          <SectionHeader icon={<Leaf className="w-5 h-5" />} title="The Daily Ultimate Longevity Formula" />
+          <SectionHeader icon={<Leaf className="w-5 h-5" />} title="The Full IM8 Product Range" />
           <div className="space-y-4 text-black/70 leading-relaxed">
-            <p>
-              For anyone serious about aging optimization, IM8's second product goes significantly further. Daily Ultimate Longevity is formulated to support all 12 hallmarks of aging with a revolutionary 1,100% increase in active ingredient capacity over capsules, featuring a breakthrough 5-Complex System with therapeutic doses of premium longevity compounds.
-            </p>
-            <div className="card-glass rounded-xl p-5">
-              <p className="text-xs font-semibold uppercase tracking-wider text-black/40 mb-3">The 5-Complex System</p>
+            <p>IM8 now offers two core products:</p>
+            <div className="card-glass rounded-xl p-5 space-y-2">
+              <p className="font-semibold text-black/90">Daily Ultimate Essentials PRO</p>
+              <p className="text-sm leading-relaxed">The all-in-one daily foundation covered throughout this review. The right starting point for most people.</p>
+            </div>
+            <div className="card-glass rounded-xl p-5 space-y-3">
+              <p className="font-semibold text-black/90">Daily Ultimate Longevity</p>
+              <p className="text-sm leading-relaxed">Launched October 2025, targeting the 12 Hallmarks of Aging with a 5-complex system including NMN/NAD+ (nicotinamide mononucleotide, PQQ), cellular protection activators (trans-resveratrol, quercetin, fisetin), and a metabolic AMPK/SIRT1 activator (dihydroberberine, astaxanthin). The combination of both products is marketed as the Beckham Stack.</p>
               <ul className="space-y-2 text-sm text-black/65">
                 {[
                   "NMN NAD+ Energy Booster — nicotinamide mononucleotide and pyrroloquinoline quinone",
@@ -227,212 +378,102 @@ export default function Im8HealthReview() {
               </ul>
             </div>
             <p>
-              I personally take both every morning — Essentials Pro as my nutritional foundation and Longevity for cellular aging protection. If you're serious about biohacking your long-term health, the combination of both is the most complete protocol IM8 offers.
+              For most people, starting with Daily Ultimate Essentials PRO is the right call. The Longevity formula is for those already running a solid foundation who want to layer in dedicated anti-aging support.
             </p>
           </div>
         </section>
 
         <div className="section-divider" />
 
-        {/* Personal Experience */}
-        <section data-testid="section-personal">
-          <SectionHeader icon={<User className="w-5 h-5" />} title="What I Actually Noticed Taking It" />
-          <div className="space-y-4 text-black/70 leading-relaxed">
-            <p>
-              Within about two weeks of consistent daily use, I stopped feeling like I needed a second coffee. Not because I quit caffeine, I still enjoy it, but because the underlying energy was just steadier and more reliable throughout the day. Digestion improved noticeably within the first week, which I attribute to the prebiotic and probiotic complex doing its job.
-            </p>
-            <p>
-              The cognitive clarity from the Saffron Extract and B-vitamin complex is subtle but real. It's more of a consistent sharpness than an acute nootropic hit. Think less fog rather than more spark.
-            </p>
-            <p>
-              The honest caveat: if you take it inconsistently, you won't notice much. The benefits build over 2 to 4 weeks of daily use. I treat it the same way I treat sleep — non-negotiable, every morning, no excuses.
-            </p>
-          </div>
-        </section>
-
-        <div className="section-divider" />
-
-        {/* Taste */}
-        <section data-testid="section-taste">
-          <SectionHeader icon={<Zap className="w-5 h-5" />} title="Taste and Mixability" />
-          <div className="space-y-4 text-black/70 leading-relaxed">
-            <p>
-              This matters enormously and it's where IM8 genuinely surprised me. Most greens powders taste like you're drinking a lawn. IM8 doesn't.
-            </p>
-            <p>
-              The acai and mixed berry flavor uses a stevia-free sweetener system from Reb M derived from fermented sugarcane, avoiding the bitter aftertaste that puts many people off greens powders. It mixes easily in cold water with just a shaker, no blender needed, and the finish is clean, slightly sweet, and genuinely pleasant. It's now available in three flavors: Acai + Mixed Berries, Lemon + Orange, and Mango + Passion Fruit.
-            </p>
-            <p>
-              After trying all three, Acai + Mixed Berries remains my personal daily go-to.
-            </p>
-          </div>
-        </section>
-
-        <div className="section-divider" />
-
-        {/* Quality */}
-        <section data-testid="section-quality">
-          <SectionHeader icon={<ShieldCheck className="w-5 h-5" />} title="Quality and Certifications" />
-          <div className="space-y-4 text-black/70 leading-relaxed">
-            <p>
-              IM8 is rigorously verified by independent third-party labs to ensure accuracy and transparency. Every ingredient and dosage matches what's listed on the label. IM8 is also Non-GMO, vegan, allergen-free, gluten-free, and contains no artificial flavors, sweeteners, or added sugar.
-            </p>
-            <p>
-              The NSF Certified for Sport certification is the gold standard in supplement quality verification, testing for over 270 substances banned by WADA and major sports bodies. Very few all-in-one supplements hold this certification. IM8 does, and for me that's non-negotiable when choosing a daily supplement I'm taking every single day.
-            </p>
-          </div>
-        </section>
-
-        <div className="section-divider" />
-
-        {/* Pricing */}
+        {/* Price */}
         <section data-testid="section-pricing">
-          <SectionHeader icon={<Leaf className="w-5 h-5" />} title="Pricing and Value" />
+          <SectionHeader icon={<Zap className="w-5 h-5" />} title="Price and How to Get It" />
           <div className="space-y-4 text-black/70 leading-relaxed">
             <p>
-              IM8 Daily Ultimate Essentials Pro is approximately $89/month on subscription. That's premium pricing, but the value calculation changes completely when you think about what it replaces.
+              IM8 Daily Ultimate Essentials PRO is available directly at im8health.com. The quarterly subscription plan works out to approximately $2.61 per serving — the most cost-effective option if you commit to a three-month trial.
             </p>
             <p>
-              The average health-conscious consumer spends hundreds of dollars monthly on multiple supplements, each addressing only one aspect of health. IM8 Daily Ultimate Essentials consolidates 16 common supplements into one comprehensive formula, saving money, time, and the hassle of managing multiple products.
+              The cost-per-supplement-replaced math is worth doing honestly. IM8 is designed to replace up to 16 separate supplements — multivitamin, B-complex, vitamin D, greens powder, probiotic, prebiotic, CoQ10, MSM, electrolytes, amino acids, and more. If you're already running a comprehensive stack, consolidating into IM8 tends to be cheaper and better formulated than the sum of its parts.
             </p>
-            <p>
-              Before IM8, I was spending on a separate multivitamin, probiotic, greens powder, CoQ10, and B-complex. When I added that up honestly, IM8 was actually cheaper, and better formulated than everything it replaced.
-            </p>
+            <div className="card-glass rounded-xl px-5 py-4 border-l-4" style={{ borderLeftColor: "#c4622d" }}>
+              <p className="text-black/70 font-semibold">Use code THRIVE10 for a discount at checkout.</p>
+              <a href="https://im8health.com/thrive10" target="_blank" rel="noopener noreferrer" className="text-[#c4622d] hover:text-[#8b3a1a] transition-colors text-sm font-medium underline" data-testid="link-im8-price-section">
+                👉 Shop IM8 Daily Ultimate Essentials PRO here
+              </a>
+            </div>
           </div>
         </section>
 
         <div className="section-divider" />
 
-        {/* Limitations */}
-        <section data-testid="section-limitations">
-          <SectionHeader icon={<FlaskConical className="w-5 h-5" />} title="Honest Limitations" />
-          <div className="space-y-4">
+        {/* FAQ */}
+        <section data-testid="section-faq">
+          <h2 className="font-display text-2xl font-bold text-black mb-6">Frequently Asked Questions</h2>
+          <div className="space-y-5">
             {[
               {
-                label: "High vitamin doses for some",
-                text: "IM8 contains high quantities of some vitamins and minerals, including 900mg of Vitamin C at 1,000% Daily Value. For most healthy adults this is fine, but check for overlap if you're already eating a nutrient-rich diet or taking other supplements.",
+                q: "What makes IM8 PRO different from the original formula?",
+                a: "The PRO formula delivers up to 733% greater potency across 11 key nutrients. The most notable changes are B12 increasing from 24mcg to 200mcg switching to methylcobalamin, the addition of 30mg saffron extract for cognitive support, and upgrades to bioactive B6 as P5P. Vitamin D3, K2, magnesium, and MSM dosages were also increased — all at the same price.",
               },
               {
-                label: "Omega-3 is not covered",
-                text: "I still take AquaOmega separately. IM8 doesn't cover EPA and DHA at therapeutic doses, so a quality fish oil remains a necessary addition.",
+                q: "Is IM8 third-party tested?",
+                a: "Yes. Every ingredient and dosage is third-party tested by independent labs. IM8 is NSF Certified and publishes its Eurofins Certificate of Analysis on their website.",
               },
               {
-                label: "Creatine is not included",
-                text: "For cognitive performance and physical output, a separate creatine monohydrate like Organika is still needed alongside IM8.",
+                q: "Can IM8 replace all my supplements?",
+                a: "It's designed to replace up to 16 separate supplements — multivitamin, B-complex, vitamin D, greens powder, probiotic, prebiotic, CoQ10, MSM, electrolytes, amino acids, and more. Whether it replaces everything in your specific stack depends on your protocol. Most people will still want dedicated omega-3s and possibly additional magnesium or targeted adaptogens.",
               },
               {
-                label: "Price",
-                text: "It's a real monthly commitment. It's worth it for the right person, but it's not the entry-level option.",
+                q: "How long does it take to feel a difference?",
+                a: "Most people notice energy and digestion improvements within the first week. Mood and cognitive effects from the saffron extract tend to build over 2–4 weeks of consistent use.",
+              },
+              {
+                q: "Is IM8 suitable for vegans?",
+                a: "Yes. IM8 is vegan, gluten-free, non-GMO, and free from artificial flavors, sweeteners, and added sugar.",
+              },
+              {
+                q: "What flavors does IM8 come in?",
+                a: "The PRO range includes Acai + Mixed Berries (the original), Lemon + Orange, and Mango + Passionfruit — both new flavors added alongside the PRO launch in February 2026.",
+              },
+              {
+                q: "Does IM8 have any proprietary blends?",
+                a: "No. Every ingredient and its dosage is fully disclosed on the label. No hidden amounts, no proprietary blends.",
+              },
+              {
+                q: "Who is on IM8's scientific advisory board?",
+                a: "The advisory board includes researchers and clinicians from Mayo Clinic, NASA (James Green, Former Chief Scientist), Yale University, Cedars-Sinai (Director of the Human Microbiome Research Institute), and the University of Connecticut. Dr. Dawn Mussallem serves as a founding scientific advisor and is CMO of Fountain Life, designated Longevity Clinic of the Year 2025.",
               },
             ].map((item, i) => (
-              <div key={i} className="card-glass rounded-xl p-5" data-testid={`limitation-${i}`}>
-                <p className="font-semibold text-black/90 text-sm mb-1">{item.label}</p>
-                <p className="text-black/65 text-sm leading-relaxed">{item.text}</p>
+              <div key={i} className="card-glass rounded-xl p-5 space-y-2" data-testid={`faq-item-${i}`}>
+                <h3 className="font-semibold text-black text-base">{item.q}</h3>
+                <p className="text-black/65 text-sm leading-relaxed">{item.a}</p>
               </div>
             ))}
-          </div>
-        </section>
-
-        <div className="section-divider" />
-
-        {/* Who Is It For */}
-        <section data-testid="section-who-for">
-          <SectionHeader icon={<User className="w-5 h-5" />} title="Who Is IM8 Best For?" />
-          <div className="grid sm:grid-cols-2 gap-6">
-            <div className="card-glass rounded-2xl p-6 space-y-3">
-              <p className="font-semibold text-black/90 text-sm">It's right for you if you:</p>
-              <ul className="space-y-2.5 text-sm text-black/70">
-                {[
-                  "Want clinical doses and bioactive nutrient forms rather than basic nutritional coverage",
-                  "Are currently managing five or more daily supplements and want to consolidate without sacrificing quality",
-                  "Train hard and need joint support, cardiovascular support, and recovery compounds alongside daily nutrition",
-                  "Care about long-term cellular health and want a daily non-negotiable health ritual",
-                  "Have tried greens powders before and hated the taste",
-                ].map((item, i) => (
-                  <li key={i} className="flex items-start gap-2.5">
-                    <span className="mt-1 flex-shrink-0 w-4 h-4 rounded-full flex items-center justify-center text-white text-xs" style={{ background: "linear-gradient(135deg,#e8956d,#c4622d)" }}>✓</span>
-                    <span>{item}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
-            <div className="card-glass rounded-2xl p-6 space-y-3">
-              <p className="font-semibold text-black/90 text-sm">It may not be right for you if you:</p>
-              <ul className="space-y-2.5 text-sm text-black/70">
-                {[
-                  "Are on a tight budget looking for a basic nutritional safety net",
-                  "Are a complete beginner who hasn't yet nailed the lifestyle fundamentals",
-                  "Have specific medical conditions affecting vitamin or mineral tolerance — always check with your doctor first",
-                ].map((item, i) => (
-                  <li key={i} className="flex items-start gap-2.5">
-                    <span className="mt-1 flex-shrink-0 w-4 h-4 rounded-full border border-black/20 flex items-center justify-center text-black/40 text-xs">—</span>
-                    <span>{item}</span>
-                  </li>
-                ))}
-              </ul>
-            </div>
-          </div>
-        </section>
-
-        <div className="section-divider" />
-
-        {/* Verdict */}
-        <section data-testid="section-verdict">
-          <SectionHeader icon={<Star className="w-5 h-5" />} title="My Verdict" />
-          <div className="space-y-4 text-black/70 leading-relaxed mb-6">
-            <p>
-              IM8 Daily Ultimate Essentials Pro is the best all-in-one supplement I've personally used. The scientific team behind it is exceptional, the NSF certification is real, the bioactive nutrient forms are correct, the clinical trial is legitimate, and, crucially, it actually tastes good.
-            </p>
-            <p>
-              It works best as the nutritional foundation of a broader optimization protocol, not a standalone fix for a broken lifestyle. But for anyone serious about their health and ready to invest in a daily foundation they can trust completely, this is the benchmark everything else is measured against.
-            </p>
-            <p>
-              It's the all-in-one product I recommend above everything else in its category at ThriveTools. See how it fits into a complete biohacking stack in my{" "}
-              <a href="/product-reviews/biohacking-supplements-2026" className="underline text-[#c4622d] hover:text-[#8b3a1a] transition-colors">full supplement guide</a>,
-              compare it directly to AG1 in my{" "}
-              <a href="/product-reviews/im8-vs-ag1" className="underline text-[#c4622d] hover:text-[#8b3a1a] transition-colors">IM8 vs AG1 breakdown</a>,
-              or visit my{" "}
-              <a href="/personalized-guidance" className="underline text-[#c4622d] hover:text-[#8b3a1a] transition-colors">Personalized Guidance</a>{" "}
-              page if you want a full protocol built around your specific biology and goals.
-            </p>
-          </div>
-
-          <div className="card-glass rounded-2xl p-6 space-y-4" data-testid="table-rating">
-            <div className="flex items-center gap-3 mb-2">
-              <div className="flex gap-0.5">
-                {[1,2,3,4].map(s => <Star key={s} className="w-5 h-5 text-amber-400" fill="currentColor" />)}
-                <Star className="w-5 h-5 text-amber-400" style={{ clipPath: "inset(0 30% 0 0)" }} fill="currentColor" />
-              </div>
-              <span className="text-black/70 font-semibold text-sm">My Rating: 4.7 / 5</span>
-            </div>
-            <div className="divide-y divide-black/8">
-              {ratingRows.map((row, i) => (
-                <div key={i} className="flex items-center justify-between py-3" data-testid={`rating-row-${i}`}>
-                  <span className="text-black/70 text-sm">{row.label}</span>
-                  <Stars count={row.stars} />
-                </div>
-              ))}
-            </div>
           </div>
         </section>
 
         {/* CTA button */}
         <div className="text-center pt-4">
           <Button asChild size="lg" className="btn-gradient-rose text-white border-0 rounded-full px-6 sm:px-8 py-4 text-sm tracking-widest uppercase font-semibold h-auto leading-relaxed">
-            <a href="https://im8health.com/" target="_blank" rel="noopener noreferrer" data-testid="link-im8-shop" className="inline-flex items-center justify-center gap-2 flex-wrap">
-              Get IM8 — Use Code THRIVE10 <ExternalLink className="w-4 h-4 flex-shrink-0" />
+            <a href="https://im8health.com/thrive10" target="_blank" rel="noopener noreferrer" data-testid="link-im8-shop" className="inline-flex items-center justify-center gap-2 flex-wrap">
+              Try IM8 — Use Code THRIVE10 <ExternalLink className="w-4 h-4 flex-shrink-0" />
             </a>
           </Button>
         </div>
 
-        <div className="space-y-3">
-          <p className="text-center text-black/35 text-xs italic" data-testid="text-affiliate">
-            Disclosure: This article may contain affiliate links. I may earn a commission if you purchase through these links at no additional cost to you. My editorial position is fully independent — I only feature products I personally use and genuinely believe in.
+        {/* Author bio */}
+        <div className="card-glass rounded-2xl p-6 space-y-2 text-center">
+          <p className="text-black/60 text-sm leading-relaxed italic">
+            Eden Laraki is the founder of ThriveTools.co — a science-backed wellness and biohacking platform covering supplements, tonic herbs, breathwork, plant medicine, and cognitive optimization, built from 14 years of personal research and self-experimentation.
           </p>
-          <p className="text-center text-black/35 text-xs italic" data-testid="text-disclaimer">
-            Medical Disclaimer: This article is for informational purposes only and does not constitute medical advice. Always consult a qualified healthcare professional before beginning any new supplement regimen.
-          </p>
+          <a href="https://thrivetools.co" target="_blank" rel="noopener noreferrer" className="text-[#c4622d] hover:text-[#8b3a1a] transition-colors text-sm font-medium underline" data-testid="link-thrivetools">
+            → Explore ThriveTools.co
+          </a>
         </div>
+
+        <p className="text-center text-black/35 text-xs italic" data-testid="text-disclaimer">
+          Disclosure: I'm affiliated with IM8 and receive a commission on purchases through my link. I only recommend products I've researched thoroughly and believe in — this review reflects my honest assessment of the formula. This article is for informational purposes only and does not constitute medical advice.
+        </p>
 
       </article>
     </PageLayout>
