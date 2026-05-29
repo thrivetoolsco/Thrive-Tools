@@ -1,0 +1,230 @@
+# Microplastics Are in Your Brain. Here’s What You Can Actually Do About It.
+
+*By Eden Laraki | ThriveTools.co*
+
+-----
+
+Earlier this year I sat with this headline for a long time before writing about it.
+
+A study published in *Nature Medicine* by researchers at the University of New Mexico found that human brains contain measurable concentrations of micro and nanoplastics — predominantly polyethylene, in nanoscale shard-like fragments. The 2024 brain samples contained approximately 50% more plastic than the 2016 samples from the same study. The brains of individuals with dementia showed three to five times higher concentrations than those without.
+
+The internet, predictably, spiraled. “Microplastic influencers” appeared overnight. A clinic in the US began offering blood-cleaning procedures for $13,000. People threw out their black kitchen utensils. Detox supplement brands popped up faster than the research could validate them.
+
+I understand the panic. But panic is not a protocol.
+
+What I want to do in this article is tell you what the research actually says — including where it’s strong, where it’s preliminary, and where the wellness industry is already getting ahead of itself — and then give you the most evidence-grounded, practical steps for reducing your exposure and supporting your body’s natural clearance mechanisms. No $13,000 blood cleanses. No overclaiming.
+
+This is a real issue. It deserves a real response.
+
+-----
+
+## What the Research Actually Found
+
+The Nature Medicine study (Nihart et al., 2025) used pyrolysis gas chromatography–mass spectrometry — a sophisticated analytical technique — to detect micro and nanoplastics in human kidney, liver, and brain tissue from cadavers. The findings were striking in several ways:
+
+Brain tissue contained significantly higher concentrations of plastic than kidney or liver — up to 30 times more in some samples. The predominant polymer was polyethylene, presented as nanoscale shard-like fragments. Plastic concentrations were not significantly influenced by age, sex, race, ethnicity, or cause of death. The time of death was a significant factor — 2024 samples showed approximately 50% higher concentrations than 2016 samples, suggesting ongoing bioaccumulation that tracks with rising environmental plastic pollution. And the brains of individuals with a documented dementia diagnosis contained three to five times more plastic than age-matched controls without dementia.
+
+That last finding is the one that stops people cold. And it should prompt serious attention — with the appropriate caveats.
+
+The study’s authors themselves note that no causal relationship has been established. The dementia finding is a correlation. Scientists reviewing the study have emphasized that no strong direct evidence of health effects has yet been demonstrated at the observed levels. The German Federal Institute for Risk Assessment noted methodological limitations in sample preparation and detection. Multiple researchers called for independent replication with larger sample sizes.
+
+This is not scientists saying “don’t worry about it.” It’s scientists doing what good science requires — being precise about what has and hasn’t been proven.
+
+What we can say with confidence: microplastics are in our brains, they are accumulating faster over time, and the possibility that chronic exposure contributes to neuroinflammation and neurodegenerative disease is biologically plausible and worth taking seriously. What we cannot say: that these concentrations are definitively causing harm at observed levels, or that any currently available intervention reverses accumulation in the brain.
+
+The honest position is: this is real, it’s concerning, and it warrants action — calibrated action, not panic.
+
+-----
+
+## Where Microplastics Come From
+
+Understanding the sources helps you prioritize where to reduce exposure. The entry points are more numerous than most people realize.
+
+**Drinking water** is one of the largest sources. Both tap water and bottled water contain microplastics — and bottled water is not necessarily cleaner. Studies have found that bottled water can contain higher microplastic concentrations than tap, partly due to plastic leaching from the bottle itself, particularly under heat or UV exposure.
+
+**Food packaging and preparation** is a major vector. Heating food in plastic containers dramatically accelerates leaching of both microplastics and plastic chemical additives. Plastic cutting boards shed microplastics into food during chopping. Plastic tea bags release millions of microplastic particles into your cup when steeped in hot water.
+
+**Ultra-processed foods** consistently show higher microplastic contamination than whole foods — both from processing equipment and from packaging.
+
+**Air inhalation** is often underestimated. A 2019 study estimated humans may inhale between 74,000 and 121,000 microplastic particles annually. Indoor air typically has higher concentrations than outdoor air due to synthetic textiles, carpeting, and dust accumulation. Outdoor air near urban or industrial areas carries higher concentrations.
+
+**Sea salt and shellfish** are notable dietary sources. Shellfish like mussels and oysters, consumed whole including the digestive system, carry particularly high microplastic loads from ocean water ingestion. Sea salt tested across multiple studies shows consistent microplastic contamination.
+
+**Personal care products** — including some toothpastes, exfoliants, and oral care products — have been identified as direct sources of microplastic ingestion through mouth contact.
+
+-----
+
+## What Microplastics Do in the Body
+
+The mechanisms by which microplastics may cause harm operate through several pathways, each with varying levels of research support.
+
+**Oxidative stress** is the most consistently documented mechanism. Microplastic particles trigger reactive oxygen species production, damaging cells, mitochondria, and DNA. This is the same pathway implicated in cardiovascular disease, cancer, and neurodegeneration.
+
+**Inflammation** is a secondary mechanism. Particles that lodge in tissue activate inflammatory responses — chronic, low-grade inflammation that underlies most modern chronic disease.
+
+**Endocrine disruption** is perhaps the most documented health effect of plastic-associated chemicals. Phthalates and BPA — chemical additives in plastics — are well-established endocrine disruptors affecting hormone regulation, reproductive health, thyroid function, and metabolic processes. These chemicals aren’t the plastic particles themselves but are associated with them and leach from plastic materials into food, water, and tissue.
+
+**Cardiovascular accumulation** has been linked to outcome data. A landmark study published in the *New England Journal of Medicine* found that microplastics in carotid artery plaque samples were associated with significantly increased risk of cardiovascular events including stroke and heart attack. This is some of the most concerning outcome data in the field because it establishes an association — not just presence — with a hard clinical endpoint.
+
+**Gut microbiome disruption** is an emerging area. Exposure to microplastics has been shown to affect microbial diversity, gut barrier integrity, and inflammatory balance in the gut — which connects back to immune function, mood regulation through the gut-brain axis, and metabolic health.
+
+**Neurological effects** remain the most speculative but concerning category. The dementia correlation from the Nature Medicine study, combined with animal research showing more severe neurological effects from microplastic exposure in older animals, and the biological plausibility of microplastic-driven neuroinflammation as a risk factor for cognitive decline, has put this at the top of researchers’ priority lists. It does not yet constitute proof.
+
+-----
+
+## What the Wellness Industry Is Getting Wrong
+
+I need to say this clearly before giving you the protocol, because the microplastics panic is already spawning exactly the kind of exploitative wellness marketing that gives this industry a bad name.
+
+There is currently no validated method to directly measure retained plastic levels in living humans in a clinically meaningful way. Clinics offering “microplastic testing panels” are charging for tests that don’t have established clinical validity. The $13,000 blood-cleaning procedures using apheresis have no published evidence of efficacy for microplastic removal in healthy individuals.
+
+Supplements claiming to “remove microplastics from the brain” are making claims that go so far beyond the evidence that they qualify as misinformation. No supplement has demonstrated the ability to cross the blood-brain barrier and selectively extract plastic particles. Anyone selling that is selling fear, not science.
+
+What we do have evidence for is more modest and more useful: reducing ongoing exposure, supporting the body’s natural detoxification and elimination systems, and reducing the downstream effects of plastic exposure — oxidative stress, inflammation, and gut disruption — through well-evidenced interventions.
+
+That’s what the protocol below is built on.
+
+-----
+
+## The Evidence-Based Microplastics Protocol
+
+### Step 1: Reduce Exposure at the Source
+
+This is where the highest-leverage interventions are. Every unit of plastic that doesn’t enter your body doesn’t need to be cleared.
+
+**Filter your water.** Reverse osmosis filtration is the gold standard — it removes the widest range of contaminants including microplastics, fluoride, heavy metals, and chemical additives that standard filters leave behind. A quality reverse osmosis system at your tap is one of the most impactful single interventions available.
+
+I have a Waterdrop reverse osmosis filter installed and it’s something I consider genuinely non-negotiable for anyone taking their health seriously.
+
+[→ **Shop Waterdrop Reverse Osmosis Filter**](https://www.waterdropfilter.ca/?ref=)
+
+**Stop heating food in plastic.** This is the simplest and most impactful dietary change. Transfer food to glass or ceramic before microwaving. Never pour boiling water into plastic containers. Replace plastic food storage with glass.
+
+**Switch to loose-leaf tea.** Plastic tea bags release millions of microplastic particles per cup when steeped in hot water. Loose-leaf tea in a metal or ceramic infuser eliminates this entirely.
+
+**Reduce ultra-processed food consumption.** The more food is processed and the more it contacts plastic in its production, the higher its microplastic load. Whole foods from glass or paper packaging carry dramatically less plastic.
+
+**Replace plastic cutting boards with wood or glass.** Plastic boards shed microplastics into food during chopping — a source most people don’t think about.
+
+**Use a vacuum with a HEPA filter regularly.** Indoor dust is a significant microplastic source. HEPA filtration captures particles that standard vacuums recirculate into the air.
+
+**Avoid heating or leaving plastic water bottles in sun or hot cars.** UV exposure and heat dramatically accelerate plastic leaching from bottle materials.
+
+-----
+
+### Step 2: Support Your Body’s Natural Elimination Pathways
+
+Your liver, gut, kidneys, lungs, and skin are your primary detoxification systems. Supporting them with evidence-based interventions is how you help the body process and eliminate what plastic exposure brings in.
+
+**Sweat regularly.** Research shows that sweating can facilitate elimination of BPA and phthalates — the plastic-associated chemical compounds — at higher concentrations than achieved through urine alone. While sweat cannot physically expel plastic particles, the endocrine-disrupting chemicals associated with them can be mobilized through thermal stress and excreted via perspiration. Sauna use (infrared or traditional), vigorous exercise, and any practice that induces meaningful sweat supports this pathway.
+
+**Support gut integrity.** The gut microbiome plays a central role in how the body handles plastic exposure. Microplastics disrupt microbial diversity and gut barrier function, creating a feedback loop where gut damage makes the body more vulnerable to further plastic toxicity. Spore-based probiotics — which actually survive digestion and colonize the colon — combined with diverse prebiotic fiber are the evidence-based foundation here.
+
+Just Thrive’s spore-based probiotic formula is what I use and recommend for gut microbiome support. Not because it specifically addresses microplastics, but because gut integrity is central to how the body handles every environmental toxin exposure.
+
+[→ **Shop Just Thrive Probiotics — Use code THRIVETOOLS**](https://justthrivehealth.com)
+
+**Prioritize liver support.** The liver is the body’s primary detoxification organ and processes everything that the gut absorbs. Cruciferous vegetables (broccoli, Brussels sprouts, cauliflower) activate Nrf2 — the master cellular defense pathway that regulates detoxification enzymes. Sulfur-containing foods (garlic, onions, eggs) support glutathione production — your body’s primary endogenous antioxidant and detoxifier.
+
+-----
+
+### Step 3: Counteract the Downstream Effects
+
+Even with reduced exposure and strong elimination support, some ongoing microplastic exposure is unavoidable in the modern world. This layer targets the biological mechanisms through which microplastic exposure causes harm — primarily oxidative stress and inflammation.
+
+**Chlorella.** This is one of the most interesting supplements in the microplastics conversation. Chlorella vulgaris has been shown in research to bind to microplastics through exopolysaccharides, with PET plastic removal rates documented in laboratory settings. It has a long history in detoxification protocols for heavy metals and environmental toxins. The evidence for direct microplastic binding in humans is preliminary — most of the binding data comes from aquatic environment research — but the mechanism is plausible and the safety profile is excellent. Cracked-cell chlorella taken on an empty stomach or between meals is the standard approach.
+
+ENERGYbits makes a high-quality spirulina and chlorella I recommend — both microalgae with overlapping detoxification and antioxidant properties, and among the most nutrient-dense foods available.
+
+[→ **Shop ENERGYbits — Use code THRIVETOOLS-10**](https://energybits.com)
+
+**NAC (N-Acetylcysteine).** NAC is a precursor to glutathione — your body’s master antioxidant that plays a central role in cellular detoxification. It directly addresses the oxidative stress mechanism through which microplastics cause cellular damage. NAC is well-studied, widely available, and has a strong safety profile. 600-1200mg daily is the standard range used in research.
+
+**Reishi mushroom.** I’ve taken Reishi daily for over a decade and I include it in this context specifically because of its well-documented anti-inflammatory and liver-protective properties. The triterpenoids in Reishi support liver detoxification pathways and modulate the inflammatory response — directly relevant to the two primary mechanisms of microplastic toxicity.
+
+[→ **Shop Hyperion Herbs Reishi — Use code EDEN10**](https://hyperionherbs.com)
+
+**High-EPA omega-3s.** Omega-3 fatty acids are among the most well-researched anti-inflammatory compounds available. EPA specifically drives prostaglandin metabolism and cytokine regulation — directly counteracting the chronic inflammatory response associated with microplastic exposure. AquaOmega’s vegan algae softgels provide high-DHA plant-based omega-3 in triglyceride form — the most bioavailable format.
+
+[→ **Shop AquaOmega Vegan Omega-3**](https://aquaomega.refr.cc/default/u/thrivetoolsco?s=rp&t=cp)
+
+**Magnesium.** Oxidative stress depletes magnesium, and magnesium deficiency amplifies susceptibility to oxidative damage. BiOptimizers Magnesium Breakthrough uses 7 bioavailable forms to cover the full spectrum of magnesium functions — including its role as a cofactor in glutathione synthesis and antioxidant enzyme activity.
+
+[→ **Shop BiOptimizers Magnesium Breakthrough — Use code THRIVETOOLS**](https://bioptimizers.com)
+
+**Antioxidant-rich whole foods.** The evidence for broad dietary antioxidant support is strong. Berries, cruciferous vegetables, turmeric with black pepper, green tea, and dark leafy greens all contribute to the antioxidant capacity that buffers against microplastic-driven oxidative damage. This is foundational — supplements sit on top of this, not in place of it.
+
+-----
+
+## The Honest Caveats
+
+I want to be direct about what the evidence does and doesn’t support for everything above.
+
+**The water filter has the strongest evidence.** Reverse osmosis demonstrably removes microplastics from drinking water. This is the single most evidence-supported intervention in this guide.
+
+**Reducing heating food in plastic has strong evidence** for reducing leaching of plastic-associated chemicals into food. The connection to microplastic particle ingestion specifically is more indirect but the overall reduction in plastic exposure is well-supported.
+
+**Sweating for chemical elimination has moderate evidence** specifically for BPA and phthalates. The physical particle elimination route through sweat is not established.
+
+**Chlorella’s microplastic binding** has laboratory evidence and a plausible mechanism but limited direct human trial data specifically for microplastic reduction. I include it because the mechanism is real and the safety profile allows it — not because the human clinical data is definitive.
+
+**NAC, Reishi, omega-3s, and magnesium** have strong evidence for addressing oxidative stress and inflammation — the downstream mechanisms of microplastic harm — but not for microplastic removal specifically. They belong in this protocol for what they do, not for claims they can’t yet make.
+
+**Nothing in this article, or currently available to consumers, has demonstrated the ability to remove microplastics from brain tissue.** If you see that claim anywhere, walk away.
+
+-----
+
+## Where This Is Going
+
+The science is moving fast. Microplastics as a measured health marker — tracked alongside cholesterol or inflammatory markers — is becoming a real possibility as detection methods mature. The Global Wellness Institute has identified microplastic exposure as a defining health challenge of our time, and institutional investment in understanding the full health picture is accelerating.
+
+What we know now is enough to act on — not with panic, but with the kind of steady, informed attention that actually moves the needle.
+
+The protocol is not complicated. Filter your water, reduce your plastic contact with food, sweat regularly, eat a diverse antioxidant-rich diet, support your gut and liver, and use targeted supplementation to buffer the oxidative and inflammatory effects of unavoidable exposure.
+
+That’s not nothing. That’s a lot, actually, if you do it consistently.
+
+-----
+
+## Frequently Asked Questions
+
+**Are microplastics in everyone’s brain?**
+Based on the Nature Medicine study, microplastics appear to be present in human brain tissue broadly across the population studied — not limited to specific demographics. Plastic concentration was not significantly influenced by age, sex, race, or ethnicity, though concentrations were higher in more recent (2024) samples than older (2016) ones, suggesting ongoing accumulation.
+
+**Do microplastics cause dementia?**
+No causal relationship has been established. The Nature Medicine study found higher microplastic concentrations in the brains of individuals with dementia compared to controls — a correlation that warrants serious research attention but does not prove causation. Scientists have explicitly cautioned against interpreting this as a cause-and-effect relationship based on current evidence.
+
+**Does bottled water contain microplastics?**
+Yes. Multiple studies have found microplastics in bottled water, sometimes at higher concentrations than tap water. Plastic leaching from the bottle material itself, particularly under heat or UV exposure, is a contributing factor. Reverse osmosis filtered tap water in a glass or stainless steel container is the cleaner alternative.
+
+**Can you detox microplastics from your brain?**
+Not with any currently available consumer intervention. No supplement or therapy has demonstrated the ability to cross the blood-brain barrier and selectively remove plastic particles. Be skeptical of any product making this claim. The most evidence-based approach is reducing ongoing exposure and supporting the body’s natural processing of plastic-associated toxins.
+
+**Does sweating help remove microplastics?**
+Sweating has evidence for facilitating elimination of plastic-associated chemicals like BPA and phthalates — at higher concentrations than urine in some studies. It does not physically expel plastic particles. Regular sauna use or vigorous exercise supports chemical detoxification through sweat but is not the same as microplastic removal.
+
+**Is reverse osmosis the best water filter for microplastics?**
+Reverse osmosis is consistently rated as the most effective filtration method for microplastics, removing the widest range of particle sizes alongside other contaminants including fluoride and heavy metals. It is the filter type I use and recommend.
+
+**What foods have the most microplastics?**
+Ultra-processed foods, shellfish (particularly those consumed whole like mussels and oysters), sea salt, beer, and foods heated or stored in plastic containers tend to have higher microplastic concentrations. Whole foods in glass or paper packaging carry significantly lower loads.
+
+-----
+
+## Research References
+
+- Nihart AJ, et al. “Bioaccumulation of microplastics in decedent human brains.” *Nature Medicine*, 2025. [Nature Medicine](https://www.nature.com/articles/s41591-024-03453-1)
+- Marfella R, et al. “Microplastics and nanoplastics in atheromas and cardiovascular events.” *New England Journal of Medicine*, 2024. [PubMed](https://pubmed.ncbi.nlm.nih.gov/38446676/)
+- “Microplastics and Nanoplastics in Health: Cellular Toxicity Mechanisms, Exposure Pathways, and Global Mitigation Strategies.” *PMC*, 2025. [PMC](https://pmc.ncbi.nlm.nih.gov/articles/PMC12471361/)
+- “New scientific articles highlight potential link between microplastics in ultra-processed foods and brain health.” *Brain Medicine*, May 2025. [EurekAlert](https://www.eurekalert.org/news-releases/1084276)
+- “The 2026 Levels Guide to Microplastics and Metabolic Health.” *Levels Health*, 2026. [Levels](https://www.levels.com/blog/levels-guide-microplastics)
+
+-----
+
+*This article is for educational purposes only and does not constitute medical advice. Always consult a qualified healthcare provider regarding your personal health situation.*
+
+-----
+
+*Eden Laraki is the founder of ThriveTools.co — a science-backed wellness and biohacking platform covering supplements, tonic herbs, breathwork, plant medicine, and cognitive optimization, built from 14 years of personal research and self-experimentation.*
+
+*→ [Explore ThriveTools.co](https://thrivetools.co)*

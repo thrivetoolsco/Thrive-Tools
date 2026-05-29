@@ -58,6 +58,7 @@ import WaterdropK19HReview from "@/pages/reviews/WaterdropK19HReview";
 import KratomSocialPivotGuide from "@/pages/reviews/KratomSocialPivotGuide";
 import MisoMythGuide from "@/pages/reviews/MisoMythGuide";
 import BiohackerSupplementStack from "@/pages/reviews/BiohackerSupplementStack";
+import MicroplasticsBrainGuide from "@/pages/reviews/MicroplasticsBrainGuide";
 
 function ScrollToTop() {
   const [location] = useLocation();
@@ -137,6 +138,7 @@ function Router() {
       <Route path="/blog/miso-myth-biologically-dead-fermented-foods" component={MisoMythGuide} />
       <Route path="/blog/kratom-replacing-alcohol-cannabis-social-pivot-2026" component={KratomSocialPivotGuide} />
       <Route path="/blog/biohacker-supplement-stack-2026" component={BiohackerSupplementStack} />
+      <Route path="/blog/microplastics-brain-protocol-2026" component={MicroplasticsBrainGuide} />
       <Route component={NotFound} />
     </Switch>
   );

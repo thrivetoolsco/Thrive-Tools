@@ -56,6 +56,17 @@ export const eventRoutes: EventRoute[] = [
 
 export const blogPosts: BlogPost[] = [
   {
+    id: "microplastics-brain-protocol-2026",
+    title: "Microplastics Are in Your Brain. Here's What You Can Actually Do About It.",
+    excerpt: "A 2025 Nature Medicine study found microplastics in human brain tissue — 50% more than 2016 samples. Here's what the research actually says, what the wellness industry is getting wrong, and the evidence-based protocol for reducing exposure and supporting your body's natural clearance.",
+    href: "/blog/microplastics-brain-protocol-2026",
+    canonical: "/blog/microplastics-brain-protocol-2026",
+    badge: "Science Deep Dive",
+    badgeColor: "bg-[#c4622d]/15 text-[#8b3a1a] border-[#c4622d]/25",
+    date: "May 29, 2026",
+    lastmod: "2026-05-29",
+  },
+  {
     id: "biohacker-supplement-stack-2026",
     title: "The Biohacker's Supplement Stack: What I Actually Take and Why (2026)",
     excerpt: "After 14 years of testing supplements, this is the exact stack I take — layered by foundation, system support, longevity, and advanced tools. The science behind every choice, what I've dropped, and what the research says.",
