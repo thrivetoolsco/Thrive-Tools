@@ -26,6 +26,30 @@ import KetamineGuide from "./pages/reviews/KetamineGuide";
 import MuseHeadbandReview from "./pages/reviews/MuseHeadbandReview";
 import CeremonialCacaoGuide from "./pages/reviews/CeremonialCacaoGuide";
 import PsilocybinGuide from "./pages/reviews/PsilocybinGuide";
+import BiohackerSupplementStack from "./pages/reviews/BiohackerSupplementStack";
+import MicroplasticsBrainGuide from "./pages/reviews/MicroplasticsBrainGuide";
+import CortisolFaceGuide from "./pages/reviews/CortisolFaceGuide";
+import About from "./pages/About";
+import QuantumHealing from "./pages/QuantumHealing";
+import Breathwork from "./pages/Breathwork";
+import PersonalizedGuidance from "./pages/PersonalizedGuidance";
+import Events from "./pages/Events";
+import Contact from "./pages/Contact";
+import Discounts from "./pages/Discounts";
+import Retreats from "./pages/Retreats";
+import BlossomingBliss from "./pages/retreats/BlossomingBliss";
+import SpiritualNutrition from "./pages/retreats/SpiritualNutrition";
+import MescalineWisdom from "./pages/retreats/MescalineWisdom";
+import InnerSilence from "./pages/retreats/InnerSilence";
+import Thrive1 from "./pages/events/Thrive1";
+import Thrive2 from "./pages/events/Thrive2";
+import DrumCircle from "./pages/events/DrumCircle";
+import CacaoCeremonies from "./pages/events/CacaoCeremonies";
+import PsilocybinForestWalk from "./pages/events/PsilocybinForestWalk";
+import AyahuascaJourney from "./pages/events/AyahuascaJourney";
+import IndoorGardening from "./pages/events/IndoorGardening";
+import FoodForest from "./pages/events/FoodForest";
+import ProductReviews from "./pages/ProductReviews";
 
 export const SSR_ROUTE_COMPONENTS: Record<string, ComponentType> = {
   "/product-reviews/im8-vs-ag1": Im8VsAg1,
@@ -59,4 +83,29 @@ export const SSR_ROUTE_COMPONENTS: Record<string, ComponentType> = {
   "/blog/muse-headband-review-eeg-neurofeedback": MuseHeadbandReview,
   "/blog/ceremonial-cacao-benefits-science-review": CeremonialCacaoGuide,
   "/blog/psilocybin-science-research-2025": PsilocybinGuide,
+  "/blog/biohacker-supplement-stack-2026": BiohackerSupplementStack,
+  "/blog/microplastics-brain-protocol-2026": MicroplasticsBrainGuide,
+  "/blog/cortisol-face-hpa-axis-guide-2026": CortisolFaceGuide,
+  "/about": About,
+  "/somatic-reset": QuantumHealing,
+  "/breathwork": Breathwork,
+  "/personalized-guidance": PersonalizedGuidance,
+  "/events": Events,
+  "/contact": Contact,
+  "/discount-codes": Discounts,
+  "/retreats-workshops": Retreats,
+  "/retreats-workshops/blossoming-bliss": BlossomingBliss,
+  "/retreats-workshops/spiritual-nutrition": SpiritualNutrition,
+  "/retreats-workshops/mescaline-wisdom": MescalineWisdom,
+  "/retreats-workshops/inner-silence": InnerSilence,
+  "/events/thrive-1": Thrive1,
+  "/events/thrive-2": Thrive2,
+  "/events/drum-circle": DrumCircle,
+  "/events/cacao-ceremonies": CacaoCeremonies,
+  "/events/psilocybin-forest-walk": PsilocybinForestWalk,
+  "/events/ayahuasca-journey": AyahuascaJourney,
+  "/events/indoor-gardening": IndoorGardening,
+  "/events/food-forest": FoodForest,
+  "/blog": ProductReviews,
+  "/product-reviews": ProductReviews,
 };
