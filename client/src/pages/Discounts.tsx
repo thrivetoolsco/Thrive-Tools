@@ -52,7 +52,7 @@ const vitaminsSupplements: DiscountItem[] = [
   },
   {
     name: "Organika",
-    description: "Clean creatine and premium marine collagen: the 2 I actually use. Always marine over bovine for purity and bioavailability.",
+    description: "Clean creatine and premium magnesium — the 2 I actually use. 8 forms of magnesium in one formula, each targeting different systems for full-spectrum absorption and nervous system support.",
     code: "EDEN_25",
     url: "https://organika.com/?rfsn=8403940.a276a1f&utm_source=refersion&utm_medium=affiliate&utm_campaign=8403940.a276a1f",
     blogHref: "/product-reviews/creatine-dosage-for-brain",
