@@ -288,7 +288,8 @@ export default function CortisolFaceGuide() {
                 </div>
                 <div className="card-glass rounded-xl p-5" data-testid="magnesium-organika">
                   <p className="font-semibold text-black/90 text-sm mb-1">Organika 8-in-1 Magnesium <span className="text-[10px] font-normal text-black/40 ml-1">(Canadian readers)</span></p>
-                  <p className="text-black/65 text-sm leading-relaxed">Eight forms of magnesium in one formula at a more accessible price point, ships domestically within Canada. Use code EDEN_25.</p>
+                  <p className="text-black/65 text-sm leading-relaxed mb-2">Eight forms of magnesium in one formula at a more accessible price point, ships domestically within Canada. Use code EDEN_25.</p>
+                  <AffilLink href="https://organika.com/products/8-in-1-magnesium?_pos=1&_psq=magn&_ss=e&_v=1.0" label="Shop Organika 8-in-1 Magnesium — Use code EDEN_25" />
                 </div>
               </div>
             </div>
