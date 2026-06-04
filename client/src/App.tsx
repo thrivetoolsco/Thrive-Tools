@@ -59,6 +59,7 @@ import KratomSocialPivotGuide from "@/pages/reviews/KratomSocialPivotGuide";
 import MisoMythGuide from "@/pages/reviews/MisoMythGuide";
 import BiohackerSupplementStack from "@/pages/reviews/BiohackerSupplementStack";
 import MicroplasticsBrainGuide from "@/pages/reviews/MicroplasticsBrainGuide";
+import CortisolFaceGuide from "@/pages/reviews/CortisolFaceGuide";
 
 function ScrollToTop() {
   const [location] = useLocation();
@@ -139,6 +140,7 @@ function Router() {
       <Route path="/blog/kratom-replacing-alcohol-cannabis-social-pivot-2026" component={KratomSocialPivotGuide} />
       <Route path="/blog/biohacker-supplement-stack-2026" component={BiohackerSupplementStack} />
       <Route path="/blog/microplastics-brain-protocol-2026" component={MicroplasticsBrainGuide} />
+      <Route path="/blog/cortisol-face-hpa-axis-guide-2026" component={CortisolFaceGuide} />
       <Route component={NotFound} />
     </Switch>
   );

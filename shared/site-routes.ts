@@ -56,6 +56,17 @@ export const eventRoutes: EventRoute[] = [
 
 export const blogPosts: BlogPost[] = [
   {
+    id: "cortisol-face-hpa-axis-guide-2026",
+    title: "Cortisol Face Is a Real Thing — But Not for the Reasons TikTok Says",
+    excerpt: "Chronic cortisol dysregulation goes far deeper than a puffy face — it affects your brain, metabolism, sleep, immune system, and muscle mass. Eden Laraki breaks down what the HPA axis actually does and the evidence-based protocol that actually works.",
+    href: "/blog/cortisol-face-hpa-axis-guide-2026",
+    canonical: "/blog/cortisol-face-hpa-axis-guide-2026",
+    badge: "Hormones & Stress",
+    badgeColor: "bg-[#c4622d]/15 text-[#8b3a1a] border-[#c4622d]/25",
+    date: "June 4, 2026",
+    lastmod: "2026-06-04",
+  },
+  {
     id: "microplastics-brain-protocol-2026",
     title: "Microplastics Are in Your Brain. Here's What You Can Actually Do About It.",
     excerpt: "A 2025 Nature Medicine study found microplastics in human brain tissue — 50% more than 2016 samples. Here's what the research actually says, what the wellness industry is getting wrong, and the evidence-based protocol for reducing exposure and supporting your body's natural clearance.",
