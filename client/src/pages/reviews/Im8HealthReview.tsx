@@ -44,6 +44,8 @@ export default function Im8HealthReview() {
         canonical: "/product-reviews/im8-health-review",
         ogType: "article",
         datePublished: "2026-01-21",
+        image: im8ProductImg,
+        imageAlt: "IM8 Health complete daily nutrition supplement",
       }}
       backLabel="Blog"
       backHref="/blog"

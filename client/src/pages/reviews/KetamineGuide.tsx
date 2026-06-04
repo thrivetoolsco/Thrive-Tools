@@ -17,6 +17,8 @@ export default function KetamineGuide() {
         canonical: "/blog/ketamine-brain-science-nmda-receptors-neuron-regrowth",
         ogType: "article",
         datePublished: "2026-01-07",
+        image: ketamineMoleculeImg,
+        imageAlt: "Ketamine molecule and mechanism of action in the brain",
       }}
     >
       <article className="space-y-12">

@@ -64,6 +64,8 @@ export default function PumpkinSeedOilGuide() {
         canonical: "/blog/pumpkin-seed-oil-supplement-stack-benefits",
         ogType: "article",
         datePublished: "2026-03-04",
+        image: styriangoldImg,
+        imageAlt: "Styrian pumpkin seed oil supplement",
       }}
       backLabel="Blog"
       backHref="/blog"

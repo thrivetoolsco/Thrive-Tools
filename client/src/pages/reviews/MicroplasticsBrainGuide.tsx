@@ -51,6 +51,8 @@ export default function MicroplasticsBrainGuide() {
         canonical: "/blog/microplastics-brain-protocol-2026",
         ogType: "article",
         datePublished: "2026-05-29",
+        image: "/images/microplastics-brain.webp",
+        imageAlt: "Microplastics found in human brain tissue — evidence-based protocol",
       }}
       backLabel="Blog"
       backHref="/blog"

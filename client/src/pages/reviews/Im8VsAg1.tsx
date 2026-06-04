@@ -15,6 +15,8 @@ export default function Im8VsAg1() {
         canonical: "/product-reviews/im8-vs-ag1",
         ogType: "article",
         datePublished: "2026-01-28",
+        image: im8ProductImg,
+        imageAlt: "IM8 vs AG1 greens powder comparison",
       }}
       backLabel="Blog"
       backHref="/blog"

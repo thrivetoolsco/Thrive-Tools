@@ -14,6 +14,8 @@ export default function HyperionHerbs() {
         canonical: "/product-reviews/hyperion-herbs",
         ogType: "article",
         datePublished: "2025-12-31",
+        image: hyperionReishiImg,
+        imageAlt: "Hyperion Herbs tonic herb extract products",
       }}
       subtitle="Experience True Potency: Why I Recommend Hyperion Herbs for Tonic Herbs"
       backLabel="Products Reviews"

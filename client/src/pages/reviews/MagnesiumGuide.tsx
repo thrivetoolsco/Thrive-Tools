@@ -76,6 +76,8 @@ export default function MagnesiumGuide() {
         canonical: "/blog/magnesium-deficiency-supplement-guide",
         ogType: "article",
         datePublished: "2026-02-25",
+        image: magBreakthroughImg,
+        imageAlt: "Magnesium Breakthrough supplement bottle",
       }}
       backLabel="Blog"
       backHref="/blog"

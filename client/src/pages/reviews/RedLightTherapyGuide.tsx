@@ -65,6 +65,8 @@ export default function RedLightTherapyGuide() {
         canonical: "/blog/red-light-therapy-science-benefits-devices",
         ogType: "article",
         datePublished: "2025-10-08",
+        image: redLightPanelImg,
+        imageAlt: "Red light therapy panel device for photobiomodulation",
       }}
     >
       <article className="space-y-12">

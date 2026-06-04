@@ -67,6 +67,8 @@ export default function ReishiSchisandraGuide() {
         canonical: "/blog/reishi-schisandra-daily-tonic-herbs",
         ogType: "article",
         datePublished: "2026-02-18",
+        image: hyperionImg,
+        imageAlt: "Reishi and schisandra tonic herb extracts from Hyperion Herbs",
       }}
       backLabel="Blog"
       backHref="/blog"

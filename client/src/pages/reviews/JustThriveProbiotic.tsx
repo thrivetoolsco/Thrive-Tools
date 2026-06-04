@@ -58,6 +58,8 @@ export default function JustThriveProbiotic() {
         canonical: "/blog/bacillus-subtilis-bacillus-coagulans-probiotic-guide",
         ogType: "article",
         datePublished: "2026-02-11",
+        image: justThriveImg,
+        imageAlt: "Just Thrive spore-based probiotic supplement",
       }}
       backLabel="Blog"
       backHref="/blog"

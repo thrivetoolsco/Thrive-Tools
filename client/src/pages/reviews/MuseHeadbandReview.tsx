@@ -64,6 +64,8 @@ export default function MuseHeadbandReview() {
         canonical: "/blog/muse-headband-review-eeg-neurofeedback",
         ogType: "article",
         datePublished: "2026-03-25",
+        image: museWearImg,
+        imageAlt: "Muse EEG meditation headband being worn",
       }}
       backLabel="Blog"
       backHref="/blog"

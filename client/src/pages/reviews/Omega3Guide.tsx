@@ -64,6 +64,8 @@ export default function Omega3Guide() {
         canonical: "/blog/omega-3-complete-guide-epa-dha-fish-oil-vs-algae",
         ogType: "article",
         datePublished: "2026-03-11",
+        image: aquaomegaFrontImg,
+        imageAlt: "AquaOmega plant-based algae omega-3 supplement",
       }}
       backLabel="Blog"
       backHref="/blog"

@@ -19,6 +19,8 @@ export default function PsilocybinGuide() {
         canonical: "/blog/psilocybin-science-research-2025",
         ogType: "article",
         datePublished: "2025-10-01",
+        image: mushroomHero,
+        imageAlt: "Psilocybin mushrooms — science and clinical research",
       }}
     >
       <article className="space-y-12">

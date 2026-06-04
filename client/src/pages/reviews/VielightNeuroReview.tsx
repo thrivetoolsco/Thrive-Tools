@@ -16,6 +16,8 @@ export default function VielightNeuroReview() {
         canonical: "/product-reviews/vielight-neuro-review",
         ogType: "article",
         datePublished: "2026-01-14",
+        image: vielightDeviceImg,
+        imageAlt: "Vielight Neuro brain photobiomodulation device",
       }}
       backLabel="Products Reviews"
       backHref="/product-reviews"

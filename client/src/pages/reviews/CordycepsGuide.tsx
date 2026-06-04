@@ -53,6 +53,8 @@ export default function CordycepsGuide() {
         canonical: "/blog/cordyceps-cs4-vs-wild-cordyceps-sinensis",
         ogType: "article",
         datePublished: "2026-03-18",
+        image: cordycepsPowderImg,
+        imageAlt: "Cordyceps CS-4 mushroom powder supplement",
       }}
     >
       <article className="space-y-12">

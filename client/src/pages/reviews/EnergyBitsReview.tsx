@@ -37,6 +37,8 @@ export default function EnergyBitsReview() {
         canonical: "/blog/energybits-spirulina-chlorella-review",
         ogType: "article",
         datePublished: "2026-02-04",
+        image: energybitsBottleImg,
+        imageAlt: "ENERGYbits spirulina and chlorella algae tablets",
       }}
       backLabel="Blog"
       backHref="/blog"

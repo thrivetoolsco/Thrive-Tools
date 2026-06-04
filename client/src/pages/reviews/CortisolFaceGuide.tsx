@@ -51,6 +51,8 @@ export default function CortisolFaceGuide() {
         canonical: "/blog/cortisol-face-hpa-axis-guide-2026",
         ogType: "article",
         datePublished: "2026-06-04",
+        image: "/images/cortisol-face-guide.webp",
+        imageAlt: "Cortisol face and HPA axis dysregulation — evidence-based guide",
       }}
       backLabel="Blog"
       backHref="/blog"

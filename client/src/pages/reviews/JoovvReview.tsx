@@ -16,6 +16,8 @@ export default function JoovvReview() {
         canonical: "/product-reviews/joovv-review",
         ogType: "article",
         datePublished: "2025-12-24",
+        image: joovvDeviceImg,
+        imageAlt: "Joovv red light therapy device",
       }}
       backLabel="Products Reviews"
       backHref="/product-reviews"

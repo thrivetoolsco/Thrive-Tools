@@ -26,6 +26,8 @@ export default function EarthRunnersReview() {
         canonical: "/blog/earthrunners-review",
         ogType: "article",
         datePublished: "2025-12-17",
+        image: earthrunnersImg,
+        imageAlt: "EarthRunners grounding sandals",
       }}
       backLabel="Blog"
       backHref="/blog"
