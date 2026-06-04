@@ -40,7 +40,7 @@ export default function Im8HealthReview() {
       subtitle="By Eden Laraki | ThriveTools.co"
       seo={{
         title: "IM8 Health Review (2026): Is It Actually Worth It? | Thrive Tools",
-        description: "Honest, science-based IM8 review. Ingredients, bioactive forms, gut protocol, CoQ10, saffron extract, certifications, and real-world results. Use code THRIVE10 for a discount.",
+        description: "Honest, science-based IM8 review. Ingredients, bioactive forms, gut protocol, CoQ10, saffron extract, certifications, and real-world results. Use discount code THRIVE10 for a discount.",
         canonical: "/product-reviews/im8-health-review",
         ogType: "article",
         datePublished: "2026-01-21",
@@ -396,7 +396,7 @@ export default function Im8HealthReview() {
               The cost-per-supplement-replaced math is worth doing honestly. IM8 is designed to replace up to 16 separate supplements — multivitamin, B-complex, vitamin D, greens powder, probiotic, prebiotic, CoQ10, MSM, electrolytes, amino acids, and more. If you're already running a comprehensive stack, consolidating into IM8 tends to be cheaper and better formulated than the sum of its parts.
             </p>
             <div className="card-glass rounded-xl px-5 py-4 border-l-4" style={{ borderLeftColor: "#c4622d" }}>
-              <p className="text-black/70 font-semibold">Use code THRIVE10 for a discount at checkout.</p>
+              <p className="text-black/70 font-semibold">Use discount code THRIVE10 for a discount at checkout.</p>
               <a href="https://im8health.com/thrive10" target="_blank" rel="noopener noreferrer" className="text-[#c4622d] hover:text-[#8b3a1a] transition-colors text-sm font-medium underline" data-testid="link-im8-price-section">
                 👉 Shop IM8 Daily Ultimate Essentials PRO here
               </a>

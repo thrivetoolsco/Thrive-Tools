@@ -259,7 +259,7 @@ export default function MicroplasticsBrainGuide() {
                 {
                   action: "Support gut integrity",
                   detail: "The gut microbiome plays a central role in how the body handles plastic exposure. Microplastics disrupt microbial diversity and gut barrier function. Spore-based probiotics — which actually survive digestion and colonize the colon — combined with diverse prebiotic fiber are the evidence-based foundation here.",
-                  link: { href: "https://justthrivehealth.com", label: "Shop Just Thrive Probiotics — Use code THRIVETOOLS" },
+                  link: { href: "https://justthrivehealth.com", label: "Shop Just Thrive Probiotics — Use discount code THRIVETOOLS" },
                 },
                 {
                   action: "Prioritize liver support",
@@ -286,7 +286,7 @@ export default function MicroplasticsBrainGuide() {
                   supplement: "Chlorella",
                   detail: "Chlorella vulgaris has been shown in research to bind to microplastics through exopolysaccharides, with PET plastic removal rates documented in laboratory settings. The evidence for direct microplastic binding in humans is preliminary — most of the binding data comes from aquatic environment research — but the mechanism is plausible and the safety profile is excellent. Cracked-cell chlorella taken on an empty stomach is the standard approach.",
                   caveat: "Preliminary human data",
-                  link: { href: "https://energybits.com", label: "Shop ENERGYbits — Use code THRIVETOOLS-10" },
+                  link: { href: "https://energybits.com", label: "Shop ENERGYbits — Use discount code THRIVETOOLS-10" },
                 },
                 {
                   supplement: "NAC (N-Acetylcysteine)",
@@ -298,7 +298,7 @@ export default function MicroplasticsBrainGuide() {
                   supplement: "Reishi mushroom",
                   detail: "Its well-documented anti-inflammatory and liver-protective properties make it directly relevant to the two primary mechanisms of microplastic toxicity. The triterpenoids in Reishi support liver detoxification pathways and modulate the inflammatory response.",
                   caveat: "Strong evidence for inflammation",
-                  link: { href: "https://hyperionherbs.com", label: "Shop Hyperion Herbs Reishi — Use code EDEN10" },
+                  link: { href: "https://hyperionherbs.com", label: "Shop Hyperion Herbs Reishi — Use discount code EDEN10" },
                 },
                 {
                   supplement: "High-EPA omega-3s",
@@ -310,7 +310,7 @@ export default function MicroplasticsBrainGuide() {
                   supplement: "Magnesium",
                   detail: "Oxidative stress depletes magnesium, and magnesium deficiency amplifies susceptibility to oxidative damage. BiOptimizers Magnesium Breakthrough uses 7 bioavailable forms to cover the full spectrum of magnesium functions — including its role as a cofactor in glutathione synthesis and antioxidant enzyme activity.",
                   caveat: "Strong evidence for oxidative stress",
-                  link: { href: "https://bioptimizers.com", label: "Shop BiOptimizers Magnesium Breakthrough — Use code THRIVETOOLS" },
+                  link: { href: "https://bioptimizers.com", label: "Shop BiOptimizers Magnesium Breakthrough — Use discount code THRIVETOOLS" },
                 },
                 {
                   supplement: "Antioxidant-rich whole foods",

@@ -235,13 +235,13 @@ export default function CortisolFaceGuide() {
                   herb: "Reishi mushroom (Ganoderma lucidum)",
                   caveat: "Foundational adaptogen",
                   detail: "I've taken Reishi daily for over 10 years. Its triterpenoids modulate the stress response through adrenal support and cortisol regulation, with additional liver-protective and immunomodulatory properties that compound over time. Effects are slower and more subtle than ashwagandha but, in my experience, deeper and more sustained.",
-                  link: { href: "https://hyperionherbs.com", label: "Shop Hyperion Herbs — Use code EDEN10" },
+                  link: { href: "https://hyperionherbs.com", label: "Shop Hyperion Herbs — Use discount code EDEN10" },
                 },
                 {
                   herb: "Schisandra (Schisandra chinensis)",
                   caveat: "Adrenal support",
                   detail: "Specifically supports adrenal function and stress resilience through its adaptogenic flavolignans. Schisandra's dual action — supporting both energy and calm simultaneously — addresses the paradoxical state many people in HPA dysregulation experience: exhausted but wired, fatigued but unable to sleep.",
-                  link: { href: "https://hyperionherbs.com", label: "Shop Hyperion Herbs — Use code EDEN10" },
+                  link: { href: "https://hyperionherbs.com", label: "Shop Hyperion Herbs — Use discount code EDEN10" },
                 },
                 {
                   herb: "Rhodiola rosea",
@@ -284,12 +284,12 @@ export default function CortisolFaceGuide() {
                 <div className="card-glass rounded-xl p-5" data-testid="magnesium-bioptimizers">
                   <p className="font-semibold text-black/90 text-sm mb-1">BiOptimizers Magnesium Breakthrough</p>
                   <p className="text-black/65 text-sm leading-relaxed mb-2">Uses 7 forms of magnesium — glycinate, threonate, malate, taurate, orotate, sucrosomial, and citrate — to cover the full spectrum. For someone dealing with HPA dysregulation, this matters because different forms target different systems.</p>
-                  <AffilLink href="https://bioptimizers.com" label="Shop BiOptimizers Magnesium Breakthrough — Use code THRIVETOOLS" />
+                  <AffilLink href="https://bioptimizers.com" label="Shop BiOptimizers Magnesium Breakthrough — Use discount code THRIVETOOLS" />
                 </div>
                 <div className="card-glass rounded-xl p-5" data-testid="magnesium-organika">
                   <p className="font-semibold text-black/90 text-sm mb-1">Organika 8-in-1 Magnesium <span className="text-[10px] font-normal text-black/40 ml-1">(Canadian readers)</span></p>
-                  <p className="text-black/65 text-sm leading-relaxed mb-2">Eight forms of magnesium in one formula at a more accessible price point, ships domestically within Canada. Use code EDEN_25.</p>
-                  <AffilLink href="https://organika.com/products/8-in-1-magnesium?_pos=1&_psq=magn&_ss=e&_v=1.0" label="Shop Organika 8-in-1 Magnesium — Use code EDEN_25" />
+                  <p className="text-black/65 text-sm leading-relaxed mb-2">Eight forms of magnesium in one formula at a more accessible price point, ships domestically within Canada. Use discount code EDEN_25.</p>
+                  <AffilLink href="https://organika.com/products/8-in-1-magnesium?_pos=1&_psq=magn&_ss=e&_v=1.0" label="Shop Organika 8-in-1 Magnesium — Use discount code EDEN_25" />
                 </div>
               </div>
             </div>
@@ -308,7 +308,7 @@ export default function CortisolFaceGuide() {
               <div className="card-glass rounded-xl p-5" data-testid="blood-sugar-im8">
                 <p className="font-semibold text-black/90 text-sm mb-1">IM8 Daily Ultimate Essentials PRO</p>
                 <p className="text-black/65 text-sm leading-relaxed mb-2">Includes chromium alongside its adaptogen complex — chromium supports insulin sensitivity and blood glucose regulation, with downstream benefits for cortisol rhythm normalization. One of the less-discussed but meaningful inclusions in the formula.</p>
-                <AffilLink href="https://im8health.com/thrive10" label="Shop IM8 Daily Ultimate Essentials PRO — Use code THRIVE10" />
+                <AffilLink href="https://im8health.com/thrive10" label="Shop IM8 Daily Ultimate Essentials PRO — Use discount code THRIVE10" />
               </div>
             </div>
           </div>

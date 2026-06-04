@@ -456,7 +456,7 @@ export default function TonicHerbsGuide() {
           <div className="text-center">
             <Button asChild size="lg" className="btn-gradient-rose text-white border-0 rounded-full px-6 sm:px-8 py-4 text-sm tracking-widest uppercase font-semibold h-auto leading-relaxed">
               <a href={HYPERION_URL} target="_blank" rel="noopener noreferrer" data-testid="link-hyperion-main" className="inline-flex items-center justify-center gap-2 flex-wrap">
-                Use code EDEN10 to shop Hyperion Herbs <ExternalLink className="w-4 h-4 flex-shrink-0" />
+                Use discount code EDEN10 to shop Hyperion Herbs <ExternalLink className="w-4 h-4 flex-shrink-0" />
               </a>
             </Button>
           </div>

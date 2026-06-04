@@ -345,7 +345,7 @@ export default function CreatineDosageForBrain() {
               data-testid="link-organika-creatine"
               className="inline-flex items-center justify-center gap-2 flex-wrap"
             >
-              Use code EDEN_25 to shop Organika Creatine <ExternalLink className="w-4 h-4 flex-shrink-0" />
+              Use discount code EDEN_25 to shop Organika Creatine <ExternalLink className="w-4 h-4 flex-shrink-0" />
             </a>
           </Button>
         </div>

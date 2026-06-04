@@ -210,7 +210,7 @@ export default function Im8VsAg1() {
               The cost-per-supplement-replaced calculation matters here. IM8 is designed to replace up to 16 separate supplements including CoQ10, a probiotic, electrolytes, MSM, amino acids, and more. AG1 replaces a multivitamin, greens powder, and a basic probiotic. If you're already running a comprehensive supplement stack, IM8's consolidation math is more compelling.
             </p>
             <div className="card-glass rounded-xl px-5 py-4 border-l-4" style={{ borderLeftColor: "#c4622d" }}>
-              <p className="text-black/70 font-semibold">Use code THRIVE10 for a discount on IM8.</p>
+              <p className="text-black/70 font-semibold">Use discount code THRIVE10 for a discount on IM8.</p>
               <a href="https://im8health.com/thrive10" target="_blank" rel="noopener noreferrer" className="text-[#c4622d] hover:text-[#8b3a1a] transition-colors text-sm font-medium underline" data-testid="link-im8-price-section">
                 👉 Shop IM8 here
               </a>
@@ -281,7 +281,7 @@ export default function Im8VsAg1() {
               I use IM8. Not because I'm affiliated with them — I became affiliated because I already believed in it. The bioactive forms, the spore-based probiotic protocol, the CoQ10 at a real dose, and the full label transparency are what won me over. The PRO upgrade made an already solid product significantly better.
             </p>
             <div className="card-glass rounded-xl px-5 py-4 border-l-4" style={{ borderLeftColor: "#c4622d" }}>
-              <p className="text-black/70 font-semibold">Use code THRIVE10 for a discount on IM8 Daily Ultimate Essentials PRO.</p>
+              <p className="text-black/70 font-semibold">Use discount code THRIVE10 for a discount on IM8 Daily Ultimate Essentials PRO.</p>
               <a href="https://im8health.com/thrive10" target="_blank" rel="noopener noreferrer" className="text-[#c4622d] hover:text-[#8b3a1a] transition-colors text-sm font-medium underline" data-testid="link-im8-verdict-section">
                 👉 Shop IM8 here
               </a>

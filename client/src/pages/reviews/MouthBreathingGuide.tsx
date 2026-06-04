@@ -323,7 +323,7 @@ export default function MouthBreathingGuide() {
               data-testid="link-myotape"
               className="inline-flex items-center justify-center gap-2 flex-wrap"
             >
-              Use code THRIVETOOLS to shop MyoTape <ExternalLink className="w-4 h-4 flex-shrink-0" />
+              Use discount code THRIVETOOLS to shop MyoTape <ExternalLink className="w-4 h-4 flex-shrink-0" />
             </a>
           </Button>
         </div>

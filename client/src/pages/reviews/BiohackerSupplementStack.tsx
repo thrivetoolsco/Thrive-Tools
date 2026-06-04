@@ -129,7 +129,7 @@ export default function BiohackerSupplementStack() {
             <p>
               <strong className="text-black/90">BiOptimizers Magnesium Breakthrough</strong> uses 7 forms of magnesium in one formula — glycinate, malate, taurate, threonate, orotate, sucrosomial, and citrate — each targeting different systems. It's the most comprehensive magnesium supplement I've come across and what I use personally.
             </p>
-            <p><AffilLink href="https://bioptimizers.com" label="Shop BiOptimizers Magnesium Breakthrough — Use code THRIVETOOLS" /></p>
+            <p><AffilLink href="https://bioptimizers.com" label="Shop BiOptimizers Magnesium Breakthrough — Use discount code THRIVETOOLS" /></p>
             <p className="text-xs text-black/40">Dose: 300–400mg elemental magnesium daily. Most people benefit from splitting morning and evening doses.</p>
           </div>
 
@@ -173,7 +173,7 @@ export default function BiohackerSupplementStack() {
             <p>
               This is one of the reasons I moved to <strong className="text-black/90">IM8 Daily Ultimate Essentials PRO</strong> as my daily foundation. The PRO formula uses methylcobalamin at 200mcg, P5P for B6, and Quatrefolic for folate — alongside 90+ other ingredients including CoQ10, spore-based probiotics, electrolytes, MSM, amino acids, saffron extract, and a complete greens complex. No proprietary blends. Full label transparency.
             </p>
-            <p><AffilLink href="https://im8health.com/thrive10" label="Shop IM8 Daily Ultimate Essentials PRO — Use code THRIVE10" /></p>
+            <p><AffilLink href="https://im8health.com/thrive10" label="Shop IM8 Daily Ultimate Essentials PRO — Use discount code THRIVE10" /></p>
           </div>
         </section>
 
@@ -194,7 +194,7 @@ export default function BiohackerSupplementStack() {
             <p>
               <strong className="text-black/90">Form:</strong> Creatine monohydrate only. Creatine HCL, buffered creatine, and similar forms offer no demonstrated advantage and cost more. Monohydrate has the research, the safety record, and the price.
             </p>
-            <p><AffilLink href="https://organika.com/?rfsn=8403940.a276a1f" label="Shop Organika Creatine — Use code EDEN_25" /></p>
+            <p><AffilLink href="https://organika.com/?rfsn=8403940.a276a1f" label="Shop Organika Creatine — Use discount code EDEN_25" /></p>
             <p className="text-xs text-black/40">Dose: 5g daily for muscle performance. 10g daily if your primary goal is brain health — emerging research supports the higher dose for neurological benefits specifically.</p>
           </div>
 
@@ -209,7 +209,7 @@ export default function BiohackerSupplementStack() {
             <p>
               <strong className="text-black/90">Just Thrive</strong> is the standalone probiotic I recommend. Specifically formulated around spore-based strains with published clinical research on survival rates and gut colonization.
             </p>
-            <p><AffilLink href="https://justthrivehealth.com" label="Shop Just Thrive — Use code THRIVETOOLS" /></p>
+            <p><AffilLink href="https://justthrivehealth.com" label="Shop Just Thrive — Use discount code THRIVETOOLS" /></p>
           </div>
 
           <SubHead title="CoQ10" />
@@ -223,7 +223,7 @@ export default function BiohackerSupplementStack() {
             <p>
               CoQ10 is one of the reasons I value IM8's formula — 100mg is a clinically meaningful dose, and most all-in-one products either skip it or include 10–20mg.
             </p>
-            <p><AffilLink href="https://im8health.com/thrive10" label="Shop IM8 Daily Ultimate Essentials PRO — Use code THRIVE10" /></p>
+            <p><AffilLink href="https://im8health.com/thrive10" label="Shop IM8 Daily Ultimate Essentials PRO — Use discount code THRIVE10" /></p>
           </div>
 
           <SubHead title="Adaptogens: The Tonic Herb Protocol" />
@@ -251,7 +251,7 @@ export default function BiohackerSupplementStack() {
             <p>
               <strong className="text-black/90">Hyperion Herbs</strong> is my go-to. Reishi at 2% triterpenes and 12% polysaccharides, fruiting body only, dual-extracted.
             </p>
-            <p><AffilLink href="https://hyperionherbs.com" label="Shop Hyperion Herbs — Use code EDEN10" /></p>
+            <p><AffilLink href="https://hyperionherbs.com" label="Shop Hyperion Herbs — Use discount code EDEN10" /></p>
           </div>
         </section>
 
@@ -269,7 +269,7 @@ export default function BiohackerSupplementStack() {
             <p>
               <strong className="text-black/90">IM8 Daily Ultimate Longevity</strong> contains 300mg pharmaceutical-grade NMN alongside 10mg PQQ in its NMN NAD+ Energy Booster complex. It also includes a triple senolytic complex (trans-resveratrol 250mg, quercetin 250mg, fisetin 100mg), dihydroberberine, spermidine for autophagy activation, and glycine and taurine at clinical doses. The most complete longevity formula I've found.
             </p>
-            <p><AffilLink href="https://im8health.com/thrive10" label="Shop IM8 Daily Ultimate Longevity — Use code THRIVE10" /></p>
+            <p><AffilLink href="https://im8health.com/thrive10" label="Shop IM8 Daily Ultimate Longevity — Use discount code THRIVE10" /></p>
             <p className="text-xs text-black/40">Standalone NMN dose: 500–1000mg daily, taken in the morning. Sublingual delivery may improve absorption.</p>
           </div>
 
@@ -307,7 +307,7 @@ export default function BiohackerSupplementStack() {
               Molecular hydrogen (H₂) is a selective antioxidant that specifically neutralizes the most cytotoxic reactive oxygen species — particularly hydroxyl radicals — while leaving beneficial oxidative processes intact. Its small size allows it to cross the blood-brain barrier and mitochondrial membrane, something most antioxidants cannot do. Over 100 clinical studies support benefits for oxidative stress reduction, metabolic health, athletic recovery, and cognitive function.
             </p>
             <p><strong className="text-black/90">Piurify</strong> uses SPE/PEM technology for clean, high-concentration H₂ output.</p>
-            <p><AffilLink href="https://www.piurify.com/?sca_ref=4509873.CyVUQonn5r" label="Shop Piurify Water Hydrogenator — Use code THRIVE10" /></p>
+            <p><AffilLink href="https://www.piurify.com/?sca_ref=4509873.CyVUQonn5r" label="Shop Piurify Water Hydrogenator — Use discount code THRIVE10" /></p>
           </div>
 
           <SubHead title="Red Light Therapy (Photobiomodulation)" />
@@ -316,9 +316,9 @@ export default function BiohackerSupplementStack() {
               Red and near-infrared light (630–850nm range) penetrates tissue and stimulates cytochrome c oxidase in the mitochondrial membrane — directly enhancing cellular energy production and accelerating tissue repair. The research base is substantial: wound healing, inflammation reduction, skin collagen synthesis, muscle recovery, cognitive function, and sleep quality all have clinical trial support.
             </p>
             <div className="space-y-2">
-              <p><AffilLink href="https://joovv.com" label="Shop Joovv — Use code THRIVETOOLS" /></p>
+              <p><AffilLink href="https://joovv.com" label="Shop Joovv — Use discount code THRIVETOOLS" /></p>
               <p><AffilLink href="https://mitopro.com" label="Shop Mito Red Light (facial masks)" /></p>
-              <p><AffilLink href="https://redtherapy.com" label="Shop RedTherapy — Use code THRIVETOOLS" /></p>
+              <p><AffilLink href="https://redtherapy.com" label="Shop RedTherapy — Use discount code THRIVETOOLS" /></p>
             </div>
           </div>
 
@@ -327,7 +327,7 @@ export default function BiohackerSupplementStack() {
             <p>
               Applying near-infrared light directly to the brain through transcranial and intranasal devices. Published clinical trials cover concussion recovery, cognitive decline, Alzheimer's, and deepened meditation states. Vielight Neuro is the only brand with published peer-reviewed clinical research in this category.
             </p>
-            <p><AffilLink href="https://vielight.com" label="Shop Vielight Neuro — Use code THRIVETOOLS" /></p>
+            <p><AffilLink href="https://vielight.com" label="Shop Vielight Neuro — Use discount code THRIVETOOLS" /></p>
           </div>
 
           <SubHead title="Ceremonial Cacao as Daily Plant Medicine" />
@@ -338,7 +338,7 @@ export default function BiohackerSupplementStack() {
             <p>
               The ORAC score of 95,000 per 100g makes it one of the most antioxidant-dense foods on the planet. <strong className="text-black/90">Koracao</strong> sources heirloom criollo beans from Peruvian and Colombian indigenous communities.
             </p>
-            <p><AffilLink href="https://koracao.com/THRIVE33" label="Shop Koracao Ceremonial Cacao — Use code EDENKAWTHARLARAKI123" /></p>
+            <p><AffilLink href="https://koracao.com/THRIVE33" label="Shop Koracao Ceremonial Cacao — Use discount code EDENKAWTHARLARAKI123" /></p>
           </div>
         </section>
 

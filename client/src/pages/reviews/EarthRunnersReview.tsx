@@ -273,7 +273,7 @@ export default function EarthRunnersReview() {
         {/* CTA */}
         <div className="card-glass rounded-2xl p-6 sm:p-8 text-center space-y-4" data-testid="section-cta">
           <p className="text-black/70 text-sm leading-relaxed">
-            Get EarthRunners with an exclusive discount. Use code{" "}
+            Get EarthRunners with an exclusive discount. Use discount code{" "}
             <span className="font-mono font-semibold text-[#c4622d] bg-[#c4622d]/10 px-2 py-0.5 rounded">THRIVETOOLS</span>{" "}
             at checkout.
           </p>

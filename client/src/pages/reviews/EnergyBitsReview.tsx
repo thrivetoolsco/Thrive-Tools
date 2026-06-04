@@ -296,7 +296,7 @@ export default function EnergyBitsReview() {
         <div className="card-glass rounded-2xl p-6 sm:p-8 text-center space-y-4" data-testid="section-cta">
           <p className="font-display text-lg font-bold text-black">Shop ENERGYbits</p>
           <p className="text-black/70 text-sm leading-relaxed">
-            Use code{" "}
+            Use discount code{" "}
             <span className="font-mono font-semibold text-[#c4622d] bg-[#c4622d]/10 px-2 py-0.5 rounded">THRIVE25</span>{" "}
             at checkout for a discount on your order.
           </p>

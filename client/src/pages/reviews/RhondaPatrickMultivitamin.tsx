@@ -180,7 +180,7 @@ export default function RhondaPatrickMultivitamin() {
             <p>
               If you're going to do this, do it properly. <strong className="text-black/90">IM8 Health</strong> is the multivitamin I recommend without hesitation. Built with 75+ science-backed ingredients, in bioavailable forms, at doses that actually reflect what the research supports, it checks every box that researchers like Dr. Patrick and Dr. Ames have outlined. Comprehensive coverage, proper bioavailability, no cheap fillers.
             </p>
-            <p className="font-semibold text-[#c4622d]">Use code THRIVE10 for 10% off your first order.</p>
+            <p className="font-semibold text-[#c4622d]">Use discount code THRIVE10 for 10% off your first order.</p>
           </div>
         </section>
 
