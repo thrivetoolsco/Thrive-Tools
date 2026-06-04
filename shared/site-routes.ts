@@ -37,6 +37,7 @@ export const staticRoutes: StaticRoute[] = [
   { path: "/events", changefreq: "weekly", priority: 0.7 },
   { path: "/personalized-guidance", changefreq: "monthly", priority: 0.7 },
   { path: "/somatic-reset", changefreq: "monthly", priority: 0.7 },
+  { path: "/retreats-workshops", changefreq: "monthly", priority: 0.7 },
 ];
 
 export const eventRoutes: EventRoute[] = [
@@ -202,7 +203,7 @@ export const blogPosts: BlogPost[] = [
     id: "energybits-spirulina-chlorella-review",
     title: "Spirulina and Chlorella: Why Low-Heat Processing Is the Difference Between a Superfood and an Expensive Disappointment",
     excerpt: "Most spirulina and chlorella supplements destroy their most valuable nutrients with high-heat drying. Here's what that means for your health, and why ENERGYbits is the only brand I trust for algae.",
-    href: "/product-reviews/energybits-spirulina-chlorella-review",
+    href: "/blog/energybits-spirulina-chlorella-review",
     canonical: "/blog/energybits-spirulina-chlorella-review",
     badge: "Honest Review",
     badgeColor: "bg-[#c4622d]/15 text-[#8b3a1a] border-[#c4622d]/25",
@@ -279,7 +280,7 @@ export const blogPosts: BlogPost[] = [
     id: "earthrunners-review",
     title: "EarthRunners Review (2026): The Only Sandals I Travel, Hike and Run In",
     excerpt: "My honest take after years of daily use — the grounding technology, minimalist design, durability across hiking and jogging, and why one pair does it all.",
-    href: "/product-reviews/earthrunners-review",
+    href: "/blog/earthrunners-review",
     canonical: "/blog/earthrunners-review",
     badge: "Honest Review",
     badgeColor: "bg-[#c4622d]/15 text-[#8b3a1a] border-[#c4622d]/25",
@@ -290,7 +291,7 @@ export const blogPosts: BlogPost[] = [
     id: "tonic-herbs-guide",
     title: "Tonic Herbs: The Ancient System of Deep Nourishment Modern Biohackers Are Rediscovering (2026)",
     excerpt: "The highest class of medicine in Traditional Chinese Medicine, used daily for thousands of years to build vitality and extend longevity. The 7 most important herbs, the quality problem, and how to build your protocol.",
-    href: "/product-reviews/tonic-herbs-guide",
+    href: "/blog/tonic-herbs-guide",
     canonical: "/blog/tonic-herbs-guide",
     badge: "Complete Guide",
     badgeColor: "bg-[#c4622d]/15 text-[#8b3a1a] border-[#c4622d]/25",
@@ -301,7 +302,7 @@ export const blogPosts: BlogPost[] = [
     id: "mct-oil-benefits-c8-vs-c10-powder-vs-oil",
     title: "MCT Oil Benefits, C8 vs C10, and Oil vs Powder: The Complete Biohacker's Guide (2026)",
     excerpt: "The real science behind MCT oil's benefits, the difference between C8 and C10, whether oil or powder is right for you, and the two products I recommend.",
-    href: "/product-reviews/mct-oil-benefits-c8-vs-c10-powder-vs-oil",
+    href: "/blog/mct-oil-benefits-c8-vs-c10-powder-vs-oil",
     canonical: "/blog/mct-oil-benefits-c8-vs-c10-powder-vs-oil",
     badge: "Complete Guide",
     badgeColor: "bg-[#c4622d]/15 text-[#8b3a1a] border-[#c4622d]/25",
@@ -312,7 +313,7 @@ export const blogPosts: BlogPost[] = [
     id: "mouth-breathing-mouth-taping",
     title: "Mouth Breathing Is Quietly Ruining Your Health, And Most People Have No Idea They're Doing It",
     excerpt: "Chronic mouth breathing silently destroys sleep quality, cognitive function, and facial structure. Here's the science and why mouth taping with MyoTape from Oxygen Advantage is the simplest fix.",
-    href: "/product-reviews/mouth-breathing-mouth-taping",
+    href: "/blog/mouth-breathing-mouth-taping",
     canonical: "/blog/mouth-breathing-mouth-taping",
     badge: "Health Guide",
     badgeColor: "bg-[#c4622d]/15 text-[#8b3a1a] border-[#c4622d]/25",
@@ -323,7 +324,7 @@ export const blogPosts: BlogPost[] = [
     id: "creatine-dosage-for-brain",
     title: "Why 5g of Creatine Isn't Enough for Your Brain: The Case for 10g (2026)",
     excerpt: "You've been taking 5g of creatine for your muscles. But new research, backed by Dr. Rhonda Patrick, Andrew Huberman, and Dr. Darren Candow, shows your brain needs more. Here's why.",
-    href: "/product-reviews/creatine-dosage-for-brain",
+    href: "/blog/creatine-dosage-for-brain",
     canonical: "/blog/creatine-dosage-for-brain",
     badge: "Deep Dive",
     badgeColor: "bg-[#c4622d]/15 text-[#8b3a1a] border-[#c4622d]/25",
@@ -419,3 +420,43 @@ export const blogPosts: BlogPost[] = [
     lastmod: "2025-10-15",
   },
 ];
+
+export const legacyRedirects: Record<string, string> = {
+  "/quantum-healing": "/somatic-reset",
+  "/discounts-coupon-codes": "/discount-codes",
+  "/product-reviews/creatine-dosage-for-brain": "/blog/creatine-dosage-for-brain",
+  "/product-reviews/mouth-breathing-mouth-taping": "/blog/mouth-breathing-mouth-taping",
+  "/product-reviews/mct-oil-benefits-c8-vs-c10-powder-vs-oil": "/blog/mct-oil-benefits-c8-vs-c10-powder-vs-oil",
+  "/product-reviews/tonic-herbs-guide": "/blog/tonic-herbs-guide",
+  "/product-reviews/earthrunners-review": "/blog/earthrunners-review",
+  "/product-reviews/energybits-spirulina-chlorella-review": "/blog/energybits-spirulina-chlorella-review",
+  "/product-reviews/bacillus-subtilis-bacillus-coagulans-probiotic-guide": "/blog/bacillus-subtilis-bacillus-coagulans-probiotic-guide",
+  "/product-reviews/reishi-schisandra-daily-tonic-herbs": "/blog/reishi-schisandra-daily-tonic-herbs",
+  "/product-reviews/magnesium-deficiency-supplement-guide": "/blog/magnesium-deficiency-supplement-guide",
+  "/product-reviews/pumpkin-seed-oil-supplement-stack-benefits": "/blog/pumpkin-seed-oil-supplement-stack-benefits",
+  "/product-reviews/omega-3-complete-guide-epa-dha-fish-oil-vs-algae": "/blog/omega-3-complete-guide-epa-dha-fish-oil-vs-algae",
+};
+
+const _extraKnownPaths = [
+  "/product-reviews",
+  "/blog/rhonda-patrick-multivitamin",
+  "/blog/biohacking-supplements-2026",
+  "/blog/biohacking-beginners-guide",
+  "/blog/somatic-reset-guide",
+];
+
+function _buildKnownPublicPaths(): Set<string> {
+  const paths = new Set<string>();
+  for (const route of staticRoutes) paths.add(route.path);
+  for (const route of eventRoutes) paths.add(route.path);
+  for (const post of blogPosts) {
+    paths.add(post.canonical);
+    if (!legacyRedirects[post.href]) {
+      paths.add(post.href);
+    }
+  }
+  for (const p of _extraKnownPaths) paths.add(p);
+  return paths;
+}
+
+export const knownPublicPaths = _buildKnownPublicPaths();

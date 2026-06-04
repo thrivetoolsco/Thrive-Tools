@@ -2,6 +2,7 @@ import express, { type Express } from "express";
 import fs from "fs";
 import path from "path";
 import type { ComponentType } from "react";
+import { legacyRedirects, knownPublicPaths } from "../shared/site-routes";
 
 function injectSSR(
   template: string,
@@ -43,8 +44,14 @@ export function serveStatic(app: Express) {
 
   if (!ssrAvailable) {
     console.warn("[SSR] entry-server.cjs not found — serving SPA shell for all routes");
-    app.use("/{*path}", (_req, res) => {
-      res.sendFile(indexHtmlPath);
+    app.use("/{*path}", (req, res) => {
+      const urlPath = req.originalUrl.split("?")[0].replace(/\/$/, "") || "/";
+      const redirectTarget = legacyRedirects[urlPath];
+      if (redirectTarget) {
+        return res.redirect(301, redirectTarget);
+      }
+      const status = knownPublicPaths.has(urlPath) ? 200 : 404;
+      res.status(status).sendFile(indexHtmlPath);
     });
     return;
   }
@@ -61,7 +68,13 @@ export function serveStatic(app: Express) {
   };
 
   app.use("/{*path}", async (req, res) => {
-    const urlPath = req.originalUrl.split("?")[0];
+    const urlPath = req.originalUrl.split("?")[0].replace(/\/$/, "") || "/";
+
+    const redirectTarget = legacyRedirects[urlPath];
+    if (redirectTarget) {
+      return res.redirect(301, redirectTarget);
+    }
+
     const Component = ssrModule.SSR_ROUTE_COMPONENTS[urlPath];
 
     if (Component) {
@@ -74,6 +87,7 @@ export function serveStatic(app: Express) {
       }
     }
 
-    res.sendFile(indexHtmlPath);
+    const status = knownPublicPaths.has(urlPath) ? 200 : 404;
+    res.status(status).sendFile(indexHtmlPath);
   });
 }

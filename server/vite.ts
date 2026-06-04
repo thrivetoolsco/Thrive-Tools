@@ -5,6 +5,7 @@ import viteConfig from "../vite.config";
 import fs from "fs";
 import path from "path";
 import { nanoid } from "nanoid";
+import { legacyRedirects, knownPublicPaths } from "../shared/site-routes";
 
 const viteLogger = createLogger();
 
@@ -23,27 +24,16 @@ const BLOG_ROUTE_MAP: Record<string, string> = {
   "/product-reviews/breathwork-beginners-guide": "/src/pages/reviews/BreathworkBeginnersGuide.tsx",
   "/product-reviews/somatic-reset-guide": "/src/pages/reviews/SomaticResetGuide.tsx",
   "/blog/somatic-reset-guide": "/src/pages/reviews/SomaticResetGuide.tsx",
-  "/product-reviews/creatine-dosage-for-brain": "/src/pages/reviews/CreatineDosageForBrain.tsx",
   "/blog/creatine-dosage-for-brain": "/src/pages/reviews/CreatineDosageForBrain.tsx",
-  "/product-reviews/mouth-breathing-mouth-taping": "/src/pages/reviews/MouthBreathingGuide.tsx",
   "/blog/mouth-breathing-mouth-taping": "/src/pages/reviews/MouthBreathingGuide.tsx",
-  "/product-reviews/mct-oil-benefits-c8-vs-c10-powder-vs-oil": "/src/pages/reviews/MctOilGuide.tsx",
   "/blog/mct-oil-benefits-c8-vs-c10-powder-vs-oil": "/src/pages/reviews/MctOilGuide.tsx",
-  "/product-reviews/tonic-herbs-guide": "/src/pages/reviews/TonicHerbsGuide.tsx",
   "/blog/tonic-herbs-guide": "/src/pages/reviews/TonicHerbsGuide.tsx",
-  "/product-reviews/earthrunners-review": "/src/pages/reviews/EarthRunnersReview.tsx",
   "/blog/earthrunners-review": "/src/pages/reviews/EarthRunnersReview.tsx",
-  "/product-reviews/energybits-spirulina-chlorella-review": "/src/pages/reviews/EnergyBitsReview.tsx",
   "/blog/energybits-spirulina-chlorella-review": "/src/pages/reviews/EnergyBitsReview.tsx",
-  "/product-reviews/bacillus-subtilis-bacillus-coagulans-probiotic-guide": "/src/pages/reviews/JustThriveProbiotic.tsx",
   "/blog/bacillus-subtilis-bacillus-coagulans-probiotic-guide": "/src/pages/reviews/JustThriveProbiotic.tsx",
-  "/product-reviews/reishi-schisandra-daily-tonic-herbs": "/src/pages/reviews/ReishiSchisandraGuide.tsx",
   "/blog/reishi-schisandra-daily-tonic-herbs": "/src/pages/reviews/ReishiSchisandraGuide.tsx",
-  "/product-reviews/magnesium-deficiency-supplement-guide": "/src/pages/reviews/MagnesiumGuide.tsx",
   "/blog/magnesium-deficiency-supplement-guide": "/src/pages/reviews/MagnesiumGuide.tsx",
-  "/product-reviews/pumpkin-seed-oil-supplement-stack-benefits": "/src/pages/reviews/PumpkinSeedOilGuide.tsx",
   "/blog/pumpkin-seed-oil-supplement-stack-benefits": "/src/pages/reviews/PumpkinSeedOilGuide.tsx",
-  "/product-reviews/omega-3-complete-guide-epa-dha-fish-oil-vs-algae": "/src/pages/reviews/Omega3Guide.tsx",
   "/blog/omega-3-complete-guide-epa-dha-fish-oil-vs-algae": "/src/pages/reviews/Omega3Guide.tsx",
   "/blog/cordyceps-cs4-vs-wild-cordyceps-sinensis": "/src/pages/reviews/CordycepsGuide.tsx",
   "/blog/red-light-therapy-science-benefits-devices": "/src/pages/reviews/RedLightTherapyGuide.tsx",
@@ -119,7 +109,7 @@ export async function setupVite(server: Server, app: Express) {
 
   app.use("/{*path}", async (req, res, next) => {
     const url = req.originalUrl;
-    const urlPath = url.split("?")[0];
+    const urlPath = url.split("?")[0].replace(/\/$/, "") || "/";
 
     try {
       const clientTemplate = path.resolve(
@@ -136,6 +126,11 @@ export async function setupVite(server: Server, app: Express) {
       );
       template = await vite.transformIndexHtml(url, template);
 
+      const redirectTarget = legacyRedirects[urlPath];
+      if (redirectTarget) {
+        return res.redirect(301, redirectTarget);
+      }
+
       const componentModulePath = BLOG_ROUTE_MAP[urlPath];
       if (componentModulePath) {
         try {
@@ -146,7 +141,8 @@ export async function setupVite(server: Server, app: Express) {
         }
       }
 
-      res.status(200).set({ "Content-Type": "text/html" }).end(template);
+      const status = knownPublicPaths.has(urlPath) ? 200 : 404;
+      res.status(status).set({ "Content-Type": "text/html" }).end(template);
     } catch (e) {
       vite.ssrFixStacktrace(e as Error);
       next(e);

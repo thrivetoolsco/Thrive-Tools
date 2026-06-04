@@ -1,0 +1,18 @@
+# ThriveTools.co — llms.txt
+
+> ThriveTools is a wellness and biohacking resource by Eden Laraki. The site covers evidence-based longevity, plant medicine, breathwork, psychedelic-assisted healing, and curated product reviews.
+
+## Important sections
+
+- [Blog & Articles](https://thrivetools.co/blog) — science-backed guides on biohacking, supplements, plant medicine, and longevity
+- [Retreats & Workshops](https://thrivetools.co/retreats-workshops) — immersive healing retreats including plant medicine ceremonies, silent retreats, and nutrition intensives
+- [Breathwork](https://thrivetools.co/breathwork) — individual, couples, corporate, and addiction-recovery breathwork sessions
+- [Personalized Guidance](https://thrivetools.co/personalized-guidance) — 1-on-1 biohacking and wellness consulting with Eden
+- [Somatic Reset / Quantum Healing](https://thrivetools.co/somatic-reset) — somatic and energy healing sessions
+- [Events](https://thrivetools.co/events) — upcoming workshops, cacao ceremonies, drum circles, and community events
+- [Discount Codes](https://thrivetools.co/discount-codes) — curated discount codes for vetted wellness brands
+- [About Eden](https://thrivetools.co/about) — Eden Laraki's background in science, plant medicine, and longevity
+
+## Sitemap
+
+https://thrivetools.co/sitemap.xml

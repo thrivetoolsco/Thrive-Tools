@@ -74,13 +74,11 @@ function Router() {
     <Switch>
       <Route path="/" component={Home} />
       <Route path="/about" component={About} />
-      <Route path="/quantum-healing" component={() => { window.location.replace("/somatic-reset"); return null; }} />
       <Route path="/somatic-reset" component={QuantumHealing} />
       <Route path="/breathwork" component={Breathwork} />
       <Route path="/personalized-guidance" component={PersonalizedGuidance} />
       <Route path="/events" component={Events} />
       <Route path="/contact" component={Contact} />
-      <Route path="/discounts-coupon-codes" component={() => { window.location.replace("/discount-codes"); return null; }} />
       <Route path="/discount-codes" component={Discounts} />
       <Route path="/retreats-workshops" component={Retreats} />
       <Route path="/retreats-workshops/blossoming-bliss" component={BlossomingBliss} />
@@ -107,27 +105,16 @@ function Router() {
       <Route path="/product-reviews/biohacking-beginners-guide" component={BiohackingBeginnersGuide} />
       <Route path="/product-reviews/breathwork-beginners-guide" component={BreathworkBeginnersGuide} />
       <Route path="/product-reviews/somatic-reset-guide" component={SomaticResetGuide} />
-      <Route path="/product-reviews/creatine-dosage-for-brain" component={CreatineDosageForBrain} />
       <Route path="/blog/creatine-dosage-for-brain" component={CreatineDosageForBrain} />
-      <Route path="/product-reviews/mouth-breathing-mouth-taping" component={MouthBreathingGuide} />
       <Route path="/blog/mouth-breathing-mouth-taping" component={MouthBreathingGuide} />
-      <Route path="/product-reviews/mct-oil-benefits-c8-vs-c10-powder-vs-oil" component={MctOilGuide} />
       <Route path="/blog/mct-oil-benefits-c8-vs-c10-powder-vs-oil" component={MctOilGuide} />
-      <Route path="/product-reviews/tonic-herbs-guide" component={TonicHerbsGuide} />
       <Route path="/blog/tonic-herbs-guide" component={TonicHerbsGuide} />
-      <Route path="/product-reviews/earthrunners-review" component={EarthRunnersReview} />
       <Route path="/blog/earthrunners-review" component={EarthRunnersReview} />
-      <Route path="/product-reviews/energybits-spirulina-chlorella-review" component={EnergyBitsReview} />
       <Route path="/blog/energybits-spirulina-chlorella-review" component={EnergyBitsReview} />
-      <Route path="/product-reviews/bacillus-subtilis-bacillus-coagulans-probiotic-guide" component={JustThriveProbiotic} />
       <Route path="/blog/bacillus-subtilis-bacillus-coagulans-probiotic-guide" component={JustThriveProbiotic} />
-      <Route path="/product-reviews/reishi-schisandra-daily-tonic-herbs" component={ReishiSchisandraGuide} />
       <Route path="/blog/reishi-schisandra-daily-tonic-herbs" component={ReishiSchisandraGuide} />
-      <Route path="/product-reviews/magnesium-deficiency-supplement-guide" component={MagnesiumGuide} />
       <Route path="/blog/magnesium-deficiency-supplement-guide" component={MagnesiumGuide} />
-      <Route path="/product-reviews/pumpkin-seed-oil-supplement-stack-benefits" component={PumpkinSeedOilGuide} />
       <Route path="/blog/pumpkin-seed-oil-supplement-stack-benefits" component={PumpkinSeedOilGuide} />
-      <Route path="/product-reviews/omega-3-complete-guide-epa-dha-fish-oil-vs-algae" component={Omega3Guide} />
       <Route path="/blog/omega-3-complete-guide-epa-dha-fish-oil-vs-algae" component={Omega3Guide} />
       <Route path="/blog/cordyceps-cs4-vs-wild-cordyceps-sinensis" component={CordycepsGuide} />
       <Route path="/blog/red-light-therapy-science-benefits-devices" component={RedLightTherapyGuide} />
