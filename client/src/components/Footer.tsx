@@ -1,5 +1,4 @@
 import { Link } from "wouter";
-import logoImg from "@assets/image_1772756046665.png";
 import { Mail } from "lucide-react";
 import { SiReddit } from "react-icons/si";
 
@@ -12,7 +11,7 @@ export default function Footer() {
       <div className="max-w-6xl mx-auto">
         <div className="grid md:grid-cols-4 gap-12 mb-12">
           <div className="md:col-span-2">
-            <img src={logoImg} alt="Thrive Tools" className="h-12 w-auto object-contain mb-4" />
+            <img src="/images/logo-footer.webp" alt="Thrive Tools" className="h-12 w-auto object-contain mb-4" loading="lazy" decoding="async" />
             <p className="text-[#3d1a28]/50 text-sm leading-relaxed max-w-xs">
               Your 2.0 starts here.
             </p>

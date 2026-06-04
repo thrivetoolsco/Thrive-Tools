@@ -2,7 +2,7 @@ import PageLayout from "@/components/PageLayout";
 import { Badge } from "@/components/ui/badge";
 import { ExternalLink, FlaskConical, ShieldCheck, Leaf, Zap, AlertTriangle, BookOpen } from "lucide-react";
 
-const heroImg = "/images/microplastics-brain.jpg";
+const heroImgFallback = "/images/microplastics-brain.jpg";
 
 function SectionHeader({ icon, title }: { icon: React.ReactNode; title: string }) {
   return (
@@ -69,13 +69,22 @@ export default function MicroplasticsBrainGuide() {
 
         {/* Hero image */}
         <div className="card-glass rounded-2xl overflow-hidden" data-testid="img-hero-microplastics">
-          <img
-            src={heroImg}
-            alt="Microplastics research — brain model under magnifying glass in laboratory"
-            loading="eager"
-            decoding="async"
-            className="w-full h-auto object-cover"
-          />
+          <picture>
+            <source
+              srcSet="/images/microplastics-brain-600.webp 600w, /images/microplastics-brain.webp 1200w"
+              sizes="(max-width: 640px) 600px, 1200px"
+              type="image/webp"
+            />
+            <img
+              src={heroImgFallback}
+              alt="Microplastics research — brain model under magnifying glass in laboratory"
+              loading="eager"
+              decoding="async"
+              width={1200}
+              height={670}
+              className="w-full h-auto object-cover"
+            />
+          </picture>
         </div>
 
         {/* Intro */}

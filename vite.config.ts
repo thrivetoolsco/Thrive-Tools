@@ -31,6 +31,21 @@ export default defineConfig({
     outDir: path.resolve(import.meta.dirname, "dist/public"),
     emptyOutDir: true,
     target: ["chrome89", "firefox89", "safari14", "edge89"],
+    rollupOptions: {
+      output: {
+        manualChunks(id) {
+          if (id.includes("node_modules/react") || id.includes("node_modules/react-dom") || id.includes("node_modules/scheduler")) {
+            return "vendor-react";
+          }
+          if (id.includes("node_modules/@radix-ui") || id.includes("node_modules/lucide-react") || id.includes("node_modules/react-icons")) {
+            return "vendor-ui";
+          }
+          if (id.includes("node_modules/@tanstack") || id.includes("node_modules/wouter") || id.includes("node_modules/zod") || id.includes("node_modules/react-helmet-async")) {
+            return "vendor-lib";
+          }
+        },
+      },
+    },
   },
   server: {
     fs: {

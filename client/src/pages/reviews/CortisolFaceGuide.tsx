@@ -2,7 +2,7 @@ import PageLayout from "@/components/PageLayout";
 import { Badge } from "@/components/ui/badge";
 import { ExternalLink, Brain, AlertTriangle, ShieldCheck, Zap, BookOpen, Heart } from "lucide-react";
 
-const heroImg = "/images/cortisol-face-guide.jpg";
+const heroImgFallback = "/images/cortisol-face-guide.jpg";
 
 function SectionHeader({ icon, title }: { icon: React.ReactNode; title: string }) {
   return (
@@ -69,13 +69,22 @@ export default function CortisolFaceGuide() {
 
         {/* Hero image */}
         <div className="card-glass rounded-2xl overflow-hidden" data-testid="img-hero-cortisol">
-          <img
-            src={heroImg}
-            alt="Woman walking barefoot in misty forest at golden hour — stress recovery and HPA axis reset"
-            loading="eager"
-            decoding="async"
-            className="w-full h-auto object-cover"
-          />
+          <picture>
+            <source
+              srcSet="/images/cortisol-face-guide-600.webp 600w, /images/cortisol-face-guide.webp 1200w"
+              sizes="(max-width: 640px) 600px, 1200px"
+              type="image/webp"
+            />
+            <img
+              src={heroImgFallback}
+              alt="Woman walking barefoot in misty forest at golden hour — stress recovery and HPA axis reset"
+              loading="eager"
+              decoding="async"
+              width={1200}
+              height={670}
+              className="w-full h-auto object-cover"
+            />
+          </picture>
         </div>
 
         {/* Intro */}
