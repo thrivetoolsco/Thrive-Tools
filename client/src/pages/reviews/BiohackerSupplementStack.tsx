@@ -209,7 +209,7 @@ export default function BiohackerSupplementStack() {
             <p>
               <strong className="text-black/90">Just Thrive</strong> is the standalone probiotic I recommend. Specifically formulated around spore-based strains with published clinical research on survival rates and gut colonization.
             </p>
-            <p><AffilLink href="https://justthrivehealth.com" label="Shop Just Thrive — Use discount code THRIVETOOLS" /></p>
+            <p><AffilLink href="https://justthrivehealth.com/THRIVETOOLS" label="Shop Just Thrive — Use discount code THRIVETOOLS" /></p>
           </div>
 
           <SubHead title="CoQ10" />

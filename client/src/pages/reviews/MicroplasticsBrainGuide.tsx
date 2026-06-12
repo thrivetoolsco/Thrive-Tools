@@ -270,7 +270,7 @@ export default function MicroplasticsBrainGuide() {
                 {
                   action: "Support gut integrity",
                   detail: "The gut microbiome plays a central role in how the body handles plastic exposure. Microplastics disrupt microbial diversity and gut barrier function. Spore-based probiotics — which actually survive digestion and colonize the colon — combined with diverse prebiotic fiber are the evidence-based foundation here.",
-                  link: { href: "https://justthrivehealth.com", label: "Shop Just Thrive Probiotics — Use discount code THRIVETOOLS" },
+                  link: { href: "https://justthrivehealth.com/THRIVETOOLS", label: "Shop Just Thrive Probiotics — Use discount code THRIVETOOLS" },
                 },
                 {
                   action: "Prioritize liver support",
