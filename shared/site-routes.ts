@@ -57,6 +57,17 @@ export const eventRoutes: EventRoute[] = [
 
 export const blogPosts: BlogPost[] = [
   {
+    id: "morning-routine-nervous-system-2026",
+    title: "The Morning Routine That Actually Regulates Your Nervous System (Backed by Science)",
+    excerpt: "Most morning routines are productivity cosplay. This one is built on how your nervous system actually works — circadian light, adenosine clearance, cortisol rhythm, ceremonial cacao, adaptogens, and magnesium. The 8-step sequence that sets the biological architecture for your entire day.",
+    href: "/blog/morning-routine-nervous-system-2026",
+    canonical: "/blog/morning-routine-nervous-system-2026",
+    badge: "Nervous System",
+    badgeColor: "bg-[#c4622d]/15 text-[#8b3a1a] border-[#c4622d]/25",
+    date: "June 12, 2026",
+    lastmod: "2026-06-12",
+  },
+  {
     id: "cortisol-face-hpa-axis-guide-2026",
     title: "Cortisol Face Is a Real Thing — But Not for the Reasons TikTok Says",
     excerpt: "Chronic cortisol dysregulation goes far deeper than a puffy face — it affects your brain, metabolism, sleep, immune system, and muscle mass. Eden Laraki breaks down what the HPA axis actually does and the evidence-based protocol that actually works.",
