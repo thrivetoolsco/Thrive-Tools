@@ -409,7 +409,7 @@ export default function Home() {
               <article className="group flex flex-col h-full rounded-2xl overflow-hidden bg-white/70 shadow-sm hover:shadow-md transition-all duration-300 cursor-pointer border border-[#c4622d]/10">
                 <div className="relative overflow-hidden aspect-[4/3]">
                   <img
-                    src="/images/blog/probiotic-gut-health.jpg"
+                    src="/images/blog/probiotic-gut-health.webp"
                     alt="Probiotic gut health bacteria"
                     loading="lazy"
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
@@ -438,7 +438,7 @@ export default function Home() {
               <article className="group flex flex-col h-full rounded-2xl overflow-hidden bg-white/70 shadow-sm hover:shadow-md transition-all duration-300 cursor-pointer border border-[#c4622d]/10">
                 <div className="relative overflow-hidden aspect-[4/3]">
                   <img
-                    src="/images/blog/biohacking-beginners.jpg"
+                    src="/images/blog/biohacking-beginners.webp"
                     alt="Biohacking supplements and technology"
                     loading="lazy"
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"

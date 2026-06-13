@@ -22,10 +22,36 @@
     <link rel="canonical" href="https://thrivetools.co/" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="icon" type="image/png" href="/favicon.png" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://img.youtube.com">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Playfair+Display:wght@400;700&family=Lora:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Preload above-the-fold hero image so it starts fetching before React renders -->
+    <link rel="preload" as="image" href="/images/eden-portrait.webp" type="image/webp" />
+
+    <!-- DNS + TCP warmup for external origins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://img.youtube.com" />
+
+    <!-- Critical inline styles: background colour + system-font fallbacks so the
+         page renders correctly before web fonts arrive (no layout shift) -->
+    <style>
+      :root {
+        --font-sans: Montserrat, ui-sans-serif, system-ui, -apple-system, sans-serif;
+        --font-serif: "Playfair Display", Georgia, "Times New Roman", serif;
+        --font-mono: Menlo, monospace;
+      }
+      body { margin: 0; background: #fdf6eb; }
+    </style>
+
+    <!-- Load Google Fonts asynchronously via JS so it never blocks rendering.
+         Falls back gracefully to system fonts until the stylesheet arrives. -->
+    <script>
+      (function() {
+        var l = document.createElement('link');
+        l.rel = 'stylesheet';
+        l.href = 'https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Playfair+Display:wght@400;700&family=Lora:wght@400;700&display=swap';
+        document.head.appendChild(l);
+      })();
+    </script>
   </head>
   <body>
     <div id="root"></div>
