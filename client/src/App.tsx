@@ -5,8 +5,7 @@ import { QueryClientProvider } from "@tanstack/react-query";
 import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import NotFound from "@/pages/not-found";
-
-const Home = lazy(() => import("@/pages/Home"));
+import Home from "@/pages/Home";
 const Discounts = lazy(() => import("@/pages/Discounts"));
 const About = lazy(() => import("@/pages/About"));
 const QuantumHealing = lazy(() => import("@/pages/QuantumHealing"));

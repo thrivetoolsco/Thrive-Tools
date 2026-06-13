@@ -6,9 +6,9 @@ import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import SeoHead from "@/components/SeoHead";
 import LiteYouTube from "@/components/LiteYouTube";
-import edenHatPhoto from "@assets/Screenshot_20241217_123326_Instagram~2_1773457901515.jpg";
-import edenPortrait from "@assets/IMG-20251218-WA0018_1773456075795.jpg";
 
+const edenPortrait = "/images/eden-portrait.webp";
+const edenHatPhoto = "/images/eden-hat.webp";
 const edenPhoto2 = "/images/eden-photo-2.webp";
 
 const testimonials = [

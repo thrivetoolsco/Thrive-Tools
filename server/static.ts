@@ -38,7 +38,21 @@ export function serveStatic(app: Express) {
     );
   }
 
-  app.use(express.static(distPath));
+  app.use(
+    express.static(distPath, {
+      setHeaders(res, filePath) {
+        if (/\.(js|css|woff2?|webp|jpg|jpeg|png|svg|ico|gif)$/.test(filePath)) {
+          if (/assets\//.test(filePath)) {
+            res.setHeader("Cache-Control", "public, max-age=31536000, immutable");
+          } else {
+            res.setHeader("Cache-Control", "public, max-age=86400");
+          }
+        } else if (filePath.endsWith(".html")) {
+          res.setHeader("Cache-Control", "no-cache");
+        }
+      },
+    })
+  );
 
   const ssrAvailable = fs.existsSync(ssrEntryPath) && fs.existsSync(indexHtmlPath);
 
