@@ -5,9 +5,11 @@ import { ArrowRight, ChevronDown } from "lucide-react";
 import Navigation from "@/components/Navigation";
 import Footer from "@/components/Footer";
 import SeoHead from "@/components/SeoHead";
-import edenPhoto2 from "@assets/Generate_a_new_image_so_that_the_resolution_looks__delpmaspu~4_1772975930027.png";
+import LiteYouTube from "@/components/LiteYouTube";
 import edenHatPhoto from "@assets/Screenshot_20241217_123326_Instagram~2_1773457901515.jpg";
 import edenPortrait from "@assets/IMG-20251218-WA0018_1773456075795.jpg";
+
+const edenPhoto2 = "/images/eden-photo-2.webp";
 
 const testimonials = [
   { name: "Client Testimonial 1", videoId: "QNrE8TVVCf8", isShort: true },
@@ -346,17 +348,12 @@ export default function Home() {
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5 sm:gap-6 mb-8">
             {visibleTestimonials.map((t, i) => (
               <div key={i} className="card-glass rounded-xl overflow-hidden" data-testid={`card-testimonial-${i}`}>
-                <div className={`relative w-full ${t.isShort ? "aspect-[9/16] max-h-[400px]" : "aspect-video"}`}>
-                  <iframe
-                    src={`https://www.youtube.com/embed/${t.videoId}`}
-                    title={t.name}
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowFullScreen
-                    loading="lazy"
-                    className="absolute inset-0 w-full h-full"
-                    data-testid={`video-testimonial-${i}`}
-                  />
-                </div>
+                <LiteYouTube
+                  videoId={t.videoId}
+                  title={t.name}
+                  isShort={t.isShort}
+                  testId={`video-testimonial-${i}`}
+                />
                 <div className="p-4">
                   <p className="text-[#3d1a28]/70 text-sm font-medium" data-testid={`text-testimonial-name-${i}`}>{t.name}</p>
                 </div>
