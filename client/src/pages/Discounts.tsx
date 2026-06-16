@@ -23,7 +23,7 @@ import ShareButton from "@/components/ShareButton";
 interface DiscountItem {
   name: string;
   description: string;
-  code: string;
+  code?: string;
   url: string;
   blogHref?: string;
 }
@@ -104,6 +104,12 @@ const vitaminsSupplements: DiscountItem[] = [
     code: "THRIVETOOLS-10",
     url: "http://www.styriangold.ca/shop/?",
     blogHref: "/product-reviews/pumpkin-seed-oil-supplement-stack-benefits",
+  },
+  {
+    name: "The Blessed Seed",
+    description: "Cold-pressed, undiluted black seed oil from one of the most researched medicinal plants in existence. Immune support, inflammation, allergies, and gut health backed by centuries of traditional use.",
+    url: "https://theblessedseed.de/ref/370/",
+    blogHref: "/blog/black-seed-oil-benefits-nigella-sativa-guide",
   },
   {
     name: "Zentein Nutrition",
@@ -419,7 +425,7 @@ function DiscountCard({ item, index }: { item: DiscountItem; index: number }) {
         </p>
       </div>
       <div className="flex flex-wrap items-center justify-between gap-3 pt-3 border-t border-[#3d1a28]/10">
-        <CopyableCode code={item.code} />
+        {item.code && <CopyableCode code={item.code} />}
         <a
           href={item.url}
           target="_blank"
