@@ -40,6 +40,7 @@ export function serveStatic(app: Express) {
 
   app.use(
     express.static(distPath, {
+      index: false,
       setHeaders(res, filePath) {
         if (/\.(js|css|woff2?|webp|jpg|jpeg|png|svg|ico|gif)$/.test(filePath)) {
           if (/assets\//.test(filePath)) {
