@@ -57,6 +57,17 @@ export const eventRoutes: EventRoute[] = [
 
 export const blogPosts: BlogPost[] = [
   {
+    id: "black-seed-oil-benefits-nigella-sativa-guide",
+    title: "Black Seed Oil Benefits: What 2,000 Years of Use and Modern Science Both Agree On",
+    excerpt: "Black seed (Nigella sativa) has over 1,000 published studies behind it. The active compound thymoquinone is a master regulator of the NF-κB inflammatory pathway, explaining its documented effects on allergies, immunity, metabolic health, gut function, cardiovascular protection, and skin health. This is the honest breakdown of the science.",
+    href: "/blog/black-seed-oil-benefits-nigella-sativa-guide",
+    canonical: "/blog/black-seed-oil-benefits-nigella-sativa-guide",
+    badge: "Science Deep Dive",
+    badgeColor: "bg-[#c4622d]/15 text-[#8b3a1a] border-[#c4622d]/25",
+    date: "June 13, 2026",
+    lastmod: "2026-06-13",
+  },
+  {
     id: "morning-routine-nervous-system-2026",
     title: "The Morning Routine That Actually Regulates Your Nervous System (Backed by Science)",
     excerpt: "Most morning routines are productivity cosplay. This one is built on how your nervous system actually works — circadian light, adenosine clearance, cortisol rhythm, ceremonial cacao, adaptogens, and magnesium. The 8-step sequence that sets the biological architecture for your entire day.",

@@ -61,6 +61,7 @@ const BiohackerSupplementStack = lazy(() => import("@/pages/reviews/BiohackerSup
 const MicroplasticsBrainGuide = lazy(() => import("@/pages/reviews/MicroplasticsBrainGuide"));
 const CortisolFaceGuide = lazy(() => import("@/pages/reviews/CortisolFaceGuide"));
 const MorningRoutineGuide = lazy(() => import("@/pages/reviews/MorningRoutineGuide"));
+const BlackSeedOilGuide = lazy(() => import("@/pages/reviews/BlackSeedOilGuide"));
 
 function ScrollToTop() {
   const [location] = useLocation();
@@ -131,6 +132,7 @@ function Router() {
         <Route path="/blog/microplastics-brain-protocol-2026" component={MicroplasticsBrainGuide} />
         <Route path="/blog/cortisol-face-hpa-axis-guide-2026" component={CortisolFaceGuide} />
         <Route path="/blog/morning-routine-nervous-system-2026" component={MorningRoutineGuide} />
+        <Route path="/blog/black-seed-oil-benefits-nigella-sativa-guide" component={BlackSeedOilGuide} />
         <Route component={NotFound} />
       </Switch>
     </Suspense>
