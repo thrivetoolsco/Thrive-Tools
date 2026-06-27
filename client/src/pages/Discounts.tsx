@@ -280,6 +280,11 @@ const healthTech: DiscountItem[] = [
     url: "https://choosemuse.com/thrive25",
     blogHref: "/blog/muse-headband-review-eeg-neurofeedback",
   },
+  {
+    name: "Aires Tech",
+    description: "Proven EMF Protection",
+    url: "https://airestech.com/thrive25",
+  },
 ];
 
 const nontoxicCookware: DiscountItem[] = [
