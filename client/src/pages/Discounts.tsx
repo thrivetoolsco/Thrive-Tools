@@ -283,6 +283,7 @@ const healthTech: DiscountItem[] = [
   {
     name: "Aires Tech",
     description: "Proven EMF Protection",
+    code: "THRIVE25",
     url: "https://airestech.com/thrive25",
   },
 ];
