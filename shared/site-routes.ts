@@ -57,6 +57,17 @@ export const eventRoutes: EventRoute[] = [
 
 export const blogPosts: BlogPost[] = [
   {
+    id: "spirulina-red-light-therapy-photodynamic-action",
+    title: "Should You Take Spirulina Before Red Light Therapy? The Science of Chlorophyll Photodynamic Action",
+    excerpt: "Spirulina's chlorophyll absorbs at 660–670nm and phycocyanin at 610–650nm — precisely the wavelengths used in clinical PBM panels. Here is the science behind stacking natural photosensitizers with red light therapy, and the exact pre-session protocol to amplify your mitochondrial response.",
+    href: "/blog/spirulina-red-light-therapy-photodynamic-action",
+    canonical: "/blog/spirulina-red-light-therapy-photodynamic-action",
+    badge: "Red Light Therapy",
+    badgeColor: "bg-[#c4622d]/15 text-[#8b3a1a] border-[#c4622d]/25",
+    date: "June 16, 2026",
+    lastmod: "2026-06-16",
+  },
+  {
     id: "he-shou-wu-ashwagandha-cycling-guide",
     title: "How to Cycle He Shou Wu and Ashwagandha Without Liver Fatigue: A Clinical Stack Guide",
     excerpt: "Stacking He Shou Wu and Ashwagandha is incredibly potent for the nervous system, endocrine balance, and longevity — but both herbs compete for the same CYP450 liver enzymes. Here is the structured cycling protocol that prevents hepatic slowdown and keeps the stack effective long-term.",
