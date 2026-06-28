@@ -64,8 +64,8 @@ export const blogPosts: BlogPost[] = [
     canonical: "/blog/spirulina-red-light-therapy-photodynamic-action",
     badge: "Red Light Therapy",
     badgeColor: "bg-[#c4622d]/15 text-[#8b3a1a] border-[#c4622d]/25",
-    date: "June 16, 2026",
-    lastmod: "2026-06-16",
+    date: "June 28, 2026",
+    lastmod: "2026-06-28",
   },
   {
     id: "he-shou-wu-ashwagandha-cycling-guide",

@@ -77,7 +77,7 @@ export default function SpirulinarRedLightGuide() {
         description: "Spirulina's chlorophyll and phycocyanin absorb directly in the red spectrum used by PBM panels. Here is the science behind using natural photosensitizers to amplify your mitochondrial response to light — and the exact protocol to do it safely.",
         canonical: "https://thrivetools.co/blog/spirulina-red-light-therapy-photodynamic-action",
         ogType: "article",
-        datePublished: "2026-06-16",
+        datePublished: "2026-06-28",
       }}
     >
       <div className="max-w-3xl mx-auto px-4 sm:px-6 py-10 space-y-12">
@@ -86,7 +86,7 @@ export default function SpirulinarRedLightGuide() {
           <Badge className="bg-[#c4622d]/15 text-[#8b3a1a] border-[#c4622d]/25 text-xs font-semibold px-3 py-1 rounded-full">
             Red Light Therapy
           </Badge>
-          <span className="text-black/40 text-sm">June 16, 2026</span>
+          <span className="text-black/40 text-sm">June 28, 2026</span>
         </div>
 
         <p className="text-lg text-black/75 leading-relaxed">
