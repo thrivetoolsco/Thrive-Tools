@@ -62,6 +62,7 @@ const MicroplasticsBrainGuide = lazy(() => import("@/pages/reviews/Microplastics
 const CortisolFaceGuide = lazy(() => import("@/pages/reviews/CortisolFaceGuide"));
 const MorningRoutineGuide = lazy(() => import("@/pages/reviews/MorningRoutineGuide"));
 const BlackSeedOilGuide = lazy(() => import("@/pages/reviews/BlackSeedOilGuide"));
+const HeShouWuAshwagandhaGuide = lazy(() => import("@/pages/reviews/HeShouWuAshwagandhaGuide"));
 
 function ScrollToTop() {
   const [location] = useLocation();
@@ -133,6 +134,7 @@ function Router() {
         <Route path="/blog/cortisol-face-hpa-axis-guide-2026" component={CortisolFaceGuide} />
         <Route path="/blog/morning-routine-nervous-system-2026" component={MorningRoutineGuide} />
         <Route path="/blog/black-seed-oil-benefits-nigella-sativa-guide" component={BlackSeedOilGuide} />
+        <Route path="/blog/he-shou-wu-ashwagandha-cycling-guide" component={HeShouWuAshwagandhaGuide} />
         <Route component={NotFound} />
       </Switch>
     </Suspense>

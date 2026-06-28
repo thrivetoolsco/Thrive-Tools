@@ -57,6 +57,17 @@ export const eventRoutes: EventRoute[] = [
 
 export const blogPosts: BlogPost[] = [
   {
+    id: "he-shou-wu-ashwagandha-cycling-guide",
+    title: "How to Cycle He Shou Wu and Ashwagandha Without Liver Fatigue: A Clinical Stack Guide",
+    excerpt: "Stacking He Shou Wu and Ashwagandha is incredibly potent for the nervous system, endocrine balance, and longevity — but both herbs compete for the same CYP450 liver enzymes. Here is the structured cycling protocol that prevents hepatic slowdown and keeps the stack effective long-term.",
+    href: "/blog/he-shou-wu-ashwagandha-cycling-guide",
+    canonical: "/blog/he-shou-wu-ashwagandha-cycling-guide",
+    badge: "Adaptogen Stack",
+    badgeColor: "bg-[#c4622d]/15 text-[#8b3a1a] border-[#c4622d]/25",
+    date: "June 16, 2026",
+    lastmod: "2026-06-16",
+  },
+  {
     id: "black-seed-oil-benefits-nigella-sativa-guide",
     title: "Black Seed Oil Benefits: What 2,000 Years of Use and Modern Science Both Agree On",
     excerpt: "Black seed (Nigella sativa) has over 1,000 published studies behind it. The active compound thymoquinone is a master regulator of the NF-κB inflammatory pathway, explaining its documented effects on allergies, immunity, metabolic health, gut function, cardiovascular protection, and skin health. This is the honest breakdown of the science.",
