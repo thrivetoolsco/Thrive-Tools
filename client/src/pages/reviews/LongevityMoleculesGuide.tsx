@@ -192,7 +192,7 @@ export default function LongevityMoleculesGuide() {
           <SectionHeader icon={<Zap className="w-6 h-6" />} title="Sourcing an All-in-One Solution: IM8 Health" />
           <p className="text-black/70 leading-relaxed mb-6">
             If you want to skip the headache of buying individual ingredients and verifying a dozen different CoAs, the{" "}
-            <AffilLink href="https://im8health.com/?ref=thrivetools&discount=THRIVE10" label="IM8 Daily Ultimate Longevity Drink" />{" "}
+            <AffilLink href="https://www.im8health.com/THRIVE10" label="IM8 Daily Ultimate Longevity Drink" />{" "}
             is worth a look. Co-founded by David Beckham and engineered alongside clinical experts from the Mayo Clinic and NASA, IM8 consolidated the exact benchmarks outlined above into a single daily drink via a 5-Complex System:
           </p>
 
@@ -247,7 +247,7 @@ export default function LongevityMoleculesGuide() {
               </span>
             </div>
             <a
-              href="https://im8health.com/?ref=thrivetools&discount=THRIVE10"
+              href="https://www.im8health.com/THRIVE10"
               target="_blank"
               rel="noopener noreferrer"
               data-testid="link-im8-cta"
@@ -257,7 +257,7 @@ export default function LongevityMoleculesGuide() {
             </a>
           </div>
           <p className="text-xs text-black/40">
-            Code applies at checkout on im8health.com. Clean up your supplement clutter and hit your daily purity benchmarks.
+            Code applies at checkout on www.im8health.com/THRIVE10. Clean up your supplement clutter and hit your daily purity benchmarks.
           </p>
         </div>
 

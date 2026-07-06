@@ -173,7 +173,7 @@ export default function BiohackerSupplementStack() {
             <p>
               This is one of the reasons I moved to <strong className="text-black/90">IM8 Daily Ultimate Essentials PRO</strong> as my daily foundation. The PRO formula uses methylcobalamin at 200mcg, P5P for B6, and Quatrefolic for folate — alongside 90+ other ingredients including CoQ10, spore-based probiotics, electrolytes, MSM, amino acids, saffron extract, and a complete greens complex. No proprietary blends. Full label transparency.
             </p>
-            <p><AffilLink href="https://im8health.com/thrive10" label="Shop IM8 Daily Ultimate Essentials PRO — Use discount code THRIVE10" /></p>
+            <p><AffilLink href="https://www.im8health.com/THRIVE10" label="Shop IM8 Daily Ultimate Essentials PRO — Use discount code THRIVE10" /></p>
           </div>
         </section>
 
@@ -223,7 +223,7 @@ export default function BiohackerSupplementStack() {
             <p>
               CoQ10 is one of the reasons I value IM8's formula — 100mg is a clinically meaningful dose, and most all-in-one products either skip it or include 10–20mg.
             </p>
-            <p><AffilLink href="https://im8health.com/thrive10" label="Shop IM8 Daily Ultimate Essentials PRO — Use discount code THRIVE10" /></p>
+            <p><AffilLink href="https://www.im8health.com/THRIVE10" label="Shop IM8 Daily Ultimate Essentials PRO — Use discount code THRIVE10" /></p>
           </div>
 
           <SubHead title="Adaptogens: The Tonic Herb Protocol" />
@@ -269,7 +269,7 @@ export default function BiohackerSupplementStack() {
             <p>
               <strong className="text-black/90">IM8 Daily Ultimate Longevity</strong> contains 300mg pharmaceutical-grade NMN alongside 10mg PQQ in its NMN NAD+ Energy Booster complex. It also includes a triple senolytic complex (trans-resveratrol 250mg, quercetin 250mg, fisetin 100mg), dihydroberberine, spermidine for autophagy activation, and glycine and taurine at clinical doses. The most complete longevity formula I've found.
             </p>
-            <p><AffilLink href="https://im8health.com/thrive10" label="Shop IM8 Daily Ultimate Longevity — Use discount code THRIVE10" /></p>
+            <p><AffilLink href="https://www.im8health.com/THRIVE10" label="Shop IM8 Daily Ultimate Longevity — Use discount code THRIVE10" /></p>
             <p className="text-xs text-black/40">Standalone NMN dose: 500–1000mg daily, taken in the morning. Sublingual delivery may improve absorption.</p>
           </div>
 

@@ -33,7 +33,7 @@ const vitaminsSupplements: DiscountItem[] = [
     name: "IM8",
     description: "The most complete supplement on the market. Vitamins, probiotics, adaptogens & CoQ10 in one scoop.",
     code: "THRIVE10",
-    url: "https://im8health.com/",
+    url: "https://www.im8health.com/THRIVE10",
     blogHref: "/product-reviews/im8-health-review",
   },
   {

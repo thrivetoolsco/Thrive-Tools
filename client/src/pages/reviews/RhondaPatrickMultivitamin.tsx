@@ -186,7 +186,7 @@ export default function RhondaPatrickMultivitamin() {
 
         <div className="text-center pt-4">
           <Button asChild size="lg" className="btn-gradient-rose text-white border-0 rounded-full px-6 sm:px-8 py-4 text-sm tracking-widest uppercase font-semibold h-auto leading-relaxed">
-            <a href="https://im8health.com" target="_blank" rel="noopener noreferrer" data-testid="link-im8-shop" className="inline-flex items-center justify-center gap-2 flex-wrap">
+            <a href="https://www.im8health.com/THRIVE10" target="_blank" rel="noopener noreferrer" data-testid="link-im8-shop" className="inline-flex items-center justify-center gap-2 flex-wrap">
               Shop IM8 Health. Use Code THRIVE10 <ExternalLink className="w-4 h-4 flex-shrink-0" />
             </a>
           </Button>

@@ -319,7 +319,7 @@ export default function CortisolFaceGuide() {
               <div className="card-glass rounded-xl p-5" data-testid="blood-sugar-im8">
                 <p className="font-semibold text-black/90 text-sm mb-1">IM8 Daily Ultimate Essentials PRO</p>
                 <p className="text-black/65 text-sm leading-relaxed mb-2">Includes chromium alongside its adaptogen complex — chromium supports insulin sensitivity and blood glucose regulation, with downstream benefits for cortisol rhythm normalization. One of the less-discussed but meaningful inclusions in the formula.</p>
-                <AffilLink href="https://im8health.com/thrive10" label="Shop IM8 Daily Ultimate Essentials PRO — Use discount code THRIVE10" />
+                <AffilLink href="https://www.im8health.com/THRIVE10" label="Shop IM8 Daily Ultimate Essentials PRO — Use discount code THRIVE10" />
               </div>
             </div>
           </div>

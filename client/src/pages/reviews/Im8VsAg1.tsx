@@ -213,7 +213,7 @@ export default function Im8VsAg1() {
             </p>
             <div className="card-glass rounded-xl px-5 py-4 border-l-4" style={{ borderLeftColor: "#c4622d" }}>
               <p className="text-black/70 font-semibold">Use discount code THRIVE10 for a discount on IM8.</p>
-              <a href="https://im8health.com/thrive10" target="_blank" rel="noopener noreferrer" className="text-[#c4622d] hover:text-[#8b3a1a] transition-colors text-sm font-medium underline" data-testid="link-im8-price-section">
+              <a href="https://www.im8health.com/THRIVE10" target="_blank" rel="noopener noreferrer" className="text-[#c4622d] hover:text-[#8b3a1a] transition-colors text-sm font-medium underline" data-testid="link-im8-price-section">
                 👉 Shop IM8 here
               </a>
             </div>
@@ -284,7 +284,7 @@ export default function Im8VsAg1() {
             </p>
             <div className="card-glass rounded-xl px-5 py-4 border-l-4" style={{ borderLeftColor: "#c4622d" }}>
               <p className="text-black/70 font-semibold">Use discount code THRIVE10 for a discount on IM8 Daily Ultimate Essentials PRO.</p>
-              <a href="https://im8health.com/thrive10" target="_blank" rel="noopener noreferrer" className="text-[#c4622d] hover:text-[#8b3a1a] transition-colors text-sm font-medium underline" data-testid="link-im8-verdict-section">
+              <a href="https://www.im8health.com/THRIVE10" target="_blank" rel="noopener noreferrer" className="text-[#c4622d] hover:text-[#8b3a1a] transition-colors text-sm font-medium underline" data-testid="link-im8-verdict-section">
                 👉 Shop IM8 here
               </a>
             </div>
@@ -341,7 +341,7 @@ export default function Im8VsAg1() {
         {/* CTA button */}
         <div className="text-center pt-4">
           <Button asChild size="lg" className="btn-gradient-rose text-white border-0 rounded-full px-6 sm:px-8 py-4 text-sm tracking-widest uppercase font-semibold h-auto leading-relaxed">
-            <a href="https://im8health.com/thrive10" target="_blank" rel="noopener noreferrer" data-testid="link-im8-shop" className="inline-flex items-center justify-center gap-2 flex-wrap">
+            <a href="https://www.im8health.com/THRIVE10" target="_blank" rel="noopener noreferrer" data-testid="link-im8-shop" className="inline-flex items-center justify-center gap-2 flex-wrap">
               Try IM8 — Use Code THRIVE10 <ExternalLink className="w-4 h-4 flex-shrink-0" />
             </a>
           </Button>
