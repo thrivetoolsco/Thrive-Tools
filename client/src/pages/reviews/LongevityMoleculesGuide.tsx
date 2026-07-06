@@ -112,7 +112,7 @@ export default function LongevityMoleculesGuide() {
         description: "The longevity supplement market is flooded with under-dosed, white-labeled powders. Here are the exact purity benchmarks, active forms, and clinical dose targets for NMN, Trans-Resveratrol, and Spermidine so you can audit your own stack.",
         canonical: "https://thrivetools.co/blog/longevity-molecules-nmn-resveratrol-spermidine-guide",
         ogType: "article",
-        datePublished: "2026-06-28",
+        datePublished: "2026-07-06",
       }}
     >
       <div className="max-w-3xl mx-auto px-4 sm:px-6 py-10 space-y-12">
@@ -121,7 +121,7 @@ export default function LongevityMoleculesGuide() {
           <Badge className="bg-[#c4622d]/15 text-[#8b3a1a] border-[#c4622d]/25 text-xs font-semibold px-3 py-1 rounded-full">
             Longevity
           </Badge>
-          <span className="text-black/40 text-sm">June 28, 2026</span>
+          <span className="text-black/40 text-sm">July 6, 2026</span>
         </div>
 
         <p className="text-lg text-black/75 leading-relaxed">

@@ -64,8 +64,8 @@ export const blogPosts: BlogPost[] = [
     canonical: "/blog/longevity-molecules-nmn-resveratrol-spermidine-guide",
     badge: "Longevity",
     badgeColor: "bg-[#c4622d]/15 text-[#8b3a1a] border-[#c4622d]/25",
-    date: "June 28, 2026",
-    lastmod: "2026-06-28",
+    date: "July 6, 2026",
+    lastmod: "2026-07-06",
   },
   {
     id: "spirulina-red-light-therapy-photodynamic-action",
