@@ -57,6 +57,17 @@ export const eventRoutes: EventRoute[] = [
 
 export const blogPosts: BlogPost[] = [
   {
+    id: "longevity-molecules-nmn-resveratrol-spermidine-guide",
+    title: "The Consumer Guide to Longevity Molecules: Purity Benchmarks for NMN, Resveratrol, and Spermidine",
+    excerpt: "The longevity supplement market is flooded with white-labeled, under-dosed powders. Here are the exact purity benchmarks, active forms, and clinical dose targets for NMN, Trans-Resveratrol, and Spermidine — so you can audit your stack and stop paying premium prices for unstandardized ingredients.",
+    href: "/blog/longevity-molecules-nmn-resveratrol-spermidine-guide",
+    canonical: "/blog/longevity-molecules-nmn-resveratrol-spermidine-guide",
+    badge: "Longevity",
+    badgeColor: "bg-[#c4622d]/15 text-[#8b3a1a] border-[#c4622d]/25",
+    date: "June 28, 2026",
+    lastmod: "2026-06-28",
+  },
+  {
     id: "spirulina-red-light-therapy-photodynamic-action",
     title: "Should You Take Spirulina Before Red Light Therapy? The Science of Chlorophyll Photodynamic Action",
     excerpt: "Spirulina's chlorophyll absorbs at 660–670nm and phycocyanin at 610–650nm — precisely the wavelengths used in clinical PBM panels. Here is the science behind stacking natural photosensitizers with red light therapy, and the exact pre-session protocol to amplify your mitochondrial response.",

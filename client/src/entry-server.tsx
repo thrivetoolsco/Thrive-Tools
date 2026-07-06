@@ -67,6 +67,7 @@ import MorningRoutineGuide from "@/pages/reviews/MorningRoutineGuide";
 import BlackSeedOilGuide from "@/pages/reviews/BlackSeedOilGuide";
 import HeShouWuAshwagandhaGuide from "@/pages/reviews/HeShouWuAshwagandhaGuide";
 import SpirulinarRedLightGuide from "@/pages/reviews/SpirulinarRedLightGuide";
+import LongevityMoleculesGuide from "@/pages/reviews/LongevityMoleculesGuide";
 
 export const SSR_ROUTE_COMPONENTS: Record<string, ComponentType> = {
   "/": Home,
@@ -133,6 +134,7 @@ export const SSR_ROUTE_COMPONENTS: Record<string, ComponentType> = {
   "/blog/black-seed-oil-benefits-nigella-sativa-guide": BlackSeedOilGuide,
   "/blog/he-shou-wu-ashwagandha-cycling-guide": HeShouWuAshwagandhaGuide,
   "/blog/spirulina-red-light-therapy-photodynamic-action": SpirulinarRedLightGuide,
+  "/blog/longevity-molecules-nmn-resveratrol-spermidine-guide": LongevityMoleculesGuide,
 
   "/blog/rhonda-patrick-multivitamin": RhondaPatrickMultivitamin,
   "/blog/biohacking-supplements-2026": BiohackingSupplements2026,
