@@ -57,6 +57,17 @@ export const eventRoutes: EventRoute[] = [
 
 export const blogPosts: BlogPost[] = [
   {
+    id: "creatine-for-women-guide",
+    title: "Creatine for Women: What the Science Says About Strength, Bone Health, Hormones and Brain Function",
+    excerpt: "Creatine isn't just for men. The emerging research shows it's one of the most broadly beneficial supplements for women across every decade — with particular relevance for brain function, bone density, mood, and hormonal transitions. Here's the full picture, including dosing, safety, and what to look for.",
+    href: "/blog/creatine-for-women-guide",
+    canonical: "/blog/creatine-for-women-guide",
+    badge: "Women's Health",
+    badgeColor: "bg-[#c4622d]/15 text-[#8b3a1a] border-[#c4622d]/25",
+    date: "July 6, 2026",
+    lastmod: "2026-07-06",
+  },
+  {
     id: "longevity-molecules-nmn-resveratrol-spermidine-guide",
     title: "The Consumer Guide to Longevity Molecules: Purity Benchmarks for NMN, Resveratrol, and Spermidine",
     excerpt: "The longevity supplement market is flooded with white-labeled, under-dosed powders. Here are the exact purity benchmarks, active forms, and clinical dose targets for NMN, Trans-Resveratrol, and Spermidine — so you can audit your stack and stop paying premium prices for unstandardized ingredients.",

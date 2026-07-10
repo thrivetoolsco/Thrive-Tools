@@ -65,6 +65,7 @@ const BlackSeedOilGuide = lazy(() => import("@/pages/reviews/BlackSeedOilGuide")
 const HeShouWuAshwagandhaGuide = lazy(() => import("@/pages/reviews/HeShouWuAshwagandhaGuide"));
 const SpirulinarRedLightGuide = lazy(() => import("@/pages/reviews/SpirulinarRedLightGuide"));
 const LongevityMoleculesGuide = lazy(() => import("@/pages/reviews/LongevityMoleculesGuide"));
+const CreatineForWomenGuide = lazy(() => import("@/pages/reviews/CreatineForWomenGuide"));
 
 function ScrollToTop() {
   const [location] = useLocation();
@@ -139,6 +140,7 @@ function Router() {
         <Route path="/blog/he-shou-wu-ashwagandha-cycling-guide" component={HeShouWuAshwagandhaGuide} />
         <Route path="/blog/spirulina-red-light-therapy-photodynamic-action" component={SpirulinarRedLightGuide} />
         <Route path="/blog/longevity-molecules-nmn-resveratrol-spermidine-guide" component={LongevityMoleculesGuide} />
+        <Route path="/blog/creatine-for-women-guide" component={CreatineForWomenGuide} />
         <Route component={NotFound} />
       </Switch>
     </Suspense>
