@@ -57,6 +57,17 @@ export const eventRoutes: EventRoute[] = [
 
 export const blogPosts: BlogPost[] = [
   {
+    id: "spermidine-longevity-autophagy-guide",
+    title: "Spermidine: The Longevity Compound Hidden in Wheat Germ That Scientists Are Getting Excited About",
+    excerpt: "Spermidine is one of the most mechanistically credible longevity compounds in serious research — driving autophagy, mediating fasting benefits, and showing compelling cardiovascular and cognitive signals. A 2024 Nature Cell Biology landmark study revealed it's central to how intermittent fasting actually works.",
+    href: "/blog/spermidine-longevity-autophagy-guide",
+    canonical: "/blog/spermidine-longevity-autophagy-guide",
+    badge: "Longevity",
+    badgeColor: "bg-[#c4622d]/15 text-[#8b3a1a] border-[#c4622d]/25",
+    date: "July 6, 2026",
+    lastmod: "2026-07-06",
+  },
+  {
     id: "creatine-for-women-guide",
     title: "Creatine for Women: What the Science Says About Strength, Bone Health, Hormones and Brain Function",
     excerpt: "Creatine isn't just for men. The emerging research shows it's one of the most broadly beneficial supplements for women across every decade — with particular relevance for brain function, bone density, mood, and hormonal transitions. Here's the full picture, including dosing, safety, and what to look for.",

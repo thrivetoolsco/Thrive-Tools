@@ -66,6 +66,7 @@ const HeShouWuAshwagandhaGuide = lazy(() => import("@/pages/reviews/HeShouWuAshw
 const SpirulinarRedLightGuide = lazy(() => import("@/pages/reviews/SpirulinarRedLightGuide"));
 const LongevityMoleculesGuide = lazy(() => import("@/pages/reviews/LongevityMoleculesGuide"));
 const CreatineForWomenGuide = lazy(() => import("@/pages/reviews/CreatineForWomenGuide"));
+const SpermidineGuide = lazy(() => import("@/pages/reviews/SpermidineGuide"));
 
 function ScrollToTop() {
   const [location] = useLocation();
@@ -141,6 +142,7 @@ function Router() {
         <Route path="/blog/spirulina-red-light-therapy-photodynamic-action" component={SpirulinarRedLightGuide} />
         <Route path="/blog/longevity-molecules-nmn-resveratrol-spermidine-guide" component={LongevityMoleculesGuide} />
         <Route path="/blog/creatine-for-women-guide" component={CreatineForWomenGuide} />
+        <Route path="/blog/spermidine-longevity-autophagy-guide" component={SpermidineGuide} />
         <Route component={NotFound} />
       </Switch>
     </Suspense>

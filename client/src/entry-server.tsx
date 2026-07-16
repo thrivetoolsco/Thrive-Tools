@@ -69,6 +69,7 @@ import HeShouWuAshwagandhaGuide from "@/pages/reviews/HeShouWuAshwagandhaGuide";
 import SpirulinarRedLightGuide from "@/pages/reviews/SpirulinarRedLightGuide";
 import LongevityMoleculesGuide from "@/pages/reviews/LongevityMoleculesGuide";
 import CreatineForWomenGuide from "@/pages/reviews/CreatineForWomenGuide";
+import SpermidineGuide from "@/pages/reviews/SpermidineGuide";
 
 export const SSR_ROUTE_COMPONENTS: Record<string, ComponentType> = {
   "/": Home,
@@ -137,6 +138,7 @@ export const SSR_ROUTE_COMPONENTS: Record<string, ComponentType> = {
   "/blog/spirulina-red-light-therapy-photodynamic-action": SpirulinarRedLightGuide,
   "/blog/longevity-molecules-nmn-resveratrol-spermidine-guide": LongevityMoleculesGuide,
   "/blog/creatine-for-women-guide": CreatineForWomenGuide,
+  "/blog/spermidine-longevity-autophagy-guide": SpermidineGuide,
 
   "/blog/rhonda-patrick-multivitamin": RhondaPatrickMultivitamin,
   "/blog/biohacking-supplements-2026": BiohackingSupplements2026,
