@@ -11,7 +11,6 @@ import {
   Pill,
   Cpu,
   Shirt,
-  Plane,
   ArrowLeft,
   ChevronDown,
   UtensilsCrossed,
@@ -506,58 +505,6 @@ function CategorySection({ icon: Icon, title, subtitle, items, badgeColor, gradi
   );
 }
 
-function TravelsSection() {
-  const [open, setOpen] = useState(false);
-
-  return (
-    <section className="mb-8" data-testid="section-traveling">
-      <button
-        onClick={() => setOpen(!open)}
-        className="w-full flex items-center gap-4 mb-0 group cursor-pointer"
-        data-testid="accordion-toggle-travels"
-      >
-        <div
-          className="w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0"
-          style={{
-            background: "linear-gradient(135deg, rgba(100,180,220,0.2) 0%, rgba(155,111,165,0.2) 100%)",
-            border: "1px solid rgba(100,180,220,0.2)",
-          }}
-        >
-          <Plane className="w-5 h-5 text-sky-500" />
-        </div>
-        <div className="text-left">
-          <h2 className="text-[#3d1a28] font-bold text-2xl font-display">Travels</h2>
-          <p className="text-[#3d1a28]/50 text-sm">I'm also passionate about Traveling.</p>
-        </div>
-        <ChevronDown
-          className={`w-5 h-5 text-[#3d1a28]/40 flex-shrink-0 ml-auto transition-transform duration-300 ${open ? "rotate-180" : ""}`}
-        />
-      </button>
-
-      <div
-        className={`overflow-hidden transition-all duration-500 ease-in-out ${open ? "max-h-[9999px] opacity-100 mt-8" : "max-h-0 opacity-0 mt-0"}`}
-      >
-        <div className="card-glass rounded-2xl p-6 sm:p-10 flex items-center justify-center">
-          <Button
-            asChild
-            size="lg"
-            className="btn-gradient-rose text-white border-0 rounded-full px-6 sm:px-10 py-4 text-sm sm:text-base tracking-widest uppercase font-semibold whitespace-normal text-center leading-relaxed h-auto"
-          >
-            <a
-              href="https://www.traveltipsexposed.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              data-testid="link-travel-tips"
-              className="inline-flex items-center justify-center gap-2 flex-wrap"
-            >
-              Find me on TravelTipsExposed.com <ExternalLink className="w-4 h-4 flex-shrink-0" />
-            </a>
-          </Button>
-        </div>
-      </div>
-    </section>
-  );
-}
 
 export default function Discounts() {
   return (
@@ -680,8 +627,6 @@ export default function Discounts() {
             borderColor="rgba(244,114,182,0.2)"
             startIndex={vitaminsSupplements.length + healthTech.length + ethicalClothing.length + nontoxicCookware.length}
           />
-
-          <TravelsSection />
 
           <div className="flex justify-center pt-8 pb-2">
             <button
