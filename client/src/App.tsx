@@ -67,6 +67,7 @@ const SpirulinarRedLightGuide = lazy(() => import("@/pages/reviews/SpirulinarRed
 const LongevityMoleculesGuide = lazy(() => import("@/pages/reviews/LongevityMoleculesGuide"));
 const CreatineForWomenGuide = lazy(() => import("@/pages/reviews/CreatineForWomenGuide"));
 const SpermidineGuide = lazy(() => import("@/pages/reviews/SpermidineGuide"));
+const GutBrainProbioticsGuide = lazy(() => import("@/pages/reviews/GutBrainProbioticsGuide"));
 
 function ScrollToTop() {
   const [location] = useLocation();
@@ -143,6 +144,7 @@ function Router() {
         <Route path="/blog/longevity-molecules-nmn-resveratrol-spermidine-guide" component={LongevityMoleculesGuide} />
         <Route path="/blog/creatine-for-women-guide" component={CreatineForWomenGuide} />
         <Route path="/blog/spermidine-longevity-autophagy-guide" component={SpermidineGuide} />
+        <Route path="/blog/gut-brain-connection-spore-probiotics-guide" component={GutBrainProbioticsGuide} />
         <Route component={NotFound} />
       </Switch>
     </Suspense>

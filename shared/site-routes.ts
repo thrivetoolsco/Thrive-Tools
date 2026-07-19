@@ -57,6 +57,17 @@ export const eventRoutes: EventRoute[] = [
 
 export const blogPosts: BlogPost[] = [
   {
+    id: "gut-brain-connection-spore-probiotics-guide",
+    title: "The Gut-Brain Connection: How Spore-Based Probiotics Are Changing the Way We Treat Anxiety and Depression",
+    excerpt: "90–95% of your serotonin is made in the gut, not the brain. The gut-brain axis is now one of the most actively researched areas in neuroscience — and the type of probiotic you take determines whether any of the clinical research applies to you at all.",
+    href: "/blog/gut-brain-connection-spore-probiotics-guide",
+    canonical: "/blog/gut-brain-connection-spore-probiotics-guide",
+    badge: "Gut Health",
+    badgeColor: "bg-[#c4622d]/15 text-[#8b3a1a] border-[#c4622d]/25",
+    date: "July 6, 2026",
+    lastmod: "2026-07-06",
+  },
+  {
     id: "spermidine-longevity-autophagy-guide",
     title: "Spermidine: The Longevity Compound Hidden in Wheat Germ That Scientists Are Getting Excited About",
     excerpt: "Spermidine is one of the most mechanistically credible longevity compounds in serious research — driving autophagy, mediating fasting benefits, and showing compelling cardiovascular and cognitive signals. A 2024 Nature Cell Biology landmark study revealed it's central to how intermittent fasting actually works.",
