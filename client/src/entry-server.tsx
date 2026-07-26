@@ -71,6 +71,7 @@ import LongevityMoleculesGuide from "@/pages/reviews/LongevityMoleculesGuide";
 import CreatineForWomenGuide from "@/pages/reviews/CreatineForWomenGuide";
 import SpermidineGuide from "@/pages/reviews/SpermidineGuide";
 import GutBrainProbioticsGuide from "@/pages/reviews/GutBrainProbioticsGuide";
+import RebuildGutAfterAntibioticsGuide from "@/pages/reviews/RebuildGutAfterAntibioticsGuide";
 
 export const SSR_ROUTE_COMPONENTS: Record<string, ComponentType> = {
   "/": Home,
@@ -141,6 +142,7 @@ export const SSR_ROUTE_COMPONENTS: Record<string, ComponentType> = {
   "/blog/creatine-for-women-guide": CreatineForWomenGuide,
   "/blog/spermidine-longevity-autophagy-guide": SpermidineGuide,
   "/blog/gut-brain-connection-spore-probiotics-guide": GutBrainProbioticsGuide,
+  "/blog/rebuild-gut-after-antibiotics-spore-probiotics-guide": RebuildGutAfterAntibioticsGuide,
 
   "/blog/rhonda-patrick-multivitamin": RhondaPatrickMultivitamin,
   "/blog/biohacking-supplements-2026": BiohackingSupplements2026,

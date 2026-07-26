@@ -57,6 +57,18 @@ export const eventRoutes: EventRoute[] = [
 
 export const blogPosts: BlogPost[] = [
   {
+    id: "rebuild-gut-after-antibiotics-spore-probiotics-guide",
+    title: "How to Rebuild Your Gut After Antibiotics — And Why Standard Probiotics Won't Cut It",
+    excerpt:
+      "Antibiotics wipe out 25–50% of your gut bacterial species. Standard probiotics almost never survive the journey to help. Here's the evidence-based 6-layer protocol for genuine microbiome recovery — and why spore-based probiotics are categorically different.",
+    href: "/blog/rebuild-gut-after-antibiotics-spore-probiotics-guide",
+    canonical: "https://thrivetools.co/blog/rebuild-gut-after-antibiotics-spore-probiotics-guide",
+    badge: "Gut Health",
+    badgeColor: "bg-[#c4622d]/15 text-[#8b3a1a] border-[#c4622d]/25",
+    date: "July 26, 2026",
+    lastmod: "2026-07-26",
+  },
+  {
     id: "gut-brain-connection-spore-probiotics-guide",
     title: "The Gut-Brain Connection: How Spore-Based Probiotics Are Changing the Way We Treat Anxiety and Depression",
     excerpt: "90–95% of your serotonin is made in the gut, not the brain. The gut-brain axis is now one of the most actively researched areas in neuroscience — and the type of probiotic you take determines whether any of the clinical research applies to you at all.",
