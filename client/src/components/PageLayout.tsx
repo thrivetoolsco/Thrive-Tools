@@ -5,6 +5,7 @@ import { Button } from "@/components/ui/button";
 import { ArrowLeft } from "lucide-react";
 import ShareButton from "@/components/ShareButton";
 import SeoHead, { SeoProps } from "@/components/SeoHead";
+import { ArrowRight } from "lucide-react";
 
 interface PageLayoutProps {
   children: React.ReactNode;
@@ -79,6 +80,22 @@ export default function PageLayout({
       >
         <div className="max-w-4xl mx-auto">
           {children}
+
+          {showShare && (
+            <div className="mt-12 rounded-2xl border border-[#c4622d]/25 bg-[#c4622d]/5 px-6 py-7 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+              <div className="space-y-1">
+                <p className="text-xs font-mono font-semibold tracking-widest uppercase text-[#c4622d]">Not sure where to start?</p>
+                <p className="font-display text-lg font-bold text-[#3d1a28]">Take the 30-second protocol finder</p>
+                <p className="text-sm text-[#3d1a28]/55">Pick your biggest concern — get 3 vetted products with discount codes built in.</p>
+              </div>
+              <a
+                href="/discount-codes#protocol-finder"
+                className="inline-flex items-center gap-2 bg-[#c4622d] hover:bg-[#8b3a1a] text-white font-semibold text-sm px-6 py-3 rounded-full transition-colors whitespace-nowrap flex-shrink-0"
+              >
+                Find my protocol <ArrowRight className="w-4 h-4" />
+              </a>
+            </div>
+          )}
         </div>
       </section>
 

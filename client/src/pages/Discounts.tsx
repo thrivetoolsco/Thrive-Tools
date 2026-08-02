@@ -1,5 +1,6 @@
 import { Link } from "wouter";
 import Navigation from "@/components/Navigation";
+import ProtocolQuiz from "@/components/ProtocolQuiz";
 import Footer from "@/components/Footer";
 import SeoHead from "@/components/SeoHead";
 import { Badge } from "@/components/ui/badge";
@@ -555,6 +556,16 @@ export default function Discounts() {
             <ShareButton />
           </div>
 
+        </div>
+      </section>
+
+      {/* Protocol Finder Quiz */}
+      <section
+        className="py-12 px-4 sm:px-6 lg:px-8 border-b border-black/8"
+        style={{ background: "linear-gradient(180deg, #fdf6eb 0%, #f8ece0 100%)" }}
+      >
+        <div className="max-w-5xl mx-auto">
+          <ProtocolQuiz />
         </div>
       </section>
 

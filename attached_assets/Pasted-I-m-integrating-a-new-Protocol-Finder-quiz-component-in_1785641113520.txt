@@ -1,0 +1,17 @@
+I'm integrating a new "Protocol Finder" quiz component into my ThriveTools site (Node.js/TypeScript/Express stack). The component file is attached: thrivetools-protocol-quiz.jsx — a React component that asks the visitor to pick one of 6 wellness concerns and returns a 3-product stack with discount codes and affiliate links pulled from my existing /discount-codes page data.
+
+Please do the following:
+
+1. INSPECT the current codebase first — identify how /discount-codes, the homepage, and blog post pages are templated/rendered (React components, server-rendered templates, etc.) so the integration matches the existing architecture and styling system.
+
+2. INTEGRATE the quiz component into the /discount-codes page, placed ABOVE the existing full discount code list (keep that list intact below it — don't remove or replace any existing content). Adapt the component's styling to use my site's actual fonts, color tokens, and existing card/button patterns instead of the placeholder palette in the file, so it looks native to the site rather than bolted on.
+
+3. UPDATE the homepage hero CTA — the link/button currently pointing to "See the full list + discounts" (→ /discount-codes) should scroll or link directly to the quiz section at the top of that page instead of the flat list section.
+
+4. ADD a lightweight CTA block at the end of every blog post template (not the full quiz — just a text/button prompt) that reads something like "Not sure where to start? Take the 30-second protocol finder →" and links to the quiz section on /discount-codes. This should be a reusable template snippet, not a manual per-post edit.
+
+5. Make sure the quiz is fully responsive (mobile-first — most traffic is mobile), preserves keyboard accessibility, and doesn't break existing SEO markup, canonical tags, or page load performance on /discount-codes.
+
+6. Do NOT change any of the existing product data, discount codes, or affiliate URLs — only wire in the new component and the navigation/CTA updates described above.
+
+After implementing, give me a summary of what files you changed and a preview link.

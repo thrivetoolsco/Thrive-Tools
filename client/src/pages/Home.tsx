@@ -242,7 +242,7 @@ export default function Home() {
               <p className="text-[#3d1a28]/62 text-base sm:text-lg leading-relaxed mb-10" style={{ textWrap: "pretty" } as React.CSSProperties}>
                 Supplements. Vitamins. Longevity tech. Conscious fashion. Non toxic cookware. All vetted. All discounted.
               </p>
-              <Link href="/discount-codes" data-testid="button-hero-discounts">
+              <Link href="/discount-codes#protocol-finder" data-testid="button-hero-discounts">
                 <Button size="lg" className="btn-gradient-rose text-white border-0 rounded-full px-8 text-sm tracking-widest uppercase font-semibold h-auto py-3.5">
                   → See the full list + discounts
                 </Button>
