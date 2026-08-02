@@ -462,27 +462,27 @@ export default function Home() {
               </article>
             </Link>
 
-            {/* Post 3 — Kratom */}
-            <Link href="/blog/kratom-replacing-alcohol-cannabis-social-pivot-2026" data-testid="link-featured-post-2">
+            {/* Post 3 — Protocol Finder */}
+            <Link href="/blog/protocol-finder-quiz" data-testid="link-featured-post-2">
               <article className="group flex flex-col h-full rounded-2xl overflow-hidden bg-white/70 shadow-sm hover:shadow-md transition-all duration-300 cursor-pointer border border-[#c4622d]/10">
                 <div className="relative overflow-hidden aspect-[4/3]">
                   <img
-                    src="/images/kratom/kratom-plant.jpg"
-                    alt="Kratom plant leaves"
+                    src="/images/blog/protocol-finder-thumbnail.svg"
+                    alt="Protocol Finder quiz tool"
                     loading="lazy"
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent" />
                   <span className="absolute top-3 left-3 text-[9px] font-bold tracking-widest uppercase rounded-full px-2.5 py-1 bg-[#c4622d] text-white shadow">
-                    Plant Medicine
+                    Tools
                   </span>
                 </div>
                 <div className="flex flex-col flex-1 p-5 gap-2">
                   <h3 className="font-display text-lg font-bold text-[#3d1a28] leading-snug group-hover:text-[#c4622d] transition-colors duration-200">
-                    Why Kratom is Replacing Alcohol and Cannabis in 2026
+                    The Protocol Finder
                   </h3>
                   <p className="text-[#3d1a28]/55 text-sm leading-relaxed flex-1">
-                    The Ultimate Social Pivot
+                    Tell me what's going on — I'll show you where to start
                   </p>
                   <div className="flex items-center gap-1 text-[#c4622d] text-xs font-semibold tracking-wide uppercase pt-2 border-t border-[#c4622d]/10">
                     Read More <ArrowRight className="w-3 h-3" />
