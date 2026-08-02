@@ -32,9 +32,9 @@ const PROTOCOLS: Record<ConcernId, {
   sleep: {
     diagnosis: "Most sleep issues are a nervous-system regulation problem wearing an insomnia costume. This protocol works the mineral and breath side, not another sedative.",
     picks: [
-      { name: "BiOptimizers Magnesium Breakthrough", reason: "Seven bioavailable forms of magnesium covering every cellular function — the single most under-dosed mineral for sleep.", code: "THRIVETOOLS", url: "https://bioptimizers.com/shop/products/magnesium-breakthrough", review: "https://thrivetools.co/product-reviews/magnesium-deficiency-supplement-guide" },
-      { name: "Oxygen Advantage", reason: "The most evidence-based breathwork courses available — a direct lever out of sympathetic overdrive before bed.", code: "THRIVETOOLS", url: "https://oxygenadvantage.com/?ref=159", review: "https://thrivetools.co/product-reviews/breathwork-beginners-guide" },
       { name: "Earthing Harmony", reason: "Grounding sheets for direct-contact grounding — supports parasympathetic downshift overnight.", code: "THRIVENOW", url: "https://earthingharmony.com/?ref=hxaqgkso", review: null },
+      { name: "Omnipemf", reason: "Portable PEMF devices for cellular recovery and sleep support — low-level electromagnetic frequency therapy that works while you're already lying down.", code: "thrive10", url: "https://omnipemf.com/?ref=uLhVfH2tFr_rsh", review: null },
+      { name: "Earthrunners", reason: "Grounding sandals for daytime — pairs with grounding sheets at night to keep the nervous system regulated around the clock.", code: "THRIVETOOLS", url: "https://earthrunners.com/?rfsn=7676227.de5b78", review: "https://thrivetools.co/product-reviews/earthrunners-review" },
     ],
   },
   gut: {
