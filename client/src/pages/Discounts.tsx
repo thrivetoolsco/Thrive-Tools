@@ -112,65 +112,10 @@ const vitaminsSupplements: DiscountItem[] = [
     blogHref: "/blog/black-seed-oil-benefits-nigella-sativa-guide",
   },
   {
-    name: "Zentein Nutrition",
-    description: "Protein snacks with no artificial ingredients",
-    code: "THRIVETOOLS10",
-    url: "https://zentein.ca/?ref=THRIVETOOLSCO",
-  },
-  {
     name: "Prana Foods",
     description: "Organic superfoods & snacks.",
     code: "THRIVETOOLSCO",
     url: "https://pranafoods.ca/thrivetoolsco",
-  },
-  {
-    name: "Just Kratom",
-    description: "Premium kratom products for energy, focus and relaxation.",
-    code: "Follow This Link",
-    url: "https://clicks.trackcb.com/aff_c?offer_id=202&aff_id=4192",
-    blogHref: "/blog/kratom-replacing-alcohol-cannabis-social-pivot-2026",
-  },
-  {
-    name: "CBDMagic",
-    description: "Pure CBD Oil Online in Canada. Free shipping on all orders.",
-    code: "Follow This Link",
-    url: "https://cbdmagic.co/cbd/1046/",
-  },
-  {
-    name: "Seventh Sense",
-    description: "CBD topical products, tinctures, gummies and pet drops. USA based.",
-    code: "Follow This Link",
-    url: "https://clicks.trackcb.com/aff_c?offer_id=208&aff_id=4192",
-  },
-  {
-    name: "Pack Boys",
-    description: "Cannabis flower & edibles. US based.",
-    code: "Follow This Link",
-    url: "https://clicks.trackcb.com/aff_c?offer_id=329&aff_id=4192",
-  },
-  {
-    name: "United Strains Of America",
-    description: "Lab tested cannabis.",
-    code: "Follow This Link",
-    url: "https://clicks.trackcb.com/aff_c?offer_id=339&aff_id=4192",
-  },
-  {
-    name: "ILGM",
-    description: "Cannabis seeds.",
-    code: "Follow This Link",
-    url: "https://clicks.trackcb.com/aff_c?offer_id=324&aff_id=4192",
-  },
-  {
-    name: "Primal Focus",
-    description: "Psilocybin mushrooms, San Pedro Cactus, LSD, Grow Kits. Delivers to EU countries only.",
-    code: "Follow This Link",
-    url: "https://clicks.trackcb.com/aff_c?offer_id=259&aff_id=4192",
-  },
-  {
-    name: "Trusted Mushrooms",
-    description: "Amanita in all its forms. Worldwide delivery.",
-    code: "Follow This Link",
-    url: "https://clicks.trackcb.com/aff_c?offer_id=270&aff_id=4192",
   },
 ];
 
@@ -290,12 +235,6 @@ const healthTech: DiscountItem[] = [
 
 const nontoxicCookware: DiscountItem[] = [
   {
-    name: "Alva Cookware",
-    description: "Non toxic cookware",
-    code: "Follow This Link",
-    url: "https://www.awin1.com/cread.php?awinmid=50999&awinaffid=2421431",
-  },
-  {
     name: "360 Cookware",
     description: "Stainless steel cookware and bakeware, free from PFAS and chemical coatings.",
     code: "THRIVETOOLS",
@@ -333,22 +272,10 @@ const ethicalClothing: DiscountItem[] = [
     url: "https://thegoodtee.com/?ref=lzrzvhex",
   },
   {
-    name: "WamaUnderwear",
-    description: "Organic Cotton & Hemp Underwear",
-    code: "Follow This Link",
-    url: "https://wamaunderwear.com/?rfsn=7679845.b824f9f&utm_source=refersion&utm_medium=affiliate&utm_campaign=7679845.b824f9f",
-  },
-  {
     name: "Bamboo Clothes",
     description: "Bamboo Clothes",
     code: "EDENKAWTHARLARAKI10",
     url: "https://www.bambooclothes.com/discount/eden-kawtharlaraki10",
-  },
-  {
-    name: "SustainByKat",
-    description: "Plant Dyed Organic Clothing",
-    code: "Follow This Link",
-    url: "https://sustainbykat.com/?sca_ref=4525701.rDWUOnv37U",
   },
   {
     name: "Earthing Harmony",
