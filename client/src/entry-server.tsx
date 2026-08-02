@@ -74,6 +74,7 @@ import GutBrainProbioticsGuide from "@/pages/reviews/GutBrainProbioticsGuide";
 import RebuildGutAfterAntibioticsGuide from "@/pages/reviews/RebuildGutAfterAntibioticsGuide";
 import ProtocolFinderQuizPost from "@/pages/reviews/ProtocolFinderQuizPost";
 import JoovvVsMitoRedLightComparison from "@/pages/reviews/JoovvVsMitoRedLightComparison";
+import SnackDrawerFix from "@/pages/reviews/SnackDrawerFix";
 
 export const SSR_ROUTE_COMPONENTS: Record<string, ComponentType> = {
   "/": Home,
@@ -147,6 +148,7 @@ export const SSR_ROUTE_COMPONENTS: Record<string, ComponentType> = {
   "/blog/rebuild-gut-after-antibiotics-spore-probiotics-guide": RebuildGutAfterAntibioticsGuide,
   "/blog/protocol-finder-quiz": ProtocolFinderQuizPost,
   "/blog/joovv-vs-mito-red-light-vs-redtherapy-comparison": JoovvVsMitoRedLightComparison,
+  "/blog/snack-drawer-fix-prana-foods-clean-snacks": SnackDrawerFix,
 
   "/blog/rhonda-patrick-multivitamin": RhondaPatrickMultivitamin,
   "/blog/biohacking-supplements-2026": BiohackingSupplements2026,

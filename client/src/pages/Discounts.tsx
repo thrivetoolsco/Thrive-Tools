@@ -117,6 +117,7 @@ const vitaminsSupplements: DiscountItem[] = [
     description: "Organic superfoods & snacks.",
     code: "THRIVETOOLSCO",
     url: "https://pranafoods.ca/thrivetoolsco",
+    blogHref: "/blog/snack-drawer-fix-prana-foods-clean-snacks",
   },
 ];
 

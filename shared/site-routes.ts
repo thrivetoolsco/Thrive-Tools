@@ -57,6 +57,17 @@ export const eventRoutes: EventRoute[] = [
 
 export const blogPosts: BlogPost[] = [
   {
+    id: "snack-drawer-fix-prana-foods-clean-snacks",
+    title: "The Snack Drawer Fix: Why I Stopped Buying 'Healthy' Snacks That Weren't",
+    excerpt: "Most 'clean' snacks are still built on filler ingredients — rice syrup, soy isolate, natural flavors. Here's the ingredient red flags to watch for, what I switched to, and why your snack drawer is probably the one place your otherwise dialled-in protocol is leaking.",
+    href: "/blog/snack-drawer-fix-prana-foods-clean-snacks",
+    canonical: "https://thrivetools.co/blog/snack-drawer-fix-prana-foods-clean-snacks",
+    badge: "Nutrition",
+    badgeColor: "bg-[#c4622d]/15 text-[#8b3a1a] border-[#c4622d]/25",
+    date: "August 5, 2026",
+    lastmod: "2026-08-05",
+  },
+  {
     id: "joovv-vs-mito-red-light-vs-redtherapy-comparison",
     title: "Joovv vs Mito Red Light vs RedTherapy: Which Red Light Panel Actually Fits You",
     excerpt: "An honest, spec-based comparison of the three red light therapy brands I personally recommend — Joovv, Mito Red Light, and RedTherapy. Which one to buy depends entirely on your goal, not the brand name. Full breakdown with pricing, certifications, and discount codes.",
