@@ -26,6 +26,7 @@ interface DiscountItem {
   code?: string;
   url: string;
   blogHref?: string;
+  comparisonHref?: string;
 }
 
 const vitaminsSupplements: DiscountItem[] = [
@@ -133,6 +134,7 @@ const healthTech: DiscountItem[] = [
     code: "THRIVETOOLS",
     url: "https://joovv.com",
     blogHref: "/product-reviews/joovv-review",
+    comparisonHref: "/blog/joovv-vs-mito-red-light-vs-redtherapy-comparison",
   },
   {
     name: "Mito Red Light",
@@ -140,6 +142,7 @@ const healthTech: DiscountItem[] = [
     code: "Follow This Link",
     url: "https://www.mitoredlight.com/EDEN27299",
     blogHref: "/blog/red-light-therapy-science-benefits-devices",
+    comparisonHref: "/blog/joovv-vs-mito-red-light-vs-redtherapy-comparison",
   },
   {
     name: "RedTherapy",
@@ -147,6 +150,7 @@ const healthTech: DiscountItem[] = [
     code: "THRIVETOOLS",
     url: "https://redtherapy.co/?rfsn=7676047.c07132&utm_source=refersion&utm_medium=affiliate&utm_campaign=7676047.c07132",
     blogHref: "/blog/red-light-therapy-science-benefits-devices",
+    comparisonHref: "/blog/joovv-vs-mito-red-light-vs-redtherapy-comparison",
   },
   {
     name: "VieLight Neuro",
@@ -359,20 +363,31 @@ function DiscountCard({ item, index }: { item: DiscountItem; index: number }) {
       </div>
       <div className="flex flex-wrap items-center justify-between gap-3 pt-3 border-t border-[#3d1a28]/10">
         {item.code && <CopyableCode code={item.code} />}
-        <a
-          href={item.url}
-          target="_blank"
-          rel="noopener noreferrer"
-          data-testid={`link-visit-${index}`}
-        >
-          <Button
-            size="sm"
-            variant="outline"
-            className="rounded-full text-xs border-[#3d1a28]/15 text-[#3d1a28]/70 bg-transparent px-4"
+        <div className="flex flex-wrap items-center gap-2">
+          {item.comparisonHref && (
+            <a
+              href={item.comparisonHref}
+              data-testid={`link-comparison-${index}`}
+              className="text-[#c4622d] text-xs font-medium hover:underline"
+            >
+              Read the comparison →
+            </a>
+          )}
+          <a
+            href={item.url}
+            target="_blank"
+            rel="noopener noreferrer"
+            data-testid={`link-visit-${index}`}
           >
-            Visit <ExternalLink className="w-3 h-3 ml-1.5" />
-          </Button>
-        </a>
+            <Button
+              size="sm"
+              variant="outline"
+              className="rounded-full text-xs border-[#3d1a28]/15 text-[#3d1a28]/70 bg-transparent px-4"
+            >
+              Visit <ExternalLink className="w-3 h-3 ml-1.5" />
+            </Button>
+          </a>
+        </div>
       </div>
     </div>
   );

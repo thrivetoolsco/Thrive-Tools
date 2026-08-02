@@ -50,7 +50,7 @@ const PROTOCOLS: Record<ConcernId, {
     picks: [
       { name: "Joovv", reason: "Clinical-grade red light therapy — the most trusted name in photobiomodulation for tissue repair and circulation.", code: "THRIVETOOLS", url: "https://joovv.com", review: "https://thrivetools.co/product-reviews/joovv-review" },
       { name: "BiOptimizers Magnesium Breakthrough", reason: "Magnesium is required for muscle repair and inflammation regulation — most people are chronically short on it.", code: "THRIVETOOLS", url: "https://bioptimizers.com/shop/products/magnesium-breakthrough", review: "https://thrivetools.co/product-reviews/magnesium-deficiency-supplement-guide" },
-      { name: "BlueCubeBaths", reason: "Cold therapy tubs built for serious recovery and nervous system training — not a gimmick, a protocol.", code: "thrive35", url: "https://bluecubebaths.com/?ref=CM-ZEsM_ayIJbh", review: null },
+      { name: "HyperionHerbs", reason: "Dual-extracted, fruiting-body-only tonic herbs — Reishi and Cordyceps support immune resilience and recovery capacity, the traditional foundation for stamina in Taoist herbalism.", code: "EDEN10", url: "http://www.hyperionherbs.com/discount/eden10", review: "https://thrivetools.co/product-reviews/hyperion-herbs" },
     ],
   },
   stress: {

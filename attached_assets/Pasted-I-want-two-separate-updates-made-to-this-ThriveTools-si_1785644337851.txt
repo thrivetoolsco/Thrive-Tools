@@ -1,0 +1,23 @@
+I want two separate updates made to this ThriveTools site.
+
+PART 1 — ADD "READ THE COMPARISON" LINKS ON THE DISCOUNT CODES PAGE
+
+On /discount-codes, find the three individual product cards for Joovv, Mito Red Light, and RedTherapy (all currently under the "Longevity Tech" category). On each of these three cards only, add a small secondary link/button below the existing "Visit" link that reads "Read the comparison →" and links to the new blog post comparing these three products. Match the existing blog post URL pattern used elsewhere on the site for the slug (something like /blog/joovv-vs-mito-vs-redtherapy — confirm the actual slug once the post is published, or use this as a placeholder if it isn't live yet).
+
+Style this new link the same way the existing "Benefits" links are styled on other cards (small, secondary, not competing visually with the primary "Visit" button). Do not add this link to any other product cards — only these three.
+
+PART 2 — EDIT THE PROTOCOL FINDER QUIZ DATA
+
+In the shared Protocol Finder quiz component (used on both /discount-codes and the blog post embed):
+
+1. REMOVE BlueCubeBaths from the "Inflammation & Recovery" protocol (currently pick #3 in that category). It has not generated any income and should no longer be recommended.
+
+2. REPLACE it with HyperionHerbs as the new pick #3 for "Inflammation & Recovery" — reason text: "Dual-extracted, fruiting-body-only tonic herbs — Reishi and Cordyceps support immune resilience and recovery capacity, the traditional foundation for stamina in Taoist herbalism." Code: EDEN10. Link: http://www.hyperionherbs.com/discount/eden10. Review link: https://thrivetools.co/product-reviews/hyperion-herbs
+
+3. Do not change picks #1 (Joovv) or #2 (BiOptimizers Magnesium Breakthrough) in this category.
+
+4. Do not change any other protocol category (energy, sleep, gut, stress, toxin load) — leave those exactly as they currently are.
+
+5. Confirm this single edit updates both instances of the quiz automatically since they share the same component/data source.
+
+After implementing both parts, give me a summary of exactly what changed and a preview link so I can check the discount-codes page cards and the updated "Inflammation & Recovery" quiz result.
