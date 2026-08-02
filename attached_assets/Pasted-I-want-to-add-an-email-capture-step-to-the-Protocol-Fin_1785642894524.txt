@@ -1,0 +1,22 @@
+I want to add an email capture step to the Protocol Finder quiz's result screen (the screen that shows the 3-product stack after a user picks a concern). This should work on both instances of the quiz — /discount-codes and the embedded version in the blog post — since they share the same component.
+
+1. INSPECT FIRST
+Check the codebase for any existing email capture setup (contact form handler, newsletter signup, ESP integration like Mailchimp/ConvertKit/Klaviyo/etc., or a database table for emails). If one already exists, reuse that same backend/integration rather than building a new one. If nothing exists, use a simple solution — store submitted emails in a database table (email, protocol/concern selected, timestamp) and flag clearly in your summary that this needs a real ESP connected before it's usable for actual email sending.
+
+2. ADD THE CAPTURE UI
+On the result screen, below the 3 product picks and above the "Start over" footer, add a small inline form:
+- Headline: "Want this protocol saved?"
+- Subtext: "I'll send you these 3 picks and their codes, so you don't have to screenshot this."
+- One email input field + a submit button labeled "Send it to me"
+- Make this optional and low-pressure — do not block or gate the product cards/links above it behind the email field. Users must be able to see and click all 3 products without submitting an email.
+- On successful submit, replace the form with a short confirmation message like "Sent — check your inbox." Keep it in the same visual style as the rest of the result screen (same fonts/colors already established in the component).
+
+3. DATA TO CAPTURE
+Store the email along with which concern/protocol they selected (e.g. "sleep", "gut") so I can later see which concerns are generating the most signups.
+
+4. VALIDATION
+Basic email format validation client-side, with a simple inline error message if invalid — no page reload.
+
+5. DO NOT change the product cards, codes, links, or the "Start over" behavior — only add this new form beneath the existing content.
+
+After implementing, give me a summary of what changed, which backend/storage approach you used, and a preview link. If you used a placeholder database instead of a real ESP, tell me clearly what I need to do to connect actual email sending.

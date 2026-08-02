@@ -1712,6 +1712,46 @@ ${blogEntries}
     }
   });
 
+  app.post("/api/protocol-signup", newsletterRateLimit, async (req, res) => {
+    const { email, concern } = req.body;
+
+    if (!email || !concern) {
+      return res.status(400).json({ error: "Email and concern are required" });
+    }
+    if (!isValidEmail(email)) {
+      return res.status(400).json({ error: "Please enter a valid email address" });
+    }
+
+    const safeEmail = sanitizeText(email).toLowerCase();
+    const safeConcern = sanitizeText(concern).slice(0, 50);
+
+    try {
+      const { db } = await import("./db");
+      const { protocolSignups } = await import("../shared/schema");
+
+      await db.insert(protocolSignups).values({ email: safeEmail, concern: safeConcern });
+
+      // Fire-and-forget notification email (does not block the response)
+      import("nodemailer").then((nodemailer) => {
+        const transporter = nodemailer.createTransport({
+          service: "gmail",
+          auth: { user: process.env.GMAIL_USER, pass: process.env.GMAIL_APP_PASSWORD },
+        });
+        transporter.sendMail({
+          from: process.env.GMAIL_USER,
+          to: "Thrivetools.co@gmail.com",
+          subject: `[ThriveTools] Protocol Finder signup — ${safeConcern}`,
+          text: `New Protocol Finder signup:\n\nEmail: ${safeEmail}\nConcern: ${safeConcern}`,
+        }).catch((err: Error) => console.error("Protocol signup notification failed:", err));
+      });
+
+      res.json({ success: true });
+    } catch (err) {
+      console.error("Protocol signup failed:", err);
+      res.status(500).json({ error: "Something went wrong — please try again." });
+    }
+  });
+
   app.post("/api/newsletter", newsletterRateLimit, async (req, res) => {
     const { email } = req.body;
 

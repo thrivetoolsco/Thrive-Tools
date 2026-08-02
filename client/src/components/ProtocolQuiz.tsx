@@ -1,7 +1,7 @@
 import { useState } from "react";
 import {
   Zap, Moon, Leaf, Flame, Wind, Droplet,
-  ArrowRight, RotateCcw, ExternalLink, BookOpen,
+  ArrowRight, RotateCcw, ExternalLink, BookOpen, Send, CheckCircle,
 } from "lucide-react";
 
 // ─── Data (unchanged from original) ─────────────────────────────────────────
@@ -77,14 +77,49 @@ export default function ProtocolQuiz() {
   const [step, setStep] = useState<"intro" | "result">("intro");
   const [concernId, setConcernId] = useState<ConcernId | null>(null);
 
+  // Email capture state
+  const [email, setEmail] = useState("");
+  const [emailStatus, setEmailStatus] = useState<"idle" | "sending" | "sent" | "error">("idle");
+  const [emailError, setEmailError] = useState("");
+
   const pick = (id: ConcernId) => {
     setConcernId(id);
     setStep("result");
+    setEmail("");
+    setEmailStatus("idle");
+    setEmailError("");
   };
 
   const reset = () => {
     setConcernId(null);
     setStep("intro");
+    setEmail("");
+    setEmailStatus("idle");
+    setEmailError("");
+  };
+
+  const submitEmail = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setEmailError("");
+
+    // Client-side validation
+    if (!email.trim()) { setEmailError("Please enter your email address."); return; }
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) { setEmailError("That doesn't look like a valid email."); return; }
+
+    setEmailStatus("sending");
+    try {
+      const res = await fetch("/api/protocol-signup", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ email: email.trim(), concern: concernId }),
+      });
+      const data = await res.json();
+      if (!res.ok) throw new Error(data.error || "Unknown error");
+      setEmailStatus("sent");
+    } catch (err: unknown) {
+      setEmailStatus("error");
+      setEmailError(err instanceof Error ? err.message : "Something went wrong — please try again.");
+    }
   };
 
   const concern = CONCERNS.find((c) => c.id === concernId);
@@ -197,6 +232,51 @@ export default function ProtocolQuiz() {
                 </div>
               </div>
             ))}
+          </div>
+
+          {/* Email capture */}
+          <div className="rounded-xl border border-black/8 bg-white/60 p-5 sm:p-6 space-y-3">
+            {emailStatus === "sent" ? (
+              <div className="flex items-center gap-3 text-[#3d1a28]">
+                <CheckCircle className="w-5 h-5 text-[#c4622d] flex-shrink-0" />
+                <div>
+                  <p className="font-semibold text-sm">Sent — check your inbox.</p>
+                  <p className="text-xs text-[#3d1a28]/50 mt-0.5">Your 3 picks and discount codes are on their way.</p>
+                </div>
+              </div>
+            ) : (
+              <>
+                <div className="space-y-0.5">
+                  <p className="font-display font-bold text-[#3d1a28] text-base">Want this protocol saved?</p>
+                  <p className="text-xs text-[#3d1a28]/55 leading-snug">
+                    I'll send you these 3 picks and their codes, so you don't have to screenshot this.
+                  </p>
+                </div>
+                <form onSubmit={submitEmail} className="flex flex-col sm:flex-row gap-2" noValidate>
+                  <input
+                    type="email"
+                    value={email}
+                    onChange={(e) => { setEmail(e.target.value); setEmailError(""); }}
+                    placeholder="your@email.com"
+                    disabled={emailStatus === "sending"}
+                    className="flex-1 min-w-0 rounded-lg border border-black/15 bg-white px-3 py-2.5 text-sm text-[#3d1a28] placeholder:text-[#3d1a28]/30 focus:outline-none focus:border-[#c4622d]/60 disabled:opacity-50"
+                  />
+                  <button
+                    type="submit"
+                    disabled={emailStatus === "sending"}
+                    className="inline-flex items-center justify-center gap-2 bg-[#c4622d] hover:bg-[#8b3a1a] disabled:opacity-50 text-white font-semibold text-sm px-5 py-2.5 rounded-lg transition-colors whitespace-nowrap flex-shrink-0"
+                  >
+                    {emailStatus === "sending" ? "Sending…" : <><Send size={13} /> Send it to me</>}
+                  </button>
+                </form>
+                {emailError && (
+                  <p className="text-xs text-red-600">{emailError}</p>
+                )}
+                {emailStatus === "error" && !emailError && (
+                  <p className="text-xs text-red-600">Something went wrong — please try again.</p>
+                )}
+              </>
+            )}
           </div>
 
           {/* footer row */}
