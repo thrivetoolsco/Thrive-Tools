@@ -70,6 +70,7 @@ const SpermidineGuide = lazy(() => import("@/pages/reviews/SpermidineGuide"));
 const GutBrainProbioticsGuide = lazy(() => import("@/pages/reviews/GutBrainProbioticsGuide"));
 const RebuildGutAfterAntibioticsGuide = lazy(() => import("@/pages/reviews/RebuildGutAfterAntibioticsGuide"));
 const ProtocolFinderQuizPost = lazy(() => import("@/pages/reviews/ProtocolFinderQuizPost"));
+const JoovvVsMitoRedLightComparison = lazy(() => import("@/pages/reviews/JoovvVsMitoRedLightComparison"));
 
 function ScrollToTop() {
   const [location] = useLocation();
@@ -149,6 +150,7 @@ function Router() {
         <Route path="/blog/gut-brain-connection-spore-probiotics-guide" component={GutBrainProbioticsGuide} />
         <Route path="/blog/rebuild-gut-after-antibiotics-spore-probiotics-guide" component={RebuildGutAfterAntibioticsGuide} />
         <Route path="/blog/protocol-finder-quiz" component={ProtocolFinderQuizPost} />
+        <Route path="/blog/joovv-vs-mito-red-light-vs-redtherapy-comparison" component={JoovvVsMitoRedLightComparison} />
         <Route component={NotFound} />
       </Switch>
     </Suspense>

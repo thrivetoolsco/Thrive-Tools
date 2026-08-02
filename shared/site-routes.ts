@@ -57,6 +57,17 @@ export const eventRoutes: EventRoute[] = [
 
 export const blogPosts: BlogPost[] = [
   {
+    id: "joovv-vs-mito-red-light-vs-redtherapy-comparison",
+    title: "Joovv vs Mito Red Light vs RedTherapy: Which Red Light Panel Actually Fits You",
+    excerpt: "An honest, spec-based comparison of the three red light therapy brands I personally recommend — Joovv, Mito Red Light, and RedTherapy. Which one to buy depends entirely on your goal, not the brand name. Full breakdown with pricing, certifications, and discount codes.",
+    href: "/blog/joovv-vs-mito-red-light-vs-redtherapy-comparison",
+    canonical: "https://thrivetools.co/blog/joovv-vs-mito-red-light-vs-redtherapy-comparison",
+    badge: "Comparison Guide",
+    badgeColor: "bg-[#c4622d]/15 text-[#8b3a1a] border-[#c4622d]/25",
+    date: "August 2, 2026",
+    lastmod: "2026-08-02",
+  },
+  {
     id: "protocol-finder-quiz",
     title: "The Protocol Finder: Tell Me What's Going On — I'll Show You Where to Start",
     excerpt:
