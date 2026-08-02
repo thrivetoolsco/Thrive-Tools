@@ -30,10 +30,10 @@ const PROTOCOLS: Record<ConcernId, {
     ],
   },
   sleep: {
-    diagnosis: "Most sleep issues are a nervous-system regulation problem wearing an insomnia costume. This protocol works the mineral and breath side, not another sedative.",
+    diagnosis: "Most sleep issues are a nervous-system regulation problem, not a supplement problem. This protocol works the body directly — grounding to reset your baseline charge, PEMF for cellular recovery while you're already lying down — instead of another pill before bed.",
     picks: [
-      { name: "Earthing Harmony", reason: "Grounding sheets for direct-contact grounding — supports parasympathetic downshift overnight.", code: "THRIVENOW", url: "https://earthingharmony.com/?ref=hxaqgkso", review: null },
       { name: "Omnipemf", reason: "Portable PEMF devices for cellular recovery and sleep support — low-level electromagnetic frequency therapy that works while you're already lying down.", code: "thrive10", url: "https://omnipemf.com/?ref=uLhVfH2tFr_rsh", review: null },
+      { name: "Earthing Harmony", reason: "Grounding sheets for direct-contact grounding — supports parasympathetic downshift overnight.", code: "THRIVENOW", url: "https://earthingharmony.com/?ref=hxaqgkso", review: null },
       { name: "Earthrunners", reason: "Grounding sandals for daytime — pairs with grounding sheets at night to keep the nervous system regulated around the clock.", code: "THRIVETOOLS", url: "https://earthrunners.com/?rfsn=7676227.de5b78", review: "https://thrivetools.co/product-reviews/earthrunners-review" },
     ],
   },
