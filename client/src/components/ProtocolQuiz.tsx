@@ -94,9 +94,9 @@ export default function ProtocolQuiz() {
     <div id="protocol-finder" className="scroll-mt-24">
       {/* ── Intro screen ── */}
       {step === "intro" && (
-        <div className="space-y-8">
+        <div className="space-y-4">
           {/* header */}
-          <div className="space-y-3">
+          <div className="space-y-2">
             <p className="text-xs font-mono font-semibold tracking-[0.14em] uppercase text-[#c4622d] flex items-center gap-2">
               <span className="w-1.5 h-1.5 rounded-full bg-[#c4622d] flex-shrink-0" />
               Protocol Finder
@@ -105,11 +105,21 @@ export default function ProtocolQuiz() {
               Still foggy? Still tired?<br />
               <span className="italic text-[#c4622d]">Tell me where it's coming from.</span>
             </h2>
-            <p className="text-[#3d1a28]/60 leading-relaxed max-w-xl">
-              90% of wellness is noise. Pick what's actually going on and I'll hand you
-              the three things from my list worth trying first — with the discount codes built in.
+            <p className="text-[#3d1a28]/60 text-sm leading-snug">
+              Pick what's going on — I'll hand you 3 things worth trying, discount codes included.
             </p>
           </div>
+
+          {/* skip link */}
+          <p className="text-xs text-[#3d1a28]/40">
+            Already know what you want?{" "}
+            <a
+              href="#discount-list"
+              className="underline underline-offset-2 hover:text-[#c4622d] transition-colors"
+            >
+              Skip to the full list ↓
+            </a>
+          </p>
 
           {/* concern grid */}
           <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">

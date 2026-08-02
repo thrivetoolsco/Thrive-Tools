@@ -571,7 +571,8 @@ export default function Discounts() {
 
       {/* Content */}
       <section
-        className="py-12 px-4 sm:px-6 lg:px-8"
+        id="discount-list"
+        className="scroll-mt-8 py-12 px-4 sm:px-6 lg:px-8"
         style={{ background: "linear-gradient(180deg, #fdf6eb 0%, #f8ece0 50%, #fdf6eb 100%)" }}
       >
         <div className="max-w-5xl mx-auto">
