@@ -26,7 +26,7 @@ const PROTOCOLS: Record<ConcernId, {
     picks: [
       { name: "IM8", reason: "Full-spectrum vitamins, probiotics, adaptogens & CoQ10 in one scoop — covers the baseline most people are missing.", code: "THRIVE10", url: "https://www.im8health.com/THRIVE10", review: "https://thrivetools.co/product-reviews/im8-health-review" },
       { name: "EnergyBits", reason: "Low-heat dried chlorella & spirulina — enzymes intact, real cellular fuel instead of synthetic stimulation.", code: "THRIVE25", url: "https://energybits.com/discount/THRIVE25?rfsn=9026872.b2b124&utm_source=refersion&utm_medium=affiliate&utm_campaign=9026872.b2b124", review: "https://thrivetools.co/product-reviews/energybits-spirulina-chlorella-review" },
-      { name: "Neurosity", reason: "EEG-powered focus device — real-time brainwave data so you can actually see when the fog lifts.", code: "thrivetools", url: "https://neurosity.co/thrivetools", review: null },
+      { name: "Vielight Neuro", reason: "Transcranial photobiomodulation for cognitive decline and mental clarity — a different mechanism than a stimulant, working on cellular energy in the brain itself.", code: "THRIVETOOLS", url: "https://www.vielight.com/devices/", review: "https://thrivetools.co/product-reviews/vielight-neuro-review" },
     ],
   },
   sleep: {
@@ -42,7 +42,7 @@ const PROTOCOLS: Record<ConcernId, {
     picks: [
       { name: "Just Thrive", reason: "Spore-based probiotics engineered to survive stomach acid and reach the gut intact — the most researched strains for real microbiome shift.", code: "THRIVETOOLS", url: "https://justthrivehealth.com/THRIVETOOLS", review: "https://thrivetools.co/blog/bacillus-subtilis-bacillus-coagulans-probiotic-guide" },
       { name: "The Blessed Seed", reason: "Cold-pressed, undiluted black seed oil — centuries of traditional use for gut inflammation and immune support.", code: null, url: "https://theblessedseed.de/ref/370/", review: "https://thrivetools.co/blog/black-seed-oil-benefits-nigella-sativa-guide" },
-      { name: "HyperionHerbs", reason: "Dual-extracted, fruiting-body-only tonic herbs — Reishi and Cordyceps for gut-immune terrain, not filler mycelium.", code: "EDEN10", url: "http://www.hyperionherbs.com/discount/eden10", review: "https://thrivetools.co/product-reviews/hyperion-herbs" },
+      { name: "Prana Foods", reason: "Organic superfoods and snacks with no junk fillers — the easiest daily swap for actually feeding your gut instead of just supplementing around a bad diet.", code: null, url: "https://pranafoods.ca/thrivetoolsco", review: null },
     ],
   },
   recovery: {
@@ -58,7 +58,7 @@ const PROTOCOLS: Record<ConcernId, {
     picks: [
       { name: "Oxygen Advantage", reason: "The most evidence-based breathwork courses available — a direct lever on the vagus nerve.", code: "THRIVETOOLS", url: "https://oxygenadvantage.com/?ref=159", review: "https://thrivetools.co/product-reviews/breathwork-beginners-guide" },
       { name: "Muse Headband", reason: "Real-time EEG neurofeedback — trains your nervous system to recognize and hold a calm state.", code: "THRIVE25", url: "https://choosemuse.com/thrive25", review: "https://thrivetools.co/blog/muse-headband-review-eeg-neurofeedback" },
-      { name: "Koracao Ceremonial Cacao", reason: "Ceremonial-grade cacao — heart-opening ritual and mood support, a sacred plant medicine hiding in plain sight.", code: "EDENKAWTHARLARAKI123", url: "https://koracao.com/THRIVE33", review: "https://thrivetools.co/blog/ceremonial-cacao-benefits-science-review" },
+      { name: "Vielight Neuro", reason: "Also used for deepening meditation states and calming an overactive nervous system — same device, different use case.", code: "THRIVETOOLS", url: "https://www.vielight.com/devices/", review: "https://thrivetools.co/product-reviews/vielight-neuro-review" },
     ],
   },
   load: {

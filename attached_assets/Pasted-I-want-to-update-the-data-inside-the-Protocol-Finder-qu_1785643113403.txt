@@ -1,0 +1,22 @@
+I want to update the data inside the Protocol Finder quiz component (the shared component used on both /discount-codes and the embedded blog post at /blog/protocol-finder-quiz — editing the one shared component should update both automatically since they're not duplicated).
+
+GOAL: IM8, EnergyBits Chlorella & Spirulina, Vielight Neuro, and Prana Foods are my highest-converting affiliate products. I want the quiz to surface these more prominently and more often across relevant results, without breaking the logic of matching real product benefit to real user concern — don't force a product into a category it doesn't genuinely fit.
+
+Please make these specific changes to the protocol data:
+
+1. ENERGY / FOG & FATIGUE protocol:
+   - Keep IM8 as pick #1 (already there)
+   - Keep EnergyBits as pick #2 (already there)
+   - Replace the current 3rd pick (Neurosity) with Vielight Neuro — reason: "Transcranial photobiomodulation for cognitive decline and mental clarity — a different mechanism than a stimulant, working on cellular energy in the brain itself." Use code THRIVETOOLS and link https://www.vielight.com/devices/, review link https://thrivetools.co/product-reviews/vielight-neuro-review
+
+2. GUT & DIGESTION protocol:
+   - Replace the current 3rd pick (HyperionHerbs) with Prana Foods — reason: "Organic superfoods and snacks with no junk fillers — the easiest daily swap for actually feeding your gut instead of just supplementing around a bad diet." No code currently listed, so use "Follow This Link" style (no code chip) and link https://pranafoods.ca/thrivetoolsco
+
+3. STRESS & NERVOUS SYSTEM protocol:
+   - Replace the current 3rd pick (Koracao Ceremonial Cacao) with Vielight Neuro — reason: "Also used for deepening meditation states and calming an overactive nervous system — same device, different use case." Same code/link as above (THRIVETOOLS, https://www.vielight.com/devices/)
+
+4. Do NOT add IM8, EnergyBits, Vielight Neuro, or Prana Foods to any protocol category where they don't have a genuine, honest fit — only the placements listed above.
+
+5. Leave every other pick in every other protocol category (sleep, recovery, toxin load) completely unchanged.
+
+6. Confirm that because both instances of the quiz import the same shared component/data source, this single edit updates the quiz on both /discount-codes and the blog post — do
