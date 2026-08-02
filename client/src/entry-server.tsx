@@ -72,6 +72,7 @@ import CreatineForWomenGuide from "@/pages/reviews/CreatineForWomenGuide";
 import SpermidineGuide from "@/pages/reviews/SpermidineGuide";
 import GutBrainProbioticsGuide from "@/pages/reviews/GutBrainProbioticsGuide";
 import RebuildGutAfterAntibioticsGuide from "@/pages/reviews/RebuildGutAfterAntibioticsGuide";
+import ProtocolFinderQuizPost from "@/pages/reviews/ProtocolFinderQuizPost";
 
 export const SSR_ROUTE_COMPONENTS: Record<string, ComponentType> = {
   "/": Home,
@@ -143,6 +144,7 @@ export const SSR_ROUTE_COMPONENTS: Record<string, ComponentType> = {
   "/blog/spermidine-longevity-autophagy-guide": SpermidineGuide,
   "/blog/gut-brain-connection-spore-probiotics-guide": GutBrainProbioticsGuide,
   "/blog/rebuild-gut-after-antibiotics-spore-probiotics-guide": RebuildGutAfterAntibioticsGuide,
+  "/blog/protocol-finder-quiz": ProtocolFinderQuizPost,
 
   "/blog/rhonda-patrick-multivitamin": RhondaPatrickMultivitamin,
   "/blog/biohacking-supplements-2026": BiohackingSupplements2026,

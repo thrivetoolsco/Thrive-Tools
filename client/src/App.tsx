@@ -69,6 +69,7 @@ const CreatineForWomenGuide = lazy(() => import("@/pages/reviews/CreatineForWome
 const SpermidineGuide = lazy(() => import("@/pages/reviews/SpermidineGuide"));
 const GutBrainProbioticsGuide = lazy(() => import("@/pages/reviews/GutBrainProbioticsGuide"));
 const RebuildGutAfterAntibioticsGuide = lazy(() => import("@/pages/reviews/RebuildGutAfterAntibioticsGuide"));
+const ProtocolFinderQuizPost = lazy(() => import("@/pages/reviews/ProtocolFinderQuizPost"));
 
 function ScrollToTop() {
   const [location] = useLocation();
@@ -147,6 +148,7 @@ function Router() {
         <Route path="/blog/spermidine-longevity-autophagy-guide" component={SpermidineGuide} />
         <Route path="/blog/gut-brain-connection-spore-probiotics-guide" component={GutBrainProbioticsGuide} />
         <Route path="/blog/rebuild-gut-after-antibiotics-spore-probiotics-guide" component={RebuildGutAfterAntibioticsGuide} />
+        <Route path="/blog/protocol-finder-quiz" component={ProtocolFinderQuizPost} />
         <Route component={NotFound} />
       </Switch>
     </Suspense>

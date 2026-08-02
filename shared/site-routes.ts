@@ -57,6 +57,18 @@ export const eventRoutes: EventRoute[] = [
 
 export const blogPosts: BlogPost[] = [
   {
+    id: "protocol-finder-quiz",
+    title: "The Protocol Finder: Tell Me What's Going On — I'll Show You Where to Start",
+    excerpt:
+      "People kept asking 'where do I even start?' with the discount list. So I built this — a 30-second tool that asks what's actually going on and hands back 3 vetted picks with discount codes built in.",
+    href: "/blog/protocol-finder-quiz",
+    canonical: "https://thrivetools.co/blog/protocol-finder-quiz",
+    badge: "Tools",
+    badgeColor: "bg-[#c4622d]/15 text-[#8b3a1a] border-[#c4622d]/25",
+    date: "August 2, 2026",
+    lastmod: "2026-08-02",
+  },
+  {
     id: "rebuild-gut-after-antibiotics-spore-probiotics-guide",
     title: "How to Rebuild Your Gut After Antibiotics — And Why Standard Probiotics Won't Cut It",
     excerpt:
