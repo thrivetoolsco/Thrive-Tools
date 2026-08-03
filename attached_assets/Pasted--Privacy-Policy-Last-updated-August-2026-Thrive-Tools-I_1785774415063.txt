@@ -1,0 +1,75 @@
+# Privacy Policy
+
+**Last updated: August 2026**
+
+Thrive Tools Inc. ("Thrive Tools," "we," "us," or "our") operates thrivetools.co (the "Site"). This Privacy Policy explains what information we collect, how we use it, and the choices you have. By using the Site, you agree to the practices described here.
+
+## 1. Information We Collect
+
+**Information you give us directly:**
+- Your email address, if you submit it through the Protocol Finder quiz or any other signup form on the Site
+- The concern/category you select when using the Protocol Finder (e.g. "sleep," "gut"), which we may associate with your email address to send you relevant follow-up content
+- Any information you provide if you contact us directly
+
+**Information collected automatically:**
+- Standard technical data such as your IP address, browser type, device type, and pages visited, typically gathered through cookies or similar tracking technology used for basic site analytics
+- Affiliate and referral tracking data, generated when you click a link to a third-party retailer from our Site (see Section 4)
+
+We do not knowingly collect financial information, government ID numbers, or other sensitive personal data through this Site.
+
+## 2. How We Use Your Information
+
+We use the information we collect to:
+- Send you the protocol/product recommendations you requested through the quiz
+- Send occasional emails about new content, discount codes, or products, if you've opted in
+- Understand how visitors use the Site so we can improve it
+- Comply with legal obligations
+
+We do not sell your personal information to third parties.
+
+## 3. Email Communications
+
+If you provide your email address, we will only send you commercial or promotional messages with your consent, in accordance with Canada's Anti-Spam Legislation (CASL). Every email we send includes a clear way to unsubscribe. You can opt out at any time by using the unsubscribe link or contacting us directly.
+
+## 4. Affiliate Links and Third Parties
+
+This Site contains affiliate links. When you click one of these links and make a purchase, the retailer or their affiliate network (e.g. platforms like Impact, ShareASale, Refersion, or similar) may collect data related to that click and purchase, such as your IP address and browsing activity, in order to attribute the sale to us. We do not control and are not responsible for the privacy practices of these third-party retailers or networks. We encourage you to review their privacy policies directly.
+
+We may also use third-party service providers for functions like email delivery and website analytics. These providers only access your information as needed to perform their services and are not permitted to use it for their own purposes.
+
+## 5. Data Storage and International Transfers
+
+Some of the third-party services we use (such as our email service provider) may store data on servers located outside of Canada, including in the United States. By using the Site and providing your information, you acknowledge that your data may be processed and stored outside of Canada, where privacy laws may differ from those in your jurisdiction.
+
+## 6. Data Retention
+
+We retain your personal information for as long as necessary to fulfill the purposes described in this policy, or until you ask us to delete it, whichever comes first.
+
+## 7. Your Rights
+
+Under Canadian privacy law (PIPEDA), you have the right to:
+- Know what personal information we hold about you
+- Request access to that information
+- Request correction of inaccurate information
+- Request deletion of your information
+- Withdraw consent to future communications at any time
+
+To exercise any of these rights, contact us using the information in Section 10.
+
+## 8. Cookies
+
+The Site may use cookies or similar technologies to support basic functionality and analytics. You can control or disable cookies through your browser settings, though this may affect how parts of the Site function.
+
+## 9. Children's Privacy
+
+This Site is not directed at children, and we do not knowingly collect personal information from anyone under the age of 13 (or the relevant age of consent in your jurisdiction). If you believe a child has provided us with personal information, please contact us and we will delete it.
+
+## 10. Contact Us
+
+If you have questions about this Privacy Policy or wish to exercise your privacy rights, please contact us at:
+
+**[insert contact email]**
+
+## 11. Changes to This Policy
+
+We may update this Privacy Policy from time to time. Changes will be posted on this page with an updated "Last updated" date. Continued use of the Site after changes are posted constitutes acceptance of the updated policy.
