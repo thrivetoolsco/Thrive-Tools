@@ -56,7 +56,7 @@ const PROTOCOLS: Record<ConcernId, {
   stress: {
     diagnosis: "You don't need another mindset tip. You need your nervous system to have a way out of \"on.\" This protocol works the body first.",
     picks: [
-      { name: "Oxygen Advantage", reason: "The most evidence-based breathwork courses available — a direct lever on the vagus nerve.", code: "THRIVETOOLS", url: "https://oxygenadvantage.com/?ref=159", review: "https://thrivetools.co/product-reviews/breathwork-beginners-guide" },
+      { name: "HyperionHerbs", reason: "Reishi has centuries of traditional use specifically for calming an overactive nervous system and supporting healthy cortisol response — this isn't a stimulant or a sedative, it's a long-game adaptogen for baseline stress resilience.", code: "EDEN10", url: "http://www.hyperionherbs.com/discount/eden10", review: "https://thrivetools.co/product-reviews/hyperion-herbs" },
       { name: "Muse Headband", reason: "Real-time EEG neurofeedback — trains your nervous system to recognize and hold a calm state.", code: "THRIVE25", url: "https://choosemuse.com/thrive25", review: "https://thrivetools.co/blog/muse-headband-review-eeg-neurofeedback" },
       { name: "Vielight Neuro", reason: "Also used for deepening meditation states and calming an overactive nervous system — same device, different use case.", code: "THRIVETOOLS", url: "https://www.vielight.com/devices/", review: "https://thrivetools.co/product-reviews/vielight-neuro-review" },
     ],
