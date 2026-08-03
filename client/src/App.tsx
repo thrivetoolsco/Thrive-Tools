@@ -74,6 +74,7 @@ const JoovvVsMitoRedLightComparison = lazy(() => import("@/pages/reviews/JoovvVs
 const SnackDrawerFix = lazy(() => import("@/pages/reviews/SnackDrawerFix"));
 const Disclaimer = lazy(() => import("@/pages/Disclaimer"));
 const PrivacyPolicy = lazy(() => import("@/pages/PrivacyPolicy"));
+const TermsOfService = lazy(() => import("@/pages/TermsOfService"));
 
 function ScrollToTop() {
   const [location] = useLocation();
@@ -157,6 +158,7 @@ function Router() {
         <Route path="/blog/snack-drawer-fix-prana-foods-clean-snacks" component={SnackDrawerFix} />
         <Route path="/disclaimer" component={Disclaimer} />
         <Route path="/privacy-policy" component={PrivacyPolicy} />
+        <Route path="/terms-of-service" component={TermsOfService} />
         <Route component={NotFound} />
       </Switch>
     </Suspense>

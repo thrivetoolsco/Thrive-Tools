@@ -86,7 +86,7 @@ export default function Footer() {
           <span>© 2026 Thrive Tools. All rights reserved.</span>
           <div className="flex flex-wrap gap-5">
             <a href="/privacy-policy" className="hover:text-[#3d1a28]/60 transition-colors">Privacy Policy</a>
-            <a href="#" className="hover:text-[#3d1a28]/60 transition-colors">Terms of Service</a>
+            <a href="/terms-of-service" className="hover:text-[#3d1a28]/60 transition-colors">Terms of Service</a>
             <a href="/disclaimer" className="hover:text-[#3d1a28]/60 transition-colors">Disclaimer</a>
           </div>
         </div>

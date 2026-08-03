@@ -77,6 +77,7 @@ import JoovvVsMitoRedLightComparison from "@/pages/reviews/JoovvVsMitoRedLightCo
 import SnackDrawerFix from "@/pages/reviews/SnackDrawerFix";
 import Disclaimer from "@/pages/Disclaimer";
 import PrivacyPolicy from "@/pages/PrivacyPolicy";
+import TermsOfService from "@/pages/TermsOfService";
 
 export const SSR_ROUTE_COMPONENTS: Record<string, ComponentType> = {
   "/": Home,
@@ -153,6 +154,7 @@ export const SSR_ROUTE_COMPONENTS: Record<string, ComponentType> = {
   "/blog/snack-drawer-fix-prana-foods-clean-snacks": SnackDrawerFix,
   "/disclaimer": Disclaimer,
   "/privacy-policy": PrivacyPolicy,
+  "/terms-of-service": TermsOfService,
 
   "/blog/rhonda-patrick-multivitamin": RhondaPatrickMultivitamin,
   "/blog/biohacking-supplements-2026": BiohackingSupplements2026,
