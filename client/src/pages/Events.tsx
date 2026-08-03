@@ -39,12 +39,12 @@ export default function Events() {
           </p>
           <div className="flex justify-center">
             <a
-              href="mailto:thrivetools.co@gmail.com?subject=Newsletter Subscription"
+              href="/contact"
               className="inline-flex items-center gap-2 btn-gradient-rose text-white font-semibold px-6 py-3 rounded-full transition-colors"
               data-testid="link-subscribe-email"
             >
               <Mail className="w-4 h-4 shrink-0" />
-              <span>thrivetools.co@gmail.com</span>
+              <span>Get in touch</span>
               <ArrowRight className="w-4 h-4 shrink-0" />
             </a>
           </div>

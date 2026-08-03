@@ -73,13 +73,13 @@ export default function Thrive2() {
             <p className="text-black/80 leading-relaxed text-base flex items-center gap-2" data-testid="text-registration">
               <Mail className="w-4 h-4 text-[#c4622d]" />
               <span>
-                <span className="text-[#c4622d] font-semibold">How to Join:</span> Shoot a quick email to{" "}
+                <span className="text-[#c4622d] font-semibold">How to Join:</span>{" "}
                 <a
-                  href="mailto:thrivetools.co@gmail.com"
+                  href="/contact"
                   className="text-[#c4622d] underline underline-offset-4 decoration-[#c4622d]/40"
                   data-testid="link-email"
                 >
-                  thrivetools.co@gmail.com
+                  Send me a message
                 </a>{" "}
                 to grab your spot.
               </span>

@@ -67,13 +67,13 @@ export default function Thrive1() {
             </h3>
           </div>
           <p className="text-black/80 leading-relaxed text-base text-center" data-testid="text-registration">
-            Registration is required. Just shoot a quick email to{" "}
+            Registration is required. Just{" "}
             <a
-              href="mailto:thrivetools.co@gmail.com"
+              href="/contact"
               className="text-[#c4622d] underline underline-offset-4 decoration-[#c4622d]/40"
               data-testid="link-email-registration"
             >
-              thrivetools.co@gmail.com
+              send me a message
             </a>{" "}
             to let me know you're coming.
           </p>
@@ -84,11 +84,11 @@ export default function Thrive1() {
             Want to stay in the loop on future dates and locations? Just send me an email and I'll add you to the list.
           </p>
           <a
-            href="mailto:thrivetools.co@gmail.com?subject=Newsletter Subscription"
+            href="/contact"
             className="inline-flex items-center gap-2 btn-gradient-rose text-white font-semibold px-6 py-3 rounded-full transition-colors mt-2"
             data-testid="link-events-subscribe"
           >
-            thrivetools.co@gmail.com <ArrowRight className="w-4 h-4" />
+            Get in touch <ArrowRight className="w-4 h-4" />
           </a>
         </div>
       </div>

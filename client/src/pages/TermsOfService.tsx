@@ -126,13 +126,13 @@ export default function TermsOfService() {
             <div className="space-y-3">
               <h2 className="font-display text-xl font-semibold text-[#3d1a28]">11. Contact Us</h2>
               <p>
-                If you have questions about these Terms, please contact us at:{" "}
+                If you have questions about these Terms, please{" "}
                 <a
-                  href="mailto:thrivetools.co@gmail.com"
+                  href="/contact"
                   className="text-[#c4622d] underline underline-offset-2 hover:text-[#8b3a1a] transition-colors"
                 >
-                  thrivetools.co@gmail.com
-                </a>
+                  contact us here
+                </a>.
               </p>
             </div>
           </div>

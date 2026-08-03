@@ -134,13 +134,13 @@ export default function PrivacyPolicy() {
             <div className="space-y-3">
               <h2 className="font-display text-xl font-semibold text-[#3d1a28]">10. Contact Us</h2>
               <p>
-                If you have questions about this Privacy Policy or wish to exercise your privacy rights, please contact us at:{" "}
+                If you have questions about this Privacy Policy or wish to exercise your privacy rights, please{" "}
                 <a
-                  href="mailto:thrivetools.co@gmail.com"
+                  href="/contact"
                   className="text-[#c4622d] underline underline-offset-2 hover:text-[#8b3a1a] transition-colors"
                 >
-                  thrivetools.co@gmail.com
-                </a>
+                  contact us here
+                </a>.
               </p>
             </div>
 

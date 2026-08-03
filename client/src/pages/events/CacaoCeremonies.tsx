@@ -76,11 +76,11 @@ export default function CacaoCeremonies() {
             Want to catch the next location and date? Just send me an email and I'll add you to the list.
           </p>
           <a
-            href="mailto:thrivetools.co@gmail.com?subject=Newsletter Subscription"
+            href="/contact"
             className="inline-flex items-center gap-2 btn-gradient-rose text-white font-semibold px-6 py-3 rounded-full transition-colors"
             data-testid="link-subscribe-newsletter"
           >
-            thrivetools.co@gmail.com <ArrowRight className="w-4 h-4" />
+            Get in touch <ArrowRight className="w-4 h-4" />
           </a>
         </div>
 
