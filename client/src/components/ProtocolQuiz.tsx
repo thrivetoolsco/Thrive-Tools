@@ -66,7 +66,7 @@ const PROTOCOLS: Record<ConcernId, {
     picks: [
       { name: "WaterDropFilter", reason: "Reverse osmosis + UV sterilization, countertop, no installation — the highest-leverage single change for water quality.", code: "KAWTHARLARAKI", url: "https://www.waterdropfilter.ca/?ref=ozpbpmdp", review: "https://thrivetools.co/blog/waterdrop-k19-h-aquatru-rkin-reverse-osmosis-review" },
       { name: "360 Cookware", reason: "Stainless steel, free from PFAS and chemical coatings — cooking is a daily exposure most people never audit.", code: "THRIVETOOLS", url: "https://www.360cookware.com/THRIVETOOLS", review: null },
-      { name: "Aires Tech", reason: "Proven EMF protection — for the invisible load that's harder to see but easy to reduce.", code: "THRIVE25", url: "https://airestech.com/thrive25", review: null },
+      { name: "EnergyBits Chlorella & Spirulina", reason: "Chlorella specifically binds to heavy metals and helps carry them out of the body — one of the few foods that actually pulls toxins out rather than just reducing new exposure.", code: "THRIVE25", url: "https://energybits.com/discount/THRIVE25?rfsn=9026872.b2b124&utm_source=refersion&utm_medium=affiliate&utm_campaign=9026872.b2b124", review: "https://thrivetools.co/product-reviews/energybits-spirulina-chlorella-review" },
     ],
   },
 };
