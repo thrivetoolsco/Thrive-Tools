@@ -75,6 +75,7 @@ import RebuildGutAfterAntibioticsGuide from "@/pages/reviews/RebuildGutAfterAnti
 import ProtocolFinderQuizPost from "@/pages/reviews/ProtocolFinderQuizPost";
 import JoovvVsMitoRedLightComparison from "@/pages/reviews/JoovvVsMitoRedLightComparison";
 import SnackDrawerFix from "@/pages/reviews/SnackDrawerFix";
+import Disclaimer from "@/pages/Disclaimer";
 
 export const SSR_ROUTE_COMPONENTS: Record<string, ComponentType> = {
   "/": Home,
@@ -149,6 +150,7 @@ export const SSR_ROUTE_COMPONENTS: Record<string, ComponentType> = {
   "/blog/protocol-finder-quiz": ProtocolFinderQuizPost,
   "/blog/joovv-vs-mito-red-light-vs-redtherapy-comparison": JoovvVsMitoRedLightComparison,
   "/blog/snack-drawer-fix-prana-foods-clean-snacks": SnackDrawerFix,
+  "/disclaimer": Disclaimer,
 
   "/blog/rhonda-patrick-multivitamin": RhondaPatrickMultivitamin,
   "/blog/biohacking-supplements-2026": BiohackingSupplements2026,
