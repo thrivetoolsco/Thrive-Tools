@@ -34,7 +34,7 @@ export default function Footer() {
                 <RedditIcon className="w-4 h-4 text-[#3d1a28]/50 hover:text-[#3d1a28] transition-colors" />
               </a>
               <a
-                href="mailto:Thrivetools.co@gmail.com"
+                href="/contact"
                 data-testid="link-social-email"
                 className="w-9 h-9 rounded-full flex items-center justify-center transition-colors"
                 style={{ background: "rgba(61,26,40,0.06)", border: "1px solid rgba(201,122,142,0.25)" }}
