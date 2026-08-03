@@ -10,6 +10,7 @@ export interface BlogPost {
   badgeColor: string;
   date: string;
   lastmod: string;
+  cta?: string;
 }
 
 export interface StaticRoute {
@@ -89,6 +90,7 @@ export const blogPosts: BlogPost[] = [
     badgeColor: "bg-[#c4622d]/15 text-[#8b3a1a] border-[#c4622d]/25",
     date: "August 2, 2026",
     lastmod: "2026-08-02",
+    cta: "Try the Quiz",
   },
   {
     id: "rebuild-gut-after-antibiotics-spore-probiotics-guide",

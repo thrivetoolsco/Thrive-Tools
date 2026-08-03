@@ -485,7 +485,7 @@ export default function Home() {
                     Tell me what's going on — I'll show you where to start
                   </p>
                   <div className="flex items-center gap-1 text-[#c4622d] text-xs font-semibold tracking-wide uppercase pt-2 border-t border-[#c4622d]/10">
-                    Read More <ArrowRight className="w-3 h-3" />
+                    Try the Quiz <ArrowRight className="w-3 h-3" />
                   </div>
                 </div>
               </article>

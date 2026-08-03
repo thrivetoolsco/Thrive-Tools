@@ -137,7 +137,7 @@ export default function ProductReviews() {
                 {post.excerpt}
               </p>
               <span className="inline-flex items-center text-[#8b3a1a] text-sm font-medium group-hover:text-[#8b3a1a] transition-colors">
-                Read Full Review <ArrowRight className="ml-2 w-4 h-4" />
+                {post.cta ?? "Read Full Review"} <ArrowRight className="ml-2 w-4 h-4" />
               </span>
             </div>
           </Link>
