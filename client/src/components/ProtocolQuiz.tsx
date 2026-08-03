@@ -34,7 +34,7 @@ const PROTOCOLS: Record<ConcernId, {
     picks: [
       { name: "Omnipemf", reason: "Portable PEMF devices for cellular recovery and sleep support — low-level electromagnetic frequency therapy that works while you're already lying down.", code: "thrive10", url: "https://omnipemf.com/?ref=uLhVfH2tFr_rsh", review: null },
       { name: "Earthing Harmony", reason: "Grounding sheets for direct-contact grounding — supports parasympathetic downshift overnight.", code: "THRIVENOW", url: "https://earthingharmony.com/?ref=hxaqgkso", review: null },
-      { name: "Earthrunners", reason: "Grounding sandals for daytime — pairs with grounding sheets at night to keep the nervous system regulated around the clock.", code: "THRIVETOOLS", url: "https://earthrunners.com/?rfsn=7676227.de5b78", review: "https://thrivetools.co/product-reviews/earthrunners-review" },
+      { name: "Organika 8 Forms Magnesium", reason: "Eight bioavailable forms of magnesium in one formula — covers muscle relaxation, nervous system regulation, and sleep onset without needing to guess which single form your body responds to.", code: "EDEN_25", url: "https://organika.com/?rfsn=8403940.a276a1f&utm_source=refersion&utm_medium=affiliate&utm_campaign=8403940.a276a1f", review: null },
     ],
   },
   gut: {
