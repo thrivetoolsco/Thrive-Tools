@@ -34,7 +34,7 @@ export default function SeoHead({
   const fullTitle = noSuffix || title.includes(SITE_NAME)
     ? title
     : `${title} | ${SITE_NAME}`;
-  const canonicalUrl = canonical ? `${SITE_URL}${canonical}` : undefined;
+  const canonicalUrl = canonical ? resolveAbsoluteUrl(canonical) : undefined;
 
   const ogImage = image ? resolveAbsoluteUrl(image) : DEFAULT_OG_IMAGE;
   const ogImageAlt = imageAlt ?? DEFAULT_OG_IMAGE_ALT;

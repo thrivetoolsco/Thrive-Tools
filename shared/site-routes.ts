@@ -58,6 +58,18 @@ export const eventRoutes: EventRoute[] = [
 
 export const blogPosts: BlogPost[] = [
   {
+    id: "what-is-bioharmony-wellness-shift-2026",
+    title: "What Is Bioharmony? The Wellness Shift That's Replacing Biohacking in 2026",
+    excerpt:
+      "Bioharmony is emerging as a more cooperative alternative to relentless optimization. Here's what it means, where it comes from, and what it looks like in practice.",
+    href: "/blog/what-is-bioharmony-wellness-shift-2026",
+    canonical: "/blog/what-is-bioharmony-wellness-shift-2026",
+    badge: "Wellness",
+    badgeColor: "bg-[#c4622d]/15 text-[#8b3a1a] border-[#c4622d]/25",
+    date: "August 21, 2026",
+    lastmod: "2026-08-21",
+  },
+  {
     id: "snack-drawer-fix-prana-foods-clean-snacks",
     title: "The Snack Drawer Fix: Why I Stopped Buying 'Healthy' Snacks That Weren't",
     excerpt: "Most 'clean' snacks are still built on filler ingredients — rice syrup, soy isolate, natural flavors. Here's the ingredient red flags to watch for, what I switched to, and why your snack drawer is probably the one place your otherwise dialled-in protocol is leaking.",

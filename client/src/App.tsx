@@ -72,6 +72,7 @@ const RebuildGutAfterAntibioticsGuide = lazy(() => import("@/pages/reviews/Rebui
 const ProtocolFinderQuizPost = lazy(() => import("@/pages/reviews/ProtocolFinderQuizPost"));
 const JoovvVsMitoRedLightComparison = lazy(() => import("@/pages/reviews/JoovvVsMitoRedLightComparison"));
 const SnackDrawerFix = lazy(() => import("@/pages/reviews/SnackDrawerFix"));
+const BioharmonyGuide = lazy(() => import("@/pages/reviews/BioharmonyGuide"));
 const Disclaimer = lazy(() => import("@/pages/Disclaimer"));
 const PrivacyPolicy = lazy(() => import("@/pages/PrivacyPolicy"));
 const TermsOfService = lazy(() => import("@/pages/TermsOfService"));
@@ -156,6 +157,7 @@ function Router() {
         <Route path="/blog/protocol-finder-quiz" component={ProtocolFinderQuizPost} />
         <Route path="/blog/joovv-vs-mito-red-light-vs-redtherapy-comparison" component={JoovvVsMitoRedLightComparison} />
         <Route path="/blog/snack-drawer-fix-prana-foods-clean-snacks" component={SnackDrawerFix} />
+        <Route path="/blog/what-is-bioharmony-wellness-shift-2026" component={BioharmonyGuide} />
         <Route path="/disclaimer" component={Disclaimer} />
         <Route path="/privacy-policy" component={PrivacyPolicy} />
         <Route path="/terms-of-service" component={TermsOfService} />
