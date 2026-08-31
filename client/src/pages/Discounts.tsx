@@ -31,13 +31,6 @@ interface DiscountItem {
 
 const vitaminsSupplements: DiscountItem[] = [
   {
-    name: "Timeline Mitopure",
-    description: "A purified source of Urolithin A designed to support mitophagy, mitochondrial health and healthy aging when your gut cannot make enough naturally.",
-    code: "Follow This Link",
-    url: "https://shop.timeline.com/EDENKAWTHARLARAKI",
-    blogHref: "/blog/urolithin-a-mitophagy-longevity-supplement-guide",
-  },
-  {
     name: "IM8",
     description: "The most complete supplement on the market. Vitamins, probiotics, adaptogens & CoQ10 in one scoop.",
     code: "THRIVE10",
@@ -85,6 +78,13 @@ const vitaminsSupplements: DiscountItem[] = [
     code: "THRIVE25",
     url: "https://energybits.com/discount/THRIVE25?rfsn=9026872.b2b124&utm_source=refersion&utm_medium=affiliate&utm_campaign=9026872.b2b124",
     blogHref: "/blog/energybits-spirulina-chlorella-review",
+  },
+  {
+    name: "Timeline Mitopure",
+    description: "A purified source of Urolithin A designed to support mitophagy, mitochondrial health and healthy aging when your gut cannot make enough naturally.",
+    code: "Follow This Link",
+    url: "https://shop.timeline.com/EDENKAWTHARLARAKI",
+    blogHref: "/blog/urolithin-a-mitophagy-longevity-supplement-guide",
   },
   {
     name: "Organic Nori Seaweed Sushi",
