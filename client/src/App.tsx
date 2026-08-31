@@ -73,6 +73,7 @@ const ProtocolFinderQuizPost = lazy(() => import("@/pages/reviews/ProtocolFinder
 const JoovvVsMitoRedLightComparison = lazy(() => import("@/pages/reviews/JoovvVsMitoRedLightComparison"));
 const SnackDrawerFix = lazy(() => import("@/pages/reviews/SnackDrawerFix"));
 const BioharmonyGuide = lazy(() => import("@/pages/reviews/BioharmonyGuide"));
+const VagusNerveGuide = lazy(() => import("@/pages/reviews/VagusNerveGuide"));
 const Disclaimer = lazy(() => import("@/pages/Disclaimer"));
 const PrivacyPolicy = lazy(() => import("@/pages/PrivacyPolicy"));
 const TermsOfService = lazy(() => import("@/pages/TermsOfService"));
@@ -158,6 +159,7 @@ function Router() {
         <Route path="/blog/joovv-vs-mito-red-light-vs-redtherapy-comparison" component={JoovvVsMitoRedLightComparison} />
         <Route path="/blog/snack-drawer-fix-prana-foods-clean-snacks" component={SnackDrawerFix} />
         <Route path="/blog/what-is-bioharmony-wellness-shift-2026" component={BioharmonyGuide} />
+        <Route path="/blog/vagus-nerve-vagal-tone-wellness-practices" component={VagusNerveGuide} />
         <Route path="/disclaimer" component={Disclaimer} />
         <Route path="/privacy-policy" component={PrivacyPolicy} />
         <Route path="/terms-of-service" component={TermsOfService} />

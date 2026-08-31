@@ -76,6 +76,7 @@ import ProtocolFinderQuizPost from "@/pages/reviews/ProtocolFinderQuizPost";
 import JoovvVsMitoRedLightComparison from "@/pages/reviews/JoovvVsMitoRedLightComparison";
 import SnackDrawerFix from "@/pages/reviews/SnackDrawerFix";
 import BioharmonyGuide from "@/pages/reviews/BioharmonyGuide";
+import VagusNerveGuide from "@/pages/reviews/VagusNerveGuide";
 import Disclaimer from "@/pages/Disclaimer";
 import PrivacyPolicy from "@/pages/PrivacyPolicy";
 import TermsOfService from "@/pages/TermsOfService";
@@ -154,6 +155,7 @@ export const SSR_ROUTE_COMPONENTS: Record<string, ComponentType> = {
   "/blog/joovv-vs-mito-red-light-vs-redtherapy-comparison": JoovvVsMitoRedLightComparison,
   "/blog/snack-drawer-fix-prana-foods-clean-snacks": SnackDrawerFix,
   "/blog/what-is-bioharmony-wellness-shift-2026": BioharmonyGuide,
+  "/blog/vagus-nerve-vagal-tone-wellness-practices": VagusNerveGuide,
   "/disclaimer": Disclaimer,
   "/privacy-policy": PrivacyPolicy,
   "/terms-of-service": TermsOfService,

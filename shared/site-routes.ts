@@ -58,6 +58,18 @@ export const eventRoutes: EventRoute[] = [
 
 export const blogPosts: BlogPost[] = [
   {
+    id: "vagus-nerve-vagal-tone-wellness-practices",
+    title: "The Vagus Nerve: Why Every Wellness Practice You Already Do Works Through This One System",
+    excerpt:
+      "Learn what the vagus nerve does, how vagal tone relates to HRV and nervous-system regulation, and how breathwork, cold exposure, meditation, herbs, grounding, and ritual may support it.",
+    href: "/blog/vagus-nerve-vagal-tone-wellness-practices",
+    canonical: "/blog/vagus-nerve-vagal-tone-wellness-practices",
+    badge: "Nervous System",
+    badgeColor: "bg-[#c4622d]/15 text-[#8b3a1a] border-[#c4622d]/25",
+    date: "August 31, 2026",
+    lastmod: "2026-08-31",
+  },
+  {
     id: "what-is-bioharmony-wellness-shift-2026",
     title: "What Is Bioharmony? The Wellness Shift That's Replacing Biohacking in 2026",
     excerpt:
