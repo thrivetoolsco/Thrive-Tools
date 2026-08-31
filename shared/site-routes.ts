@@ -58,6 +58,18 @@ export const eventRoutes: EventRoute[] = [
 
 export const blogPosts: BlogPost[] = [
   {
+    id: "urolithin-a-mitophagy-longevity-supplement-guide",
+    title: "Urolithin A: The Longevity Compound Your Gut Makes From Pomegranates (If You're Lucky)",
+    excerpt:
+      "Learn how urolithin A activates mitophagy, why most people cannot produce enough from pomegranates, what the human research shows, and how Mitopure fits into a longevity protocol.",
+    href: "/blog/urolithin-a-mitophagy-longevity-supplement-guide",
+    canonical: "/blog/urolithin-a-mitophagy-longevity-supplement-guide",
+    badge: "Longevity",
+    badgeColor: "bg-[#c4622d]/15 text-[#8b3a1a] border-[#c4622d]/25",
+    date: "September 2, 2026",
+    lastmod: "2026-09-02",
+  },
+  {
     id: "vagus-nerve-vagal-tone-wellness-practices",
     title: "The Vagus Nerve: Why Every Wellness Practice You Already Do Works Through This One System",
     excerpt:

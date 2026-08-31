@@ -77,6 +77,7 @@ import JoovvVsMitoRedLightComparison from "@/pages/reviews/JoovvVsMitoRedLightCo
 import SnackDrawerFix from "@/pages/reviews/SnackDrawerFix";
 import BioharmonyGuide from "@/pages/reviews/BioharmonyGuide";
 import VagusNerveGuide from "@/pages/reviews/VagusNerveGuide";
+import UrolithinAGuide from "@/pages/reviews/UrolithinAGuide";
 import Disclaimer from "@/pages/Disclaimer";
 import PrivacyPolicy from "@/pages/PrivacyPolicy";
 import TermsOfService from "@/pages/TermsOfService";
@@ -156,6 +157,7 @@ export const SSR_ROUTE_COMPONENTS: Record<string, ComponentType> = {
   "/blog/snack-drawer-fix-prana-foods-clean-snacks": SnackDrawerFix,
   "/blog/what-is-bioharmony-wellness-shift-2026": BioharmonyGuide,
   "/blog/vagus-nerve-vagal-tone-wellness-practices": VagusNerveGuide,
+  "/blog/urolithin-a-mitophagy-longevity-supplement-guide": UrolithinAGuide,
   "/disclaimer": Disclaimer,
   "/privacy-policy": PrivacyPolicy,
   "/terms-of-service": TermsOfService,
