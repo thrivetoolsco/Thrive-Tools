@@ -213,12 +213,6 @@ const healthTech: DiscountItem[] = [
     url: "https://selfdecode.com/?a_aid=6536b9c629095",
   },
   {
-    name: "Piurify",
-    description: "Water Hydrogenator",
-    code: "THRIVE10",
-    url: "https://www.piurify.com/?sca_ref=4509873.CyVUQonn5r",
-  },
-  {
     name: "NeuroVizr",
     description: "Light and sound therapy device for altered states, stress relief and neurological stimulation. Genuinely unlike anything else.",
     code: "thrive33",
