@@ -314,10 +314,41 @@ function CopyableCode({ code, brand, category }: { code: string; brand: string; 
   const [copied, setCopied] = useState(false);
   const isLink = code.toLowerCase().startsWith("follow");
 
+  const copyWithFallback = (text: string) => {
+    const textarea = document.createElement("textarea");
+    textarea.value = text;
+    textarea.setAttribute("readonly", "");
+    textarea.style.position = "fixed";
+    textarea.style.opacity = "0";
+    textarea.style.pointerEvents = "none";
+    document.body.appendChild(textarea);
+    textarea.focus();
+    textarea.select();
+
+    const successful = document.execCommand("copy");
+    document.body.removeChild(textarea);
+    return successful;
+  };
+
   const handleCopy = async () => {
     if (isLink) return;
+
     try {
-      await navigator.clipboard.writeText(code);
+      let successful = false;
+
+      if (navigator.clipboard?.writeText && window.isSecureContext) {
+        try {
+          await navigator.clipboard.writeText(code);
+          successful = true;
+        } catch {
+          successful = copyWithFallback(code);
+        }
+      } else {
+        successful = copyWithFallback(code);
+      }
+
+      if (!successful) return;
+
       setCopied(true);
       trackEvent("discount_code_copy", { brand, category });
       setTimeout(() => setCopied(false), 2000);
