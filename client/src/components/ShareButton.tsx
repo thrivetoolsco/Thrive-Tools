@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Share2, Check, Link } from "lucide-react";
+import { trackEvent } from "@/lib/analytics";
 
 export default function ShareButton() {
   const [state, setState] = useState<"idle" | "copied" | "shared">("idle");
@@ -12,6 +13,10 @@ export default function ShareButton() {
       try {
         await navigator.share({ title, url });
         setState("shared");
+        trackEvent("share_success", {
+          method: "native",
+          page_path: window.location.pathname,
+        });
         setTimeout(() => setState("idle"), 2000);
       } catch {
         // user cancelled — do nothing
@@ -20,6 +25,10 @@ export default function ShareButton() {
       try {
         await navigator.clipboard.writeText(url);
         setState("copied");
+        trackEvent("share_success", {
+          method: "clipboard",
+          page_path: window.location.pathname,
+        });
         setTimeout(() => setState("idle"), 2000);
       } catch {
         // clipboard unavailable

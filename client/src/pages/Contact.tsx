@@ -2,6 +2,7 @@ import { useState } from "react";
 import PageLayout from "@/components/PageLayout";
 import { Button } from "@/components/ui/button";
 import { CheckCircle, AlertCircle, Loader2 } from "lucide-react";
+import { trackEvent } from "@/lib/analytics";
 
 type Status = "idle" | "sending" | "success" | "error";
 
@@ -31,6 +32,7 @@ export default function Contact() {
       } else {
         setStatus("success");
         setForm({ name: "", email: "", subject: "", message: "" });
+        trackEvent("contact_submit_success", { page_path: "/contact" });
       }
     } catch {
       setErrorMsg("Network error — please try again.");

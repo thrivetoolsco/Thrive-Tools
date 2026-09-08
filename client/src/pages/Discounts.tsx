@@ -19,6 +19,7 @@ import {
 } from "lucide-react";
 import { useState } from "react";
 import ShareButton from "@/components/ShareButton";
+import { trackEvent } from "@/lib/analytics";
 
 interface DiscountItem {
   name: string;
@@ -309,15 +310,20 @@ const ethicalClothing: DiscountItem[] = [
   },
 ];
 
-function CopyableCode({ code }: { code: string }) {
+function CopyableCode({ code, brand, category }: { code: string; brand: string; category: string }) {
   const [copied, setCopied] = useState(false);
   const isLink = code.toLowerCase().startsWith("follow");
 
-  const handleCopy = () => {
+  const handleCopy = async () => {
     if (isLink) return;
-    navigator.clipboard.writeText(code);
-    setCopied(true);
-    setTimeout(() => setCopied(false), 2000);
+    try {
+      await navigator.clipboard.writeText(code);
+      setCopied(true);
+      trackEvent("discount_code_copy", { brand, category });
+      setTimeout(() => setCopied(false), 2000);
+    } catch {
+      // Leave the code visible for manual copying if clipboard access fails.
+    }
   };
 
   return (
@@ -348,7 +354,7 @@ function CopyableCode({ code }: { code: string }) {
   );
 }
 
-function DiscountCard({ item, index }: { item: DiscountItem; index: number }) {
+function DiscountCard({ item, index, category }: { item: DiscountItem; index: number; category: string }) {
   return (
     <div
       className="card-glass rounded-2xl p-6 flex flex-col justify-between gap-4 hover-elevate transition-all duration-300 group"
@@ -363,6 +369,10 @@ function DiscountCard({ item, index }: { item: DiscountItem; index: number }) {
               href={item.blogHref}
               target="_blank"
               rel="noopener noreferrer"
+              onClick={() => trackEvent("discount_benefit_click", {
+                brand: item.name,
+                category,
+              })}
               data-testid={`link-benefits-${index}`}
               className="text-[#c4622d] font-medium hover:underline"
             >Benefits</a></>
@@ -370,11 +380,15 @@ function DiscountCard({ item, index }: { item: DiscountItem; index: number }) {
         </p>
       </div>
       <div className="flex flex-wrap items-center justify-between gap-3 pt-3 border-t border-[#3d1a28]/10">
-        {item.code && <CopyableCode code={item.code} />}
+        {item.code && <CopyableCode code={item.code} brand={item.name} category={category} />}
         <div className="flex flex-wrap items-center gap-2">
           {item.comparisonHref && (
             <a
               href={item.comparisonHref}
+              onClick={() => trackEvent("comparison_click", {
+                brand: item.name,
+                category,
+              })}
               data-testid={`link-comparison-${index}`}
               className="text-[#c4622d] text-xs font-medium hover:underline"
             >
@@ -385,6 +399,12 @@ function DiscountCard({ item, index }: { item: DiscountItem; index: number }) {
             href={item.url}
             target="_blank"
             rel="noopener noreferrer"
+            onClick={() => trackEvent("affiliate_click", {
+              brand: item.name,
+              category,
+              placement: "discount_card",
+              position: index + 1,
+            })}
             data-testid={`link-visit-${index}`}
           >
             <Button
@@ -446,7 +466,7 @@ function CategorySection({ icon: Icon, title, subtitle, items, badgeColor, gradi
       >
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
           {items.map((item, i) => (
-            <DiscountCard key={i} item={item} index={startIndex + i} />
+            <DiscountCard key={i} item={item} index={startIndex + i} category={title} />
           ))}
         </div>
       </div>

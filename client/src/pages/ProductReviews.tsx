@@ -7,6 +7,7 @@ import { useState } from "react";
 import { blogPosts } from "@shared/site-routes";
 import { useMutation } from "@tanstack/react-query";
 import { apiRequest } from "@/lib/queryClient";
+import { trackEvent } from "@/lib/analytics";
 
 function EmailCapture() {
   const [email, setEmail] = useState("");
@@ -14,7 +15,11 @@ function EmailCapture() {
 
   const { mutate, isPending, isError } = useMutation({
     mutationFn: () => apiRequest("POST", "/api/newsletter", { email }),
-    onSuccess: () => { setDone(true); setEmail(""); },
+    onSuccess: () => {
+      setDone(true);
+      setEmail("");
+      trackEvent("newsletter_signup_success", { placement: "blog_listing" });
+    },
   });
 
   const handleSubmit = (e: React.FormEvent) => {
@@ -110,8 +115,17 @@ export default function ProductReviews() {
             No articles found for "{query}"
           </p>
         )}
-        {filtered.map((post) => (
-          <Link key={post.id} href={post.href}>
+        {filtered.map((post, index) => (
+          <Link
+            key={post.id}
+            href={post.href}
+            onClick={() => trackEvent("blog_card_click", {
+              post_id: post.id,
+              category: post.badge,
+              position: index + 1,
+              search_active: Boolean(query.trim()),
+            })}
+          >
             <div
               className="card-glass rounded-2xl p-6 sm:p-8 hover-elevate transition-all duration-300 group cursor-pointer"
               data-testid={`card-post-${post.id}`}

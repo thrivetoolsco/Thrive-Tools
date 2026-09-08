@@ -3,6 +3,7 @@ import {
   Zap, Moon, Leaf, Flame, Wind, Droplet,
   ArrowRight, RotateCcw, ExternalLink, BookOpen, Send, CheckCircle,
 } from "lucide-react";
+import { trackEvent } from "@/lib/analytics";
 
 // ─── Data (unchanged from original) ─────────────────────────────────────────
 
@@ -83,6 +84,11 @@ export default function ProtocolQuiz() {
   const [emailError, setEmailError] = useState("");
 
   const pick = (id: ConcernId) => {
+    trackEvent("protocol_complete", {
+      concern: id,
+      recommendation_count: PROTOCOLS[id].picks.length,
+      page_path: window.location.pathname,
+    });
     setConcernId(id);
     setStep("result");
     setEmail("");
@@ -116,6 +122,10 @@ export default function ProtocolQuiz() {
       const data = await res.json();
       if (!res.ok) throw new Error(data.error || "Unknown error");
       setEmailStatus("sent");
+      trackEvent("protocol_email_signup_success", {
+        concern: concernId ?? "unknown",
+        page_path: window.location.pathname,
+      });
     } catch (err: unknown) {
       setEmailStatus("error");
       setEmailError(err instanceof Error ? err.message : "Something went wrong — please try again.");
@@ -215,6 +225,12 @@ export default function ProtocolQuiz() {
                     href={p.url}
                     target="_blank"
                     rel="noopener noreferrer"
+                    onClick={() => trackEvent("affiliate_click", {
+                      brand: p.name,
+                      concern: concernId,
+                      placement: "protocol_result",
+                      position: i + 1,
+                    })}
                     className="inline-flex items-center gap-1.5 bg-[#c4622d] hover:bg-[#8b3a1a] text-white font-semibold text-sm px-5 py-2 rounded-full transition-colors"
                   >
                     Visit <ExternalLink size={13} />
@@ -224,6 +240,11 @@ export default function ProtocolQuiz() {
                       href={p.review}
                       target="_blank"
                       rel="noopener noreferrer"
+                      onClick={() => trackEvent("protocol_review_click", {
+                        brand: p.name,
+                        concern: concernId,
+                        position: i + 1,
+                      })}
                       className="inline-flex items-center gap-1.5 border border-[#3d1a28]/20 text-[#3d1a28]/65 hover:border-[#c4622d]/50 hover:text-[#c4622d] font-semibold text-sm px-5 py-2 rounded-full transition-colors"
                     >
                       <BookOpen size={13} /> Why I trust it
