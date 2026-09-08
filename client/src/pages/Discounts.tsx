@@ -496,7 +496,7 @@ export default function Discounts() {
             className="font-display text-4xl sm:text-5xl lg:text-6xl font-bold mb-4"
             data-testid="text-discounts-headline"
           >
-            <span className="text-gradient-rose">Discount Codes</span>
+            <span className="text-gradient-rose">Discount Codes — Active September 2026</span>
           </h1>
           <p className="text-[#3d1a28]/60 text-lg sm:text-xl max-w-3xl leading-relaxed font-medium" data-testid="text-discounts-subtitle">
             Top Biohacking Supplements, Longevity Tech & Conscious Fashion: 2026 Picks + Discount Codes
