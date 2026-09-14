@@ -78,6 +78,7 @@ import SnackDrawerFix from "@/pages/reviews/SnackDrawerFix";
 import BioharmonyGuide from "@/pages/reviews/BioharmonyGuide";
 import VagusNerveGuide from "@/pages/reviews/VagusNerveGuide";
 import UrolithinAGuide from "@/pages/reviews/UrolithinAGuide";
+import BestSupplements2026Guide from "@/pages/reviews/BestSupplements2026Guide";
 import Disclaimer from "@/pages/Disclaimer";
 import PrivacyPolicy from "@/pages/PrivacyPolicy";
 import TermsOfService from "@/pages/TermsOfService";
@@ -158,6 +159,7 @@ export const SSR_ROUTE_COMPONENTS: Record<string, ComponentType> = {
   "/blog/what-is-bioharmony-wellness-shift-2026": BioharmonyGuide,
   "/blog/vagus-nerve-vagal-tone-wellness-practices": VagusNerveGuide,
   "/blog/urolithin-a-mitophagy-longevity-supplement-guide": UrolithinAGuide,
+  "/blog/best-supplements-energy-gut-health-longevity-2026": BestSupplements2026Guide,
   "/disclaimer": Disclaimer,
   "/privacy-policy": PrivacyPolicy,
   "/terms-of-service": TermsOfService,

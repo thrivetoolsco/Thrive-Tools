@@ -58,6 +58,18 @@ export const eventRoutes: EventRoute[] = [
 
 export const blogPosts: BlogPost[] = [
   {
+    id: "best-supplements-energy-gut-health-longevity-2026",
+    title: "What Are the Best Supplements for Energy, Gut Health, and Longevity in 2026?",
+    excerpt:
+      "A science-backed guide to the best supplements for energy, gut health, stress, longevity, recovery, and everyday wellness — including what to look for and which brands meet the standard.",
+    href: "/blog/best-supplements-energy-gut-health-longevity-2026",
+    canonical: "/blog/best-supplements-energy-gut-health-longevity-2026",
+    badge: "Supplements",
+    badgeColor: "bg-[#c4622d]/15 text-[#8b3a1a] border-[#c4622d]/25",
+    date: "September 14, 2026",
+    lastmod: "2026-09-14",
+  },
+  {
     id: "urolithin-a-mitophagy-longevity-supplement-guide",
     title: "Urolithin A: The Longevity Compound Your Gut Makes From Pomegranates (If You're Lucky)",
     excerpt:
