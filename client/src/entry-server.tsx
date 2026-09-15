@@ -79,6 +79,7 @@ import BioharmonyGuide from "@/pages/reviews/BioharmonyGuide";
 import VagusNerveGuide from "@/pages/reviews/VagusNerveGuide";
 import UrolithinAGuide from "@/pages/reviews/UrolithinAGuide";
 import BestSupplements2026Guide from "@/pages/reviews/BestSupplements2026Guide";
+import SupplementComparisonGuide from "@/pages/reviews/SupplementComparisonGuide";
 import Disclaimer from "@/pages/Disclaimer";
 import PrivacyPolicy from "@/pages/PrivacyPolicy";
 import TermsOfService from "@/pages/TermsOfService";
@@ -160,6 +161,7 @@ export const SSR_ROUTE_COMPONENTS: Record<string, ComponentType> = {
   "/blog/vagus-nerve-vagal-tone-wellness-practices": VagusNerveGuide,
   "/blog/urolithin-a-mitophagy-longevity-supplement-guide": UrolithinAGuide,
   "/blog/best-supplements-energy-gut-health-longevity-2026": BestSupplements2026Guide,
+  "/blog/supplement-comparison-guide-2026": SupplementComparisonGuide,
   "/disclaimer": Disclaimer,
   "/privacy-policy": PrivacyPolicy,
   "/terms-of-service": TermsOfService,

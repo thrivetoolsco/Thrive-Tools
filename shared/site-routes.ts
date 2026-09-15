@@ -58,6 +58,19 @@ export const eventRoutes: EventRoute[] = [
 
 export const blogPosts: BlogPost[] = [
   {
+    id: "supplement-comparison-guide-2026",
+    title:
+      "Spore-Based vs Regular Probiotics, Magnesium Glycinate vs Oxide, Creatine Monohydrate vs HCl — The Definitive Supplement Comparison Guide",
+    excerpt:
+      "A definitive guide to the supplement forms that matter most in 2026 — from probiotics, magnesium, and creatine to collagen, omega-3, mushrooms, CoQ10, cacao, and longevity compounds.",
+    href: "/blog/supplement-comparison-guide-2026",
+    canonical: "/blog/supplement-comparison-guide-2026",
+    badge: "Comparison Guide",
+    badgeColor: "bg-[#c4622d]/15 text-[#8b3a1a] border-[#c4622d]/25",
+    date: "September 15, 2026",
+    lastmod: "2026-09-15",
+  },
+  {
     id: "best-supplements-energy-gut-health-longevity-2026",
     title: "What Are the Best Supplements for Energy, Gut Health, and Longevity in 2026?",
     excerpt:
