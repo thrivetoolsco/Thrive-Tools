@@ -58,6 +58,18 @@ export const eventRoutes: EventRoute[] = [
 
 export const blogPosts: BlogPost[] = [
   {
+    id: "science-backed-morning-supplement-routine",
+    title: "What Does a Science-Backed Morning Supplement Routine Actually Look Like?",
+    excerpt:
+      "A practical, science-backed morning supplement routine covering hydration, coffee timing, foundational supplements, creatine, tonic herbs, cacao, gut health, energy, and longevity.",
+    href: "/blog/science-backed-morning-supplement-routine",
+    canonical: "/blog/science-backed-morning-supplement-routine",
+    badge: "Morning Routine",
+    badgeColor: "bg-[#c4622d]/15 text-[#8b3a1a] border-[#c4622d]/25",
+    date: "September 16, 2026",
+    lastmod: "2026-09-16",
+  },
+  {
     id: "supplement-comparison-guide-2026",
     title:
       "Spore-Based vs Regular Probiotics, Magnesium Glycinate vs Oxide, Creatine Monohydrate vs HCl — The Definitive Supplement Comparison Guide",
