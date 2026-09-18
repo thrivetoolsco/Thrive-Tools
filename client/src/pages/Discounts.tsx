@@ -39,8 +39,8 @@ const vitaminsSupplements: DiscountItem[] = [
     blogHref: "/product-reviews/im8-health-review",
   },
   {
-    name: "Equip Protein Powder",
-    description: "Simple, high-quality protein powder made with grass-fed beef protein isolate and no unnecessary fillers.",
+    name: "Equip Foods",
+    description: "Clean protein powders, coffee and colostrum made with simple, high-quality ingredients and no unnecessary fillers.",
     code: "THRIVETOOLS",
     url: "https://www.equipfoods.com/THRIVETOOLS",
   },
