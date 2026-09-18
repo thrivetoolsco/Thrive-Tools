@@ -58,6 +58,18 @@ export const eventRoutes: EventRoute[] = [
 
 export const blogPosts: BlogPost[] = [
   {
+    id: "best-clean-protein-powder-2026-equip-prime-protein",
+    title: "What Is the Best Clean Protein Powder in 2026? Everything You Need to Know",
+    excerpt:
+      "A complete guide to clean protein powder, grass-fed beef protein, Equip Prime Protein ingredients, gut comfort, glycine, and how it compares with whey and plant protein.",
+    href: "/blog/best-clean-protein-powder-2026-equip-prime-protein",
+    canonical: "/blog/best-clean-protein-powder-2026-equip-prime-protein",
+    badge: "Protein",
+    badgeColor: "bg-[#c4622d]/15 text-[#8b3a1a] border-[#c4622d]/25",
+    date: "September 18, 2026",
+    lastmod: "2026-09-18",
+  },
+  {
     id: "science-backed-morning-supplement-routine",
     title: "What Does a Science-Backed Morning Supplement Routine Actually Look Like?",
     excerpt:
