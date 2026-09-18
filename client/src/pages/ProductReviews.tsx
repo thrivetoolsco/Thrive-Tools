@@ -96,7 +96,17 @@ export default function ProductReviews() {
           placeholder="Search articles..."
           data-testid="input-search-blog"
           className="w-full bg-white/60 backdrop-blur-sm border border-black/10 rounded-full pl-11 pr-10 py-3 text-sm text-black placeholder-black/30 focus:outline-none focus:border-[#c4622d]/40 focus:ring-2 focus:ring-[#c4622d]/10 transition-all"
-          onKeyDown={(e) => { if (e.key === "Enter") e.currentTarget.blur(); }}
+          onKeyDown={(e) => {
+            if (e.key === "Enter") {
+              if (query.trim()) {
+                trackEvent("blog_search", {
+                  result_count: filtered.length,
+                  page_path: "/blog",
+                });
+              }
+              e.currentTarget.blur();
+            }
+          }}
         />
         {query && (
           <button

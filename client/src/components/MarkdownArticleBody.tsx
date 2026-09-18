@@ -1,5 +1,6 @@
 import { ExternalLink } from "lucide-react";
 import { type ReactNode } from "react";
+import { trackEvent } from "@/lib/analytics";
 
 function renderInline(text: string, keyPrefix: string): ReactNode[] {
   const nodes: ReactNode[] = [];
@@ -18,6 +19,12 @@ function renderInline(text: string, keyPrefix: string): ReactNode[] {
           href={match[3]}
           target="_blank"
           rel="noopener noreferrer"
+          onClick={() =>
+            trackEvent("article_link_click", {
+              link_type: /\bshop\b/i.test(match[2]) ? "affiliate" : "external",
+              page_path: window.location.pathname,
+            })
+          }
           className="inline-flex items-center gap-1 text-[#c4622d] font-semibold hover:underline"
         >
           {renderInline(match[2], `${key}-link`)}

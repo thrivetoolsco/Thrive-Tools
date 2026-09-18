@@ -6,6 +6,7 @@ import { ArrowLeft } from "lucide-react";
 import ShareButton from "@/components/ShareButton";
 import SeoHead, { SeoProps } from "@/components/SeoHead";
 import { ArrowRight } from "lucide-react";
+import { trackEvent } from "@/lib/analytics";
 
 interface PageLayoutProps {
   children: React.ReactNode;
@@ -90,6 +91,12 @@ export default function PageLayout({
               </div>
               <a
                 href="/discount-codes#protocol-finder"
+                onClick={() =>
+                  trackEvent("protocol_finder_cta_click", {
+                    placement: "article_footer",
+                    page_path: window.location.pathname,
+                  })
+                }
                 className="inline-flex items-center gap-2 bg-[#c4622d] hover:bg-[#8b3a1a] text-white font-semibold text-sm px-6 py-3 rounded-full transition-colors whitespace-nowrap flex-shrink-0"
               >
                 Find my protocol <ArrowRight className="w-4 h-4" />

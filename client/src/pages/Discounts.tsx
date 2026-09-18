@@ -464,7 +464,14 @@ function CategorySection({ icon: Icon, title, subtitle, items, badgeColor, gradi
   return (
     <section id={id} className="mb-8">
       <button
-        onClick={() => setOpen(!open)}
+        onClick={() => {
+          trackEvent("discount_category_toggle", {
+            category: title,
+            action: open ? "collapse" : "expand",
+            brand_count: items.length,
+          });
+          setOpen(!open);
+        }}
         className="w-full flex items-center gap-4 mb-0 group cursor-pointer"
         data-testid={`accordion-toggle-${title.replace(/\s+/g, "-").toLowerCase()}`}
       >

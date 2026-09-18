@@ -97,6 +97,10 @@ export default function ProtocolQuiz() {
   };
 
   const reset = () => {
+    trackEvent("protocol_restart", {
+      concern: concernId ?? "unknown",
+      page_path: window.location.pathname,
+    });
     setConcernId(null);
     setStep("intro");
     setEmail("");
@@ -160,6 +164,11 @@ export default function ProtocolQuiz() {
             Already know what you want?{" "}
             <a
               href="#discount-list"
+              onClick={() =>
+                trackEvent("protocol_skip", {
+                  page_path: window.location.pathname,
+                })
+              }
               className="underline underline-offset-2 hover:text-[#c4622d] transition-colors"
             >
               Skip to the full list ↓
