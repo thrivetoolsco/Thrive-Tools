@@ -47,8 +47,14 @@ function renderInline(text: string, keyPrefix: string): ReactNode[] {
   return nodes;
 }
 
-export default function MarkdownArticleBody({ source }: { source: string }) {
-  const lines = source.split(/\r?\n/).slice(6);
+export default function MarkdownArticleBody({
+  source,
+  skipLeadingLines = 6,
+}: {
+  source: string;
+  skipLeadingLines?: number;
+}) {
+  const lines = source.split(/\r?\n/).slice(skipLeadingLines);
   const blocks: ReactNode[] = [];
 
   for (let index = 0; index < lines.length; index += 1) {

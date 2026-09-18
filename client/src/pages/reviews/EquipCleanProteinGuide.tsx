@@ -14,6 +14,10 @@ const description =
   "What makes a protein powder clean? Compare grass-fed beef protein with whey and plant protein, review Equip Prime Protein ingredients, gut benefits, glycine, and who it is best for.";
 const affiliateUrl = "https://www.equipfoods.com/THRIVETOOLS";
 const articleContent = articleSource.replace(/<\/?cite(?:\s[^>]*)?>/g, "");
+const faqHeading = "## Frequently Asked Questions";
+const faqStart = articleContent.indexOf(faqHeading);
+const articleBeforeFaq = faqStart >= 0 ? articleContent.slice(0, faqStart) : articleContent;
+const articleFaq = faqStart >= 0 ? articleContent.slice(faqStart) : "";
 
 const faqSchema = {
   "@context": "https://schema.org",
@@ -109,6 +113,8 @@ export default function EquipCleanProteinGuide() {
           />
         </figure>
 
+        <MarkdownArticleBody source={articleBeforeFaq} />
+
         <aside className="rounded-2xl border-2 border-[#c4622d]/35 bg-[#c4622d]/8 p-5 sm:p-6">
           <p className="text-xs font-mono font-semibold tracking-widest uppercase text-[#c4622d] mb-2">
             Thrive Tools reader discount
@@ -138,7 +144,7 @@ export default function EquipCleanProteinGuide() {
           </a>
         </aside>
 
-        <MarkdownArticleBody source={articleContent} />
+        {articleFaq && <MarkdownArticleBody source={articleFaq} skipLeadingLines={0} />}
 
         <figure className="overflow-hidden rounded-2xl border border-black/10 bg-white p-4 sm:p-8">
           <img
