@@ -40,9 +40,10 @@ const vitaminsSupplements: DiscountItem[] = [
   },
   {
     name: "Equip Foods",
-    description: "Clean protein powders, coffee and colostrum made with simple, high-quality ingredients and no unnecessary fillers.",
+    description: "Clean, grass-fed beef protein that supports muscle recovery, gut comfort, collagen intake and glycine—without whey, dairy, soy, gums or unnecessary fillers.",
     code: "THRIVETOOLS",
     url: "https://www.equipfoods.com/THRIVETOOLS",
+    blogHref: "/blog/best-clean-protein-powder-2026-equip-prime-protein",
   },
   {
     name: "HyperionHerbs",
@@ -567,16 +568,6 @@ export default function Discounts() {
         </div>
       </section>
 
-      {/* Protocol Finder Quiz */}
-      <section
-        className="py-12 px-4 sm:px-6 lg:px-8 border-b border-black/8"
-        style={{ background: "linear-gradient(180deg, #fdf6eb 0%, #f8ece0 100%)" }}
-      >
-        <div className="max-w-5xl mx-auto">
-          <ProtocolQuiz />
-        </div>
-      </section>
-
       {/* Content */}
       <section
         id="discount-list"
@@ -657,6 +648,16 @@ export default function Discounts() {
               Return to top
             </button>
           </div>
+        </div>
+      </section>
+
+      {/* Protocol Finder Quiz */}
+      <section
+        className="py-12 px-4 sm:px-6 lg:px-8 border-t border-black/8"
+        style={{ background: "linear-gradient(180deg, #f8ece0 0%, #fdf6eb 100%)" }}
+      >
+        <div className="max-w-5xl mx-auto">
+          <ProtocolQuiz />
         </div>
       </section>
 
