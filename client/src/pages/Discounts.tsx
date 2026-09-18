@@ -39,6 +39,12 @@ const vitaminsSupplements: DiscountItem[] = [
     blogHref: "/product-reviews/im8-health-review",
   },
   {
+    name: "Equip Protein Powder",
+    description: "Simple, high-quality protein powder made with grass-fed beef protein isolate and no unnecessary fillers.",
+    code: "THRIVETOOLS",
+    url: "https://www.equipfoods.com/THRIVETOOLS",
+  },
+  {
     name: "HyperionHerbs",
     description: "The gold standard for tonic herbs. Dual extracted, fruiting body only: the difference is noticeable. My go-to for Reishi, Cordyceps, Lion's Mane, and their incredible coffee formula.",
     code: "EDEN10",
