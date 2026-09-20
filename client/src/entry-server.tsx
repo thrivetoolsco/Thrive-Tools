@@ -58,7 +58,7 @@ import MuseHeadbandReview from "@/pages/reviews/MuseHeadbandReview";
 import CeremonialCacaoGuide from "@/pages/reviews/CeremonialCacaoGuide";
 import PsilocybinGuide from "@/pages/reviews/PsilocybinGuide";
 import WaterdropK19HReview from "@/pages/reviews/WaterdropK19HReview";
-import MisoMythGuide from "@/pages/reviews/MisoMythGuide";
+import MisoMythGuide from "@/pages/reviews/MisoMythGuide"; import BioptimizersDiscountCode from "@/pages/reviews/BioptimizersDiscountCode"; import EquipFoodsDiscountCode from "@/pages/reviews/EquipFoodsDiscountCode"; import IM8DiscountCode from "@/pages/reviews/IM8DiscountCode"; import TimelineMitopureDiscountCode from "@/pages/reviews/TimelineMitopureDiscountCode"; import SupplementDiscountCodesFaq from "@/pages/reviews/SupplementDiscountCodesFaq"; import RedLightTherapyDiscountCodes from "@/pages/reviews/RedLightTherapyDiscountCodes";
 import KratomSocialPivotGuide from "@/pages/reviews/KratomSocialPivotGuide";
 import BiohackerSupplementStack from "@/pages/reviews/BiohackerSupplementStack";
 import MicroplasticsBrainGuide from "@/pages/reviews/MicroplasticsBrainGuide";
@@ -173,7 +173,7 @@ export const SSR_ROUTE_COMPONENTS: Record<string, ComponentType> = {
   "/blog/rhonda-patrick-multivitamin": RhondaPatrickMultivitamin,
   "/blog/biohacking-supplements-2026": BiohackingSupplements2026,
   "/blog/biohacking-beginners-guide": BiohackingBeginnersGuide,
-  "/blog/somatic-reset-guide": SomaticResetGuide,
+  "/blog/somatic-reset-guide": SomaticResetGuide,   "/blog/bioptimizers-discount-code": BioptimizersDiscountCode,   "/blog/equip-foods-discount-code": EquipFoodsDiscountCode,   "/blog/im8-discount-code": IM8DiscountCode,   "/blog/timeline-mitopure-discount-code": TimelineMitopureDiscountCode,   "/blog/supplement-discount-codes-faq": SupplementDiscountCodesFaq,   "/blog/red-light-therapy-discount-codes": RedLightTherapyDiscountCodes,
 };
 
 export async function render(
