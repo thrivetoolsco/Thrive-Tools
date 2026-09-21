@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { ExternalLink, Tag, Check, User } from "lucide-react";
 import { Link } from "wouter";
 
+
 function SectionHeader({
   eyebrow,
   title,
@@ -22,32 +23,34 @@ function SectionHeader({
   );
 }
 
+
 const faqs = [
   {
-    q: "Does the Bioptimizers discount code expire?",
+    q: "Does the Just Thrive discount code expire?",
     a: "Brands can change or retire codes at any time, so no code works forever. I re-check the codes on my discount codes page regularly. If THRIVETOOLS ever stops working, I update it there first.",
   },
   {
-    q: "Where do I enter the Bioptimizers discount code?",
-    a: "Add your products to the cart on bioptimizers.com, go to checkout, and look for the discount-code box. Type THRIVETOOLS exactly as shown (all caps, no spaces) and apply it before you pay.",
+    q: "Where do I enter the Just Thrive discount code?",
+    a: "Add your products to the cart on justthrivehealth.com, go to checkout, and look for the discount-code box. Type THRIVETOOLS exactly as shown (all caps, no spaces) and apply it before you pay.",
   },
   {
-    q: "Can I stack discount codes on Bioptimizers?",
-    a: "In almost all cases, no. Bioptimizers checkout accepts one discount code per order, like most supplement brands. If you have more than one code, use whichever saves you the most on that order.",
+    q: "Can I stack discount codes on Just Thrive?",
+    a: "In almost all cases, no. Just Thrive checkout accepts one discount code per order, like most supplement brands. If you have more than one code, use whichever saves you the most on that order.",
   },
 ];
 
-export default function BioptimizersDiscountCode() {
+
+export default function JustThriveDiscountCode() {
   return (
     <PageLayout
       showShare
-      title="Bioptimizers Discount Code 2026"
+      title="Just Thrive Discount Code 2026"
       subtitle="By Eden Laraki | ThriveTools.co"
       seo={{
-        title: "Bioptimizers Discount Code 2026 | Thrive Tools",
+        title: "Just Thrive Discount Code 2026 | Thrive Tools",
         description:
-          "Looking for a Bioptimizers discount code? Use code THRIVETOOLS in the discount-code box at checkout on bioptimizers.com. Verified for 2026.",
-        canonical: "https://thrivetools.co/blog/bioptimizers-discount-code",
+          "Looking for a Just Thrive discount code? Use code THRIVETOOLS at checkout on justthrivehealth.com. Verified for 2026.",
+        canonical: "https://thrivetools.co/blog/just-thrive-discount-code",
         ogType: "article",
         datePublished: "2026-09-20",
       }}
@@ -60,24 +63,21 @@ export default function BioptimizersDiscountCode() {
           <Badge className="bg-[#c4622d]/15 text-[#8b3a1a] border-[#c4622d]/25">Verified 2026</Badge>
         </div>
 
-        <div className="card-glass rounded-2xl p-6 md:p-8" data-testid="answer-bioptimizers-discount-code">
+        <div className="card-glass rounded-2xl p-6 md:p-8" data-testid="answer-just-thrive-discount-code">
           <p className="text-lg leading-relaxed text-black/80">
             <strong className="font-semibold text-black">The short answer:</strong> use the code{" "}
-            <strong className="font-semibold text-black">THRIVETOOLS</strong> in the discount-code box at
-            checkout on bioptimizers.com to save on your order.
+            <strong className="font-semibold text-black">THRIVETOOLS</strong> in the discount-code box at checkout on
+            justthrivehealth.com to save on your order.
           </p>
         </div>
 
         <section>
           <SectionHeader
             eyebrow="The code"
-            title="Bioptimizers discount code"
-            description="Copy the code below, then head to bioptimizers.com to use it."
+            title="Just Thrive discount code"
+            description="Use the link below and the code applies automatically, or enter it manually at checkout."
           />
-          <div
-            className="card-glass rounded-2xl p-6 md:p-8 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-5"
-            data-testid="code-bioptimizers-discount-code"
-          >
+          <div className="card-glass rounded-2xl p-6 md:p-8 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-5" data-testid="code-just-thrive-discount-code">
             <div className="flex items-center gap-3">
               <span className="w-11 h-11 rounded-full bg-[#c4622d]/10 text-[#8b3a1a] flex items-center justify-center shrink-0">
                 <Tag className="w-5 h-5" />
@@ -87,9 +87,9 @@ export default function BioptimizersDiscountCode() {
                 <p className="font-display text-2xl font-bold tracking-wide text-black">THRIVETOOLS</p>
               </div>
             </div>
-            <a href="https://bioptimizers.com/shop/products/magnesium-breakthrough" target="_blank" rel="noopener noreferrer">
-              <Button className="btn-primary rounded-full px-6" data-testid="button-bioptimizers-shop">
-                Shop Bioptimizers <ExternalLink className="w-4 h-4 ml-2" />
+            <a href="https://justthrivehealth.com/THRIVETOOLS" target="_blank" rel="noopener noreferrer">
+              <Button className="btn-primary rounded-full px-6" data-testid="button-just-thrive-shop">
+                Shop Just Thrive <ExternalLink className="w-4 h-4 ml-2" />
               </Button>
             </a>
           </div>
@@ -103,7 +103,7 @@ export default function BioptimizersDiscountCode() {
           />
           <ol className="space-y-4">
             {[
-              "Add the Bioptimizers products you want to your cart on bioptimizers.com.",
+              "Add the Just Thrive products you want to your cart on justthrivehealth.com.",
               "Go to checkout and find the discount-code (promo code) box.",
               "Type THRIVETOOLS exactly as shown, all caps with no spaces, and click apply.",
               "Confirm the discount shows on your order total before you pay.",
@@ -138,7 +138,7 @@ export default function BioptimizersDiscountCode() {
           <SectionHeader eyebrow="FAQ" title="Frequently asked questions" />
           <div className="space-y-4">
             {faqs.map((f, i) => (
-              <div key={i} className="card-glass rounded-2xl p-6" data-testid={`faq-bioptimizers-${i}`}>
+              <div key={i} className="card-glass rounded-2xl p-6" data-testid={`faq-just-thrive-${i}`}>
                 <p className="font-display font-bold text-black">{f.q}</p>
                 <p className="text-black/60 mt-2 leading-relaxed">{f.a}</p>
               </div>
@@ -152,7 +152,7 @@ export default function BioptimizersDiscountCode() {
             <Link
               href="/discount-codes"
               className="card-glass rounded-2xl p-6 block hover:shadow-lg transition-shadow"
-              data-testid="link-bioptimizers-all-codes"
+              data-testid="link-just-thrive-all-codes"
             >
               <p className="font-display font-bold text-black">All discount codes</p>
               <p className="text-black/60 text-sm mt-1 leading-relaxed">
@@ -160,63 +160,48 @@ export default function BioptimizersDiscountCode() {
               </p>
             </Link>
             <Link
-              href="/blog/magnesium-deficiency-supplement-guide"
+              href="/blog/bacillus-subtilis-bacillus-coagulans-probiotic-guide"
               className="card-glass rounded-2xl p-6 block hover:shadow-lg transition-shadow"
-              data-testid="link-bioptimizers-magnesium"
+              data-testid="link-just-thrive-probiotic-guide"
             >
-              <p className="font-display font-bold text-black">Magnesium deficiency and supplement guide</p>
+              <p className="font-display font-bold text-black">Why Most Probiotics Never Reach Your Gut. The Two Strains That Always Do</p>
               <p className="text-black/60 text-sm mt-1 leading-relaxed">
-                Why magnesium matters and how to choose a formula.
+                Why spore-based probiotics survive when most probiotics don&apos;t.
               </p>
             </Link>
           </div>
         </section>
 
-        <div
-          className="card-glass rounded-2xl p-6 md:p-8"
-          data-testid="cta-bioptimizers-discount-code"
-        >
+        <div className="card-glass rounded-2xl p-6 md:p-8" data-testid="cta-just-thrive-discount-code">
           <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
             <div>
-              <p className="font-display text-xl font-bold text-black">Ready to save on Bioptimizers?</p>
+              <p className="font-display text-xl font-bold text-black">Ready to save on Just Thrive?</p>
               <p className="text-black/60 mt-1">
-                Enter <strong className="font-semibold text-black">THRIVETOOLS</strong> in the discount-code
-                box at checkout.
+                Enter <strong className="font-semibold text-black">THRIVETOOLS</strong> in the discount-code box at checkout.
               </p>
             </div>
-            <a href="https://bioptimizers.com/shop/products/magnesium-breakthrough" target="_blank" rel="noopener noreferrer">
-              <Button
-                className="btn-primary rounded-full px-6"
-                data-testid="button-bioptimizers-discount-code"
-              >
-                Shop Bioptimizers <ExternalLink className="w-4 h-4 ml-2" />
+            <a href="https://justthrivehealth.com/THRIVETOOLS" target="_blank" rel="noopener noreferrer">
+              <Button className="btn-primary rounded-full px-6" data-testid="button-just-thrive-discount-code">
+                Shop Just Thrive <ExternalLink className="w-4 h-4 ml-2" />
               </Button>
             </a>
           </div>
         </div>
 
-        <div
-          className="flex items-start gap-4 card-glass rounded-2xl p-6"
-          data-testid="bio-bioptimizers-discount-code"
-        >
+        <div className="flex items-start gap-4 card-glass rounded-2xl p-6" data-testid="bio-just-thrive-discount-code">
           <span className="w-12 h-12 rounded-full bg-[#c4622d]/10 text-[#8b3a1a] flex items-center justify-center shrink-0">
             <User className="w-6 h-6" />
           </span>
           <div>
             <p className="font-display font-bold text-black">Eden Laraki</p>
             <p className="text-black/60 mt-1 text-sm">
-              Eden runs ThriveTools.co, where she tests wellness products and keeps a verified list of
-              discount codes for the brands she actually uses.
+              Eden runs ThriveTools.co, where she tests wellness products and keeps a verified list of discount codes for the brands she actually uses.
             </p>
           </div>
         </div>
 
-        <p
-          className="text-sm text-black/50 leading-relaxed"
-          data-testid="disclosure-bioptimizers-discount-code"
-        >
-          <strong className="font-semibold text-black/70">Affiliate disclosure:</strong> This post contains
-          affiliate links. If you buy through them, I may earn a commission at no extra cost to you.
+        <p className="text-sm text-black/50 leading-relaxed" data-testid="disclosure-just-thrive-discount-code">
+          <strong className="font-semibold text-black/70">Affiliate disclosure:</strong> This post contains affiliate links. If you buy through them, I may earn a commission at no extra cost to you.
         </p>
       </article>
     </PageLayout>

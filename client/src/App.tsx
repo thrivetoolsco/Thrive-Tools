@@ -171,6 +171,24 @@ const RedLightTherapyDiscountCodes = lazy(
   () => import("@/pages/reviews/RedLightTherapyDiscountCodes"),
 );
 
+const HyperionHerbsDiscountCode = lazy(
+  () => import("@/pages/reviews/HyperionHerbsDiscountCode"),
+);
+const JustThriveDiscountCode = lazy(
+  () => import("@/pages/reviews/JustThriveDiscountCode"),
+);
+const OrganikaDiscountCode = lazy(
+  () => import("@/pages/reviews/OrganikaDiscountCode"),
+);
+const EnergyBitsDiscountCode = lazy(
+  () => import("@/pages/reviews/EnergyBitsDiscountCode"),
+);
+const SelfDecodeDiscountCode = lazy(
+  () => import("@/pages/reviews/SelfDecodeDiscountCode"),
+);
+const MuseHeadbandDiscountCode = lazy(
+  () => import("@/pages/reviews/MuseHeadbandDiscountCode"),
+);
 function ScrollToTop() {
   const [location] = useLocation();
   useEffect(() => {
@@ -423,8 +441,29 @@ function Router() {
         <Route path="/disclaimer" component={Disclaimer} />
         <Route path="/privacy-policy" component={PrivacyPolicy} />
         <Route path="/terms-of-service" component={TermsOfService} />
-        <Route component={NotFound} />
-            <Route path="/blog/bioptimizers-discount-code" component={BioptimizersDiscountCode} />       <Route path="/blog/equip-foods-discount-code" component={EquipFoodsDiscountCode} />       <Route path="/blog/im8-discount-code" component={IM8DiscountCode} />       <Route path="/blog/timeline-mitopure-discount-code" component={TimelineMitopureDiscountCode} />       <Route path="/blog/supplement-discount-codes-faq" component={SupplementDiscountCodesFaq} />       <Route path="/blog/red-light-therapy-discount-codes" component={RedLightTherapyDiscountCodes} />     </Switch>
+        <Route path="/blog/hyperion-herbs-discount-code" component={HyperionHerbsDiscountCode} /> <Route path="/blog/just-thrive-discount-code" component={JustThriveDiscountCode} /> <Route path="/blog/organika-discount-code" component={OrganikaDiscountCode} /> <Route path="/blog/energybits-discount-code" component={EnergyBitsDiscountCode} /> <Route path="/blog/selfdecode-discount-code" component={SelfDecodeDiscountCode} /> <Route path="/blog/muse-headband-discount-code" component={MuseHeadbandDiscountCode} /> <Route component={NotFound} />
+        <Route
+          path="/blog/bioptimizers-discount-code"
+          component={BioptimizersDiscountCode}
+        />{" "}
+        <Route
+          path="/blog/equip-foods-discount-code"
+          component={EquipFoodsDiscountCode}
+        />{" "}
+        <Route path="/blog/im8-discount-code" component={IM8DiscountCode} />{" "}
+        <Route
+          path="/blog/timeline-mitopure-discount-code"
+          component={TimelineMitopureDiscountCode}
+        />{" "}
+        <Route
+          path="/blog/supplement-discount-codes-faq"
+          component={SupplementDiscountCodesFaq}
+        />{" "}
+        <Route
+          path="/blog/red-light-therapy-discount-codes"
+          component={RedLightTherapyDiscountCodes}
+        />{" "}
+      </Switch>
     </Suspense>
   );
 }

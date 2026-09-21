@@ -50,6 +50,18 @@ import AyahuascaJourney from "./pages/events/AyahuascaJourney";
 import IndoorGardening from "./pages/events/IndoorGardening";
 import FoodForest from "./pages/events/FoodForest";
 import ProductReviews from "./pages/ProductReviews";
+import BioptimizersDiscountCode from "./pages/reviews/BioptimizersDiscountCode";
+import HyperionHerbsDiscountCode from "./pages/reviews/HyperionHerbsDiscountCode";
+import JustThriveDiscountCode from "./pages/reviews/JustThriveDiscountCode";
+import OrganikaDiscountCode from "./pages/reviews/OrganikaDiscountCode";
+import EnergyBitsDiscountCode from "./pages/reviews/EnergyBitsDiscountCode";
+import SelfDecodeDiscountCode from "./pages/reviews/SelfDecodeDiscountCode";
+import MuseHeadbandDiscountCode from "./pages/reviews/MuseHeadbandDiscountCode";
+import EquipFoodsDiscountCode from "./pages/reviews/EquipFoodsDiscountCode";
+import IM8DiscountCode from "./pages/reviews/IM8DiscountCode";
+import TimelineMitopureDiscountCode from "./pages/reviews/TimelineMitopureDiscountCode";
+import SupplementDiscountCodesFaq from "./pages/reviews/SupplementDiscountCodesFaq";
+import RedLightTherapyDiscountCodes from "./pages/reviews/RedLightTherapyDiscountCodes";
 
 export const SSR_ROUTE_COMPONENTS: Record<string, ComponentType> = {
   "/product-reviews/im8-vs-ag1": Im8VsAg1,
@@ -61,6 +73,18 @@ export const SSR_ROUTE_COMPONENTS: Record<string, ComponentType> = {
   "/blog/rhonda-patrick-multivitamin": RhondaPatrickMultivitamin,
   "/product-reviews/biohacking-supplements-2026": BiohackingSupplements2026,
   "/blog/biohacking-supplements-2026": BiohackingSupplements2026,
+  "/blog/bioptimizers-discount-code": BioptimizersDiscountCode,
+  "/blog/hyperion-herbs-discount-code": HyperionHerbsDiscountCode,
+  "/blog/just-thrive-discount-code": JustThriveDiscountCode,
+  "/blog/organika-discount-code": OrganikaDiscountCode,
+  "/blog/energybits-discount-code": EnergyBitsDiscountCode,
+  "/blog/selfdecode-discount-code": SelfDecodeDiscountCode,
+  "/blog/muse-headband-discount-code": MuseHeadbandDiscountCode,
+  "/blog/equip-foods-discount-code": EquipFoodsDiscountCode,
+  "/blog/im8-discount-code": IM8DiscountCode,
+  "/blog/timeline-mitopure-discount-code": TimelineMitopureDiscountCode,
+  "/blog/supplement-discount-codes-faq": SupplementDiscountCodesFaq,
+  "/blog/red-light-therapy-discount-codes": RedLightTherapyDiscountCodes,
   "/product-reviews/biohacking-beginners-guide": BiohackingBeginnersGuide,
   "/blog/biohacking-beginners-guide": BiohackingBeginnersGuide,
   "/product-reviews/breathwork-beginners-guide": BreathworkBeginnersGuide,
@@ -72,7 +96,8 @@ export const SSR_ROUTE_COMPONENTS: Record<string, ComponentType> = {
   "/blog/tonic-herbs-guide": TonicHerbsGuide,
   "/blog/earthrunners-review": EarthRunnersReview,
   "/blog/energybits-spirulina-chlorella-review": EnergyBitsReview,
-  "/blog/bacillus-subtilis-bacillus-coagulans-probiotic-guide": JustThriveProbiotic,
+  "/blog/bacillus-subtilis-bacillus-coagulans-probiotic-guide":
+    JustThriveProbiotic,
   "/blog/reishi-schisandra-daily-tonic-herbs": ReishiSchisandraGuide,
   "/blog/magnesium-deficiency-supplement-guide": MagnesiumGuide,
   "/blog/pumpkin-seed-oil-supplement-stack-benefits": PumpkinSeedOilGuide,
