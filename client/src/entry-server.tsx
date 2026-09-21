@@ -58,7 +58,25 @@ import MuseHeadbandReview from "@/pages/reviews/MuseHeadbandReview";
 import CeremonialCacaoGuide from "@/pages/reviews/CeremonialCacaoGuide";
 import PsilocybinGuide from "@/pages/reviews/PsilocybinGuide";
 import WaterdropK19HReview from "@/pages/reviews/WaterdropK19HReview";
-import MisoMythGuide from "@/pages/reviews/MisoMythGuide"; import BioptimizersDiscountCode from "@/pages/reviews/BioptimizersDiscountCode"; import HyperionHerbsDiscountCode from "@/pages/reviews/HyperionHerbsDiscountCode"; import JustThriveDiscountCode from "@/pages/reviews/JustThriveDiscountCode"; import OrganikaDiscountCode from "@/pages/reviews/OrganikaDiscountCode"; import EnergyBitsDiscountCode from "@/pages/reviews/EnergyBitsDiscountCode"; import SelfDecodeDiscountCode from "@/pages/reviews/SelfDecodeDiscountCode"; import MuseHeadbandDiscountCode from "@/pages/reviews/MuseHeadbandDiscountCode"; import EquipFoodsDiscountCode from "@/pages/reviews/EquipFoodsDiscountCode"; import IM8DiscountCode from "@/pages/reviews/IM8DiscountCode"; import TimelineMitopureDiscountCode from "@/pages/reviews/TimelineMitopureDiscountCode"; import SupplementDiscountCodesFaq from "@/pages/reviews/SupplementDiscountCodesFaq"; import RedLightTherapyDiscountCodes from "@/pages/reviews/RedLightTherapyDiscountCodes";
+import MisoMythGuide from "@/pages/reviews/MisoMythGuide";
+import BioptimizersDiscountCode from "@/pages/reviews/BioptimizersDiscountCode";
+import HyperionHerbsDiscountCode from "@/pages/reviews/HyperionHerbsDiscountCode";
+import JustThriveDiscountCode from "@/pages/reviews/JustThriveDiscountCode";
+import OrganikaDiscountCode from "@/pages/reviews/OrganikaDiscountCode";
+import EnergyBitsDiscountCode from "@/pages/reviews/EnergyBitsDiscountCode";
+import SelfDecodeDiscountCode from "@/pages/reviews/SelfDecodeDiscountCode";
+import MuseHeadbandDiscountCode from "@/pages/reviews/MuseHeadbandDiscountCode";
+import EquipFoodsDiscountCode from "@/pages/reviews/EquipFoodsDiscountCode";
+import IM8DiscountCode from "@/pages/reviews/IM8DiscountCode";
+import TimelineMitopureDiscountCode from "@/pages/reviews/TimelineMitopureDiscountCode";
+import SupplementDiscountCodesFaq from "@/pages/reviews/SupplementDiscountCodesFaq";
+import RedLightTherapyDiscountCodes from "@/pages/reviews/RedLightTherapyDiscountCodes";
+import JoovvDiscountCode from "@/pages/reviews/JoovvDiscountCode";
+import AquaOmegaDiscountCode from "@/pages/reviews/AquaOmegaDiscountCode";
+import EarthRunnersDiscountCode from "@/pages/reviews/EarthRunnersDiscountCode";
+import Cookware360DiscountCode from "@/pages/reviews/Cookware360DiscountCode";
+import NeurosityDiscountCode from "@/pages/reviews/NeurosityDiscountCode";
+import DavidsDiscountCode from "@/pages/reviews/DavidsDiscountCode";
 import KratomSocialPivotGuide from "@/pages/reviews/KratomSocialPivotGuide";
 import BiohackerSupplementStack from "@/pages/reviews/BiohackerSupplementStack";
 import MicroplasticsBrainGuide from "@/pages/reviews/MicroplasticsBrainGuide";
@@ -173,7 +191,25 @@ export const SSR_ROUTE_COMPONENTS: Record<string, ComponentType> = {
   "/blog/rhonda-patrick-multivitamin": RhondaPatrickMultivitamin,
   "/blog/biohacking-supplements-2026": BiohackingSupplements2026,
   "/blog/biohacking-beginners-guide": BiohackingBeginnersGuide,
-  "/blog/somatic-reset-guide": SomaticResetGuide,   "/blog/bioptimizers-discount-code": BioptimizersDiscountCode, "/blog/hyperion-herbs-discount-code": HyperionHerbsDiscountCode, "/blog/just-thrive-discount-code": JustThriveDiscountCode, "/blog/organika-discount-code": OrganikaDiscountCode, "/blog/energybits-discount-code": EnergyBitsDiscountCode, "/blog/selfdecode-discount-code": SelfDecodeDiscountCode, "/blog/muse-headband-discount-code": MuseHeadbandDiscountCode,   "/blog/equip-foods-discount-code": EquipFoodsDiscountCode,   "/blog/im8-discount-code": IM8DiscountCode,   "/blog/timeline-mitopure-discount-code": TimelineMitopureDiscountCode,   "/blog/supplement-discount-codes-faq": SupplementDiscountCodesFaq,   "/blog/red-light-therapy-discount-codes": RedLightTherapyDiscountCodes,
+  "/blog/somatic-reset-guide": SomaticResetGuide,
+  "/blog/bioptimizers-discount-code": BioptimizersDiscountCode,
+  "/blog/hyperion-herbs-discount-code": HyperionHerbsDiscountCode,
+  "/blog/just-thrive-discount-code": JustThriveDiscountCode,
+  "/blog/organika-discount-code": OrganikaDiscountCode,
+  "/blog/energybits-discount-code": EnergyBitsDiscountCode,
+  "/blog/selfdecode-discount-code": SelfDecodeDiscountCode,
+  "/blog/muse-headband-discount-code": MuseHeadbandDiscountCode,
+  "/blog/equip-foods-discount-code": EquipFoodsDiscountCode,
+  "/blog/im8-discount-code": IM8DiscountCode,
+  "/blog/timeline-mitopure-discount-code": TimelineMitopureDiscountCode,
+  "/blog/supplement-discount-codes-faq": SupplementDiscountCodesFaq,
+  "/blog/red-light-therapy-discount-codes": RedLightTherapyDiscountCodes,
+  "/blog/joovv-discount-code": JoovvDiscountCode,
+  "/blog/aquaomega-discount-code": AquaOmegaDiscountCode,
+  "/blog/earthrunners-discount-code": EarthRunnersDiscountCode,
+  "/blog/360-cookware-discount-code": Cookware360DiscountCode,
+  "/blog/neurosity-discount-code": NeurosityDiscountCode,
+  "/blog/davids-discount-code": DavidsDiscountCode,
 };
 
 export async function render(

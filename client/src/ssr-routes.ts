@@ -61,7 +61,14 @@ import EquipFoodsDiscountCode from "./pages/reviews/EquipFoodsDiscountCode";
 import IM8DiscountCode from "./pages/reviews/IM8DiscountCode";
 import TimelineMitopureDiscountCode from "./pages/reviews/TimelineMitopureDiscountCode";
 import SupplementDiscountCodesFaq from "./pages/reviews/SupplementDiscountCodesFaq";
-import RedLightTherapyDiscountCodes from "./pages/reviews/RedLightTherapyDiscountCodes";
+import RedLightTherapyDiscountCodes from 
+  "./pages/reviews/RedLightTherapyDiscountCodes";
+import JoovvDiscountCode from "./pages/reviews/JoovvDiscountCode";
+import AquaOmegaDiscountCode from "./pages/reviews/AquaOmegaDiscountCode";
+import EarthRunnersDiscountCode from "./pages/reviews/EarthRunnersDiscountCode";
+import Cookware360DiscountCode from "./pages/reviews/Cookware360DiscountCode";
+import NeurosityDiscountCode from "./pages/reviews/NeurosityDiscountCode";
+import DavidsDiscountCode from "./pages/reviews/DavidsDiscountCode";
 
 export const SSR_ROUTE_COMPONENTS: Record<string, ComponentType> = {
   "/product-reviews/im8-vs-ag1": Im8VsAg1,
@@ -85,6 +92,12 @@ export const SSR_ROUTE_COMPONENTS: Record<string, ComponentType> = {
   "/blog/timeline-mitopure-discount-code": TimelineMitopureDiscountCode,
   "/blog/supplement-discount-codes-faq": SupplementDiscountCodesFaq,
   "/blog/red-light-therapy-discount-codes": RedLightTherapyDiscountCodes,
+  "/blog/joovv-discount-code": JoovvDiscountCode,
+  "/blog/aquaomega-discount-code": AquaOmegaDiscountCode,
+  "/blog/earthrunners-discount-code": EarthRunnersDiscountCode,
+  "/blog/360-cookware-discount-code": Cookware360DiscountCode,
+  "/blog/neurosity-discount-code": NeurosityDiscountCode,
+  "/blog/davids-discount-code": DavidsDiscountCode,
   "/product-reviews/biohacking-beginners-guide": BiohackingBeginnersGuide,
   "/blog/biohacking-beginners-guide": BiohackingBeginnersGuide,
   "/product-reviews/breathwork-beginners-guide": BreathworkBeginnersGuide,
