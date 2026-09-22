@@ -1,0 +1,142 @@
+mito-red-light 0
+redtherapy 0
+vielight 0
+waterdrop 0
+koracao 0
+isun-skincare 0
+--- batch5/6 slugs expect 0 ---
+organic-nori 0
+intentionally-bare 0
+styriangold 0
+the-blessed-seed 0
+prana-foods 0
+oxygen-advantage 0
+bluecube-baths 0
+mytrex 0
+omnipemf 0
+healthandyoga 0
+neurovizr 0
+heatbit 0
+aires-tech 0
+the-good-tee 0
+bamboo-clothes 0
+earthing-harmony 0
+promeed 0
+havn-by-lambs 0
+--- hero wiring batch4 ---
+client/src/pages/reviews/MitoRedLightDiscountCode.tsx:// Hero image pending upload
+client/src/pages/reviews/MitoRedLightDiscountCode.tsx:        // Hero image pending upload
+client/src/pages/reviews/MitoRedLightDiscountCode.tsx:        <div className="card-glass rounded-2xl overflow-hidden" data-testid="img-hero-mito-red-light-discount">
+client/src/pages/reviews/MitoRedLightDiscountCode.tsx:          {/* Hero image pending upload */}
+client/src/pages/reviews/RedTherapyDiscountCode.tsx:// Hero image pending upload
+client/src/pages/reviews/RedTherapyDiscountCode.tsx:        // Hero image pending upload
+client/src/pages/reviews/RedTherapyDiscountCode.tsx:        <div className="card-glass rounded-2xl overflow-hidden" data-testid="img-hero-redtherapy-discount">
+client/src/pages/reviews/RedTherapyDiscountCode.tsx:          {/* Hero image pending upload */}
+client/src/pages/reviews/VielightDiscountCode.tsx:// Hero image pending upload
+client/src/pages/reviews/VielightDiscountCode.tsx:        // Hero image pending upload
+client/src/pages/reviews/VielightDiscountCode.tsx:        <div className="card-glass rounded-2xl overflow-hidden" data-testid="img-hero-vielight-discount">
+client/src/pages/reviews/VielightDiscountCode.tsx:          {/* Hero image pending upload */}
+client/src/pages/reviews/WaterDropDiscountCode.tsx:// Hero image pending upload
+client/src/pages/reviews/WaterDropDiscountCode.tsx:        // Hero image pending upload
+client/src/pages/reviews/WaterDropDiscountCode.tsx:        <div className="card-glass rounded-2xl overflow-hidden" data-testid="img-hero-waterdrop-discount">
+client/src/pages/reviews/WaterDropDiscountCode.tsx:          {/* Hero image pending upload */}
+client/src/pages/reviews/KoracaoDiscountCode.tsx:// Hero image pending upload
+client/src/pages/reviews/KoracaoDiscountCode.tsx:        // Hero image pending upload
+client/src/pages/reviews/KoracaoDiscountCode.tsx:        <div className="card-glass rounded-2xl overflow-hidden" data-testid="img-hero-koracao-discount">
+client/src/pages/reviews/KoracaoDiscountCode.tsx:          {/* Hero image pending upload */}
+client/src/pages/reviews/IsunSkincareDiscountCode.tsx:// Hero image pending upload
+client/src/pages/reviews/IsunSkincareDiscountCode.tsx:        // Hero image pending upload
+client/src/pages/reviews/IsunSkincareDiscountCode.tsx:        <div className="card-glass rounded-2xl overflow-hidden" data-testid="img-hero-isun-skincare-discount">
+client/src/pages/reviews/IsunSkincareDiscountCode.tsx:          {/* Hero image pending upload */}
+--- 16 brands links/hero ---
+== IM8DiscountCode ==
+        canonical: "https://thrivetools.co/blog/im8-discount-code",
+            <a href="https://www.im8health.com/THRIVE10" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.im8health.com/THRIVE10" target="_blank" rel="noopener noreferrer">
+== EquipFoodsDiscountCode ==
+        canonical: "https://thrivetools.co/blog/equip-foods-discount-code",
+              href="https://www.equipfoods.com/THRIVETOOLS"
+              href="https://www.equipfoods.com/THRIVETOOLS"
+== BioptimizersDiscountCode ==
+        canonical: "https://thrivetools.co/blog/bioptimizers-discount-code",
+            <a href="https://bioptimizers.com/shop/products/magnesium-breakthrough" target="_blank" rel="noopener noreferrer">
+            <a href="https://bioptimizers.com/shop/products/magnesium-breakthrough" target="_blank" rel="noopener noreferrer">
+== TimelineMitopureDiscountCode ==
+        canonical: "https://thrivetools.co/blog/timeline-mitopure-discount-code",
+              href="https://shop.timeline.com/THRIVE33"
+              href="https://shop.timeline.com/THRIVE33"
+== HyperionHerbsDiscountCode ==
+        canonical: "https://thrivetools.co/blog/hyperion-herbs-discount-code",
+            <a href="http://www.hyperionherbs.com/discount/eden10" target="_blank" rel="noopener noreferrer">
+            <a href="http://www.hyperionherbs.com/discount/eden10" target="_blank" rel="noopener noreferrer">
+== JustThriveDiscountCode ==
+        canonical: "https://thrivetools.co/blog/just-thrive-discount-code",
+            <a href="https://justthrivehealth.com/THRIVETOOLS" target="_blank" rel="noopener noreferrer">
+            <a href="https://justthrivehealth.com/THRIVETOOLS" target="_blank" rel="noopener noreferrer">
+== OrganikaDiscountCode ==
+        canonical: "https://thrivetools.co/blog/organika-discount-code",
+            <a href="https://organika.com/?rfsn=8403940.a276a1f&utm_source=refersion&utm_medium=affiliate&utm_campaign=8403940.a276a1f" target="_blank" rel="noopener noreferrer">
+            <a href="https://organika.com/?rfsn=8403940.a276a1f&utm_source=refersion&utm_medium=affiliate&utm_campaign=8403940.a276a1f" target="_blank" rel="noopener noreferrer">
+== EnergyBitsDiscountCode ==
+        canonical: "https://thrivetools.co/blog/energybits-discount-code",
+            <a href="https://energybits.com/discount/THRIVE25?rfsn=9026872.b2b124&utm_source=refersion&utm_medium=affiliate&utm_campaign=9026872.b2b124" target="_blank" rel="noopener noreferrer">
+            <a href="https://energybits.com/discount/THRIVE25?rfsn=9026872.b2b124&utm_source=refersion&utm_medium=affiliate&utm_campaign=9026872.b2b124" target="_blank" rel="noopener noreferrer">
+== SelfDecodeDiscountCode ==
+        canonical: "https://thrivetools.co/blog/selfdecode-discount-code",
+            <a href="https://selfdecode.com/?a_aid=6536b9c629095" target="_blank" rel="noopener noreferrer">
+            <a href="https://selfdecode.com/?a_aid=6536b9c629095" target="_blank" rel="noopener noreferrer">
+== MuseHeadbandDiscountCode ==
+        canonical: "https://thrivetools.co/blog/muse-headband-discount-code",
+            <a href="https://choosemuse.com/thrive25" target="_blank" rel="noopener noreferrer">
+            <a href="https://choosemuse.com/thrive25" target="_blank" rel="noopener noreferrer">
+== JoovvDiscountCode ==
+import joovvHeroImg from "@assets/joovv-discount-code-hero_1790058148708.jpg";
+        canonical: "https://thrivetools.co/blog/joovv-discount-code",
+        image: joovvHeroImg,
+        <div className="card-glass rounded-2xl overflow-hidden" data-testid="img-hero-joovv-discount">
+          <img loading="lazy" decoding="async" src={joovvHeroImg} alt="Joovv red light therapy device" className="w-full h-auto object-cover" />
+            <a href="https://joovv.com" target="_blank" rel="noopener noreferrer">
+            <a href="https://joovv.com" target="_blank" rel="noopener noreferrer">
+== AquaOmegaDiscountCode ==
+import aquaOmegaHeroImg from "@assets/aquaomega-discount-code-hero_1790058214412.jpg";
+        canonical: "https://thrivetools.co/blog/aquaomega-discount-code",
+        image: aquaOmegaHeroImg,
+        <div className="card-glass rounded-2xl overflow-hidden" data-testid="img-hero-aquaomega-discount">
+          <img loading="lazy" decoding="async" src={aquaOmegaHeroImg} alt="AquaOmega fish oil supplements" className="w-full h-auto object-cover" />
+            <a href="https://aquaomega.refr.cc/default/u/thrivetoolsco?s=rp&t=cp" target="_blank" rel="noopener noreferrer">
+            <a href="https://aquaomega.refr.cc/default/u/thrivetoolsco?s=rp&t=cp" target="_blank" rel="noopener noreferrer">
+== EarthRunnersDiscountCode ==
+import earthRunnersHeroImg from "@assets/earthrunners-discount-code-hero_1790058248055.jpg";
+        canonical: "https://thrivetools.co/blog/earthrunners-discount-code",
+        image: earthRunnersHeroImg,
+        <div className="card-glass rounded-2xl overflow-hidden" data-testid="img-hero-earthrunners-discount">
+          <img loading="lazy" decoding="async" src={earthRunnersHeroImg} alt="EarthRunners barefoot sandals" className="w-full h-auto object-cover" />
+            <a href="https://earthrunners.com/?rfsn=7676227.de5b78" target="_blank" rel="noopener noreferrer">
+            <a href="https://earthrunners.com/?rfsn=7676227.de5b78" target="_blank" rel="noopener noreferrer">
+== Cookware360DiscountCode ==
+import cookware360HeroImg from "@assets/360-cookware-discount-code-hero_1790058276472.jpg";
+        canonical: "https://thrivetools.co/blog/360-cookware-discount-code",
+        image: cookware360HeroImg,
+        <div className="card-glass rounded-2xl overflow-hidden" data-testid="img-hero-cookware360-discount">
+          <img loading="lazy" decoding="async" src={cookware360HeroImg} alt="360 Cookware stainless steel cookware" className="w-full h-auto object-cover" />
+            <a href="https://www.360cookware.com/THRIVETOOLS" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.360cookware.com/THRIVETOOLS" target="_blank" rel="noopener noreferrer">
+== NeurosityDiscountCode ==
+import neurosityHeroImg from "@assets/neurosity-discount-code-hero_1790058294771.jpg";
+        canonical: "https://thrivetools.co/blog/neurosity-discount-code",
+        image: neurosityHeroImg,
+        <div className="card-glass rounded-2xl overflow-hidden" data-testid="img-hero-neurosity-discount">
+          <img loading="lazy" decoding="async" src={neurosityHeroImg} alt="Neurosity Crown brain training device" className="w-full h-auto object-cover" />
+            <a href="https://neurosity.co/thrivetools" target="_blank" rel="noopener noreferrer">
+            <a href="https://neurosity.co/thrivetools" target="_blank" rel="noopener noreferrer">
+== DavidsDiscountCode ==
+import davidsHeroImg from "@assets/davids-discount-code-hero_1790058313367.jpg";
+        canonical: "https://thrivetools.co/blog/davids-discount-code",
+        image: davidsHeroImg,
+        <div className="card-glass rounded-2xl overflow-hidden" data-testid="img-hero-davids-discount">
+          <img loading="lazy" decoding="async" src={davidsHeroImg} alt="Davids natural toothpaste" className="w-full h-auto object-cover" />
+            <a href="https://www.davids-usa.com/EDEN34969" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.davids-usa.com/EDEN34969" target="_blank" rel="noopener noreferrer">
+--- faq files ---
+SupplementDiscountCodesFaq.tsx
+ALLDONE

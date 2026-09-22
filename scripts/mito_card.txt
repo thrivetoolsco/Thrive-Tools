@@ -1,0 +1,61 @@
+27-  {
+28-    q: "Do I need a discount code for Mito Red Light?",
+29:    a: "No. The discount applies automatically when you shop via the link on this page. There is no code to enter at checkout.",
+30-  },
+31-  {
+32-    q: "How do I get the Mito Red Light discount?",
+33:    a: "Click the Shop Mito Red Light button on this page, add products to your cart on mitoredlight.com, and check out. The discount applies automatically.",
+34-  },
+35-  {
+36-    q: "Does the Mito Red Light discount expire?",
+37-    a: "Brands can change or pause discounts at any time. I re-check the link on my discount codes page regularly. If it ever stops working, I update it there first.",
+38-  },
+39-];
+40-
+41-const steps = [
+42-  "Click the Shop Mito Red Light button on this page to open mitoredlight.com with the discount applied.",
+43-  "Add the Mito Red Light products you want to your cart.",
+44:  "Go to checkout \u2014 the discount applies automatically. There is no code to enter.",
+45-  "Complete your purchase and enjoy the savings.",
+46-];
+47-
+48-const tips = [
+49-  "No code to remember \u2014 just make sure you start from the link on this page.",
+50-  "If the discount does not appear, empty your cart and click the link again.",
+51-  "I re-check this link regularly to make sure the discount still applies.",
+52-];
+53-
+54-export default function MitoRedLightDiscountCode() {
+55-  return (
+56-    <PageLayout
+57-      showShare
+58-      title="Mito Red Light Discount Code 2026"
+59-      subtitle="By Eden Laraki | ThriveTools.co"
+60-      seo={{
+61-        title: "Mito Red Light Discount Code 2026 | Thrive Tools",
+62-        description:
+63:          "Looking for a Mito Red Light discount code? No code needed \u2014 follow the link to get the discount automatically. Verified for 2026.",
+64-        canonical: "https://thrivetools.co/blog/mito-red-light-discount-code",
+65-        ogType: "article",
+66-        datePublished: "2026-09-22",
+67-        // Hero image pending upload
+68-      }}
+69-      backLabel="Blog"
+70-      backHref="/blog"
+71-    >
+72-      <article className="space-y-10">
+73-        <div className="card-glass rounded-2xl overflow-hidden" data-testid="img-hero-mito-red-light-discount">
+74-          {/* Hero image pending upload */}
+75-        </div>
+76-
+77-        <div className="flex flex-wrap gap-3">
+78-          <Badge className="bg-[#c4622d]/15 text-[#8b3a1a] border-[#c4622d]/25">Discount Codes</Badge>
+79-          <Badge className="bg-[#c4622d]/15 text-[#8b3a1a] border-[#c4622d]/25">Verified 2026</Badge>
+80-        </div>
+81-
+82-        <div className="card-glass rounded-2xl p-6 md:p-8" data-testid="answer-mito-red-light-discount-code">
+83-          <p className="text-lg leading-relaxed text-black/80">
+84:            <strong className="font-semibold text-black">The short answer:</strong> no code needed \u2014 the discount applies automatically when you shop Mito Red Light via the link on this page.
+85-          </p>
+86-        </div>
+DONE
