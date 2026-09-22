@@ -1,0 +1,39 @@
+import PageLayout from "@/components/PageLayout";
+import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
+import { ExternalLink, Tag, Check, User } from "lucide-react";
+import { Link } from "wouter";
+import heroImg from "@assets/isun-skincare-discount-code-hero.jpg";
+
+function SectionHeader({ eyebrow, title, description }: { eyebrow: string; title: string; description?: string }) {
+  return <div className="mb-6"><p className="text-xs font-semibold uppercase tracking-wider text-[#8b3a1a] mb-2">{eyebrow}</p><h2 className="font-display text-2xl font-bold text-black">{title}</h2>{description && <p className="text-black/60 mt-2 leading-relaxed">{description}</p>}</div>;
+}
+
+const faqs = [
+  { q: "Does ISUN Skincare have a discount code?", a: "This verified ISUN Skincare offer is link-only. You do not need to type a coupon code at checkout." },
+  { q: "How do I use the ISUN Skincare discount?", a: "Open ISUN Skincare through the verified affiliate link, choose your products, and proceed to checkout. The discount applies through the link." },
+  { q: "Can the ISUN Skincare discount stack with another offer?", a: "Usually not. Link-based promotions generally cannot be combined with another checkout discount." },
+  { q: "Why is the ISUN Skincare discount link-only?", a: "The verified affiliate link attaches the offer to your shopping session automatically, so no typed code is needed." },
+  { q: "Where can I find a verified ISUN Skincare discount?", a: "Visit thrivetools.co/discount-codes for the verified ISUN Skincare link and current offer status." },
+];
+
+export default function IsunSkincareDiscountCodeFaq() {
+  const href = "https://isunskincare.com/thrivetools";
+  return (
+    <PageLayout showShare title="ISUN Skincare Discount Code FAQ (2026)" subtitle="By Eden Laraki | ThriveTools.co" seo={{ title: "ISUN Skincare Discount Code FAQ (2026) | Thrive Tools", description: "Answers about the verified link-only ISUN Skincare discount, automatic checkout savings, stacking, and verification.", canonical: "https://thrivetools.co/blog/isun-skincare-discount-code-faq", ogType: "article", datePublished: "2026-09-22", image: heroImg, imageAlt: "ISUN Skincare products" }} backLabel="Blog" backHref="/blog">
+      <article className="space-y-10">
+        <div className="card-glass rounded-2xl overflow-hidden"><img loading="lazy" decoding="async" src={heroImg} alt="ISUN Skincare products" className="w-full h-auto object-cover" /></div>
+        <div className="flex flex-wrap gap-3"><Badge className="bg-[#c4622d]/15 text-[#8b3a1a] border-[#c4622d]/25">Discount Codes</Badge><Badge className="bg-[#c4622d]/15 text-[#8b3a1a] border-[#c4622d]/25">FAQ</Badge><Badge className="bg-[#c4622d]/15 text-[#8b3a1a] border-[#c4622d]/25">Verified 2026</Badge></div>
+        <div className="card-glass rounded-2xl p-6 md:p-8"><p className="text-lg leading-relaxed text-black/80"><strong className="font-semibold text-black">The short answer:</strong> ISUN Skincare does not use a typed discount code. The discount applies automatically via the verified affiliate link.</p></div>
+        <section><SectionHeader eyebrow="The offer" title="ISUN Skincare link-only discount" description="Use the verified link to activate the offer." /><div className="card-glass rounded-2xl p-6 md:p-8 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-5"><div className="flex items-center gap-3"><span className="w-11 h-11 rounded-full bg-[#c4622d]/10 text-[#8b3a1a] flex items-center justify-center shrink-0"><Tag className="w-5 h-5" /></span><div><p className="text-xs uppercase tracking-wider text-black/50">Discount</p><p className="font-display text-2xl font-bold text-black">No code needed</p></div></div><a href={href} target="_blank" rel="noopener noreferrer"><Button className="btn-primary rounded-full px-6">Shop ISUN Skincare <ExternalLink className="w-4 h-4 ml-2" /></Button></a></div></section>
+        <section><SectionHeader eyebrow="How to use it" title="How to activate the discount" description="The link handles the offer." /><ol className="space-y-4">{["Open ISUN Skincare through the verified link.", "Add your selected skincare products to the cart.", "Continue to checkout without entering a code.", "Confirm the savings before paying."].map((step, i) => <li key={i} className="card-glass rounded-2xl p-5 flex items-start gap-4"><span className="w-8 h-8 rounded-full bg-[#c4622d]/10 text-[#8b3a1a] flex items-center justify-center font-display font-bold shrink-0">{i + 1}</span><p className="text-black/70 pt-1">{step}</p></li>)}</ol></section>
+        <section><SectionHeader eyebrow="Good to know" title="Tips for the link-only offer" /><ul className="space-y-3">{["Start from the verified ISUN affiliate link.", "Do not type a separate coupon code.", "Reopen the link if the discount is missing."].map((tip, i) => <li key={i} className="flex items-start gap-3 text-black/70"><Check className="w-5 h-5 text-[#8b3a1a] shrink-0 mt-0.5" /><span>{tip}</span></li>)}</ul></section>
+        <section><SectionHeader eyebrow="FAQ" title="ISUN Skincare discount questions answered" /><div className="space-y-4">{faqs.map((f, i) => <div key={i} className="card-glass rounded-2xl p-6" data-testid={`faq-isun-skincare-discount-${i}`}><p className="font-display font-bold text-black">{f.q}</p><p className="text-black/60 mt-2 leading-relaxed">{f.a}</p></div>)}</div></section>
+        <section><SectionHeader eyebrow="Keep exploring" title="Continue reading" /><div className="grid gap-4 sm:grid-cols-2"><Link href="/discount-codes" className="card-glass rounded-2xl p-6 block"><p className="font-display font-bold">All discount codes</p><p className="text-black/60 text-sm mt-1">Browse verified offers.</p></Link><Link href="/blog/isun-skincare-discount-code" className="card-glass rounded-2xl p-6 block"><p className="font-display font-bold">ISUN deal page</p><p className="text-black/60 text-sm mt-1">See current details.</p></Link></div></section>
+        <div className="card-glass rounded-2xl p-6 md:p-8"><div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4"><div><p className="font-display text-xl font-bold">Ready to save on ISUN Skincare?</p><p className="text-black/60 mt-1">Use the verified link; no code required.</p></div><a href={href} target="_blank" rel="noopener noreferrer"><Button className="btn-primary rounded-full px-6">Shop ISUN Skincare <ExternalLink className="w-4 h-4 ml-2" /></Button></a></div></div>
+        <div className="flex items-start gap-4 card-glass rounded-2xl p-6"><span className="w-12 h-12 rounded-full bg-[#c4622d]/10 text-[#8b3a1a] flex items-center justify-center shrink-0"><User className="w-6 h-6" /></span><div><p className="font-display font-bold">Eden Laraki</p><p className="text-black/60 mt-1 text-sm">Eden runs ThriveTools.co, where she tests wellness products and keeps a verified list of discount codes for the brands she actually uses.</p></div></div>
+        <p className="text-sm text-black/50 leading-relaxed"><strong className="font-semibold text-black/70">Affiliate disclosure:</strong> This post contains affiliate links. If you buy through them, I may earn a commission at no extra cost to you.</p>
+      </article>
+    </PageLayout>
+  );
+}

@@ -1,0 +1,39 @@
+import PageLayout from "@/components/PageLayout";
+import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
+import { ExternalLink, Tag, Check, User } from "lucide-react";
+import { Link } from "wouter";
+import heroImg from "@assets/redtherapy-discount-code-hero.jpg";
+
+function SectionHeader({ eyebrow, title, description }: { eyebrow: string; title: string; description?: string }) {
+  return <div className="mb-6"><p className="text-xs font-semibold uppercase tracking-wider text-[#8b3a1a] mb-2">{eyebrow}</p><h2 className="font-display text-2xl font-bold text-black">{title}</h2>{description && <p className="text-black/60 mt-2 leading-relaxed">{description}</p>}</div>;
+}
+
+const faqs = [
+  { q: "Does RedTherapy have a discount code?", a: "Yes. Use THRIVETOOLS in all caps with no spaces when you order from the official RedTherapy website." },
+  { q: "Where do I enter the RedTherapy discount code?", a: "Add your products to the cart, continue to checkout, find the discount-code box, enter THRIVETOOLS, and click apply before paying." },
+  { q: "Can the RedTherapy discount code stack with another offer?", a: "No. RedTherapy generally accepts one discount code per order, so use the offer that gives you the best total." },
+  { q: "What should I do if THRIVETOOLS does not work?", a: "Check the spelling, remove spaces, confirm the code is uppercase, and make sure you are shopping on the official redtherapy.co website." },
+  { q: "Where can I find a verified RedTherapy discount code?", a: "Visit thrivetools.co/discount-codes for the verified RedTherapy code and the latest status of the offer." },
+];
+
+export default function RedTherapyDiscountCodeFaq() {
+  const href = "https://redtherapy.co/?rfsn=7676047.c07132e&utm_source=refersion&utm_medium=affiliate&utm_campaign=7676047.c07132";
+  return (
+    <PageLayout showShare title="RedTherapy Discount Code FAQ (2026)" subtitle="By Eden Laraki | ThriveTools.co" seo={{ title: "RedTherapy Discount Code FAQ (2026) | Thrive Tools", description: "Answers about the verified RedTherapy discount code THRIVETOOLS, where to enter it, stacking, troubleshooting, and verification.", canonical: "https://thrivetools.co/blog/redtherapy-discount-code-faq", ogType: "article", datePublished: "2026-09-22", image: heroImg, imageAlt: "RedTherapy red light therapy device" }} backLabel="Blog" backHref="/blog">
+      <article className="space-y-10">
+        <div className="card-glass rounded-2xl overflow-hidden" data-testid="img-hero-redtherapy-discount-faq"><img loading="lazy" decoding="async" src={heroImg} alt="RedTherapy red light therapy device" className="w-full h-auto object-cover" /></div>
+        <div className="flex flex-wrap gap-3"><Badge className="bg-[#c4622d]/15 text-[#8b3a1a] border-[#c4622d]/25">Discount Codes</Badge><Badge className="bg-[#c4622d]/15 text-[#8b3a1a] border-[#c4622d]/25">FAQ</Badge><Badge className="bg-[#c4622d]/15 text-[#8b3a1a] border-[#c4622d]/25">Verified 2026</Badge></div>
+        <div className="card-glass rounded-2xl p-6 md:p-8" data-testid="answer-redtherapy-discount-faq"><p className="text-lg leading-relaxed text-black/80"><strong className="font-semibold text-black">The short answer:</strong> Yes — use code THRIVETOOLS in the discount-code box at checkout on redtherapy.co. Type it in all caps with no spaces, then click apply.</p></div>
+        <section><SectionHeader eyebrow="The code" title="RedTherapy discount code" description="Enter the verified code at checkout." /><div className="card-glass rounded-2xl p-6 md:p-8 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-5" data-testid="code-redtherapy-discount-faq"><div className="flex items-center gap-3"><span className="w-11 h-11 rounded-full bg-[#c4622d]/10 text-[#8b3a1a] flex items-center justify-center shrink-0"><Tag className="w-5 h-5" /></span><div><p className="text-xs uppercase tracking-wider text-black/50">Discount code</p><p className="font-display text-2xl font-bold tracking-wide text-black">THRIVETOOLS</p></div></div><a href={href} target="_blank" rel="noopener noreferrer"><Button className="btn-primary rounded-full px-6" data-testid="button-redtherapy-faq-shop">Shop RedTherapy <ExternalLink className="w-4 h-4 ml-2" /></Button></a></div></section>
+        <section><SectionHeader eyebrow="How to use it" title="How to apply THRIVETOOLS" description="Enter the code before completing payment." /><ol className="space-y-4">{["Open RedTherapy through the verified link.", "Add the products you want to your cart.", "Enter THRIVETOOLS in the discount-code box at checkout.", "Click apply and confirm the savings before paying."].map((step, i) => <li key={i} className="card-glass rounded-2xl p-5 flex items-start gap-4"><span className="w-8 h-8 rounded-full bg-[#c4622d]/10 text-[#8b3a1a] flex items-center justify-center font-display font-bold shrink-0">{i + 1}</span><p className="text-black/70 leading-relaxed pt-1">{step}</p></li>)}</ol></section>
+        <section><SectionHeader eyebrow="Good to know" title="Tips for using the code" /><ul className="space-y-3">{["Type THRIVETOOLS in all caps with no spaces.", "Use the official redtherapy.co checkout.", "Only one discount code normally applies per order."].map((tip, i) => <li key={i} className="flex items-start gap-3 text-black/70 leading-relaxed"><Check className="w-5 h-5 text-[#8b3a1a] shrink-0 mt-0.5" /><span>{tip}</span></li>)}</ul></section>
+        <section><SectionHeader eyebrow="FAQ" title="RedTherapy discount questions answered" /><div className="space-y-4">{faqs.map((f, i) => <div key={i} className="card-glass rounded-2xl p-6" data-testid={`faq-redtherapy-discount-${i}`}><p className="font-display font-bold text-black">{f.q}</p><p className="text-black/60 mt-2 leading-relaxed">{f.a}</p></div>)}</div></section>
+        <section><SectionHeader eyebrow="Keep exploring" title="Continue reading" /><div className="grid gap-4 sm:grid-cols-2"><Link href="/discount-codes" className="card-glass rounded-2xl p-6 block hover:shadow-lg transition-shadow"><p className="font-display font-bold text-black">All discount codes</p><p className="text-black/60 text-sm mt-1">Browse every verified offer.</p></Link><Link href="/blog/redtherapy-discount-code" className="card-glass rounded-2xl p-6 block hover:shadow-lg transition-shadow"><p className="font-display font-bold text-black">RedTherapy deal page</p><p className="text-black/60 text-sm mt-1">See the current offer details.</p></Link></div></section>
+        <div className="card-glass rounded-2xl p-6 md:p-8" data-testid="cta-redtherapy-discount-faq"><div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4"><div><p className="font-display text-xl font-bold text-black">Ready to save on RedTherapy?</p><p className="text-black/60 mt-1">Enter THRIVETOOLS at checkout.</p></div><a href={href} target="_blank" rel="noopener noreferrer"><Button className="btn-primary rounded-full px-6">Shop RedTherapy <ExternalLink className="w-4 h-4 ml-2" /></Button></a></div></div>
+        <div className="flex items-start gap-4 card-glass rounded-2xl p-6" data-testid="bio-redtherapy-discount-faq"><span className="w-12 h-12 rounded-full bg-[#c4622d]/10 text-[#8b3a1a] flex items-center justify-center shrink-0"><User className="w-6 h-6" /></span><div><p className="font-display font-bold text-black">Eden Laraki</p><p className="text-black/60 mt-1 text-sm">Eden runs ThriveTools.co, where she tests wellness products and keeps a verified list of discount codes for the brands she actually uses.</p></div></div>
+        <p className="text-sm text-black/50 leading-relaxed" data-testid="disclosure-redtherapy-discount-faq"><strong className="font-semibold text-black/70">Affiliate disclosure:</strong> This post contains affiliate links. If you buy through them, I may earn a commission at no extra cost to you.</p>
+      </article>
+    </PageLayout>
+  );
+}
