@@ -188,6 +188,13 @@ const KoracaoDiscountCode = lazy(
 const IsunSkincareDiscountCode = lazy(
   () => import("@/pages/reviews/IsunSkincareDiscountCode"),
 );
+import MitoRedLightDiscountCodeFaq from "./pages/reviews/MitoRedLightDiscountCodeFaq";
+import RedTherapyDiscountCodeFaq from "./pages/reviews/RedTherapyDiscountCodeFaq";
+import VielightDiscountCodeFaq from "./pages/reviews/VielightDiscountCodeFaq";
+import WaterDropDiscountCodeFaq from "./pages/reviews/WaterDropDiscountCodeFaq";
+import KoracaoDiscountCodeFaq from "./pages/reviews/KoracaoDiscountCodeFaq";
+import IsunSkincareDiscountCodeFaq from "./pages/reviews/IsunSkincareDiscountCodeFaq";
+import WellnessDiscountCodesQuestionsAnswered from "./pages/reviews/WellnessDiscountCodesQuestionsAnswered";
 
 const HyperionHerbsDiscountCode = lazy(
   () => import("@/pages/reviews/HyperionHerbsDiscountCode"),
@@ -504,6 +511,13 @@ function Router() {
         <Route path="/blog/waterdrop-discount-code" component={WaterDropDiscountCode} />
         <Route path="/blog/koracao-discount-code" component={KoracaoDiscountCode} />
         <Route path="/blog/isun-skincare-discount-code" component={IsunSkincareDiscountCode} />
+        <Route path="/blog/mito-red-light-discount-code-faq" component={MitoRedLightDiscountCodeFaq} />
+        <Route path="/blog/redtherapy-discount-code-faq" component={RedTherapyDiscountCodeFaq} />
+        <Route path="/blog/vielight-discount-code-faq" component={VielightDiscountCodeFaq} />
+        <Route path="/blog/waterdrop-discount-code-faq" component={WaterDropDiscountCodeFaq} />
+        <Route path="/blog/koracao-discount-code-faq" component={KoracaoDiscountCodeFaq} />
+        <Route path="/blog/isun-skincare-discount-code-faq" component={IsunSkincareDiscountCodeFaq} />
+        <Route path="/blog/wellness-discount-codes-questions-answered" component={WellnessDiscountCodesQuestionsAnswered} />
         <Route component={NotFound} />
       </Switch>
     </Suspense>

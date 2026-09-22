@@ -83,6 +83,13 @@ import VielightDiscountCode from "@/pages/reviews/VielightDiscountCode";
 import WaterDropDiscountCode from "@/pages/reviews/WaterDropDiscountCode";
 import KoracaoDiscountCode from "@/pages/reviews/KoracaoDiscountCode";
 import IsunSkincareDiscountCode from "@/pages/reviews/IsunSkincareDiscountCode";
+import MitoRedLightDiscountCodeFaq from "@/pages/reviews/MitoRedLightDiscountCodeFaq";
+import RedTherapyDiscountCodeFaq from "@/pages/reviews/RedTherapyDiscountCodeFaq";
+import VielightDiscountCodeFaq from "@/pages/reviews/VielightDiscountCodeFaq";
+import WaterDropDiscountCodeFaq from "@/pages/reviews/WaterDropDiscountCodeFaq";
+import KoracaoDiscountCodeFaq from "@/pages/reviews/KoracaoDiscountCodeFaq";
+import IsunSkincareDiscountCodeFaq from "@/pages/reviews/IsunSkincareDiscountCodeFaq";
+import WellnessDiscountCodesQuestionsAnswered from "@/pages/reviews/WellnessDiscountCodesQuestionsAnswered";
 import KratomSocialPivotGuide from "@/pages/reviews/KratomSocialPivotGuide";
 import BiohackerSupplementStack from "@/pages/reviews/BiohackerSupplementStack";
 import MicroplasticsBrainGuide from "@/pages/reviews/MicroplasticsBrainGuide";
@@ -222,6 +229,13 @@ export const SSR_ROUTE_COMPONENTS: Record<string, ComponentType> = {
   "/blog/waterdrop-discount-code": WaterDropDiscountCode,
   "/blog/koracao-discount-code": KoracaoDiscountCode,
   "/blog/isun-skincare-discount-code": IsunSkincareDiscountCode,
+  "/blog/mito-red-light-discount-code-faq": MitoRedLightDiscountCodeFaq,
+  "/blog/redtherapy-discount-code-faq": RedTherapyDiscountCodeFaq,
+  "/blog/vielight-discount-code-faq": VielightDiscountCodeFaq,
+  "/blog/waterdrop-discount-code-faq": WaterDropDiscountCodeFaq,
+  "/blog/koracao-discount-code-faq": KoracaoDiscountCodeFaq,
+  "/blog/isun-skincare-discount-code-faq": IsunSkincareDiscountCodeFaq,
+  "/blog/wellness-discount-codes-questions-answered": WellnessDiscountCodesQuestionsAnswered,
 };
 
 export async function render(
