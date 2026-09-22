@@ -69,6 +69,12 @@ import EarthRunnersDiscountCode from "./pages/reviews/EarthRunnersDiscountCode";
 import Cookware360DiscountCode from "./pages/reviews/Cookware360DiscountCode";
 import NeurosityDiscountCode from "./pages/reviews/NeurosityDiscountCode";
 import DavidsDiscountCode from "./pages/reviews/DavidsDiscountCode";
+import MitoRedLightDiscountCode from "./pages/reviews/MitoRedLightDiscountCode";
+import RedTherapyDiscountCode from "./pages/reviews/RedTherapyDiscountCode";
+import VielightDiscountCode from "./pages/reviews/VielightDiscountCode";
+import WaterDropDiscountCode from "./pages/reviews/WaterDropDiscountCode";
+import KoracaoDiscountCode from "./pages/reviews/KoracaoDiscountCode";
+import IsunSkincareDiscountCode from "./pages/reviews/IsunSkincareDiscountCode";
 
 export const SSR_ROUTE_COMPONENTS: Record<string, ComponentType> = {
   "/product-reviews/im8-vs-ag1": Im8VsAg1,
@@ -98,6 +104,12 @@ export const SSR_ROUTE_COMPONENTS: Record<string, ComponentType> = {
   "/blog/360-cookware-discount-code": Cookware360DiscountCode,
   "/blog/neurosity-discount-code": NeurosityDiscountCode,
   "/blog/davids-discount-code": DavidsDiscountCode,
+  "/blog/mito-red-light-discount-code": MitoRedLightDiscountCode,
+  "/blog/redtherapy-discount-code": RedTherapyDiscountCode,
+  "/blog/vielight-discount-code": VielightDiscountCode,
+  "/blog/waterdrop-discount-code": WaterDropDiscountCode,
+  "/blog/koracao-discount-code": KoracaoDiscountCode,
+  "/blog/isun-skincare-discount-code": IsunSkincareDiscountCode,
   "/product-reviews/biohacking-beginners-guide": BiohackingBeginnersGuide,
   "/blog/biohacking-beginners-guide": BiohackingBeginnersGuide,
   "/product-reviews/breathwork-beginners-guide": BreathworkBeginnersGuide,
