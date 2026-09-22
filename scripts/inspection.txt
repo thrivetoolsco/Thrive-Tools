@@ -1,0 +1,131 @@
+=== App.tsx ===
+Total lines: 501
+DiscountCode matches: 53
+  217:         <Route path="/discount-codes" component={Discounts} />
+  451:           path="/blog/bioptimizers-discount-code"
+  452:           component={BioptimizersDiscountCode}
+  455:           path="/blog/equip-foods-discount-code"
+  456:           component={EquipFoodsDiscountCode}
+  458:         <Route path="/blog/im8-discount-code" component={IM8DiscountCode} />{" "}
+  460:           path="/blog/timeline-mitopure-discount-code"
+  461:           component={TimelineMitopureDiscountCode}
+  464:           path="/blog/supplement-discount-codes-faq"
+  465:           component={SupplementDiscountCodesFaq}
+  468:           path="/blog/red-light-therapy-discount-codes"
+  469:           component={RedLightTherapyDiscountCodes}
+  471:         <Route path="/blog/hyperion-herbs-discount-code" component={HyperionHerbsDiscountCode} />
+  472:         <Route path="/blog/just-thrive-discount-code" component={JustThriveDiscountCode} />
+  473:         <Route path="/blog/organika-discount-code" component={OrganikaDiscountCode} />
+  474:         <Route path="/blog/energybits-discount-code" component={EnergyBitsDiscountCode} />
+  475:         <Route path="/blog/selfdecode-discount-code" component={SelfDecodeDiscountCode} />
+  476:         <Route path="/blog/muse-headband-discount-code" component={MuseHeadbandDiscountCode} />
+  477:         <Route path="/blog/joovv-discount-code" component={JoovvDiscountCode} />
+  478:         <Route path="/blog/aquaomega-discount-code" component={AquaOmegaDiscountCode} />
+  479:         <Route path="/blog/earthrunners-discount-code" component={EarthRunnersDiscountCode} />
+  480:         <Route path="/blog/360-cookware-discount-code" component={Cookware360DiscountCode} />
+  481:         <Route path="/blog/neurosity-discount-code" component={NeurosityDiscountCode} />
+  482:         <Route path="/blog/davids-discount-code" component={DavidsDiscountCode} />
+
+=== ssr-routes.ts ===
+Total lines: 149
+DiscountCode matches: 38
+  67: import AquaOmegaDiscountCode from "./pages/reviews/AquaOmegaDiscountCode";
+  68: import EarthRunnersDiscountCode from "./pages/reviews/EarthRunnersDiscountCode";
+  69: import Cookware360DiscountCode from "./pages/reviews/Cookware360DiscountCode";
+  70: import NeurosityDiscountCode from "./pages/reviews/NeurosityDiscountCode";
+  71: import DavidsDiscountCode from "./pages/reviews/DavidsDiscountCode";
+  83:   "/blog/bioptimizers-discount-code": BioptimizersDiscountCode,
+  84:   "/blog/hyperion-herbs-discount-code": HyperionHerbsDiscountCode,
+  85:   "/blog/just-thrive-discount-code": JustThriveDiscountCode,
+  86:   "/blog/organika-discount-code": OrganikaDiscountCode,
+  87:   "/blog/energybits-discount-code": EnergyBitsDiscountCode,
+  88:   "/blog/selfdecode-discount-code": SelfDecodeDiscountCode,
+  89:   "/blog/muse-headband-discount-code": MuseHeadbandDiscountCode,
+  90:   "/blog/equip-foods-discount-code": EquipFoodsDiscountCode,
+  91:   "/blog/im8-discount-code": IM8DiscountCode,
+  92:   "/blog/timeline-mitopure-discount-code": TimelineMitopureDiscountCode,
+  93:   "/blog/supplement-discount-codes-faq": SupplementDiscountCodesFaq,
+  94:   "/blog/red-light-therapy-discount-codes": RedLightTherapyDiscountCodes,
+  95:   "/blog/joovv-discount-code": JoovvDiscountCode,
+  96:   "/blog/aquaomega-discount-code": AquaOmegaDiscountCode,
+  97:   "/blog/earthrunners-discount-code": EarthRunnersDiscountCode,
+  98:   "/blog/360-cookware-discount-code": Cookware360DiscountCode,
+  99:   "/blog/neurosity-discount-code": NeurosityDiscountCode,
+  100:   "/blog/davids-discount-code": DavidsDiscountCode,
+  133:   "/discount-codes": Discounts,
+
+=== entry-server.tsx ===
+Total lines: 244
+DiscountCode matches: 37
+  75: import AquaOmegaDiscountCode from "@/pages/reviews/AquaOmegaDiscountCode";
+  76: import EarthRunnersDiscountCode from "@/pages/reviews/EarthRunnersDiscountCode";
+  77: import Cookware360DiscountCode from "@/pages/reviews/Cookware360DiscountCode";
+  78: import NeurosityDiscountCode from "@/pages/reviews/NeurosityDiscountCode";
+  79: import DavidsDiscountCode from "@/pages/reviews/DavidsDiscountCode";
+  115:   "/discount-codes": Discounts,
+  195:   "/blog/bioptimizers-discount-code": BioptimizersDiscountCode,
+  196:   "/blog/hyperion-herbs-discount-code": HyperionHerbsDiscountCode,
+  197:   "/blog/just-thrive-discount-code": JustThriveDiscountCode,
+  198:   "/blog/organika-discount-code": OrganikaDiscountCode,
+  199:   "/blog/energybits-discount-code": EnergyBitsDiscountCode,
+  200:   "/blog/selfdecode-discount-code": SelfDecodeDiscountCode,
+  201:   "/blog/muse-headband-discount-code": MuseHeadbandDiscountCode,
+  202:   "/blog/equip-foods-discount-code": EquipFoodsDiscountCode,
+  203:   "/blog/im8-discount-code": IM8DiscountCode,
+  204:   "/blog/timeline-mitopure-discount-code": TimelineMitopureDiscountCode,
+  205:   "/blog/supplement-discount-codes-faq": SupplementDiscountCodesFaq,
+  206:   "/blog/red-light-therapy-discount-codes": RedLightTherapyDiscountCodes,
+  207:   "/blog/joovv-discount-code": JoovvDiscountCode,
+  208:   "/blog/aquaomega-discount-code": AquaOmegaDiscountCode,
+  209:   "/blog/earthrunners-discount-code": EarthRunnersDiscountCode,
+  210:   "/blog/360-cookware-discount-code": Cookware360DiscountCode,
+  211:   "/blog/neurosity-discount-code": NeurosityDiscountCode,
+  212:   "/blog/davids-discount-code": DavidsDiscountCode,
+
+=== site-routes.ts ===
+Total lines: 749
+DiscountCode matches: 27
+  63:     excerpt: "Use code EDEN10 in the discount-code box at checkout on hyperionherbs.com. Verified for 2026.",
+  64:     href: "/blog/hyperion-herbs-discount-code",
+  65:     canonical: "https://thrivetools.co/blog/hyperion-herbs-discount-code",
+  72:     id: "just-thrive-discount-code",
+  74:     excerpt: "Use code THRIVETOOLS in the discount-code box at checkout on justthrivehealth.com. Verified for 2026.",
+  75:     href: "/blog/just-thrive-discount-code",
+  76:     canonical: "https://thrivetools.co/blog/just-thrive-discount-code",
+  83:     id: "organika-discount-code",
+  85:     excerpt: "Use code EDEN_25 in the discount-code box at checkout on organika.com. Verified for 2026.",
+  86:     href: "/blog/organika-discount-code",
+  87:     canonical: "https://thrivetools.co/blog/organika-discount-code",
+  94:     id: "energybits-discount-code",
+  96:     excerpt: "Use code THRIVE25 in the discount-code box at checkout on energybits.com. Verified for 2026.",
+  97:     href: "/blog/energybits-discount-code",
+  98:     canonical: "https://thrivetools.co/blog/energybits-discount-code",
+  105:     id: "selfdecode-discount-code",
+  107:     excerpt: "Use code THRIVETOOLS10 in the discount-code box at checkout on selfdecode.com. Verified for 2026.",
+  108:     href: "/blog/selfdecode-discount-code",
+  109:     canonical: "https://thrivetools.co/blog/selfdecode-discount-code",
+  116:     id: "muse-headband-discount-code",
+  118:     excerpt: "Use code THRIVE25 in the discount-code box at checkout on choosemuse.com. Verified for 2026.",
+  119:     href: "/blog/muse-headband-discount-code",
+  120:     canonical: "https://thrivetools.co/blog/muse-headband-discount-code",
+  713:   "/discounts-coupon-codes": "/discount-codes",
+
+=== Route checks for Keep-Exploring links ===
+Route 'joovv-review':
+    <Route path="/product-reviews/joovv-review" component={JoovvReview} />
+Route 'vielight-neuro':
+    path="/product-reviews/vielight-neuro-review"
+Route 'waterdrop':
+    () => import("@/pages/reviews/WaterdropK19HReview"),
+    path="/blog/waterdrop-k19-h-aquatru-rkin-reverse-osmosis-review"
+Route 'cacao':
+    const CacaoCeremonies = lazy(() => import("@/pages/events/CacaoCeremonies"));
+    () => import("@/pages/reviews/CeremonialCacaoGuide"),
+    <Route path="/events/cacao-ceremonies" component={CacaoCeremonies} />
+    path="/blog/ceremonial-cacao-benefits-science-review"
+Route 'neurosity-discount':
+    <Route path="/blog/neurosity-discount-code" component={NeurosityDiscountCode} />
+Route 'davids-discount':
+    <Route path="/blog/davids-discount-code" component={DavidsDiscountCode} />
+Route 'mito-red-light':
+    path="/blog/joovv-vs-mito-red-light-vs-redtherapy-comparison"

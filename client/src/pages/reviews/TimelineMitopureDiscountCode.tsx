@@ -25,7 +25,7 @@ function SectionHeader({
 const faqs = [
   {
     q: "Is there a Timeline MitoPure discount code I need to enter?",
-    a: "No. There is no code to enter. Shop through the link on this page (shop.timeline.com/EDENKAWTHARLARAKI) and the discount applies automatically at checkout.",
+    a: "No. There is no code to enter. Shop through the link on this page (shop.timeline.com/THRIVE33) and the discount applies automatically at checkout.",
   },
   {
     q: "How do I make sure the Timeline discount applies?",
@@ -90,7 +90,7 @@ export default function TimelineMitopureDiscountCode() {
               </div>
             </div>
             <a
-              href="https://shop.timeline.com/EDENKAWTHARLARAKI"
+              href="https://shop.timeline.com/THRIVE33"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -190,7 +190,7 @@ export default function TimelineMitopureDiscountCode() {
               </p>
             </div>
             <a
-              href="https://shop.timeline.com/EDENKAWTHARLARAKI"
+              href="https://shop.timeline.com/THRIVE33"
               target="_blank"
               rel="noopener noreferrer"
             >

@@ -240,7 +240,7 @@ export default function BestSupplements2026Guide() {
           <div className="space-y-4 text-black/70 leading-relaxed">
             <p>The best supplement stack for longevity in 2026 addresses multiple Hallmarks of Aging simultaneously:</p>
             <p><strong className="text-black">Urolithin A (Mitopure)</strong> activates mitophagy — the cellular process that clears damaged mitochondria. It is the most potent known food-derived activator of mitophagy, with 25 human clinical trials and FDA GRAS designation. Only 30–40% of people produce urolithin A efficiently from food, making supplementation necessary for most people.</p>
-            <ShopLink href="https://shop.timeline.com/EDENKAWTHARLARAKI">Shop Timeline Mitopure (Urolithin A)</ShopLink>
+            <ShopLink href="https://shop.timeline.com/THRIVE33">Shop Timeline Mitopure (Urolithin A)</ShopLink>
             <p><strong className="text-black">NMN (via IM8 Daily Ultimate Longevity)</strong> at 300mg pharmaceutical-grade — restores NAD+ levels that decline 50% between ages 20 and 50. Paired with trans-resveratrol 250mg, quercetin 250mg, fisetin 100mg, spermidine, and dihydroberberine in one formula targeting 12 Hallmarks of Aging.</p>
             <ShopLink href="https://im8health.com/thrive10">Shop IM8 Daily Ultimate Longevity — Use discount code THRIVE10</ShopLink>
             <p><strong className="text-black">Spermidine</strong> activates autophagy broadly — the cellular recycling process. Research published in <em>Nature Cell Biology</em> in 2024 found that spermidine mediates the longevity benefits of fasting. Without adequate spermidine, fasting-induced autophagy is significantly diminished.</p>

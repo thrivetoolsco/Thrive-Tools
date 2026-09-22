@@ -113,7 +113,19 @@ export default function SupplementDiscountCodesFaq() {
                     <Tag className="w-4 h-4" />
                   </span>
                   <div>
-                    <p className="font-display font-bold text-black">{item.brand}</p>
+                    <p className="font-display font-bold text-black">
+                      {item.brand === "Timeline MitoPure" ? (
+                        <a
+                          href="https://shop.timeline.com/THRIVE33"
+                          target="_blank"
+                          rel="noopener noreferrer sponsored"
+                        >
+                          {item.brand}
+                        </a>
+                      ) : (
+                        item.brand
+                      )}
+                    </p>
                     <p className="text-black/60 text-sm">{item.note}</p>
                   </div>
                 </div>
@@ -203,8 +215,10 @@ export default function SupplementDiscountCodesFaq() {
                 Code THRIVETOOLS, plus how to apply it.
               </p>
             </Link>
-            <Link
-              href="/blog/timeline-mitopure-discount-code"
+            <a
+              href="https://shop.timeline.com/THRIVE33"
+              target="_blank"
+              rel="noopener noreferrer sponsored"
               className="card-glass rounded-2xl p-6 block hover:shadow-lg transition-shadow"
               data-testid="link-faq-timeline"
             >
@@ -212,7 +226,7 @@ export default function SupplementDiscountCodesFaq() {
               <p className="text-black/60 text-sm mt-1 leading-relaxed">
                 No code needed; the discount auto-applies.
               </p>
-            </Link>
+            </a>
           </div>
         </section>
 

@@ -283,7 +283,7 @@ export default function UrolithinAGuide() {
         <AffiliateBlock
           name="Timeline Mitopure"
           description="The standardized urolithin A compound used in the clinical research discussed in this article."
-          href="https://shop.timeline.com/EDENKAWTHARLARAKI"
+          href="https://shop.timeline.com/THRIVE33"
         />
 
         <p className="text-black/50 text-sm leading-relaxed italic">

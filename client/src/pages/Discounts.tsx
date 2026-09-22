@@ -91,7 +91,7 @@ const vitaminsSupplements: DiscountItem[] = [
     name: "Timeline Mitopure",
     description: "A purified source of Urolithin A designed to support mitophagy, mitochondrial health and healthy aging when your gut cannot make enough naturally.",
     code: "Follow This Link",
-    url: "https://shop.timeline.com/EDENKAWTHARLARAKI",
+    url: "https://shop.timeline.com/THRIVE33",
     blogHref: "/blog/urolithin-a-mitophagy-longevity-supplement-guide",
   },
   {
