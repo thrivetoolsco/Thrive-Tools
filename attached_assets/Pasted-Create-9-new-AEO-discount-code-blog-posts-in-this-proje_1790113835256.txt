@@ -1,0 +1,24 @@
+Create 9 new AEO discount-code blog posts in this project (Thrive Tools / thrivetools.co). SAVE ONLY — never publish, deploy, or run deployment commands.
+
+BRANDS (component file → route → display name):
+1. OrganicNoriSeaweedSushiDiscountCode.tsx → /blog/organic-nori-seaweed-sushi-discount-code → Organic Nori Seaweed Sushi
+2. IntentionallyBareDiscountCode.tsx → /blog/intentionally-bare-discount-code → Intentionally Bare
+3. StyrianGoldDiscountCode.tsx → /blog/styriangold-discount-code → StyrianGold
+4. TheBlessedSeedDiscountCode.tsx → /blog/the-blessed-seed-discount-code → The Blessed Seed
+5. PranaFoodsDiscountCode.tsx → /blog/prana-foods-discount-code → Prana Foods
+6. OxygenAdvantageDiscountCode.tsx → /blog/oxygen-advantage-discount-code → Oxygen Advantage
+7. BlueCubeBathsDiscountCode.tsx → /blog/bluecubebaths-discount-code → BlueCubeBaths
+8. MytrexDiscountCode.tsx → /blog/mytrex-discount-code → Mytrex
+9. OmnipemfDiscountCode.tsx → /blog/omnipemf-discount-code → Omnipemf
+
+AFFILIATE CODES AND LINKS: For each brand, read the EXACT code and destination href from this project's own discount-codes data source (the data behind the /discount-codes page — search the project for "discount-codes" if needed). Copy them character-for-character. Never invent or guess codes. Some brands are link-only deals with no typed code.
+
+TEMPLATE: Follow client/src/pages/reviews/RedTherapyDiscountCode.tsx exactly — PageLayout with showShare, title "[Brand] Discount Code 2026", subtitle "By Eden Laraki | ThriveTools.co", seo prop with imageAlt; "Verified 2026" badge; hero img imported from @assets/<route-slug>-hero.jpg; quotable short-answer card near the top; code/discount section with code display; CTA link with the exact affiliate href; "How to use it" steps; "Good to know" tips; FAQ cards; "Keep exploring" links; Eden Laraki author bio; affiliate disclosure paragraph. Make each post genuinely distinct in wording and do not duplicate existing site content.
+
+HERO IMAGES: For each brand, download one product or lifestyle image from the brand's official website using the shell (curl with a browser user-agent) into attached_assets/<route-slug>-hero.jpg (e.g. attached_assets/bluecubebaths-discount-code-hero.jpg). Verify each file is a real image (file signature, larger than 10KB, not HTML). Do not hotlink.
+
+ROUTES: Register all 9 routes ABOVE the 404 catch-all route in all four files: client/src/App.tsx, client/src/ssr-routes.ts, client/src/entry-server.tsx, shared/site-routes.ts. Copy the insert pattern of the most recent batch entries (see how IsunSkincareDiscountCode is registered).
+
+BUILD: Run the production build and fix any errors until it passes with 0 errors.
+
+VERIFY: Confirm all 9 components exist, all 9 slugs and imports are present in all 4 route files, all 9 hero images exist in attached_assets/, and the build passes. Report a per-brand checklist when done. Do not publish or deploy.

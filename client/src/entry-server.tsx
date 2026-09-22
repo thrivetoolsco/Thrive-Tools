@@ -90,6 +90,15 @@ import WaterDropDiscountCodeFaq from "@/pages/reviews/WaterDropDiscountCodeFaq";
 import KoracaoDiscountCodeFaq from "@/pages/reviews/KoracaoDiscountCodeFaq";
 import IsunSkincareDiscountCodeFaq from "@/pages/reviews/IsunSkincareDiscountCodeFaq";
 import WellnessDiscountCodesQuestionsAnswered from "@/pages/reviews/WellnessDiscountCodesQuestionsAnswered";
+import OrganicNoriSeaweedSushiDiscountCode from "@/pages/reviews/OrganicNoriSeaweedSushiDiscountCode";
+import IntentionallyBareDiscountCode from "@/pages/reviews/IntentionallyBareDiscountCode";
+import StyrianGoldDiscountCode from "@/pages/reviews/StyrianGoldDiscountCode";
+import TheBlessedSeedDiscountCode from "@/pages/reviews/TheBlessedSeedDiscountCode";
+import PranaFoodsDiscountCode from "@/pages/reviews/PranaFoodsDiscountCode";
+import OxygenAdvantageDiscountCode from "@/pages/reviews/OxygenAdvantageDiscountCode";
+import BlueCubeBathsDiscountCode from "@/pages/reviews/BlueCubeBathsDiscountCode";
+import MytrexDiscountCode from "@/pages/reviews/MytrexDiscountCode";
+import OmnipemfDiscountCode from "@/pages/reviews/OmnipemfDiscountCode";
 import KratomSocialPivotGuide from "@/pages/reviews/KratomSocialPivotGuide";
 import BiohackerSupplementStack from "@/pages/reviews/BiohackerSupplementStack";
 import MicroplasticsBrainGuide from "@/pages/reviews/MicroplasticsBrainGuide";
@@ -236,6 +245,15 @@ export const SSR_ROUTE_COMPONENTS: Record<string, ComponentType> = {
   "/blog/koracao-discount-code-faq": KoracaoDiscountCodeFaq,
   "/blog/isun-skincare-discount-code-faq": IsunSkincareDiscountCodeFaq,
   "/blog/wellness-discount-codes-questions-answered": WellnessDiscountCodesQuestionsAnswered,
+  "/blog/organic-nori-seaweed-sushi-discount-code": OrganicNoriSeaweedSushiDiscountCode,
+  "/blog/intentionally-bare-discount-code": IntentionallyBareDiscountCode,
+  "/blog/styriangold-discount-code": StyrianGoldDiscountCode,
+  "/blog/the-blessed-seed-discount-code": TheBlessedSeedDiscountCode,
+  "/blog/prana-foods-discount-code": PranaFoodsDiscountCode,
+  "/blog/oxygen-advantage-discount-code": OxygenAdvantageDiscountCode,
+  "/blog/bluecubebaths-discount-code": BlueCubeBathsDiscountCode,
+  "/blog/mytrex-discount-code": MytrexDiscountCode,
+  "/blog/omnipemf-discount-code": OmnipemfDiscountCode,
 };
 
 export async function render(
