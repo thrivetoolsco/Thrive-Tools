@@ -3,6 +3,7 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { ExternalLink, Tag, Check, User } from "lucide-react";
 import { Link } from "wouter";
+import cookware360HeroImg from "@assets/360-cookware-discount-code-hero_1790058276472.jpg";
 
 
 function SectionHeader({
@@ -40,8 +41,6 @@ const faqs = [
 ];
 
 
-// Hero image pending upload: 360-cookware-discount-code-hero.jpg
-
 export default function Cookware360DiscountCode() {
   return (
     <PageLayout
@@ -55,11 +54,16 @@ export default function Cookware360DiscountCode() {
         canonical: "https://thrivetools.co/blog/360-cookware-discount-code",
         ogType: "article",
         datePublished: "2026-09-21",
+        image: cookware360HeroImg,
+        imageAlt: "360 Cookware stainless steel cookware",
       }}
       backLabel="Blog"
       backHref="/blog"
     >
       <article className="space-y-10">
+        <div className="card-glass rounded-2xl overflow-hidden" data-testid="img-hero-cookware360-discount">
+          <img loading="lazy" decoding="async" src={cookware360HeroImg} alt="360 Cookware stainless steel cookware" className="w-full h-auto object-cover" />
+        </div>
         <div className="flex flex-wrap gap-3">
           <Badge className="bg-[#c4622d]/15 text-[#8b3a1a] border-[#c4622d]/25">Discount Codes</Badge>
           <Badge className="bg-[#c4622d]/15 text-[#8b3a1a] border-[#c4622d]/25">Verified 2026</Badge>

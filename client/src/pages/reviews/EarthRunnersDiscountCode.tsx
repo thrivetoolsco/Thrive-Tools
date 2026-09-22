@@ -3,6 +3,7 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { ExternalLink, Tag, Check, User } from "lucide-react";
 import { Link } from "wouter";
+import earthRunnersHeroImg from "@assets/earthrunners-discount-code-hero_1790058248055.jpg";
 
 
 function SectionHeader({
@@ -40,8 +41,6 @@ const faqs = [
 ];
 
 
-// Hero image pending upload: earthrunners-discount-code-hero.jpg
-
 export default function EarthRunnersDiscountCode() {
   return (
     <PageLayout
@@ -55,11 +54,16 @@ export default function EarthRunnersDiscountCode() {
         canonical: "https://thrivetools.co/blog/earthrunners-discount-code",
         ogType: "article",
         datePublished: "2026-09-21",
+        image: earthRunnersHeroImg,
+        imageAlt: "EarthRunners barefoot sandals",
       }}
       backLabel="Blog"
       backHref="/blog"
     >
       <article className="space-y-10">
+        <div className="card-glass rounded-2xl overflow-hidden" data-testid="img-hero-earthrunners-discount">
+          <img loading="lazy" decoding="async" src={earthRunnersHeroImg} alt="EarthRunners barefoot sandals" className="w-full h-auto object-cover" />
+        </div>
         <div className="flex flex-wrap gap-3">
           <Badge className="bg-[#c4622d]/15 text-[#8b3a1a] border-[#c4622d]/25">Discount Codes</Badge>
           <Badge className="bg-[#c4622d]/15 text-[#8b3a1a] border-[#c4622d]/25">Verified 2026</Badge>

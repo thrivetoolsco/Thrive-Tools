@@ -3,6 +3,7 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { ExternalLink, Tag, Check, User } from "lucide-react";
 import { Link } from "wouter";
+import neurosityHeroImg from "@assets/neurosity-discount-code-hero_1790058294771.jpg";
 
 
 function SectionHeader({
@@ -40,8 +41,6 @@ const faqs = [
 ];
 
 
-// Hero image pending upload: neurosity-discount-code-hero.jpg
-
 export default function NeurosityDiscountCode() {
   return (
     <PageLayout
@@ -55,11 +54,16 @@ export default function NeurosityDiscountCode() {
         canonical: "https://thrivetools.co/blog/neurosity-discount-code",
         ogType: "article",
         datePublished: "2026-09-21",
+        image: neurosityHeroImg,
+        imageAlt: "Neurosity Crown brain training device",
       }}
       backLabel="Blog"
       backHref="/blog"
     >
       <article className="space-y-10">
+        <div className="card-glass rounded-2xl overflow-hidden" data-testid="img-hero-neurosity-discount">
+          <img loading="lazy" decoding="async" src={neurosityHeroImg} alt="Neurosity Crown brain training device" className="w-full h-auto object-cover" />
+        </div>
         <div className="flex flex-wrap gap-3">
           <Badge className="bg-[#c4622d]/15 text-[#8b3a1a] border-[#c4622d]/25">Discount Codes</Badge>
           <Badge className="bg-[#c4622d]/15 text-[#8b3a1a] border-[#c4622d]/25">Verified 2026</Badge>

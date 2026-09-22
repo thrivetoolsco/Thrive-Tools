@@ -3,6 +3,7 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { ExternalLink, Tag, Check, User } from "lucide-react";
 import { Link } from "wouter";
+import aquaOmegaHeroImg from "@assets/aquaomega-discount-code-hero_1790058214412.jpg";
 
 
 function SectionHeader({
@@ -40,8 +41,6 @@ const faqs = [
 ];
 
 
-// Hero image pending upload: aquaomega-discount-code-hero.jpg
-
 export default function AquaOmegaDiscountCode() {
   return (
     <PageLayout
@@ -55,11 +54,16 @@ export default function AquaOmegaDiscountCode() {
         canonical: "https://thrivetools.co/blog/aquaomega-discount-code",
         ogType: "article",
         datePublished: "2026-09-21",
+        image: aquaOmegaHeroImg,
+        imageAlt: "AquaOmega fish oil supplements",
       }}
       backLabel="Blog"
       backHref="/blog"
     >
       <article className="space-y-10">
+        <div className="card-glass rounded-2xl overflow-hidden" data-testid="img-hero-aquaomega-discount">
+          <img loading="lazy" decoding="async" src={aquaOmegaHeroImg} alt="AquaOmega fish oil supplements" className="w-full h-auto object-cover" />
+        </div>
         <div className="flex flex-wrap gap-3">
           <Badge className="bg-[#c4622d]/15 text-[#8b3a1a] border-[#c4622d]/25">Discount Codes</Badge>
           <Badge className="bg-[#c4622d]/15 text-[#8b3a1a] border-[#c4622d]/25">Verified 2026</Badge>

@@ -3,6 +3,7 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { ExternalLink, Tag, Check, User } from "lucide-react";
 import { Link } from "wouter";
+import davidsHeroImg from "@assets/davids-discount-code-hero_1790058313367.jpg";
 
 
 function SectionHeader({
@@ -40,8 +41,6 @@ const faqs = [
 ];
 
 
-// Hero image pending upload: davids-discount-code-hero.jpg
-
 export default function DavidsDiscountCode() {
   return (
     <PageLayout
@@ -55,11 +54,16 @@ export default function DavidsDiscountCode() {
         canonical: "https://thrivetools.co/blog/davids-discount-code",
         ogType: "article",
         datePublished: "2026-09-21",
+        image: davidsHeroImg,
+        imageAlt: "Davids natural toothpaste",
       }}
       backLabel="Blog"
       backHref="/blog"
     >
       <article className="space-y-10">
+        <div className="card-glass rounded-2xl overflow-hidden" data-testid="img-hero-davids-discount">
+          <img loading="lazy" decoding="async" src={davidsHeroImg} alt="Davids natural toothpaste" className="w-full h-auto object-cover" />
+        </div>
         <div className="flex flex-wrap gap-3">
           <Badge className="bg-[#c4622d]/15 text-[#8b3a1a] border-[#c4622d]/25">Discount Codes</Badge>
           <Badge className="bg-[#c4622d]/15 text-[#8b3a1a] border-[#c4622d]/25">Verified 2026</Badge>
