@@ -3,7 +3,7 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { ExternalLink, Tag, Check, User } from "lucide-react";
 import { Link } from "wouter";
-// Hero image pending upload
+import heroImg from "@assets/redtherapy-discount-code-hero.jpg";
 
 function SectionHeader({
   eyebrow,
@@ -64,14 +64,15 @@ export default function RedTherapyDiscountCode() {
         canonical: "https://thrivetools.co/blog/redtherapy-discount-code",
         ogType: "article",
         datePublished: "2026-09-22",
-        // Hero image pending upload
+        image: heroImg,
+        imageAlt: "RedTherapy red light therapy device",
       }}
       backLabel="Blog"
       backHref="/blog"
     >
       <article className="space-y-10">
         <div className="card-glass rounded-2xl overflow-hidden" data-testid="img-hero-redtherapy-discount">
-          {/* Hero image pending upload */}
+          <img loading="lazy" decoding="async" src={heroImg} alt="RedTherapy red light therapy device" className="w-full h-auto object-cover" />
         </div>
 
         <div className="flex flex-wrap gap-3">
@@ -171,6 +172,22 @@ export default function RedTherapyDiscountCode() {
             </div>
           </div>
         </section>
+
+        <div className="flex items-start gap-4 card-glass rounded-2xl p-6" data-testid="bio-redtherapy-discount-code">
+          <span className="w-12 h-12 rounded-full bg-[#c4622d]/10 text-[#8b3a1a] flex items-center justify-center shrink-0">
+            <User className="w-6 h-6" />
+          </span>
+          <div>
+            <p className="font-display font-bold text-black">Eden Laraki</p>
+            <p className="text-black/60 mt-1 text-sm">
+              Eden runs ThriveTools.co, where she tests wellness products and keeps a verified list of discount codes for the brands she actually uses.
+            </p>
+          </div>
+        </div>
+
+        <p className="text-sm text-black/50 leading-relaxed" data-testid="disclosure-redtherapy-discount-code">
+          <strong className="font-semibold text-black/70">Affiliate disclosure:</strong> This post contains affiliate links. If you buy through them, I may earn a commission at no extra cost to you.
+        </p>
       </article>
     </PageLayout>
   );
