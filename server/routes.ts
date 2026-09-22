@@ -1647,7 +1647,7 @@ export async function registerRoutes(
 
     const blogEntries = blogPosts.map((p) => `
   <url>
-    <loc>${SITE_URL}${p.canonical}</loc>
+    <loc>${new URL(p.canonical, SITE_URL).toString()}</loc>
     <lastmod>${p.lastmod}</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>

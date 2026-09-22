@@ -1,0 +1,22 @@
+Two tasks in the ThriveTools Replit project. IMPORTANT: save all changes but do NOT publish or deploy — I will publish myself.
+
+TASK 1 — Add the 6 missing discount-code posts
+These 6 posts are missing from the live site (not in sitemap.xml). For each brand below: first check whether a component already exists in client/src/pages/reviews/ from earlier work — reuse and fix it if present, otherwise create it following the exact structure of the verified template component (RedTherapyDiscountCode.tsx / MitoRedLightDiscountCode.tsx pattern: hero image, "The short answer" box, code display, how-to steps, tips, FAQ, byline, affiliate disclosure).
+
+1. Joovv — route /blog/joovv-discount-code — code THRIVETOOLS — affiliate href https://joovv.com
+2. AquaOmega — route /blog/aquaomega-discount-code — code and affiliate href from the project's discount-codes data source (the same source that powers the /discount-codes page)
+3. EarthRunners — route /blog/earthrunners-discount-code — code THRIVETOOLS — affiliate href https://earthrunners.com/?rfsn=7676227.de5b78
+4. 360 Cookware — route /blog/360-cookware-discount-code — code THRIVETOOLS — affiliate href https://www.360cookware.com/THRIVETOOLS
+5. Neurosity — route /blog/neurosity-discount-code — code thrivetools — affiliate href https://neurosity.co/thrivetools
+6. Davids — route /blog/davids-discount-code — code and affiliate href from the project's discount-codes data source
+
+Hero images: check attached_assets/ for existing hero images for these brands (uploaded previously) and wire them into the components. If any is missing, download a product or lifestyle image from that brand's official website using curl/wget into attached_assets/ and wire it. Every post must display a hero image — no blank image areas.
+
+Register all 6 routes ABOVE the catch-all 404 route in all four route files (client/src/App.tsx, the SSR routes file, the entry-server file, and shared/site-routes.ts — locate the exact paths in this project).
+
+TASK 2 — Fix the sitemap host-doubling bug
+The live sitemap.xml contains 34 broken entries like:
+<loc>https://thrivetools.cohttps://thrivetools.co/blog/mito-red-light-discount-code</loc>
+The site host is duplicated, so search engines receive 34 broken URLs. Find the sitemap generation code — it is prepending the site URL to blog-post URLs that are already absolute — and fix it so every <loc> contains the host exactly once (e.g. https://thrivetools.co/blog/mito-red-light-discount-code). Verify the fix by inspecting the generated sitemap output.
+
+Finally, run the production build and confirm zero errors. Save only — do NOT publish.
