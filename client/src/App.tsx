@@ -188,7 +188,6 @@ const KoracaoDiscountCode = lazy(
 const IsunSkincareDiscountCode = lazy(
   () => import("@/pages/reviews/IsunSkincareDiscountCode"),
 );
-import IsunSkincareDiscountCodeFaq from "./pages/reviews/IsunSkincareDiscountCodeFaq";
 import WellnessDiscountCodesQuestionsAnswered from "./pages/reviews/WellnessDiscountCodesQuestionsAnswered";
 import OrganicNoriSeaweedSushiDiscountCode from "./pages/reviews/OrganicNoriSeaweedSushiDiscountCode";
 import IntentionallyBareDiscountCode from "./pages/reviews/IntentionallyBareDiscountCode";
@@ -213,6 +212,12 @@ import {
   NeuroVizrDiscountCodeFaq, HeatBitDiscountCodeFaq, MuseHeadbandDiscountCodeFaq,
   AiresTechDiscountCodeFaq,
 } from "./pages/reviews/LongevityTechDiscountFaqs";
+import {
+  EarthRunnersDiscountCodeFaq, TheGoodTeeDiscountCodeFaq, BambooClothesDiscountCodeFaq,
+  EarthingHarmonyDiscountCodeFaq, PromeedDiscountCodeFaq, HavnByLambsDiscountCodeFaq,
+  Cookware360DiscountCodeFaq, IsunSkincareDiscountCodeFaq, DavidsDiscountCodeFaq,
+} from "./pages/reviews/LifestyleDiscountFaqs";
+import DiscountCodesQuestions from "./pages/reviews/DiscountCodesQuestions";
 import {
   IM8DiscountCodeFaq, EquipFoodsDiscountCodeFaq, HyperionHerbsDiscountCodeFaq,
   JustThriveDiscountCodeFaq, OrganikaDiscountCodeFaq, AquaOmegaDiscountCodeFaq,
@@ -536,7 +541,6 @@ function Router() {
         <Route path="/blog/waterdrop-discount-code" component={WaterDropDiscountCode} />
         <Route path="/blog/koracao-discount-code" component={KoracaoDiscountCode} />
         <Route path="/blog/isun-skincare-discount-code" component={IsunSkincareDiscountCode} />
-        <Route path="/blog/isun-skincare-discount-code-faq" component={IsunSkincareDiscountCodeFaq} />
         <Route path="/blog/wellness-discount-codes-questions-answered" component={WellnessDiscountCodesQuestionsAnswered} />
         <Route path="/blog/organic-nori-seaweed-sushi-discount-code" component={OrganicNoriSeaweedSushiDiscountCode} />
         <Route path="/blog/intentionally-bare-discount-code" component={IntentionallyBareDiscountCode} />
@@ -589,6 +593,16 @@ function Router() {
         <Route path="/blog/heatbit-discount-code-faq" component={HeatBitDiscountCodeFaq} />
         <Route path="/blog/muse-headband-discount-code-faq" component={MuseHeadbandDiscountCodeFaq} />
         <Route path="/blog/aires-tech-discount-code-faq" component={AiresTechDiscountCodeFaq} />
+        <Route path="/blog/earthrunners-discount-code-faq" component={EarthRunnersDiscountCodeFaq} />
+        <Route path="/blog/the-good-tee-discount-code-faq" component={TheGoodTeeDiscountCodeFaq} />
+        <Route path="/blog/bamboo-clothes-discount-code-faq" component={BambooClothesDiscountCodeFaq} />
+        <Route path="/blog/earthing-harmony-discount-code-faq" component={EarthingHarmonyDiscountCodeFaq} />
+        <Route path="/blog/promeed-discount-code-faq" component={PromeedDiscountCodeFaq} />
+        <Route path="/blog/havn-by-lambs-discount-code-faq" component={HavnByLambsDiscountCodeFaq} />
+        <Route path="/blog/360-cookware-discount-code-faq" component={Cookware360DiscountCodeFaq} />
+        <Route path="/blog/isun-skincare-discount-code-faq" component={IsunSkincareDiscountCodeFaq} />
+        <Route path="/blog/davids-discount-code-faq" component={DavidsDiscountCodeFaq} />
+        <Route path="/blog/discount-codes-questions" component={DiscountCodesQuestions} />
         <Route component={NotFound} />
       </Switch>
     </Suspense>

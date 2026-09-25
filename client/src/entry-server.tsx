@@ -83,7 +83,6 @@ import VielightDiscountCode from "@/pages/reviews/VielightDiscountCode";
 import WaterDropDiscountCode from "@/pages/reviews/WaterDropDiscountCode";
 import KoracaoDiscountCode from "@/pages/reviews/KoracaoDiscountCode";
 import IsunSkincareDiscountCode from "@/pages/reviews/IsunSkincareDiscountCode";
-import IsunSkincareDiscountCodeFaq from "@/pages/reviews/IsunSkincareDiscountCodeFaq";
 import WellnessDiscountCodesQuestionsAnswered from "@/pages/reviews/WellnessDiscountCodesQuestionsAnswered";
 import OrganicNoriSeaweedSushiDiscountCode from "@/pages/reviews/OrganicNoriSeaweedSushiDiscountCode";
 import IntentionallyBareDiscountCode from "@/pages/reviews/IntentionallyBareDiscountCode";
@@ -108,6 +107,12 @@ import {
   NeuroVizrDiscountCodeFaq, HeatBitDiscountCodeFaq, MuseHeadbandDiscountCodeFaq,
   AiresTechDiscountCodeFaq,
 } from "@/pages/reviews/LongevityTechDiscountFaqs";
+import {
+  EarthRunnersDiscountCodeFaq, TheGoodTeeDiscountCodeFaq, BambooClothesDiscountCodeFaq,
+  EarthingHarmonyDiscountCodeFaq, PromeedDiscountCodeFaq, HavnByLambsDiscountCodeFaq,
+  Cookware360DiscountCodeFaq, IsunSkincareDiscountCodeFaq, DavidsDiscountCodeFaq,
+} from "@/pages/reviews/LifestyleDiscountFaqs";
+import DiscountCodesQuestions from "@/pages/reviews/DiscountCodesQuestions";
 import {
   IM8DiscountCodeFaq, EquipFoodsDiscountCodeFaq, HyperionHerbsDiscountCodeFaq,
   JustThriveDiscountCodeFaq, OrganikaDiscountCodeFaq, AquaOmegaDiscountCodeFaq,
@@ -254,7 +259,6 @@ export const SSR_ROUTE_COMPONENTS: Record<string, ComponentType> = {
   "/blog/waterdrop-discount-code": WaterDropDiscountCode,
   "/blog/koracao-discount-code": KoracaoDiscountCode,
   "/blog/isun-skincare-discount-code": IsunSkincareDiscountCode,
-  "/blog/isun-skincare-discount-code-faq": IsunSkincareDiscountCodeFaq,
   "/blog/wellness-discount-codes-questions-answered": WellnessDiscountCodesQuestionsAnswered,
   "/blog/organic-nori-seaweed-sushi-discount-code": OrganicNoriSeaweedSushiDiscountCode,
   "/blog/intentionally-bare-discount-code": IntentionallyBareDiscountCode,
@@ -307,6 +311,16 @@ export const SSR_ROUTE_COMPONENTS: Record<string, ComponentType> = {
   "/blog/heatbit-discount-code-faq": HeatBitDiscountCodeFaq,
   "/blog/muse-headband-discount-code-faq": MuseHeadbandDiscountCodeFaq,
   "/blog/aires-tech-discount-code-faq": AiresTechDiscountCodeFaq,
+  "/blog/earthrunners-discount-code-faq": EarthRunnersDiscountCodeFaq,
+  "/blog/the-good-tee-discount-code-faq": TheGoodTeeDiscountCodeFaq,
+  "/blog/bamboo-clothes-discount-code-faq": BambooClothesDiscountCodeFaq,
+  "/blog/earthing-harmony-discount-code-faq": EarthingHarmonyDiscountCodeFaq,
+  "/blog/promeed-discount-code-faq": PromeedDiscountCodeFaq,
+  "/blog/havn-by-lambs-discount-code-faq": HavnByLambsDiscountCodeFaq,
+  "/blog/360-cookware-discount-code-faq": Cookware360DiscountCodeFaq,
+  "/blog/isun-skincare-discount-code-faq": IsunSkincareDiscountCodeFaq,
+  "/blog/davids-discount-code-faq": DavidsDiscountCodeFaq,
+  "/blog/discount-codes-questions": DiscountCodesQuestions,
 };
 
 export async function render(

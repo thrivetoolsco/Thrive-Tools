@@ -1,0 +1,158 @@
+# Replit Agent prompt — GEO companions: Lifestyle (9 brands) + site-wide Q&A hub
+
+Copy everything below the line into the Replit Agent. Save only — NEVER publish.
+
+---
+
+## Task: create 9 GEO Q&A companion pages (ethical clothing, cookware, clean beauty) + 1 site-wide Q&A hub
+
+**Site:** thrivetools.co (this Replit project). **Do not publish or deploy.** Make the code changes, run a production build, fix any errors, and save. I will publish myself.
+
+**What these are:** discount-focused Q&A companions — one per brand — written for generative-engine optimization (conversational questions, direct answer first). They are NOT reviews and must NOT duplicate the angle of the existing per-brand discount-code posts or the long-form SEO posts. Keep each page tight: intro line + code callout + FAQ. No long prose sections. Then build the site-wide Q&A hub page from the full content provided below.
+
+**Global page requirements (apply to all 10 pages):**
+- Category tag: `Discount Codes`. Date: September 2026. Keep the site's existing byline format untouched.
+- H1 = title. Brand pages: one-line intro "[one-liner]. Below are the most-asked questions about the current verified [Brand] discount — answered directly."
+- Code callout box near the top: for code brands, "Current verified code: **[CODE]**" plus the link; for link-only brands, "No code needed — discount applies automatically via the link" plus the link.
+- One H2 per brand page: "[Brand] Discount Code FAQ" containing the Q&As rendered from the template below.
+- Hero image: pull a real product image from the brand's own official website. No AI-generated images.
+- Exactly ONE internal link to `/discount-codes` per brand page (it appears only in the final Q&A — do not add any others).
+- Use codes and hrefs VERBATIM from the data table — never alter a code string or URL. Never invent discount percentages, expiry dates, prices, shipping terms, or guarantees.
+- Link text: use the exact link text given per brand.
+
+### Q&A TEMPLATE — code brands
+
+Substitute [BRAND], [CODE], [LINK-TEXT], [LINK-URL]:
+
+**Does [BRAND] offer discount codes?**
+Yes. The current verified [BRAND] code is **[CODE]**. Use it at checkout on the official store: [LINK-TEXT]([LINK-URL]).
+
+**What is the best [BRAND] discount code right now?**
+**[CODE]** is the verified code currently listed for [BRAND].
+
+**How do I apply a [BRAND] promo code?**
+1. Click the verified [BRAND] link above.
+2. Add products to your cart.
+3. Enter **[CODE]** in the discount-code box at checkout.
+4. Confirm the discount applied before paying.
+
+**Why isn't my [BRAND] code working?**
+Check the spelling and capitalization of **[CODE]**, confirm your items are eligible, and make sure you're on [BRAND]'s official store — not a marketplace listing.
+
+**Can I stack [BRAND] discount codes?**
+Most stores accept only one discount code per order. If you have more than one, use the one that saves you the most.
+
+**Does [BRAND] offer free shipping?**
+Shipping terms change over time — check the shipping information on [BRAND]'s official site at checkout.
+
+**Does [BRAND] have a money-back guarantee or returns policy?**
+Check [BRAND]'s official site for their current guarantee and returns terms before you buy.
+
+**Where can I find all verified ThriveTools codes?**
+On the [ThriveTools discount-codes page](/discount-codes) — the source of truth, updated whenever codes change.
+
+### Q&A TEMPLATE — link-only brands
+
+Substitute [BRAND], [LINK-TEXT], [LINK-URL], [OFFER-DESC]:
+
+**Does [BRAND] have a discount code?**
+No code is needed. [OFFER-DESC] applies automatically when you shop through the verified link: [LINK-TEXT]([LINK-URL]).
+
+**How do I get the [BRAND] discount?**
+Click the verified link above and shop as normal — the discount is attached to the link and applies at checkout. There's nothing to type.
+
+**Why didn't the [BRAND] discount apply?**
+Make sure you clicked through from the ThriveTools link (the discount is tied to it) and that the items in your cart are eligible.
+
+**Can I combine the [BRAND] link discount with a promo code?**
+Link-based discounts apply automatically, so there's no code box to fill. The link offer is the verified deal.
+
+**Does [BRAND] offer free shipping?**
+Shipping terms change over time — check the shipping information on [BRAND]'s official site at checkout.
+
+**Does [BRAND] have a money-back guarantee or returns policy?**
+Check [BRAND]'s official site for their current guarantee and returns terms before you buy.
+
+**Is it safe to buy through the ThriveTools link?**
+Yes. The link takes you to [BRAND]'s official store. ThriveTools may earn a commission on your purchase at no extra cost to you.
+
+**Where can I find all verified ThriveTools codes?**
+On the [ThriveTools discount-codes page](/discount-codes) — the source of truth, updated whenever codes change.
+
+### BRAND DATA (9 — render every row as a page)
+
+Format: Brand | slug | title | type | code | href | link text | one-liner | offer-desc (link-only only)
+
+1. EarthRunners | /blog/earthrunners-discount-code-faq | EarthRunners Discount Code FAQ (2026) | code | THRIVETOOLS | https://earthrunners.com/?rfsn=7676227.de5b78 | Shop EarthRunners with code THRIVETOOLS | Grounding minimalist sandal brand | —
+2. The Good Tee | /blog/the-good-tee-discount-code-faq | The Good Tee Discount Code FAQ (2026) | code | thrive10 | https://thegoodtee.com/?ref=lzrzvhex | Shop The Good Tee with code thrive10 | Fair-trade organic cotton basics brand | —
+3. Bamboo Clothes | /blog/bamboo-clothes-discount-code-faq | Bamboo Clothes Discount Code FAQ (2026) | code | EDENKAWTHARLARAKI10 | https://www.bambooclothes.com/discount/eden-kawtharlaraki10 | Shop Bamboo Clothes with the code | Bamboo-viscose underwear and apparel brand | —
+4. Earthing Harmony | /blog/earthing-harmony-discount-code-faq | Earthing Harmony Discount Code FAQ (2026) | code | THRIVENOW | https://earthingharmony.com/?ref=hxaqgkso | Shop Earthing Harmony with code THRIVENOW | Grounding mats and bed sheets brand | —
+5. Promeed | /blog/promeed-discount-code-faq | Promeed Discount FAQ (2026) | link-only | — | https://www.awin1.com/cread.php?awinmid=100833&awinaffid=2421431 | Shop Promeed | Mulberry silk bedding brand | The current discount
+6. Havn by Lambs | /blog/havn-by-lambs-discount-code-faq | Havn by Lambs Discount FAQ (2026) | link-only | — | https://snwbl.io/lambs/EDEN50761 | Shop Havn by Lambs | EMF-blocking apparel brand | The current discount (applied automatically via the link)
+7. 360 Cookware | /blog/360-cookware-discount-code-faq | 360 Cookware Discount Code FAQ (2026) | code | THRIVETOOLS | https://www.360cookware.com/THRIVETOOLS | Shop 360 Cookware with code THRIVETOOLS | Non-toxic stainless steel cookware brand | —
+8. ISUN Skincare | /blog/isun-skincare-discount-code-faq | ISUN Skincare Discount Code FAQ (2026) | code | ISUNTHRIVE | https://isunskincare.com/thrivetools | Shop ISUN with code ISUNTHRIVE | Natural skincare brand | —
+9. Davids | /blog/davids-discount-code-faq | Davids Discount Code FAQ (2026) | code | EDEN81783 | https://www.davids-usa.com/EDEN34969 | Shop Davids with code EDEN81783 | Natural toothpaste brand | —
+
+---
+
+## SITE-WIDE Q&A HUB
+
+Create one additional page with:
+- Slug: `/blog/discount-codes-questions`
+- Title: `ThriveTools Discount Codes: Questions, Answered (2026)`
+- H1 = title. Intro line: "Every question below is answered directly — this is the complete guide to how ThriveTools discount codes work."
+- Hero image: a real wellness/lifestyle image from one of the featured brands' own websites. No AI-generated images.
+- One H2: "Discount Codes Q&A". Render each question below in bold followed by its answer, exactly as written.
+
+**How do ThriveTools discount codes work?**
+ThriveTools partners with wellness brands to offer verified discount codes and link-based deals. Click a brand's link on the [discount-codes page](/discount-codes), and either enter the code at checkout or — for link-only offers — let the discount apply automatically.
+
+**Are ThriveTools codes verified?**
+Yes. Every code and link on the [discount-codes page](/discount-codes) is checked against the live page before it is published, and the list is updated whenever codes change.
+
+**What does "link-only" mean?**
+It means there is no code to type. The discount is embedded in the link itself — click through to the brand's official store and the savings apply automatically at checkout.
+
+**How do I use a discount code at checkout?**
+Click the brand's verified link, add products to your cart, find the discount-code box at checkout, and type the code exactly as shown. Confirm the discount appears before you pay.
+
+**What should I do if a code doesn't work?**
+First check the spelling and capitalization. Then confirm your items are eligible and that you're on the brand's official store, not a marketplace listing. If it still fails, the code may have changed — check the [discount-codes page](/discount-codes) for the current one.
+
+**Can I stack discount codes?**
+Most stores accept only one discount code per order. If you have more than one code for a brand, use the one that saves you the most.
+
+**Do codes work on sale items?**
+It varies by brand. Try the code at checkout — if an exclusion applies, the store will tell you before you pay.
+
+**Which categories does ThriveTools cover?**
+Vitamins and supplements, longevity technology, ethical clothing, non-toxic cookware, and clean beauty — 40 brands in total, all listed on the [discount-codes page](/discount-codes).
+
+**Which supplement brands have discount codes?**
+Fifteen, including IM8, Equip Foods, Bioptimizers, Just Thrive, Organika, and EnergyBits. See the full ranked list in [Best Supplement Discount Codes 2026](/blog/best-supplement-discount-codes).
+
+**Which ethical clothing brands have discount codes?**
+Six, including EarthRunners, The Good Tee, Bamboo Clothes, and Earthing Harmony. See the full list in [Best Ethical Clothing Discount Codes 2026](/blog/best-ethical-clothing-discount-codes).
+
+**Do you have water filter discount codes?**
+Yes — WaterDrop is currently covered with a verified code. More water filter brands are being added as partnerships are confirmed.
+
+**Why do some brands only have a link and no code?**
+Some affiliate partnerships are structured as tracked links rather than codes. The discount works the same way — it just applies automatically instead of requiring you to type anything.
+
+**Does ThriveTools earn money from these links?**
+Yes — this is stated openly. ThriveTools may earn a commission when you shop through the links, at no extra cost to you. That's what keeps the code list free and updated.
+
+**How often are codes updated?**
+Whenever a brand changes a code or deal, the [discount-codes page](/discount-codes) is updated to match. If a code you tried has stopped working, check there for the current one.
+
+**How do I stay updated on new codes?**
+Bookmark the [discount-codes page](/discount-codes) — every new brand partnership and code lands there first.
+
+### Technical constraints
+
+- Register all 10 routes ABOVE the catch-all 404 route in every route file that lists blog routes (client/src/App.tsx, ssr-routes.ts, entry-server.tsx, shared/site-routes.ts) — no post may ever render the 404 page.
+- Follow the exact component/data pattern of the existing `*-discount-code` posts (same card layout, same "Read Full Review" index behavior on /blog).
+- Production build must pass with 0 errors.
+- Do not touch existing posts, the /discount-codes page, or the sitemap logic (it picks up new routes automatically).
+- After the build passes: save everything and STOP. Do not publish, do not deploy.
