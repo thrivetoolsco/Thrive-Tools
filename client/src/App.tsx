@@ -192,7 +192,6 @@ import MitoRedLightDiscountCodeFaq from "./pages/reviews/MitoRedLightDiscountCod
 import RedTherapyDiscountCodeFaq from "./pages/reviews/RedTherapyDiscountCodeFaq";
 import VielightDiscountCodeFaq from "./pages/reviews/VielightDiscountCodeFaq";
 import WaterDropDiscountCodeFaq from "./pages/reviews/WaterDropDiscountCodeFaq";
-import KoracaoDiscountCodeFaq from "./pages/reviews/KoracaoDiscountCodeFaq";
 import IsunSkincareDiscountCodeFaq from "./pages/reviews/IsunSkincareDiscountCodeFaq";
 import WellnessDiscountCodesQuestionsAnswered from "./pages/reviews/WellnessDiscountCodesQuestionsAnswered";
 import OrganicNoriSeaweedSushiDiscountCode from "./pages/reviews/OrganicNoriSeaweedSushiDiscountCode";
@@ -210,6 +209,13 @@ import {
   EarthingHarmonyDiscountCode, PromeedDiscountCode, HavnByLambsDiscountCode,
 } from "./pages/reviews/LongFormDiscountPosts";
 import { BestSupplementDiscountCodes, BestEthicalClothingDiscountCodes } from "./pages/reviews/DiscountRoundups";
+import {
+  IM8DiscountCodeFaq, EquipFoodsDiscountCodeFaq, HyperionHerbsDiscountCodeFaq,
+  JustThriveDiscountCodeFaq, OrganikaDiscountCodeFaq, AquaOmegaDiscountCodeFaq,
+  BioptimizersDiscountCodeFaq, EnergyBitsDiscountCodeFaq, TimelineMitopureDiscountCodeFaq,
+  OrganicNoriDiscountCodeFaq, IntentionallyBareDiscountCodeFaq, KoracaoDiscountCodeFaq,
+  StyrianGoldDiscountCodeFaq, TheBlessedSeedDiscountCodeFaq, PranaFoodsDiscountCodeFaq,
+} from "./pages/reviews/SupplementDiscountFaqs";
 
 const HyperionHerbsDiscountCode = lazy(
   () => import("@/pages/reviews/HyperionHerbsDiscountCode"),
@@ -530,7 +536,6 @@ function Router() {
         <Route path="/blog/redtherapy-discount-code-faq" component={RedTherapyDiscountCodeFaq} />
         <Route path="/blog/vielight-discount-code-faq" component={VielightDiscountCodeFaq} />
         <Route path="/blog/waterdrop-discount-code-faq" component={WaterDropDiscountCodeFaq} />
-        <Route path="/blog/koracao-discount-code-faq" component={KoracaoDiscountCodeFaq} />
         <Route path="/blog/isun-skincare-discount-code-faq" component={IsunSkincareDiscountCodeFaq} />
         <Route path="/blog/wellness-discount-codes-questions-answered" component={WellnessDiscountCodesQuestionsAnswered} />
         <Route path="/blog/organic-nori-seaweed-sushi-discount-code" component={OrganicNoriSeaweedSushiDiscountCode} />
@@ -553,6 +558,21 @@ function Router() {
         <Route path="/blog/havn-by-lambs-discount-code" component={HavnByLambsDiscountCode} />
         <Route path="/blog/best-supplement-discount-codes" component={BestSupplementDiscountCodes} />
         <Route path="/blog/best-ethical-clothing-discount-codes" component={BestEthicalClothingDiscountCodes} />
+        <Route path="/blog/im8-discount-code-faq" component={IM8DiscountCodeFaq} />
+        <Route path="/blog/equip-foods-discount-code-faq" component={EquipFoodsDiscountCodeFaq} />
+        <Route path="/blog/hyperion-herbs-discount-code-faq" component={HyperionHerbsDiscountCodeFaq} />
+        <Route path="/blog/just-thrive-discount-code-faq" component={JustThriveDiscountCodeFaq} />
+        <Route path="/blog/organika-discount-code-faq" component={OrganikaDiscountCodeFaq} />
+        <Route path="/blog/aquaomega-discount-code-faq" component={AquaOmegaDiscountCodeFaq} />
+        <Route path="/blog/bioptimizers-discount-code-faq" component={BioptimizersDiscountCodeFaq} />
+        <Route path="/blog/energybits-discount-code-faq" component={EnergyBitsDiscountCodeFaq} />
+        <Route path="/blog/timeline-mitopure-discount-code-faq" component={TimelineMitopureDiscountCodeFaq} />
+        <Route path="/blog/organic-nori-discount-code-faq" component={OrganicNoriDiscountCodeFaq} />
+        <Route path="/blog/intentionally-bare-discount-code-faq" component={IntentionallyBareDiscountCodeFaq} />
+        <Route path="/blog/koracao-discount-code-faq" component={KoracaoDiscountCodeFaq} />
+        <Route path="/blog/styrian-gold-discount-code-faq" component={StyrianGoldDiscountCodeFaq} />
+        <Route path="/blog/the-blessed-seed-discount-code-faq" component={TheBlessedSeedDiscountCodeFaq} />
+        <Route path="/blog/prana-foods-discount-code-faq" component={PranaFoodsDiscountCodeFaq} />
         <Route component={NotFound} />
       </Switch>
     </Suspense>

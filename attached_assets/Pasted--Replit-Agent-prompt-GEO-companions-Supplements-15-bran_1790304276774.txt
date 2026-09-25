@@ -1,0 +1,108 @@
+# Replit Agent prompt — GEO companions: Supplements (15 brands)
+
+Copy everything below the line into the Replit Agent. Save only — NEVER publish.
+
+---
+
+## Task: create 15 GEO Q&A companion pages (supplement brands)
+
+**Site:** thrivetools.co (this Replit project). **Do not publish or deploy.** Make the code changes, run a production build, fix any errors, and save. I will publish myself.
+
+**What these are:** discount-focused Q&A companions — one per brand — written for generative-engine optimization (conversational questions, direct answer first). They are NOT reviews and must NOT duplicate the angle of the existing per-brand discount-code posts or the long-form SEO posts. Keep each page tight: intro line + code callout + FAQ. No long prose sections.
+
+**Global page requirements (apply to all 15):**
+- Category tag: `Discount Codes`. Date: September 2026. Keep the site's existing byline format untouched.
+- H1 = title. One-line intro: "[one-liner]. Below are the most-asked questions about the current verified [Brand] discount — answered directly."
+- Code callout box near the top: for code brands, "Current verified code: **[CODE]**" plus the link; for link-only brands, "No code needed — discount applies automatically via the link" plus the link.
+- One H2: "[Brand] Discount Code FAQ" containing the Q&As rendered from the template below.
+- Hero image: pull a real product image from the brand's own official website. No AI-generated images.
+- Exactly ONE internal link to `/discount-codes` per page (it appears only in the final Q&A — do not add any others).
+- Use codes and hrefs VERBATIM from the data table — never alter a code string or URL. Never invent discount percentages, expiry dates, prices, shipping terms, or guarantees.
+- Link text: use the exact link text given per brand.
+
+### Q&A TEMPLATE — code brands
+
+Substitute [BRAND], [CODE], [LINK-TEXT], [LINK-URL]:
+
+**Does [BRAND] offer discount codes?**
+Yes. The current verified [BRAND] code is **[CODE]**. Use it at checkout on the official store: [LINK-TEXT]([LINK-URL]).
+
+**What is the best [BRAND] discount code right now?**
+**[CODE]** is the verified code currently listed for [BRAND].
+
+**How do I apply a [BRAND] promo code?**
+1. Click the verified [BRAND] link above.
+2. Add products to your cart.
+3. Enter **[CODE]** in the discount-code box at checkout.
+4. Confirm the discount applied before paying.
+
+**Why isn't my [BRAND] code working?**
+Check the spelling and capitalization of **[CODE]**, confirm your items are eligible, and make sure you're on [BRAND]'s official store — not a marketplace listing.
+
+**Can I stack [BRAND] discount codes?**
+Most stores accept only one discount code per order. If you have more than one, use the one that saves you the most.
+
+**Does [BRAND] offer free shipping?**
+Shipping terms change over time — check the shipping information on [BRAND]'s official site at checkout.
+
+**Does [BRAND] have a money-back guarantee or returns policy?**
+Check [BRAND]'s official site for their current guarantee and returns terms before you buy.
+
+**Where can I find all verified ThriveTools codes?**
+On the [ThriveTools discount-codes page](/discount-codes) — the source of truth, updated whenever codes change.
+
+### Q&A TEMPLATE — link-only brands
+
+Substitute [BRAND], [LINK-TEXT], [LINK-URL], [OFFER-DESC]:
+
+**Does [BRAND] have a discount code?**
+No code is needed. [OFFER-DESC] applies automatically when you shop through the verified link: [LINK-TEXT]([LINK-URL]).
+
+**How do I get the [BRAND] discount?**
+Click the verified link above and shop as normal — the discount is attached to the link and applies at checkout. There's nothing to type.
+
+**Why didn't the [BRAND] discount apply?**
+Make sure you clicked through from the ThriveTools link (the discount is tied to it) and that the items in your cart are eligible.
+
+**Can I combine the [BRAND] link discount with a promo code?**
+Link-based discounts apply automatically, so there's no code box to fill. The link offer is the verified deal.
+
+**Does [BRAND] offer free shipping?**
+Shipping terms change over time — check the shipping information on [BRAND]'s official site at checkout.
+
+**Does [BRAND] have a money-back guarantee or returns policy?**
+Check [BRAND]'s official site for their current guarantee and returns terms before you buy.
+
+**Is it safe to buy through the ThriveTools link?**
+Yes. The link takes you to [BRAND]'s official store. ThriveTools may earn a commission on your purchase at no extra cost to you.
+
+**Where can I find all verified ThriveTools codes?**
+On the [ThriveTools discount-codes page](/discount-codes) — the source of truth, updated whenever codes change.
+
+### BRAND DATA (15 — render every row as a page)
+
+Format: Brand | slug | title | type | code | href | link text | one-liner | offer-desc (link-only only)
+
+1. IM8 | /blog/im8-discount-code-faq | IM8 Discount Code FAQ (2026) | code | THRIVE10 | https://www.im8health.com/THRIVE10 | Shop IM8 with code THRIVE10 | All-in-one daily supplement brand | —
+2. Equip Foods | /blog/equip-foods-discount-code-faq | Equip Foods Discount Code FAQ (2026) | code | THRIVETOOLS | https://www.equipfoods.com/THRIVETOOLS | Shop Equip Foods with code THRIVETOOLS | Clean protein and whole-food supplement brand | —
+3. Hyperion Herbs | /blog/hyperion-herbs-discount-code-faq | Hyperion Herbs Discount Code FAQ (2026) | code | EDEN10 | http://www.hyperionherbs.com/discount/eden10 | Shop Hyperion Herbs with code EDEN10 | Tonic herbs and herbal extract brand | —
+4. Just Thrive | /blog/just-thrive-discount-code-faq | Just Thrive Discount Code FAQ (2026) | code | THRIVETOOLS | https://justthrivehealth.com/THRIVETOOLS | Shop Just Thrive with code THRIVETOOLS | Spore-based probiotic and gut-health brand | —
+5. Organika | /blog/organika-discount-code-faq | Organika Discount Code FAQ (2026) | code | EDEN_25 | https://organika.com/?rfsn=8403940.a276a1f&utm_source=refersion&utm_medium=affiliate&utm_campaign=8403940.a276a1f | Shop Organika with code EDEN_25 | Canadian-made vitamins and wellness brand | —
+6. AquaOmega | /blog/aquaomega-discount-code-faq | AquaOmega Discount FAQ (2026) | link-only | — | https://aquaomega.refr.cc/default/u/thrivetoolsco?s=rp&t=cp | Get $30 off your first AquaOmega subscription | Omega-3 fish oil subscription brand | $30 off your first subscription
+7. Bioptimizers | /blog/bioptimizers-discount-code-faq | Bioptimizers Discount Code FAQ (2026) | code | THRIVETOOLS | https://bioptimizers.com/shop/products/magnesium-breakthrough | Shop Bioptimizers with code THRIVETOOLS | Magnesium and digestive-health formula brand | —
+8. EnergyBits | /blog/energybits-discount-code-faq | EnergyBits Discount Code FAQ (2026) | code | THRIVE25 | https://energybits.com/discount/THRIVE25?rfsn=9026872.b2b124&utm_source=refersion&utm_medium=affiliate&utm_campaign=9026872.b2b124 | Shop EnergyBits with code THRIVE25 | Algae-based nutrition brand (spirulina and chlorella) | —
+9. Timeline Mitopure | /blog/timeline-mitopure-discount-code-faq | Timeline Mitopure Discount FAQ (2026) | link-only | — | https://shop.timeline.com/EDENKAWTHARLARAKI | Shop Timeline Mitopure | Urolithin A (Mitopure) longevity supplement brand | The current discount
+10. Raw Nori (Organic Nori) | /blog/organic-nori-discount-code-faq | Organic Nori Discount FAQ (2026) | link-only | — | https://rawnori.com?p=jeFAQZWBn | Shop Raw Nori | Raw organic nori seaweed brand | The current discount
+11. Intentionally Bare | /blog/intentionally-bare-discount-code-faq | Intentionally Bare Discount FAQ (2026) | link-only | — | https://bit.ly/4bsgdYC | Shop Intentionally Bare | Supplement and wellness brand | The current discount
+12. Koracao | /blog/koracao-discount-code-faq | Koracao Discount Code FAQ (2026) | code | EDENKAWTHARLARAKI123 | https://koracao.com/THRIVE33 | Shop Koracao with the code | Ceremonial-grade cacao brand | —
+13. Styrian Gold | /blog/styrian-gold-discount-code-faq | Styrian Gold Discount Code FAQ (2026) | code | THRIVETOOLS-10 | http://www.styriangold.ca/shop/? | Shop Styrian Gold with code THRIVETOOLS-10 | Canadian Styrian pumpkin seed oil brand | —
+14. The Blessed Seed | /blog/the-blessed-seed-discount-code-faq | The Blessed Seed Discount FAQ (2026) | link-only | — | https://theblessedseed.de/ref/370/ | Shop The Blessed Seed | Black seed oil brand | The current discount
+15. Prana Foods | /blog/prana-foods-discount-code-faq | Prana Foods Discount Code FAQ (2026) | code | THRIVETOOLSCO | https://pranafoods.ca/thrivetoolsco | Shop Prana Foods with code THRIVETOOLSCO | Canadian organic pantry foods brand | —
+
+### Technical constraints
+
+- Register all 15 routes ABOVE the catch-all 404 route in every route file that lists blog routes (client/src/App.tsx, ssr-routes.ts, entry-server.tsx, shared/site-routes.ts) — no post may ever render the 404 page.
+- Follow the exact component/data pattern of the existing `*-discount-code` posts (same card layout, same "Read Full Review" index behavior on /blog).
+- Production build must pass with 0 errors.
+- Do not touch existing posts, the /discount-codes page, or the sitemap logic (it picks up new routes automatically).
+- After the build passes: save everything and STOP. Do not publish, do not deploy.

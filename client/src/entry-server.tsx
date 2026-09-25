@@ -87,7 +87,6 @@ import MitoRedLightDiscountCodeFaq from "@/pages/reviews/MitoRedLightDiscountCod
 import RedTherapyDiscountCodeFaq from "@/pages/reviews/RedTherapyDiscountCodeFaq";
 import VielightDiscountCodeFaq from "@/pages/reviews/VielightDiscountCodeFaq";
 import WaterDropDiscountCodeFaq from "@/pages/reviews/WaterDropDiscountCodeFaq";
-import KoracaoDiscountCodeFaq from "@/pages/reviews/KoracaoDiscountCodeFaq";
 import IsunSkincareDiscountCodeFaq from "@/pages/reviews/IsunSkincareDiscountCodeFaq";
 import WellnessDiscountCodesQuestionsAnswered from "@/pages/reviews/WellnessDiscountCodesQuestionsAnswered";
 import OrganicNoriSeaweedSushiDiscountCode from "@/pages/reviews/OrganicNoriSeaweedSushiDiscountCode";
@@ -105,6 +104,13 @@ import {
   EarthingHarmonyDiscountCode, PromeedDiscountCode, HavnByLambsDiscountCode,
 } from "@/pages/reviews/LongFormDiscountPosts";
 import { BestSupplementDiscountCodes, BestEthicalClothingDiscountCodes } from "@/pages/reviews/DiscountRoundups";
+import {
+  IM8DiscountCodeFaq, EquipFoodsDiscountCodeFaq, HyperionHerbsDiscountCodeFaq,
+  JustThriveDiscountCodeFaq, OrganikaDiscountCodeFaq, AquaOmegaDiscountCodeFaq,
+  BioptimizersDiscountCodeFaq, EnergyBitsDiscountCodeFaq, TimelineMitopureDiscountCodeFaq,
+  OrganicNoriDiscountCodeFaq, IntentionallyBareDiscountCodeFaq, KoracaoDiscountCodeFaq,
+  StyrianGoldDiscountCodeFaq, TheBlessedSeedDiscountCodeFaq, PranaFoodsDiscountCodeFaq,
+} from "@/pages/reviews/SupplementDiscountFaqs";
 import KratomSocialPivotGuide from "@/pages/reviews/KratomSocialPivotGuide";
 import BiohackerSupplementStack from "@/pages/reviews/BiohackerSupplementStack";
 import MicroplasticsBrainGuide from "@/pages/reviews/MicroplasticsBrainGuide";
@@ -248,7 +254,6 @@ export const SSR_ROUTE_COMPONENTS: Record<string, ComponentType> = {
   "/blog/redtherapy-discount-code-faq": RedTherapyDiscountCodeFaq,
   "/blog/vielight-discount-code-faq": VielightDiscountCodeFaq,
   "/blog/waterdrop-discount-code-faq": WaterDropDiscountCodeFaq,
-  "/blog/koracao-discount-code-faq": KoracaoDiscountCodeFaq,
   "/blog/isun-skincare-discount-code-faq": IsunSkincareDiscountCodeFaq,
   "/blog/wellness-discount-codes-questions-answered": WellnessDiscountCodesQuestionsAnswered,
   "/blog/organic-nori-seaweed-sushi-discount-code": OrganicNoriSeaweedSushiDiscountCode,
@@ -271,6 +276,21 @@ export const SSR_ROUTE_COMPONENTS: Record<string, ComponentType> = {
   "/blog/havn-by-lambs-discount-code": HavnByLambsDiscountCode,
   "/blog/best-supplement-discount-codes": BestSupplementDiscountCodes,
   "/blog/best-ethical-clothing-discount-codes": BestEthicalClothingDiscountCodes,
+  "/blog/im8-discount-code-faq": IM8DiscountCodeFaq,
+  "/blog/equip-foods-discount-code-faq": EquipFoodsDiscountCodeFaq,
+  "/blog/hyperion-herbs-discount-code-faq": HyperionHerbsDiscountCodeFaq,
+  "/blog/just-thrive-discount-code-faq": JustThriveDiscountCodeFaq,
+  "/blog/organika-discount-code-faq": OrganikaDiscountCodeFaq,
+  "/blog/aquaomega-discount-code-faq": AquaOmegaDiscountCodeFaq,
+  "/blog/bioptimizers-discount-code-faq": BioptimizersDiscountCodeFaq,
+  "/blog/energybits-discount-code-faq": EnergyBitsDiscountCodeFaq,
+  "/blog/timeline-mitopure-discount-code-faq": TimelineMitopureDiscountCodeFaq,
+  "/blog/organic-nori-discount-code-faq": OrganicNoriDiscountCodeFaq,
+  "/blog/intentionally-bare-discount-code-faq": IntentionallyBareDiscountCodeFaq,
+  "/blog/koracao-discount-code-faq": KoracaoDiscountCodeFaq,
+  "/blog/styrian-gold-discount-code-faq": StyrianGoldDiscountCodeFaq,
+  "/blog/the-blessed-seed-discount-code-faq": TheBlessedSeedDiscountCodeFaq,
+  "/blog/prana-foods-discount-code-faq": PranaFoodsDiscountCodeFaq,
 };
 
 export async function render(
