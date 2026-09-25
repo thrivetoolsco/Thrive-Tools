@@ -1,0 +1,247 @@
+# Replit Agent prompt — Brand-guide articles: Wellness tech & home (5 brands)
+
+Copy everything below the line into the Replit Agent. Save only — NEVER publish.
+
+---
+
+## Task: create 5 long-form brand-guide articles (wellness tech & home brands)
+
+**Site:** thrivetools.co (this Replit project). **Do not publish or deploy.** Make the code changes, run a production build, fix any errors, and save. I will publish myself.
+
+**What these are:** honest, informational brand guides — NOT hands-on reviews. Each article is based on the brand's own published information (facts supplied below, researched 2026-09-24 from official sites). They must read as editorial features a brand partner would be proud to be linked from.
+
+**Hard honesty rules (apply to all 5):**
+- NEVER write first-person testing claims ("we tried it", "in our testing", "it worked for us"). The intro of each article must frame it as "an in-depth look based on the company's published information."
+- Report brand marketing claims as claims: "the brand says", "according to the company" — never as established fact.
+- Only state founders, founding years, HQ cities, and prices given below. Anything marked UNVERIFIED is omitted entirely.
+- Prices: present as "listed on the official store (September 2026)" and add "check the brand's site for current pricing."
+- Never invent discount percentages, expiry dates, or brand claims. The discount-code callout uses the exact code and href given — verbatim.
+- VELLGUS CAUTION: the brand describes its devices as "FDA-registered Class II medical devices." Registration is NOT FDA clearance or approval — quote the claim exactly as worded, never upgrade it to "FDA-approved" or "FDA-cleared."
+
+**Global article requirements:**
+- Category tag: `Discount Codes`. Date: September 2026. Keep the site's existing byline format untouched.
+- H1 = title. Structure: intro (honest framing) → H2 "What is [Brand]?" → H2 "Flagship products" → H2 "Who is it for?" → H2 "What sets [Brand] apart" → H2 "Pricing" → discount-code callout box (omit the callout only where no code exists — see Vellgus) → H2 FAQ (4 Q&As with full answers) → exactly ONE internal link to `/discount-codes`.
+- Hero image: pull a real product/lifestyle image from the brand's own official website. No AI-generated images.
+
+---
+
+### 1. Slug: `/blog/selfdecode-review`
+Title: `SelfDecode Review (2026): DNA-Based Health Insights, Explained`
+
+BODY:
+
+This guide takes an in-depth look at SelfDecode based on the company's published information — what the platform is, its flagship offerings, and who they're designed for.
+
+## What is SelfDecode?
+SelfDecode is a DNA-based precision health software company founded in 2016 by CEO Joe Cohen. It sits under parent company Genius Labs alongside SelfHacked and LabTestAnalyzer. The company describes itself as fully remote, with employees across five continents.
+
+## Flagship products
+- **DNA Wellness Reports** — 1,500+ personalized health reports across 35+ health topics, from nutrition to mental health, based on your DNA.
+- **AI Health Coach** — 24/7 AI guidance built on your genetic data.
+- **Labs Analyzer** — upload or order lab tests, interpreted using what the company calls functional/optimal ranges rather than standard "normal" ranges.
+- **40x Whole Genome Ultimate Package** — sequences all ~3 billion base pairs at 40x coverage, unlocking rare-variant screening, pharmacogenomics, mitochondrial, and family-planning reports. Every DNA bundle includes a cheek-swab kit plus diet, supplement, and lifestyle recommendations.
+
+## Who is it for?
+People who want to base nutrition, supplement, and lifestyle decisions on their own genetic data rather than generic advice.
+
+## What sets SelfDecode apart
+According to the company: its genetic prediction technology is "the only consumer method validated in a peer-reviewed Nature study," with polygenic risk scores backed by over 100,000 scientific references; each health report analyzes thousands of genetic variants rather than one or two; and privacy follows HIPAA and GDPR policies with what the company describes as world-class encryption — "we will never share your data."
+
+## Pricing
+As listed on the official store (September 2026): Essential Bundle $499, Essential+ Bundle $799, Ultimate Bundle $899, 40x Whole Genome Ultimate Package $1,999. HSA/FSA eligible. Check the brand's site for current pricing.
+
+> **ThriveTools discount:** Use code **THRIVETOOLS10** on the official SelfDecode store.
+> [Shop SelfDecode with code THRIVETOOLS10](https://selfdecode.com/?a_aid=6536b9c629095)
+
+## SelfDecode FAQ
+**What is SelfDecode?**
+A DNA-based precision health platform founded in 2016 that turns genetic data into personalized health, diet, and supplement recommendations.
+
+**How does SelfDecode work?**
+You submit a cheek-swab DNA sample (or upload existing DNA data), and the platform generates personalized reports and recommendations.
+
+**Does SelfDecode sell my genetic data?**
+The company states it will never share your data and follows HIPAA and GDPR policies.
+
+**Where can I find verified SelfDecode discount codes?**
+On the [ThriveTools discount-codes page](/discount-codes).
+
+---
+
+### 2. Slug: `/blog/muse-headband-review`
+Title: `Muse Headband Review (2026): Brain-Sensing Meditation, Explained`
+
+BODY:
+
+This guide takes an in-depth look at the Muse headband based on the company's published information — what it is, how it works, and who it's designed for.
+
+## What is Muse?
+Muse is a brain-sensing headband line from InteraXon, a Canadian neurotechnology company founded in 2007 and headquartered in Toronto, Canada. The headbands use EEG sensors to give real-time neurofeedback during meditation: a calm mind plays gentle sounds while a wandering mind plays storm sounds, training focus over time through the Muse app (500+ guided sessions, progress tracking, and goals).
+
+## Flagship products
+- **Muse 2** — EEG brain training for focus and calm; also tracks heart rate, breath, and body movement.
+- **Muse S Athena** (2025 flagship) — combines EEG with fNIRS for brain blood-oxygen monitoring, plus overnight sleep staging measured from brainwaves.
+- **Muse Premium** — optional subscription unlocking focus training, AI coaching, and advanced insights.
+
+## Who is it for?
+Meditation beginners who want feedback on whether they're actually focused, and biohackers interested in quantifying sleep and brain activity.
+
+## What sets Muse apart
+According to the company: Muse S Athena is "the only wearable that reads your brain while you sleep," with sleep staging measured directly from brainwaves (EEG), which the brand calls the gold standard for sleep staging — claiming 86% accuracy versus expert-scored sleep studies; the company says it has sold more portable EEG devices than any other system in history; and its devices are used by 500,000+ people with hundreds of third-party published research papers.
+
+## Pricing
+As listed on the official store (September 2026): Muse 2 $249.99, Muse S Athena $474.99, Muse Premium $45/year. Check the brand's site for current pricing.
+
+> **ThriveTools discount:** Use code **THRIVE25** on the official Muse store.
+> [Shop Muse with code THRIVE25](https://choosemuse.com/thrive25)
+
+## Muse FAQ
+**What does the Muse headband do?**
+It reads brain activity via EEG sensors and gives real-time audio feedback during meditation to help train focus.
+
+**What is the difference between Muse 2 and Muse S Athena?**
+Athena adds fNIRS brain blood-oxygen monitoring and overnight sleep staging; Muse 2 focuses on meditation training plus heart rate, breath, and movement tracking.
+
+**Is Muse a Canadian company?**
+Yes — InteraXon was founded in 2007 and is headquartered in Toronto, Canada.
+
+**Where can I find verified Muse discount codes?**
+On the [ThriveTools discount-codes page](/discount-codes).
+
+---
+
+### 3. Slug: `/blog/waterdrop-review`
+Title: `WaterDrop Review (2026): Water Filtration Systems Guide`
+
+BODY:
+
+This guide takes an in-depth look at WaterDrop based on the company's published information — what the brand is, its flagship products, and who they're designed for.
+
+## What is WaterDrop?
+WaterDrop is a water purification company founded in 2015. Its stated mission: developing innovative water purification technologies to enhance life quality for families. The brand's US site lists an Ontario, California address.
+
+## Flagship products
+- **G3 series** — countertop and under-sink reverse osmosis systems.
+- **X Series** — including the X16, which the brand calls the "World's Fastest Flow RO system."
+- Also: countertop RO models (A1), water filter pitchers, refrigerator water filters, whole-house filters, and an instant hot water dispenser with RO filtration.
+
+## Who is it for?
+Households wanting cleaner drinking water — from renters (countertop models, pitchers) to homeowners (under-sink and whole-house systems).
+
+## What sets WaterDrop apart
+According to the company: products are NSF certified for purity and safety; the brand holds 300+ granted patents and Red Dot Product Design Awards (G3, X Series 2024); it's available in 82+ countries and ranked No.1 in Amazon's water purification category; and it works with the Environmental Working Group on a tap-water contaminant lookup tool while sponsoring The Water Project charity.
+
+## Pricing
+As listed on the official store (September 2026): products range from about $27 (replacement filters) to $1,299, with RO systems around $649–$799. Check the brand's site for current pricing.
+
+> **ThriveTools discount:** Use code **KAWTHARLARAKI** on the official WaterDrop store.
+> [Shop WaterDrop with code KAWTHARLARAKI](https://www.waterdropfilter.ca/?ref=ozpbpmdp)
+
+## WaterDrop FAQ
+**What is WaterDrop known for?**
+Reverse osmosis water filtration systems for countertop, under-sink, and whole-house use.
+
+**When was WaterDrop founded?**
+2015, according to the company's brand story.
+
+**Does WaterDrop have NSF certification?**
+The brand describes its products as NSF certified.
+
+**Where can I find verified WaterDrop discount codes?**
+On the [ThriveTools discount-codes page](/discount-codes).
+
+---
+
+### 4. Slug: `/blog/earthrunners-review`
+Title: `EarthRunners Review (2026): Grounding Sandals Guide`
+
+BODY:
+
+This guide takes an in-depth look at EarthRunners based on the company's published information — what the brand is, its flagship products, and who they're designed for.
+
+## What is EarthRunners?
+EarthRunners makes minimalist grounding (earthing) sandals inspired by the Tarahumara huarache design — thin, zero-drop, barefoot-style adventure sandals. Founder Mike Dally built the first prototype in early 2012 and launched Earth Runners on Kickstarter that year. It's an American brand based in California.
+
+## Flagship products
+- **Circadian Adventure Sandals** — the #1 best-seller, 9mm Vibram Gumlite sole.
+- **Alpha, Atlas, Primal, Chronos** — the core adult sandal lineup.
+- Also: foot-health accessories including toe spacers and DIY earthing shoe kits.
+
+## Who is it for?
+Barefoot-style runners, hikers, and travelers who want minimalist footwear — plus grounding enthusiasts who want to stay connected to the earth while wearing sandals.
+
+## What sets EarthRunners apart
+According to the company: patented grounded conductive laces — stainless steel-lined laces grounded via a copper plug exposed on the outsole, letting wearers stay grounded like being barefoot (the brand says the effect is measurable with a voltmeter); a zero-drop huarache-inspired design for natural gait and foot strength; and 1% of all sales donated to True Messages, a nonprofit honoring the Rarámuri (Tarahumara) running heritage.
+
+## Pricing
+As listed on the official store (September 2026): adult sandals $77–$120 (Primal $77, Circadian $98, Atlas $120); children's sandals $35. Check the brand's site for current pricing.
+
+> **ThriveTools discount:** Use code **THRIVETOOLS** on the official EarthRunners store.
+> [Shop EarthRunners with code THRIVETOOLS](https://earthrunners.com/?rfsn=7676227.de5b78)
+
+## EarthRunners FAQ
+**What are grounding sandals?**
+Sandals with conductive elements that connect the wearer to the earth's electrical charge, similar to walking barefoot.
+
+**Who founded EarthRunners?**
+Mike Dally, who launched the brand on Kickstarter in 2012.
+
+**What is the Circadian sandal?**
+EarthRunners' #1 best-selling model — a 9mm Vibram-soled adventure sandal with grounded conductive laces.
+
+**Where can I find verified EarthRunners discount codes?**
+On the [ThriveTools discount-codes page](/discount-codes).
+
+---
+
+### 5. Slug: `/blog/vellgus-review`
+Title: `Vellgus Guide (2026): At-Home Red Light Therapy Panels`
+
+BODY:
+
+This guide takes an in-depth look at Vellgus based on the company's published information — what the brand is, its flagship products, and who they're designed for.
+
+## What is Vellgus?
+Vellgus is a red light therapy company offering at-home photobiomodulation panels. The site brands itself as serving the USA and Canada with free shipping in both countries.
+
+## Flagship products
+- **VELLGUS mini** — compact panel.
+- **VELLGUS elite / elite v2** — multi-wavelength panels.
+- **VELLGUS pro / pro V2** — full-body panels.
+- **VELLGUS max 300** — the largest modular panel.
+- **Infrared sauna blanket.**
+The brand says its panels emit six red and near-infrared wavelengths (480, 630, 660, 810, 830, and 850nm), which it links to cellular repair and renewal, improved circulation, increased energy, and better sleep.
+
+## Who is it for?
+People building an at-home red light therapy setup — from a compact starter panel to full-body modular systems.
+
+## What sets Vellgus apart
+According to the company: six-wavelength output (480/630/660/810/830/850nm) — the brand claims no other red/NIR device offers this multi-wave output; high irradiance of over 245 mW/cm² at 0 inches on larger panels; devices described as FDA-registered Class II medical devices (note: registration is not the same as FDA clearance or approval) and ETL Intertek certified for electrical safety; modular Black Series design with 30-day free trial and up to 3-year warranty.
+
+## Pricing
+As listed on the official store (September 2026): VELLGUS mini $339, reviv pro $449, elite $549. Check the brand's site for current pricing.
+
+> **ThriveTools discount:** See the current Vellgus offer on our [discount-codes page](/discount-codes).
+
+## Vellgus FAQ
+**What is Vellgus?**
+An at-home red light therapy brand offering multi-wavelength panels and an infrared sauna blanket, serving the USA and Canada.
+
+**What wavelengths do Vellgus panels emit?**
+According to the brand: 480, 630, 660, 810, 830, and 850nm.
+
+**Are Vellgus devices FDA approved?**
+The company describes them as FDA-registered Class II medical devices — registration is not the same as FDA clearance or approval.
+
+**Where can I find verified Vellgus discount codes?**
+On the [ThriveTools discount-codes page](/discount-codes).
+
+---
+
+### Technical constraints
+
+- Register all 5 routes ABOVE the catch-all 404 route in every route file that lists blog routes (client/src/App.tsx, ssr-routes.ts, entry-server.tsx, shared/site-routes.ts) — no post may ever render the 404 page. Slugs: `/blog/selfdecode-review`, `/blog/muse-headband-review`, `/blog/waterdrop-review`, `/blog/earthrunners-review`, `/blog/vellgus-review`. If any slug already exists, append `-guide` instead and report which.
+- Follow the exact component/data pattern of the existing blog posts (same card layout, same /blog index behavior).
+- Production build must pass with 0 errors.
+- Do not touch existing posts, the /discount-codes page, or the sitemap logic (it picks up new routes automatically).
+- After the build passes: save everything and STOP. Do not publish, do not deploy.

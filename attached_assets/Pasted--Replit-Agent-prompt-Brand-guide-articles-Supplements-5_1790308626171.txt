@@ -1,0 +1,245 @@
+# Replit Agent prompt — Brand-guide articles: Supplements (5 brands)
+
+Copy everything below the line into the Replit Agent. Save only — NEVER publish.
+
+---
+
+## Task: create 5 long-form brand-guide articles (supplement brands)
+
+**Site:** thrivetools.co (this Replit project). **Do not publish or deploy.** Make the code changes, run a production build, fix any errors, and save. I will publish myself.
+
+**What these are:** honest, informational brand guides — NOT hands-on reviews. Each article is based on the brand's own published information (facts supplied below, researched 2026-09-24 from official sites). They must read as editorial features a brand partner would be proud to be linked from.
+
+**Hard honesty rules (apply to all 5):**
+- NEVER write first-person testing claims ("we tried it", "in our testing", "it worked for us"). The intro of each article must frame it as "an in-depth look based on the company's published information."
+- Report brand marketing claims as claims: "the brand says", "according to the company" — never as established fact.
+- Only state founders, founding years, HQ cities, and prices given below. Anything marked UNVERIFIED is omitted entirely.
+- Prices: present as "listed on the official store (September 2026)" and add "check the brand's site for current pricing."
+- Never invent discount percentages, expiry dates, or brand claims. The discount-code callout uses the exact code and href given — verbatim.
+
+**Global article requirements:**
+- Category tag: `Discount Codes`. Date: September 2026. Keep the site's existing byline format untouched.
+- H1 = title. Structure: intro (honest framing) → H2 "What is [Brand]?" → H2 "Flagship products" → H2 "Who is it for?" → H2 "What sets [Brand] apart" → H2 "Pricing" → discount-code callout box → H2 FAQ (4 Q&As with full answers) → exactly ONE internal link to `/discount-codes`.
+- Hero image: pull a real product/lifestyle image from the brand's own official website. No AI-generated images.
+
+---
+
+### 1. Slug: `/blog/im8-review`
+Title: `IM8 Review (2026): The All-in-One Daily Supplement, Explained`
+
+BODY:
+
+This guide takes an in-depth look at IM8 based on the company's published information — what the brand is, its flagship formulas, and who they're designed for.
+
+## What is IM8?
+IM8 is a premium all-in-one daily nutrition brand and a subsidiary of Prenetics. It was co-founded by David Beckham as Co-Founding Partner. The company is based in Charlotte, North Carolina.
+
+## Flagship products
+- **Daily Ultimate Essentials Pro** — an all-in-one daily powder drink with 90 ingredients, positioned as replacing 16 separate supplements, supporting energy, digestion, sleep, and focus.
+- **Daily Ultimate Longevity** — a healthy-aging formula of 10 compounds targeting what the brand describes as the 12 hallmarks of aging.
+- **The Beckham Stack** — a bundle of both products as one daily ritual.
+
+## Who is it for?
+People who want a single consolidated daily supplement routine instead of managing many separate bottles — particularly those focused on energy, digestion, and healthy aging.
+
+## What sets IM8 apart
+According to the company: every product is NSF Certified for Sport (screening for 280+ banned substances plus heavy metals and contaminants, and verifying label dosages); formulations are informed by a scientific advisory board the brand says includes experts from Mayo Clinic, Cedars-Sinai, and a former NASA chief scientist; and products carry a 90-day money-back guarantee (terms vary by plan).
+
+## Pricing
+As listed on the official store (September 2026): Daily Ultimate Essentials Pro from $78/month, Daily Ultimate Longevity from $104/month, The Beckham Stack $183/month. Check the brand's site for current pricing.
+
+> **ThriveTools discount:** Use code **THRIVE10** at checkout on the official IM8 store.
+> [Shop IM8 with code THRIVE10](https://www.im8health.com/THRIVE10)
+
+## IM8 FAQ
+**What is IM8?**
+IM8 is an all-in-one daily nutrition brand co-founded by David Beckham, offering consolidated supplement formulas instead of many separate products.
+
+**What does Daily Ultimate Essentials Pro do?**
+According to the brand, it's a 90-ingredient daily powder supporting energy, digestion, sleep, and focus.
+
+**Is IM8 third-party tested?**
+The company states every product is NSF Certified for Sport.
+
+**Where can I find verified IM8 discount codes?**
+On the [ThriveTools discount-codes page](/discount-codes).
+
+---
+
+### 2. Slug: `/blog/equip-foods-review`
+Title: `Equip Foods Review (2026): Clean Protein and Whole-Food Supplements`
+
+BODY:
+
+This guide takes an in-depth look at Equip Foods based on the company's published information — what the brand is, its flagship products, and who they're designed for.
+
+## What is Equip Foods?
+Equip Foods is a "real food" supplement brand founded by Dr. Anthony Gustin. Its positioning: ingredients from the farm, not the lab — no synthetics, fillers, gums, emulsifiers, seed oils, or artificial sweeteners.
+
+## Flagship products
+- **Prime Protein** — grass-fed beef protein powder (21g complete protein per scoop, with naturally occurring collagen and gelatin), marketed as dairy-free, gut-friendly, and bloat-free.
+- **Prime Bar** — grass-fed beef protein bar with colostrum.
+- Also: Grass-Fed Collagen, Core Colostrum, and a kids protein line.
+
+## Who is it for?
+People avoiding dairy or whey who want animal-based protein, and shoppers who prioritize minimal, whole-food ingredient lists.
+
+## What sets Equip Foods apart
+According to the company: every batch is third-party tested for heavy metals, pesticides, glyphosate, microplastics, mycotoxins, and molds ("radical transparency"); formulations are doctor-developed; and the brand positions its products as best-in-class on taste.
+
+## Pricing
+As listed on the official store (September 2026): Prime Protein $63.99 one-time / $54.39 subscription. Check the brand's site for current pricing.
+
+> **ThriveTools discount:** Use code **THRIVETOOLS** at checkout on the official Equip Foods store.
+> [Shop Equip Foods with code THRIVETOOLS](https://www.equipfoods.com/THRIVETOOLS)
+
+## Equip Foods FAQ
+**What is Equip Foods known for?**
+Its grass-fed beef protein powder, Prime Protein, made with whole-food ingredients and no dairy.
+
+**Is Prime Protein dairy-free?**
+Yes — it's beef-based, which the brand markets as gut-friendly and bloat-free for people avoiding whey.
+
+**Does Equip Foods third-party test?**
+The company states every batch is third-party tested for contaminants including heavy metals and microplastics.
+
+**Where can I find verified Equip Foods discount codes?**
+On the [ThriveTools discount-codes page](/discount-codes).
+
+---
+
+### 3. Slug: `/blog/just-thrive-review`
+Title: `Just Thrive Review (2026): Spore Probiotics and Gut Health`
+
+BODY:
+
+This guide takes an in-depth look at Just Thrive based on the company's published information — what the brand is, its flagship products, and who they're designed for.
+
+## What is Just Thrive?
+Just Thrive is a gut-health supplement brand founded in 2013 by Tina and Billy Anderson, former pharmaceutical executives, after they discovered spore-probiotic research by microbiologist Kiran Krishnan. The company is based in Park Ridge, Illinois.
+
+## Flagship products
+- **Just Thrive Probiotic** — a 100% spore-based probiotic the brand describes as "guaranteed to arrive 100% alive in your gut," for digestive and immune health.
+- **Core Health bundle** — Probiotic plus PREbiotic.
+- Also: Vitamin K2 and a pet probiotic line.
+
+## Who is it for?
+People looking for a probiotic positioned to survive stomach acid better than standard probiotics, and those building a gut-health routine.
+
+## What sets Just Thrive apart
+According to the company: it was the first spore-based probiotic guaranteed to reach the gut 100% alive; products contain no harmful fillers and are third-party quality tested; and the "Bottom of the Bottle" guarantee offers a 100% money-back refund even if the bottle is empty.
+
+## Pricing
+As listed on the official store (September 2026): Just Thrive Probiotic $49.99 one-time / $44.99 subscription (30-day); Core Health bundle $83.99 one-time / $78.99 subscription. Check the brand's site for current pricing.
+
+> **ThriveTools discount:** Use code **THRIVETOOLS** at checkout on the official Just Thrive store.
+> [Shop Just Thrive with code THRIVETOOLS](https://justthrivehealth.com/THRIVETOOLS)
+
+## Just Thrive FAQ
+**What makes Just Thrive different from regular probiotics?**
+It's spore-based — the brand says the spores survive stomach acid and arrive 100% alive in the gut.
+
+**Who founded Just Thrive?**
+Tina and Billy Anderson, who launched the brand in 2013.
+
+**What is the Bottom of the Bottle guarantee?**
+The company's 100% money-back guarantee — a refund even if the bottle is empty.
+
+**Where can I find verified Just Thrive discount codes?**
+On the [ThriveTools discount-codes page](/discount-codes).
+
+---
+
+### 4. Slug: `/blog/bioptimizers-review`
+Title: `Bioptimizers Review (2026): Magnesium and Digestive Health Formulas`
+
+BODY:
+
+This guide takes an in-depth look at Bioptimizers based on the company's published information — what the brand is, its flagship products, and who they're designed for.
+
+## What is Bioptimizers?
+Bioptimizers is a performance- and digestion-focused supplement brand co-founded by Matt Gallant (CEO, health author, kinesiologist) and Wade Lightheart (president, 3-time national natural bodybuilding champion).
+
+## Flagship products
+- **MassZymes** — a full-spectrum digestive enzyme blend (protease, lipase, amylase, and others) for digestion and nutrient absorption.
+- **Magnesium Breakthrough** — a blend of 7 forms of magnesium (glycinate, citrate, taurate, chelate, orotate, malate, and Sucrosomial).
+- Also: Probiotic Breakthrough, kApex, and Cognibiotics.
+
+## Who is it for?
+People focused on digestion and nutrient absorption, and those seeking a multi-form magnesium supplement.
+
+## What sets Bioptimizers apart
+According to the company: it runs an in-house research lab (based at the University of Sarajevo) conducting formulation experiments on enzymes and probiotics; and the founders bring 60+ years of combined experience in fitness and nutrition.
+
+## Pricing
+As listed on the official store (September 2026): MassZymes (250 caps) $59.99; Magnesium Breakthrough (60 caps) $39.99. Check the brand's site for current pricing.
+
+> **ThriveTools discount:** Use code **THRIVETOOLS** at checkout on the official Bioptimizers store.
+> [Shop Bioptimizers with code THRIVETOOLS](https://bioptimizers.com/shop/products/magnesium-breakthrough)
+
+## Bioptimizers FAQ
+**What is Bioptimizers best known for?**
+Its digestive enzyme blend MassZymes and its 7-form magnesium formula, Magnesium Breakthrough.
+
+**Who founded Bioptimizers?**
+Matt Gallant and Wade Lightheart.
+
+**How many types of magnesium are in Magnesium Breakthrough?**
+Seven, according to the company: glycinate, citrate, taurate, chelate, orotate, malate, and Sucrosomial.
+
+**Where can I find verified Bioptimizers discount codes?**
+On the [ThriveTools discount-codes page](/discount-codes).
+
+---
+
+### 5. Slug: `/blog/energybits-review`
+Title: `EnergyBits Review (2026): Algae Nutrition, Explained`
+
+BODY:
+
+This guide takes an in-depth look at EnergyBits based on the company's published information — what the brand is, its flagship products, and who they're designed for.
+
+## What is EnergyBits?
+EnergyBits is an algae-tablet nutrition brand founded by CEO Catharine Arnston, who started the company after researching alkaline foods for her sister following a breast cancer diagnosis. The company is based in Miami, Florida.
+
+## Flagship products
+- **ENERGYbits** — 100% spirulina tablets for sustainable energy and mental focus.
+- **RECOVERYbits** — 100% chlorella tablets for detoxification, immune health, and muscle recovery.
+- **VITALITYbits** — a 50/50 spirulina-chlorella blend.
+- **BEAUTYbits** — spirulina tablets for skin, hair, and nails.
+All are single-ingredient tablets with no caffeine, sugar, soy, or gluten.
+
+## Who is it for?
+People seeking plant-based, whole-food nutrition — particularly those interested in algae as a protein and micronutrient source.
+
+## What sets EnergyBits apart
+According to the company: one ingredient — 100% algae (spirulina is 64% protein, which the brand compares to 3x the protein of steak, plus 40+ vitamins and minerals); the algae is grown in freshwater tanks in Taiwan, is non-GMO, and the brand describes itself as the only algae company conducting third-party lab testing in the USA for purity (heavy metals, pesticides, toxins).
+
+## Pricing
+As listed on the official store (September 2026): large bag (1,000 tablets) $130 ($104 subscription); sample pack (120 tablets) $25. Check the brand's site for current pricing.
+
+> **ThriveTools discount:** Use code **THRIVE25** at checkout on the official EnergyBits store.
+> [Shop EnergyBits with code THRIVE25](https://energybits.com/discount/THRIVE25?rfsn=9026872.b2b124&utm_source=refersion&utm_medium=affiliate&utm_campaign=9026872.b2b124)
+
+## EnergyBits FAQ
+**What are EnergyBits made of?**
+100% algae — spirulina, chlorella, or a blend — with no other ingredients, according to the company.
+
+**Do EnergyBits contain caffeine?**
+No — the brand positions them as a caffeine-free energy source.
+
+**Who founded EnergyBits?**
+Catharine Arnston.
+
+**Where can I find verified EnergyBits discount codes?**
+On the [ThriveTools discount-codes page](/discount-codes).
+
+---
+
+### Technical constraints
+
+- Register all 5 routes ABOVE the catch-all 404 route in every route file that lists blog routes (client/src/App.tsx, ssr-routes.ts, entry-server.tsx, shared/site-routes.ts) — no post may ever render the 404 page. Slugs: `/blog/im8-review`, `/blog/equip-foods-review`, `/blog/just-thrive-review`, `/blog/bioptimizers-review`, `/blog/energybits-review`. If any slug already exists, append `-guide` instead and report which.
+- Follow the exact component/data pattern of the existing blog posts (same card layout, same /blog index behavior).
+- Production build must pass with 0 errors.
+- Do not touch existing posts, the /discount-codes page, or the sitemap logic (it picks up new routes automatically).
+- After the build passes: save everything and STOP. Do not publish, do not deploy.

@@ -106,6 +106,14 @@ import {
 } from "./pages/reviews/LifestyleDiscountFaqs";
 import DiscountCodesQuestions from "./pages/reviews/DiscountCodesQuestions";
 import {
+  Im8BrandGuide, EquipFoodsBrandGuide, JustThriveBrandGuide,
+  BioptimizersBrandGuide, EnergyBitsBrandGuide,
+} from "./pages/reviews/SupplementBrandGuides";
+import {
+  SelfDecodeBrandGuide, MuseHeadbandBrandGuide, WaterDropBrandGuide,
+  EarthRunnersBrandGuide, VellgusBrandGuide,
+} from "./pages/reviews/WellnessTechBrandGuides";
+import {
   IM8DiscountCodeFaq, EquipFoodsDiscountCodeFaq, HyperionHerbsDiscountCodeFaq,
   JustThriveDiscountCodeFaq, OrganikaDiscountCodeFaq, AquaOmegaDiscountCodeFaq,
   BioptimizersDiscountCodeFaq, EnergyBitsDiscountCodeFaq, TimelineMitopureDiscountCodeFaq,
@@ -209,6 +217,16 @@ export const SSR_ROUTE_COMPONENTS: Record<string, ComponentType> = {
   "/blog/isun-skincare-discount-code-faq": IsunSkincareDiscountCodeFaq,
   "/blog/davids-discount-code-faq": DavidsDiscountCodeFaq,
   "/blog/discount-codes-questions": DiscountCodesQuestions,
+  "/blog/im8-review": Im8BrandGuide,
+  "/blog/equip-foods-review": EquipFoodsBrandGuide,
+  "/blog/just-thrive-review": JustThriveBrandGuide,
+  "/blog/bioptimizers-review": BioptimizersBrandGuide,
+  "/blog/energybits-review": EnergyBitsBrandGuide,
+  "/blog/selfdecode-review": SelfDecodeBrandGuide,
+  "/blog/muse-headband-review": MuseHeadbandBrandGuide,
+  "/blog/waterdrop-review": WaterDropBrandGuide,
+  "/blog/earthrunners-review-guide": EarthRunnersBrandGuide,
+  "/blog/vellgus-review": VellgusBrandGuide,
   "/product-reviews/biohacking-beginners-guide": BiohackingBeginnersGuide,
   "/blog/biohacking-beginners-guide": BiohackingBeginnersGuide,
   "/product-reviews/breathwork-beginners-guide": BreathworkBeginnersGuide,

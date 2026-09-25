@@ -219,6 +219,14 @@ import {
 } from "./pages/reviews/LifestyleDiscountFaqs";
 import DiscountCodesQuestions from "./pages/reviews/DiscountCodesQuestions";
 import {
+  Im8BrandGuide, EquipFoodsBrandGuide, JustThriveBrandGuide,
+  BioptimizersBrandGuide, EnergyBitsBrandGuide,
+} from "./pages/reviews/SupplementBrandGuides";
+import {
+  SelfDecodeBrandGuide, MuseHeadbandBrandGuide, WaterDropBrandGuide,
+  EarthRunnersBrandGuide, VellgusBrandGuide,
+} from "./pages/reviews/WellnessTechBrandGuides";
+import {
   IM8DiscountCodeFaq, EquipFoodsDiscountCodeFaq, HyperionHerbsDiscountCodeFaq,
   JustThriveDiscountCodeFaq, OrganikaDiscountCodeFaq, AquaOmegaDiscountCodeFaq,
   BioptimizersDiscountCodeFaq, EnergyBitsDiscountCodeFaq, TimelineMitopureDiscountCodeFaq,
@@ -603,6 +611,16 @@ function Router() {
         <Route path="/blog/isun-skincare-discount-code-faq" component={IsunSkincareDiscountCodeFaq} />
         <Route path="/blog/davids-discount-code-faq" component={DavidsDiscountCodeFaq} />
         <Route path="/blog/discount-codes-questions" component={DiscountCodesQuestions} />
+        <Route path="/blog/im8-review" component={Im8BrandGuide} />
+        <Route path="/blog/equip-foods-review" component={EquipFoodsBrandGuide} />
+        <Route path="/blog/just-thrive-review" component={JustThriveBrandGuide} />
+        <Route path="/blog/bioptimizers-review" component={BioptimizersBrandGuide} />
+        <Route path="/blog/energybits-review" component={EnergyBitsBrandGuide} />
+        <Route path="/blog/selfdecode-review" component={SelfDecodeBrandGuide} />
+        <Route path="/blog/muse-headband-review" component={MuseHeadbandBrandGuide} />
+        <Route path="/blog/waterdrop-review" component={WaterDropBrandGuide} />
+        <Route path="/blog/earthrunners-review-guide" component={EarthRunnersBrandGuide} />
+        <Route path="/blog/vellgus-review" component={VellgusBrandGuide} />
         <Route component={NotFound} />
       </Switch>
     </Suspense>
