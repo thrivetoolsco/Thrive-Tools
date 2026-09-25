@@ -204,6 +204,11 @@ import OxygenAdvantageDiscountCode from "./pages/reviews/OxygenAdvantageDiscount
 import BlueCubeBathsDiscountCode from "./pages/reviews/BlueCubeBathsDiscountCode";
 import MytrexDiscountCode from "./pages/reviews/MytrexDiscountCode";
 import OmnipemfDiscountCode from "./pages/reviews/OmnipemfDiscountCode";
+import {
+  HealthAndYogaDiscountCode, NeuroVizrDiscountCode, HeatBitDiscountCode,
+  AiresTechDiscountCode, TheGoodTeeDiscountCode, BambooClothesDiscountCode,
+  EarthingHarmonyDiscountCode, PromeedDiscountCode, HavnByLambsDiscountCode,
+} from "./pages/reviews/LongFormDiscountPosts";
 
 const HyperionHerbsDiscountCode = lazy(
   () => import("@/pages/reviews/HyperionHerbsDiscountCode"),
@@ -536,6 +541,15 @@ function Router() {
         <Route path="/blog/bluecubebaths-discount-code" component={BlueCubeBathsDiscountCode} />
         <Route path="/blog/mytrex-discount-code" component={MytrexDiscountCode} />
         <Route path="/blog/omnipemf-discount-code" component={OmnipemfDiscountCode} />
+        <Route path="/blog/healthandyoga-discount-code" component={HealthAndYogaDiscountCode} />
+        <Route path="/blog/neurovizr-discount-code" component={NeuroVizrDiscountCode} />
+        <Route path="/blog/heatbit-discount-code" component={HeatBitDiscountCode} />
+        <Route path="/blog/aires-tech-discount-code" component={AiresTechDiscountCode} />
+        <Route path="/blog/the-good-tee-discount-code" component={TheGoodTeeDiscountCode} />
+        <Route path="/blog/bamboo-clothes-discount-code" component={BambooClothesDiscountCode} />
+        <Route path="/blog/earthing-harmony-discount-code" component={EarthingHarmonyDiscountCode} />
+        <Route path="/blog/promeed-discount-code" component={PromeedDiscountCode} />
+        <Route path="/blog/havn-by-lambs-discount-code" component={HavnByLambsDiscountCode} />
         <Route component={NotFound} />
       </Switch>
     </Suspense>

@@ -91,6 +91,11 @@ import OxygenAdvantageDiscountCode from "./pages/reviews/OxygenAdvantageDiscount
 import BlueCubeBathsDiscountCode from "./pages/reviews/BlueCubeBathsDiscountCode";
 import MytrexDiscountCode from "./pages/reviews/MytrexDiscountCode";
 import OmnipemfDiscountCode from "./pages/reviews/OmnipemfDiscountCode";
+import {
+  HealthAndYogaDiscountCode, NeuroVizrDiscountCode, HeatBitDiscountCode,
+  AiresTechDiscountCode, TheGoodTeeDiscountCode, BambooClothesDiscountCode,
+  EarthingHarmonyDiscountCode, PromeedDiscountCode, HavnByLambsDiscountCode,
+} from "./pages/reviews/LongFormDiscountPosts";
 
 export const SSR_ROUTE_COMPONENTS: Record<string, ComponentType> = {
   "/product-reviews/im8-vs-ag1": Im8VsAg1,
@@ -142,6 +147,15 @@ export const SSR_ROUTE_COMPONENTS: Record<string, ComponentType> = {
   "/blog/bluecubebaths-discount-code": BlueCubeBathsDiscountCode,
   "/blog/mytrex-discount-code": MytrexDiscountCode,
   "/blog/omnipemf-discount-code": OmnipemfDiscountCode,
+  "/blog/healthandyoga-discount-code": HealthAndYogaDiscountCode,
+  "/blog/neurovizr-discount-code": NeuroVizrDiscountCode,
+  "/blog/heatbit-discount-code": HeatBitDiscountCode,
+  "/blog/aires-tech-discount-code": AiresTechDiscountCode,
+  "/blog/the-good-tee-discount-code": TheGoodTeeDiscountCode,
+  "/blog/bamboo-clothes-discount-code": BambooClothesDiscountCode,
+  "/blog/earthing-harmony-discount-code": EarthingHarmonyDiscountCode,
+  "/blog/promeed-discount-code": PromeedDiscountCode,
+  "/blog/havn-by-lambs-discount-code": HavnByLambsDiscountCode,
   "/product-reviews/biohacking-beginners-guide": BiohackingBeginnersGuide,
   "/blog/biohacking-beginners-guide": BiohackingBeginnersGuide,
   "/product-reviews/breathwork-beginners-guide": BreathworkBeginnersGuide,
