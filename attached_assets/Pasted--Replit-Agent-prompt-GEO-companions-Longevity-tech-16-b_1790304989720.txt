@@ -1,0 +1,109 @@
+# Replit Agent prompt — GEO companions: Longevity tech (16 brands)
+
+Copy everything below the line into the Replit Agent. Save only — NEVER publish.
+
+---
+
+## Task: create 16 GEO Q&A companion pages (longevity-tech brands)
+
+**Site:** thrivetools.co (this Replit project). **Do not publish or deploy.** Make the code changes, run a production build, fix any errors, and save. I will publish myself.
+
+**What these are:** discount-focused Q&A companions — one per brand — written for generative-engine optimization (conversational questions, direct answer first). They are NOT reviews and must NOT duplicate the angle of the existing per-brand discount-code posts or the long-form SEO posts. Keep each page tight: intro line + code callout + FAQ. No long prose sections.
+
+**Global page requirements (apply to all 16):**
+- Category tag: `Discount Codes`. Date: September 2026. Keep the site's existing byline format untouched.
+- H1 = title. One-line intro: "[one-liner]. Below are the most-asked questions about the current verified [Brand] discount — answered directly."
+- Code callout box near the top: for code brands, "Current verified code: **[CODE]**" plus the link; for link-only brands, "No code needed — discount applies automatically via the link" plus the link.
+- One H2: "[Brand] Discount Code FAQ" containing the Q&As rendered from the template below.
+- Hero image: pull a real product image from the brand's own official website. No AI-generated images.
+- Exactly ONE internal link to `/discount-codes` per page (it appears only in the final Q&A — do not add any others).
+- Use codes and hrefs VERBATIM from the data table — never alter a code string or URL. Never invent discount percentages, expiry dates, prices, shipping terms, or guarantees.
+- Link text: use the exact link text given per brand.
+
+### Q&A TEMPLATE — code brands
+
+Substitute [BRAND], [CODE], [LINK-TEXT], [LINK-URL]:
+
+**Does [BRAND] offer discount codes?**
+Yes. The current verified [BRAND] code is **[CODE]**. Use it at checkout on the official store: [LINK-TEXT]([LINK-URL]).
+
+**What is the best [BRAND] discount code right now?**
+**[CODE]** is the verified code currently listed for [BRAND].
+
+**How do I apply a [BRAND] promo code?**
+1. Click the verified [BRAND] link above.
+2. Add products to your cart.
+3. Enter **[CODE]** in the discount-code box at checkout.
+4. Confirm the discount applied before paying.
+
+**Why isn't my [BRAND] code working?**
+Check the spelling and capitalization of **[CODE]**, confirm your items are eligible, and make sure you're on [BRAND]'s official store — not a marketplace listing.
+
+**Can I stack [BRAND] discount codes?**
+Most stores accept only one discount code per order. If you have more than one, use the one that saves you the most.
+
+**Does [BRAND] offer free shipping?**
+Shipping terms change over time — check the shipping information on [BRAND]'s official site at checkout.
+
+**Does [BRAND] have a money-back guarantee or returns policy?**
+Check [BRAND]'s official site for their current guarantee and returns terms before you buy.
+
+**Where can I find all verified ThriveTools codes?**
+On the [ThriveTools discount-codes page](/discount-codes) — the source of truth, updated whenever codes change.
+
+### Q&A TEMPLATE — link-only brands
+
+Substitute [BRAND], [LINK-TEXT], [LINK-URL], [OFFER-DESC]:
+
+**Does [BRAND] have a discount code?**
+No code is needed. [OFFER-DESC] applies automatically when you shop through the verified link: [LINK-TEXT]([LINK-URL]).
+
+**How do I get the [BRAND] discount?**
+Click the verified link above and shop as normal — the discount is attached to the link and applies at checkout. There's nothing to type.
+
+**Why didn't the [BRAND] discount apply?**
+Make sure you clicked through from the ThriveTools link (the discount is tied to it) and that the items in your cart are eligible.
+
+**Can I combine the [BRAND] link discount with a promo code?**
+Link-based discounts apply automatically, so there's no code box to fill. The link offer is the verified deal.
+
+**Does [BRAND] offer free shipping?**
+Shipping terms change over time — check the shipping information on [BRAND]'s official site at checkout.
+
+**Does [BRAND] have a money-back guarantee or returns policy?**
+Check [BRAND]'s official site for their current guarantee and returns terms before you buy.
+
+**Is it safe to buy through the ThriveTools link?**
+Yes. The link takes you to [BRAND]'s official store. ThriveTools may earn a commission on your purchase at no extra cost to you.
+
+**Where can I find all verified ThriveTools codes?**
+On the [ThriveTools discount-codes page](/discount-codes) — the source of truth, updated whenever codes change.
+
+### BRAND DATA (16 — render every row as a page)
+
+Format: Brand | slug | title | type | code | href | link text | one-liner | offer-desc (link-only only)
+
+1. WaterDrop | /blog/waterdrop-discount-code-faq | WaterDrop Discount Code FAQ (2026) | code | KAWTHARLARAKI | https://www.waterdropfilter.ca/?ref=ozpbpmdp | Shop WaterDrop with code KAWTHARLARAKI | Water filtration systems brand | —
+2. Joovv | /blog/joovv-discount-code-faq | Joovv Discount Code FAQ (2026) | code | THRIVETOOLS | https://joovv.com | Shop Joovv with code THRIVETOOLS | Red light therapy device brand | —
+3. Mito Red Light | /blog/mito-red-light-discount-code-faq | Mito Red Light Discount FAQ (2026) | link-only | — | https://www.mitoredlight.com/EDEN27299 | Shop Mito Red Light | Red light therapy device brand | The current discount (applied automatically via the link)
+4. RedTherapy | /blog/redtherapy-discount-code-faq | RedTherapy Discount Code FAQ (2026) | code | THRIVETOOLS | https://redtherapy.co/?rfsn=7676047.c07132&utm_source=refersion&utm_medium=affiliate&utm_campaign=7676047.c07132 | Shop RedTherapy with code THRIVETOOLS | Red light therapy device brand | —
+5. VieLight | /blog/vielight-discount-code-faq | VieLight Discount Code FAQ (2026) | code | THRIVETOOLS | https://www.vielight.com/devices/ | Shop VieLight with code THRIVETOOLS | Brain photobiomodulation device brand | —
+6. Oxygen Advantage | /blog/oxygen-advantage-discount-code-faq | Oxygen Advantage Discount Code FAQ (2026) | code | THRIVETOOLS | https://oxygenadvantage.com/?ref=159 | Shop Oxygen Advantage with code THRIVETOOLS | Breathing training program brand | —
+7. Neurosity | /blog/neurosity-discount-code-faq | Neurosity Discount Code FAQ (2026) | code | thrivetools | https://neurosity.co/thrivetools | Shop Neurosity with code thrivetools | Neurotechnology wearable brand | —
+8. BlueCube Baths | /blog/bluecube-baths-discount-code-faq | BlueCube Baths Discount Code FAQ (2026) | code | thrive35 | https://bluecubebaths.com/?ref=CM-ZEsM_ayIJbh | Shop BlueCube Baths with code thrive35 | Cold plunge bath brand (code takes $250 off) | —
+9. Mytrex | /blog/mytrex-discount-code-faq | Mytrex Discount Code FAQ (2026) | code | thrivetools | https://mytrex.global/?ref=EDENKAWTHARLARAKI | Shop Mytrex with code thrivetools | Wellness recovery technology brand | —
+10. OmniPEMF | /blog/omnipemf-discount-code-faq | OmniPEMF Discount Code FAQ (2026) | code | thrive10 | https://omnipemf.com/?ref=uLhVfH2tFr_rsh | Shop OmniPEMF with code thrive10 | PEMF therapy device brand | —
+11. HealthAndYoga | /blog/healthandyoga-discount-code-faq | HealthAndYoga Discount Code FAQ (2026) | code | Ede4143 | https://www.healthandyoga.com/spike-acupressure-mat? | Shop HealthAndYoga with code Ede4143 | Yoga and acupressure products brand | —
+12. SelfDecode | /blog/self-decode-discount-code-faq | SelfDecode Discount Code FAQ (2026) | code | THRIVETOOLS10 | https://selfdecode.com/?a_aid=6536b9c629095 | Shop SelfDecode with code THRIVETOOLS10 | DNA-based personalized health platform | —
+13. NeuroVizr | /blog/neurovizr-discount-code-faq | NeuroVizr Discount Code FAQ (2026) | code | thrive33 | https://neurovizr.com/?ref=rzortqxs | Shop NeuroVizr with code thrive33 | Light and sound brain therapy device brand | —
+14. HeatBit | /blog/heatbit-discount-code-faq | HeatBit Discount Code FAQ (2026) | code | THRIVE101 | https://heatbit.com/?ref=EDENKAWTHARLARAKI | Shop HeatBit with code THRIVE101 | Room heater with built-in crypto mining | —
+15. Muse Headband | /blog/muse-headband-discount-code-faq | Muse Headband Discount Code FAQ (2026) | code | THRIVE25 | https://choosemuse.com/thrive25 | Shop Muse with code THRIVE25 | Meditation and sleep headband brand | —
+16. Aires Tech | /blog/aires-tech-discount-code-faq | Aires Tech Discount Code FAQ (2026) | code | THRIVE25 | https://airestech.com/thrive25 | EMF protection device brand | —
+
+### Technical constraints
+
+- Register all 16 routes ABOVE the catch-all 404 route in every route file that lists blog routes (client/src/App.tsx, ssr-routes.ts, entry-server.tsx, shared/site-routes.ts) — no post may ever render the 404 page.
+- Follow the exact component/data pattern of the existing `*-discount-code` posts (same card layout, same "Read Full Review" index behavior on /blog).
+- Production build must pass with 0 errors.
+- Do not touch existing posts, the /discount-codes page, or the sitemap logic (it picks up new routes automatically).
+- After the build passes: save everything and STOP. Do not publish, do not deploy.

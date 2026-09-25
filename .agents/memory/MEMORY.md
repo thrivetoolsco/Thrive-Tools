@@ -1,1 +1,2 @@
 - [Vite SSR entry — inline all imports](vite-ssr-entry-inlining.md) — Vite SSR bundler silently drops re-exported modules from separate files; inline everything in entry-server.tsx + use index:false in express.static.
+- [Orphaned preview server](orphaned-preview-server.md) — a failed workflow can still have an older dev server holding port 5000; inspect the process before restarting.

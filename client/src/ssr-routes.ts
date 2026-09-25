@@ -75,10 +75,6 @@ import VielightDiscountCode from "./pages/reviews/VielightDiscountCode";
 import WaterDropDiscountCode from "./pages/reviews/WaterDropDiscountCode";
 import KoracaoDiscountCode from "./pages/reviews/KoracaoDiscountCode";
 import IsunSkincareDiscountCode from "./pages/reviews/IsunSkincareDiscountCode";
-import MitoRedLightDiscountCodeFaq from "./pages/reviews/MitoRedLightDiscountCodeFaq";
-import RedTherapyDiscountCodeFaq from "./pages/reviews/RedTherapyDiscountCodeFaq";
-import VielightDiscountCodeFaq from "./pages/reviews/VielightDiscountCodeFaq";
-import WaterDropDiscountCodeFaq from "./pages/reviews/WaterDropDiscountCodeFaq";
 import IsunSkincareDiscountCodeFaq from "./pages/reviews/IsunSkincareDiscountCodeFaq";
 import WellnessDiscountCodesQuestionsAnswered from "./pages/reviews/WellnessDiscountCodesQuestionsAnswered";
 import OrganicNoriSeaweedSushiDiscountCode from "./pages/reviews/OrganicNoriSeaweedSushiDiscountCode";
@@ -96,6 +92,14 @@ import {
   EarthingHarmonyDiscountCode, PromeedDiscountCode, HavnByLambsDiscountCode,
 } from "./pages/reviews/LongFormDiscountPosts";
 import { BestSupplementDiscountCodes, BestEthicalClothingDiscountCodes } from "./pages/reviews/DiscountRoundups";
+import {
+  WaterDropDiscountCodeFaq, JoovvDiscountCodeFaq, MitoRedLightDiscountCodeFaq,
+  RedTherapyDiscountCodeFaq, VielightDiscountCodeFaq, OxygenAdvantageDiscountCodeFaq,
+  NeurosityDiscountCodeFaq, BlueCubeBathsDiscountCodeFaq, MytrexDiscountCodeFaq,
+  OmnipemfDiscountCodeFaq, HealthAndYogaDiscountCodeFaq, SelfDecodeDiscountCodeFaq,
+  NeuroVizrDiscountCodeFaq, HeatBitDiscountCodeFaq, MuseHeadbandDiscountCodeFaq,
+  AiresTechDiscountCodeFaq,
+} from "./pages/reviews/LongevityTechDiscountFaqs";
 import {
   IM8DiscountCodeFaq, EquipFoodsDiscountCodeFaq, HyperionHerbsDiscountCodeFaq,
   JustThriveDiscountCodeFaq, OrganikaDiscountCodeFaq, AquaOmegaDiscountCodeFaq,
@@ -138,10 +142,6 @@ export const SSR_ROUTE_COMPONENTS: Record<string, ComponentType> = {
   "/blog/waterdrop-discount-code": WaterDropDiscountCode,
   "/blog/koracao-discount-code": KoracaoDiscountCode,
   "/blog/isun-skincare-discount-code": IsunSkincareDiscountCode,
-  "/blog/mito-red-light-discount-code-faq": MitoRedLightDiscountCodeFaq,
-  "/blog/redtherapy-discount-code-faq": RedTherapyDiscountCodeFaq,
-  "/blog/vielight-discount-code-faq": VielightDiscountCodeFaq,
-  "/blog/waterdrop-discount-code-faq": WaterDropDiscountCodeFaq,
   "/blog/isun-skincare-discount-code-faq": IsunSkincareDiscountCodeFaq,
   "/blog/wellness-discount-codes-questions-answered": WellnessDiscountCodesQuestionsAnswered,
   "/blog/organic-nori-seaweed-sushi-discount-code": OrganicNoriSeaweedSushiDiscountCode,
@@ -179,6 +179,22 @@ export const SSR_ROUTE_COMPONENTS: Record<string, ComponentType> = {
   "/blog/styrian-gold-discount-code-faq": StyrianGoldDiscountCodeFaq,
   "/blog/the-blessed-seed-discount-code-faq": TheBlessedSeedDiscountCodeFaq,
   "/blog/prana-foods-discount-code-faq": PranaFoodsDiscountCodeFaq,
+  "/blog/waterdrop-discount-code-faq": WaterDropDiscountCodeFaq,
+  "/blog/joovv-discount-code-faq": JoovvDiscountCodeFaq,
+  "/blog/mito-red-light-discount-code-faq": MitoRedLightDiscountCodeFaq,
+  "/blog/redtherapy-discount-code-faq": RedTherapyDiscountCodeFaq,
+  "/blog/vielight-discount-code-faq": VielightDiscountCodeFaq,
+  "/blog/oxygen-advantage-discount-code-faq": OxygenAdvantageDiscountCodeFaq,
+  "/blog/neurosity-discount-code-faq": NeurosityDiscountCodeFaq,
+  "/blog/bluecube-baths-discount-code-faq": BlueCubeBathsDiscountCodeFaq,
+  "/blog/mytrex-discount-code-faq": MytrexDiscountCodeFaq,
+  "/blog/omnipemf-discount-code-faq": OmnipemfDiscountCodeFaq,
+  "/blog/healthandyoga-discount-code-faq": HealthAndYogaDiscountCodeFaq,
+  "/blog/self-decode-discount-code-faq": SelfDecodeDiscountCodeFaq,
+  "/blog/neurovizr-discount-code-faq": NeuroVizrDiscountCodeFaq,
+  "/blog/heatbit-discount-code-faq": HeatBitDiscountCodeFaq,
+  "/blog/muse-headband-discount-code-faq": MuseHeadbandDiscountCodeFaq,
+  "/blog/aires-tech-discount-code-faq": AiresTechDiscountCodeFaq,
   "/product-reviews/biohacking-beginners-guide": BiohackingBeginnersGuide,
   "/blog/biohacking-beginners-guide": BiohackingBeginnersGuide,
   "/product-reviews/breathwork-beginners-guide": BreathworkBeginnersGuide,

@@ -188,10 +188,6 @@ const KoracaoDiscountCode = lazy(
 const IsunSkincareDiscountCode = lazy(
   () => import("@/pages/reviews/IsunSkincareDiscountCode"),
 );
-import MitoRedLightDiscountCodeFaq from "./pages/reviews/MitoRedLightDiscountCodeFaq";
-import RedTherapyDiscountCodeFaq from "./pages/reviews/RedTherapyDiscountCodeFaq";
-import VielightDiscountCodeFaq from "./pages/reviews/VielightDiscountCodeFaq";
-import WaterDropDiscountCodeFaq from "./pages/reviews/WaterDropDiscountCodeFaq";
 import IsunSkincareDiscountCodeFaq from "./pages/reviews/IsunSkincareDiscountCodeFaq";
 import WellnessDiscountCodesQuestionsAnswered from "./pages/reviews/WellnessDiscountCodesQuestionsAnswered";
 import OrganicNoriSeaweedSushiDiscountCode from "./pages/reviews/OrganicNoriSeaweedSushiDiscountCode";
@@ -209,6 +205,14 @@ import {
   EarthingHarmonyDiscountCode, PromeedDiscountCode, HavnByLambsDiscountCode,
 } from "./pages/reviews/LongFormDiscountPosts";
 import { BestSupplementDiscountCodes, BestEthicalClothingDiscountCodes } from "./pages/reviews/DiscountRoundups";
+import {
+  WaterDropDiscountCodeFaq, JoovvDiscountCodeFaq, MitoRedLightDiscountCodeFaq,
+  RedTherapyDiscountCodeFaq, VielightDiscountCodeFaq, OxygenAdvantageDiscountCodeFaq,
+  NeurosityDiscountCodeFaq, BlueCubeBathsDiscountCodeFaq, MytrexDiscountCodeFaq,
+  OmnipemfDiscountCodeFaq, HealthAndYogaDiscountCodeFaq, SelfDecodeDiscountCodeFaq,
+  NeuroVizrDiscountCodeFaq, HeatBitDiscountCodeFaq, MuseHeadbandDiscountCodeFaq,
+  AiresTechDiscountCodeFaq,
+} from "./pages/reviews/LongevityTechDiscountFaqs";
 import {
   IM8DiscountCodeFaq, EquipFoodsDiscountCodeFaq, HyperionHerbsDiscountCodeFaq,
   JustThriveDiscountCodeFaq, OrganikaDiscountCodeFaq, AquaOmegaDiscountCodeFaq,
@@ -532,10 +536,6 @@ function Router() {
         <Route path="/blog/waterdrop-discount-code" component={WaterDropDiscountCode} />
         <Route path="/blog/koracao-discount-code" component={KoracaoDiscountCode} />
         <Route path="/blog/isun-skincare-discount-code" component={IsunSkincareDiscountCode} />
-        <Route path="/blog/mito-red-light-discount-code-faq" component={MitoRedLightDiscountCodeFaq} />
-        <Route path="/blog/redtherapy-discount-code-faq" component={RedTherapyDiscountCodeFaq} />
-        <Route path="/blog/vielight-discount-code-faq" component={VielightDiscountCodeFaq} />
-        <Route path="/blog/waterdrop-discount-code-faq" component={WaterDropDiscountCodeFaq} />
         <Route path="/blog/isun-skincare-discount-code-faq" component={IsunSkincareDiscountCodeFaq} />
         <Route path="/blog/wellness-discount-codes-questions-answered" component={WellnessDiscountCodesQuestionsAnswered} />
         <Route path="/blog/organic-nori-seaweed-sushi-discount-code" component={OrganicNoriSeaweedSushiDiscountCode} />
@@ -573,6 +573,22 @@ function Router() {
         <Route path="/blog/styrian-gold-discount-code-faq" component={StyrianGoldDiscountCodeFaq} />
         <Route path="/blog/the-blessed-seed-discount-code-faq" component={TheBlessedSeedDiscountCodeFaq} />
         <Route path="/blog/prana-foods-discount-code-faq" component={PranaFoodsDiscountCodeFaq} />
+        <Route path="/blog/waterdrop-discount-code-faq" component={WaterDropDiscountCodeFaq} />
+        <Route path="/blog/joovv-discount-code-faq" component={JoovvDiscountCodeFaq} />
+        <Route path="/blog/mito-red-light-discount-code-faq" component={MitoRedLightDiscountCodeFaq} />
+        <Route path="/blog/redtherapy-discount-code-faq" component={RedTherapyDiscountCodeFaq} />
+        <Route path="/blog/vielight-discount-code-faq" component={VielightDiscountCodeFaq} />
+        <Route path="/blog/oxygen-advantage-discount-code-faq" component={OxygenAdvantageDiscountCodeFaq} />
+        <Route path="/blog/neurosity-discount-code-faq" component={NeurosityDiscountCodeFaq} />
+        <Route path="/blog/bluecube-baths-discount-code-faq" component={BlueCubeBathsDiscountCodeFaq} />
+        <Route path="/blog/mytrex-discount-code-faq" component={MytrexDiscountCodeFaq} />
+        <Route path="/blog/omnipemf-discount-code-faq" component={OmnipemfDiscountCodeFaq} />
+        <Route path="/blog/healthandyoga-discount-code-faq" component={HealthAndYogaDiscountCodeFaq} />
+        <Route path="/blog/self-decode-discount-code-faq" component={SelfDecodeDiscountCodeFaq} />
+        <Route path="/blog/neurovizr-discount-code-faq" component={NeuroVizrDiscountCodeFaq} />
+        <Route path="/blog/heatbit-discount-code-faq" component={HeatBitDiscountCodeFaq} />
+        <Route path="/blog/muse-headband-discount-code-faq" component={MuseHeadbandDiscountCodeFaq} />
+        <Route path="/blog/aires-tech-discount-code-faq" component={AiresTechDiscountCodeFaq} />
         <Route component={NotFound} />
       </Switch>
     </Suspense>
