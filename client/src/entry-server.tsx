@@ -104,6 +104,7 @@ import {
   AiresTechDiscountCode, TheGoodTeeDiscountCode, BambooClothesDiscountCode,
   EarthingHarmonyDiscountCode, PromeedDiscountCode, HavnByLambsDiscountCode,
 } from "@/pages/reviews/LongFormDiscountPosts";
+import { BestSupplementDiscountCodes, BestEthicalClothingDiscountCodes } from "@/pages/reviews/DiscountRoundups";
 import KratomSocialPivotGuide from "@/pages/reviews/KratomSocialPivotGuide";
 import BiohackerSupplementStack from "@/pages/reviews/BiohackerSupplementStack";
 import MicroplasticsBrainGuide from "@/pages/reviews/MicroplasticsBrainGuide";
@@ -268,6 +269,8 @@ export const SSR_ROUTE_COMPONENTS: Record<string, ComponentType> = {
   "/blog/earthing-harmony-discount-code": EarthingHarmonyDiscountCode,
   "/blog/promeed-discount-code": PromeedDiscountCode,
   "/blog/havn-by-lambs-discount-code": HavnByLambsDiscountCode,
+  "/blog/best-supplement-discount-codes": BestSupplementDiscountCodes,
+  "/blog/best-ethical-clothing-discount-codes": BestEthicalClothingDiscountCodes,
 };
 
 export async function render(

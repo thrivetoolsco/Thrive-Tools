@@ -209,6 +209,7 @@ import {
   AiresTechDiscountCode, TheGoodTeeDiscountCode, BambooClothesDiscountCode,
   EarthingHarmonyDiscountCode, PromeedDiscountCode, HavnByLambsDiscountCode,
 } from "./pages/reviews/LongFormDiscountPosts";
+import { BestSupplementDiscountCodes, BestEthicalClothingDiscountCodes } from "./pages/reviews/DiscountRoundups";
 
 const HyperionHerbsDiscountCode = lazy(
   () => import("@/pages/reviews/HyperionHerbsDiscountCode"),
@@ -550,6 +551,8 @@ function Router() {
         <Route path="/blog/earthing-harmony-discount-code" component={EarthingHarmonyDiscountCode} />
         <Route path="/blog/promeed-discount-code" component={PromeedDiscountCode} />
         <Route path="/blog/havn-by-lambs-discount-code" component={HavnByLambsDiscountCode} />
+        <Route path="/blog/best-supplement-discount-codes" component={BestSupplementDiscountCodes} />
+        <Route path="/blog/best-ethical-clothing-discount-codes" component={BestEthicalClothingDiscountCodes} />
         <Route component={NotFound} />
       </Switch>
     </Suspense>

@@ -96,6 +96,7 @@ import {
   AiresTechDiscountCode, TheGoodTeeDiscountCode, BambooClothesDiscountCode,
   EarthingHarmonyDiscountCode, PromeedDiscountCode, HavnByLambsDiscountCode,
 } from "./pages/reviews/LongFormDiscountPosts";
+import { BestSupplementDiscountCodes, BestEthicalClothingDiscountCodes } from "./pages/reviews/DiscountRoundups";
 
 export const SSR_ROUTE_COMPONENTS: Record<string, ComponentType> = {
   "/product-reviews/im8-vs-ag1": Im8VsAg1,
@@ -156,6 +157,8 @@ export const SSR_ROUTE_COMPONENTS: Record<string, ComponentType> = {
   "/blog/earthing-harmony-discount-code": EarthingHarmonyDiscountCode,
   "/blog/promeed-discount-code": PromeedDiscountCode,
   "/blog/havn-by-lambs-discount-code": HavnByLambsDiscountCode,
+  "/blog/best-supplement-discount-codes": BestSupplementDiscountCodes,
+  "/blog/best-ethical-clothing-discount-codes": BestEthicalClothingDiscountCodes,
   "/product-reviews/biohacking-beginners-guide": BiohackingBeginnersGuide,
   "/blog/biohacking-beginners-guide": BiohackingBeginnersGuide,
   "/product-reviews/breathwork-beginners-guide": BreathworkBeginnersGuide,

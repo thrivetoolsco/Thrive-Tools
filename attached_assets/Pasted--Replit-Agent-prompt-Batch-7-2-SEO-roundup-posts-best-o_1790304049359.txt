@@ -1,0 +1,177 @@
+# Replit Agent prompt — Batch 7: 2 SEO roundup posts (best-of listicles)
+
+Copy everything below the line into the Replit Agent. Save only — NEVER publish.
+
+---
+
+## Task: create 2 long-form SEO "best of" roundup posts for discount codes
+
+**Site:** thrivetools.co (this Replit project). **Do not publish or deploy.** Make the code changes, run a production build, fix any errors, and save. I will publish myself.
+
+**Why this batch is different:** the blog already has per-brand discount-code posts (short AEO stubs) and 9 long-form per-brand SEO posts (batch 6). These 2 are category roundups — "best of" listicles that rank for high-intent searches like "best supplement discount codes". They cover multiple brands per post and do not duplicate any existing post's format or subject.
+
+### The 2 posts
+
+For each post: `slug`, `title`, then the full body in markdown. Render each body with the existing blog post component format: H1 = title, H2 sections as marked, code callout boxes, numbered steps, FAQ as an H2 with bold questions.
+
+**Global post requirements (apply to both):**
+- Category tag: `Discount Codes`. Date: September 2026. Byline: keep the site's existing byline format untouched.
+- Each brand entry: numbered H2 with brand name, 1–2 factual lines about what the brand sells, the exact code in a callout box (or "link-only — discount applies automatically" where noted), and the exact affiliate `href` below — use hrefs verbatim, never alter.
+- One H2 FAQ section per post with 4 questions and full answers.
+- Exactly one internal link to `/discount-codes` ("see all verified codes").
+- Hero image: pull a real product/lifestyle image from one of the featured brands' own websites. No AI-generated images.
+- Never invent discount percentages, expiry dates, prices, or brand claims. All codes/hrefs below are verified against the live /discount-codes page.
+
+---
+
+### 1. Slug: `/blog/best-supplement-discount-codes`
+Title: `Best Supplement Discount Codes 2026 (15 Verified)`
+
+BODY:
+
+These are the 15 verified supplement discount codes currently live on ThriveTools — every code below is checked against our [discount-codes page](/discount-codes). If a brand shows "link-only", there is no code to type: shop through the link and the discount applies automatically.
+
+## 1. IM8 — code: THRIVE10
+All-in-one daily supplement. Use code **THRIVE10** at checkout on im8health.com.
+[Shop IM8 with code THRIVE10](https://www.im8health.com/THRIVE10)
+
+## 2. Equip Foods — code: THRIVETOOLS
+Clean protein and whole-food supplements. Use code **THRIVETOOLS** at checkout on equipfoods.com.
+[Shop Equip Foods with code THRIVETOOLS](https://www.equipfoods.com/THRIVETOOLS)
+
+## 3. Hyperion Herbs — code: EDEN10
+Tonic herbs and herbal extracts. Use code **EDEN10** in the discount-code box at hyperionherbs.com.
+[Shop Hyperion Herbs with code EDEN10](http://www.hyperionherbs.com/discount/eden10)
+
+## 4. Just Thrive — code: THRIVETOOLS
+Spore-based probiotics and gut-health formulas. Use code **THRIVETOOLS** at justthrivehealth.com.
+[Shop Just Thrive with code THRIVETOOLS](https://justthrivehealth.com/THRIVETOOLS)
+
+## 5. Organika — code: EDEN_25
+Canadian-made vitamins and wellness products. Use code **EDEN_25** at organika.com.
+[Shop Organika with code EDEN_25](https://organika.com/?rfsn=8403940.a276a1f&utm_source=refersion&utm_medium=affiliate&utm_campaign=8403940.a276a1f)
+
+## 6. AquaOmega — link-only ($30 off first subscription)
+Omega-3 fish oil subscriptions. No code needed — follow the link for $30 off your first subscription.
+[Get $30 off AquaOmega](https://aquaomega.refr.cc/default/u/thrivetoolsco?s=rp&t=cp)
+
+## 7. Bioptimizers — code: THRIVETOOLS
+Magnesium and digestive-health formulas. Use code **THRIVETOOLS** at bioptimizers.com.
+[Shop Bioptimizers with code THRIVETOOLS](https://bioptimizers.com/shop/products/magnesium-breakthrough)
+
+## 8. EnergyBits — code: THRIVE25
+Algae-based nutrition (spirulina and chlorella). Use code **THRIVE25** at energybits.com.
+[Shop EnergyBits with code THRIVE25](https://energybits.com/discount/THRIVE25?rfsn=9026872.b2b124&utm_source=refersion&utm_medium=affiliate&utm_campaign=9026872.b2b124)
+
+## 9. Timeline Mitopure — link-only
+Urolithin A (Mitopure) longevity supplements. No code needed — shop via the discount link and savings apply automatically.
+[Shop Timeline Mitopure](https://shop.timeline.com/EDENKAWTHARLARAKI)
+
+## 10. Raw Nori (Organic Nori Seaweed Sushi) — link-only
+Raw organic nori seaweed. No code needed — use the link for the current offer.
+[Shop Raw Nori](https://rawnori.com?p=jeFAQZWBn)
+
+## 11. Intentionally Bare — link-only
+Shop through the verified link for the current ThriveTools offer — no code to enter.
+[Shop Intentionally Bare](https://bit.ly/4bsgdYC)
+
+## 12. Koracao Ceremonial Cacao — code: EDENKAWTHARLARAKI123
+Ceremonial-grade cacao. Use code **EDENKAWTHARLARAKI123** at koracao.com.
+[Shop Koracao with the code](https://koracao.com/THRIVE33)
+
+## 13. Styrian Gold — code: THRIVETOOLS-10
+Styrian pumpkin seed oil (Canadian). Use code **THRIVETOOLS-10** at styriangold.ca.
+[Shop Styrian Gold with code THRIVETOOLS-10](http://www.styriangold.ca/shop/?)
+
+## 14. The Blessed Seed — link-only
+Black seed oil. No code needed — shop through the referral link.
+[Shop The Blessed Seed](https://theblessedseed.de/ref/370/)
+
+## 15. Prana Foods — code: THRIVETOOLSCO
+Organic pantry foods (Canadian). Use code **THRIVETOOLSCO** at pranafoods.ca.
+[Shop Prana Foods with code THRIVETOOLSCO](https://pranafoods.ca/thrivetoolsco)
+
+## How to use these supplement discount codes
+
+1. Click the brand link above to open the store.
+2. Add products to your cart.
+3. At checkout, find the discount-code box and type the code exactly as shown (codes are case-sensitive on some stores).
+4. For link-only offers, skip the code — the discount is already attached to the link.
+
+## Supplement discount codes FAQ
+
+**Do these codes expire?**
+Codes change over time. This list is kept in sync with the [ThriveTools discount-codes page](/discount-codes), which is the source of truth.
+
+**Why didn't my code work?**
+Check the spelling and case, make sure the items are eligible, and confirm you are on the brand's official store (not a marketplace listing).
+
+**What does "link-only" mean?**
+The discount is embedded in the link itself — click through and it applies automatically at checkout. There is no code to type.
+
+**Which supplement discount is the best right now?**
+It depends on what you are buying — scan the list above for the brand you want. All 15 are verified live.
+
+---
+
+### 2. Slug: `/blog/best-ethical-clothing-discount-codes`
+Title: `Best Ethical Clothing Discount Codes 2026 (6 Verified)`
+
+BODY:
+
+These are the 6 verified ethical and sustainable clothing discount codes currently live on ThriveTools — every code below is checked against our [discount-codes page](/discount-codes). If a brand shows "link-only", there is no code to type: shop through the link and the discount applies automatically.
+
+## 1. EarthRunners — code: THRIVETOOLS
+Grounding minimalist sandals for running, hiking, and travel. Use code **THRIVETOOLS** at earthrunners.com.
+[Shop EarthRunners with code THRIVETOOLS](https://earthrunners.com/?rfsn=7676227.de5b78)
+
+## 2. The Good Tee — code: thrive10
+Fair Trade Certified, B Corp organic cotton basics made in India (Canadian company). Use code **thrive10** at thegoodtee.com.
+[Shop The Good Tee with code thrive10](https://thegoodtee.com/?ref=lzrzvhex)
+
+## 3. Bamboo Clothes — code: EDENKAWTHARLARAKI10
+Bamboo-viscose underwear and everyday apparel. Use code **EDENKAWTHARLARAKI10** at bambooclothes.com.
+[Shop Bamboo Clothes with the code](https://www.bambooclothes.com/discount/eden-kawtharlaraki10)
+
+## 4. Earthing Harmony — code: THRIVENOW
+Grounding mats and conductive bed sheets for indoor earthing. Use code **THRIVENOW** at earthingharmony.com.
+[Shop Earthing Harmony with code THRIVENOW](https://earthingharmony.com/?ref=hxaqgkso)
+
+## 5. Promeed — link-only
+100% mulberry silk bedding (pillowcases, sheets, accessories). No code needed — shop through the link and the discount applies automatically.
+[Shop Promeed](https://www.awin1.com/cread.php?awinmid=100833&awinaffid=2421431)
+
+## 6. Havn by Lambs — link-only
+EMF-blocking apparel woven with silver fibers. No code needed — shop through the link and the discount applies automatically.
+[Shop Havn by Lambs](https://snwbl.io/lambs/EDEN50761)
+
+## How to use these ethical clothing discount codes
+
+1. Click the brand link above to open the store.
+2. Add items to your cart.
+3. At checkout, enter the code exactly as shown in the discount-code box.
+4. For link-only offers, the discount is already attached to the link — just check out.
+
+## Ethical clothing discount codes FAQ
+
+**What makes these brands "ethical"?**
+They are selected for fair-trade certification, sustainable materials (organic cotton, bamboo viscose, mulberry silk), or transparent supply chains.
+
+**Do these codes work on sale items?**
+It varies by brand. Try the code at checkout — if an exclusion applies, the store will say so before you pay.
+
+**What does "link-only" mean?**
+The discount is embedded in the link itself — click through and it applies automatically at checkout. There is no code to type.
+
+**Where can I find all your verified codes?**
+On the [ThriveTools discount-codes page](/discount-codes) — updated whenever codes change.
+
+---
+
+### Technical constraints
+
+- Register both routes ABOVE the catch-all 404 route in every route file that lists blog routes (client/src/App.tsx, ssr-routes.ts, entry-server.tsx, shared/site-routes.ts) — no post may ever render the 404 page.
+- Follow the exact component/data pattern of the existing `*-discount-code` posts (same card layout, same "Read Full Review" index behavior on /blog).
+- Production build must pass with 0 errors.
+- Do not touch existing posts, the /discount-codes page, or the sitemap logic (it picks up new routes automatically).
+- After the build passes: save everything and STOP. Do not publish, do not deploy.
