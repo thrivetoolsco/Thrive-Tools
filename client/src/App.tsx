@@ -227,6 +227,7 @@ import {
   EarthRunnersBrandGuide, VellgusBrandGuide,
 } from "./pages/reviews/WellnessTechBrandGuides";
 import LumeboxDiscountCode from "./pages/reviews/LumeboxDiscountCode";
+import GoliDiscountCode from "./pages/reviews/GoliDiscountCode";
 import {
   IM8DiscountCodeFaq, EquipFoodsDiscountCodeFaq, HyperionHerbsDiscountCodeFaq,
   JustThriveDiscountCodeFaq, OrganikaDiscountCodeFaq, AquaOmegaDiscountCodeFaq,
@@ -623,6 +624,7 @@ function Router() {
         <Route path="/blog/earthrunners-review-guide" component={EarthRunnersBrandGuide} />
         <Route path="/blog/vellgus-review" component={VellgusBrandGuide} />
         <Route path="/lumebox-discount-code" component={LumeboxDiscountCode} />
+        <Route path="/goli-discount-code" component={GoliDiscountCode} />
         <Route component={NotFound} />
       </Switch>
     </Suspense>

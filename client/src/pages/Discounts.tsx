@@ -134,6 +134,13 @@ const vitaminsSupplements: DiscountItem[] = [
     url: "https://pranafoods.ca/thrivetoolsco",
     blogHref: "/blog/snack-drawer-fix-prana-foods-clean-snacks",
   },
+  {
+    name: "Goli",
+    description: "Vitamin-packed wellness gummies. Use code g-745207ab6b at goli.com checkout for 10% off.",
+    code: "g-745207ab6b",
+    url: "https://go.goli.com/g-745207ab6b",
+    blogHref: "/goli-discount-code",
+  },
 ];
 
 const healthTech: DiscountItem[] = [

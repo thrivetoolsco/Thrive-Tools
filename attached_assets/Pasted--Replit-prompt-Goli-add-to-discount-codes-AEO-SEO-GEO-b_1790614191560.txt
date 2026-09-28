@@ -1,0 +1,76 @@
+# Replit prompt — Goli: add to /discount-codes + AEO/SEO/GEO brand-guide post (save-only, do NOT publish)
+
+Paste this entire prompt into the thrivetools.co Replit project. **SAVE-ONLY: do not publish, do not deploy.** I publish everything myself after review.
+
+---
+
+**TASK 1 — Add Goli to the /discount-codes page**
+
+1. Find the data file that feeds the /discount-codes page (the existing card list, grouped by category).
+2. Add this entry to the **VITAMINS & SUPPLEMENTS** section, in the same format as the existing cards:
+   - Brand: `Goli`
+   - Code: `g-745207ab6b`
+   - Link: `https://go.goli.com/g-745207ab6b` (my affiliate link)
+   - Deal: **10% off** — this is the customer-facing discount stated on Goli's own partner dashboard. Safe to show.
+   - Do NOT show my 15% affiliate commission anywhere on the site — that is my commission, not a shopper discount.
+
+**TASK 2 — Create a Goli AEO/SEO/GEO brand-guide post**
+
+Create a new article in the same SEO/AEO style as the existing brand-guide posts, at a new route: `/goli-discount-code`.
+
+First check that this route does not already exist anywhere in the codebase. This article must NOT duplicate existing content. There is no existing Goli post — this is the first.
+
+**Article content rules (strict):**
+- Every product fact below comes from goli.com (official site), verified 2026-09-28. Do not invent, extrapolate, or embellish anything not listed here. Report the brand's claims as the brand's claims ("Goli states…").
+- Affiliate disclosure near the top: "ThriveTools is a Goli affiliate partner. We may earn a commission on purchases made through links on this page, at no extra cost to you."
+- Present the code as: "Use code **g-745207ab6b** at goli.com checkout for **10% off**." The 10% is the brand-stated customer discount — safe to show.
+- **My editorial stance on gummies (include as a dedicated section, in first person, framed as my opinion — not as medical fact):** I don't personally consider gummies the best or most potent way to take supplements — capsules, powders, and liquids generally deliver more actives per serving without the extra ingredients gummies need for taste and texture. BUT I know plenty of people (kids included) who simply cannot swallow pills, and a gummy you'll actually take every day beats a capsule that sits untouched in the bottle. For those people, Goli is one of the better-made options in the gummy category. Do not soften, contradict, or omit this stance. Do not present it as a scientific claim — it is my editorial perspective.
+- Do NOT claim I have personally used Goli products (I have not stated that). No invented personal experience, results, or timelines.
+- No medical claims beyond the brand's own words. Do not use words like treats, heals, or cures. Do not invent specific health benefits for any product — describe products by their stated ingredients only.
+
+**Verified facts to build the article from:**
+
+1. **What Goli is:** Goli® Nutrition makes vitamin-packed wellness gummies. The brand describes its line as sugar-free. Its tagline for the flagship product: "Taste the Apple. Not the Vinegar.®" The brand states it has "over 1,000,000+ reviews from happy customers" (report as the brand's claim) and offers a "try it, risk-free" 100% hassle-free refund — "If you're not satisfied with our product, simply contact us and we'll give you a full, 100% hassle-free refund" (the brand's words).
+
+2. **Product lineup (ingredients as stated on goli.com — describe by ingredients, not invented benefits):**
+   - Apple Cider Vinegar Gummies — "THE WORLD'S FIRST Apple Cider Vinegar Gummies" (the brand's claim); made with Vitamin B12.
+   - Zero Sugar Apple Cider Vinegar Gummies — made with SNZ TriBac®, described by the brand as a clinically studied probiotic.
+   - Ashwagandha Gummies — made with KSM-66® Ashwagandha.
+   - Dreamy Sleep Gummies — made with Magnesium, Lemon Balm, Vitamin D, and melatonin.
+   - Extra-Strength Sleep Gummies — made with Lemon Balm, botanicals, Vitamin D, and 10mg of melatonin per serving.
+   - Women's Complete Multi Gummies — "complete with ALL 13 essential vitamins" (the brand's words).
+   - Triple Action Immune Gummies — blackberry/strawberry-lemonade flavor; made with Vitamins C & D and Zinc.
+   - Supergreens Gummies — made with a blend of vitamins, minerals, and nutrients.
+   - Superfruits Beauty Gummies — made with Bamboo Shoot Extract and Vitamins A, C, and E.
+   - Cardio Beets Gummies — made with CoQ10 and Vitamin B12.
+   - Pre+Post+ Probiotics Gummies — combines prebiotics, probiotics, and postbiotics.
+   - Matcha Mind Cognitive Gummies — made with Cognizin®.
+   - Recharge Energy+ Gummies — the brand's newest; made with Nitrosigine, Caffeine, and Vitamins C & B6.
+
+3. **Availability:** sold on goli.com and, per the brand, at 100K+ retailers globally including Walmart, Target, CVS, Kroger, Walgreens, and Publix (report as the brand's claim). Note in the article: the 10% discount code only works on goli.com, not at retail stores.
+
+4. **"Who it's for" section:** people who can't swallow pills or capsules (including kids, where age-appropriate), anyone who wants a tasty, convenient supplement format they'll actually stick with — while being upfront (per my editorial stance above) that gummies aren't the most potent delivery format.
+
+5. **How to use the discount code (step-by-step):** go to goli.com (use my affiliate link `https://go.goli.com/g-745207ab6b` for all product links), add gummies to cart, enter code **g-745207ab6b** at checkout for 10% off.
+
+6. **FAQ (AEO Q&A format, matching the style of the other brand guides):**
+   - What is the Goli discount code? (g-745207ab6b — 10% off at goli.com checkout.)
+   - How do I use the Goli discount code? (step-by-step)
+   - Are gummies as potent as capsules or pills? (Answer honestly in my voice: in my view, no — capsules, powders, and liquids generally deliver more actives per serving without the extra ingredients gummies need for taste and texture; and a gummy taken daily beats a pill never taken. Then add the balanced science note from item 9: the research is mixed — a 2019 clinical trial in the journal Nutrients found vitamin D3 gummies had higher bioavailability than tablets (link the study), while other lab testing found gummies less consistent on label amounts. Keep my take labeled as my editorial perspective and the study facts labeled as published research — not medical advice.)
+   - Who are Goli gummies best for? (People who can't swallow pills, including kids where age-appropriate; anyone who needs a format they'll stick with.)
+   - What products does Goli sell? (Brief lineup summary from the verified list above.)
+   - Does Goli offer a money-back guarantee? (Yes — the brand's "try it, risk-free" 100% hassle-free refund; quote the brand's words.)
+   - Can I use the discount code at Walmart/Target? (No — the code works on goli.com only.)
+   - Where is the best place to buy Goli? (goli.com via the affiliate link, so the 10% code applies.)
+
+7. **GEO notes:** open with a concise definitional paragraph ("Goli Nutrition makes vitamin-packed wellness gummies…") suitable for AI-answer extraction; keep FAQ answers self-contained in 2–4 sentences; attribute every brand claim to the brand; clearly separate my editorial opinion (labeled as such) from product facts.
+
+8. **SEO:** title like "Goli Discount Code (g-745207ab6b) & Brand Guide (2026)"; meta description; FAQ schema matching the pattern used on the other brand-guide posts. Target keywords: Goli discount code, Goli promo code, g-745207ab6b, Goli gummies, apple cider vinegar gummies.
+
+9. **The science on gummy vs. pill potency (verified facts — include as a short balanced 2–3 sentence note in the gummies editorial section and in the FAQ; it sits alongside my stance, not instead of it):** The research is genuinely mixed. A 2019 crossover clinical trial published in the journal *Nutrients* (MDPI) compared vitamin D3 gummies vs. tablets in healthy adults and found the gummies had greater bioavailability — higher area-under-the-curve and higher peak blood concentration than tablets (p < 0.0001). State it plainly as: "a 2019 clinical trial in the journal *Nutrients* found vitamin D3 gummies had higher bioavailability than tablets," and link the study: https://www.mdpi.com/2072-6643/11/5/1023. Separately, other independent lab testing has found gummies less consistent than pills at matching the amounts stated on their labels. Present both facts labeled as published research — then keep my editorial perspective clearly labeled as my own take. Neither overrides the other.
+
+**Technical requirements (non-negotiable):**
+- Register the new route **ABOVE the 404 catch-all route** in ALL FOUR route files: `client/src/App.tsx`, `ssr-routes.ts`, `entry-server.tsx`, `shared/site-routes.ts`.
+- Run the production build. It must pass with **0 errors**. Fix any errors before stopping.
+- No invented prices, discounts, statistics, health claims, or personal experience beyond what is listed above. No duplicate content with existing posts.
+- **Do not publish. Do not deploy.** Leave everything saved/unpublished for my review.

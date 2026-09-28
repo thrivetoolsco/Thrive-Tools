@@ -114,6 +114,7 @@ import {
   EarthRunnersBrandGuide, VellgusBrandGuide,
 } from "./pages/reviews/WellnessTechBrandGuides";
 import LumeboxDiscountCode from "./pages/reviews/LumeboxDiscountCode";
+import GoliDiscountCode from "./pages/reviews/GoliDiscountCode";
 import {
   IM8DiscountCodeFaq, EquipFoodsDiscountCodeFaq, HyperionHerbsDiscountCodeFaq,
   JustThriveDiscountCodeFaq, OrganikaDiscountCodeFaq, AquaOmegaDiscountCodeFaq,
@@ -229,6 +230,7 @@ export const SSR_ROUTE_COMPONENTS: Record<string, ComponentType> = {
   "/blog/earthrunners-review-guide": EarthRunnersBrandGuide,
   "/blog/vellgus-review": VellgusBrandGuide,
   "/lumebox-discount-code": LumeboxDiscountCode,
+  "/goli-discount-code": GoliDiscountCode,
   "/product-reviews/biohacking-beginners-guide": BiohackingBeginnersGuide,
   "/blog/biohacking-beginners-guide": BiohackingBeginnersGuide,
   "/product-reviews/breathwork-beginners-guide": BreathworkBeginnersGuide,
