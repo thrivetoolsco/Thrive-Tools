@@ -226,6 +226,7 @@ import {
   SelfDecodeBrandGuide, MuseHeadbandBrandGuide, WaterDropBrandGuide,
   EarthRunnersBrandGuide, VellgusBrandGuide,
 } from "./pages/reviews/WellnessTechBrandGuides";
+import LumeboxDiscountCode from "./pages/reviews/LumeboxDiscountCode";
 import {
   IM8DiscountCodeFaq, EquipFoodsDiscountCodeFaq, HyperionHerbsDiscountCodeFaq,
   JustThriveDiscountCodeFaq, OrganikaDiscountCodeFaq, AquaOmegaDiscountCodeFaq,
@@ -621,6 +622,7 @@ function Router() {
         <Route path="/blog/waterdrop-review" component={WaterDropBrandGuide} />
         <Route path="/blog/earthrunners-review-guide" component={EarthRunnersBrandGuide} />
         <Route path="/blog/vellgus-review" component={VellgusBrandGuide} />
+        <Route path="/lumebox-discount-code" component={LumeboxDiscountCode} />
         <Route component={NotFound} />
       </Switch>
     </Suspense>

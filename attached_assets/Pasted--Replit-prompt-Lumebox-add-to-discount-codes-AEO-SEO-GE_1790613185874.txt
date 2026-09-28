@@ -1,0 +1,66 @@
+# Replit prompt — Lumebox: add to /discount-codes + AEO/SEO/GEO brand-guide post (save-only, do NOT publish)
+
+Paste this entire prompt into the thrivetools.co Replit project. **SAVE-ONLY: do not publish, do not deploy.** I publish everything myself after review.
+
+---
+
+**TASK 1 — Add Lumebox to the /discount-codes page**
+
+1. Find the data file that feeds the /discount-codes page (the existing card list, grouped by category).
+2. Add this entry to the **LONGEVITY TECH** section, in the same format as the existing cards:
+   - Brand: `Lumebox`
+   - Code: `ThriveTools` (exact casing)
+   - Link: `https://thelumebox.com/`
+   - **TODO for me (do not resolve yourself):** this is the official store URL. My Lumebox affiliate link from my approval email is not in this prompt — I will swap it in after review. Leave a code comment marking the URL as needing the affiliate link.
+   - **Do NOT invent any discount percentage or dollar amount.** No customer-facing discount was stated by the brand. Present the code as "Use code **ThriveTools** at thelumebox.com checkout" with no % or $ claim.
+   - Do not add any text claiming savings beyond what the brand publishes.
+
+**TASK 2 — Create a Lumebox AEO/SEO/GEO brand-guide post**
+
+Create a new article in the same SEO/AEO style as the existing brand-guide posts, at a new route: `/lumebox-discount-code`.
+
+First check that this route does not already exist anywhere in the codebase. This article must NOT duplicate existing content — especially the "Best Red Light Therapy Discount Codes 2026" roundup post. That post is a category roundup; this is a **Lumebox brand guide**. Keep overlap minimal and link to the roundup where relevant.
+
+**Article content rules (strict):**
+- Every fact below comes from thelumebox.com (official site), verified 2026-09-28. Do not invent, extrapolate, or embellish anything not listed here. Report the brand's comparative claims as the brand's claims ("Lumebox states…"), not as independent facts.
+- Affiliate disclosure near the top: "ThriveTools is a Lumebox affiliate partner. We may earn a commission on purchases made through links on this page, at no extra cost to you."
+- Present the code as: "Use code **ThriveTools** at thelumebox.com checkout" — do NOT claim it gives any specific discount.
+- I own a Lumebox (confirmed). You may include a brief first-person note that I own and use one — do not invent any results, timelines, or health outcomes from my use.
+- No medical claims beyond the brand's own stated uses. Do not use words like treats, heals, or cures.
+
+**Verified facts to build the article from:**
+
+1. **What Lumebox is:** LUMEBOX (2.0 is the current model) is a portable red light therapy device. It emits 660nm red and 850nm near-infrared light — which the brand describes as two of the most-studied wavelengths in photobiomodulation research. The brand's stated uses: skincare routines, post-workout recovery, and the temporary relief of minor muscle and joint pain.
+
+2. **Technology (brand's own claims):** Dual-chip technology delivering red (660nm) and near-infrared (850nm) simultaneously from each bulb. The brand states its device is independently tested to outperform the leading portable red light device: 58% greater red light irradiance, 80% greater near-infrared irradiance, 25% more body surface coverage. Third-party tested wavelengths and high irradiance; third-party tested for EMF and IEC electrical and optical light safety standards. Voltage range 110v–240v. The brand states it is 25% bigger than most handheld devices.
+
+3. **Design & features:** Portable handheld format; optional 6- and 12-minute timer; extended battery life; updated carrier case and handle design on 2.0; removable comfort-grip accessory. FDA-registered (say "registered" — not cleared or approved). HSA/FSA eligible per the brand's site.
+
+4. **What's included in the box:** handheld red light device, travel case, battery, removable comfort-grip accessory, A/C adapter, user manual, protective eyewear.
+
+5. **Shipping:** the brand's site notes international shipping to Canada, Australia, Singapore, and the UK may take 3–4 weeks.
+
+6. **"Who it's for" section:** people wanting a portable, travel-friendly red light therapy device for skin, joints, and recovery — rather than a wall-mounted full-body panel.
+
+7. **How to use the discount code (step-by-step):** go to thelumebox.com (use the site's affiliate link for all product links), add the device to cart, enter code **ThriveTools** at checkout.
+
+8. **FAQ (AEO Q&A format, matching the style of the other brand guides):**
+   - What is the Lumebox discount code? (ThriveTools — enter it at checkout on thelumebox.com. No specific discount percentage is published; the code is applied at checkout.)
+   - How do I use the ThriveTools code at Lumebox? (step-by-step)
+   - What wavelengths does Lumebox use? (660nm red + 850nm near-infrared, per the brand.)
+   - Is Lumebox third-party tested? (The brand states third-party testing of wavelengths/irradiance and EMF/IEC safety standards.)
+   - Is Lumebox FDA approved? (No — the brand states it is FDA-registered, which is not the same as FDA approval/clearance.)
+   - Is Lumebox HSA/FSA eligible? (The brand's site states HSA/FSA eligibility.)
+   - Does Lumebox ship internationally? (Canada, Australia, Singapore, UK — allow 3–4 weeks per the brand.)
+   - What's included with the Lumebox 2.0?
+   - Where is the best place to buy Lumebox? (thelumebox.com via the affiliate link.)
+
+9. **GEO notes:** open with a concise definitional paragraph ("LUMEBOX is a portable red light therapy device…") suitable for AI-answer extraction; keep answers to FAQ questions self-contained in 2–4 sentences; attribute every comparative or efficacy-adjacent claim to the brand.
+
+10. **SEO:** title like "Lumebox Discount Code (ThriveTools) & Brand Guide (2026)"; meta description; FAQ schema matching the pattern used on the other brand-guide posts. Target keywords: Lumebox discount code, Lumebox promo code, ThriveTools, portable red light therapy.
+
+**Technical requirements (non-negotiable):**
+- Register the new route **ABOVE the 404 catch-all route** in ALL FOUR route files: `client/src/App.tsx`, `ssr-routes.ts`, `entry-server.tsx`, `shared/site-routes.ts`.
+- Run the production build. It must pass with **0 errors**. Fix any errors before stopping.
+- No invented prices, discounts, statistics, health claims, or personal experience beyond what is listed above. No duplicate content with existing posts.
+- **Do not publish. Do not deploy.** Leave everything saved/unpublished for my review.

@@ -113,6 +113,7 @@ import {
   SelfDecodeBrandGuide, MuseHeadbandBrandGuide, WaterDropBrandGuide,
   EarthRunnersBrandGuide, VellgusBrandGuide,
 } from "./pages/reviews/WellnessTechBrandGuides";
+import LumeboxDiscountCode from "./pages/reviews/LumeboxDiscountCode";
 import {
   IM8DiscountCodeFaq, EquipFoodsDiscountCodeFaq, HyperionHerbsDiscountCodeFaq,
   JustThriveDiscountCodeFaq, OrganikaDiscountCodeFaq, AquaOmegaDiscountCodeFaq,
@@ -227,6 +228,7 @@ export const SSR_ROUTE_COMPONENTS: Record<string, ComponentType> = {
   "/blog/waterdrop-review": WaterDropBrandGuide,
   "/blog/earthrunners-review-guide": EarthRunnersBrandGuide,
   "/blog/vellgus-review": VellgusBrandGuide,
+  "/lumebox-discount-code": LumeboxDiscountCode,
   "/product-reviews/biohacking-beginners-guide": BiohackingBeginnersGuide,
   "/blog/biohacking-beginners-guide": BiohackingBeginnersGuide,
   "/product-reviews/breathwork-beginners-guide": BreathworkBeginnersGuide,
