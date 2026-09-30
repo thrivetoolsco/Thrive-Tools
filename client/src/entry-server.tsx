@@ -153,6 +153,11 @@ import VagusNerveGuide from "@/pages/reviews/VagusNerveGuide";
 import UrolithinAGuide from "@/pages/reviews/UrolithinAGuide";
 import BestSupplements2026Guide from "@/pages/reviews/BestSupplements2026Guide";
 import SupplementComparisonGuide from "@/pages/reviews/SupplementComparisonGuide";
+import BestRedLightTherapyDevices2026 from "@/pages/reviews/BestRedLightTherapyDevices2026";
+import BestLongevitySupplements2026 from "@/pages/reviews/BestLongevitySupplements2026";
+import BestEmfProtection2026 from "@/pages/reviews/BestEmfProtection2026";
+import BestBrainNeurotechTools2026 from "@/pages/reviews/BestBrainNeurotechTools2026";
+import BestNonToxicHomeUpgrades2026 from "@/pages/reviews/BestNonToxicHomeUpgrades2026";
 import MorningSupplementRoutineGuide from "@/pages/reviews/MorningSupplementRoutineGuide";
 import EquipCleanProteinGuide from "@/pages/reviews/EquipCleanProteinGuide";
 import Disclaimer from "@/pages/Disclaimer";
@@ -238,6 +243,11 @@ export const SSR_ROUTE_COMPONENTS: Record<string, ComponentType> = {
   "/blog/urolithin-a-mitophagy-longevity-supplement-guide": UrolithinAGuide,
   "/blog/best-supplements-energy-gut-health-longevity-2026": BestSupplements2026Guide,
   "/blog/supplement-comparison-guide-2026": SupplementComparisonGuide,
+  "/blog/best-red-light-therapy-devices-2026": BestRedLightTherapyDevices2026,
+  "/blog/best-longevity-supplements-2026": BestLongevitySupplements2026,
+  "/blog/best-emf-protection-2026": BestEmfProtection2026,
+  "/blog/best-brain-neurotech-tools-2026": BestBrainNeurotechTools2026,
+  "/blog/best-non-toxic-home-upgrades-2026": BestNonToxicHomeUpgrades2026,
   "/blog/science-backed-morning-supplement-routine": MorningSupplementRoutineGuide,
   "/blog/best-clean-protein-powder-2026-equip-prime-protein": EquipCleanProteinGuide,
   "/disclaimer": Disclaimer,

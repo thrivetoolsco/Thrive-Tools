@@ -10,6 +10,11 @@ import { legacyRedirects, knownPublicPaths } from "../shared/site-routes";
 const viteLogger = createLogger();
 
 const BLOG_ROUTE_MAP: Record<string, string> = {
+  "/blog/best-red-light-therapy-devices-2026": "/src/pages/reviews/BestRedLightTherapyDevices2026.tsx",
+  "/blog/best-longevity-supplements-2026": "/src/pages/reviews/BestLongevitySupplements2026.tsx",
+  "/blog/best-emf-protection-2026": "/src/pages/reviews/BestEmfProtection2026.tsx",
+  "/blog/best-brain-neurotech-tools-2026": "/src/pages/reviews/BestBrainNeurotechTools2026.tsx",
+  "/blog/best-non-toxic-home-upgrades-2026": "/src/pages/reviews/BestNonToxicHomeUpgrades2026.tsx",
   "/product-reviews/im8-vs-ag1": "/src/pages/reviews/Im8VsAg1.tsx",
   "/product-reviews/im8-health-review": "/src/pages/reviews/Im8HealthReview.tsx",
   "/product-reviews/vielight-neuro-review": "/src/pages/reviews/VielightNeuroReview.tsx",

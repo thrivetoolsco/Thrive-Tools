@@ -333,7 +333,7 @@ export const ethicalClothing: DiscountItem[] = [
   },
 ];
 
-const discountOfferItems = [
+export const discountOfferItems = [
   ...vitaminsSupplements,
   ...healthTech,
   ...ethicalClothing,
