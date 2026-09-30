@@ -1,0 +1,101 @@
+# Replit prompt — Brand guide: Therasage Discount Code 2026 (save-only, do NOT publish)
+
+Paste this into the thrivetools.co Replit project. **SAVE-ONLY: do not publish, do not deploy.** I publish everything myself after review.
+
+## Context
+
+Therasage has accepted me into their affiliate program (via Refersion). This is a brand-guide post — allowed because the affiliate relationship is established. This post is SEO-optimized (ranks on Google), AEO-optimized (direct answers, FAQ), and GEO-optimized (conversational Q&A for AI answer engines).
+
+## Brand data (use EXACTLY — do not invent or alter)
+
+- Brand: Therasage
+- What they sell: portable saunas, PEMF and infrared mats, light-powered oral care, vegan skin brushes
+- Discount code: `THRIVETOOLS` (exact casing)
+- Affiliate link (use for EVERY Therasage link in this post — do not strip parameters): `https://therasage.com/discount/THRIVETOOLS?rfsn=9353405.0f95ac3&utm_source=refersion&utm_medium=affiliate&utm_campaign=9353405.0f95ac3`
+- Do NOT invent a discount percentage, prices, product specs, wavelengths, or health claims. Describe products only in the brand's own general terms (portable saunas, PEMF and infrared mats, light-powered oral care, vegan skin brushes). If the post template shows a product image, pull a real product image from therasage.com — no AI-generated product shots.
+
+## TASK — Create the post at route `/blog/therasage-discount-code`
+
+First check that this route does not already exist anywhere in the codebase. Register it ABOVE the 404 catch-all in all four route files (`client/src/App.tsx`, ssr-routes, entry-server, shared/site-routes). Production build must pass with 0 errors.
+
+Render with the existing blog post component format. Category tag: `Discount Codes`. Date: September 2026. Keep the site's existing byline format untouched.
+
+### SEO
+
+- `<title>`: "Therasage Discount Code 2026: Save with THRIVETOOLS" — keep the exact phrase "Therasage Discount Code" at the start; keep under ~60 characters if possible.
+- Meta description: include "Therasage discount code", "THRIVETOOLS", "portable sauna", and "PEMF mat".
+- H1: "Therasage Discount Code (2026)".
+- Affiliate disclosure near the top (same wording as other posts).
+- FAQ section with FAQPage JSON-LD, matching the pattern on the other posts.
+- Internal links: link once to /discount-codes; link to the "Best Recovery Tech 2026" comparison post (look up the real slug in the route files — do not guess) where Therasage fits the recovery stack; link each product category mention to the relevant comparison post only if one exists.
+
+### Hero image
+
+I am providing a file `hero-therasage.jpg` (upload it to the project when I share it). Set it as the post's hero/featured image below the H1 and byline, and as the `og:image` meta tag (`https://thrivetools.co/<asset-path>/hero-therasage.jpg`). Alt text: "Portable infrared sauna glowing warmly in a home spa room". If the file is not in the project when you run this, build the post without it and note that in your final report — do not substitute another image.
+
+### Content rules (strict)
+
+- First-person, in my voice (science-backed, 14 years of personal research). No medical claims — use "supports" language, never treats/heals/cures/detoxes.
+- The code callout box near the top must show: "Current verified code: **THRIVETOOLS**" with the affiliate link.
+- Never invent a discount percentage, expiry date, price, or spec.
+
+---
+
+## ARTICLE BODY (render as written, with H1/H2s as marked)
+
+# Therasage Discount Code (2026)
+
+I run ThriveTools.co, a science-backed wellness and biohacking platform built from 14 years of personal research. Therasage is one of the more interesting brands I've partnered with lately — they make portable saunas, PEMF and infrared mats, light-powered oral care, and vegan skin brushes. Below is everything about the current verified Therasage discount — answered directly.
+
+**Current verified code: THRIVETOOLS** — use it at checkout on the official Therasage store: [Shop Therasage with code THRIVETOOLS](https://therasage.com/discount/THRIVETOOLS?rfsn=9353405.0f95ac3&utm_source=refersion&utm_medium=affiliate&utm_campaign=9353405.0f95ac3)
+
+## What Therasage sells
+
+Four categories, one brand:
+
+- **Portable saunas** — infrared sauna experiences without a dedicated sauna room. The appeal is obvious: full sauna sessions at home, then it packs away.
+- **PEMF and infrared mats** — mats combining pulsed electromagnetic field therapy with infrared heat. Lay-down recovery rather than sit-in sessions.
+- **Light-powered oral care** — light technology applied to oral care products. The most unusual category on this list.
+- **Vegan skin brushes** — body brushes made without animal products, for the dry-brushing crowd.
+
+## Why I partnered with them
+
+I'm selective about brand partnerships — I only work with brands I can recommend authentically. Therasage covers the recovery-tech space (sauna, PEMF, infrared) that my audience asks about constantly, and the portable format solves the biggest objection to home sauna ownership: space.
+
+## How to use the Therasage discount code
+
+1. Go to the official Therasage store via my link: [Shop Therasage](https://therasage.com/discount/THRIVETOOLS?rfsn=9353405.0f95ac3&utm_source=refersion&utm_medium=affiliate&utm_campaign=9353405.0f95ac3)
+2. Add your products to cart — portable sauna, mat, or both.
+3. Enter code **THRIVETOOLS** at checkout.
+4. The discount applies before payment.
+
+If the code ever doesn't work, check my [discount codes page](/discount-codes) — I verify every code monthly and update it there first.
+
+## Therasage vs the alternatives
+
+If you're deciding between Therasage's portable sauna and a traditional sauna setup, the tradeoff is space and cost versus the dedicated-room experience. Portable wins on practicality; a built-in unit wins on experience. For most people starting out, portable is the right first step.
+
+For the broader recovery-tech picture — cold plunge, wearables, red light — see my [Best Recovery Tech 2026](/blog/best-recovery-tech-2026) comparison (verify this slug in the route files — use the real one).
+
+## Therasage Discount Code FAQ
+
+**Does Therasage offer discount codes?**
+Yes. The current verified Therasage code is **THRIVETOOLS**. Use it at checkout on the official store: [Shop Therasage with code THRIVETOOLS](https://therasage.com/discount/THRIVETOOLS?rfsn=9353405.0f95ac3&utm_source=refersion&utm_medium=affiliate&utm_campaign=9353405.0f95ac3)
+
+**What is the best Therasage discount code right now?**
+**THRIVETOOLS** — it's the verified code I keep current. I check it monthly; if it ever changes, my [discount codes page](/discount-codes) updates first.
+
+**What products does Therasage sell?**
+Portable infrared saunas, PEMF and infrared mats, light-powered oral care products, and vegan skin brushes.
+
+**How do I use the THRIVETOOLS code?**
+Add products to your cart on the official Therasage store, enter **THRIVETOOLS** at checkout, and the discount applies before payment. Full steps are in the "How to use" section above.
+
+**Is the Therasage discount code still valid?**
+Yes — I verify every code monthly. The current verified code is **THRIVETOOLS**, listed at the top of this post and on my [discount codes page](/discount-codes).
+
+---
+
+## End of article body
+
+After the build passes: save everything and STOP. In your final report, list: the new route, the <title> and H1, confirmation that the affiliate link is intact with all parameters, whether hero-therasage.jpg was found and wired, and any conflicts found. Do NOT publish.

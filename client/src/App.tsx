@@ -237,6 +237,7 @@ import {
 import LumeboxDiscountCode from "./pages/reviews/LumeboxDiscountCode";
 import GoliDiscountCode from "./pages/reviews/GoliDiscountCode";
 import EmrTekDiscountCode from "./pages/reviews/EmrTekDiscountCode";
+import TherasageDiscountCode from "./pages/reviews/TherasageDiscountCode";
 import {
   IM8DiscountCodeFaq, EquipFoodsDiscountCodeFaq, HyperionHerbsDiscountCodeFaq,
   JustThriveDiscountCodeFaq, OrganikaDiscountCodeFaq, AquaOmegaDiscountCodeFaq,
@@ -643,6 +644,7 @@ function Router() {
         <Route path="/lumebox-discount-code" component={LumeboxDiscountCode} />
         <Route path="/goli-discount-code" component={GoliDiscountCode} />
         <Route path="/emr-tek-discount-code" component={EmrTekDiscountCode} />
+        <Route path="/blog/therasage-discount-code" component={TherasageDiscountCode} />
         <Route component={NotFound} />
       </Switch>
     </Suspense>

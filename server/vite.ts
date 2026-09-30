@@ -16,6 +16,7 @@ const BLOG_ROUTE_MAP: Record<string, string> = {
   "/blog/best-brain-neurotech-tools-2026": "/src/pages/reviews/BestBrainNeurotechTools2026.tsx",
   "/blog/best-non-toxic-home-upgrades-2026": "/src/pages/reviews/BestNonToxicHomeUpgrades2026.tsx",
   "/blog/best-recovery-tech-2026": "/src/pages/reviews/BestRecoveryTech2026.tsx",
+  "/blog/therasage-discount-code": "/src/pages/reviews/TherasageDiscountCode.tsx",
   "/blog/best-wellness-gifts-2026": "/src/pages/reviews/BestWellnessGifts2026.tsx",
   "/product-reviews/im8-vs-ag1": "/src/pages/reviews/Im8VsAg1.tsx",
   "/product-reviews/im8-health-review": "/src/pages/reviews/Im8HealthReview.tsx",
