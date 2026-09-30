@@ -3,6 +3,8 @@ import { Badge } from "@/components/ui/badge";
 import { ExternalLink, Tag } from "lucide-react";
 import { Helmet } from "react-helmet-async";
 import { Link } from "wouter";
+import collectionImage from "@assets/IMG_1465_1790791745115.jpeg";
+import saunaImage from "@assets/IMG_1464_1790791745115.jpeg";
 
 const affiliateUrl = "https://therasage.com/discount/THRIVETOOLS?rfsn=9353405.0f95ac3&utm_source=refersion&utm_medium=affiliate&utm_campaign=9353405.0f95ac3";
 const code = "THRIVETOOLS";
@@ -62,12 +64,23 @@ export default function TherasageDiscountCode() {
         canonical: "/blog/therasage-discount-code",
         ogType: "article",
         datePublished: "2026-09-30",
+        image: collectionImage,
+        imageAlt: "Therasage collection with a portable sauna and light therapy devices",
       }}
       backLabel="Blog"
       backHref="/blog"
     >
       <Helmet><script type="application/ld+json">{JSON.stringify(faqSchema)}</script></Helmet>
       <article className="space-y-8">
+        <figure className="card-glass rounded-2xl overflow-hidden">
+          <img
+            src={collectionImage}
+            alt="Therasage collection with a portable sauna and light therapy devices"
+            loading="eager"
+            decoding="async"
+            className="w-full h-auto object-contain bg-white"
+          />
+        </figure>
         <div className="flex flex-wrap items-center gap-3">
           <Badge className="bg-[#c4622d]/15 text-[#8b3a1a] border-[#c4622d]/25">Discount Codes</Badge>
           <span className="text-sm text-black/50">September 2026</span>
@@ -95,6 +108,15 @@ export default function TherasageDiscountCode() {
             <li><strong>Light-powered oral care</strong> — light technology applied to oral care products. The most unusual category on this list.</li>
             <li><strong>Vegan skin brushes</strong> — body brushes made without animal products, for the dry-brushing crowd.</li>
           </ul>
+          <figure className="card-glass rounded-2xl overflow-hidden">
+            <img
+              src={saunaImage}
+              alt="Therasage portable sauna beside a wooden chair and illuminated light panels"
+              loading="lazy"
+              decoding="async"
+              className="w-full h-auto max-h-[600px] object-contain bg-white"
+            />
+          </figure>
         </section>
 
         <section className="space-y-4">
