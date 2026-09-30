@@ -4,6 +4,8 @@ import BestLongevitySupplements2026 from "./pages/reviews/BestLongevitySupplemen
 import BestEmfProtection2026 from "./pages/reviews/BestEmfProtection2026";
 import BestBrainNeurotechTools2026 from "./pages/reviews/BestBrainNeurotechTools2026";
 import BestNonToxicHomeUpgrades2026 from "./pages/reviews/BestNonToxicHomeUpgrades2026";
+import BestRecoveryTech2026 from "./pages/reviews/BestRecoveryTech2026";
+import BestWellnessGifts2026 from "./pages/reviews/BestWellnessGifts2026";
 import Im8VsAg1 from "./pages/reviews/Im8VsAg1";
 import Im8HealthReview from "./pages/reviews/Im8HealthReview";
 import VielightNeuroReview from "./pages/reviews/VielightNeuroReview";
@@ -136,6 +138,8 @@ export const SSR_ROUTE_COMPONENTS: Record<string, ComponentType> = {
   "/blog/best-emf-protection-2026": BestEmfProtection2026,
   "/blog/best-brain-neurotech-tools-2026": BestBrainNeurotechTools2026,
   "/blog/best-non-toxic-home-upgrades-2026": BestNonToxicHomeUpgrades2026,
+  "/blog/best-recovery-tech-2026": BestRecoveryTech2026,
+  "/blog/best-wellness-gifts-2026": BestWellnessGifts2026,
   "/product-reviews/im8-vs-ag1": Im8VsAg1,
   "/product-reviews/im8-health-review": Im8HealthReview,
   "/product-reviews/vielight-neuro-review": VielightNeuroReview,

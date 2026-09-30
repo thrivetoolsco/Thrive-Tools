@@ -158,6 +158,8 @@ import BestLongevitySupplements2026 from "@/pages/reviews/BestLongevitySupplemen
 import BestEmfProtection2026 from "@/pages/reviews/BestEmfProtection2026";
 import BestBrainNeurotechTools2026 from "@/pages/reviews/BestBrainNeurotechTools2026";
 import BestNonToxicHomeUpgrades2026 from "@/pages/reviews/BestNonToxicHomeUpgrades2026";
+import BestRecoveryTech2026 from "@/pages/reviews/BestRecoveryTech2026";
+import BestWellnessGifts2026 from "@/pages/reviews/BestWellnessGifts2026";
 import MorningSupplementRoutineGuide from "@/pages/reviews/MorningSupplementRoutineGuide";
 import EquipCleanProteinGuide from "@/pages/reviews/EquipCleanProteinGuide";
 import Disclaimer from "@/pages/Disclaimer";
@@ -248,6 +250,8 @@ export const SSR_ROUTE_COMPONENTS: Record<string, ComponentType> = {
   "/blog/best-emf-protection-2026": BestEmfProtection2026,
   "/blog/best-brain-neurotech-tools-2026": BestBrainNeurotechTools2026,
   "/blog/best-non-toxic-home-upgrades-2026": BestNonToxicHomeUpgrades2026,
+  "/blog/best-recovery-tech-2026": BestRecoveryTech2026,
+  "/blog/best-wellness-gifts-2026": BestWellnessGifts2026,
   "/blog/science-backed-morning-supplement-routine": MorningSupplementRoutineGuide,
   "/blog/best-clean-protein-powder-2026-equip-prime-protein": EquipCleanProteinGuide,
   "/disclaimer": Disclaimer,

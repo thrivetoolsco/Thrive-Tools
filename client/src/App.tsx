@@ -151,6 +151,8 @@ const BestLongevitySupplements2026 = lazy(() => import("@/pages/reviews/BestLong
 const BestEmfProtection2026 = lazy(() => import("@/pages/reviews/BestEmfProtection2026"));
 const BestBrainNeurotechTools2026 = lazy(() => import("@/pages/reviews/BestBrainNeurotechTools2026"));
 const BestNonToxicHomeUpgrades2026 = lazy(() => import("@/pages/reviews/BestNonToxicHomeUpgrades2026"));
+const BestRecoveryTech2026 = lazy(() => import("@/pages/reviews/BestRecoveryTech2026"));
+const BestWellnessGifts2026 = lazy(() => import("@/pages/reviews/BestWellnessGifts2026"));
 const MorningSupplementRoutineGuide = lazy(
   () => import("@/pages/reviews/MorningSupplementRoutineGuide"),
 );
@@ -514,6 +516,8 @@ function Router() {
         <Route path="/blog/best-emf-protection-2026" component={BestEmfProtection2026} />
         <Route path="/blog/best-brain-neurotech-tools-2026" component={BestBrainNeurotechTools2026} />
         <Route path="/blog/best-non-toxic-home-upgrades-2026" component={BestNonToxicHomeUpgrades2026} />
+        <Route path="/blog/best-recovery-tech-2026" component={BestRecoveryTech2026} />
+        <Route path="/blog/best-wellness-gifts-2026" component={BestWellnessGifts2026} />
         <Route
           path="/blog/science-backed-morning-supplement-routine"
           component={MorningSupplementRoutineGuide}

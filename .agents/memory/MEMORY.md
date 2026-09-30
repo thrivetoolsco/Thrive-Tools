@@ -2,3 +2,4 @@
 - [Orphaned preview server](orphaned-preview-server.md) — a failed workflow can still have an older dev server holding port 5000; inspect the process before restarting.
 - [Offer freshness labels](offer-freshness-labels.md) — date labels for discount codes should advance only after actual review, not merely when the calendar changes.
 - [Catalog counts over old briefs](catalog-counts.md) — when an older content brief names a fixed number of offers, use the live directory count instead of omitting valid cards.
+- [Partner-only comparisons](partner-only-comparisons.md) — omit requested brands without a source-listed offer rather than presenting them as shoppable partners.
