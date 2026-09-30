@@ -1,0 +1,42 @@
+# Replit prompt — New pillar page: /biohacking-discount-codes (save-only, do NOT publish)
+
+Paste this entire prompt into the thrivetools.co Replit project. **SAVE-ONLY: do not publish, do not deploy.** I publish everything myself after review.
+
+## Why this page exists
+
+Search results for "biohacking discount codes" are currently topped by small personal sites (a one-page list on a personal blog). ThriveTools already has a /discount-codes hub and 30+ brand-guide posts — this page consolidates the biohacking-relevant brands into one exact-match pillar page so it can outrank them. Same playbook can later be repeated for /longevity-discount-codes and /wellness-discount-codes — but this task is ONLY the biohacking page.
+
+## TASK — Create the page at route `/biohacking-discount-codes`
+
+First check that this route does not already exist anywhere in the codebase (App.tsx, ssr-routes.ts, entry-server.tsx, shared/site-routes.ts). The new route MUST be registered above the 404 catch-all in all four route files — no page on this site may ever show a 404. Production build must pass with 0 errors.
+
+### Content source (strict)
+
+- Pull every brand card from the EXISTING /discount-codes data file. Do not invent codes, discounts, links, or brand descriptions. Reuse the exact codes, affiliate hrefs, and copy already live on /discount-codes.
+- Feature ONLY brands that fit "biohacking / longevity tech": red light therapy (Joovv, Mito Red Light, RedTherapy, VieLight, Lumebox), PEMF (Omnipemf), cold plunge (BlueCubeBaths), breathwork (Oxygen Advantage), neurotech (Neurosity, Muse Headband, NeuroVizr), DNA/longevity analytics (SelfDecode), grounding (EarthRunners, Earthing Harmony), longevity supplements (IM8, Bioptimizers, Timeline Mitopure, EnergyBits, Organika, Hyperion Herbs, Just Thrive, Equip Foods, AquaOmega). If a brand is missing a code or link in the data file, show the card WITHOUT a code claim — never invent one.
+- Group cards under H2 sections: Red Light Therapy, Cold & Heat Recovery, Sleep & Nervous System, Brain & Neurotech, Longevity Supplements, Grounding & EMF.
+
+### SEO requirements (strict)
+
+- `<title>`: "Biohacking Discount Codes (2026) — Red Light, Longevity Tech & Supplements | ThriveTools" (keep under ~60 characters if possible; prioritize keeping the exact phrase "Biohacking Discount Codes" at the start).
+- Meta description: include the exact phrases "biohacking discount codes", "red light therapy", and "longevity".
+- H1: "Biohacking Discount Codes (2026)" — the exact keyword must appear in the H1.
+- Opening paragraph: 2–3 sentences, first-person, in my voice, containing "biohacking discount codes" and "longevity" naturally. State that every code is checked and updated monthly, and that I only list brands I partner with or can recommend.
+- Affiliate disclosure near the top (same wording as other pages): "ThriveTools is an affiliate partner of the brands on this page. We may earn a commission on purchases made through links on this page, at no extra cost to you."
+- FAQ section (AEO Q&A format, matching the style of the brand-guide posts) answering:
+  1. What are the best biohacking discount codes right now? (point to the page's curated list; name 3–4 flagship brands with their codes from the data file)
+  2. How do I use a biohacking discount code at checkout? (generic step-by-step)
+  3. Are these biohacking codes still valid? (yes — checked and updated monthly; page shows "Active [Month Year]")
+  4. What counts as biohacking? (one concise definitional paragraph for AI-answer extraction: red light therapy, cold exposure, PEMF, neurotech, longevity supplements)
+  5. Do you add new biohacking brands? (yes — only brands I partner with; suggest contacting me)
+- Add FAQ schema markup matching the pattern used on the brand-guide posts. Add Offer/ItemList structured data for the brand list if the codebase already has a pattern for it on /discount-codes.
+- Internal links: every brand card must link to its brand-guide post where one exists (use the existing post URLs — do not guess slugs; look them up in the route files). Add a prominent link back up to /discount-codes ("See all 40+ discount codes"). Also add a link from /discount-codes to this new page (e.g., a "Biohacking discount codes →" section link) — this internal link is important for rankings; do it in this same task.
+- "Active [Month Year]" freshness label at the top, same style as /discount-codes.
+- Images: reuse brand images already in the project (same sources as /discount-codes). No new external hotlinks.
+- No medical claims. No invented discounts, percentages, or expiry dates. No keyword stuffing — the exact phrase "biohacking discount codes" should appear in title, H1, intro, one H2, and the FAQ — not in every paragraph.
+
+### Verification before finishing
+
+- `npm run build` (or the project's build command) passes with 0 errors.
+- New route renders in the Replit preview with no 404, all brand cards show, all affiliate hrefs match the live /discount-codes page exactly.
+- List the final title tag, meta description, and H1 in your summary so I can verify them.

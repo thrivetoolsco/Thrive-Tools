@@ -36,6 +36,7 @@ import PersonalizedGuidance from "./pages/PersonalizedGuidance";
 import Events from "./pages/Events";
 import Contact from "./pages/Contact";
 import Discounts from "./pages/Discounts";
+import BiohackingDiscountCodes from "./pages/BiohackingDiscountCodes";
 import Retreats from "./pages/Retreats";
 import BlossomingBliss from "./pages/retreats/BlossomingBliss";
 import SpiritualNutrition from "./pages/retreats/SpiritualNutrition";
@@ -257,6 +258,14 @@ export const SSR_ROUTE_COMPONENTS: Record<string, ComponentType> = {
   "/blog/biohacker-supplement-stack-2026": BiohackerSupplementStack,
   "/blog/microplastics-brain-protocol-2026": MicroplasticsBrainGuide,
   "/blog/cortisol-face-hpa-axis-guide-2026": CortisolFaceGuide,
+  "/blog/im8-review": Im8BrandGuide,
+  "/blog/equip-foods-review": EquipFoodsBrandGuide,
+  "/blog/just-thrive-review": JustThriveBrandGuide,
+  "/blog/bioptimizers-review": BioptimizersBrandGuide,
+  "/blog/energybits-review": EnergyBitsBrandGuide,
+  "/blog/selfdecode-review": SelfDecodeBrandGuide,
+  "/blog/muse-headband-review": MuseHeadbandBrandGuide,
+  "/blog/earthrunners-review-guide": EarthRunnersBrandGuide,
   "/about": About,
   "/somatic-reset": QuantumHealing,
   "/breathwork": Breathwork,
@@ -264,6 +273,7 @@ export const SSR_ROUTE_COMPONENTS: Record<string, ComponentType> = {
   "/events": Events,
   "/contact": Contact,
   "/discount-codes": Discounts,
+  "/biohacking-discount-codes": BiohackingDiscountCodes,
   "/retreats-workshops": Retreats,
   "/retreats-workshops/blossoming-bliss": BlossomingBliss,
   "/retreats-workshops/spiritual-nutrition": SpiritualNutrition,

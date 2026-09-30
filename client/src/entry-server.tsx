@@ -13,6 +13,7 @@ import PersonalizedGuidance from "@/pages/PersonalizedGuidance";
 import Events from "@/pages/Events";
 import Contact from "@/pages/Contact";
 import Discounts from "@/pages/Discounts";
+import BiohackingDiscountCodes from "@/pages/BiohackingDiscountCodes";
 import Retreats from "@/pages/Retreats";
 import ProductReviews from "@/pages/ProductReviews";
 
@@ -166,6 +167,7 @@ export const SSR_ROUTE_COMPONENTS: Record<string, ComponentType> = {
   "/events": Events,
   "/contact": Contact,
   "/discount-codes": Discounts,
+  "/biohacking-discount-codes": BiohackingDiscountCodes,
   "/retreats-workshops": Retreats,
   "/blog": ProductReviews,
   "/product-reviews": ProductReviews,

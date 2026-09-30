@@ -21,7 +21,7 @@ import { useState } from "react";
 import ShareButton from "@/components/ShareButton";
 import { trackEvent } from "@/lib/analytics";
 
-interface DiscountItem {
+export interface DiscountItem {
   name: string;
   description: string;
   code?: string;
@@ -30,7 +30,7 @@ interface DiscountItem {
   comparisonHref?: string;
 }
 
-const vitaminsSupplements: DiscountItem[] = [
+export const vitaminsSupplements: DiscountItem[] = [
   {
     name: "IM8",
     description: "The most complete supplement on the market. Vitamins, probiotics, adaptogens & CoQ10 in one scoop.",
@@ -143,7 +143,7 @@ const vitaminsSupplements: DiscountItem[] = [
   },
 ];
 
-const healthTech: DiscountItem[] = [
+export const healthTech: DiscountItem[] = [
   {
     name: "WaterDropFilter",
     description: "Ultra Reverse Osmosis + UV Sterilization + Instant heating & cooling options. Countertop with no installation options available.",
@@ -278,7 +278,7 @@ const cleanBeauty: DiscountItem[] = [
   },
 ];
 
-const ethicalClothing: DiscountItem[] = [
+export const ethicalClothing: DiscountItem[] = [
   {
     name: "Earthrunners",
     description: "Grounding, lifetime durable Sandals",
@@ -571,6 +571,9 @@ export default function Discounts() {
           <div className="mt-5">
             <ShareButton />
           </div>
+          <Link href="/biohacking-discount-codes" className="mt-6 inline-flex items-center gap-2 text-[#8b3a1a] font-semibold underline underline-offset-4 hover:text-[#c4622d]">
+            Biohacking discount codes <ExternalLink className="w-4 h-4" />
+          </Link>
 
         </div>
       </section>

@@ -1,0 +1,822 @@
+# MASTER PRE-PUBLISH PROMPT — thrivetools.co (save-only, do NOT publish)
+
+Paste this ENTIRE file into the Replit Agent for the thrivetools.co project. It contains 7 phases. **Execute them strictly in order, Phase 1 through Phase 7.** The individual phase sections were written as standalone prompts — ignore their individual "paste/copy" notes; this master file is the only thing you need.
+
+**GLOBAL GUARDRAILS (apply to every phase):**
+- **SAVE-ONLY: do NOT publish, do NOT deploy.** I publish everything myself after review.
+- Every new route MUST be registered ABOVE the 404 catch-all route in ALL FOUR route files: `client/src/App.tsx`, the SSR routes file, the entry-server file, and `shared/site-routes.ts`. No page on this site may ever show a 404.
+- The production build must pass with **0 errors** after each phase. Fix errors before moving on.
+- NEVER invent discount codes, discount percentages, prices, expiry dates, brand claims, statistics, or health outcomes. Pull codes/links/descriptions from the project's existing /discount-codes data module wherever a phase says to.
+- Keep existing affiliate disclosures and bylines untouched.
+- Hero images must be real (from the brand's own site or already in attached_assets/). No AI-generated images, no blank image areas.
+
+**PHASE ORDER:**
+1. Repairs: verify/recreate the 6 Batch 3 posts + fix the sitemap host-doubling bug
+2. Lumebox: add to /discount-codes + brand-guide post
+3. EMR-TEK: add to /discount-codes + brand-guide post
+4. Goli: add to /discount-codes + brand-guide post
+5. Batch 6: 9 long-form SEO discount-code posts
+6. New pillar page: /biohacking-discount-codes (exact-match SEO target)
+7. Schema markup: JSON-LD ItemList on /discount-codes + FAQPage on posts (LAST — it reads the finished pages)
+
+**FINAL VERIFICATION (after Phase 7):**
+- Production build: 0 errors.
+- Generated sitemap.xml: every <loc> contains the host exactly once; confirm the 6 Batch 3 URLs plus all new post/pillar URLs are present.
+- Spot-check in preview (no 404s): /biohacking-discount-codes, /blog/joovv-discount-code, /blog/aquaomega-discount-code, /blog/earthrunners-discount-code, /blog/360-cookware-discount-code, /blog/neurosity-discount-code, /blog/davids-discount-code, /lumebox-discount-code, /emr-tek-discount-code, /goli-discount-code, plus 2–3 of the Batch 6 posts.
+- Then STOP and report: (a) list of every new/changed route, (b) the <title> and H1 of /biohacking-discount-codes, (c) build status, (d) anything you could not complete. Do NOT publish.
+
+=====================================================================
+PHASE 1 — REPAIRS (Batch 3 posts + sitemap fix)
+=====================================================================
+
+=====================================================================
+PHASE 2 — LUMEBOX (add to /discount-codes + brand-guide post)
+=====================================================================
+# Replit prompt — Lumebox: add to /discount-codes + AEO/SEO/GEO brand-guide post (save-only, do NOT publish)
+
+
+---
+
+**TASK 1 — Add Lumebox to the /discount-codes page**
+
+1. Find the data file that feeds the /discount-codes page (the existing card list, grouped by category).
+2. Add this entry to the **LONGEVITY TECH** section, in the same format as the existing cards:
+   - Brand: `Lumebox`
+   - Code: `ThriveTools` (exact casing)
+   - Link: `https://thelumebox.com/`
+   - **TODO for me (do not resolve yourself):** this is the official store URL. My Lumebox affiliate link from my approval email is not in this prompt — I will swap it in after review. Leave a code comment marking the URL as needing the affiliate link.
+   - **Do NOT invent any discount percentage or dollar amount.** No customer-facing discount was stated by the brand. Present the code as "Use code **ThriveTools** at thelumebox.com checkout" with no % or $ claim.
+   - Do not add any text claiming savings beyond what the brand publishes.
+
+**TASK 2 — Create a Lumebox AEO/SEO/GEO brand-guide post**
+
+Create a new article in the same SEO/AEO style as the existing brand-guide posts, at a new route: `/lumebox-discount-code`.
+
+First check that this route does not already exist anywhere in the codebase. This article must NOT duplicate existing content — especially the "Best Red Light Therapy Discount Codes 2026" roundup post. That post is a category roundup; this is a **Lumebox brand guide**. Keep overlap minimal and link to the roundup where relevant.
+
+**Article content rules (strict):**
+- Every fact below comes from thelumebox.com (official site), verified 2026-09-28. Do not invent, extrapolate, or embellish anything not listed here. Report the brand's comparative claims as the brand's claims ("Lumebox states…"), not as independent facts.
+- Affiliate disclosure near the top: "ThriveTools is a Lumebox affiliate partner. We may earn a commission on purchases made through links on this page, at no extra cost to you."
+- Present the code as: "Use code **ThriveTools** at thelumebox.com checkout" — do NOT claim it gives any specific discount.
+- I own a Lumebox (confirmed). You may include a brief first-person note that I own and use one — do not invent any results, timelines, or health outcomes from my use.
+- No medical claims beyond the brand's own stated uses. Do not use words like treats, heals, or cures.
+
+**Verified facts to build the article from:**
+
+1. **What Lumebox is:** LUMEBOX (2.0 is the current model) is a portable red light therapy device. It emits 660nm red and 850nm near-infrared light — which the brand describes as two of the most-studied wavelengths in photobiomodulation research. The brand's stated uses: skincare routines, post-workout recovery, and the temporary relief of minor muscle and joint pain.
+
+2. **Technology (brand's own claims):** Dual-chip technology delivering red (660nm) and near-infrared (850nm) simultaneously from each bulb. The brand states its device is independently tested to outperform the leading portable red light device: 58% greater red light irradiance, 80% greater near-infrared irradiance, 25% more body surface coverage. Third-party tested wavelengths and high irradiance; third-party tested for EMF and IEC electrical and optical light safety standards. Voltage range 110v–240v. The brand states it is 25% bigger than most handheld devices.
+
+3. **Design & features:** Portable handheld format; optional 6- and 12-minute timer; extended battery life; updated carrier case and handle design on 2.0; removable comfort-grip accessory. FDA-registered (say "registered" — not cleared or approved). HSA/FSA eligible per the brand's site.
+
+4. **What's included in the box:** handheld red light device, travel case, battery, removable comfort-grip accessory, A/C adapter, user manual, protective eyewear.
+
+5. **Shipping:** the brand's site notes international shipping to Canada, Australia, Singapore, and the UK may take 3–4 weeks.
+
+6. **"Who it's for" section:** people wanting a portable, travel-friendly red light therapy device for skin, joints, and recovery — rather than a wall-mounted full-body panel.
+
+7. **How to use the discount code (step-by-step):** go to thelumebox.com (use the site's affiliate link for all product links), add the device to cart, enter code **ThriveTools** at checkout.
+
+8. **FAQ (AEO Q&A format, matching the style of the other brand guides):**
+   - What is the Lumebox discount code? (ThriveTools — enter it at checkout on thelumebox.com. No specific discount percentage is published; the code is applied at checkout.)
+   - How do I use the ThriveTools code at Lumebox? (step-by-step)
+   - What wavelengths does Lumebox use? (660nm red + 850nm near-infrared, per the brand.)
+   - Is Lumebox third-party tested? (The brand states third-party testing of wavelengths/irradiance and EMF/IEC safety standards.)
+   - Is Lumebox FDA approved? (No — the brand states it is FDA-registered, which is not the same as FDA approval/clearance.)
+   - Is Lumebox HSA/FSA eligible? (The brand's site states HSA/FSA eligibility.)
+   - Does Lumebox ship internationally? (Canada, Australia, Singapore, UK — allow 3–4 weeks per the brand.)
+   - What's included with the Lumebox 2.0?
+   - Where is the best place to buy Lumebox? (thelumebox.com via the affiliate link.)
+
+9. **GEO notes:** open with a concise definitional paragraph ("LUMEBOX is a portable red light therapy device…") suitable for AI-answer extraction; keep answers to FAQ questions self-contained in 2–4 sentences; attribute every comparative or efficacy-adjacent claim to the brand.
+
+10. **SEO:** title like "Lumebox Discount Code (ThriveTools) & Brand Guide (2026)"; meta description; FAQ schema matching the pattern used on the other brand-guide posts. Target keywords: Lumebox discount code, Lumebox promo code, ThriveTools, portable red light therapy.
+
+**Technical requirements (non-negotiable):**
+- Register the new route **ABOVE the 404 catch-all route** in ALL FOUR route files: `client/src/App.tsx`, `ssr-routes.ts`, `entry-server.tsx`, `shared/site-routes.ts`.
+- Run the production build. It must pass with **0 errors**. Fix any errors before stopping.
+- No invented prices, discounts, statistics, health claims, or personal experience beyond what is listed above. No duplicate content with existing posts.
+- **Do not publish. Do not deploy.** Leave everything saved/unpublished for my review.
+
+=====================================================================
+PHASE 3 — EMR-TEK (add to /discount-codes + brand-guide post)
+=====================================================================
+# Replit prompt — EMR-TEK: add to /discount-codes + brand-guide article (save-only, do NOT publish)
+
+
+---
+
+**TASK 1 — Add EMR-TEK to the /discount-codes page**
+
+1. Find the data file that feeds the /discount-codes page (the existing card list, grouped by category).
+2. Add this entry to the **LONGEVITY TECH** section, in the same format as the existing cards:
+   - Brand: `EMR-TEK`
+   - Code: `EDEN17306`
+   - Link: `https://www.emr-tek.com/EDEN17306`
+   - This is a **link-with-code deal** — the code is applied/tracked through the affiliate link. **Do NOT invent any discount percentage or dollar amount.** No customer-facing discount was stated by the brand (the 10% rate is my affiliate commission, not a shopper discount — never show it on the site).
+   - Do not add any text claiming savings beyond what the brand publishes.
+
+**TASK 2 — Create an EMR-TEK brand-guide article post**
+
+Create a new article in the same SEO/AEO style as the existing brand-guide posts (e.g. the previous brand guides), at a new route: `/emr-tek-discount-code`.
+
+First check that this route does not already exist anywhere in the codebase. This article must NOT duplicate existing content — especially the "Best Red Light Therapy Discount Codes 2026" post. That post is a category roundup; this is an **EMR-TEK brand guide**. Keep overlap minimal and link to the roundup where relevant.
+
+**Article content rules (strict):**
+- Every fact below comes from emr-tek.com (official site), verified 2026-09-25. Do not invent, extrapolate, or embellish anything not listed here.
+- Affiliate disclosure near the top: "ThriveTools is an EMR-TEK affiliate partner. We may earn a commission on purchases made through links on this page, at no extra cost to you."
+- The only affiliate URL to use: `https://www.emr-tek.com/EDEN17306`. All product links in the article must go through it.
+- Present the code as: "Use code **EDEN17306** at emr-tek.com" — do NOT claim it gives any specific discount.
+
+**Verified facts to build the article from:**
+
+1. **What EMR-TEK is:** emr-tek.com is a light-based wellness brand selling four product lines: (a) red light therapy devices, (b) full-spectrum UV light systems, (c) blue light blocking glasses, and (d) circadian-friendly lighting. Note explicitly in the article that EMR-TEK is a *light therapy* brand — do not describe it as an EMF-shielding company (a separate brand covers that niche).
+
+2. **Founder story (from the brand's own homepage):** EMR-TEK was founded by Kris, who developed vitiligo at age 3. The brand states he spent twenty years researching light and health and the last eight years building EMR-TEK.
+
+3. **Differentiators (brand's own claims):** EMR-TEK publishes third-party testing on its site — integrating sphere reports and distance spectral data for devices, plus spectral transmission reports for each blue-light glasses lens color (clear, yellow, orange, red). Product ratings shown on the official site are 4.9–5.0 stars; the brand claims "trusted by 65,000+ customers" (report as the brand's claim).
+
+4. **Product lineup with prices observed 2026-09-25** (these are the brand's current sale prices with list prices in parentheses; the brand runs frequent sales — write the article so prices are clearly "as listed on emr-tek.com at the time of writing" and link each product to the affiliate link rather than hard-coding prices as permanent):
+   - Firefly Portable Red Light Therapy Device — $399.99 (list $499.99), 4.9★
+   - ETERNO LED Face Mask (4 wavelengths, zero-contact design) — $399.99 (list $499.99), 4.7★
+   - Firewave Compact Red Light Therapy Device — $449.99 (list $549.99), 4.9★
+   - Firedragon (red + near-infrared) — $799.99 (list $899.99)
+   - Firedragon Pro Red Light Therapy Panel — $899.99 (list $999.99), 5.0★
+   - Firestorm Pro Red Light Therapy Device — $1,599.99 (list $1,799.99), 5.0★
+   - Inferno Pro Red Light Therapy Panel — $1,899.99 (list $1,999.99), 5.0★
+   - Firehawk Full-Body Red Light Therapy System — $16,999.99 (list $18,999.99)
+   - Krypton Mini Pro Full-Spectrum Light System (UV) — $1,399.99 (list $1,599.99), 5.0★
+   - Krypton UV 606W Full-Spectrum Light System — $2,999.99 (list $3,499.99), 5.0★
+   - Krypton UV 1612W Full-Spectrum Light System — $5,599.99 (list $6,999.99), 5.0★
+   - Ultron Full-Body Multi-Spectrum Light System — $25,999.99 (list $29,999.99)
+   - Sunset Light Bulb (warm, ambient-glow LED) — $49.99 (list $59.99), 5.0★; Daylight Yellow Light Bulb (low blue light) — $49.99 (list $59.99), 5.0★; 3-packs — $99.99
+   - Blue light blocking glasses: Freya, NYX, Odin Magnesium, Athena 24K Gold Plated — $149.99 (list $199.99), ratings 4.0–5.0★
+
+5. **"Who it's for" section:** home red-light therapy users (from portable devices to full-body systems), people building circadian-friendly lighting setups, and anyone wanting lab-tested blue-light glasses.
+
+6. **FAQ (AEO Q&A format, matching the style of the other brand guides):**
+   - What is EMR-TEK?
+   - What products does EMR-TEK sell?
+   - How do I use the EMR-TEK discount code EDEN17306?
+   - Does EMR-TEK publish lab testing for its products? (Yes — third-party integrating sphere and spectral reports on the official site.)
+   - Does EMR-TEK sell EMF protection products? (No — its lineup is light-based: red light therapy, UV systems, blue-light glasses, circadian lighting.)
+   - Where is the best place to buy EMR-TEK products? (emr-tek.com via the affiliate link.)
+
+7. **SEO:** title like "EMR-TEK Discount Code & Brand Guide (2026)"; meta description; FAQ schema matching the pattern used on the other brand-guide posts.
+
+**Technical requirements (non-negotiable):**
+- Register the new route **ABOVE the 404 catch-all route** in ALL FOUR route files: `client/src/App.tsx`, `ssr-routes.ts`, `entry-server.tsx`, `shared/site-routes.ts`.
+- Run the production build. It must pass with **0 errors**. Fix any errors before stopping.
+- No invented prices, discounts, statistics, health claims, or personal experience. No duplicate content with existing posts.
+- **Do not publish. Do not deploy.** Leave everything saved/unpublished for my review.
+
+=====================================================================
+PHASE 4 — GOLI (add to /discount-codes + brand-guide post)
+=====================================================================
+# Replit prompt — Goli: add to /discount-codes + AEO/SEO/GEO brand-guide post (save-only, do NOT publish)
+
+
+---
+
+**TASK 1 — Add Goli to the /discount-codes page**
+
+1. Find the data file that feeds the /discount-codes page (the existing card list, grouped by category).
+2. Add this entry to the **VITAMINS & SUPPLEMENTS** section, in the same format as the existing cards:
+   - Brand: `Goli`
+   - Code: `g-745207ab6b`
+   - Link: `https://go.goli.com/g-745207ab6b` (my affiliate link)
+   - Deal: **10% off** — this is the customer-facing discount stated on Goli's own partner dashboard. Safe to show.
+   - Do NOT show my 15% affiliate commission anywhere on the site — that is my commission, not a shopper discount.
+
+**TASK 2 — Create a Goli AEO/SEO/GEO brand-guide post**
+
+Create a new article in the same SEO/AEO style as the existing brand-guide posts, at a new route: `/goli-discount-code`.
+
+First check that this route does not already exist anywhere in the codebase. This article must NOT duplicate existing content. There is no existing Goli post — this is the first.
+
+**Article content rules (strict):**
+- Every product fact below comes from goli.com (official site), verified 2026-09-28. Do not invent, extrapolate, or embellish anything not listed here. Report the brand's claims as the brand's claims ("Goli states…").
+- Affiliate disclosure near the top: "ThriveTools is a Goli affiliate partner. We may earn a commission on purchases made through links on this page, at no extra cost to you."
+- Present the code as: "Use code **g-745207ab6b** at goli.com checkout for **10% off**." The 10% is the brand-stated customer discount — safe to show.
+- **My editorial stance on gummies (include as a dedicated section, in first person, framed as my opinion — not as medical fact):** I don't personally consider gummies the best or most potent way to take supplements — capsules, powders, and liquids generally deliver more actives per serving without the extra ingredients gummies need for taste and texture. BUT I know plenty of people (kids included) who simply cannot swallow pills, and a gummy you'll actually take every day beats a capsule that sits untouched in the bottle. For those people, Goli is one of the better-made options in the gummy category. Do not soften, contradict, or omit this stance. Do not present it as a scientific claim — it is my editorial perspective.
+- Do NOT claim I have personally used Goli products (I have not stated that). No invented personal experience, results, or timelines.
+- No medical claims beyond the brand's own words. Do not use words like treats, heals, or cures. Do not invent specific health benefits for any product — describe products by their stated ingredients only.
+
+**Verified facts to build the article from:**
+
+1. **What Goli is:** Goli® Nutrition makes vitamin-packed wellness gummies. The brand describes its line as sugar-free. Its tagline for the flagship product: "Taste the Apple. Not the Vinegar.®" The brand states it has "over 1,000,000+ reviews from happy customers" (report as the brand's claim) and offers a "try it, risk-free" 100% hassle-free refund — "If you're not satisfied with our product, simply contact us and we'll give you a full, 100% hassle-free refund" (the brand's words).
+
+2. **Product lineup (ingredients as stated on goli.com — describe by ingredients, not invented benefits):**
+   - Apple Cider Vinegar Gummies — "THE WORLD'S FIRST Apple Cider Vinegar Gummies" (the brand's claim); made with Vitamin B12.
+   - Zero Sugar Apple Cider Vinegar Gummies — made with SNZ TriBac®, described by the brand as a clinically studied probiotic.
+   - Ashwagandha Gummies — made with KSM-66® Ashwagandha.
+   - Dreamy Sleep Gummies — made with Magnesium, Lemon Balm, Vitamin D, and melatonin.
+   - Extra-Strength Sleep Gummies — made with Lemon Balm, botanicals, Vitamin D, and 10mg of melatonin per serving.
+   - Women's Complete Multi Gummies — "complete with ALL 13 essential vitamins" (the brand's words).
+   - Triple Action Immune Gummies — blackberry/strawberry-lemonade flavor; made with Vitamins C & D and Zinc.
+   - Supergreens Gummies — made with a blend of vitamins, minerals, and nutrients.
+   - Superfruits Beauty Gummies — made with Bamboo Shoot Extract and Vitamins A, C, and E.
+   - Cardio Beets Gummies — made with CoQ10 and Vitamin B12.
+   - Pre+Post+ Probiotics Gummies — combines prebiotics, probiotics, and postbiotics.
+   - Matcha Mind Cognitive Gummies — made with Cognizin®.
+   - Recharge Energy+ Gummies — the brand's newest; made with Nitrosigine, Caffeine, and Vitamins C & B6.
+
+3. **Availability:** sold on goli.com and, per the brand, at 100K+ retailers globally including Walmart, Target, CVS, Kroger, Walgreens, and Publix (report as the brand's claim). Note in the article: the 10% discount code only works on goli.com, not at retail stores.
+
+4. **"Who it's for" section:** people who can't swallow pills or capsules (including kids, where age-appropriate), anyone who wants a tasty, convenient supplement format they'll actually stick with — while being upfront (per my editorial stance above) that gummies aren't the most potent delivery format.
+
+5. **How to use the discount code (step-by-step):** go to goli.com (use my affiliate link `https://go.goli.com/g-745207ab6b` for all product links), add gummies to cart, enter code **g-745207ab6b** at checkout for 10% off.
+
+6. **FAQ (AEO Q&A format, matching the style of the other brand guides):**
+   - What is the Goli discount code? (g-745207ab6b — 10% off at goli.com checkout.)
+   - How do I use the Goli discount code? (step-by-step)
+   - Are gummies as potent as capsules or pills? (Answer honestly in my voice: in my view, no — capsules, powders, and liquids generally deliver more actives per serving without the extra ingredients gummies need for taste and texture; and a gummy taken daily beats a pill never taken. Then add the balanced science note from item 9: the research is mixed — a 2019 clinical trial in the journal Nutrients found vitamin D3 gummies had higher bioavailability than tablets (link the study), while other lab testing found gummies less consistent on label amounts. Keep my take labeled as my editorial perspective and the study facts labeled as published research — not medical advice.)
+   - Who are Goli gummies best for? (People who can't swallow pills, including kids where age-appropriate; anyone who needs a format they'll stick with.)
+   - What products does Goli sell? (Brief lineup summary from the verified list above.)
+   - Does Goli offer a money-back guarantee? (Yes — the brand's "try it, risk-free" 100% hassle-free refund; quote the brand's words.)
+   - Can I use the discount code at Walmart/Target? (No — the code works on goli.com only.)
+   - Where is the best place to buy Goli? (goli.com via the affiliate link, so the 10% code applies.)
+
+7. **GEO notes:** open with a concise definitional paragraph ("Goli Nutrition makes vitamin-packed wellness gummies…") suitable for AI-answer extraction; keep FAQ answers self-contained in 2–4 sentences; attribute every brand claim to the brand; clearly separate my editorial opinion (labeled as such) from product facts.
+
+8. **SEO:** title like "Goli Discount Code (g-745207ab6b) & Brand Guide (2026)"; meta description; FAQ schema matching the pattern used on the other brand-guide posts. Target keywords: Goli discount code, Goli promo code, g-745207ab6b, Goli gummies, apple cider vinegar gummies.
+
+9. **The science on gummy vs. pill potency (verified facts — include as a short balanced 2–3 sentence note in the gummies editorial section and in the FAQ; it sits alongside my stance, not instead of it):** The research is genuinely mixed. A 2019 crossover clinical trial published in the journal *Nutrients* (MDPI) compared vitamin D3 gummies vs. tablets in healthy adults and found the gummies had greater bioavailability — higher area-under-the-curve and higher peak blood concentration than tablets (p < 0.0001). State it plainly as: "a 2019 clinical trial in the journal *Nutrients* found vitamin D3 gummies had higher bioavailability than tablets," and link the study: https://www.mdpi.com/2072-6643/11/5/1023. Separately, other independent lab testing has found gummies less consistent than pills at matching the amounts stated on their labels. Present both facts labeled as published research — then keep my editorial perspective clearly labeled as my own take. Neither overrides the other.
+
+**Technical requirements (non-negotiable):**
+- Register the new route **ABOVE the 404 catch-all route** in ALL FOUR route files: `client/src/App.tsx`, `ssr-routes.ts`, `entry-server.tsx`, `shared/site-routes.ts`.
+- Run the production build. It must pass with **0 errors**. Fix any errors before stopping.
+- No invented prices, discounts, statistics, health claims, or personal experience beyond what is listed above. No duplicate content with existing posts.
+- **Do not publish. Do not deploy.** Leave everything saved/unpublished for my review.
+
+=====================================================================
+PHASE 5 — BATCH 6 (9 long-form SEO discount-code posts)
+=====================================================================
+# Replit Agent prompt — Batch 6: 9 SEO discount-code posts (long-form)
+
+
+---
+
+## Task: create 9 long-form SEO blog posts for discount codes
+
+**Site:** thrivetools.co (this Replit project). **Do not publish or deploy.** Make the code changes, run a production build, fix any errors, and save. I will publish myself.
+
+**Why this batch is different:** the blog already has short per-brand discount-code posts (AEO style). These 9 cover the 9 brands on my /discount-codes page that have NO post yet, and they are full SEO posts: substantive brand/product content (not just a code stub), proper H1/H2 structure, and an FAQ section per post. They must not duplicate any existing post's subject.
+
+### The 9 posts
+
+For each post: `slug`, `title`, `code` (exact code string; "link-only" means no code — discount applies via the link), `href` (exact affiliate URL — use verbatim, never alter), then the full body in markdown. Render each body with the existing blog post component format: H1 = title, H2 sections as marked, code callout box near the top, numbered steps for code use, FAQ as an H2 with bold questions.
+
+**Global post requirements (apply to all 9):**
+- Category tag: `Discount Codes`. Date: September 2026. Byline: keep the site's existing byline format untouched.
+- The discount code and how to use it must appear in the first ~100 words (answer the query fast), inside a visually distinct code callout box.
+- "How to use the code" as a numbered list. For link-only deals, explain the discount applies automatically via the link and there is no code to type.
+- One H2 FAQ section per post with 4–5 questions and full answers (this feeds the site's FAQPage schema later — keep questions as plain text).
+- Exactly one internal link to `/discount-codes` ("see all verified codes") and the affiliate `href` on the code/button CTA.
+- Hero image: pull a real product/lifestyle image from the brand's own website (same approach as batches 3–5). No AI-generated images.
+- Never invent discount percentages, expiry dates, prices, or brand claims. Attribute brand claims with "the brand says" / "according to the company". Everything below is verified against the live /discount-codes page.
+
+---
+
+### 1. Slug: `/blog/healthandyoga-discount-code`
+Title: `HealthAndYoga Discount Code 2026: Ede4143 + Acupressure Mat Guide`
+Code: `Ede4143` — href: `https://www.healthandyoga.com/spike-acupressure-mat?`
+
+BODY:
+
+Use code **Ede4143** in the discount-code box at checkout on healthandyoga.com to claim the current ThriveTools discount on acupressure mats, yoga accessories, and Ayurveda-inspired wellness gear. [CTA button: Shop HealthAndYoga with code Ede4143](https://www.healthandyoga.com/spike-acupressure-mat?)
+
+HealthAndYoga is one of the longest-running names in the acupressure niche. The brand says it has been operating for 24+ years, with over 2.5 million products sold and 100,000+ reviews worldwide — unusual longevity for this category.
+
+## What HealthAndYoga sells
+
+The catalog is rooted in yoga, Ayurveda, and acupressure rather than generic fitness gear: acupressure mats and pillows, natural-fiber yoga mats, tongue cleaners, and related accessories. The hero product is the **Spike Acupressure Mat**, the classic bed-of-nails style mat people lie on for back tension and relaxation.
+
+## What to buy
+
+- **Spike Acupressure Mat** — the flagship; typical category pricing runs roughly $20–$40. This is the product the discount link above points to.
+- **Acupressure Neck Pillow Case** — 100% natural cotton with skin-friendly plastic spikes, for neck and shoulder tension.
+- **SteloSwipe tongue cleaner** — surgical-grade stainless steel, a staple of Ayurvedic morning routines.
+- **Jacquard Border Grass Yoga Mat** — natural grass straw with latex backing, for practitioners who want a non-synthetic mat.
+
+## Why it stands out
+
+Three things: the 24+ year track record the brand claims, a product line built around traditional acupressure and Ayurveda instead of trend-chasing SKUs, and buyer-friendly policies — the company advertises worldwide free shipping (conditions apply) plus bulk discounts on orders of 5+ units.
+
+## How to use the HealthAndYoga discount code
+
+1. Click the ThriveTools link above to open healthandyoga.com.
+2. Add the Spike Acupressure Mat (or anything else) to your cart.
+3. At checkout, find the discount-code box and type **Ede4143**.
+4. The discount applies to your order total.
+
+## HealthAndYoga discount code FAQ
+
+**What is the HealthAndYoga discount code?**
+The current code is **Ede4143**, entered at checkout on healthandyoga.com.
+
+**What is a spike acupressure mat?**
+A mat covered in small plastic spikes that you lie on, based on acupressure principles. People commonly use them for back relaxation and as part of wind-down routines.
+
+**Does HealthAndYoga ship internationally?**
+The brand advertises worldwide free shipping, though conditions apply — check the shipping policy at checkout for your country.
+
+**What else does HealthAndYoga sell besides mats?**
+Acupressure pillows, yoga mats (including natural grass-straw options), tongue cleaners, and Ayurveda-inspired accessories.
+
+**Where can I find more verified wellness discount codes?**
+See all verified codes on the [ThriveTools discount-codes page](/discount-codes).
+
+---
+
+### 2. Slug: `/blog/neurovizr-discount-code`
+Title: `NeuroVizr Discount Code 2026: thrive33 + Light & Sound Brain Therapy Guide`
+Code: `thrive33` — href: `https://neurovizr.com/?ref=rzortqxs`
+
+BODY:
+
+Use code **thrive33** at checkout on neurovizr.com to claim the current ThriveTools discount on the NeuroVizr light-and-sound brain wellness device. [CTA button: Shop NeuroVizr with code thrive33](https://neurovizr.com/?ref=rzortqxs)
+
+NeuroVizr is a wearable headset for audiovisual brain stimulation: you close your eyes, put on the lightweight headset, and run short guided light-and-sound sessions through the companion app. No subscription — lifetime session access is included with the device.
+
+## What NeuroVizr does
+
+The headset contains 9 optometrically optimized white LED diodes worn over closed eyes. Paired with the mobile app's 100+ choreographed audiovisual sessions (about 11 minutes each), it delivers 40 Hz and other-frequency light-sound stimulation aimed at sleep, stress, focus, and meditation. Think of it as a guided meditation session where pulsing light does the guiding.
+
+## What to buy
+
+- **NeuroVizr Experience Pack — $599**: the full package with device, headband, and lifetime app access.
+- **NeuroVizr Starter Pack — $485** (listed against $693): a campaign-priced entry option when available.
+- The Swiss store (neurovizr.ch) lists LITE at CHF 299, ORIGINAL at CHF 599, and ROUGE at CHF 749 (red 670 nm LEDs).
+
+## Why it stands out
+
+Three things: the 9-LED audiovisual stimulation approach built on neuroscience concepts, the no-subscription model (the core session library is yours for life), and buyer protection — the US store offers a 14-day money-back guarantee plus an annual device warranty.
+
+## How to use the NeuroVizr discount code
+
+1. Click the ThriveTools link above to open neurovizr.com.
+2. Choose your pack and add it to the cart.
+3. At checkout, enter **thrive33** in the discount-code field.
+4. The discount applies before you pay.
+
+## NeuroVizr discount code FAQ
+
+**What is the NeuroVizr discount code?**
+The current code is **thrive33** for neurovizr.com checkout.
+
+**Do I need a subscription to use NeuroVizr?**
+No. Lifetime access to the core session library is included with the device — there is no required subscription.
+
+**How long is a NeuroVizr session?**
+Sessions run about 11 minutes each, with 100+ sessions in the app targeting sleep, stress, focus, and meditation.
+
+**Is there a money-back guarantee?**
+The US store offers a 14-day money-back guarantee and an annual device warranty, according to the company.
+
+**Where can I find more verified wellness-tech discount codes?**
+See all verified codes on the [ThriveTools discount-codes page](/discount-codes).
+
+---
+
+### 3. Slug: `/blog/heatbit-discount-code`
+Title: `HeatBit Discount Code 2026: THRIVE101 + Heater-Miner Guide`
+Code: `THRIVE101` — href: `https://heatbit.com/?ref=EDENKAWTHARLARAKI`
+
+BODY:
+
+Use code **THRIVE101** at checkout on heatbit.com to claim the current ThriveTools discount on HeatBit's heater-miners — space heaters and air purifiers that mine Bitcoin while they warm your room. [CTA button: Shop HeatBit with code THRIVE101](https://heatbit.com/?ref=EDENKAWTHARLARAKI)
+
+HeatBit was founded in April 2020 by Alex Busarov, a former McKinsey energy consultant who realized noisy mining rigs run hot — so why not capture that heat? The company is remote-first and registered in Delaware, USA.
+
+## What HeatBit sells
+
+Home appliances with Bitcoin mining chips inside. The mining process generates heat as a byproduct, and HeatBit routes that heat into your room — so the electricity does double duty: warmth plus mining rewards. Setup is plug-and-play, with an app that tracks your Bitcoin rewards and includes a built-in wallet.
+
+## What to buy
+
+- **Bitair — $149–$179**: air purifier + solo miner (1.2 TH/s) with HEPA filtration. The entry point.
+- **Trio heater series — from ~$900**: full-size heater-miners for larger spaces.
+- **Maxi — $1,449–$1,499**: the flagship heater/miner at 35–40 TH/s, heating up to 400 sq ft at 1500W. A Maxi Pro (60 TH/s) also exists.
+
+## Why it stands out
+
+Three things: the dual-function concept (heat you'd pay for anyway, plus Bitcoin rewards), HEPA 12/13 air filtration built into the heater models, and genuinely simple setup — plug it in, connect the app, and it mines quietly in the background.
+
+## How to use the HeatBit discount code
+
+1. Click the ThriveTools link above to open heatbit.com.
+2. Pick your model and add it to the cart.
+3. At checkout, enter **THRIVE101** in the promo-code field.
+4. The discount applies to your order.
+
+## HeatBit discount code FAQ
+
+**What is the HeatBit discount code?**
+The current code is **THRIVE101** for heatbit.com checkout.
+
+**Does HeatBit really mine Bitcoin?**
+Yes. The devices contain mining chips; the heat they produce as a byproduct is used to warm your room, and rewards accumulate in the app's built-in wallet.
+
+**Will it raise my electricity bill?**
+It uses electricity like any 1500W-class heater — the difference is the mining rewards offset part of the running cost. Actual returns depend on Bitcoin price and network difficulty.
+
+**Does it filter air too?**
+The heater models include HEPA 12/13 filtration, and the Bitair is a dedicated purifier-miner combo.
+
+**Where can I find more verified wellness-tech discount codes?**
+See all verified codes on the [ThriveTools discount-codes page](/discount-codes).
+
+---
+
+### 4. Slug: `/blog/aires-tech-discount-code`
+Title: `Aires Tech Discount Code 2026: THRIVE25 + EMF Protection Guide`
+Code: `THRIVE25` — href: `https://airestech.com/thrive25`
+
+BODY:
+
+Use code **THRIVE25** at checkout on airestech.com to claim the current ThriveTools discount on Aires Tech's EMF protection devices. [CTA button: Shop Aires Tech with code THRIVE25](https://airestech.com/thrive25)
+
+Aires Tech makes EMF protection products built around patented silicon resonator chips. Instead of blocking signals, the chips use diffraction to restructure chaotic EMF waves into what the company describes as a more stable pattern — without interrupting your device's performance. Everything is passive: no batteries, no charging, no setup.
+
+## What Aires Tech sells
+
+The Lifetune line covers personal devices and living spaces. Products stick to or sit near your tech and work continuously with zero maintenance.
+
+## What to buy
+
+- **Lifetune One — $99.99**: a coin-sized resonator for a phone or laptop. The simplest entry point.
+- **Lifetune Flex — $239.99**: portable coverage up to ~42 ft.
+- **Lifetune Zone — $259.99**: for small rooms, coverage up to ~93 ft.
+- **Lifetune Zone Max Pro — $379.95**: for large rooms, coverage up to ~139 ft.
+
+## Why it stands out
+
+Three things: the patented silicon resonator technology (16S5G / Aires Pro chips) based on modulation rather than shielding, a 30-day money-back guarantee, and fully passive operation — set it and forget it, no power or upkeep.
+
+## How to use the Aires Tech discount code
+
+1. Click the ThriveTools link above to open airestech.com.
+2. Add your Lifetune product(s) to the cart.
+3. At checkout, enter **THRIVE25** in the discount-code box.
+4. The discount applies to your order total.
+
+## Aires Tech discount code FAQ
+
+**What is the Aires Tech discount code?**
+The current code is **THRIVE25** for airestech.com checkout.
+
+**Does Aires Tech block my phone signal?**
+No. According to the company, the resonator restructures EMF via diffraction rather than shielding, so device performance is not interrupted.
+
+**Do the products need charging or batteries?**
+No. They are fully passive — no power source or maintenance required.
+
+**Which Lifetune should I get?**
+One for a single device, Flex for portable personal coverage, Zone for a small room, Zone Max Pro for a large room.
+
+**Where can I find more verified wellness-tech discount codes?**
+See all verified codes on the [ThriveTools discount-codes page](/discount-codes).
+
+---
+
+### 5. Slug: `/blog/the-good-tee-discount-code`
+Title: `The Good Tee Discount Code 2026: thrive10 + Fair-Trade Basics Guide`
+Code: `thrive10` — href: `https://thegoodtee.com/?ref=lzrzvhex`
+
+BODY:
+
+Use code **thrive10** at checkout on thegoodtee.com to claim the current ThriveTools discount on certified fair-trade organic cotton basics. [CTA button: Shop The Good Tee with code thrive10](https://thegoodtee.com/?ref=lzrzvhex)
+
+The Good Tee is a Fair Trade Certified B Corporation founded in 2020 by Adila Cokar in Toronto, Ontario, Canada — after sourcing trips to India exposed her to the crisis facing cotton farmers. The company manages its supply chain "seed to shelf" and celebrates the makers behind each garment.
+
+## What The Good Tee sells
+
+Organic cotton everyday basics: tees, fleece, and blanks. The company sells direct-to-consumer and wholesale — its blank tees are stocked in 30+ North American stores, and it offers private labeling for retailers and organizations.
+
+## What to buy
+
+- **Fair Trade Unisex Tee — ~$36**: the signature ethically made basic, produced in India.
+- **Organic fleece midweight collection**: heavier everyday layers (pricing varies by piece).
+- **Blank tees / wholesale**: customizable options for businesses, teams, and promo buyers.
+
+## Why it stands out
+
+Three things: dual certification (Fair Trade Certified + B Corporation), genuine seed-to-shelf supply chain involvement, and a B2B program with private labeling (rip-out back neck label) for retailers and organizations.
+
+## How to use The Good Tee discount code
+
+1. Click the ThriveTools link above to open thegoodtee.com.
+2. Add your items to the cart.
+3. At checkout, enter **thrive10** in the discount-code field.
+4. The discount applies to your order.
+
+## The Good Tee discount code FAQ
+
+**What is The Good Tee discount code?**
+The current code is **thrive10** for thegoodtee.com checkout.
+
+**What does Fair Trade Certified mean here?**
+It means independent certification of fair labor conditions and pricing for the farmers and makers in the supply chain — core to the brand's identity.
+
+**Where are The Good Tee's clothes made?**
+The brand manages production seed-to-shelf with manufacturing in India, and is headquartered in Toronto, Canada.
+
+**Does The Good Tee offer wholesale?**
+Yes — blank tees for promotional buyers plus a private-label program for retailers.
+
+**Where can I find more verified ethical-brand discount codes?**
+See all verified codes on the [ThriveTools discount-codes page](/discount-codes).
+
+---
+
+### 6. Slug: `/blog/bamboo-clothes-discount-code`
+Title: `Bamboo Clothes Discount Code 2026: EDENKAWTHARLARAKI10 + Bamboo Apparel Guide`
+Code: `EDENKAWTHARLARAKI10` — href: `https://www.bambooclothes.com/discount/eden-kawtharlaraki10`
+
+BODY:
+
+Use code **EDENKAWTHARLARAKI10** at checkout on bambooclothes.com to claim the current ThriveTools discount on Spun Bamboo's bamboo-viscose apparel. [CTA button: Shop Bamboo Clothes with the discount code](https://www.bambooclothes.com/discount/eden-kawtharlaraki10)
+
+Spun Bamboo (bambooclothes.com) makes clothing from bamboo viscose, positioned as a "clean fashion" alternative to conventional textiles. The line centers on underwear and everyday tops marketed on softness, breathability, and temperature regulation, sold under a "Conscious Collection" banner.
+
+## What Bamboo Clothes sells
+
+An underwear-first assortment of bamboo-viscose basics: boxers and briefs for men, tops for women, and everyday essentials. Bamboo viscose is the whole point — the brand cites thermal-regulation and UV-protection properties as the reason the fabric outperforms standard cotton and synthetics for daily wear.
+
+## What to buy
+
+- **Men's bamboo boxer 3-pack — ~€55.95**: bamboo viscose/cotton blend, the core product.
+- **Men's bamboo boxer briefs 3-pack**: mixed colors, same fabric story.
+- **Women's bamboo tops collection**: everyday tops in the Conscious Collection (exact pricing varies).
+
+## Why it stands out
+
+Three things: a genuine bamboo-viscose fabric focus with cited thermal-regulation and UV-protection research, an underwear-first assortment (rather than a thin basics add-on), and a European storefront presence serving EU shoppers directly.
+
+## How to use the Bamboo Clothes discount code
+
+1. Click the ThriveTools link above to open bambooclothes.com.
+2. Add your items to the cart.
+3. At checkout, enter **EDENKAWTHARLARAKI10** in the discount-code box.
+4. The discount applies to your order total.
+
+## Bamboo Clothes discount code FAQ
+
+**What is the Bamboo Clothes discount code?**
+The current code is **EDENKAWTHARLARAKI10** for bambooclothes.com checkout. Enter it exactly as shown.
+
+**What is bamboo viscose?**
+A fabric made from bamboo pulp, known for softness, breathability, and temperature regulation — the brand's core material across its line.
+
+**Why bamboo underwear?**
+The brand positions it as a natural-fabric alternative to synthetics: softer hand-feel, better breathability, and thermal regulation for all-day comfort.
+
+**Does Bamboo Clothes ship to my country?**
+The brand operates a European storefront; check shipping options at checkout for your location.
+
+**Where can I find more verified ethical-brand discount codes?**
+See all verified codes on the [ThriveTools discount-codes page](/discount-codes).
+
+---
+
+### 7. Slug: `/blog/earthing-harmony-discount-code`
+Title: `Earthing Harmony Discount Code 2026: THRIVENOW + Grounding Products Guide`
+Code: `THRIVENOW` — href: `https://earthingharmony.com/?ref=hxaqgkso`
+
+BODY:
+
+Use code **THRIVENOW** at checkout on earthingharmony.com to claim the current ThriveTools discount on indoor grounding products — mats and sheets that connect you to the earth's electrical potential through a grounded wall outlet. [CTA button: Shop Earthing Harmony with code THRIVENOW](https://earthingharmony.com/?ref=hxaqgkso)
+
+Earthing Harmony sells "earthing" (grounding) gear for indoors: conductive mats for desks and feet, and conductive bed sheets — marketed for sleep, calm, and inflammation support, for people who want grounding without going barefoot outside.
+
+## What Earthing Harmony sells
+
+Indoor grounding products that plug into the ground port of a wall outlet. The conductive materials (including pure-silver-and-cotton sheet fabric the brand positions as medical-grade) link your body to the earth's electrical potential while you work or sleep.
+
+## What to buy
+
+- **Earthing & Grounding Universal Mat — $69.90**: 27" x 10", non-toxic vegan leather; bundles run up to $159.90. For desks, feet, or laps.
+- **Grounding Sheet Set — $179.90**: fitted sheet + 2 pillowcases in the silver-cotton blend; single sheets from $89.90. For overnight grounding.
+
+## Why it stands out
+
+Three things: the conductive pure-silver-and-cotton sheet fabric, a 45-day money-back guarantee (45-night trial on sheets), and scale the brand claims — 91,000+ customers and independent lab testing of conductivity.
+
+## How to use the Earthing Harmony discount code
+
+1. Click the ThriveTools link above to open earthingharmony.com.
+2. Add a mat, sheet set, or bundle to your cart.
+3. At checkout, enter **THRIVENOW** in the discount-code box.
+4. The discount applies to your order.
+
+## Earthing Harmony discount code FAQ
+
+**What is the Earthing Harmony discount code?**
+The current code is **THRIVENOW** for earthingharmony.com checkout.
+
+**What is earthing / grounding?**
+The practice of electrically connecting the body to the earth. Earthing Harmony's products do it indoors via the ground port of a wall outlet.
+
+**Is it safe to plug into a wall outlet?**
+The products connect only to the outlet's ground port — no mains electricity flows through them, according to the company.
+
+**Mat or sheet — which should I get?**
+The mat suits daytime desk/foot use; the sheet set is for overnight grounding while you sleep.
+
+**Where can I find more verified wellness discount codes?**
+See all verified codes on the [ThriveTools discount-codes page](/discount-codes).
+
+---
+
+### 8. Slug: `/blog/promeed-discount-code`
+Title: `Promeed Discount Code 2026: Silk Bedding Discount Guide`
+Code: link-only (no code string — discount applies automatically via the link) — href: `https://www.awin1.com/cread.php?awinmid=100833&awinaffid=2421431`
+
+BODY:
+
+Promeed's current ThriveTools offer is **link-only** — there is no code to type. Click the link below to shop promeed.com and the discount applies automatically at checkout. [CTA button: Shop Promeed — discount applies automatically](https://www.awin1.com/cread.php?awinmid=100833&awinaffid=2421431)
+
+Promeed sells 100% mulberry silk bedding built around 6A+ grade silk in 23–30 momme weights — high-momme silk at mid-market prices. The catalog covers pillowcases, fitted sheets, sheet sets, and sleep accessories, with OEKO-TEX Standard 100 certification, free shipping, and a 60-day return guarantee.
+
+## What Promeed sells
+
+Silk bedding for skin, hair, and sleep: pillowcases (the entry point), sheets, duvet covers, and accessories like eye masks and scrunchies. Silk's smooth surface means less friction on hair and skin overnight — the core of the "beauty sleep" pitch.
+
+## What to buy
+
+- **23mm 6A+ silk pillowcase — from $37.99**: the easiest way to try sleeping on silk.
+- **30mm 6A+ silk pillowcase — from $64.99**: the heavier, more luxurious option.
+- **23mm fitted sheet — from $319.99**; queen silk sheet sets run roughly $380–$475 on sale.
+
+## Why it stands out
+
+Three things: genuinely high momme weights (23–30mm) with 6A+ grade claims at mid-market prices, OEKO-TEX Standard 100 certification for chemical safety, and a nice trust touch — the brand includes a fabric swatch with orders so buyers can burn-test authenticity.
+
+## How the Promeed discount works (no code needed)
+
+1. Click the ThriveTools link above (it carries the affiliate referral).
+2. Shop promeed.com and add items to your cart.
+3. The discount applies automatically — there is no code to enter at checkout.
+
+## Promeed discount FAQ
+
+**Is there a Promeed discount code?**
+No code is needed. The current offer is link-only — shop through the ThriveTools link and the discount applies automatically.
+
+**What does "momme" mean?**
+Momme measures silk density — higher means thicker, more durable silk. Promeed's 23–30 momme range sits at the premium end of the scale.
+
+**Is Promeed real mulberry silk?**
+The brand states its bedding is 6A+ grade mulberry silk, OEKO-TEX Standard 100 certified, and includes a swatch for burn-testing.
+
+**What is the return policy?**
+The company offers a 60-day return guarantee plus free shipping, according to its site.
+
+**Where can I find more verified discount codes?**
+See all verified codes on the [ThriveTools discount-codes page](/discount-codes).
+
+---
+
+### 9. Slug: `/blog/havn-by-lambs-discount-code`
+Title: `Havn by Lambs Discount Code 2026: EMF-Blocking Apparel Discount Guide`
+Code: link-only (no code string — discount applies automatically via the link; URL carries the referral) — href: `https://snwbl.io/lambs/EDEN50761`
+
+BODY:
+
+Havn by Lambs' current ThriveTools offer is **link-only** — there is no code to type. Click the link below and the discount applies automatically when you shop. [CTA button: Shop Havn by Lambs — discount applies automatically](https://snwbl.io/lambs/EDEN50761)
+
+Havn (formerly Lambs) makes EMF-blocking apparel woven with silver fibers. The hero product is the WaveStopper Boxer Brief, designed for people who carry phones in their pockets: a 360° silver lining the company claims blocks over 99.7% of wireless EMF radiation, with published independent lab test results to back it.
+
+## What Havn by Lambs sells
+
+Everyday apparel with EMF protection built in: the WaveStopper boxer briefs, beanies, and other basics. The WaveStopper fabric blends 53% cotton, 42% silver, and 5% polyester — the silver acts like a Faraday-cage barrier while keeping the garment wearable. All fabrics are OEKO-TEX Standard 100 certified.
+
+## What to buy
+
+- **WaveStopper Boxer Briefs**: the flagship — EMF-blocking underwear for phone-in-pocket exposure. Pricing varies by pack/brand tier.
+- **EMF beanie**: head-level protection in the same silver-fiber fabric.
+- The full range spans roughly $29–$349 across products.
+
+## Why it stands out
+
+Three things: the silver-fiber WaveStopper construction (53% cotton / 42% silver / 5% polyester) with a 99.7% blocking claim backed by published lab tests, naturally antimicrobial and anti-odor properties from the silver content (no nanoparticles used), and OEKO-TEX Standard 100 certification across fabrics.
+
+## How the Havn by Lambs discount works (no code needed)
+
+1. Click the ThriveTools link above (the URL carries the ThriveTools referral).
+2. Shop and add items to your cart.
+3. The discount applies automatically — there is no code to enter at checkout.
+
+## Havn by Lambs discount FAQ
+
+**Is there a Havn by Lambs discount code?**
+No code is needed. The current offer is link-only — shop through the ThriveTools link and the discount applies automatically.
+
+**How does silver fabric block EMF?**
+The silver fibers form a conductive barrier (Faraday-cage-like) that the company claims blocks over 99.7% of wireless EMF radiation, per published independent lab tests.
+
+**Will it interfere with my phone?**
+The blocking is localized to the garment area (e.g., the boxer lining) — it doesn't wrap your phone, so normal device use is unaffected.
+
+**Who is this for?**
+Primarily people concerned about phone-in-pocket EMF exposure who want protection built into everyday underwear rather than a separate device.
+
+**Where can I find more verified wellness-tech discount codes?**
+See all verified codes on the [ThriveTools discount-codes page](/discount-codes).
+
+---
+
+### Technical constraints
+
+- Register all 9 routes ABOVE the catch-all 404 route in every route file that lists blog routes (client/src/App.tsx, ssr-routes.ts, entry-server.tsx, shared/site-routes.ts) — no post may ever render the 404 page.
+- Follow the exact component/data pattern of the existing `*-discount-code` posts (same card layout, same "Read Full Review" index behavior on /blog).
+- Production build must pass with 0 errors.
+- Do not touch existing posts, the /discount-codes page, or the sitemap logic (it picks up new routes automatically).
+- After the build passes: save everything and STOP. Do not publish, do not deploy.
+
+=====================================================================
+PHASE 6 — BIOHACKING PILLAR PAGE (/biohacking-discount-codes)
+=====================================================================
+# Replit prompt — New pillar page: /biohacking-discount-codes (save-only, do NOT publish)
+
+
+## Why this page exists
+
+Search results for "biohacking discount codes" are currently topped by small personal sites (a one-page list on a personal blog). ThriveTools already has a /discount-codes hub and 30+ brand-guide posts — this page consolidates the biohacking-relevant brands into one exact-match pillar page so it can outrank them. Same playbook can later be repeated for /longevity-discount-codes and /wellness-discount-codes — but this task is ONLY the biohacking page.
+
+## TASK — Create the page at route `/biohacking-discount-codes`
+
+First check that this route does not already exist anywhere in the codebase (App.tsx, ssr-routes.ts, entry-server.tsx, shared/site-routes.ts). The new route MUST be registered above the 404 catch-all in all four route files — no page on this site may ever show a 404. Production build must pass with 0 errors.
+
+### Content source (strict)
+
+- Pull every brand card from the EXISTING /discount-codes data file. Do not invent codes, discounts, links, or brand descriptions. Reuse the exact codes, affiliate hrefs, and copy already live on /discount-codes.
+- Feature ONLY brands that fit "biohacking / longevity tech": red light therapy (Joovv, Mito Red Light, RedTherapy, VieLight, Lumebox), PEMF (Omnipemf), cold plunge (BlueCubeBaths), breathwork (Oxygen Advantage), neurotech (Neurosity, Muse Headband, NeuroVizr), DNA/longevity analytics (SelfDecode), grounding (EarthRunners, Earthing Harmony), longevity supplements (IM8, Bioptimizers, Timeline Mitopure, EnergyBits, Organika, Hyperion Herbs, Just Thrive, Equip Foods, AquaOmega). If a brand is missing a code or link in the data file, show the card WITHOUT a code claim — never invent one.
+- Group cards under H2 sections: Red Light Therapy, Cold & Heat Recovery, Sleep & Nervous System, Brain & Neurotech, Longevity Supplements, Grounding & EMF.
+
+### SEO requirements (strict)
+
+- `<title>`: "Biohacking Discount Codes (2026) — Red Light, Longevity Tech & Supplements | ThriveTools" (keep under ~60 characters if possible; prioritize keeping the exact phrase "Biohacking Discount Codes" at the start).
+- Meta description: include the exact phrases "biohacking discount codes", "red light therapy", and "longevity".
+- H1: "Biohacking Discount Codes (2026)" — the exact keyword must appear in the H1.
+- Opening paragraph: 2–3 sentences, first-person, in my voice, containing "biohacking discount codes" and "longevity" naturally. State that every code is checked and updated monthly, and that I only list brands I partner with or can recommend.
+- Affiliate disclosure near the top (same wording as other pages): "ThriveTools is an affiliate partner of the brands on this page. We may earn a commission on purchases made through links on this page, at no extra cost to you."
+- FAQ section (AEO Q&A format, matching the style of the brand-guide posts) answering:
+  1. What are the best biohacking discount codes right now? (point to the page's curated list; name 3–4 flagship brands with their codes from the data file)
+  2. How do I use a biohacking discount code at checkout? (generic step-by-step)
+  3. Are these biohacking codes still valid? (yes — checked and updated monthly; page shows "Active [Month Year]")
+  4. What counts as biohacking? (one concise definitional paragraph for AI-answer extraction: red light therapy, cold exposure, PEMF, neurotech, longevity supplements)
+  5. Do you add new biohacking brands? (yes — only brands I partner with; suggest contacting me)
+- Add FAQ schema markup matching the pattern used on the brand-guide posts. Add Offer/ItemList structured data for the brand list if the codebase already has a pattern for it on /discount-codes.
+- Internal links: every brand card must link to its brand-guide post where one exists (use the existing post URLs — do not guess slugs; look them up in the route files). Add a prominent link back up to /discount-codes ("See all 40+ discount codes"). Also add a link from /discount-codes to this new page (e.g., a "Biohacking discount codes →" section link) — this internal link is important for rankings; do it in this same task.
+- "Active [Month Year]" freshness label at the top, same style as /discount-codes.
+- Images: reuse brand images already in the project (same sources as /discount-codes). No new external hotlinks.
+- No medical claims. No invented discounts, percentages, or expiry dates. No keyword stuffing — the exact phrase "biohacking discount codes" should appear in title, H1, intro, one H2, and the FAQ — not in every paragraph.
+
+### Verification before finishing
+
+- `npm run build` (or the project's build command) passes with 0 errors.
+- New route renders in the Replit preview with no 404, all brand cards show, all affiliate hrefs match the live /discount-codes page exactly.
+- List the final title tag, meta description, and H1 in your summary so I can verify them.
+
+=====================================================================
+PHASE 7 — SCHEMA MARKUP (JSON-LD, last)
+=====================================================================
+# Replit Agent prompt — structured data (schema.org) for discount-code visibility
+
+
+---
+
+## Task: add JSON-LD structured data for rich search results
+
+**Site:** thrivetools.co (this Replit project). **Do not publish or deploy.** Make the code changes, run a production build, fix any errors, and save. I will publish myself.
+
+**Why:** I want my discount codes eligible for rich results (offer/FAQ snippets) on Google, Bing, and other search engines. This change must not alter anything visitors see — JSON-LD only, injected into `<head>` or before `</body>`.
+
+### 1. `/discount-codes` page — ItemList of Offers
+
+Find the component/template that renders the `/discount-codes` page and the data module it reads brand/code/deal data from (that data module is the ONLY source of truth for codes, links, and discount text — do not hardcode values from anywhere else).
+
+Emit one JSON-LD block of type `ItemList` where each `item` is an `Offer`:
+- `position`: the brand's order on the page (1-based)
+- `name`: e.g. "Bioptimizers discount code — 10% off"
+- `url`: the same outbound affiliate href the page uses for that brand
+- `description`: plain text combining the discount and the code, e.g. "Use code BIOptimizers10 at checkout to save 10% on Bioptimizers." For link-only deals (no code string), describe the deal and "discount applies automatically via the link."
+- `availability`: "https://schema.org/InStock"
+
+Include all 40 brands exactly as listed on the page. Validate the JSON-LD parses (no trailing commas, proper escaping of quotes in descriptions).
+
+### 2. AEO blog posts with FAQ sections — FAQPage
+
+For every route under `/blog/*-discount-code` (and `/blog/supplement-discount-codes-faq`) that renders a visible FAQ section, emit a JSON-LD block of type `FAQPage` whose `mainEntity` array contains each rendered question and its full rendered answer text (Question/name + Answer/text). Pull the Q&A from the same data/components that render the visible FAQ — do not rewrite or invent questions.
+
+If a post has no FAQ section, skip it (do not add an empty FAQPage).
+
+### 3. Constraints
+
+- JSON-LD must be valid; the production build must pass with 0 errors.
+- No visible page changes: no new text, no layout shifts, no new links.
+- Do not duplicate schema: exactly one ItemList block on `/discount-codes`, at most one FAQPage block per post.
+- Keep the existing affiliate disclosure and bylines untouched.
+- After the build passes: save everything and STOP. Do not publish, do not deploy.

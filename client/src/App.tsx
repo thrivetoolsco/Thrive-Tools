@@ -7,6 +7,7 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import NotFound from "@/pages/not-found";
 import Home from "@/pages/Home";
 const Discounts = lazy(() => import("@/pages/Discounts"));
+const BiohackingDiscountCodes = lazy(() => import("@/pages/BiohackingDiscountCodes"));
 const About = lazy(() => import("@/pages/About"));
 const QuantumHealing = lazy(() => import("@/pages/QuantumHealing"));
 const PersonalizedGuidance = lazy(() => import("@/pages/PersonalizedGuidance"));
@@ -280,6 +281,7 @@ function Router() {
         <Route path="/events" component={Events} />
         <Route path="/contact" component={Contact} />
         <Route path="/discount-codes" component={Discounts} />
+        <Route path="/biohacking-discount-codes" component={BiohackingDiscountCodes} />
         <Route path="/retreats-workshops" component={Retreats} />
         <Route
           path="/retreats-workshops/blossoming-bliss"

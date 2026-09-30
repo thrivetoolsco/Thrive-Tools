@@ -32,6 +32,7 @@ export const staticRoutes: StaticRoute[] = [
   { path: "/", changefreq: "weekly", priority: 1.0 },
   { path: "/blog", changefreq: "weekly", priority: 0.9 },
   { path: "/discount-codes", changefreq: "weekly", priority: 0.9 },
+  { path: "/biohacking-discount-codes", changefreq: "monthly", priority: 0.8, lastmod: "2026-09-30" },
   { path: "/about", changefreq: "monthly", priority: 0.7 },
   { path: "/contact", changefreq: "monthly", priority: 0.5 },
   { path: "/breathwork", changefreq: "monthly", priority: 0.7 },
