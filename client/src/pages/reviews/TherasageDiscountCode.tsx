@@ -83,7 +83,7 @@ export default function TherasageDiscountCode() {
         </figure>
         <div className="flex flex-wrap items-center gap-3">
           <Badge className="bg-[#c4622d]/15 text-[#8b3a1a] border-[#c4622d]/25">Discount Codes</Badge>
-          <span className="text-sm text-black/50">September 2026</span>
+          <span className="text-sm text-black/50">October 2026</span>
         </div>
 
         <p className="text-lg leading-relaxed text-black/80">
