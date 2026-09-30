@@ -35,7 +35,7 @@ const hubFaqs = [
   },
   {
     q: "Which categories does ThriveTools cover?",
-    a: "Vitamins and supplements, longevity technology, ethical clothing, non-toxic cookware, and clean beauty — 43 brands in total, all listed on the [discount-codes page](/discount-codes).",
+    a: "Vitamins and supplements, longevity technology, ethical clothing, non-toxic cookware, and clean beauty — 44 brands in total, all listed on the [discount-codes page](/discount-codes).",
   },
   {
     q: "Which supplement brands have discount codes?",

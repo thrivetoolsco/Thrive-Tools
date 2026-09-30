@@ -198,6 +198,12 @@ export const healthTech: DiscountItem[] = [
     blogHref: "/emr-tek-discount-code",
   },
   {
+    name: "Therasage",
+    description: "Portable saunas, PEMF and infrared mats, light-powered oral care, and vegan skin brushes.",
+    code: "THRIVETOOLS",
+    url: "https://therasage.com/discount/THRIVETOOLS?rfsn=9353405.0f95ac3&utm_source=refersion&utm_medium=affiliate&utm_campaign=9353405.0f95ac3",
+  },
+  {
     name: "Oxygen Advantage",
     description: "The most evidence based breathwork courses available online, plus MyoTape for nasal breathing training. Completely changed how I breathe.",
     code: "THRIVETOOLS",
