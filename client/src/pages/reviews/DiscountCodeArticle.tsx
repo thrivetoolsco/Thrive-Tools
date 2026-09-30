@@ -3,6 +3,7 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Check, ExternalLink, Tag, User } from "lucide-react";
 import { Link } from "wouter";
+import FaqJsonLd from "@/components/FaqJsonLd";
 
 export type DiscountFaq = { q: string; a: string };
 
@@ -18,6 +19,7 @@ export type DiscountCodeArticleProps = {
   steps: string[];
   tips: string[];
   faqs: DiscountFaq[];
+  includeFaqSchema?: boolean;
 };
 
 function SectionHeader({
@@ -50,6 +52,7 @@ export default function DiscountCodeArticle({
   steps,
   tips,
   faqs,
+  includeFaqSchema = false,
 }: DiscountCodeArticleProps) {
   const linkOnly = !code;
 
@@ -70,6 +73,7 @@ export default function DiscountCodeArticle({
       backLabel="Blog"
       backHref="/blog"
     >
+      {includeFaqSchema && <FaqJsonLd faqs={faqs} />}
       <article className="space-y-10">
         <div className="card-glass rounded-2xl overflow-hidden" data-testid={`img-hero-${slug}`}>
           <img loading="lazy" decoding="async" src={heroImg} alt={imageAlt} className="w-full h-auto object-cover" />

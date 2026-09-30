@@ -1,0 +1,114 @@
+# Replit prompt — Comparison post: Best Brain & Neurotech Tools 2026 (save-only, do NOT publish)
+
+Paste this entire prompt into the thrivetools.co Replit project. **SAVE-ONLY: do not publish, do not deploy.** I publish everything myself after review.
+
+## Why this post exists
+
+This is a brain/neurotech COMPARISON for buyers deciding which brain tool to get — not a codes roundup and not a brand guide. Do not duplicate the angle of the per-brand discount-code posts. Link to /discount-codes where relevant.
+
+Only include brands I am already partnered with (affiliate relationship established): Muse Headband, Neurosity, NeuroVizr, VieLight Neuro. Every brand must have a working affiliate href and code — pull the code string and href for each brand from the project's /discount-codes data module (the single source of truth). If they conflict with anything in this prompt, the data module wins and you must flag the conflict instead of guessing.
+
+KNOWN ISSUE — Neurosity: my affiliate URL is correct, but the vendor's landing page has rendered blank in the past (vendor-side issue, not a ThriveTools routing defect). Test the Neurosity link as a visitor would before finalizing. If it still renders blank, include the brand anyway with the verified affiliate link and note the status in your final report — do not invent a different URL.
+
+## TASK — Create the post at route `/blog/best-brain-neurotech-tools-2026`
+
+First check that this route does not already exist anywhere in the codebase. Register it ABOVE the 404 catch-all in all four route files (`client/src/App.tsx`, ssr-routes, entry-server, shared/site-routes). Production build must pass with 0 errors.
+
+Render with the existing blog post component format. Category tag: `Comparisons`. Date: September 2026. Keep the site's existing byline format untouched.
+
+### SEO
+
+- `<title>`: "Best Brain Training Devices 2026 (Compared): Muse, Neurosity & More" — keep the exact phrase "Best Brain Training Devices" at the start; keep under ~60 characters if possible.
+- Meta description: include "best brain training devices", "Muse headband", "neurotech", and "discount codes".
+- H1: "Best Brain & Neurotech Tools 2026, Compared".
+- Affiliate disclosure near the top (same wording as other posts).
+- FAQ section with FAQPage JSON-LD, matching the pattern on the other posts.
+- Internal links: link each brand name to its brand-guide post where one exists (look up real slugs in the route files — do not guess); link once to /discount-codes.
+
+### Content rules (strict)
+
+- First-person, in my voice (science-backed, 14 years of personal research). No medical claims — use "supports" language, never treats/heals/cures. For brain devices especially: describe what the device DOES (senses, stimulates, gives feedback), never promise cognitive outcomes.
+- Picks ("best for X") must be based on device CATEGORY (meditation feedback vs BCI vs light-sound vs transcranial light), which is factual — not on invented efficacy claims.
+- Do NOT invent discount percentages, prices, or specs. Pull codes/hrefs from the data module.
+
+---
+
+## ARTICLE BODY (render as written, with H1/H2s as marked)
+
+# Best Brain & Neurotech Tools 2026, Compared
+
+I run ThriveTools.co, a science-backed wellness and biohacking platform built from 14 years of personal research. The brain category is where biohacking gets most interesting — and most confusing. These are the neurotech tools from brands I actually partner with, organized by what they do. Every one below has a verified discount code or affiliate link on my [discount codes page](/discount-codes).
+
+## The short answer
+
+- **Best meditation training:** Muse Headband — brain-sensing with real-time feedback.
+- **Best brain-computer interface:** Neurosity — for developers and hackers building with brain data.
+- **Best light-and-sound sessions:** NeuroVizr — guided light and sound experiences.
+- **Best transcranial photobiomodulation:** VieLight Neuro — light applied to the head, backed by published clinical research.
+
+If you only want the codes without the comparison, they're listed at the bottom — or keep reading for the breakdown.
+
+## Comparison table
+
+| Tool | Category | Best for | Discount |
+|---|---|---|---|
+| Muse Headband | Brain-sensing meditation | Learning to meditate with feedback | (from data module) |
+| Neurosity | Brain-computer interface | Developers, hackers, quantified-self | (from data module — see the known-issue note in the task section) |
+| NeuroVizr | Light & sound | Guided relaxation and mental-state sessions | (from data module) |
+| VieLight Neuro | Transcranial photobiomodulation | Brain-focused light protocols | (from data module) |
+
+For current prices, check each brand's site via the links below — prices change often and I won't publish a number I can't keep current.
+
+## Best meditation training: Muse Headband
+
+Muse is a brain-sensing headband that gives real-time feedback during meditation — it detects when your mind wanders and cues you back. Meditation is the highest-ROI brain practice there is, and the reason most people quit is they can't tell if they're doing it right. Muse solves that specific problem. Code and affiliate link from the data module.
+
+## Best brain-computer interface: Neurosity
+
+Neurosity makes a brain-computer interface headset aimed at developers and the quantified-self crowd — reading brain signals you can build on. This is the tinkerer's pick: if you want raw brain data and an SDK rather than a guided wellness experience, this is the category of one on my list. Code and affiliate link from the data module (see the known-issue note in the task section — test the link as a visitor).
+
+## Best light-and-sound sessions: NeuroVizr
+
+NeuroVizr delivers guided light-and-sound sessions — a passive experience compared to Muse's active training. If you want the mental-state shift without learning a practice, this is the format. Code and affiliate link from the data module.
+
+## Best transcranial photobiomodulation: VieLight Neuro
+
+VieLight applies near-infrared light to the head — transcranial photobiomodulation — aimed at concussion recovery, cognitive decline, and deepened meditation states, backed by published clinical research. The most research-grounded pick on this list, and a fundamentally different mechanism from the other three. Code and affiliate link from the data module.
+
+## How to choose: pick your relationship to the practice
+
+- **Want to learn meditation properly:** Muse (active training with feedback).
+- **Want brain data to build on:** Neurosity (BCI for hackers).
+- **Want a passive session:** NeuroVizr (light and sound) or VieLight (transcranial light).
+- **Want the research-backed option:** VieLight Neuro.
+
+Active vs passive is the real divide here. Muse trains you; the other three do something to/for you. Know which one you'll actually use.
+
+## Discount codes — the complete list
+
+Every code below is verified on my [discount codes page](/discount-codes), which I update monthly:
+
+- Muse Headband: (from data module)
+- Neurosity: (from data module)
+- NeuroVizr: (from data module)
+- VieLight Neuro: (from data module)
+
+## FAQ
+
+**What is the best brain training device?**
+It depends on what you want. Muse trains meditation with real-time brain feedback; Neurosity is a brain-computer interface for developers; NeuroVizr offers guided light-and-sound sessions; VieLight Neuro uses transcranial photobiomodulation backed by published research. All are brands I partner with.
+
+**Muse vs VieLight — which should I get?**
+Different mechanisms. Muse senses your brain activity and trains meditation through feedback. VieLight applies near-infrared light to the head. One trains a skill; the other delivers a modality. Many people interested in brain optimization end up curious about both.
+
+**Do these devices actually work?**
+I describe what each device does and let the research speak — VieLight, for example, points to published clinical research. What I verify myself: these are real companies with real products and real discount codes, all kept current on my discount codes page.
+
+**Are these neurotech discount codes still valid?**
+Yes — I check and update every code monthly. The current verified codes are listed in the table above and on my discount codes page.
+
+---
+
+## End of article body
+
+After the build passes: save everything and STOP. In your final report, list: the new route, the <title> and H1, which code/href values you pulled from the data module for each brand, the result of the visitor-test on the Neurosity link, and any conflicts found between this prompt and the data module. Do NOT publish.

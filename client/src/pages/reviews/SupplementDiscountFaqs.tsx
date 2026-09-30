@@ -1,6 +1,7 @@
 import PageLayout from "@/components/PageLayout";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
+import FaqJsonLd from "@/components/FaqJsonLd";
 import { ExternalLink, Tag } from "lucide-react";
 import { Link } from "wouter";
 import im8Image from "@assets/im8-faq-hero.jpg";
@@ -132,6 +133,87 @@ function Answer({ question, children }: { question: string; children: React.Reac
 function SupplementDiscountFaq({ brand: post }: { brand: BrandFaq }) {
   const { brand, slug, title, code, href, linkText, oneLiner, offerDesc, image, imageAlt } = post;
   const link = <a href={href} target="_blank" rel="noopener noreferrer" className="text-[#8b3a1a] underline">{linkText}</a>;
+  const faqItems = code
+    ? [
+        {
+          question: `Does ${brand} offer discount codes?`,
+          schemaAnswer: `Yes. The current verified ${brand} code is ${code}. Use it at checkout on the official store: ${linkText}.`,
+          answer: <>Yes. The current verified {brand} code is <strong>{code}</strong>. Use it at checkout on the official store: {link}</>,
+        },
+        {
+          question: `What is the best ${brand} discount code right now?`,
+          schemaAnswer: `${code} is the verified code currently listed for ${brand}.`,
+          answer: <><strong>{code}</strong> is the verified code currently listed for {brand}.</>,
+        },
+        {
+          question: `How do I apply a ${brand} promo code?`,
+          schemaAnswer: `1. Click the verified ${brand} link above. 2. Add products to your cart. 3. Enter ${code} in the discount-code box at checkout. 4. Confirm the discount applied before paying.`,
+          answer: (
+            <ol className="list-decimal pl-6 space-y-1">
+              <li>Click the verified {brand} link above.</li>
+              <li>Add products to your cart.</li>
+              <li>Enter <strong>{code}</strong> in the discount-code box at checkout.</li>
+              <li>Confirm the discount applied before paying.</li>
+            </ol>
+          ),
+        },
+        {
+          question: `Why isn't my ${brand} code working?`,
+          schemaAnswer: `Check the spelling and capitalization of ${code}, confirm your items are eligible, and make sure you're on ${brand}'s official store — not a marketplace listing.`,
+          answer: <>Check the spelling and capitalization of <strong>{code}</strong>, confirm your items are eligible, and make sure you're on {brand}'s official store — not a marketplace listing.</>,
+        },
+        {
+          question: `Can I stack ${brand} discount codes?`,
+          schemaAnswer: "Most stores accept only one discount code per order. If you have more than one, use the one that saves you the most.",
+          answer: <>Most stores accept only one discount code per order. If you have more than one, use the one that saves you the most.</>,
+        },
+      ]
+    : [
+        {
+          question: `Does ${brand} have a discount code?`,
+          schemaAnswer: `No code is needed. ${offerDesc} applies automatically when you shop through the verified link: ${linkText}.`,
+          answer: <>No code is needed. {offerDesc} applies automatically when you shop through the verified link: {link}</>,
+        },
+        {
+          question: `How do I get the ${brand} discount?`,
+          schemaAnswer: "Click the verified link above and shop as normal — the discount is attached to the link and applies at checkout. There's nothing to type.",
+          answer: <>Click the verified link above and shop as normal — the discount is attached to the link and applies at checkout. There's nothing to type.</>,
+        },
+        {
+          question: `Why didn't the ${brand} discount apply?`,
+          schemaAnswer: "Make sure you clicked through from the ThriveTools link (the discount is tied to it) and that the items in your cart are eligible.",
+          answer: <>Make sure you clicked through from the ThriveTools link (the discount is tied to it) and that the items in your cart are eligible.</>,
+        },
+        {
+          question: `Can I combine the ${brand} link discount with a promo code?`,
+          schemaAnswer: "Link-based discounts apply automatically, so there's no code box to fill. The link offer is the verified deal.",
+          answer: <>Link-based discounts apply automatically, so there's no code box to fill. The link offer is the verified deal.</>,
+        },
+      ];
+  faqItems.push(
+    {
+      question: `Does ${brand} offer free shipping?`,
+      schemaAnswer: `Shipping terms change over time — check the shipping information on ${brand}'s official site at checkout.`,
+      answer: <>Shipping terms change over time — check the shipping information on {brand}'s official site at checkout.</>,
+    },
+    {
+      question: `Does ${brand} have a money-back guarantee or returns policy?`,
+      schemaAnswer: `Check ${brand}'s official site for their current guarantee and returns terms before you buy.`,
+      answer: <>Check {brand}'s official site for their current guarantee and returns terms before you buy.</>,
+    },
+  );
+  if (!code) {
+    faqItems.push({
+      question: "Is it safe to buy through the ThriveTools link?",
+      schemaAnswer: `Yes. The link takes you to ${brand}'s official store. ThriveTools may earn a commission on your purchase at no extra cost to you.`,
+      answer: <>Yes. The link takes you to {brand}'s official store. ThriveTools may earn a commission on your purchase at no extra cost to you.</>,
+    });
+  }
+  faqItems.push({
+    question: "Where can I find all verified ThriveTools codes?",
+    schemaAnswer: "On the ThriveTools discount-codes page — the source of truth, updated whenever codes change.",
+    answer: <>On the <Link href="/discount-codes" className="text-[#8b3a1a] underline">ThriveTools discount-codes page</Link> — the source of truth, updated whenever codes change.</>,
+  });
   return (
     <PageLayout
       showShare
@@ -171,60 +253,11 @@ function SupplementDiscountFaq({ brand: post }: { brand: BrandFaq }) {
         </div>
         <section className="space-y-4">
           <h2 className="font-display text-2xl font-bold text-black">{brand} Discount Code FAQ</h2>
-          {code ? (
-            <>
-              <Answer question={`Does ${brand} offer discount codes?`}>
-                Yes. The current verified {brand} code is <strong>{code}</strong>. Use it at checkout on the official store: {link}.
-              </Answer>
-              <Answer question={`What is the best ${brand} discount code right now?`}>
-                <strong>{code}</strong> is the verified code currently listed for {brand}.
-              </Answer>
-              <Answer question={`How do I apply a ${brand} promo code?`}>
-                <ol className="list-decimal pl-6 space-y-1">
-                  <li>Click the verified {brand} link above.</li>
-                  <li>Add products to your cart.</li>
-                  <li>Enter <strong>{code}</strong> in the discount-code box at checkout.</li>
-                  <li>Confirm the discount applied before paying.</li>
-                </ol>
-              </Answer>
-              <Answer question={`Why isn't my ${brand} code working?`}>
-                Check the spelling and capitalization of <strong>{code}</strong>, confirm your items are eligible, and make sure you're on {brand}'s official store — not a marketplace listing.
-              </Answer>
-              <Answer question={`Can I stack ${brand} discount codes?`}>
-                Most stores accept only one discount code per order. If you have more than one, use the one that saves you the most.
-              </Answer>
-            </>
-          ) : (
-            <>
-              <Answer question={`Does ${brand} have a discount code?`}>
-                No code is needed. {offerDesc} applies automatically when you shop through the verified link: {link}.
-              </Answer>
-              <Answer question={`How do I get the ${brand} discount?`}>
-                Click the verified link above and shop as normal — the discount is attached to the link and applies at checkout. There's nothing to type.
-              </Answer>
-              <Answer question={`Why didn't the ${brand} discount apply?`}>
-                Make sure you clicked through from the ThriveTools link (the discount is tied to it) and that the items in your cart are eligible.
-              </Answer>
-              <Answer question={`Can I combine the ${brand} link discount with a promo code?`}>
-                Link-based discounts apply automatically, so there's no code box to fill. The link offer is the verified deal.
-              </Answer>
-            </>
-          )}
-          <Answer question={`Does ${brand} offer free shipping?`}>
-            Shipping terms change over time — check the shipping information on {brand}'s official site at checkout.
-          </Answer>
-          <Answer question={`Does ${brand} have a money-back guarantee or returns policy?`}>
-            Check {brand}'s official site for their current guarantee and returns terms before you buy.
-          </Answer>
-          {!code && (
-            <Answer question="Is it safe to buy through the ThriveTools link?">
-              Yes. The link takes you to {brand}'s official store. ThriveTools may earn a commission on your purchase at no extra cost to you.
-            </Answer>
-          )}
-          <Answer question="Where can I find all verified ThriveTools codes?">
-            On the <Link href="/discount-codes" className="text-[#8b3a1a] underline">ThriveTools discount-codes page</Link> — the source of truth, updated whenever codes change.
-          </Answer>
+          {faqItems.map(({ question, answer }) => (
+            <Answer key={question} question={question}>{answer}</Answer>
+          ))}
         </section>
+        <FaqJsonLd faqs={faqItems.map(({ question, schemaAnswer }) => ({ q: question, a: schemaAnswer }))} />
         <p className="text-sm text-black/50 leading-relaxed"><strong>Affiliate disclosure:</strong> This post contains affiliate links. If you buy through them, I may earn a commission at no extra cost to you.</p>
       </article>
     </PageLayout>

@@ -3,6 +3,7 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { ExternalLink, Tag, Check, User } from "lucide-react";
 import { Link } from "wouter";
+import { Helmet } from "react-helmet-async";
 import neurosityHeroImg from "@assets/neurosity-discount-code-hero_1790058294771.jpg";
 
 
@@ -40,6 +41,15 @@ const faqs = [
   },
 ];
 
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: faqs.map(({ q, a }) => ({
+    "@type": "Question",
+    name: q,
+    acceptedAnswer: { "@type": "Answer", text: a },
+  })),
+};
 
 export default function NeurosityDiscountCode() {
   return (
@@ -60,6 +70,9 @@ export default function NeurosityDiscountCode() {
       backLabel="Blog"
       backHref="/blog"
     >
+      <Helmet>
+        <script type="application/ld+json">{JSON.stringify(faqSchema)}</script>
+      </Helmet>
       <article className="space-y-10">
         <div className="card-glass rounded-2xl overflow-hidden" data-testid="img-hero-neurosity-discount">
           <img loading="lazy" decoding="async" src={neurosityHeroImg} alt="Neurosity Crown brain training device" className="w-full h-auto object-cover" />

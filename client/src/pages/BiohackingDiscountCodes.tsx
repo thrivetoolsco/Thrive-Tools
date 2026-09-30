@@ -11,7 +11,7 @@ const allOffers = [...healthTech, ...vitaminsSupplements, ...ethicalClothing];
 // Names here must match the main /discount-codes cards exactly. This page only selects
 // and groups those cards; it never maintains a second copy of codes or affiliate URLs.
 const sections = [
-  { title: "Red Light Therapy", names: ["Joovv", "Mito Red Light", "RedTherapy", "VieLight Neuro"] },
+  { title: "Red Light Therapy", names: ["Joovv", "Mito Red Light", "RedTherapy", "VieLight Neuro", "Lumebox"] },
   { title: "Cold & Heat Recovery", names: ["BlueCubeBaths"] },
   { title: "Sleep & Nervous System", names: ["Omnipemf", "Oxygen Advantage"] },
   { title: "Brain & Neurotech", names: ["Neurosity", "Muse Headband", "NeuroVizr", "Self Decode"] },
@@ -25,6 +25,7 @@ const guidePaths: Record<string, string> = {
   "Mito Red Light": "/blog/mito-red-light-discount-code",
   RedTherapy: "/blog/redtherapy-discount-code",
   "VieLight Neuro": "/product-reviews/vielight-neuro-review",
+  Lumebox: "/lumebox-discount-code",
   BlueCubeBaths: "/blog/bluecubebaths-discount-code",
   Omnipemf: "/blog/omnipemf-discount-code",
   "Oxygen Advantage": "/blog/oxygen-advantage-discount-code",
@@ -144,15 +145,6 @@ export default function BiohackingDiscountCodes() {
                 if (!item) throw new Error(`Missing /discount-codes card: ${name}`);
                 return <OfferCard key={name} item={item} />;
               })}
-              {section.title === "Red Light Therapy" && (
-                <div className="card-glass rounded-2xl p-6 flex flex-col gap-4 justify-between">
-                  <div>
-                    <h3 className="font-display text-xl font-bold text-[#3d1a28]">Lumebox</h3>
-                    <p className="mt-2 text-sm text-[#3d1a28]/65">Brand guide only — no Lumebox offer is listed in the main discount-code directory.</p>
-                  </div>
-                  <Link href="/lumebox-discount-code" className="text-sm font-semibold text-[#8b3a1a] underline underline-offset-2">Read the Lumebox guide</Link>
-                </div>
-              )}
             </div>
           </section>
         ))}

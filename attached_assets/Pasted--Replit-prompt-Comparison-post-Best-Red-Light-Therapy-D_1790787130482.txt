@@ -1,0 +1,130 @@
+# Replit prompt — Comparison post: Best Red Light Therapy Devices 2026 (save-only, do NOT publish)
+
+Paste this entire prompt into the thrivetools.co Replit project. **SAVE-ONLY: do not publish, do not deploy.** I publish everything myself after review.
+
+## Why this post exists
+
+The blog already has "Best Red Light Therapy Discount Codes 2026" — that post is about CODES. This is a different post: a device COMPARISON for buyers deciding which device to get. Do not duplicate the codes post's angle. Link to it once where relevant ("looking for just the discount codes? Start here").
+
+Only include brands I am already partnered with (affiliate relationship established): Joovv, Mito Red Light, RedTherapy, Lumebox, VieLight, EMR-TEK. Every brand below must have a working affiliate href and code — pull the code string and href for each brand from the project's /discount-codes data module (the single source of truth). Where this prompt gives an exact code/href, verify it against the data module; if they conflict, the data module wins and you must flag the conflict in your final report instead of guessing.
+
+## TASK — Create the post at route `/blog/best-red-light-therapy-devices-2026`
+
+First check that this route does not already exist anywhere in the codebase. Register it ABOVE the 404 catch-all in all four route files (`client/src/App.tsx`, ssr-routes, entry-server, shared/site-routes). Production build must pass with 0 errors.
+
+Render with the existing blog post component format. Category tag: `Comparisons`. Date: September 2026. Keep the site's existing byline format untouched.
+
+### SEO
+
+- `<title>`: "Best Red Light Therapy Devices 2026 (Compared): Panels, Portables & More" — keep the exact phrase "Best Red Light Therapy Devices" at the start; keep under ~60 characters if possible.
+- Meta description: include "best red light therapy devices", "Joovv", "Lumebox", and "discount codes".
+- H1: "Best Red Light Therapy Devices 2026, Compared".
+- Affiliate disclosure near the top (same wording as other posts).
+- FAQ section with FAQPage JSON-LD, matching the pattern on the other posts.
+- Internal links: link each device name to its brand-guide post where one exists (look up real slugs in the route files — do not guess); link once to /discount-codes and once to the "Best Red Light Therapy Discount Codes 2026" codes roundup.
+
+### Content rules (strict)
+
+- First-person, in my voice (science-backed, 14 years of personal research). No medical claims beyond the brands' own stated uses — use "supports" language, never treats/heals/cures.
+- The comparison table must only state what is verified below or in the /discount-codes data module. Do NOT invent wavelengths, irradiances, prices, or specs for any device. Where a spec isn't verified, the table cell says "Check the brand's site for current specs" — never a guessed number.
+- Picks ("best for X") must be based on device FORMAT (panel vs portable vs mask vs transcranial), which is factual — not on invented performance claims.
+
+---
+
+## ARTICLE BODY (render as written, with H1/H2s as marked)
+
+# Best Red Light Therapy Devices 2026, Compared
+
+I run ThriveTools.co, a science-backed wellness and biohacking platform built from 14 years of personal research, and red light therapy is one of the categories I get asked about most. These are the devices from brands I actually partner with — every one below has a verified discount code on my [discount codes page](/discount-codes).
+
+## The short answer
+
+- **Best full-body panels:** Joovv (the most trusted name in the category) and RedTherapy (powerful panels at a competitive price).
+- **Best portable:** Lumebox — a handheld device you can travel with (I own one).
+- **Best targeted mask:** Mito Red Light — built for facial recovery and skin.
+- **Best for the brain:** VieLight Neuro — transcranial photobiomodulation, backed by published clinical research.
+- **Also worth knowing:** EMR-TEK — red light devices from a brand I partner with.
+
+If you only want the codes without the comparison, here they are — or keep reading for the breakdown.
+
+## Comparison table
+
+| Device | Format | Best for | Discount code |
+|---|---|---|---|
+| Joovv | Handheld to full-body panels | Full-body sessions, the established pick | THRIVETOOLS (verify against data module) |
+| RedTherapy | Full-body panels | Serious home practice, value | (from data module) |
+| Lumebox | Portable handheld | Travel, skin, joints, recovery on the go | ThriveTools |
+| Mito Red Light | Masks | Targeted facial recovery and skin | (from data module) |
+| VieLight Neuro | Transcranial headset | Brain-focused protocols | (from data module) |
+| EMR-TEK | Red light devices | (from data module) | EDEN17306 (verify against data module) |
+
+For current prices, check each brand's site via the links below — prices change often and I won't publish a number I can't keep current.
+
+## The full-body panels: Joovv vs RedTherapy
+
+**Joovv** is the most trusted name in photobiomodulation — clinical-grade devices ranging from handheld units up to full-body panels. If you want the established category leader with the longest track record, this is it. Use code **THRIVETOOLS** at [joovv.com](https://joovv.com) (verify href against the data module).
+
+**RedTherapy** builds full-body red light panels for serious home practice — powerful, reliable, and competitively priced. If you want a full-body panel without paying the category-leader premium, start here. Code and link from the data module.
+
+**How to choose between them:** both are full-body panels from brands I partner with. Joovv is the safe, established pick; RedTherapy is the value pick. Either way, you're getting a panel rather than a targeted device — which matters because panels cover the whole body in one session instead of one area at a time.
+
+## Best portable: Lumebox
+
+I own a Lumebox, so this one I can speak to directly. It's a portable handheld red light device emitting 660nm red and 850nm near-infrared light — two of the most-studied wavelengths in photobiomodulation research, per the brand. It also states third-party testing of its wavelengths and irradiance, plus EMF and IEC electrical and optical safety standards. The brand notes it is FDA-registered (registered — not the same as FDA approved) and HSA/FSA eligible.
+
+What makes it the portable pick: it fits in a bag, runs on battery, and covers skin, joints, and recovery use cases while traveling. Use code **ThriveTools** at [thelumebox.com](https://thelumebox.com/) checkout (verify href against the data module — use my affiliate link for all Lumebox links).
+
+## Best targeted mask: Mito Red Light
+
+Mito Red Light makes medical-grade red light masks for targeted facial recovery, skin health, and cellular repair. If your goal is face and skin specifically — not full-body sessions — a mask puts the light exactly where you want it. Code and affiliate link from the data module.
+
+## Best for the brain: VieLight Neuro
+
+VieLight is the outlier here: transcranial photobiomodulation — light applied to the head — aimed at concussion recovery, cognitive decline, and deepened meditation states, backed by published clinical research. This is a fundamentally different use case from panels and masks. If your interest is brain and cognition rather than skin or muscle, this is the category of one. Code and affiliate link from the data module.
+
+## Also worth knowing: EMR-TEK
+
+EMR-TEK makes red light therapy devices (alongside UV systems, blue-light glasses, and circadian bulbs). I'm partnered with them — use code **EDEN17306** via my affiliate link (verify href against the data module).
+
+## How to choose: panels vs portable vs targeted
+
+- **Get a panel** (Joovv, RedTherapy) if you want whole-body sessions at home and have the space and budget.
+- **Get a portable** (Lumebox) if you travel, want something for skin and joints on the go, or want to try red light therapy before committing to a panel.
+- **Get a targeted device** (Mito Red Light mask, VieLight headset) if you have one specific goal — face/skin or brain — and don't need full-body coverage.
+- **Wavelengths:** 660nm (red) and 850nm (near-infrared) are the two most-studied wavelengths in photobiomodulation research. Any device you consider should state its wavelengths clearly — if a brand won't tell you the wavelengths, that's your answer.
+
+## Discount codes — the complete list
+
+Every code below is verified on my [discount codes page](/discount-codes), which I update monthly:
+
+- Joovv: **THRIVETOOLS**
+- RedTherapy: (from data module)
+- Lumebox: **ThriveTools**
+- Mito Red Light: (from data module)
+- VieLight: (from data module)
+- EMR-TEK: **EDEN17306**
+
+Looking for codes across all categories, not just red light? My [discount codes page](/discount-codes) covers 40+ brands, and the [Best Red Light Therapy Discount Codes 2026](/blog/best-red-light-therapy-discount-codes-2026) roundup (verify this slug in the route files — use the real one) has the codes-only version.
+
+## FAQ
+
+**What is the best red light therapy device overall?**
+There isn't one overall winner — it depends on the format you need. For full-body panels, Joovv is the most established pick and RedTherapy is the value pick; for portable use, Lumebox; for face and skin, a Mito Red Light mask; for brain-focused protocols, VieLight Neuro. All five are brands I partner with, and all have verified discount codes on my discount codes page.
+
+**Joovv vs Lumebox — which should I get?**
+Different tools. Joovv makes clinical-grade panels (including full-body) for at-home sessions; Lumebox is a portable handheld for travel, skin, and joints. If you want whole-body coverage at home, Joovv. If you want something in your bag, Lumebox (I own one).
+
+**Are these red light therapy discount codes still valid?**
+Yes — I check and update every code monthly. The current verified codes are listed in the table above and on my discount codes page.
+
+**What wavelengths should a red light therapy device have?**
+660nm (red) and 850nm (near-infrared) are the two most-studied wavelengths in photobiomodulation research. Any device worth buying states its wavelengths openly.
+
+**Do I need a full-body panel, or is a portable device enough?**
+A panel covers your whole body in one session; a portable or targeted device treats one area at a time. If your goal is general whole-body use, a panel (Joovv, RedTherapy) is the right format. If your goal is specific — skin, joints, travel — portable (Lumebox) or targeted (Mito Red Light, VieLight) makes more sense.
+
+---
+
+## End of article body
+
+After the build passes: save everything and STOP. In your final report, list: the new route, the <title> and H1, which code/href values you pulled from the data module for RedTherapy, Mito Red Light, VieLight, and EMR-TEK, and any conflicts found between this prompt and the data module. Do NOT publish.

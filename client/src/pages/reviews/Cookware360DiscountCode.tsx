@@ -1,4 +1,5 @@
 import PageLayout from "@/components/PageLayout";
+import FaqJsonLd from "@/components/FaqJsonLd";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { ExternalLink, Tag, Check, User } from "lucide-react";
@@ -60,6 +61,7 @@ export default function Cookware360DiscountCode() {
       backLabel="Blog"
       backHref="/blog"
     >
+      <FaqJsonLd faqs={faqs} />
       <article className="space-y-10">
         <div className="card-glass rounded-2xl overflow-hidden" data-testid="img-hero-cookware360-discount">
           <img loading="lazy" decoding="async" src={cookware360HeroImg} alt="360 Cookware stainless steel cookware" className="w-full h-auto object-cover" />

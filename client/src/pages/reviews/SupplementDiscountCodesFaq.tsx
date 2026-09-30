@@ -3,6 +3,7 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { ExternalLink, Tag, Check, User } from "lucide-react";
 import { Link } from "wouter";
+import { Helmet } from "react-helmet-async";
 
 function SectionHeader({
   eyebrow,
@@ -61,6 +62,16 @@ const faqs = [
   },
 ];
 
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: faqs.map(({ q, a }) => ({
+    "@type": "Question",
+    name: q,
+    acceptedAnswer: { "@type": "Answer", text: a },
+  })),
+};
+
 export default function SupplementDiscountCodesFaq() {
   return (
     <PageLayout
@@ -79,6 +90,9 @@ export default function SupplementDiscountCodesFaq() {
       backHref="/blog"
     >
       <article className="space-y-10">
+        <Helmet>
+          <script type="application/ld+json">{JSON.stringify(faqSchema)}</script>
+        </Helmet>
         <div className="flex flex-wrap gap-3">
           <Badge className="bg-[#c4622d]/15 text-[#8b3a1a] border-[#c4622d]/25">Discount Codes</Badge>
           <Badge className="bg-[#c4622d]/15 text-[#8b3a1a] border-[#c4622d]/25">FAQ Hub</Badge>

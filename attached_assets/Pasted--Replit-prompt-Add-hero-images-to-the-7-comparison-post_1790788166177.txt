@@ -1,0 +1,37 @@
+# Replit prompt — Add hero images to the 7 comparison posts (save-only, do NOT publish)
+
+Paste this into the thrivetools.co Replit project AFTER you have uploaded the 7 hero image files (listed below) into the project. **SAVE-ONLY: do not publish, do not deploy.** I publish everything myself after review.
+
+## The images
+
+I am uploading 7 JPG files. Place them where the project serves public assets (check `public/`, `client/public/`, or `attached_assets/` — use whichever the project already uses for images and be consistent). The files:
+
+1. `hero-red-light.jpg` → post `/blog/best-red-light-therapy-devices-2026`
+2. `hero-supplements.jpg` → post `/blog/best-longevity-supplements-2026`
+3. `hero-recovery.jpg` → post `/blog/best-recovery-tech-2026`
+4. `hero-emf.jpg` → post `/blog/best-emf-protection-2026`
+5. `hero-neurotech.jpg` → post `/blog/best-brain-neurotech-tools-2026`
+6. `hero-non-toxic-home.jpg` → post `/blog/best-non-toxic-home-upgrades-2026`
+7. `hero-wellness-gifts.jpg` → post `/blog/best-wellness-gifts-2026`
+
+If any file is missing from the project when you run this, wire up the ones that exist and list the missing ones in your final report — do not substitute stock or AI-generated replacements on your own.
+
+## TASK
+
+For each of the 7 routes above (verify each route exists in the route files — they were created from my comparison-post prompts):
+
+1. Set the mapped image as the post's hero/featured image, displayed near the top of the article (below the H1 and byline, above the article body), using the same hero-image component/styling the other blog posts use. Do not invent a new layout.
+2. Set the same image as the post's `og:image` meta tag (absolute URL: `https://thrivetools.co/<asset-path>/<filename>`) so it shows when the post is shared on social/Pinterest.
+3. Add a descriptive `alt` attribute per image:
+   - hero-red-light.jpg → "Red light therapy panel and portable device glowing in a home wellness room"
+   - hero-supplements.jpg → "Supplement jars, capsules, green powder and herbs arranged on a stone surface"
+   - hero-recovery.jpg → "Cold plunge tub with steaming ice water on a wooden deck at sunset"
+   - hero-emf.jpg → "Minimalist desk with phone, laptop and EMF protection products in daylight"
+   - hero-neurotech.jpg → "Brain-sensing headband and neurotech devices on a desk" (adjust to match the actual image)
+   - hero-non-toxic-home.jpg → "Non-toxic kitchen with water filter and natural cookware" (adjust to match the actual image)
+   - hero-wellness-gifts.jpg → "Wellness gifts arranged with holiday wrapping" (adjust to match the actual image)
+4. Keep every route registered ABOVE the 404 catch-all in all four route files. Production build must pass with 0 errors.
+
+## Final report
+
+List each route with: hero image wired (yes/no), og:image set (yes/no), and any missing image files. Then save everything and STOP. Do NOT publish.

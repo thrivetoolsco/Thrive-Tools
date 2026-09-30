@@ -1,0 +1,161 @@
+# Replit prompt — Comparison post: Best Longevity Supplements 2026 (save-only, do NOT publish)
+
+Paste this entire prompt into the thrivetools.co Replit project. **SAVE-ONLY: do not publish, do not deploy.** I publish everything myself after review.
+
+## Why this post exists
+
+This is a supplement COMPARISON for buyers deciding what to take — not a codes roundup and not a brand guide. Do not duplicate the angle of the per-brand discount-code posts or the "Supplement Discount Codes FAQ" post. Link to that FAQ post once where relevant.
+
+Only include brands I am already partnered with (affiliate relationship established): IM8, Bioptimizers, Timeline, Equip Foods, Just Thrive, EnergyBits, Organika, Hyperion Herbs, AquaOmega, Goli. Every brand must have a working affiliate href and code — pull the code string and href for each brand from the project's /discount-codes data module (the single source of truth). Where this prompt gives an exact code/href, verify it against the data module; if they conflict, the data module wins and you must flag the conflict in your final report instead of guessing.
+
+## TASK — Create the post at route `/blog/best-longevity-supplements-2026`
+
+First check that this route does not already exist anywhere in the codebase. Register it ABOVE the 404 catch-all in all four route files (`client/src/App.tsx`, ssr-routes, entry-server, shared/site-routes). Production build must pass with 0 errors.
+
+Render with the existing blog post component format. Category tag: `Comparisons`. Date: September 2026. Keep the site's existing byline format untouched.
+
+### SEO
+
+- `<title>`: "Best Longevity Supplements 2026 (Compared): What Actually Works" — keep the exact phrase "Best Longevity Supplements" at the start; keep under ~60 characters if possible.
+- Meta description: include "best longevity supplements", "IM8", "Bioptimizers", and "discount codes".
+- H1: "Best Longevity Supplements 2026, Compared".
+- Affiliate disclosure near the top (same wording as other posts).
+- FAQ section with FAQPage JSON-LD, matching the pattern on the other posts.
+- Internal links: link each brand name to its brand-guide post where one exists (look up real slugs in the route files — do not guess); link once to /discount-codes and once to the "Supplement Discount Codes FAQ" post (use the real slug).
+
+### Content rules (strict)
+
+- First-person, in my voice (science-backed, 14 years of personal research). No disease claims — use "supports" language, never treats/heals/cures/prevents disease.
+- Picks ("best for X") must be based on product CATEGORY (protein vs probiotic vs magnesium…), which is factual — not on invented efficacy claims.
+- Do NOT invent discount percentages, prices, dosages, or clinical claims. Where a code or href isn't given in this prompt, pull it from the data module.
+
+---
+
+## ARTICLE BODY (render as written, with H1/H2s as marked)
+
+# Best Longevity Supplements 2026, Compared
+
+I run ThriveTools.co, a science-backed wellness and biohacking platform built from 14 years of personal research, and supplements are where most people start — and where most people waste the most money. These are the supplements from brands I actually partner with, organized by what they're for. Every one below has a verified discount code on my [discount codes page](/discount-codes).
+
+## The short answer
+
+- **Best all-in-one:** IM8 — vitamins, probiotics, adaptogens, and CoQ10 in one scoop.
+- **Best magnesium:** Bioptimizers — 7 bioavailable forms in one formula.
+- **Best creatine + magnesium:** Organika — 8 forms of magnesium plus clean creatine.
+- **Best mitochondrial/longevity:** Timeline — Mitopure (Urolithin A), the mitophagy molecule.
+- **Best protein:** Equip Foods — clean grass-fed beef protein, nothing artificial.
+- **Best probiotic:** Just Thrive — spore-based probiotics built to survive digestion.
+- **Best algae/greens:** EnergyBits — chlorella and spirulina, nothing else.
+- **Best tonic herbs:** Hyperion Herbs — reishi, cordyceps, lion's mane, and friends.
+- **Best omega-3:** AquaOmega — algae-based omega-3.
+- **Easiest to stick with:** Goli — gummy format, 10% off with a verified code.
+
+If you only want the codes without the comparison, they're listed at the bottom — or keep reading for the breakdown.
+
+## Comparison table
+
+| Supplement | Category | Best for | Discount code |
+|---|---|---|---|
+| IM8 | All-in-one | Replacing a cabinet of bottles with one scoop | (from data module) |
+| Bioptimizers | Magnesium | Full-spectrum magnesium (7 forms) | (from data module) |
+| Organika | Magnesium + creatine | Magnesium plus clean creatine in one brand | (from data module) |
+| Timeline | Mitochondrial | Urolithin A / mitophagy | (from data module) |
+| Equip Foods | Protein | Clean grass-fed beef protein | (from data module) |
+| Just Thrive | Probiotic | Spore-based gut support | (from data module) |
+| EnergyBits | Algae | Chlorella & spirulina | (from data module) |
+| Hyperion Herbs | Tonic herbs | Adaptogens and medicinal mushrooms | (from data module) |
+| AquaOmega | Omega-3 | Algae-based omega-3 | g-745207ab6b — wait, NO. That is Goli's code. AquaOmega's code comes from the data module. (Agent: do not mix these up.) |
+| Goli | Gummies | The low-friction daily habit | g-745207ab6b (verify against data module) |
+
+For current prices, check each brand's site via the links below — prices change often and I won't publish a number I can't keep current.
+
+## Best all-in-one: IM8
+
+IM8 describes itself as the most complete supplement on the market — vitamins, probiotics, adaptogens, and CoQ10 in a single scoop. If you want one product instead of a cabinet of bottles, this is the format to look at. Code and affiliate link from the data module.
+
+## Best magnesium, two ways: Bioptimizers vs Organika
+
+**Bioptimizers** makes what it calls the most advanced magnesium supplement available: 7 bioavailable forms in one formula, plus a strong nootropics line. If magnesium is the gap you're filling, start here.
+
+**Organika** pairs 8 forms of magnesium with clean creatine — useful if you want both in one brand instead of two. Code and affiliate link from the data module for both.
+
+**How to choose:** both are magnesium-first brands I partner with. Bioptimizers is the magnesium specialist (7 forms, plus nootropics if you want them); Organika is the combo pick if creatine is also on your list.
+
+## Best mitochondrial / longevity: Timeline
+
+Timeline's Mitopure is Urolithin A — the molecule associated with mitophagy, the cellular cleanup process. This is the most "longevity-science" pick on the list: a single molecule with a specific mechanism, rather than a broad-spectrum formula. Code and affiliate link from the data module.
+
+## Best protein: Equip Foods
+
+Equip Foods makes clean grass-fed beef protein with nothing artificial. If you want protein without the additive stack found in most powders, this is it. Code and affiliate link from the data module.
+
+## Best probiotic: Just Thrive
+
+Just Thrive's spore-based probiotics are built to survive digestion — the delivery format is the whole point. If gut health is the goal, format matters more than strain count. Code and affiliate link from the data module.
+
+## Best algae: EnergyBits
+
+EnergyBits sells chlorella and spirulina — and nothing else. Single-ingredient focus, which I respect in a category full of "proprietary blends." Code and affiliate link from the data module.
+
+## Best tonic herbs: Hyperion Herbs
+
+Hyperion Herbs covers the classic tonic herbs — reishi, cordyceps, lion's mane, and friends. If adaptogens and medicinal mushrooms are your lane, this is the specialist pick. Code and affiliate link from the data module.
+
+## Best omega-3: AquaOmega
+
+AquaOmega makes algae-based omega-3 — the plant-based route to EPA/DHA without fish oil. Code and affiliate link from the data module.
+
+## Easiest habit: Goli
+
+Goli's gummies are the low-friction pick — the supplement you actually take beats the perfect one you don't. Verified: 10% off with code **g-745207ab6b** at [go.goli.com/g-745207ab6b](https://go.goli.com/g-745207ab6b) (verify href against the data module).
+
+## How to choose: build your stack by goal
+
+- **Simplify everything:** IM8 (one scoop).
+- **Foundations (magnesium, omega-3, protein):** Bioptimizers or Organika, AquaOmega, Equip Foods.
+- **Gut:** Just Thrive.
+- **Longevity science:** Timeline (Mitopure).
+- **Greens and herbs:** EnergyBits, Hyperion Herbs.
+- **Actually taking it daily:** Goli.
+
+You don't need all ten. Pick the goal, pick the category, pick the brand — that's the whole method.
+
+## Discount codes — the complete list
+
+Every code below is verified on my [discount codes page](/discount-codes), which I update monthly:
+
+- IM8: (from data module)
+- Bioptimizers: (from data module)
+- Organika: (from data module)
+- Timeline: (from data module)
+- Equip Foods: (from data module)
+- Just Thrive: (from data module)
+- EnergyBits: (from data module)
+- Hyperion Herbs: (from data module)
+- AquaOmega: (from data module)
+- Goli: **g-745207ab6b** (10% off)
+
+Want codes-only without the comparison? My [discount codes page](/discount-codes) covers 40+ brands, and the [Supplement Discount Codes FAQ](/blog/supplement-discount-codes-faq) (verify this slug in the route files — use the real one) answers the most-asked questions.
+
+## FAQ
+
+**What is the best longevity supplement overall?**
+It depends on the goal. For an all-in-one, IM8. For mitochondrial health, Timeline's Mitopure (Urolithin A). For foundations, magnesium (Bioptimizers), omega-3 (AquaOmega), and clean protein (Equip Foods). For gut health, Just Thrive. All are brands I partner with, and all have verified discount codes on my discount codes page.
+
+**IM8 vs a multivitamin — what's the difference?**
+IM8 combines vitamins with probiotics, adaptogens, and CoQ10 in one scoop — broader than a standard multivitamin. If you want one product instead of several bottles, that's the appeal.
+
+**Which magnesium supplement is best?**
+Bioptimizers (7 bioavailable forms) is the magnesium specialist pick; Organika (8 forms plus clean creatine) is the combo pick. Both are brands I partner with.
+
+**Are these supplement discount codes still valid?**
+Yes — I check and update every code monthly. The current verified codes are listed in the table above and on my discount codes page.
+
+**Do I need all of these supplements?**
+No. Pick the goal first (energy, gut, sleep, longevity), then the category, then the brand. One well-chosen supplement you take daily beats five you don't.
+
+---
+
+## End of article body
+
+After the build passes: save everything and STOP. In your final report, list: the new route, the <title> and H1, which code/href values you pulled from the data module for each brand, and any conflicts found between this prompt and the data module — especially confirming that Goli's code is g-745207ab6b and that AquaOmega does NOT share that code. Do NOT publish.

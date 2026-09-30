@@ -3,6 +3,7 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { ExternalLink, Zap, Check, User } from "lucide-react";
 import { Link } from "wouter";
+import { Helmet } from "react-helmet-async";
 
 function SectionHeader({
   eyebrow,
@@ -37,6 +38,16 @@ const faqs = [
   },
 ];
 
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: faqs.map(({ q, a }) => ({
+    "@type": "Question",
+    name: q,
+    acceptedAnswer: { "@type": "Answer", text: a },
+  })),
+};
+
 export default function TimelineMitopureDiscountCode() {
   return (
     <PageLayout
@@ -54,6 +65,9 @@ export default function TimelineMitopureDiscountCode() {
       backLabel="Blog"
       backHref="/blog"
     >
+      <Helmet>
+        <script type="application/ld+json">{JSON.stringify(faqSchema)}</script>
+      </Helmet>
       <article className="space-y-10">
         <div className="flex flex-wrap gap-3">
           <Badge className="bg-[#c4622d]/15 text-[#8b3a1a] border-[#c4622d]/25">Discount Codes</Badge>

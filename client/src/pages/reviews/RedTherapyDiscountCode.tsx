@@ -3,6 +3,7 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { ExternalLink, Tag, Check, User } from "lucide-react";
 import { Link } from "wouter";
+import { Helmet } from "react-helmet-async";
 import heroImg from "@assets/redtherapy-discount-code-hero.jpg";
 
 function SectionHeader({
@@ -42,6 +43,16 @@ const faqs = [
   },
 ];
 
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: faqs.map(({ q, a }) => ({
+    "@type": "Question",
+    name: q,
+    acceptedAnswer: { "@type": "Answer", text: a },
+  })),
+};
+
 const steps = [
   "Add the RedTherapy products you want to your cart on redtherapy.co.",
   "Go to checkout and find the discount-code (promo code) box.",
@@ -74,6 +85,9 @@ export default function RedTherapyDiscountCode() {
       backLabel="Blog"
       backHref="/blog"
     >
+      <Helmet>
+        <script type="application/ld+json">{JSON.stringify(faqSchema)}</script>
+      </Helmet>
       <article className="space-y-10">
         <div
           className="card-glass rounded-2xl overflow-hidden"

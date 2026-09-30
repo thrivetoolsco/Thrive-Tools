@@ -1,4 +1,5 @@
 import PageLayout from "@/components/PageLayout";
+import FaqJsonLd from "@/components/FaqJsonLd";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { ExternalLink, Tag, Check, User } from "lucide-react";
@@ -58,6 +59,7 @@ export default function EquipFoodsDiscountCode() {
       backLabel="Blog"
       backHref="/blog"
     >
+      <FaqJsonLd faqs={faqs} />
       <article className="space-y-10">
         <div className="flex flex-wrap gap-3">
           <Badge className="bg-[#c4622d]/15 text-[#8b3a1a] border-[#c4622d]/25">Discount Codes</Badge>

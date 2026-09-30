@@ -1,0 +1,101 @@
+# Replit prompt — Comparison post: Best Non-Toxic Home Upgrades 2026 (save-only, do NOT publish)
+
+Paste this entire prompt into the thrivetools.co Replit project. **SAVE-ONLY: do not publish, do not deploy.** I publish everything myself after review.
+
+## Why this post exists
+
+This is a non-toxic home COMPARISON for buyers deciding which home swap to make first — not a codes roundup and not a brand guide. Do not duplicate the angle of the per-brand discount-code posts. Link to /discount-codes where relevant.
+
+Only include brands I am already partnered with (affiliate relationship established): WaterDropFilter, 360 Cookware, Davids. Every brand must have a working affiliate href and code — pull the code string and href for each brand from the project's /discount-codes data module (the single source of truth). If they conflict with anything in this prompt, the data module wins and you must flag the conflict instead of guessing.
+
+## TASK — Create the post at route `/blog/best-non-toxic-home-upgrades-2026`
+
+First check that this route does not already exist anywhere in the codebase. Register it ABOVE the 404 catch-all in all four route files (`client/src/App.tsx`, ssr-routes, entry-server, shared/site-routes). Production build must pass with 0 errors.
+
+Render with the existing blog post component format. Category tag: `Comparisons`. Date: September 2026. Keep the site's existing byline format untouched.
+
+### SEO
+
+- `<title>`: "Best Non-Toxic Home Upgrades 2026 (Compared): Water, Cookware & More" — keep the exact phrase "Best Non-Toxic Home Upgrades" at the start; keep under ~60 characters if possible.
+- Meta description: include "best non-toxic home upgrades", "water filter", "non-toxic cookware", and "discount codes".
+- H1: "Best Non-Toxic Home Upgrades 2026, Compared".
+- Affiliate disclosure near the top (same wording as other posts).
+- FAQ section with FAQPage JSON-LD, matching the pattern on the other posts.
+- Internal links: link each brand name to its brand-guide post where one exists (look up real slugs in the route files — do not guess); link once to /discount-codes.
+
+### Content rules (strict)
+
+- First-person, in my voice (science-backed, 14 years of personal research). No disease claims — use neutral language about reducing everyday exposures, never promises about health outcomes.
+- Picks ("best for X") must be based on product CATEGORY (water filtration vs cookware vs oral care), which is factual.
+- Do NOT invent discount percentages, prices, or specs. Pull codes/hrefs from the data module.
+
+---
+
+## ARTICLE BODY (render as written, with H1/H2s as marked)
+
+# Best Non-Toxic Home Upgrades 2026, Compared
+
+I run ThriveTools.co, a science-backed wellness and biohacking platform built from 14 years of personal research. Biohacking isn't only what you add — it's what you remove. These are the non-toxic home swaps from brands I actually partner with, ranked by impact. Every one below has a verified discount code or affiliate link on my [discount codes page](/discount-codes).
+
+## The short answer
+
+- **Best water upgrade:** WaterDropFilter — filtration for cleaner drinking water.
+- **Best cookware upgrade:** 360 Cookware — non-toxic cookware without the coatings.
+- **Best oral-care swap:** Davids — natural toothpaste without the conventional additives.
+
+If you only want the codes without the comparison, they're listed at the bottom — or keep reading for the breakdown.
+
+## Comparison table
+
+| Upgrade | Category | Best for | Discount |
+|---|---|---|---|
+| WaterDropFilter | Water filtration | Cleaner drinking water at home | (from data module) |
+| 360 Cookware | Cookware | Non-toxic pots and pans | (from data module) |
+| Davids | Oral care | Natural toothpaste | (from data module) |
+
+For current prices, check each brand's site via the links below — prices change often and I won't publish a number I can't keep current.
+
+## Best water upgrade: WaterDropFilter
+
+You drink water every day, which makes filtration the highest-leverage swap on this list — it touches everything you consume. WaterDropFilter makes home water filtration systems. If you do one thing from this post, make it this one. Code and affiliate link from the data module.
+
+## Best cookware upgrade: 360 Cookware
+
+Conventional non-stick coatings are one of the most common everyday exposures in the kitchen. 360 Cookware makes non-toxic cookware — the pots-and-pans swap for anyone still cooking on coated surfaces. Code and affiliate link from the data module.
+
+## Best oral-care swap: Davids
+
+Toothpaste goes in your mouth twice a day, every day. Davids makes natural toothpaste without the additives found in conventional brands — the smallest swap on this list and the easiest to make today. Code and affiliate link from the data module.
+
+## How to choose: rank by daily exposure
+
+1. **Water** (WaterDropFilter) — you consume it constantly; filtration affects everything.
+2. **Cookware** (360 Cookware) — you cook on it daily; heat plus coatings is the concern.
+3. **Toothpaste** (Davids) — twice daily, direct oral exposure; cheapest and fastest swap.
+
+Start at the top and work down. All three together cover the biggest everyday exposures in a home.
+
+## Discount codes — the complete list
+
+Every code below is verified on my [discount codes page](/discount-codes), which I update monthly:
+
+- WaterDropFilter: (from data module)
+- 360 Cookware: (from data module)
+- Davids: (from data module)
+
+## FAQ
+
+**What is the best non-toxic home upgrade to start with?**
+Water filtration — it affects everything you drink and cook with. WaterDropFilter is my partnered pick. After that, cookware (360 Cookware), then the quick win of natural toothpaste (Davids).
+
+**What makes cookware non-toxic?**
+The short version: no synthetic non-stick coatings. 360 Cookware is the non-toxic cookware brand I partner with — check their site for materials and specs.
+
+**Are these home-upgrade discount codes still valid?**
+Yes — I check and update every code monthly. The current verified codes are listed in the table above and on my discount codes page.
+
+---
+
+## End of article body
+
+After the build passes: save everything and STOP. In your final report, list: the new route, the <title> and H1, which code/href values you pulled from the data module for each brand, and any conflicts found between this prompt and the data module. Do NOT publish.

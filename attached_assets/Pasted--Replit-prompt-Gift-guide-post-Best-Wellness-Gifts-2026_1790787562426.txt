@@ -1,0 +1,120 @@
+# Replit prompt — Gift guide post: Best Wellness Gifts 2026 (save-only, do NOT publish)
+
+Paste this entire prompt into the thrivetools.co Replit project. **SAVE-ONLY: do not publish, do not deploy.** I publish everything myself after review.
+
+## Why this post exists
+
+This is a HOLIDAY GIFT GUIDE — cross-category, shoppable, and timed for Q4 (it should go live by early November to rank for holiday searches). It is not a codes roundup and not a brand guide. Do not duplicate the angle of the per-brand discount-code posts. Every gift below must ALSO mention its discount code — holiday shoppers are code-hunting, and that's the conversion hook.
+
+Only include brands I am already partnered with (affiliate relationship established). Pull every code string and href from the project's /discount-codes data module (the single source of truth). Where this prompt gives an exact code/href, verify it against the data module; if they conflict, the data module wins and you must flag the conflict in your final report instead of guessing.
+
+## TASK — Create the post at route `/blog/best-wellness-gifts-2026`
+
+First check that this route does not already exist anywhere in the codebase. Register it ABOVE the 404 catch-all in all four route files (`client/src/App.tsx`, ssr-routes, entry-server, shared/site-routes). Production build must pass with 0 errors.
+
+Render with the existing blog post component format. Category tag: `Gift Guides`. Date: September 2026. Keep the site's existing byline format untouched.
+
+### SEO
+
+- `<title>`: "Best Wellness Gifts 2026: 12 Biohacking Gifts They'll Actually Use" — keep the exact phrase "Best Wellness Gifts" at the start; keep under ~60 characters if possible.
+- Meta description: include "best wellness gifts", "biohacking gifts", "2026", and "discount codes".
+- H1: "Best Wellness Gifts 2026: 12 Gifts for the Health-Obsessed".
+- Affiliate disclosure near the top (same wording as other posts).
+- FAQ section with FAQPage JSON-LD, matching the pattern on the other posts.
+- Internal links: link each brand name to its brand-guide or comparison post where one exists (look up real slugs in the route files — do not guess); link once to /discount-codes.
+
+### Content rules (strict)
+
+- First-person, in my voice (science-backed, 14 years of personal research). Gift-guide tone: warm, opinionated, practical.
+- Do NOT invent prices or price tiers with dollar amounts. Organize by qualitative tiers: "Stocking stuffers", "Mid-range gifts", "Splurge gifts" — no dollar figures anywhere.
+- Do NOT invent discount percentages. Every code below comes from the data module.
+- No medical claims — use "supports" language, never treats/heals/cures.
+
+---
+
+## ARTICLE BODY (render as written, with H1/H2s as marked)
+
+# Best Wellness Gifts 2026: 12 Gifts for the Health-Obsessed
+
+I run ThriveTools.co, a science-backed wellness and biohacking platform built from 14 years of personal research — and every holiday season, people ask me what to buy the health-obsessed person in their life. This is my answer: 12 gifts from brands I actually partner with, every one with a verified discount code. My full code list lives on the [discount codes page](/discount-codes).
+
+## Stocking stuffers
+
+Small, easy, and guaranteed to get used.
+
+**Goli gummies** — the low-friction daily supplement in gummy form. The gift for someone who "should take supplements" but won't swallow pills. Verified: 10% off with code **g-745207ab6b** at [go.goli.com/g-745207ab6b](https://go.goli.com/g-745207ab6b) (verify href against the data module).
+
+**Davids natural toothpaste** — the upgrade nobody buys for themselves but everyone appreciates. Code from the data module.
+
+**EnergyBits algae tablets** — chlorella and spirulina, single-ingredient, in tablet form. The stocking stuffer for the person who's into everything. Code from the data module.
+
+**Koracao ceremonial cacao** — real ceremonial-grade cacao for morning rituals. The cozy gift. Code/link from the data module.
+
+## Mid-range gifts
+
+The sweet spot: thoughtful, useful, not a gamble.
+
+**Lumebox** — the portable red light device I own. 660nm red and 850nm near-infrared, fits in a bag, for skin, joints, and recovery. The gift for the person who's curious about red light therapy but not ready for a panel. Code **ThriveTools** at [thelumebox.com](https://thelumebox.com/) (verify href against the data module — use my affiliate link).
+
+**Hyperion Herbs tonic herbs** — reishi, cordyceps, lion's mane. The gift for the tea-and-tincture person. Code from the data module.
+
+**Muse Headband** — brain-sensing meditation training with real-time feedback. The gift for the stressed-out overthinker. Code from the data module.
+
+**EarthRunners grounding sandals** — minimalist sandals for the barefoot-curious. The gift for the outdoorsy one. Code from the data module.
+
+## Splurge gifts
+
+For the person who has everything — or for going in on a group gift.
+
+**Apollo Neuro wearable** — all-day stress and sleep support you wear on wrist or ankle. The passive gift: no habit required. Code/link from the data module.
+
+**BlueCubeBaths cold plunge** — a dedicated cold plunge tub for home. The statement gift for the recovery-obsessed. Code from the data module.
+
+**Joovv red light panel** — clinical-grade red light therapy, the most trusted name in the category. The ultimate gift for the serious biohacker. Code **THRIVETOOLS** at [joovv.com](https://joovv.com) (verify href against the data module).
+
+**Timeline Mitopure** — Urolithin A, the mitophagy molecule. The longevity-science gift for the person who reads research papers. Code from the data module.
+
+## How to pick: match the gift to the person
+
+- **The skeptic:** Goli or Davids — useful even if they don't buy into wellness.
+- **The curious beginner:** Lumebox or EnergyBits — accessible entry points.
+- **The stressed professional:** Muse Headband or Apollo Neuro.
+- **The hardcore biohacker:** Joovv, BlueCubeBaths, or Timeline.
+- **The ritual person:** Koracao cacao or Hyperion Herbs.
+
+## All 12 discount codes
+
+Every code below is verified on my [discount codes page](/discount-codes), which I update monthly:
+
+- Goli: **g-745207ab6b** (10% off)
+- Davids: (from data module)
+- EnergyBits: (from data module)
+- Koracao: (from data module)
+- Lumebox: **ThriveTools**
+- Hyperion Herbs: (from data module)
+- Muse Headband: (from data module)
+- EarthRunners: (from data module)
+- Apollo Neuro: (from data module)
+- BlueCubeBaths: (from data module)
+- Joovv: **THRIVETOOLS**
+- Timeline: (from data module)
+
+## FAQ
+
+**What are the best wellness gifts for 2026?**
+My top picks: Lumebox (portable red light), Muse Headband (meditation training), Apollo Neuro (wearable), Joovv (red light panel), and Goli gummies as the easy stocking stuffer. All 12 gifts on this list come from brands I partner with, all with verified discount codes.
+
+**What is a good wellness gift under a tight budget?**
+Stocking-stuffer tier: Goli gummies (10% off with a verified code), Davids natural toothpaste, EnergyBits algae tablets, or Koracao ceremonial cacao. Useful, affordable-feeling, and nobody's disappointed.
+
+**What is the best splurge wellness gift?**
+A Joovv red light panel or a BlueCubeBaths cold plunge — the two statement gifts on this list. Both have verified discount codes, which take the edge off the price.
+
+**Are these gift discount codes still valid?**
+Yes — I check and update every code monthly, including through the holiday season. The current verified codes are listed above and on my discount codes page.
+
+---
+
+## End of article body
+
+After the build passes: save everything and STOP. In your final report, list: the new route, the <title> and H1, which code/href values you pulled from the data module for each brand, and any conflicts found between this prompt and the data module — especially confirming Goli's code is g-745207ab6b and Lumebox's code is ThriveTools. Do NOT publish.

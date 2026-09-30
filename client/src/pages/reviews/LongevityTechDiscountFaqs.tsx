@@ -3,6 +3,7 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { ExternalLink, Tag } from "lucide-react";
 import { Link } from "wouter";
+import FaqJsonLd from "@/components/FaqJsonLd";
 import waterdropImage from "@assets/waterdrop-discount-code-hero.jpg";
 import joovvImage from "@assets/joovv-discount-code-hero_1790058148708.jpg";
 import mitoImage from "@assets/mito-red-light-discount-code-hero.jpg";
@@ -137,9 +138,96 @@ function Answer({ question, children }: { question: string; children: React.Reac
   );
 }
 
+type FaqItem = {
+  question: string;
+  answer: React.ReactNode;
+  schemaAnswer: string;
+};
+
 function LongevityTechDiscountFaq({ post }: { post: BrandFaq }) {
   const { brand, slug, title, code, href, linkText, oneLiner, offerDesc, image, imageAlt } = post;
   const link = <a href={href} target="_blank" rel="noopener noreferrer" className="text-[#8b3a1a] underline">{linkText}</a>;
+  const faqItems: FaqItem[] = code
+    ? [
+        {
+          question: `Does ${brand} offer discount codes?`,
+          answer: <>Yes. The current verified {brand} code is <strong>{code}</strong>. Use it at checkout on the official store: {link}.</>,
+          schemaAnswer: `Yes. The current verified ${brand} code is ${code}. Use it at checkout on the official store: ${linkText}.`,
+        },
+        {
+          question: `What is the best ${brand} discount code right now?`,
+          answer: <><strong>{code}</strong> is the verified code currently listed for {brand}.</>,
+          schemaAnswer: `${code} is the verified code currently listed for ${brand}.`,
+        },
+        {
+          question: `How do I apply a ${brand} promo code?`,
+          answer: (
+            <ol className="list-decimal pl-6 space-y-1">
+              <li>Click the verified {brand} link above.</li>
+              <li>Add products to your cart.</li>
+              <li>Enter <strong>{code}</strong> in the discount-code box at checkout.</li>
+              <li>Confirm the discount applied before paying.</li>
+            </ol>
+          ),
+          schemaAnswer: `1. Click the verified ${brand} link above. 2. Add products to your cart. 3. Enter ${code} in the discount-code box at checkout. 4. Confirm the discount applied before paying.`,
+        },
+        {
+          question: `Why isn't my ${brand} code working?`,
+          answer: <>Check the spelling and capitalization of <strong>{code}</strong>, confirm your items are eligible, and make sure you're on {brand}'s official store — not a marketplace listing.</>,
+          schemaAnswer: `Check the spelling and capitalization of ${code}, confirm your items are eligible, and make sure you're on ${brand}'s official store — not a marketplace listing.`,
+        },
+        {
+          question: `Can I stack ${brand} discount codes?`,
+          answer: <>Most stores accept only one discount code per order. If you have more than one, use the one that saves you the most.</>,
+          schemaAnswer: "Most stores accept only one discount code per order. If you have more than one, use the one that saves you the most.",
+        },
+      ]
+    : [
+        {
+          question: `Does ${brand} have a discount code?`,
+          answer: <>No code is needed. {offerDesc} applies automatically when you shop through the verified link: {link}.</>,
+          schemaAnswer: `No code is needed. ${offerDesc} applies automatically when you shop through the verified link: ${linkText}.`,
+        },
+        {
+          question: `How do I get the ${brand} discount?`,
+          answer: <>Click the verified link above and shop as normal — the discount is attached to the link and applies at checkout. There's nothing to type.</>,
+          schemaAnswer: "Click the verified link above and shop as normal — the discount is attached to the link and applies at checkout. There's nothing to type.",
+        },
+        {
+          question: `Why didn't the ${brand} discount apply?`,
+          answer: <>Make sure you clicked through from the ThriveTools link (the discount is tied to it) and that the items in your cart are eligible.</>,
+          schemaAnswer: "Make sure you clicked through from the ThriveTools link (the discount is tied to it) and that the items in your cart are eligible.",
+        },
+        {
+          question: `Can I combine the ${brand} link discount with a promo code?`,
+          answer: <>Link-based discounts apply automatically, so there's no code box to fill. The link offer is the verified deal.</>,
+          schemaAnswer: "Link-based discounts apply automatically, so there's no code box to fill. The link offer is the verified deal.",
+        },
+      ];
+  faqItems.push(
+    {
+      question: `Does ${brand} offer free shipping?`,
+      answer: <>Shipping terms change over time — check the shipping information on {brand}'s official site at checkout.</>,
+      schemaAnswer: `Shipping terms change over time — check the shipping information on ${brand}'s official site at checkout.`,
+    },
+    {
+      question: `Does ${brand} have a money-back guarantee or returns policy?`,
+      answer: <>Check {brand}'s official site for their current guarantee and returns terms before you buy.</>,
+      schemaAnswer: `Check ${brand}'s official site for their current guarantee and returns terms before you buy.`,
+    },
+  );
+  if (!code) {
+    faqItems.push({
+      question: "Is it safe to buy through the ThriveTools link?",
+      answer: <>Yes. The link takes you to {brand}'s official store. ThriveTools may earn a commission on your purchase at no extra cost to you.</>,
+      schemaAnswer: `Yes. The link takes you to ${brand}'s official store. ThriveTools may earn a commission on your purchase at no extra cost to you.`,
+    });
+  }
+  faqItems.push({
+    question: "Where can I find all verified ThriveTools codes?",
+    answer: <>On the <Link href="/discount-codes" className="text-[#8b3a1a] underline">ThriveTools discount-codes page</Link> — the source of truth, updated whenever codes change.</>,
+    schemaAnswer: "On the ThriveTools discount-codes page — the source of truth, updated whenever codes change.",
+  });
   return (
     <PageLayout
       showShare
@@ -158,6 +246,7 @@ function LongevityTechDiscountFaq({ post }: { post: BrandFaq }) {
       backHref="/blog"
     >
       <article className="space-y-8">
+        <FaqJsonLd faqs={faqItems.map(({ question, schemaAnswer }) => ({ q: question, a: schemaAnswer }))} />
         <div className="card-glass rounded-2xl overflow-hidden">
           <img loading="lazy" decoding="async" src={image} alt={imageAlt} className="w-full h-auto max-h-[480px] object-contain bg-white" />
         </div>
@@ -179,59 +268,9 @@ function LongevityTechDiscountFaq({ post }: { post: BrandFaq }) {
         </div>
         <section className="space-y-4">
           <h2 className="font-display text-2xl font-bold text-black">{brand} Discount Code FAQ</h2>
-          {code ? (
-            <>
-              <Answer question={`Does ${brand} offer discount codes?`}>
-                Yes. The current verified {brand} code is <strong>{code}</strong>. Use it at checkout on the official store: {link}.
-              </Answer>
-              <Answer question={`What is the best ${brand} discount code right now?`}>
-                <strong>{code}</strong> is the verified code currently listed for {brand}.
-              </Answer>
-              <Answer question={`How do I apply a ${brand} promo code?`}>
-                <ol className="list-decimal pl-6 space-y-1">
-                  <li>Click the verified {brand} link above.</li>
-                  <li>Add products to your cart.</li>
-                  <li>Enter <strong>{code}</strong> in the discount-code box at checkout.</li>
-                  <li>Confirm the discount applied before paying.</li>
-                </ol>
-              </Answer>
-              <Answer question={`Why isn't my ${brand} code working?`}>
-                Check the spelling and capitalization of <strong>{code}</strong>, confirm your items are eligible, and make sure you're on {brand}'s official store — not a marketplace listing.
-              </Answer>
-              <Answer question={`Can I stack ${brand} discount codes?`}>
-                Most stores accept only one discount code per order. If you have more than one, use the one that saves you the most.
-              </Answer>
-            </>
-          ) : (
-            <>
-              <Answer question={`Does ${brand} have a discount code?`}>
-                No code is needed. {offerDesc} applies automatically when you shop through the verified link: {link}.
-              </Answer>
-              <Answer question={`How do I get the ${brand} discount?`}>
-                Click the verified link above and shop as normal — the discount is attached to the link and applies at checkout. There's nothing to type.
-              </Answer>
-              <Answer question={`Why didn't the ${brand} discount apply?`}>
-                Make sure you clicked through from the ThriveTools link (the discount is tied to it) and that the items in your cart are eligible.
-              </Answer>
-              <Answer question={`Can I combine the ${brand} link discount with a promo code?`}>
-                Link-based discounts apply automatically, so there's no code box to fill. The link offer is the verified deal.
-              </Answer>
-            </>
-          )}
-          <Answer question={`Does ${brand} offer free shipping?`}>
-            Shipping terms change over time — check the shipping information on {brand}'s official site at checkout.
-          </Answer>
-          <Answer question={`Does ${brand} have a money-back guarantee or returns policy?`}>
-            Check {brand}'s official site for their current guarantee and returns terms before you buy.
-          </Answer>
-          {!code && (
-            <Answer question="Is it safe to buy through the ThriveTools link?">
-              Yes. The link takes you to {brand}'s official store. ThriveTools may earn a commission on your purchase at no extra cost to you.
-            </Answer>
-          )}
-          <Answer question="Where can I find all verified ThriveTools codes?">
-            On the <Link href="/discount-codes" className="text-[#8b3a1a] underline">ThriveTools discount-codes page</Link> — the source of truth, updated whenever codes change.
-          </Answer>
+          {faqItems.map(({ question, answer }) => (
+            <Answer key={question} question={question}>{answer}</Answer>
+          ))}
         </section>
         <p className="text-sm text-black/50 leading-relaxed"><strong>Affiliate disclosure:</strong> This post contains affiliate links. If you buy through them, I may earn a commission at no extra cost to you.</p>
       </article>

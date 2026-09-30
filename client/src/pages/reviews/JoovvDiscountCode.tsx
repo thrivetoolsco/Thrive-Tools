@@ -1,4 +1,5 @@
 import PageLayout from "@/components/PageLayout";
+import FaqJsonLd from "@/components/FaqJsonLd";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { ExternalLink, Tag, Check, User } from "lucide-react";
@@ -60,6 +61,7 @@ export default function JoovvDiscountCode() {
       backLabel="Blog"
       backHref="/blog"
     >
+      <FaqJsonLd faqs={faqs} />
       <article className="space-y-10">
         <div className="card-glass rounded-2xl overflow-hidden" data-testid="img-hero-joovv-discount">
           <img loading="lazy" decoding="async" src={joovvHeroImg} alt="Joovv red light therapy device" className="w-full h-auto object-cover" />

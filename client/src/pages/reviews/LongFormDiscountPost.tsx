@@ -3,6 +3,7 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { ExternalLink, Tag, User } from "lucide-react";
 import { Link } from "wouter";
+import { Helmet } from "react-helmet-async";
 
 export type LongFormPost = {
   brand: string;
@@ -26,6 +27,25 @@ export type LongFormPost = {
 
 export default function LongFormDiscountPost({ post }: { post: LongFormPost }) {
   const { brand, slug, title, image, imageAlt, href, code, lead, intro, sells, products, standsOut, steps, faqs, faqTitle, howTitle, moreQuestion } = post;
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: [
+      ...faqs.map(({ q, a }) => ({
+        "@type": "Question",
+        name: q,
+        acceptedAnswer: { "@type": "Answer", text: a },
+      })),
+      {
+        "@type": "Question",
+        name: moreQuestion,
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "See all verified codes on the ThriveTools discount-codes page.",
+        },
+      },
+    ],
+  };
   return (
     <PageLayout
       showShare
@@ -44,6 +64,9 @@ export default function LongFormDiscountPost({ post }: { post: LongFormPost }) {
       backHref="/blog"
     >
       <article className="space-y-10">
+        <Helmet>
+          <script type="application/ld+json">{JSON.stringify(faqSchema)}</script>
+        </Helmet>
         <div className="card-glass rounded-2xl overflow-hidden">
           <img loading="lazy" decoding="async" src={image} alt={imageAlt} className="w-full h-auto object-cover" />
         </div>

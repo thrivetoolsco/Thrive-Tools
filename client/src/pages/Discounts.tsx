@@ -183,6 +183,21 @@ export const healthTech: DiscountItem[] = [
     blogHref: "/product-reviews/vielight-neuro-review",
   },
   {
+    name: "Lumebox",
+    description: "Portable red light therapy device. Use code ThriveTools at thelumebox.com checkout.",
+    code: "ThriveTools",
+    // Official store URL until the owner supplies the Lumebox affiliate link.
+    url: "https://thelumebox.com/",
+    blogHref: "/lumebox-discount-code",
+  },
+  {
+    name: "EMR-TEK",
+    description: "Light-based wellness brand offering red light devices, full-spectrum UV systems, blue-light glasses and circadian-friendly lighting. Use code EDEN17306 at emr-tek.com.",
+    code: "EDEN17306",
+    url: "https://www.emr-tek.com/EDEN17306",
+    blogHref: "/emr-tek-discount-code",
+  },
+  {
     name: "Oxygen Advantage",
     description: "The most evidence based breathwork courses available online, plus MyoTape for nasal breathing training. Completely changed how I breathe.",
     code: "THRIVETOOLS",
@@ -317,6 +332,36 @@ export const ethicalClothing: DiscountItem[] = [
     url: "https://snwbl.io/lambs/EDEN50761",
   },
 ];
+
+const discountOfferItems = [
+  ...vitaminsSupplements,
+  ...healthTech,
+  ...ethicalClothing,
+  ...nontoxicCookware,
+  ...cleanBeauty,
+];
+
+const discountOffersJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  itemListElement: discountOfferItems.map((item, index) => {
+    const isLinkOnly = !item.code || /^follow\b/i.test(item.code) || /follow\s+the\s+link/i.test(item.code);
+
+    return {
+      "@type": "ListItem",
+      position: index + 1,
+      item: {
+        "@type": "Offer",
+        name: item.name,
+        url: item.url,
+        description: isLinkOnly
+          ? `${item.description} ${item.code || "No promo code is listed; follow the offer link for details."}`
+          : `${item.description} Code/deal shown on the page: ${item.code}`,
+        availability: "https://schema.org/InStock",
+      },
+    };
+  }),
+};
 
 function CopyableCode({ code, brand, category }: { code: string; brand: string; category: string }) {
   const [copied, setCopied] = useState(false);
@@ -526,6 +571,12 @@ function CategorySection({ icon: Icon, title, subtitle, items, badgeColor, gradi
 export default function Discounts() {
   return (
     <div className="min-h-screen bg-[#fdf6eb] text-[#3d1a28] overflow-x-hidden">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(discountOffersJsonLd).replace(/</g, "\\u003c"),
+        }}
+      />
       <SeoHead
         title="Best Supplement Discount Codes 2026 | Biohacking Deals — Thrive Tools"
         description="Exclusive discount codes for the best biohacking and wellness supplements: IM8, ENERGYbits, BiOptimizers, Hyperion Herbs, AquaOmega, Superfeast, EarthRunners, and more."

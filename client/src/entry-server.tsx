@@ -124,6 +124,7 @@ import {
 } from "@/pages/reviews/WellnessTechBrandGuides";
 import LumeboxDiscountCode from "@/pages/reviews/LumeboxDiscountCode";
 import GoliDiscountCode from "@/pages/reviews/GoliDiscountCode";
+import EmrTekDiscountCode from "@/pages/reviews/EmrTekDiscountCode";
 import {
   IM8DiscountCodeFaq, EquipFoodsDiscountCodeFaq, HyperionHerbsDiscountCodeFaq,
   JustThriveDiscountCodeFaq, OrganikaDiscountCodeFaq, AquaOmegaDiscountCodeFaq,
@@ -345,6 +346,7 @@ export const SSR_ROUTE_COMPONENTS: Record<string, ComponentType> = {
   "/blog/vellgus-review": VellgusBrandGuide,
   "/lumebox-discount-code": LumeboxDiscountCode,
   "/goli-discount-code": GoliDiscountCode,
+  "/emr-tek-discount-code": EmrTekDiscountCode,
 };
 
 export async function render(

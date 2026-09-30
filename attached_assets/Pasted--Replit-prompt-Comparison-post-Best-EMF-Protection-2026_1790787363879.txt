@@ -1,0 +1,103 @@
+# Replit prompt — Comparison post: Best EMF Protection 2026 (save-only, do NOT publish)
+
+Paste this entire prompt into the thrivetools.co Replit project. **SAVE-ONLY: do not publish, do not deploy.** I publish everything myself after review.
+
+## Why this post exists
+
+This is an EMF-protection COMPARISON for buyers deciding which approach to take — not a codes roundup and not a brand guide. Do not duplicate the angle of the per-brand discount-code posts. Link to /discount-codes where relevant.
+
+Only include brands I am already partnered with (affiliate relationship established): Aires Tech, Havn by Lambs, EMR-TEK. Every brand must have a working affiliate href and code — pull the code string and href for each brand from the project's /discount-codes data module (the single source of truth). EMR-TEK's code is EDEN17306 — verify against the data module; if they conflict, the data module wins and you must flag the conflict instead of guessing.
+
+## TASK — Create the post at route `/blog/best-emf-protection-2026`
+
+First check that this route does not already exist anywhere in the codebase. Register it ABOVE the 404 catch-all in all four route files (`client/src/App.tsx`, ssr-routes, entry-server, shared/site-routes). Production build must pass with 0 errors.
+
+Render with the existing blog post component format. Category tag: `Comparisons`. Date: September 2026. Keep the site's existing byline format untouched.
+
+### SEO
+
+- `<title>`: "Best EMF Protection 2026 (Compared): Devices, Clothing & More" — keep the exact phrase "Best EMF Protection" at the start; keep under ~60 characters if possible.
+- Meta description: include "best EMF protection", "Aires Tech", and "discount codes".
+- H1: "Best EMF Protection 2026, Compared".
+- Affiliate disclosure near the top (same wording as other posts).
+- FAQ section with FAQPage JSON-LD, matching the pattern on the other posts.
+- Internal links: link each brand name to its brand-guide post where one exists (look up real slugs in the route files — do not guess); link once to /discount-codes.
+
+### Content rules (strict)
+
+- First-person, in my voice (science-backed, 14 years of personal research). This is a controversial category — stay factual, describe what each product DOES (not what it "blocks" or "neutralizes" in absolute terms), use the brands' own stated descriptions, and never make absolute shielding claims.
+- Picks ("best for X") must be based on product CATEGORY (device vs apparel vs multi-purpose brand), which is factual — not on invented efficacy claims.
+- Do NOT invent discount percentages, prices, or specs. Pull codes/hrefs from the data module.
+
+---
+
+## ARTICLE BODY (render as written, with H1/H2s as marked)
+
+# Best EMF Protection 2026, Compared
+
+I run ThriveTools.co, a science-backed wellness and biohacking platform built from 14 years of personal research. EMF protection is one of the more debated corners of the wellness world — so I'll keep this factual: here are the approaches from brands I actually partner with, what each one does, and how to choose between them. Every one below has a verified discount code or affiliate link on my [discount codes page](/discount-codes).
+
+## The short answer
+
+- **Best device-level approach:** Aires Tech — devices designed to work alongside your electronics.
+- **Best EMF apparel:** Havn by Lambs — clothing made with EMF-shielding fabrics.
+- **Best multi-purpose brand:** EMR-TEK — red light devices, blue-light glasses, and circadian lighting from one brand.
+
+If you only want the codes without the comparison, they're listed at the bottom — or keep reading for the breakdown.
+
+## Comparison table
+
+| Brand | Category | Best for | Discount |
+|---|---|---|---|
+| Aires Tech | Devices | Device-level EMF approach | (from data module) |
+| Havn by Lambs | Apparel | EMF-shielding clothing | (from data module) |
+| EMR-TEK | Multi-purpose | Red light + blue-light glasses + circadian lighting | EDEN17306 (verify against data module) |
+
+For current prices, check each brand's site via the links below — prices change often and I won't publish a number I can't keep current.
+
+## Best device-level approach: Aires Tech
+
+Aires Tech makes devices designed to be used alongside your electronics — the "keep your devices, add a layer" approach. If you don't want to change your habits or wardrobe and want something that works with the tech you already own, this is the category. Code and affiliate link from the data module.
+
+## Best EMF apparel: Havn by Lambs
+
+Havn by Lambs makes clothing with EMF-shielding fabrics — the wearable approach. If you want protection that's part of what you wear rather than something you plug in or stick on a device, start here. Code and affiliate link from the data module.
+
+## Best multi-purpose brand: EMR-TEK
+
+EMR-TEK is the broadest brand on this list: red light therapy devices, blue-light glasses, and circadian lighting bulbs. If your interest is the wider "light environment" picture — not just EMF but the full spectrum of light you're exposed to — one brand covers it. I'm partnered with them: use code **EDEN17306** via my affiliate link (verify href against the data module).
+
+## How to choose: pick your approach first
+
+- **Don't change your habits:** device-level (Aires Tech).
+- **Wear it:** apparel (Havn by Lambs).
+- **Rethink your light environment:** EMR-TEK (blue-light glasses for evenings, circadian bulbs for mornings, red light for recovery).
+- **Honest note:** this category has strong opinions on all sides. I list what each product does in the brands' own terms — what you believe about EMF is your call.
+
+## Discount codes — the complete list
+
+Every code below is verified on my [discount codes page](/discount-codes), which I update monthly:
+
+- Aires Tech: (from data module)
+- Havn by Lambs: (from data module)
+- EMR-TEK: **EDEN17306**
+
+## FAQ
+
+**What is the best EMF protection product?**
+It depends on the approach you want. Aires Tech for device-level products, Havn by Lambs for EMF-shielding clothing, EMR-TEK for the broader light-environment approach (blue-light glasses, circadian bulbs, red light). All are brands I partner with.
+
+**Do EMF protection products actually work?**
+This category is debated. I describe each product in the brands' own terms and let you decide — what I can verify is that these are real companies with real products and real discount codes, all of which I keep current on my discount codes page.
+
+**Are these EMF protection discount codes still valid?**
+Yes — I check and update every code monthly. The current verified codes are listed in the table above and on my discount codes page.
+
+**What's the difference between EMF shielding clothing and devices?**
+Clothing (Havn by Lambs) puts shielding fabric between you and the source — wearable and passive. Devices (Aires Tech) work alongside your electronics. Different philosophies; pick the one that fits how you live.
+
+---
+
+## End of article body
+
+After the build passes: save everything and STOP. In your final report, list: the new route, the <title> and H1, which code/href values you pulled from the data module for each brand, and any conflicts found between this prompt and the data module. Do NOT publish.

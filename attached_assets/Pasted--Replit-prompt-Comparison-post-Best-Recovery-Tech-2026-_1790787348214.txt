@@ -1,0 +1,114 @@
+# Replit prompt — Comparison post: Best Recovery Tech 2026 (save-only, do NOT publish)
+
+Paste this entire prompt into the thrivetools.co Replit project. **SAVE-ONLY: do not publish, do not deploy.** I publish everything myself after review.
+
+## Why this post exists
+
+This is a recovery-tech COMPARISON for buyers deciding which recovery tool to get — not a codes roundup and not a brand guide. Do not duplicate the angle of the per-brand discount-code posts. Link to /discount-codes where relevant.
+
+Only include brands I am already partnered with (affiliate relationship established): BlueCubeBaths, Apollo Neuro, Muse Headband, Vellgus. Every brand must have a working affiliate href and code — pull the code string and href for each brand from the project's /discount-codes data module (the single source of truth). If a brand has no code in the data module, use its affiliate link with "no code needed — discount applies via the link" and flag it in your final report. If they conflict with anything in this prompt, the data module wins and you must flag the conflict instead of guessing.
+
+NOTE on Apollo: Apollo's program terms flag coupon-style promotion. Use whatever code/link the data module has for Apollo and do not add extra coupon framing beyond the standard code callout used for the other brands.
+
+## TASK — Create the post at route `/blog/best-recovery-tech-2026`
+
+First check that this route does not already exist anywhere in the codebase. Register it ABOVE the 404 catch-all in all four route files (`client/src/App.tsx`, ssr-routes, entry-server, shared/site-routes). Production build must pass with 0 errors.
+
+Render with the existing blog post component format. Category tag: `Comparisons`. Date: September 2026. Keep the site's existing byline format untouched.
+
+### SEO
+
+- `<title>`: "Best Recovery Tech 2026 (Compared): Cold Plunge, Wearables & More" — keep the exact phrase "Best Recovery Tech" at the start; keep under ~60 characters if possible.
+- Meta description: include "best recovery tech", "cold plunge", "Apollo", and "discount codes".
+- H1: "Best Recovery Tech 2026, Compared".
+- Affiliate disclosure near the top (same wording as other posts).
+- FAQ section with FAQPage JSON-LD, matching the pattern on the other posts.
+- Internal links: link each brand name to its brand-guide post where one exists (look up real slugs in the route files — do not guess); link once to /discount-codes.
+
+### Content rules (strict)
+
+- First-person, in my voice (science-backed, 14 years of personal research). No medical claims — use "supports" language, never treats/heals/cures.
+- Picks ("best for X") must be based on product CATEGORY (cold plunge vs wearable vs meditation device), which is factual — not on invented efficacy claims.
+- Do NOT invent discount percentages, prices, or specs. Pull codes/hrefs from the data module.
+
+---
+
+## ARTICLE BODY (render as written, with H1/H2s as marked)
+
+# Best Recovery Tech 2026, Compared
+
+I run ThriveTools.co, a science-backed wellness and biohacking platform built from 14 years of personal research. Recovery is half the equation — training and stress break you down, recovery builds you back. These are the recovery tools from brands I actually partner with. Every one below has a verified discount code or affiliate link on my [discount codes page](/discount-codes).
+
+## The short answer
+
+- **Best cold plunge:** BlueCubeBaths — dedicated cold plunge tubs.
+- **Best wearable:** Apollo Neuro — a wearable for stress and sleep support.
+- **Best meditation/brain training:** Muse Headband — real-time feedback for meditation.
+- **Best red light for recovery:** Vellgus — red light therapy aimed at recovery use.
+
+If you only want the codes without the comparison, they're listed at the bottom — or keep reading for the breakdown.
+
+## Comparison table
+
+| Tool | Category | Best for | Discount |
+|---|---|---|---|
+| BlueCubeBaths | Cold plunge | Dedicated cold immersion at home | (from data module) |
+| Apollo Neuro | Wearable | Stress and sleep support on the go | (from data module — respect the coupon-caution note above) |
+| Muse Headband | Brain sensing | Meditation with real-time feedback | (from data module) |
+| Vellgus | Red light therapy | Light-based recovery sessions | (from data module) |
+
+For current prices, check each brand's site via the links below — prices change often and I won't publish a number I can't keep current.
+
+## Best cold plunge: BlueCubeBaths
+
+Cold immersion is the most time-efficient recovery tool on this list — a few minutes, done. BlueCubeBaths makes dedicated cold plunge tubs for home use. If you want cold therapy without the chest-freezer DIY setup or the spa membership, a purpose-built tub is the answer. Code and affiliate link from the data module.
+
+## Best wearable: Apollo Neuro
+
+Apollo Neuro is a wearable designed to support stress resilience and sleep — worn on the wrist or ankle, used throughout the day. It's the passive pick on this list: no session required, no tub to fill, no app to stare at. Code/link from the data module (see the coupon-caution note in the task section).
+
+## Best meditation / brain training: Muse Headband
+
+Muse is a brain-sensing headband that gives real-time feedback during meditation — it tells you when your mind wanders so you can train focus like a muscle. Recovery isn't only physical; nervous-system downregulation is half the game, and this is the tool for it. Code and affiliate link from the data module.
+
+## Best red light for recovery: Vellgus
+
+Vellgus makes red light therapy devices with recovery as a core use case — I'm partnered with them through their affiliate program. If your recovery stack already covers cold and sleep and you want to add light therapy, start here. For the full red-light comparison (panels, portables, masks), see my [Best Red Light Therapy Devices 2026](/blog/best-red-light-therapy-devices-2026) post (verify this slug in the route files — use the real one). Code and affiliate link from the data module.
+
+## How to choose: build your recovery stack
+
+- **One tool, maximum effect per minute:** cold plunge (BlueCubeBaths).
+- **All-day passive support:** Apollo Neuro wearable.
+- **Nervous system training:** Muse Headband.
+- **Add-on modality:** Vellgus red light.
+
+Most people need one active practice (cold, breathwork, meditation) and benefit from one passive tool (wearable, red light). Pick the active one first.
+
+## Discount codes — the complete list
+
+Every code below is verified on my [discount codes page](/discount-codes), which I update monthly:
+
+- BlueCubeBaths: (from data module)
+- Apollo Neuro: (from data module)
+- Muse Headband: (from data module)
+- Vellgus: (from data module)
+
+## FAQ
+
+**What is the best recovery tech overall?**
+It depends on the recovery you're after. Cold plunge (BlueCubeBaths) is the most time-efficient active practice; Apollo Neuro is the passive all-day wearable; Muse trains the meditation habit with feedback; Vellgus adds red light therapy. All are brands I partner with.
+
+**Cold plunge vs red light therapy — which is better for recovery?**
+Different mechanisms. Cold immersion is acute and fast — minutes per session. Red light therapy is a slower, session-based modality. Many people use both; if you're choosing one, cold plunge gives more effect per minute.
+
+**Are these recovery tech discount codes still valid?**
+Yes — I check and update every code monthly. The current verified codes are listed in the table above and on my discount codes page.
+
+**Do I need all four of these?**
+No. Pick one active practice (cold plunge or meditation training) and optionally one passive tool (wearable or red light). That's a complete recovery stack.
+
+---
+
+## End of article body
+
+After the build passes: save everything and STOP. In your final report, list: the new route, the <title> and H1, which code/href values you pulled from the data module for each brand, and any conflicts found between this prompt and the data module. Do NOT publish.
