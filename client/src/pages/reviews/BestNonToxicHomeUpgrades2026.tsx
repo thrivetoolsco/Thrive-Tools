@@ -40,6 +40,10 @@ const faqs = [
     q: "Are the partner codes guaranteed to work or create an automatic discount?",
     a: "The source list provides the codes shown on this page. A listed code is not a guarantee of a particular discount or checkout result; check the merchant's terms and confirm the code is accepted before completing an order. If a source code begins with “Follow,” it is link-only and should not be treated as an automatic discount.",
   },
+  {
+    q: "Do scented candles and incense really pollute indoor air?",
+    a: "Yes — measurably. In a 2026 peer-reviewed study of 112 London homes, incense, oil diffusers, and candles elevated indoor PM2.5, with hourly peaks up to 1,293 μg/m³ for incense. The study also reported frequent exceedance of the WHO 24-hour guideline of 15 μg/m³; hourly peaks and 24-hour averages are different measures. The authors called fragrance products “a substantial yet underrecognized driver of indoor particulate pollution.” My practical takeaway is fewer scented products, plus better ventilation and appropriate air filtration. (Gao et al., Environment International, 2026, DOI 10.1016/j.envint.2026.110471.)",
+  },
 ];
 
 function PartnerLink({
@@ -201,6 +205,25 @@ export default function BestNonToxicHomeUpgrades2026() {
             For a like-for-like comparison, look at the exact product, ingredient list, size, flavor, and any features that matter to you. A brand or marketing descriptor alone is not a substitute for checking the package or asking a dental professional about an individual concern.
           </p>
           <OfferDetails item={davids} label="Source-listed partner code" displayName="Davids" />
+        </section>
+
+        <section className="space-y-4" id="fragrance-trade-off">
+          <h2 className="font-display text-2xl font-bold text-black">The fragrance trade-off: what the 2026 research says</h2>
+          <p className="leading-relaxed text-black/70">
+            Here's one I didn't expect to rank so high: scented products. A 2026 peer-reviewed study in <em>Environment International</em> (Gao et al.) measured PM2.5 in 112 London homes between 2022 and 2024 and found routine fragrance use is a dominant indoor pollution source — hourly peaks up to 1,293 μg/m³ for incense, 858 for oil diffusers, and 622 for candles, against the WHO 24-hour guideline of just 15 μg/m³. Incense and oil diffusers each accounted for nearly half of bedroom PM2.5 exposure in using homes, and exposures were worst in compact, poorly ventilated dwellings — exactly the modern airtight-home scenario.
+          </p>
+          <p className="text-sm leading-relaxed text-black/60">
+            The hourly peaks and the WHO's 24-hour guideline use different averaging periods, so a peak alone does not establish a 24-hour exceedance. The study separately reported frequent exceedance of the 24-hour guideline, including a median exceedance rate of 40% in candle-using homes and exceedances on most monitored days in some incense-using households.
+          </p>
+          <p className="leading-relaxed text-black/70">
+            The authors called fragrance products “a substantial yet underrecognized driver of indoor particulate pollution.” This is why one of my highest-leverage non-toxic swaps costs nothing: fewer scented products, better ventilation, and proper filtration.
+          </p>
+          <p className="text-sm leading-relaxed text-black/60">
+            Citation: Gao et al., <em>Environment International</em>, 2026.{" "}
+            <a href="https://doi.org/10.1016/j.envint.2026.110471" target="_blank" rel="noopener noreferrer" className="text-[#8b3a1a] underline underline-offset-4">DOI 10.1016/j.envint.2026.110471</a>
+            {" · "}
+            <a href="https://pubmed.ncbi.nlm.nih.gov/42691638/" target="_blank" rel="noopener noreferrer" className="text-[#8b3a1a] underline underline-offset-4">PubMed PMID 42691638</a>.
+          </p>
         </section>
 
         <section className="space-y-4">
