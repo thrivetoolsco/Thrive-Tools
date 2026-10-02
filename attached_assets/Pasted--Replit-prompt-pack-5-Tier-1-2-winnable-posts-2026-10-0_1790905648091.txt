@@ -1,0 +1,235 @@
+# Replit prompt pack — 5 Tier-1/2 winnable posts (2026-10-01)
+
+Paste ONE prompt at a time into the thrivetools.co Replit project. **SAVE-ONLY on every prompt: do not publish, do not deploy.** I publish everything myself after review.
+
+**Why these 5:** keyword research on 2026-10-01 showed only /discount-codes is indexed on Google — new pages must exist AND be indexable to rank. These target queries with thin competition (coupon giants barely cover EMR-TEK, Silver Fern, niche saunas, gut-health questions) plus AI-visibility FAQ formats. Nothing here duplicates an existing post — checked against all 24 AEO discount-code posts, 7 comparison posts, the Therasage discount-code post, and the existing prompts in this folder.
+
+**Shared rules for all 5 prompts:**
+- First check the route does not already exist anywhere in the codebase. Register each route ABOVE the 404 catch-all in all four route files (`client/src/App.tsx`, ssr-routes, entry-server, shared/site-routes). Production build must pass with 0 errors.
+- Every post gets a HERO/FEATURED image — no exceptions. Generate one that fits the post's topic in the site's existing style, save it with the post's assets, and wire it as the featured image.
+- First-person voice: "I run ThriveTools.co, a science-backed wellness and biohacking platform built from 14 years of personal research." Affiliate disclosure near the top, same wording as other posts.
+- AEO structure on every post: exact-phrase `<title>` (~60 chars), meta description, one H1, FAQ section with FAQPage JSON-LD matching the pattern on the other posts, and one internal link to /discount-codes plus links to real existing post slugs (look them up in the route files — do not guess).
+- Never invent: no invented discount percentages, prices, specs, personal-use claims, or statistics. Codes and hrefs come ONLY from the project's /discount-codes data module — if a prompt's stated code conflicts with the data module, the data module wins and you must flag the conflict. Date: October 2026.
+
+---
+
+## PROMPT 1 — EMR-TEK Discount Code post
+
+**TASK — Create the post at route `/blog/emr-tek-discount-code`**
+
+SEO: `<title>` "EMR-TEK Discount Code (EDEN17306): Verified 2026" — keep "EMR-TEK Discount Code" at the start, under ~60 chars. Meta description must include "EMR-TEK discount code", "EDEN17306", "verified". H1: "EMR-TEK Discount Code: EDEN17306 (Verified 2026)". Category tag: `Discount Codes`.
+
+Partner facts (all verified): I am partnered with EMR-TEK (accepted 2026-09-25). Code **EDEN17306**, affiliate link `https://www.emr-tek.com/EDEN17306` — verify both against the /discount-codes data module. Customer-facing discount amount is NOT stated anywhere — do NOT invent a percentage; say "use the code at checkout" without claiming $ or % off.
+
+Product facts (do not embellish): EMR-TEK sells red light therapy devices, UV systems, blue-light glasses, and circadian lighting bulbs. It does NOT sell EMF shielding products — do not describe it as an EMF-shielding brand.
+
+### ARTICLE BODY (render as written, H1/H2s as marked)
+
+# EMR-TEK Discount Code: EDEN17306 (Verified 2026)
+
+I run ThriveTools.co, a science-backed wellness and biohacking platform built from 14 years of personal research. I only publish codes I can personally verify — and I check every code on this site monthly. Here's the current, verified EMR-TEK discount code.
+
+## The code
+
+**Code:** EDEN17306
+**How to use it:** Enter the code at checkout on emr-tek.com, or shop through my affiliate link and the code applies.
+
+## What EMR-TEK sells
+
+EMR-TEK covers the "light environment" picture: red light therapy devices for recovery and skin, UV systems, blue-light glasses for evening screen time, and circadian lighting bulbs for mornings. One brand for the full spectrum of light you're exposed to — which is exactly why they're on my [discount codes page](/discount-codes).
+
+## FAQ
+
+**Is the EMR-TEK discount code EDEN17306 still working?**
+Yes — I verified it personally and I re-check every code monthly. If it ever stops working, it comes off this page.
+
+**How much do I save with the EMR-TEK code?**
+EMR-TEK hasn't published a fixed percentage for this code, so I won't invent one. Apply EDEN17306 at checkout to lock in whatever the current offer is.
+
+**Does EMR-TEK sell EMF shielding products?**
+No. EMR-TEK's line is red light devices, UV systems, blue-light glasses, and circadian bulbs. If you want EMF-specific products, see my [Best EMF Protection 2026](/blog/best-emf-protection-2026) comparison instead.
+
+**Where can I find more wellness discount codes?**
+My [discount codes page](/discount-codes) covers 40+ brands I personally partner with — every code verified.
+
+---
+
+## PROMPT 2 — Lumebox Discount Code post
+
+**TASK — Create the post at route `/blog/lumebox-discount-code`**
+
+SEO: `<title>` "Lumebox Discount Code (ThriveTools): Verified 2026" — keep "Lumebox Discount Code" at the start, under ~60 chars. Meta description must include "Lumebox discount code", "ThriveTools", "verified". H1: "Lumebox Discount Code: ThriveTools (Verified 2026)". Category tag: `Discount Codes`.
+
+Partner facts (all verified): I am partnered with Lumebox (approved 2026-09-28, user-confirmed). Code **`ThriveTools`** — exact casing matters, copy it exactly. Customer-facing discount amount is UNKNOWN — do NOT invent a percentage or dollar amount anywhere in the post.
+
+Content facts: I own a Lumebox myself. Lumebox makes red light therapy devices (panels/portable devices). Keep any personal mention factual: "I own a Lumebox" — do not invent usage routines, treatment claims, or results.
+
+### ARTICLE BODY (render as written, H1/H2s as marked)
+
+# Lumebox Discount Code: ThriveTools (Verified 2026)
+
+I run ThriveTools.co, a science-backed wellness and biohacking platform built from 14 years of personal research. I own a Lumebox myself, and I'm partnered with them — so here's the verified code, kept current.
+
+## The code
+
+**Code:** ThriveTools (exact casing — copy it as shown)
+**How to use it:** Enter the code at checkout on thelumebox.com.
+
+## What Lumebox makes
+
+Lumebox makes red light therapy devices — panels and portable units for at-home light therapy. Red light is one of the most-studied corners of the biohacking world, and for the full category breakdown see my [Best Red Light Therapy Devices 2026](/blog/best-red-light-therapy-devices-2026) comparison. The codes-only roundup is at [Best Red Light Therapy Discount Codes 2026](/blog/best-red-light-therapy-discount-codes-2026) — verify both slugs in the route files and use the real ones.
+
+## FAQ
+
+**Is the Lumebox discount code still working?**
+Yes — I re-check every code on this site monthly. The current verified code is ThriveTools, exact casing.
+
+**How much do I save with the Lumebox code?**
+Lumebox hasn't published a fixed discount amount for this code, so I won't invent a number. Apply ThriveTools at checkout to lock in the current offer.
+
+**Where can I find more red light therapy discount codes?**
+My [discount codes page](/discount-codes) covers 40+ brands I personally partner with, and my [Best Red Light Therapy Discount Codes 2026](/blog/best-red-light-therapy-discount-codes-2026) roundup covers the category.
+
+---
+
+## PROMPT 3 — Silver Fern brand guide (AEO)
+
+**TASK — Create the post at route `/blog/silver-fern-brand-guide`**
+
+SEO: `<title>` "Silver Fern Brand Guide: Probiotics & Gut Health 2026" — keep "Silver Fern" at the start, under ~60 chars. Meta description must include "Silver Fern", "probiotic", "gut health". H1: "Silver Fern, Explained: A Gut-Health Brand Guide". Category tag: `Brand Guides`.
+
+Partner facts (all verified): I am a Silver Fern ambassador (accepted 2026-10-01). The program gives my audience an exclusive 10% referral discount; I earn 25 points per referral plus milestone free products — it is a referral-points program, no cash commission. **I do not have my personal referral code/link yet** (it unlocks after I complete the Roster ambassador dashboard setup) — so: check the /discount-codes data module; if a Silver Fern code/link is there, use it; if not, write "My referral link is being set up — check my [discount codes page](/discount-codes) for the current code" and do NOT invent one.
+
+Content facts: Silver Fern is a gut-health brand (probiotics and related products). Do not invent product names, strains, prices, or clinical claims. Keep it a who-they-are / who-they're-for guide. For the deeper science of how probiotics work, link to my [How Prebiotics and Probiotics Work Together](/blog/how-prebiotics-and-probiotics-work) post (Prompt 5 — if it doesn't exist yet when you build this, link to /discount-codes instead).
+
+### ARTICLE BODY (render as written, H1/H2s as marked)
+
+# Silver Fern, Explained: A Gut-Health Brand Guide
+
+I run ThriveTools.co, a science-backed wellness and biohacking platform built from 14 years of personal research. I'm a Silver Fern ambassador, and I only partner with brands I can recommend authentically. Here's the honest guide: what Silver Fern is, who it's for, and how the discount works.
+
+## What Silver Fern is
+
+Silver Fern is a gut-health brand focused on probiotics and digestive wellness products. Gut health is one of the categories I cover most — my audience is research-literate people investing in supplements and longevity, and the microbiome sits at the center of a lot of that.
+
+## Who it's for
+
+- People building a foundational gut-health stack alongside diet and lifestyle.
+- Anyone who wants a probiotic from a brand with a real ambassador program rather than a faceless supplement label.
+- Readers of my [discount codes page](/discount-codes) who want a verified code from a brand I actually partner with.
+
+## The discount
+
+As an ambassador, I can share an exclusive 10% referral discount with my audience. (Code/link: pull from the /discount-codes data module; if it's not there yet, my referral link is being set up — check the [discount codes page](/discount-codes) for the current code.)
+
+## FAQ
+
+**What does Silver Fern sell?**
+Gut-health products centered on probiotics and digestive wellness.
+
+**Is Silver Fern a good probiotic brand?**
+It's a brand I chose to partner with as an ambassador, which means it cleared my bar for authenticity. For the science of how probiotics actually work, see my guide on [how prebiotics and probiotics work together](/blog/how-prebiotics-and-probiotics-work).
+
+**How do I get the Silver Fern discount?**
+Use my referral link or code from the [discount codes page](/discount-codes) — I keep every code there verified and current.
+
+**Does Silver Fern ship to Canada?**
+Check their site at checkout for current shipping regions — I won't publish shipping claims I can't keep current.
+
+---
+
+## PROMPT 4 — Infrared Sauna vs Traditional Sauna (featured-snippet FAQ, Therasage angle)
+
+**TASK — Create the post at route `/blog/infrared-sauna-vs-traditional-sauna`**
+
+SEO: `<title>` "Infrared Sauna vs Traditional Sauna: Which Is Better?" — keep "Infrared Sauna vs Traditional Sauna" at the start, under ~60 chars. Meta description must include "infrared sauna vs traditional sauna", "portable infrared sauna". H1: "Infrared Sauna vs Traditional Sauna: An Honest Comparison". Category tag: `Guides`.
+
+Partner facts (all verified): I am partnered with Therasage (accepted 2026-09-30) — portable infrared saunas, PEMF and infrared mats, light-powered oral care, vegan skin brushes. Code **THRIVETOOLS**, affiliate link `https://therasage.com/discount/THRIVETOOLS?rfsn=9353405.0f95ac3&utm_source=refersion&utm_medium=affiliate&utm_campaign=9353405.0f95ac3` — verify both against the /discount-codes data module; do NOT invent a discount percentage.
+
+Content rules: This is a comparison of sauna TYPES, not a brand review — it must not duplicate the angle of the 7 existing comparison posts (none of which cover saunas). Stay factual: traditional Finnish saunas heat the air to 160–195°F; infrared saunas heat the body directly at lower air temperatures (roughly 110–140°F). Evidence framing: the strongest sauna data comes from Finnish cohort studies (observational — associated with better cardiovascular markers, not proof of causation); heat exposure raises heart rate similarly to moderate exercise. Safety: avoid if pregnant, uncontrolled blood pressure, heart condition, or dizziness — talk to a doctor first; no alcohol. No disease-treatment claims. Portable infrared = the apartment-friendly entry point (no renovation) — that's where Therasage fits, disclosed as my affiliate partner.
+
+### ARTICLE BODY (render as written, H1/H2s as marked)
+
+# Infrared Sauna vs Traditional Sauna: An Honest Comparison
+
+I run ThriveTools.co, a science-backed wellness and biohacking platform built from 14 years of personal research. Saunas are one of the most evidence-adjacent habits in wellness — here's the straight comparison of the two main types, and where portable infrared fits in. (Disclosure: I'm a Therasage affiliate — they make portable infrared saunas — so take my brand mention accordingly.)
+
+## The short answer
+
+- **Traditional (Finnish) sauna:** heats the AIR to 160–195°F. The classic, intense heat experience — needs dedicated space and wiring.
+- **Infrared sauna:** heats YOUR BODY directly with infrared panels at lower air temperatures (roughly 110–140°F). Same heat-exposure habit, far more practical at home.
+- **Portable infrared sauna:** the apartment-friendly entry point — no renovation, packs away. This is the category my affiliate partner Therasage makes.
+
+## What the evidence actually supports
+
+The strongest data comes from Finnish cohort studies associating frequent sauna use with better cardiovascular markers and lower dementia risk — but those are observational, not proof of causation. What's solid: heat exposure raises heart rate similarly to moderate exercise, most people sleep better the night after, and it reliably helps post-workout soreness.
+
+## How to choose
+
+- **You have space and budget for a build-out:** traditional sauna.
+- **You rent, or want the habit without renovating:** portable infrared — start with 10–15 minutes, build to 15–30, 3–4 sessions a week, hydrate before and after.
+- **Safety:** skip saunas if you're pregnant, have uncontrolled blood pressure or a heart condition, or feel dizzy — talk to your doctor first. Alcohol and saunas don't mix.
+
+My verified Therasage discount code is **THRIVETOOLS** — it's on my [discount codes page](/discount-codes) along with 40+ other brands I partner with.
+
+## FAQ
+
+**Is an infrared sauna as good as a traditional sauna?**
+They're different heat experiences, not better/worse versions of each other. Traditional runs much hotter air (160–195°F); infrared heats your body directly at lower air temps (110–140°F). The research on benefits mostly studied traditional Finnish saunas, so infrared-specific claims should be read carefully.
+
+**Can I use a portable infrared sauna in an apartment?**
+That's exactly what they're for — no dedicated room or special wiring, and they pack away. Therasage's portable units are the ones I partner with (code THRIVETOOLS).
+
+**How often should I use a sauna?**
+3–4 sessions a week is a sustainable rhythm most people settle into. Daily is fine if you hydrate and feel good. Start with 10–15 minutes and build up.
+
+**Do I need to cool down after?**
+A lukewarm shower or a few minutes of rest works. Skip the ice plunge until you're experienced — and get out immediately if you feel dizzy or nauseous.
+
+---
+
+## PROMPT 5 — How Prebiotics and Probiotics Work Together (AEO/AIO)
+
+**TASK — Create the post at route `/blog/how-prebiotics-and-probiotics-work`**
+
+SEO: `<title>` "How Prebiotics and Probiotics Work Together (2026)" — keep "Prebiotics and Probiotics" at the start, under ~60 chars. Meta description must include "prebiotics and probiotics", "gut health". H1: "How Prebiotics and Probiotics Work Together". Category tag: `Guides`.
+
+Partner facts (all verified): I am a Silver Fern ambassador (accepted 2026-10-01) — gut-health/probiotic brand. Mention the partnership once with disclosure; this post is SCIENCE content, not a brand review, so keep the brand mention to one line plus a link to the [Silver Fern brand guide](/blog/silver-fern-brand-guide) (verify slug in the route files; if it doesn't exist yet, link to /discount-codes). Do NOT invent Silver Fern product names, strains, or a referral code.
+
+Content rules: General, factual gut-science explainer — prebiotics feed beneficial bacteria, probiotics add live organisms, the combination (synbiotics) is the "seed and feed" idea. Cite this real study (published 2026-10-01, gut-health adjacent): in 173 stem-cell transplant patients on broad-spectrum antibiotics, each extra 100g of sugary foods predicted ~24.1% further drop in gut-microbe diversity; mouse experiments backed it, with sucrose + antibiotic driving Enterococcus expansion 33.4x by day six; authors say clinical trials are needed before advising everyone on antibiotics to cut sugar (reported via Men's Journal / Particle News, 2026-10-01). Frame it as "why gut diversity matters — and why people reach for probiotics after antibiotics," NOT as medical advice and NOT as a Silver Fern claim. No disease-treatment claims. No invented statistics beyond what's stated here.
+
+### ARTICLE BODY (render as written, H1/H2s as marked)
+
+# How Prebiotics and Probiotics Work Together
+
+I run ThriveTools.co, a science-backed wellness and biohacking platform built from 14 years of personal research. Gut health is the category I get asked about most — and prebiotics vs probiotics is the confusion I see most. Here's the straight version. (Disclosure: I'm a Silver Fern ambassador — a gut-health brand — so I have a professional interest in this category; the science below stands on its own.)
+
+## The 30-second version
+
+- **Probiotics** add live beneficial organisms — the "seed."
+- **Prebiotics** feed the beneficial bacteria you already have — the "feed" (mostly specific fibers).
+- Together they're sometimes called **synbiotics**: seed + feed. That's the whole idea.
+
+## Why gut diversity matters
+
+A quick data point on why people care: a study published October 1, 2026 found that in 173 stem-cell transplant patients on broad-spectrum antibiotics, each extra 100 grams of sugary foods predicted about a 24.1% further drop in gut-microbe diversity. Mouse experiments backed the pattern — sucrose plus an antibiotic drove Enterococcus expansion 33.4 times by day six. The authors stress clinical trials are needed before advising everyone on antibiotics to cut sugar — but it underlines the point: gut diversity is fragile, and it's one reason people reach for probiotics during and after antibiotic courses (talk to your doctor about timing).
+
+## How to actually use this
+
+- **Food first:** fermented foods (yogurt, kefir, kimchi, sauerkraut) for live organisms; diverse plant fibers — legumes, oats, onions, garlic, asparagus — for prebiotics.
+- **Supplements second:** a probiotic makes sense when diet alone isn't covering it — travel, antibiotics (with medical guidance), or a persistent gap. That's the lane my affiliate partner Silver Fern is in — see my [Silver Fern brand guide](/blog/silver-fern-brand-guide).
+- **Consistency beats dose:** gut interventions work over weeks, not days.
+
+## FAQ
+
+**Should I take prebiotics and probiotics at the same time?**
+You can — that's the synbiotic idea: the prebiotic fiber feeds both your resident bacteria and the probiotic organisms. There's no required timing ritual; daily consistency matters more.
+
+**Can I get both from food alone?**
+Often yes. Fermented foods supply live organisms and fiber-rich plants supply prebiotics. Supplements fill gaps — they're a complement to diet, not a replacement.
+
+**Do probiotics help after antibiotics?**
+Antibiotics reduce gut-microbe diversity — the October 2026 study above shows how sharply, especially with high sugar intake. Many people use probiotics during recovery, but timing and strain choice are worth discussing with your doctor, not deciding from a blog post.
+
+**Which probiotic brand do you recommend?**
+I'm a Silver Fern ambassador, so they're the brand I partner with in this category — my [brand guide](/blog/silver-fern-brand-guide) and [discount codes page](/discount-codes) have the details.
