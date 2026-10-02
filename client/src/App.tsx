@@ -238,6 +238,11 @@ import LumeboxDiscountCode from "./pages/reviews/LumeboxDiscountCode";
 import GoliDiscountCode from "./pages/reviews/GoliDiscountCode";
 import EmrTekDiscountCode from "./pages/reviews/EmrTekDiscountCode";
 import TherasageDiscountCode from "./pages/reviews/TherasageDiscountCode";
+import EmrTekCheckoutCode from "./pages/reviews/EmrTekCheckoutCode";
+import LumeboxCheckoutCode from "./pages/reviews/LumeboxCheckoutCode";
+import SilverFernBrandGuide from "./pages/reviews/SilverFernBrandGuide";
+import InfraredSaunaVsTraditional from "./pages/reviews/InfraredSaunaVsTraditional";
+import PrebioticsProbioticsGuide from "./pages/reviews/PrebioticsProbioticsGuide";
 import {
   IM8DiscountCodeFaq, EquipFoodsDiscountCodeFaq, HyperionHerbsDiscountCodeFaq,
   JustThriveDiscountCodeFaq, OrganikaDiscountCodeFaq, AquaOmegaDiscountCodeFaq,
@@ -645,6 +650,11 @@ function Router() {
         <Route path="/goli-discount-code" component={GoliDiscountCode} />
         <Route path="/emr-tek-discount-code" component={EmrTekDiscountCode} />
         <Route path="/blog/therasage-discount-code" component={TherasageDiscountCode} />
+        <Route path="/blog/emr-tek-discount-code" component={EmrTekCheckoutCode} />
+        <Route path="/blog/lumebox-discount-code" component={LumeboxCheckoutCode} />
+        <Route path="/blog/silver-fern-brand-guide" component={SilverFernBrandGuide} />
+        <Route path="/blog/infrared-sauna-vs-traditional-sauna" component={InfraredSaunaVsTraditional} />
+        <Route path="/blog/how-prebiotics-and-probiotics-work" component={PrebioticsProbioticsGuide} />
         <Route component={NotFound} />
       </Switch>
     </Suspense>

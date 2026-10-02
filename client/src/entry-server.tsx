@@ -126,6 +126,11 @@ import LumeboxDiscountCode from "@/pages/reviews/LumeboxDiscountCode";
 import GoliDiscountCode from "@/pages/reviews/GoliDiscountCode";
 import EmrTekDiscountCode from "@/pages/reviews/EmrTekDiscountCode";
 import TherasageDiscountCode from "@/pages/reviews/TherasageDiscountCode";
+import EmrTekCheckoutCode from "@/pages/reviews/EmrTekCheckoutCode";
+import LumeboxCheckoutCode from "@/pages/reviews/LumeboxCheckoutCode";
+import SilverFernBrandGuide from "@/pages/reviews/SilverFernBrandGuide";
+import InfraredSaunaVsTraditional from "@/pages/reviews/InfraredSaunaVsTraditional";
+import PrebioticsProbioticsGuide from "@/pages/reviews/PrebioticsProbioticsGuide";
 import {
   IM8DiscountCodeFaq, EquipFoodsDiscountCodeFaq, HyperionHerbsDiscountCodeFaq,
   JustThriveDiscountCodeFaq, OrganikaDiscountCodeFaq, AquaOmegaDiscountCodeFaq,
@@ -363,6 +368,11 @@ export const SSR_ROUTE_COMPONENTS: Record<string, ComponentType> = {
   "/goli-discount-code": GoliDiscountCode,
   "/emr-tek-discount-code": EmrTekDiscountCode,
   "/blog/therasage-discount-code": TherasageDiscountCode,
+  "/blog/emr-tek-discount-code": EmrTekCheckoutCode,
+  "/blog/lumebox-discount-code": LumeboxCheckoutCode,
+  "/blog/silver-fern-brand-guide": SilverFernBrandGuide,
+  "/blog/infrared-sauna-vs-traditional-sauna": InfraredSaunaVsTraditional,
+  "/blog/how-prebiotics-and-probiotics-work": PrebioticsProbioticsGuide,
 };
 
 export async function render(
