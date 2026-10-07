@@ -11,6 +11,7 @@ type EditorialPostProps = {
   category: "Discount Codes" | "Brand Guides" | "Guides";
   image: string;
   imageAlt: string;
+  imageCaption?: string;
   disclosure: string;
   intro: ReactNode;
   datePublished?: string;
@@ -79,7 +80,7 @@ export default function EditorialPost(props: EditorialPostProps) {
       <article className="space-y-8">
         <figure className="card-glass rounded-2xl overflow-hidden">
           <img src={props.image} alt={props.imageAlt} loading="eager" decoding="async" className="w-full h-auto object-contain" />
-          <figcaption className="px-4 py-2 text-xs text-black/50">Editorial illustration; not a photograph of a specific brand's product.</figcaption>
+          <figcaption className="px-4 py-2 text-xs text-black/50">{props.imageCaption ?? "Editorial illustration; not a photograph of a specific brand's product."}</figcaption>
         </figure>
         <div className="flex flex-wrap items-center gap-3">
           <Badge className="bg-[#c4622d]/15 text-[#8b3a1a] border-[#c4622d]/25">{props.category}</Badge>

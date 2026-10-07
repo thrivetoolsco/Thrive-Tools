@@ -1,6 +1,6 @@
 import EditorialPost, { ArticleSection } from "@/components/EditorialPost";
 import { EditorialOffer, requireEditorialOffer } from "./EditorialOffer";
-import hero from "@assets/generated_images/hero-lumebox-discount-faq-oct2026.jpg";
+import hero from "@assets/IMG_1510_1791408438077.jpeg";
 
 const offer = requireEditorialOffer("Lumebox");
 const faqs = [
@@ -45,7 +45,8 @@ export default function LumeboxDiscountCodeFaq() {
       category="Discount Codes"
       datePublished="2026-10-07"
       image={hero}
-      imageAlt="A calm home wellness corner with oak, linen and soft red ambient light"
+      imageAlt="LUMEBOX portable red light device in the supplied Why LUMEBOX product graphic"
+      imageCaption="LUMEBOX product graphic supplied by the site owner. Benefit statements shown are brand claims."
       disclosure="ThriveTools is a Lumebox affiliate partner. We may earn a commission on purchases made through affiliate links, at no extra cost to you. The directory currently supplies the official store URL, not a Lumebox affiliate URL."
       intro="I only publish codes I can personally verify, and I re-check every code on this site monthly. Here are the most-asked questions about the Lumebox discount code."
       faqs={faqs}

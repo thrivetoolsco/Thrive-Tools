@@ -83,7 +83,8 @@ async function main() {
       assert(article.includes(`href="${route.replace(/-faq$/, "")}"`), `${route}: companion guide link missing`);
     }
     const image = head.match(/property="og:image" content="([^"]+)"/)?.[1];
-    assert(image?.startsWith("https://thrivetools.co/assets/hero-"), `${route}: featured image missing`);
+    const imagePrefix = route === "/blog/lumebox-discount-code-faq" ? "IMG_1510_1791408438077" : "hero-";
+    assert(image?.startsWith(`https://thrivetools.co/assets/${imagePrefix}`), `${route}: featured image missing`);
     const asset = image.replace("https://thrivetools.co/", "");
     assert(fs.existsSync(path.join("dist/public", asset)), `${route}: featured asset not built`);
     assert(result.html.includes(`src="/${asset}"`), `${route}: image not visible in article`);
