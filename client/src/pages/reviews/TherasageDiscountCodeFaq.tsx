@@ -1,6 +1,6 @@
 import EditorialPost, { ArticleSection } from "@/components/EditorialPost";
 import { EditorialOffer, requireEditorialOffer } from "./EditorialOffer";
-import hero from "@assets/generated_images/hero-therasage-discount-faq-oct2026.jpg";
+import hero from "@assets/IMG_1465_1791408567098.jpeg";
 
 const offer = requireEditorialOffer("Therasage");
 const faqs = [
@@ -47,7 +47,8 @@ export default function TherasageDiscountCodeFaq() {
       category="Discount Codes"
       datePublished="2026-10-07"
       image={hero}
-      imageAlt="Folded ivory towels and a water glass on warm wood in a peaceful home spa"
+      imageAlt="Therasage Elite RLT collection with a portable sauna, light panels and handheld devices"
+      imageCaption="Therasage product graphic supplied by the site owner."
       disclosure="ThriveTools is a Therasage affiliate partner. We may earn a commission on purchases made through links on this page, at no extra cost to you."
       intro="I only publish codes I can personally verify, and I re-check every code on this site monthly. Here are the most-asked questions about the Therasage discount code."
       faqs={faqs}

@@ -3,7 +3,7 @@ import { Badge } from "@/components/ui/badge";
 import { ExternalLink, Tag } from "lucide-react";
 import { Helmet } from "react-helmet-async";
 import { Link } from "wouter";
-import collectionImage from "@assets/IMG_1465_1790791745115.jpeg";
+import collectionImage from "@assets/IMG_1465_1791408567098.jpeg";
 import saunaImage from "@assets/IMG_1464_1790791745115.jpeg";
 
 const affiliateUrl = "https://therasage.com/discount/THRIVETOOLS?rfsn=9353405.0f95ac3&utm_source=refersion&utm_medium=affiliate&utm_campaign=9353405.0f95ac3";
