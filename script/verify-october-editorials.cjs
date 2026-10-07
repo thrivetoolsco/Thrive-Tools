@@ -10,6 +10,8 @@ const routes = [
   ["/blog/silver-fern-brand-guide", "Silver Fern Brand Guide: Probiotics & Gut Health 2026", "Silver Fern, Explained: A Gut-Health Brand Guide", 4],
   ["/blog/infrared-sauna-vs-traditional-sauna", "Infrared Sauna vs Traditional Sauna: Which Is Better?", "Infrared Sauna vs Traditional Sauna: An Honest Comparison", 4, "Therasage"],
   ["/blog/how-prebiotics-and-probiotics-work", "How Prebiotics and Probiotics Work Together (2026)", "How Prebiotics and Probiotics Work Together", 4],
+  ["/blog/lumebox-discount-code-faq", "Lumebox Discount Code FAQ: Verified Code & Answers 2026", "Lumebox Discount Code FAQ (Verified 2026)", 6, "Lumebox"],
+  ["/blog/therasage-discount-code-faq", "Therasage Discount Code FAQ: Verified Code & Answers 2026", "Therasage Discount Code FAQ (Verified 2026)", 6, "Therasage"],
 ];
 const registryFiles = [
   "client/src/App.tsx",
@@ -65,12 +67,20 @@ async function main() {
     assert(result.html.includes("October 2026"), `${route}: wrong display month`);
     const schemas = [...head.matchAll(/<script[^>]*type="application\/ld\+json"[^>]*>(.*?)<\/script>/gs)].map((m) => JSON.parse(m[1]));
     const posting = schemas.find((s) => s["@type"] === "BlogPosting");
-    assert.equal(posting?.datePublished, "2026-10-01", `${route}: wrong publication date`);
+    const weeklyFaq = route === "/blog/lumebox-discount-code-faq" || route === "/blog/therasage-discount-code-faq";
+    assert.equal(posting?.datePublished, weeklyFaq ? "2026-10-07" : "2026-10-01", `${route}: wrong publication date`);
     const faq = schemas.find((s) => s["@type"] === "FAQPage");
     assert.equal(faq.mainEntity.length, faqCount, `${route}: wrong FAQ count`);
+    const visibleFaqs = [...article.matchAll(/<h3\b[^>]*>(.*?)<\/h3>\s*<p\b[^>]*>(.*?)<\/p>/gs)]
+      .map((m) => ({ q: m[1].replace(/<[^>]*>/g, ""), a: m[2].replace(/<[^>]*>/g, "") }));
     for (const question of faq.mainEntity) {
-      assert(result.html.includes(escapeHtml(question.name)), `${route}: FAQ question not visible`);
-      assert(result.html.includes(escapeHtml(question.acceptedAnswer.text)), `${route}: FAQ answer not visible`);
+      const visible = visibleFaqs.find((entry) => entry.q === escapeHtml(question.name));
+      assert(visible, `${route}: FAQ question not visible`);
+      assert.equal(visible.a, escapeHtml(question.acceptedAnswer.text), `${route}: visible FAQ answer differs from schema`);
+    }
+    if (weeklyFaq) {
+      assert(!/\d+(?:\.\d+)?\s*%|\$\s*\d/.test(article), `${route}: unverified savings or program terms published`);
+      assert(article.includes(`href="${route.replace(/-faq$/, "")}"`), `${route}: companion guide link missing`);
     }
     const image = head.match(/property="og:image" content="([^"]+)"/)?.[1];
     assert(image?.startsWith("https://thrivetools.co/assets/hero-"), `${route}: featured image missing`);
@@ -100,8 +110,8 @@ async function main() {
     }
     console.log(`PASS ${route}: SSR, SEO, FAQ, hero and source offers`);
   }
-  assert.equal(images.size, 5, "Each post must have its own featured image");
-  console.log("All five editorial posts passed production-render checks.");
+  assert.equal(images.size, routes.length, "Each post must have its own featured image");
+  console.log(`All ${routes.length} editorial posts passed production-render checks.`);
 }
 
 main().catch((error) => {

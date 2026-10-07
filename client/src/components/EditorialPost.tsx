@@ -13,7 +13,8 @@ type EditorialPostProps = {
   imageAlt: string;
   disclosure: string;
   intro: ReactNode;
-  faqs: { q: string; a: string }[];
+  datePublished?: string;
+  faqs: { q: string; a: string; links?: { text: string; href: string }[] }[];
   children: ReactNode;
 };
 
@@ -40,6 +41,21 @@ export function ArticleSection({ title, children }: { title: string; children: R
   );
 }
 
+function FaqAnswer({ answer, links = [] }: { answer: string; links?: { text: string; href: string }[] }) {
+  if (!links.length) return <>{answer}</>;
+  const parts: ReactNode[] = [];
+  let remaining = answer;
+  for (const { text, href } of links) {
+    const index = remaining.indexOf(text);
+    if (index < 0) throw new Error(`FAQ link text must match the structured answer: ${text}`);
+    parts.push(remaining.slice(0, index));
+    parts.push(<ArticleLink key={`${href}-${parts.length}`} href={href}>{text}</ArticleLink>);
+    remaining = remaining.slice(index + text.length);
+  }
+  parts.push(remaining);
+  return <>{parts}</>;
+}
+
 export default function EditorialPost(props: EditorialPostProps) {
   return (
     <PageLayout
@@ -54,7 +70,7 @@ export default function EditorialPost(props: EditorialPostProps) {
         description: props.description,
         canonical: props.canonical,
         ogType: "article",
-        datePublished: "2026-10-01",
+        datePublished: props.datePublished ?? "2026-10-01",
         image: props.image,
         imageAlt: props.imageAlt,
       }}
@@ -75,10 +91,10 @@ export default function EditorialPost(props: EditorialPostProps) {
         </p>
         {props.children}
         <ArticleSection title="FAQ">
-          {props.faqs.map(({ q, a }) => (
+          {props.faqs.map(({ q, a, links }) => (
             <div key={q} className="card-glass rounded-2xl p-6">
               <h3 className="font-display font-bold text-black">{q}</h3>
-              <p className="mt-2 text-black/70 leading-relaxed">{a}</p>
+              <p className="mt-2 text-black/70 leading-relaxed"><FaqAnswer answer={a} links={links} /></p>
             </div>
           ))}
         </ArticleSection>

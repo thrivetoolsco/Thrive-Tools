@@ -130,6 +130,8 @@ import LumeboxCheckoutCode from "./pages/reviews/LumeboxCheckoutCode";
 import SilverFernBrandGuide from "./pages/reviews/SilverFernBrandGuide";
 import InfraredSaunaVsTraditional from "./pages/reviews/InfraredSaunaVsTraditional";
 import PrebioticsProbioticsGuide from "./pages/reviews/PrebioticsProbioticsGuide";
+import LumeboxDiscountCodeFaq from "./pages/reviews/LumeboxDiscountCodeFaq";
+import TherasageDiscountCodeFaq from "./pages/reviews/TherasageDiscountCodeFaq";
 import {
   IM8DiscountCodeFaq, EquipFoodsDiscountCodeFaq, HyperionHerbsDiscountCodeFaq,
   JustThriveDiscountCodeFaq, OrganikaDiscountCodeFaq, AquaOmegaDiscountCodeFaq,
@@ -260,6 +262,8 @@ export const SSR_ROUTE_COMPONENTS: Record<string, ComponentType> = {
   "/blog/silver-fern-brand-guide": SilverFernBrandGuide,
   "/blog/infrared-sauna-vs-traditional-sauna": InfraredSaunaVsTraditional,
   "/blog/how-prebiotics-and-probiotics-work": PrebioticsProbioticsGuide,
+  "/blog/lumebox-discount-code-faq": LumeboxDiscountCodeFaq,
+  "/blog/therasage-discount-code-faq": TherasageDiscountCodeFaq,
   "/product-reviews/biohacking-beginners-guide": BiohackingBeginnersGuide,
   "/blog/biohacking-beginners-guide": BiohackingBeginnersGuide,
   "/product-reviews/breathwork-beginners-guide": BreathworkBeginnersGuide,

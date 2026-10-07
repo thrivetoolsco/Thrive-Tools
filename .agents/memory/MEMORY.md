@@ -4,3 +4,4 @@
 - [Catalog counts over old briefs](catalog-counts.md) — when an older content brief names a fixed number of offers, use the live directory count instead of omitting valid cards.
 - [Partner-only comparisons](partner-only-comparisons.md) — omit requested brands without a source-listed offer rather than presenting them as shoppable partners.
 - [Uploaded post images](uploaded-post-images.md) — user-supplied images should be used for the requested post even when upload-generated filenames differ from a brief's proposed name.
+- [Therasage publication boundaries](therasage-publication-boundaries.md) — owner approved coupon-site distribution; internal affiliate-program terms are not for article copy.

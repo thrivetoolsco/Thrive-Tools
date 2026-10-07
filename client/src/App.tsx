@@ -243,6 +243,8 @@ import LumeboxCheckoutCode from "./pages/reviews/LumeboxCheckoutCode";
 import SilverFernBrandGuide from "./pages/reviews/SilverFernBrandGuide";
 import InfraredSaunaVsTraditional from "./pages/reviews/InfraredSaunaVsTraditional";
 import PrebioticsProbioticsGuide from "./pages/reviews/PrebioticsProbioticsGuide";
+import LumeboxDiscountCodeFaq from "./pages/reviews/LumeboxDiscountCodeFaq";
+import TherasageDiscountCodeFaq from "./pages/reviews/TherasageDiscountCodeFaq";
 import {
   IM8DiscountCodeFaq, EquipFoodsDiscountCodeFaq, HyperionHerbsDiscountCodeFaq,
   JustThriveDiscountCodeFaq, OrganikaDiscountCodeFaq, AquaOmegaDiscountCodeFaq,
@@ -655,6 +657,8 @@ function Router() {
         <Route path="/blog/silver-fern-brand-guide" component={SilverFernBrandGuide} />
         <Route path="/blog/infrared-sauna-vs-traditional-sauna" component={InfraredSaunaVsTraditional} />
         <Route path="/blog/how-prebiotics-and-probiotics-work" component={PrebioticsProbioticsGuide} />
+        <Route path="/blog/lumebox-discount-code-faq" component={LumeboxDiscountCodeFaq} />
+        <Route path="/blog/therasage-discount-code-faq" component={TherasageDiscountCodeFaq} />
         <Route component={NotFound} />
       </Switch>
     </Suspense>

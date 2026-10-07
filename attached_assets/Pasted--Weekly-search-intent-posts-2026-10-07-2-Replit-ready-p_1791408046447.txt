@@ -1,0 +1,102 @@
+# Weekly search-intent posts — 2026-10-07 (2 Replit-ready prompts)
+
+Paste ONE prompt at a time into the thrivetools.co Replit project. **SAVE-ONLY on every prompt: do not publish, do not deploy.** I publish everything myself after review.
+
+**Why these 2 (validated 2026-10-07 via web search):**
+1. **Lumebox discount code FAQ** — "lumebox discount code" has real search demand; page-1 competitors are fellow affiliate bloggers (mintarrow.com, camrynbyer.com with FAQ schema) and coupon aggregators — no Wirecutter/Healthline. A FAQ-schema AEO companion is winnable and follows the site's established pattern (40 brands have both a discount-code post and a -discount-code-faq post).
+2. **Therasage discount code FAQ** — "therasage discount code" has real demand; competitors are coupon aggregators (hotdeals, dontpayfull, knoji) plus affiliate bloggers. Winnable via FAQ-schema AEO targeting question queries. Also directly on-mission: Eden La explicitly approved distributing Therasage code THRIVETOOLS to discount/coupon sites (2026-09-30, eyes-open override of the no-aggregator term).
+
+**Duplicate checks (2026-10-07):** fetched https://thrivetools.co/sitemap.xml. `/blog/lumebox-discount-code` and `/blog/therasage-discount-code` exist; neither `/blog/lumebox-discount-code-faq` nor `/blog/therasage-discount-code-faq` exists. No duplicate. Both brands are on the live https://thrivetools.co/discount-codes page (verified partnerships: Lumebox approved 2026-09-28; Therasage accepted 2026-09-30).
+
+**Shared rules for both prompts:**
+- First check the route does not already exist anywhere in the codebase. Register each route ABOVE the 404 catch-all in all four route files (`client/src/App.tsx`, `ssr-routes.ts`, `entry-server.tsx`, `shared/site-routes.ts`). Production build must pass with 0 errors.
+- Every post gets a HERO/FEATURED image — no exceptions. Generate one that fits the post's topic in the site's existing style, save it with the post's assets, and wire it as the featured image AND og:image.
+- First-person voice: "I run ThriveTools.co, a science-backed wellness and biohacking platform built from 14 years of personal research." Affiliate disclosure near the top, same wording as existing posts.
+- AEO structure on every post: exact-phrase `<title>` (~60 chars), meta description, one H1, FAQ section with FAQPage JSON-LD matching the pattern on existing posts, and one internal link to /discount-codes plus links to real existing post slugs (look them up in the route files — do not guess).
+- NEVER invent: no invented discount percentages, dollar amounts, prices, specs, claims, expiry dates, or personal experience. Codes and hrefs come ONLY from the project's /discount-codes data module — if a prompt's stated code conflicts with the data module, the data module wins and you must flag the conflict in your output summary. Date: October 2026.
+
+---
+
+## PROMPT 1 — Lumebox Discount Code FAQ
+
+**TASK — Create the post at route `/blog/lumebox-discount-code-faq`**
+
+SEO: `<title>` "Lumebox Discount Code FAQ: Verified Code & Answers 2026" (55 chars — keep "Lumebox Discount Code" at the start, under ~60 chars). Meta description must include "Lumebox discount code", "ThriveTools", "verified". H1: "Lumebox Discount Code FAQ (Verified 2026)". Category tag: `Discount Codes`.
+
+Partner facts (all verified): I am partnered with Lumebox (approved 2026-09-28, user-confirmed). Code **`ThriveTools`** — exact casing matters, copy it exactly. Verify the code against the /discount-codes data module before rendering. The customer-facing discount amount is UNKNOWN — do NOT invent a percentage or dollar amount anywhere in the post (do not borrow savings numbers seen on coupon sites).
+
+Content facts: Lumebox makes portable red light therapy devices. I own a Lumebox myself — you may say "I own a Lumebox" but do not invent usage routines, treatment results, or claims. This is the FAQ companion to my existing `/blog/lumebox-discount-code` guide — different angle (question/answer for featured snippets), not a rewrite; link to the guide post.
+
+### ARTICLE BODY (render as written, H1/H2s as marked)
+
+# Lumebox Discount Code FAQ (Verified 2026)
+
+I run ThriveTools.co, a science-backed wellness and biohacking platform built from 14 years of personal research. (Disclosure: I'm a Lumebox affiliate — that's how I can offer a verified code instead of a random coupon-site guess.) I only publish codes I can personally verify, and I re-check every code on this site monthly. Here are the most-asked questions about the Lumebox discount code.
+
+## The code, up front
+
+**Code:** ThriveTools (exact casing — copy it as shown)
+**How to use it:** Enter the code at checkout on thelumebox.com.
+
+## FAQ
+
+**What is the current Lumebox discount code?**
+The current verified code is **ThriveTools** — exact casing. I'm a Lumebox affiliate, so this is a working partner code, not a scraped coupon-site listing.
+
+**How do I apply the Lumebox code at checkout?**
+Add your Lumebox device to the cart on thelumebox.com, enter the code **ThriveTools** in the discount-code box at checkout, and confirm the discount appears before paying.
+
+**Is the Lumebox discount code still working?**
+Yes. I re-check every code on this site monthly, and ThriveTools is the current verified code. If it ever stops working, it comes off this page.
+
+**How much do I save with the Lumebox code?**
+Lumebox hasn't published a fixed discount amount for this code, so I won't invent a number. Apply ThriveTools at checkout to lock in whatever the current offer is.
+
+**Does the Lumebox code work on all devices?**
+Apply it at checkout on thelumebox.com for the current promotion. I keep this page updated, so if the code's terms ever change, it'll be reflected here.
+
+**Where can I find more red light therapy discount codes?**
+My [discount codes page](/discount-codes) covers 40+ brands I personally partner with — every code verified. For the category breakdown, see my [Best Red Light Therapy Devices 2026](/blog/best-red-light-therapy-devices-2026) comparison and the main [Lumebox discount code](/blog/lumebox-discount-code) guide (verify both slugs in the route files and use the real ones).
+
+---
+
+## PROMPT 2 — Therasage Discount Code FAQ
+
+**TASK — Create the post at route `/blog/therasage-discount-code-faq`**
+
+SEO: `<title>` "Therasage Discount Code FAQ: Verified Code & Answers 2026" (57 chars — keep "Therasage Discount Code" at the start, under ~60 chars). Meta description must include "Therasage discount code", "THRIVETOOLS", "verified". H1: "Therasage Discount Code FAQ (Verified 2026)". Category tag: `Discount Codes`.
+
+Partner facts (all verified): I am partnered with Therasage (accepted 2026-09-30). Code **THRIVETOOLS**; affiliate link `https://therasage.com/discount/THRIVETOOLS?rfsn=9353405.0f95ac3&utm_source=refersion&utm_medium=affiliate&utm_campaign=9353405.0f95ac3` — verify BOTH against the /discount-codes data module before rendering. Do NOT invent a customer discount percentage anywhere in the post. Live program terms (context only, not for publication): 10% commission, 30-day cookie.
+
+Content facts (do not embellish): Therasage makes portable infrared saunas, PEMF and infrared mats, light-powered oral care, and vegan skin brushes. This is the FAQ companion to my existing `/blog/therasage-discount-code` post — different angle (question/answer for featured snippets), not a rewrite; link to it. For the sauna science angle, link to my [Infrared Sauna vs Traditional Sauna](/blog/infrared-sauna-vs-traditional-sauna) comparison (verify slug in the route files).
+
+### ARTICLE BODY (render as written, H1/H2s as marked)
+
+# Therasage Discount Code FAQ (Verified 2026)
+
+I run ThriveTools.co, a science-backed wellness and biohacking platform built from 14 years of personal research. (Disclosure: I'm a Therasage affiliate — so this is a verified partner code, not a coupon-site guess.) I only publish codes I can personally verify, and I re-check every code on this site monthly. Here are the most-asked questions about the Therasage discount code.
+
+## The code, up front
+
+**Code:** THRIVETOOLS
+**How to use it:** Enter the code at checkout on therasage.com, or shop through my affiliate link and the code applies.
+
+## FAQ
+
+**Is there a Therasage discount code?**
+Yes — the current verified code is **THRIVETOOLS**. I'm a Therasage affiliate, so this is a working partner code.
+
+**How do I use the Therasage discount code?**
+Add products to your cart on therasage.com, enter **THRIVETOOLS** in the discount-code box at checkout, and confirm the discount applies before paying — or shop through my affiliate link and the code applies automatically.
+
+**What does Therasage sell?**
+Therasage makes portable infrared saunas, PEMF and infrared mats, light-powered oral care, and vegan skin brushes — the portable side of the heat-therapy and recovery world. For the science of sauna types, see my [infrared sauna vs traditional sauna](/blog/infrared-sauna-vs-traditional-sauna) comparison.
+
+**Is the Therasage code still working?**
+Yes. I re-check every code on this site monthly, and THRIVETOOLS is the current verified code. If it ever stops working, it comes off this page.
+
+**How much do I save with the Therasage code?**
+Therasage hasn't published a fixed discount amount for this code, so I won't invent a number. Apply THRIVETOOLS at checkout to lock in the current offer.
+
+**Where can I find more wellness discount codes?**
+My [discount codes page](/discount-codes) covers 40+ brands I personally partner with — every code verified. The main [Therasage discount code](/blog/therasage-discount-code) guide has the longer walkthrough (verify slug in the route files and use the real one).
