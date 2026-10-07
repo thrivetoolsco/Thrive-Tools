@@ -304,7 +304,7 @@ export const ethicalClothing: DiscountItem[] = [
   {
     name: "Earthrunners",
     description: "Grounding, lifetime durable Sandals",
-    code: "THRIVETOOLS",
+    code: "10THRIVETOOLS",
     url: "https://earthrunners.com/?rfsn=7676227.de5b78",
     blogHref: "/blog/earthrunners-review",
   },

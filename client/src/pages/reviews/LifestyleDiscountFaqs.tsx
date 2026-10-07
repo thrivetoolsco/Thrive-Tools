@@ -30,8 +30,8 @@ type BrandFaq = {
 const brands: BrandFaq[] = [
   {
     brand: "EarthRunners", slug: "earthrunners-discount-code-faq", title: "EarthRunners Discount Code FAQ (2026)",
-    code: "THRIVETOOLS", href: "https://earthrunners.com/?rfsn=7676227.de5b78",
-    linkText: "Shop EarthRunners with code THRIVETOOLS", oneLiner: "Grounding minimalist sandal brand",
+    code: "10THRIVETOOLS", href: "https://earthrunners.com/?rfsn=7676227.de5b78",
+    linkText: "Shop EarthRunners with code 10THRIVETOOLS", oneLiner: "Grounding minimalist sandal brand",
     image: earthrunnersImage, imageAlt: "EarthRunners minimalist sandals",
   },
   {

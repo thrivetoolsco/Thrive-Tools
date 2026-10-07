@@ -29,11 +29,11 @@ function SectionHeader({
 const faqs = [
   {
     q: "Does the Earthrunners discount code expire?",
-    a: "Brands can change or retire codes at any time, so no code works forever. I re-check the codes on my discount codes page regularly. If THRIVETOOLS ever stops working, I update it there first.",
+    a: "Brands can change or retire codes at any time, so no code works forever. I re-check the codes on my discount codes page regularly. If 10THRIVETOOLS ever stops working, I update it there first.",
   },
   {
     q: "Where do I enter the Earthrunners discount code?",
-    a: "Add your products to the cart on earthrunners.com, go to checkout, and look for the discount-code box. Type THRIVETOOLS exactly as shown (all caps, no spaces) and apply it before you pay.",
+    a: "Add your products to the cart on earthrunners.com, go to checkout, and look for the discount-code box. Type 10THRIVETOOLS exactly as shown (all caps, no spaces) and apply it before you pay.",
   },
   {
     q: "Can I stack discount codes on Earthrunners?",
@@ -51,7 +51,7 @@ export default function EarthRunnersDiscountCode() {
       seo={{
         title: "Earthrunners Discount Code 2026 | Thrive Tools",
         description:
-          "Looking for an Earthrunners discount code? Use code THRIVETOOLS at checkout on earthrunners.com. Verified for 2026.",
+          "Looking for an Earthrunners discount code? Use code 10THRIVETOOLS at checkout on earthrunners.com. Verified for 2026.",
         canonical: "https://thrivetools.co/blog/earthrunners-discount-code",
         ogType: "article",
         datePublished: "2026-09-21",
@@ -75,7 +75,7 @@ export default function EarthRunnersDiscountCode() {
         <div className="card-glass rounded-2xl p-6 md:p-8" data-testid="answer-earthrunners-discount-code">
           <p className="text-lg leading-relaxed text-black/80">
             <strong className="font-semibold text-black">The short answer:</strong> use the code{" "}
-            <strong className="font-semibold text-black">THRIVETOOLS</strong> in the discount-code box at checkout on
+            <strong className="font-semibold text-black">10THRIVETOOLS</strong> in the discount-code box at checkout on
             earthrunners.com to save on your order.
           </p>
         </div>
@@ -94,7 +94,7 @@ export default function EarthRunnersDiscountCode() {
               </span>
               <div>
                 <p className="text-xs uppercase tracking-wider text-black/50">Discount code</p>
-                <p className="font-display text-2xl font-bold tracking-wide text-black">THRIVETOOLS</p>
+                <p className="font-display text-2xl font-bold tracking-wide text-black">10THRIVETOOLS</p>
               </div>
             </div>
             <a href="https://earthrunners.com/?rfsn=7676227.de5b78" target="_blank" rel="noopener noreferrer">
@@ -116,7 +116,7 @@ export default function EarthRunnersDiscountCode() {
             {[
               "Add the Earthrunners products you want to your cart on earthrunners.com.",
               "Go to checkout and find the discount-code (promo code) box.",
-              "Type THRIVETOOLS exactly as shown, all caps with no spaces, and click apply.",
+              "Type 10THRIVETOOLS exactly as shown, all caps with no spaces, and click apply.",
               "Confirm the discount shows on your order total before you pay.",
             ].map((step, i) => (
               <li key={i} className="card-glass rounded-2xl p-5 flex items-start gap-4">
@@ -134,7 +134,7 @@ export default function EarthRunnersDiscountCode() {
           <SectionHeader eyebrow="Good to know" title="Tips for using the code" />
           <ul className="space-y-3">
             {[
-              "Codes are usually case-sensitive: THRIVETOOLS must be all caps.",
+              "Codes are usually case-sensitive: 10THRIVETOOLS must be all caps.",
               "Only one discount code can be used per order.",
               "If the code does not apply, double-check for typos or extra spaces.",
             ].map((tip, i) => (
@@ -192,7 +192,7 @@ export default function EarthRunnersDiscountCode() {
             <div>
               <p className="font-display text-xl font-bold text-black">Ready to save on Earthrunners?</p>
               <p className="text-black/60 mt-1">
-                Enter <strong className="font-semibold text-black">THRIVETOOLS</strong> in the discount-code box at checkout.
+                Enter <strong className="font-semibold text-black">10THRIVETOOLS</strong> in the discount-code box at checkout.
               </p>
             </div>
             <a href="https://earthrunners.com/?rfsn=7676227.de5b78" target="_blank" rel="noopener noreferrer">

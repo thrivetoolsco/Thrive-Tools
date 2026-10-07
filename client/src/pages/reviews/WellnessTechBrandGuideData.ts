@@ -127,9 +127,9 @@ Barefoot-style runners, hikers, and travelers who want minimalist footwear — p
 ## What sets EarthRunners apart
 According to the company, its patented grounded conductive laces are stainless steel-lined and grounded via a copper plug exposed on the outsole. The brand says this lets wearers stay grounded like being barefoot and that the effect is measurable with a voltmeter. EarthRunners describes its zero-drop huarache-inspired design as promoting natural gait and foot strength, and says it donates 1% of all sales to True Messages, a nonprofit honoring the Rarámuri (Tarahumara) running heritage.`,
     pricing: "As listed on the official store (September 2026): adult sandals $77–$120 (Primal $77, Circadian $98, Atlas $120); children's sandals $35. Check the brand's site for current pricing.",
-    code: "THRIVETOOLS",
+    code: "10THRIVETOOLS",
     href: "https://earthrunners.com/?rfsn=7676227.de5b78",
-    linkText: "Shop EarthRunners with code THRIVETOOLS",
+    linkText: "Shop EarthRunners with code 10THRIVETOOLS",
     image: earthrunnersImage,
     imageAlt: "EarthRunners minimalist grounding sandals",
     faqs: [
