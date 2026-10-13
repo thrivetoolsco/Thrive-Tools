@@ -46,6 +46,12 @@ export const vitaminsSupplements: DiscountItem[] = [
     blogHref: "/blog/best-clean-protein-powder-2026-equip-prime-protein",
   },
   {
+    name: "Zentein",
+    description: "Protein bars, nutrient-dense snacks, collagen powders and electrolytes made in Ontario.",
+    code: "EDEN30",
+    url: "https://zentein.ca/?ref=THRIVETOOLSCO",
+  },
+  {
     name: "HyperionHerbs",
     description: "The gold standard for tonic herbs. Dual extracted, fruiting body only: the difference is noticeable. My go-to for Reishi, Cordyceps, Lion's Mane, and their incredible coffee formula.",
     code: "EDEN10",
