@@ -24,6 +24,7 @@ const BLOG_ROUTE_MAP: Record<string, string> = {
   "/blog/how-prebiotics-and-probiotics-work": "/src/pages/reviews/PrebioticsProbioticsGuide.tsx",
   "/blog/lumebox-discount-code-faq": "/src/pages/reviews/LumeboxDiscountCodeFaq.tsx",
   "/blog/therasage-discount-code-faq": "/src/pages/reviews/TherasageDiscountCodeFaq.tsx",
+  "/blog/zentein-discount-code": "/src/pages/reviews/ZenteinDiscountCode.tsx",
   "/blog/best-wellness-gifts-2026": "/src/pages/reviews/BestWellnessGifts2026.tsx",
   "/product-reviews/im8-vs-ag1": "/src/pages/reviews/Im8VsAg1.tsx",
   "/product-reviews/im8-health-review": "/src/pages/reviews/Im8HealthReview.tsx",

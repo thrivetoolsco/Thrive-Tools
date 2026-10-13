@@ -50,6 +50,7 @@ export const vitaminsSupplements: DiscountItem[] = [
     description: "Protein bars, nutrient-dense snacks, collagen powders and electrolytes made in Ontario.",
     code: "EDEN30",
     url: "https://zentein.ca/?ref=THRIVETOOLSCO",
+    blogHref: "/blog/zentein-discount-code",
   },
   {
     name: "HyperionHerbs",

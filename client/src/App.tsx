@@ -245,6 +245,7 @@ import InfraredSaunaVsTraditional from "./pages/reviews/InfraredSaunaVsTradition
 import PrebioticsProbioticsGuide from "./pages/reviews/PrebioticsProbioticsGuide";
 import LumeboxDiscountCodeFaq from "./pages/reviews/LumeboxDiscountCodeFaq";
 import TherasageDiscountCodeFaq from "./pages/reviews/TherasageDiscountCodeFaq";
+import ZenteinDiscountCode from "./pages/reviews/ZenteinDiscountCode";
 import {
   IM8DiscountCodeFaq, EquipFoodsDiscountCodeFaq, HyperionHerbsDiscountCodeFaq,
   JustThriveDiscountCodeFaq, OrganikaDiscountCodeFaq, AquaOmegaDiscountCodeFaq,
@@ -659,6 +660,7 @@ function Router() {
         <Route path="/blog/how-prebiotics-and-probiotics-work" component={PrebioticsProbioticsGuide} />
         <Route path="/blog/lumebox-discount-code-faq" component={LumeboxDiscountCodeFaq} />
         <Route path="/blog/therasage-discount-code-faq" component={TherasageDiscountCodeFaq} />
+        <Route path="/blog/zentein-discount-code" component={ZenteinDiscountCode} />
         <Route component={NotFound} />
       </Switch>
     </Suspense>
