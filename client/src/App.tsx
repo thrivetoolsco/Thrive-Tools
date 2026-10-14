@@ -249,6 +249,8 @@ import ZenteinDiscountCode from "./pages/reviews/ZenteinDiscountCode";
 import BlackFridaySupplementDeals from "./pages/reviews/BlackFridaySupplementDeals";
 import BlackFridayRedLightDeals from "./pages/reviews/BlackFridayRedLightDeals";
 import BlackFridayWellnessTechDeals from "./pages/reviews/BlackFridayWellnessTechDeals";
+import IM8DailyUltimateLongevity from "./pages/reviews/IM8DailyUltimateLongevity";
+import IM8BeckhamStack from "./pages/reviews/IM8BeckhamStack";
 import {
   IM8DiscountCodeFaq, EquipFoodsDiscountCodeFaq, HyperionHerbsDiscountCodeFaq,
   JustThriveDiscountCodeFaq, OrganikaDiscountCodeFaq, AquaOmegaDiscountCodeFaq,
@@ -667,6 +669,8 @@ function Router() {
         <Route path="/blog/black-friday-supplement-deals-2026" component={BlackFridaySupplementDeals} />
         <Route path="/blog/black-friday-red-light-therapy-deals-2026" component={BlackFridayRedLightDeals} />
         <Route path="/blog/black-friday-wellness-tech-deals-2026" component={BlackFridayWellnessTechDeals} />
+        <Route path="/blog/im8-daily-ultimate-longevity-guide" component={IM8DailyUltimateLongevity} />
+        <Route path="/blog/im8-beckham-stack-explained" component={IM8BeckhamStack} />
         <Route component={NotFound} />
       </Switch>
     </Suspense>

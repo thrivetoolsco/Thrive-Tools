@@ -28,6 +28,8 @@ const BLOG_ROUTE_MAP: Record<string, string> = {
   "/blog/black-friday-supplement-deals-2026": "/src/pages/reviews/BlackFridaySupplementDeals.tsx",
   "/blog/black-friday-red-light-therapy-deals-2026": "/src/pages/reviews/BlackFridayRedLightDeals.tsx",
   "/blog/black-friday-wellness-tech-deals-2026": "/src/pages/reviews/BlackFridayWellnessTechDeals.tsx",
+  "/blog/im8-daily-ultimate-longevity-guide": "/src/pages/reviews/IM8DailyUltimateLongevity.tsx",
+  "/blog/im8-beckham-stack-explained": "/src/pages/reviews/IM8BeckhamStack.tsx",
   "/blog/best-wellness-gifts-2026": "/src/pages/reviews/BestWellnessGifts2026.tsx",
   "/product-reviews/im8-vs-ag1": "/src/pages/reviews/Im8VsAg1.tsx",
   "/product-reviews/im8-health-review": "/src/pages/reviews/Im8HealthReview.tsx",
