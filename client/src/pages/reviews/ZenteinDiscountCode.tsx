@@ -10,6 +10,7 @@ import barLabel from "@assets/IMG_1532_1791933613410.jpeg";
 
 const offer = requireEditorialOffer("Zentein");
 const title = "Zentein Discount Code: Get 30% Off with EDEN30 (2026)";
+const seoTitle = "Zentein Discount Code: 30% Off with EDEN30 (2026)";
 const description = "Working Zentein discount code EDEN30 for 30% off protein bars, Elite Squares, collagen and electrolytes at zentein.ca. How to redeem, expiry, and FAQs.";
 const faqs = [
   { q: "What is the Zentein discount code?", a: "The current Zentein discount code is EDEN30. It gives you 30% off at zentein.ca when you enter it at checkout." },
@@ -45,7 +46,7 @@ export default function ZenteinDiscountCode() {
       backHref="/blog"
       backLabel="Blog"
       showShare
-      seo={{ title, noSuffix: true, description, canonical: "/blog/zentein-discount-code", ogType: "article", datePublished: "2026-10-13", image: hero, imageAlt: "Zentein protein bars and an Elite Square in their product packaging" }}
+      seo={{ title: seoTitle, noSuffix: true, description, canonical: "/blog/zentein-discount-code", ogType: "article", datePublished: "2026-10-13", image: hero, imageAlt: "Zentein protein bars and an Elite Square in their product packaging" }}
     >
       <FaqJsonLd faqs={faqs} />
       <article className="space-y-8">
@@ -57,7 +58,7 @@ export default function ZenteinDiscountCode() {
           <Badge className="bg-[#c4622d]/15 text-[#8b3a1a] border-[#c4622d]/25">Discount Codes</Badge>
           <time dateTime="2026-10-13" className="text-sm text-black/50">October 13, 2026</time>
         </div>
-        <p className="text-lg text-black/80 leading-relaxed">Looking for a working Zentein discount code? You can stop searching — <strong>{offer.code}</strong> takes 30% off at zentein.ca. Below: exactly how to redeem it, what Zentein sells, and how the code compares to the brand&apos;s own bundle savings.</p>
+        <p className="text-lg text-black/80 leading-relaxed">Looking for a working Zentein discount code? You can stop searching — <strong>{offer.code}</strong> takes 30% off at zentein.ca, and it&apos;s the largest single discount available for the Canadian clean-protein brand. Below: exactly how to redeem it, what Zentein sells, and how the code compares to the brand&apos;s own bundle savings.</p>
         <ArticleSection title="Quick answer">
           <p><strong>The Zentein discount code is {offer.code}.</strong> Enter it at checkout on <ShopLink /> to get <strong>30% off</strong> your order. The code is valid for one year, through <strong>October 13, 2027</strong>.</p>
           <p><ShopLink>Shop Zentein with code {offer.code} →</ShopLink></p>
@@ -115,6 +116,7 @@ export default function ZenteinDiscountCode() {
         </ArticleSection>
         <ArticleSection title="Verdict">
           <p>Zentein earns its place on our <ArticleLink href="/discount-codes">discount codes page</ArticleLink> for one reason: the labels. A 25g-protein bar built from five or six ingredients you can name, with no artificial sweeteners, colours, or preservatives, is genuinely hard to find — and it&apos;s made fresh weekly in Ontario. With <strong>{offer.code}</strong>, that clean label costs 30% less through October 2027. If you&apos;ve been meaning to try a protein bar that reads like food, this is the low-risk way in.</p>
+          <p>For more partner offers, browse our <ArticleLink href="/blog/best-supplement-discount-codes">best supplement discount codes</ArticleLink>.</p>
         </ArticleSection>
         <ArticleSection title="FAQ">
           {faqs.map(({ q, a }) => (
