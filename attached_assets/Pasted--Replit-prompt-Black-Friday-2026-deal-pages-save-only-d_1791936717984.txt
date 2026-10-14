@@ -1,0 +1,99 @@
+# Replit prompt — Black Friday 2026 deal pages (save-only, do NOT publish)
+
+Paste this entire prompt into the thrivetools.co Replit project. **SAVE-ONLY: do not publish, do not deploy.** I publish everything myself after review.
+
+## Why these posts exist
+
+These are BLACK FRIDAY / CYBER MONDAY 2026 deal pages — the highest-converting affiliate content of the year. They must be LIVE by early November 2026 to rank for holiday deal searches (Black Friday is November 27, 2026). They are NOT brand guides, NOT discount-code roundups, and NOT comparisons — they are "best deals" pages: curated brand picks with verified discount codes, written for deal-hunters.
+
+Only include brands I am already partnered with (affiliate relationship established). Pull every code string and href from the project's /discount-codes data module (the single source of truth). Where this prompt gives an exact code/href, verify it against the data module; if they conflict, the data module wins and you must flag the conflict in your final report instead of guessing.
+
+## STRICT CONTENT RULES (all three posts)
+
+- Do NOT invent prices, discounts, or sale terms. Every deal claim must be either (a) my standing verified discount code from the data module, or (b) generic language like "brands typically add deeper holiday offers — my verified code below stacks or serves as the baseline until their Black Friday sale drops."
+- Do NOT invent discount percentages for brand BFCM sales. Only my own verified codes carry exact amounts.
+- Do NOT claim a brand's Black Friday sale has started. Include a dated "last verified" line (October 2026) and a note to re-verify when Black Friday approaches.
+- First-person, in my voice (science-backed, 14 years of personal research). Deal-page tone: direct, opinionated, urgency-free hype.
+- Affiliate disclosure near the top of each post (same wording as other posts).
+- FAQ section with FAQPage JSON-LD on each post (questions like "when do Black Friday deals drop?", "do discount codes work during Black Friday?", "which brands have the best Black Friday supplement deals?").
+- Internal links: link each brand name to its brand-guide or comparison post where one exists (look up real slugs in the route files — do not guess); link once to /discount-codes.
+- Hero image: generate one hero/featured image per post (AI-generated, on-brand with the site's wellness aesthetic, 16:9) and wire it as the post hero + og:image, following the pattern in the comparison hero-image wiring. Filename convention: hero-black-friday-supplements.jpg, hero-black-friday-red-light.jpg, hero-black-friday-wellness-tech.jpg.
+
+## Build rules (all three posts)
+
+First check that each route does not already exist anywhere in the codebase. Register each route ABOVE the 404 catch-all in all four route files (client/src/App.tsx, ssr-routes, entry-server, shared/site-routes). Production build must pass with 0 errors. Category tag: `Deals`. Byline format untouched.
+
+---
+
+## TASK 1 — Create `/blog/black-friday-supplement-deals-2026`
+
+- `<title>`: "Best Black Friday Supplement Deals 2026: 10 Verified Codes" — keep the exact phrase "Black Friday Supplement Deals" at the start.
+- Meta description: include "Black Friday supplement deals", "discount codes", "2026", "verified".
+- H1: "Best Black Friday Supplement Deals 2026".
+
+Intro paragraph: Black Friday is the one time of year the supplement brands I partner with discount their deepest — and every brand below already has a verified discount code on my discount codes page. Use the code now to lock in savings; if the brand runs a deeper Black Friday offer, the code is still the fallback.
+
+### Brands to feature (10): pick one verified code/link per brand from the data module
+
+1. IM8 — foundational nutrition formula; flagship daily formula pick.
+2. Bioptimizers — magnesium and enzyme formulas.
+3. Timeline (MitoPure) — Urolithin A, mitophagy; the longevity-science pick.
+4. Equip Foods — clean protein, whole-food supplements.
+5. Just Thrive — spore-based probiotics, gut health.
+6. EnergyBits — chlorella/spirulina algae tablets.
+7. Organika — collagen and functional blends.
+8. Hyperion Herbs — tonic herbs (reishi, cordyceps, lion's mane).
+9. AquaOmega — omega-3s. Tripwire: verify the AquaOmega code against the data module — do NOT confuse with Goli's code.
+10. Goli — gummy supplements; verified code **g-745207ab6b** at https://go.goli.com/g-745207ab6b (verify href against data module).
+
+Structure per brand: 2–3 sentences (what it is, why it earns a spot, who it's for), then the verified code callout box. End with FAQ + a "stacking" note: codes may or may not combine with sitewide Black Friday sales — check the brand's terms at checkout.
+
+---
+
+## TASK 2 — Create `/blog/black-friday-red-light-therapy-deals-2026`
+
+- `<title>`: "Best Black Friday Red Light Therapy Deals 2026".
+- Meta description: include "Black Friday red light therapy deals", "discount codes", "2026".
+- H1: "Best Black Friday Red Light Therapy Deals 2026".
+
+Intro: red light devices are the most Black Friday-discounted category in biohacking — panels are big-ticket purchases people wait all year for. Every device below is from a brand I partner with and carries my verified code.
+
+### Brands to feature (5)
+
+1. Joovv — clinical-grade panels, most trusted name; code THRIVETOOLS at joovv.com (verify href).
+2. Mito Red Light — panel lineup; code from the data module.
+3. Lumebox — the portable device I own; code **ThriveTools** (exact casing) at thelumebox.com (verify href).
+4. RedTherapy — code from the data module.
+5. VieLight Neuro — transcranial photobiomodulation; code from the data module.
+
+Per-brand format as in Task 1: what it is, why it earns the spot (format-based: full-body panel vs portable vs transcranial), verified code callout. Include the "check the brand's site for current device specs" rule — do NOT invent wavelengths, irradiance, or prices.
+
+---
+
+## TASK 3 — Create `/blog/black-friday-wellness-tech-deals-2026`
+
+- `<title>`: "Best Black Friday Wellness Tech Deals 2026".
+- Meta description: include "Black Friday wellness tech deals", "discount codes", "2026", "biohacking".
+- H1: "Best Black Friday Wellness Tech Deals 2026".
+
+Intro: recovery tech, sleep tech, and brain tech — the devices people buy once and use daily. All from partnered brands, all with verified codes.
+
+### Brands to feature (9)
+
+1. Apollo Neuro — stress/sleep wearable. CAUTION: Apollo's program terms flag coupon-style promotion — describe it as a brand-guide partner and link the code neutrally; do not frame it as a "deal site" offer.
+2. Muse Headband — brain-sensing meditation; code from the data module.
+3. Neurosity — code/link from the data module. Tripwire: their landing page has rendered blank before — the prompt must have the agent TEST the link as a visitor and report status; do not substitute a different URL.
+4. NeuroVizr — code from the data module.
+5. BlueCubeBaths — cold plunge; code from the data module.
+6. Vellgus — code from the data module.
+7. Aires Tech — EMF harmonization; code from the data module. Neutral tone, describe in the brand's own terms, no absolute claims.
+8. EMR-TEK — code **EDEN17306**, link https://www.emr-tek.com/EDEN17306 (verify against data module).
+9. Havn by Lambs — EMF-blocking apparel; code from the data module.
+
+Per-brand format as in Task 1, grouped under H2s: "Recovery & sleep tech", "Brain & neurotech", "EMF protection". End with FAQ + last-verified note.
+
+---
+
+## Final report
+
+For each post: route created, build status, any code/href conflicts flagged against the data module, hero image wired, and the exact list of brands included. SAVE-ONLY — end with the report, do not publish.

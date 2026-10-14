@@ -246,6 +246,9 @@ import PrebioticsProbioticsGuide from "./pages/reviews/PrebioticsProbioticsGuide
 import LumeboxDiscountCodeFaq from "./pages/reviews/LumeboxDiscountCodeFaq";
 import TherasageDiscountCodeFaq from "./pages/reviews/TherasageDiscountCodeFaq";
 import ZenteinDiscountCode from "./pages/reviews/ZenteinDiscountCode";
+import BlackFridaySupplementDeals from "./pages/reviews/BlackFridaySupplementDeals";
+import BlackFridayRedLightDeals from "./pages/reviews/BlackFridayRedLightDeals";
+import BlackFridayWellnessTechDeals from "./pages/reviews/BlackFridayWellnessTechDeals";
 import {
   IM8DiscountCodeFaq, EquipFoodsDiscountCodeFaq, HyperionHerbsDiscountCodeFaq,
   JustThriveDiscountCodeFaq, OrganikaDiscountCodeFaq, AquaOmegaDiscountCodeFaq,
@@ -661,6 +664,9 @@ function Router() {
         <Route path="/blog/lumebox-discount-code-faq" component={LumeboxDiscountCodeFaq} />
         <Route path="/blog/therasage-discount-code-faq" component={TherasageDiscountCodeFaq} />
         <Route path="/blog/zentein-discount-code" component={ZenteinDiscountCode} />
+        <Route path="/blog/black-friday-supplement-deals-2026" component={BlackFridaySupplementDeals} />
+        <Route path="/blog/black-friday-red-light-therapy-deals-2026" component={BlackFridayRedLightDeals} />
+        <Route path="/blog/black-friday-wellness-tech-deals-2026" component={BlackFridayWellnessTechDeals} />
         <Route component={NotFound} />
       </Switch>
     </Suspense>
