@@ -1,0 +1,30 @@
+# Replit prompt — Transcranial PBM Q&A insert into the red-light science post (save-only, do NOT publish)
+
+Paste this entire prompt into the thrivetools.co Replit project. **SAVE-ONLY: do not publish, do not deploy.** I publish everything myself after review.
+
+## TASK — Insert one new Q&A into the FAQ section of an EXISTING post
+
+- Target post (already live, do NOT create a new post or a new route): `/blog/red-light-therapy-science-benefits-devices`
+- First verify that route exists in the codebase (check the route files: `client/src/App.tsx`, ssr-routes, entry-server, shared/site-routes). If it does not exist, STOP and report — do not create it.
+- Edit ONLY that post's page component. Add the Q&A below to the post's FAQ section — appended as a new FAQ item at the end of the existing FAQ list. Use the question text below VERBATIM as the FAQ question.
+- Render the Q&A text VERBATIM — every word, exactly as written below. Do not rephrase, shorten, expand, or add claims.
+- Also add this Q&A to the page's FAQPage JSON-LD so the visible FAQ and the schema stay in sync (question text as the FAQ question, answer text as the accepted answer). If the post somehow has no FAQ section or no FAQ schema, STOP and report what you found — do not invent a new schema block or a new section structure.
+- IMPORTANT — no duplication: this post may already contain a Nobel/optogenetics Q&A ("Did red-light therapy just win the Nobel Prize?"). That is a DIFFERENT Q&A on a different topic. This new Q&A must sit ALONGSIDE it in the FAQ — do not merge them, do not replace it, and do not restate its content. If an identical brain-science Q&A (same question text) is already present in the FAQ, STOP and report — do not insert a duplicate.
+- No route changes are needed (the route already exists). Do not touch any other post, page, or file.
+- Production build must pass with 0 errors after the edit.
+
+## FRAMING — DO NOT BREAK THIS
+
+- The Q&A's framing is deliberate and must survive EXACTLY: this is category science context about transcranial photobiomodulation research. The review it cites tests NO consumer device and makes NO brand claims. Never state or imply that the cited research validates, endorses, or was conducted on any device or brand (including Lumebox or EMR-TEK), and never turn this into a treatment claim.
+- Do NOT add any "scope notes", source lists, citations, or editorial commentary to the page — the Q&A below is the entire insert.
+
+## THE INSERT (verbatim)
+
+**Q: Is there real science behind red-light therapy for the brain?**
+A: There's a real research lineage — and a cautionary tale. A new history-of-the-field review (De Taboada & Streeter, Frontiers in Psychiatry, October 9, 2026) traces direct transcranial photobiomodulation — red or near-infrared light delivered through the scalp and skull — from the stroke trials to today's brain applications. The honest record: the NEST stroke program treated over 1,300 patients — NEST-1 met its endpoint, NEST-2 missed overall (p=0.094) with a post-hoc signal in moderate stroke, and NEST-3 was stopped for futility. Newer trials moved to forehead LED platforms (ELATED) and found the brain response depends on the optical parameters used (TRIADE R61). The mechanism is still unresolved — mitochondrial/redox, neurovascular, glial-inflammatory, network-mediated, and systemic pathways are all on the table. The review's punchline: dose, depth, and delivery site are biological variables, not just device specs — which is exactly why "any red light on your head" is not the same as a studied protocol.
+
+---
+
+## Final report
+
+Report: the page component file you edited, where in the FAQ the new Q&A was placed, confirmation it was also added to the FAQPage JSON-LD, whether the Nobel/optogenetics Q&A was present alongside it, and the build status (must be 0 errors). SAVE-ONLY — end with the report, do not publish.
