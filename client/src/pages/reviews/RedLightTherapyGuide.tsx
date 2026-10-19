@@ -1,11 +1,19 @@
 import { useState } from "react";
 import { Link } from "wouter";
 import PageLayout from "@/components/PageLayout";
+import FaqJsonLd from "@/components/FaqJsonLd";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { ExternalLink, Copy, Check } from "lucide-react";
 import redLightPanelImg from "@assets/s-l1200_1773955600250.jpg";
 import mitoGlowChartImg from "@assets/MitoGLOW-Comp-Chart_Final_1773955600225.jpg";
+
+const faqs = [
+  {
+    q: "Is there real science behind red-light therapy for the brain?",
+    a: "There's a real research lineage — and a cautionary tale. A new history-of-the-field review (De Taboada & Streeter, Frontiers in Psychiatry, October 9, 2026) traces direct transcranial photobiomodulation — red or near-infrared light delivered through the scalp and skull — from the stroke trials to today's brain applications. The honest record: the NEST stroke program treated over 1,300 patients — NEST-1 met its endpoint, NEST-2 missed overall (p=0.094) with a post-hoc signal in moderate stroke, and NEST-3 was stopped for futility. Newer trials moved to forehead LED platforms (ELATED) and found the brain response depends on the optical parameters used (TRIADE R61). The mechanism is still unresolved — mitochondrial/redox, neurovascular, glial-inflammatory, network-mediated, and systemic pathways are all on the table. The review's punchline: dose, depth, and delivery site are biological variables, not just device specs — which is exactly why \"any red light on your head\" is not the same as a studied protocol.",
+  },
+];
 
 function CopyCodeButton({ code, href, label, testId }: { code: string; href: string; label: string; testId: string }) {
   const [copied, setCopied] = useState(false);
@@ -69,6 +77,7 @@ export default function RedLightTherapyGuide() {
         imageAlt: "Red light therapy panel device for photobiomodulation",
       }}
     >
+      <FaqJsonLd faqs={faqs} />
       <article className="space-y-12">
 
         <div className="card-glass rounded-2xl overflow-hidden" data-testid="img-hero-red-light">
@@ -374,6 +383,18 @@ export default function RedLightTherapyGuide() {
             <p className="text-pretty">
               The long-term safety profile of home red light therapy devices is still being established through ongoing research. This is not a reason to avoid it, but it is a reason to use devices from brands that conduct independent third-party safety testing and to follow manufacturer guidelines.
             </p>
+          </div>
+        </section>
+
+        <section data-testid="section-faq">
+          <h2 className="text-2xl font-semibold text-black/90 mb-5">FAQ</h2>
+          <div className="space-y-4">
+            {faqs.map(({ q, a }) => (
+              <div key={q} className="card-glass rounded-2xl p-6">
+                <h3 className="font-display font-bold text-black">{q}</h3>
+                <p className="mt-2 text-black/70 leading-relaxed">{a}</p>
+              </div>
+            ))}
           </div>
         </section>
 

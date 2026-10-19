@@ -152,7 +152,7 @@ export default function KoracaoDiscountCode() {
               <p className="font-display font-bold text-black">All discount codes</p>
               <p className="text-black/60 text-sm mt-1 leading-relaxed">Browse every verified code I track, in one place.</p>
             </Link>
-            <Link href="/blog/ceremonial-cacao-guide" className="card-glass rounded-2xl p-6 block hover:shadow-lg transition-shadow" data-testid="link-koracao-cacao-guide">
+            <Link href="/blog/ceremonial-cacao-benefits-science-review" className="card-glass rounded-2xl p-6 block hover:shadow-lg transition-shadow" data-testid="link-koracao-cacao-guide">
               <p className="font-display font-bold text-black">Ceremonial cacao guide</p>
               <p className="text-black/60 text-sm mt-1 leading-relaxed">My guide to ceremonial cacao.</p>
             </Link>

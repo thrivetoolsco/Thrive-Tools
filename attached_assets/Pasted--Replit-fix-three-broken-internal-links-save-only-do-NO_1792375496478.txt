@@ -1,0 +1,29 @@
+# Replit fix — three broken internal links (save-only, do NOT publish)
+
+Paste this into the thrivetools.co Replit project. **SAVE-ONLY: do not publish, do not deploy.** I publish everything myself after review.
+
+## Why
+
+Verified live on 2026-10-13 (~20:25 PDT) by crawling all 195 sitemap URLs plus every internal link on those pages: all 195 sitemap URLs return HTTP 200, but three internal links point to posts that return HTTP 404. Each has an obvious live successor post already on the site (all three successors return HTTP 200):
+
+1. On `/blog/koracao-discount-code`, the card `link-koracao-cacao-guide` links to:
+   - BROKEN: `/blog/ceremonial-cacao-guide` (404)
+   - REPOINT TO: `/blog/ceremonial-cacao-benefits-science-review` (200)
+
+2. On `/product-reviews/hyperion-herbs`, two in-text links are broken:
+   - BROKEN: `/blog/reishi-schisandra-review-stress-immunity` (404)
+     REPOINT TO: `/blog/reishi-schisandra-daily-tonic-herbs` (200)
+   - BROKEN: `/blog/tonic-herbs-complete-guide` (404)
+     REPOINT TO: `/blog/tonic-herbs-guide` (200)
+
+## Task
+
+1. Search the entire codebase for the three broken hrefs above and repoint each one to its successor URL exactly as listed. Do not change any link text, anchor, styling, or surrounding content.
+2. Also run a full internal-link check across all routes before finishing: every internal href (paths starting with `/`) must resolve to a route that exists in the app. Report any additional broken internal hrefs you find — do not guess replacements for any others; list them for my decision.
+3. Production build must pass with 0 errors.
+4. Final report: list every file/route changed, and confirm a final search shows zero remaining occurrences of the three broken hrefs.
+
+## Context / limits
+
+- This is a link repoint only — do not create new posts for the three broken slugs, do not add redirects unless you flag them separately for my approval, and do not touch any affiliate links or discount codes.
+- Search Console (data through Oct 9) reported 30 soft-404 and 17 hard-404 entries; this fix addresses the three hard-404s that are verifiably linked from live pages today. The rest of that GSC list is likely old/duplicate URLs not in the current sitemap and is a separate audit once the GSC URL list is pulled.

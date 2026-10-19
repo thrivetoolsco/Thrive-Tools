@@ -52,9 +52,9 @@ export default function HyperionHerbs() {
             </p>
             <p className="text-sm text-black/50">
               For more context on adaptogenic herbs and the science behind them, see my{" "}
-              <a href="/blog/tonic-herbs-complete-guide" className="underline text-[#c4622d] hover:text-[#8b3a1a] transition-colors">complete tonic herbs guide</a>,{" "}
+              <a href="/blog/tonic-herbs-guide" className="underline text-[#c4622d] hover:text-[#8b3a1a] transition-colors">complete tonic herbs guide</a>,{" "}
               the{" "}
-              <a href="/blog/reishi-schisandra-review-stress-immunity" className="underline text-[#c4622d] hover:text-[#8b3a1a] transition-colors">Reishi and Schisandra review</a>,{" "}
+              <a href="/blog/reishi-schisandra-daily-tonic-herbs" className="underline text-[#c4622d] hover:text-[#8b3a1a] transition-colors">Reishi and Schisandra review</a>,{" "}
               and my{" "}
               <a href="/discount-codes" className="underline text-[#c4622d] hover:text-[#8b3a1a] transition-colors">Hyperion Herbs discount code</a>.
             </p>
