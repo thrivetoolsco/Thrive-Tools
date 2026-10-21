@@ -1,0 +1,22 @@
+# Replit removal — The Good Tee card + two posts (save-only, do NOT publish)
+
+Paste this into the thrivetools.co Replit project. **SAVE-ONLY: do not publish, do not deploy.** I publish everything myself after review.
+
+## Why
+
+On 2026-10-20, thegoodtee.com was verified unavailable: both the store homepage and my referral link (https://thegoodtee.com/?ref=lzrzvhex) load Shopify's "This store is unavailable" page in a live browser check, and no moved storefront exists. The brand's store is gone, so every live ThriveTools link to it is dead traffic. The Good Tee's recorded offer was code `thrive10`. Eden La directed this removal on 2026-10-21.
+
+## Task
+
+1. **Remove The Good Tee card from the discount-codes page** (`/discount-codes`, Ethical Clothing section). Remove the entire card — brand name, description, code display, and its button/link to thegoodtee.com. Do not leave an empty placeholder or gap in the layout; the remaining Ethical Clothing cards should flow normally.
+2. **Delete the post `/blog/the-good-tee-discount-code`** — remove the post content, its route registration, and its sitemap entry.
+3. **Delete the FAQ companion post `/blog/the-good-tee-discount-code-faq`** — remove the post content, its route registration, and its sitemap entry.
+4. **Sweep for leftovers:** search the entire codebase for `the-good-tee`, `thegoodtee`, `thrive10` (The Good Tee's code — note this string is specific to The Good Tee in the codes records; if you find a `thrive10` occurrence that clearly belongs to a different brand, stop and flag it for my decision instead of changing it), and `lzrzvhex`. Remove any remaining references to The Good Tee (e.g. mentions in roundups, gift guides, or "related posts" components) so no live page links to a deleted route or the dead store. Report every file you changed for this sweep — do not rewrite surrounding content beyond removing the Good Tee reference itself.
+5. Production build must pass with 0 errors.
+6. Final report: list every file/route changed or deleted, confirm the two post routes and the /discount-codes card are gone, and confirm a final search shows zero remaining occurrences of `the-good-tee` and `thegoodtee.com` in the codebase.
+
+## Context / limits
+
+- This is a removal only. Do not touch any other brand's card, post, affiliate link, or discount code. Do not add a redirect for the deleted posts unless you flag it separately for my approval.
+- Do not change the layout, styling, or ordering of any other section on /discount-codes.
+- If either post slug does not exist in the codebase exactly as written above, stop and report what you found instead of guessing.
