@@ -1,0 +1,66 @@
+# Goli Discount Code FAQ — save-only Replit prompt (built 2026-10-14)
+
+Paste into the thrivetools.co Replit project. **SAVE-ONLY: do not publish, do not deploy.** Eden La publishes everything herself after review.
+
+**Why this one:** The weekly search-intent queue (2026-10-14) named Goli FAQ as next in line but held it pending a live-page check of its unusual code format. That check is now done (2026-10-14):
+- Live https://thrivetools.co/discount-codes shows Goli with code `g-745207ab6b`, "Use code g-745207ab6b at goli.com checkout for 10% off", affiliate link `https://go.goli.com/g-745207ab6b`.
+- Live sitemap (195 URLs, fetched 2026-10-14) has NO `/blog/goli-discount-code-faq` route — no duplicate.
+- The main Goli post is the top-level route `/goli-discount-code` (NOT `/blog/goli-discount-code`) — link to that, and verify the slug in the route files before rendering.
+- Partner facts (verified 2026-09-28, Goli Partners signup completed): code `g-745207ab6b`; 10% customer offer; affiliate link `https://go.goli.com/g-745207ab6b`. No expiry date is known — do NOT invent one. Commission rates are private and contested (dashboard vs. email) — never mention any commission in the post.
+
+---
+
+## PROMPT — Goli Discount Code FAQ
+
+**TASK — Create the post at route `/blog/goli-discount-code-faq`. SAVE-ONLY: do not publish, do not deploy.**
+
+First check the route does not already exist anywhere in the codebase. Register the route ABOVE the 404 catch-all in all four route files (`client/src/App.tsx`, `ssr-routes.ts`, `entry-server.tsx`, `shared/site-routes.ts`). Production build must pass with 0 errors.
+
+SEO: `<title>` "Goli Discount Code FAQ: Verified Code & Answers 2026" (keep "Goli Discount Code" at the start, under ~60 chars). Meta description must include "Goli discount code", "g-745207ab6b", "10% off", "verified". H1: "Goli Discount Code FAQ (Verified 2026)". Category tag: `Discount Codes`.
+
+Partner facts (all verified): I am partnered with Goli (Goli Partners, signup completed 2026-09-28). Code **`g-745207ab6b`** — yes, the code really is the same string as the affiliate-link slug; that is Goli's format, do not "correct" it into a word code. Affiliate link `https://go.goli.com/g-745207ab6b` — verify BOTH against the /discount-codes data module before rendering; if any value conflicts, the data module wins and you must flag the conflict in your output summary. Customer offer: **10% off** at goli.com checkout. No expiry date is published — do not invent one, and do not state one.
+
+Content facts (do not embellish): Goli sells vitamin-packed wellness gummies. This is the FAQ companion to my existing `/goli-discount-code` guide — different angle (short question/answer for featured snippets), not a rewrite, and do NOT copy the main post's embedded FAQ wording verbatim. Link to the guide and to `/discount-codes`. Do not add product-specific health claims, ingredient lists, prices, or personal-experience claims that are not in the project's existing Goli post / data module.
+
+Hero image: EVERY post gets a hero/featured image — no exceptions. Generate one in the site's existing style for a gummy-supplement post (bright, clean wellness editorial illustration — not a photograph of a specific Goli product/packaging). Wire as featured image AND og:image.
+
+Voice/structure: First-person — "I run ThriveTools.co, a science-backed wellness and biohacking platform built from 14 years of personal research." Affiliate disclosure near the top, using the same disclosure wording as the existing Goli post. FAQ section with FAQPage JSON-LD; JSON-LD answers must match the visible answers exactly.
+
+### ARTICLE BODY (render as written, H1/H2s as marked)
+
+# Goli Discount Code FAQ (Verified 2026)
+
+I run ThriveTools.co, a science-backed wellness and biohacking platform built from 14 years of personal research. (Disclosure: I'm a Goli affiliate partner — that's how I can offer a verified code instead of a random coupon-site guess.) I only publish codes I can personally verify, and I re-check every code on this site monthly. Here are the most-asked questions about the Goli discount code.
+
+## The code, up front
+
+**Code:** g-745207ab6b — 10% off
+**How to use it:** Shop through my affiliate link, or enter the code at checkout on goli.com, and confirm it is accepted before paying.
+
+## FAQ
+
+**Is there a Goli discount code?**
+Yes — the current verified code is **g-745207ab6b**. I'm a Goli affiliate partner, so this is a working partner code, not a scraped coupon-site listing.
+
+**Why does the Goli code look like a link?**
+That's Goli's own format for partner codes — the code and my affiliate link share the same string. Enter **g-745207ab6b** exactly as shown in the discount-code box at goli.com checkout; don't shorten it or change the casing.
+
+**How do I use the Goli discount code?**
+Add your items to the cart on goli.com, enter **g-745207ab6b** in the discount-code box at checkout, and confirm the 10% discount is reflected in your order total before paying.
+
+**How much do I save with the Goli code?**
+The code takes **10% off** at goli.com checkout.
+
+**Is the Goli discount code still working?**
+Yes. I re-check every code on this site monthly, and g-745207ab6b is the current verified code. If it ever stops working, it comes off this page.
+
+**When does the Goli discount code expire?**
+Goli hasn't published an expiry date for this partner code, so I won't invent one. It's the current verified code — if that changes, this page changes.
+
+**What does Goli sell?**
+Vitamin-packed wellness gummies — a gummy format for people who prefer not to swallow pills or capsules.
+
+**Where can I find more supplement discount codes?**
+My [discount codes page](/discount-codes) covers 40+ brands I personally partner with — every code verified. See also my main [Goli discount code](/goli-discount-code) guide (verify the slug in the route files and use the real one).
+
+**Final report:** route created, TSX page file path, build status (must be 0 errors), hero image wired as featured image + og:image, FAQPage JSON-LD added matching the visible FAQ, internal links in place, and any conflict flagged against the /discount-codes data module. SAVE-ONLY — end with the report, do not publish, do not deploy.

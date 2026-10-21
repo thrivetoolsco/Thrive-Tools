@@ -123,6 +123,7 @@ import {
 } from "./pages/reviews/WellnessTechBrandGuides";
 import LumeboxDiscountCode from "./pages/reviews/LumeboxDiscountCode";
 import GoliDiscountCode from "./pages/reviews/GoliDiscountCode";
+import GoliDiscountCodeFaq from "./pages/reviews/GoliDiscountCodeFaq";
 import EmrTekDiscountCode from "./pages/reviews/EmrTekDiscountCode";
 import TherasageDiscountCode from "./pages/reviews/TherasageDiscountCode";
 import EmrTekCheckoutCode from "./pages/reviews/EmrTekCheckoutCode";
@@ -261,6 +262,7 @@ export const SSR_ROUTE_COMPONENTS: Record<string, ComponentType> = {
   "/blog/vellgus-review": VellgusBrandGuide,
   "/lumebox-discount-code": LumeboxDiscountCode,
   "/goli-discount-code": GoliDiscountCode,
+  "/blog/goli-discount-code-faq": GoliDiscountCodeFaq,
   "/emr-tek-discount-code": EmrTekDiscountCode,
   "/blog/therasage-discount-code": TherasageDiscountCode,
   "/blog/emr-tek-discount-code": EmrTekCheckoutCode,
