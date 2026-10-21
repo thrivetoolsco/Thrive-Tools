@@ -3,7 +3,6 @@ import healthandyogaImage from "@assets/healthandyoga-discount-code-hero.webp";
 import neurovizrImage from "@assets/neurovizr-discount-code-hero.png";
 import heatbitImage from "@assets/heatbit-discount-code-hero.jpg";
 import airesImage from "@assets/aires-tech-discount-code-hero.jpg";
-import goodTeeImage from "@assets/the-good-tee-discount-code-hero.png";
 import bambooImage from "@assets/bamboo-clothes-discount-code-hero.jpg";
 import earthingImage from "@assets/earthing-harmony-discount-code-hero.jpg";
 import promeedImage from "@assets/promeed-discount-code-hero.jpg";
@@ -88,26 +87,6 @@ const posts: LongFormPost[] = [
       { q: "Does Aires Tech block my phone signal?", a: "No. According to the company, its resonator alters EMF patterns via diffraction rather than shielding, so device performance is not interrupted." },
       { q: "Do the products need charging or batteries?", a: "No. According to Aires Tech, the products are passive and require no power source or maintenance." },
       { q: "Which Lifetune should I get?", a: "One is intended for a single device; Flex for portable personal use; Zone for a small room; and Zone Max Pro for a larger room, per the company's descriptions." },
-    ],
-  },
-  {
-    brand: "The Good Tee", slug: "the-good-tee-discount-code",
-    title: "The Good Tee Discount Code 2026: thrive10 + Fair-Trade Basics Guide",
-    code: "thrive10", href: "https://thegoodtee.com/?ref=lzrzvhex",
-    image: goodTeeImage, imageAlt: "The Good Tee organic cotton shirt",
-    lead: "Use code thrive10 at checkout on thegoodtee.com to claim the current ThriveTools discount on fair-trade organic cotton basics.",
-    intro: "The Good Tee is a Fair Trade Certified B Corporation founded in 2020 by Adila Cokar in Toronto, Canada, after sourcing trips to India highlighted challenges facing cotton farmers. The brand describes its supply-chain involvement as seed to shelf.",
-    sells: "Organic cotton everyday basics including tees, fleece, and blanks. The company sells to consumers and wholesale buyers, and offers private labeling for retailers and organizations. It says its blanks are stocked in 30+ North American stores.",
-    products: ["Fair Trade Unisex Tee — around $36: Signature ethically made basic produced in India.", "Organic fleece midweight collection: Heavier everyday layers; pricing varies by piece.", "Blank tees and wholesale: Customizable garments for businesses, teams, and promotional buyers."],
-    standsOut: "According to the company, its distinguishing features are Fair Trade Certified and B Corporation credentials, seed-to-shelf supply-chain involvement, and a private-label wholesale program with removable back neck labels.",
-    howTitle: "How to use The Good Tee discount code",
-    steps: ["Click the ThriveTools link above to open thegoodtee.com.", "Add your items to the cart.", "At checkout, enter thrive10 in the discount-code field.", "Confirm the discount on your order."],
-    faqTitle: "The Good Tee discount code FAQ", moreQuestion: "Where can I find more verified ethical-brand discount codes?",
-    faqs: [
-      { q: "What is The Good Tee discount code?", a: "The current code is thrive10 for thegoodtee.com checkout." },
-      { q: "What does Fair Trade Certified mean here?", a: "It indicates independent certification of labor and trade standards affecting farmers and makers in the supply chain." },
-      { q: "Where are The Good Tee's clothes made?", a: "The company describes manufacturing in India and is headquartered in Toronto, Canada." },
-      { q: "Does The Good Tee offer wholesale?", a: "Yes. The company offers blank tees and a private-label program for retailers and organizations." },
     ],
   },
   {
@@ -197,7 +176,6 @@ export const [
   NeuroVizrDiscountCode,
   HeatBitDiscountCode,
   AiresTechDiscountCode,
-  TheGoodTeeDiscountCode,
   BambooClothesDiscountCode,
   EarthingHarmonyDiscountCode,
   PromeedDiscountCode,

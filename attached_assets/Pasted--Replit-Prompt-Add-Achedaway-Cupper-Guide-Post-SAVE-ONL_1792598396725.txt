@@ -1,0 +1,22 @@
+# Replit Prompt — Add Achedaway Cupper Guide Post (SAVE-ONLY)
+
+**SAVE-ONLY: build and save this change but do NOT publish or deploy it. Eden La publishes the site herself.**
+
+Add ONE new blog post to thrivetools.co from the article source at
+`~/workspace/goals/seo-aeo-discount-code-blog-posts/files/achedaway-guide-article.md`.
+
+## What to build
+
+1. **New blog post** using the article content exactly as written in `achedaway-guide-article.md` (title: "Achedaway Cupper Review: Smart Cupping Therapy With Red Light, Explained"). Use a clear, URL-safe slug (e.g. `/blog/achedaway-cupper-guide`). Keep every heading, the comparison table, the affiliate disclosure at the top, and the FAQ section intact. Do not rewrite, shorten, or add claims to the article.
+2. **Hero image:** use `achedaway-hero.jpg` (in `~/workspace/goals/seo-aeo-discount-code-blog-posts/files/`) as the post's hero/featured image, with alt text "Achedaway Cupper — The Smart Cupping Therapy Massager".
+3. **Affiliate links:** keep the article's links to `https://achedaway.com/?ref=THRIVETOOLS` exactly as they are. Do not add any other Achedaway links, and do not invent or add any discount code — there is NO Achedaway discount code (link-only partner).
+4. **FAQ schema:** generate FAQPage JSON-LD from the article's "Achedaway Cupper FAQ" section (all 8 questions and answers) and include it on the post page, matching the visible FAQ text word-for-word.
+5. Register the new route/post the same way other blog posts on the site are registered, so the post renders with no 404 and appears wherever new posts are normally listed (blog index, sitemap) once published.
+
+## Hard rules
+
+- **Do NOT add any /discount-codes card, entry, or section for Achedaway.** Achedaway is a link-only partner with no customer discount code, and per Eden La's 2026-10-21 rule, brands without a customer discount code do not get added to the /discount-codes page. Articles only.
+- **Do NOT publish or deploy.** Save the change only — Eden La publishes herself.
+- **0-error build required.** The project must build with 0 errors before you finish; fix any errors introduced by this change.
+- Do not change any other posts, pages, cards, links, or codes.
+- Final report must explicitly confirm: the post was created, the hero image is attached, the FAQ JSON-LD is present, NO /discount-codes entry was added, the build passed with 0 errors, and nothing was published.

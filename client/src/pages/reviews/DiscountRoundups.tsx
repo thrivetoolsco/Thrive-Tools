@@ -68,14 +68,13 @@ const supplements: Roundup = {
 };
 
 const clothing: Roundup = {
-  title: "Best Ethical Clothing Discount Codes 2026 (6 Verified)",
+  title: "Best Ethical Clothing Discount Codes 2026 (5 Verified)",
   slug: "best-ethical-clothing-discount-codes",
   image: clothingHero,
   imageAlt: "EarthRunners minimalist sandals lifestyle image",
-  introduction: 'These are the 6 verified ethical and sustainable clothing discount codes currently live on ThriveTools — every code below is checked against our discount-codes page. If a brand shows "link-only", there is no code to type: shop through the link and the discount applies automatically.',
+  introduction: 'These are the 5 verified ethical and sustainable clothing discount codes currently live on ThriveTools — every code below is checked against our discount-codes page. If a brand shows "link-only", there is no code to type: shop through the link and the discount applies automatically.',
   deals: [
     { brand: "EarthRunners", code: "10THRIVETOOLS", description: "Grounding minimalist sandals for running, hiking, and travel. Use code 10THRIVETOOLS at earthrunners.com.", href: "https://earthrunners.com/?rfsn=7676227.de5b78", cta: "Shop EarthRunners with code 10THRIVETOOLS" },
-    { brand: "The Good Tee", code: "thrive10", description: "Fair Trade Certified, B Corp organic cotton basics made in India (Canadian company). Use code thrive10 at thegoodtee.com.", href: "https://thegoodtee.com/?ref=lzrzvhex", cta: "Shop The Good Tee with code thrive10" },
     { brand: "Bamboo Clothes", code: "EDENKAWTHARLARAKI10", description: "Bamboo-viscose underwear and everyday apparel. Use code EDENKAWTHARLARAKI10 at bambooclothes.com.", href: "https://www.bambooclothes.com/discount/eden-kawtharlaraki10", cta: "Shop Bamboo Clothes with the code" },
     { brand: "Earthing Harmony", code: "THRIVENOW", description: "Grounding mats and conductive bed sheets for indoor earthing. Use code THRIVENOW at earthingharmony.com.", href: "https://earthingharmony.com/?ref=hxaqgkso", cta: "Shop Earthing Harmony with code THRIVENOW" },
     { brand: "Promeed", description: "100% mulberry silk bedding (pillowcases, sheets, accessories). No code needed — shop through the link and the discount applies automatically.", href: "https://www.awin1.com/cread.php?awinmid=100833&awinaffid=2421431", cta: "Shop Promeed" },

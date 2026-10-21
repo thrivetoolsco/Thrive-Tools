@@ -43,7 +43,7 @@ const hubFaqs = [
   },
   {
     q: "Which ethical clothing brands have discount codes?",
-    a: "Six, including EarthRunners, The Good Tee, Bamboo Clothes, and Earthing Harmony. See the full list in [Best Ethical Clothing Discount Codes 2026](/blog/best-ethical-clothing-discount-codes).",
+    a: "Five, including EarthRunners, Bamboo Clothes, and Earthing Harmony. See the full list in [Best Ethical Clothing Discount Codes 2026](/blog/best-ethical-clothing-discount-codes).",
   },
   {
     q: "Do you have water filter discount codes?",

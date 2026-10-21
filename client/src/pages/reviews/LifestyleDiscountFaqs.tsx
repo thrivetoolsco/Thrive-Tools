@@ -5,7 +5,6 @@ import FaqJsonLd from "@/components/FaqJsonLd";
 import { ExternalLink, Tag } from "lucide-react";
 import { Link } from "wouter";
 import earthrunnersImage from "@assets/earthrunners-discount-code-hero_1790058248055.jpg";
-import goodTeeImage from "@assets/the-good-tee-discount-code-hero.png";
 import bambooImage from "@assets/bamboo-clothes-discount-code-hero.jpg";
 import earthingImage from "@assets/earthing-harmony-discount-code-hero.jpg";
 import promeedImage from "@assets/promeed-discount-code-hero.jpg";
@@ -33,12 +32,6 @@ const brands: BrandFaq[] = [
     code: "10THRIVETOOLS", href: "https://earthrunners.com/?rfsn=7676227.de5b78",
     linkText: "Shop EarthRunners with code 10THRIVETOOLS", oneLiner: "Grounding minimalist sandal brand",
     image: earthrunnersImage, imageAlt: "EarthRunners minimalist sandals",
-  },
-  {
-    brand: "The Good Tee", slug: "the-good-tee-discount-code-faq", title: "The Good Tee Discount Code FAQ (2026)",
-    code: "thrive10", href: "https://thegoodtee.com/?ref=lzrzvhex",
-    linkText: "Shop The Good Tee with code thrive10", oneLiner: "Fair-trade organic cotton basics brand",
-    image: goodTeeImage, imageAlt: "The Good Tee organic cotton clothing",
   },
   {
     brand: "Bamboo Clothes", slug: "bamboo-clothes-discount-code-faq", title: "Bamboo Clothes Discount Code FAQ (2026)",
@@ -252,7 +245,6 @@ function LifestyleDiscountFaq({ post }: { post: BrandFaq }) {
 
 export const [
   EarthRunnersDiscountCodeFaq,
-  TheGoodTeeDiscountCodeFaq,
   BambooClothesDiscountCodeFaq,
   EarthingHarmonyDiscountCodeFaq,
   PromeedDiscountCodeFaq,

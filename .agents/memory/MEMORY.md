@@ -7,3 +7,4 @@
 - [Therasage publication boundaries](therasage-publication-boundaries.md) — owner approved coupon-site distribution; internal affiliate-program terms are not for article copy.
 - [Generated hero aspect ratios](generated-hero-aspect-ratios.md) — inspect output dimensions; a widescreen prompt can return a square image, including for OG assets.
 - [Apollo publication boundaries](apollo-publication-boundaries.md) — use neutral brand-guide partner wording, not coupon/deal-site framing.
+- [Retired partner offers](retired-partner-offers.md) — owner-directed removals must not be reintroduced from older content briefs.

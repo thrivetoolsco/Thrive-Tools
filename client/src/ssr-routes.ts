@@ -95,7 +95,7 @@ import MytrexDiscountCode from "./pages/reviews/MytrexDiscountCode";
 import OmnipemfDiscountCode from "./pages/reviews/OmnipemfDiscountCode";
 import {
   HealthAndYogaDiscountCode, NeuroVizrDiscountCode, HeatBitDiscountCode,
-  AiresTechDiscountCode, TheGoodTeeDiscountCode, BambooClothesDiscountCode,
+  AiresTechDiscountCode, BambooClothesDiscountCode,
   EarthingHarmonyDiscountCode, PromeedDiscountCode, HavnByLambsDiscountCode,
 } from "./pages/reviews/LongFormDiscountPosts";
 import { BestSupplementDiscountCodes, BestEthicalClothingDiscountCodes } from "./pages/reviews/DiscountRoundups";
@@ -108,7 +108,7 @@ import {
   AiresTechDiscountCodeFaq,
 } from "./pages/reviews/LongevityTechDiscountFaqs";
 import {
-  EarthRunnersDiscountCodeFaq, TheGoodTeeDiscountCodeFaq, BambooClothesDiscountCodeFaq,
+  EarthRunnersDiscountCodeFaq, BambooClothesDiscountCodeFaq,
   EarthingHarmonyDiscountCodeFaq, PromeedDiscountCodeFaq, HavnByLambsDiscountCodeFaq,
   Cookware360DiscountCodeFaq, IsunSkincareDiscountCodeFaq, DavidsDiscountCodeFaq,
 } from "./pages/reviews/LifestyleDiscountFaqs";
@@ -124,6 +124,7 @@ import {
 import LumeboxDiscountCode from "./pages/reviews/LumeboxDiscountCode";
 import GoliDiscountCode from "./pages/reviews/GoliDiscountCode";
 import GoliDiscountCodeFaq from "./pages/reviews/GoliDiscountCodeFaq";
+import AchedawayCupperGuide from "./pages/reviews/AchedawayCupperGuide";
 import EmrTekDiscountCode from "./pages/reviews/EmrTekDiscountCode";
 import TherasageDiscountCode from "./pages/reviews/TherasageDiscountCode";
 import EmrTekCheckoutCode from "./pages/reviews/EmrTekCheckoutCode";
@@ -202,7 +203,6 @@ export const SSR_ROUTE_COMPONENTS: Record<string, ComponentType> = {
   "/blog/neurovizr-discount-code": NeuroVizrDiscountCode,
   "/blog/heatbit-discount-code": HeatBitDiscountCode,
   "/blog/aires-tech-discount-code": AiresTechDiscountCode,
-  "/blog/the-good-tee-discount-code": TheGoodTeeDiscountCode,
   "/blog/bamboo-clothes-discount-code": BambooClothesDiscountCode,
   "/blog/earthing-harmony-discount-code": EarthingHarmonyDiscountCode,
   "/blog/promeed-discount-code": PromeedDiscountCode,
@@ -241,7 +241,6 @@ export const SSR_ROUTE_COMPONENTS: Record<string, ComponentType> = {
   "/blog/muse-headband-discount-code-faq": MuseHeadbandDiscountCodeFaq,
   "/blog/aires-tech-discount-code-faq": AiresTechDiscountCodeFaq,
   "/blog/earthrunners-discount-code-faq": EarthRunnersDiscountCodeFaq,
-  "/blog/the-good-tee-discount-code-faq": TheGoodTeeDiscountCodeFaq,
   "/blog/bamboo-clothes-discount-code-faq": BambooClothesDiscountCodeFaq,
   "/blog/earthing-harmony-discount-code-faq": EarthingHarmonyDiscountCodeFaq,
   "/blog/promeed-discount-code-faq": PromeedDiscountCodeFaq,
@@ -263,6 +262,7 @@ export const SSR_ROUTE_COMPONENTS: Record<string, ComponentType> = {
   "/lumebox-discount-code": LumeboxDiscountCode,
   "/goli-discount-code": GoliDiscountCode,
   "/blog/goli-discount-code-faq": GoliDiscountCodeFaq,
+  "/blog/achedaway-cupper-guide": AchedawayCupperGuide,
   "/emr-tek-discount-code": EmrTekDiscountCode,
   "/blog/therasage-discount-code": TherasageDiscountCode,
   "/blog/emr-tek-discount-code": EmrTekCheckoutCode,

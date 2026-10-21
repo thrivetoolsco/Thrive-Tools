@@ -316,12 +316,6 @@ export const ethicalClothing: DiscountItem[] = [
     blogHref: "/blog/earthrunners-review",
   },
   {
-    name: "The Good Tee",
-    description: "Ethically made, sustainably sourced basics that don't compromise on quality or conscience.",
-    code: "thrive10",
-    url: "https://thegoodtee.com/?ref=lzrzvhex",
-  },
-  {
     name: "Bamboo Clothes",
     description: "Bamboo Clothes",
     code: "EDENKAWTHARLARAKI10",

@@ -208,7 +208,7 @@ import MytrexDiscountCode from "./pages/reviews/MytrexDiscountCode";
 import OmnipemfDiscountCode from "./pages/reviews/OmnipemfDiscountCode";
 import {
   HealthAndYogaDiscountCode, NeuroVizrDiscountCode, HeatBitDiscountCode,
-  AiresTechDiscountCode, TheGoodTeeDiscountCode, BambooClothesDiscountCode,
+  AiresTechDiscountCode, BambooClothesDiscountCode,
   EarthingHarmonyDiscountCode, PromeedDiscountCode, HavnByLambsDiscountCode,
 } from "./pages/reviews/LongFormDiscountPosts";
 import { BestSupplementDiscountCodes, BestEthicalClothingDiscountCodes } from "./pages/reviews/DiscountRoundups";
@@ -221,7 +221,7 @@ import {
   AiresTechDiscountCodeFaq,
 } from "./pages/reviews/LongevityTechDiscountFaqs";
 import {
-  EarthRunnersDiscountCodeFaq, TheGoodTeeDiscountCodeFaq, BambooClothesDiscountCodeFaq,
+  EarthRunnersDiscountCodeFaq, BambooClothesDiscountCodeFaq,
   EarthingHarmonyDiscountCodeFaq, PromeedDiscountCodeFaq, HavnByLambsDiscountCodeFaq,
   Cookware360DiscountCodeFaq, IsunSkincareDiscountCodeFaq, DavidsDiscountCodeFaq,
 } from "./pages/reviews/LifestyleDiscountFaqs";
@@ -237,6 +237,7 @@ import {
 import LumeboxDiscountCode from "./pages/reviews/LumeboxDiscountCode";
 import GoliDiscountCode from "./pages/reviews/GoliDiscountCode";
 import GoliDiscountCodeFaq from "./pages/reviews/GoliDiscountCodeFaq";
+import AchedawayCupperGuide from "./pages/reviews/AchedawayCupperGuide";
 import EmrTekDiscountCode from "./pages/reviews/EmrTekDiscountCode";
 import TherasageDiscountCode from "./pages/reviews/TherasageDiscountCode";
 import EmrTekCheckoutCode from "./pages/reviews/EmrTekCheckoutCode";
@@ -597,7 +598,6 @@ function Router() {
         <Route path="/blog/neurovizr-discount-code" component={NeuroVizrDiscountCode} />
         <Route path="/blog/heatbit-discount-code" component={HeatBitDiscountCode} />
         <Route path="/blog/aires-tech-discount-code" component={AiresTechDiscountCode} />
-        <Route path="/blog/the-good-tee-discount-code" component={TheGoodTeeDiscountCode} />
         <Route path="/blog/bamboo-clothes-discount-code" component={BambooClothesDiscountCode} />
         <Route path="/blog/earthing-harmony-discount-code" component={EarthingHarmonyDiscountCode} />
         <Route path="/blog/promeed-discount-code" component={PromeedDiscountCode} />
@@ -636,7 +636,6 @@ function Router() {
         <Route path="/blog/muse-headband-discount-code-faq" component={MuseHeadbandDiscountCodeFaq} />
         <Route path="/blog/aires-tech-discount-code-faq" component={AiresTechDiscountCodeFaq} />
         <Route path="/blog/earthrunners-discount-code-faq" component={EarthRunnersDiscountCodeFaq} />
-        <Route path="/blog/the-good-tee-discount-code-faq" component={TheGoodTeeDiscountCodeFaq} />
         <Route path="/blog/bamboo-clothes-discount-code-faq" component={BambooClothesDiscountCodeFaq} />
         <Route path="/blog/earthing-harmony-discount-code-faq" component={EarthingHarmonyDiscountCodeFaq} />
         <Route path="/blog/promeed-discount-code-faq" component={PromeedDiscountCodeFaq} />
@@ -658,6 +657,7 @@ function Router() {
         <Route path="/lumebox-discount-code" component={LumeboxDiscountCode} />
         <Route path="/goli-discount-code" component={GoliDiscountCode} />
         <Route path="/blog/goli-discount-code-faq" component={GoliDiscountCodeFaq} />
+        <Route path="/blog/achedaway-cupper-guide" component={AchedawayCupperGuide} />
         <Route path="/emr-tek-discount-code" component={EmrTekDiscountCode} />
         <Route path="/blog/therasage-discount-code" component={TherasageDiscountCode} />
         <Route path="/blog/emr-tek-discount-code" component={EmrTekCheckoutCode} />
