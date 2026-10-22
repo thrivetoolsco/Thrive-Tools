@@ -281,6 +281,12 @@ export const healthTech: DiscountItem[] = [
     code: "THRIVE25",
     url: "https://airestech.com/thrive25",
   },
+  {
+    name: "Intrinsic Prism",
+    description: "Use code THRIVETOOLS at Intrinsic Prism checkout.",
+    code: "THRIVETOOLS",
+    url: "https://intrinsicprism.com/?ref=THRIVETOOLS",
+  },
 ];
 
 const nontoxicCookware: DiscountItem[] = [
