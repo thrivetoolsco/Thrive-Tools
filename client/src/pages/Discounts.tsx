@@ -283,7 +283,7 @@ export const healthTech: DiscountItem[] = [
   },
   {
     name: "Intrinsic Prism",
-    description: "Use code THRIVETOOLS at Intrinsic Prism checkout.",
+    description: "at home lab testing: 133+ toxin and detox markers, AI analytics, personalized protocols",
     code: "THRIVETOOLS",
     url: "https://intrinsicprism.com/?ref=THRIVETOOLS",
   },
