@@ -1,0 +1,75 @@
+const assert = require("node:assert/strict");
+const fs = require("node:fs");
+const path = require("node:path");
+const { render } = require("../dist/entry-server.cjs");
+
+const route = "/blog/intrinsic-prism-discount-code";
+const affiliateUrl = "https://intrinsicprism.com/?ref=THRIVETOOLS";
+const source = fs.readFileSync("client/src/content/intrinsic-prism-discount-code-article.md", "utf8");
+const decode = (text) => text.replace(/&amp;/g, "&").replace(/&quot;/g, '"').replace(/&#x27;|&#39;|&apos;/g, "'").replace(/&lt;/g, "<").replace(/&gt;/g, ">");
+const normalize = (text) => text.replace(/\s+/g, " ").trim();
+const plainHtml = (html) => normalize(decode(html.replace(/<!--[\s\S]*?-->/g, "").replace(/<\/(?:p|h[1-6]|li|section|div|aside|blockquote)>/g, " ").replace(/<[^>]*>/g, "")));
+const plainMarkdown = (markdown) => normalize(markdown.replace(/^#{1,6} /gm, "").replace(/^(?:- |\d+\. )/gm, "").replace(/\[([^\]]+)\]\([^)]+\)/g, "$1").replace(/\*/g, ""));
+
+(async () => {
+  const files = ["client/src/App.tsx", "client/src/ssr-routes.ts", "client/src/entry-server.tsx", "shared/site-routes.ts", "server/vite.ts"];
+  files.forEach((file) => assert(fs.readFileSync(file, "utf8").includes(route), `${file}: missing route`));
+  const app = fs.readFileSync(files[0], "utf8");
+  assert(app.indexOf(`path="${route}"`) < app.indexOf("<Route component={NotFound}"));
+  const { html, helmet } = await render(route);
+  const head = Object.values(helmet).map((item) => item.toString()).join("\n");
+  const article = html.match(/<article\b[^>]*>([\s\S]*?)<\/article>/)?.[1];
+  assert(article, "Article must render on the server");
+  assert.equal((html.match(/<h1\b/g) || []).length, 1);
+  assert.equal(plainHtml(html.match(/<h1[^>]*>([\s\S]*?)<\/h1>/)?.[1] ?? ""), source.split("\n")[0].slice(2));
+  assert.equal(plainHtml(article), plainMarkdown(source.split("\n").slice(1).join("\n")), "Entire article must match the supplied wording and section order");
+  assert(plainHtml(article).startsWith("Affiliate disclosure:"));
+  assert(article.includes("Quick answer:"));
+  const expectedHeadings = [...source.matchAll(/^## (.+)$/gm)].map((m) => m[1]);
+  const actualHeadings = [...article.matchAll(/<h2\b[^>]*>([\s\S]*?)<\/h2>/g)].map((m) => plainHtml(m[1]));
+  assert.deepEqual(actualHeadings, expectedHeadings);
+  const title = plainHtml(head.match(/<title[^>]*>(.*?)<\/title>/)?.[1] ?? "");
+  assert(title.startsWith("Intrinsic Prism Discount Code") && title.length < 60);
+  assert(head.includes(`rel="canonical" href="https://thrivetools.co${route}"`));
+  const scripts = [...head.matchAll(/<script[^>]*type="application\/ld\+json"[^>]*>([\s\S]*?)<\/script>/g)].map((m) => JSON.parse(m[1]));
+  const schemas = scripts.filter((item) => item["@type"] === "FAQPage");
+  assert.equal(schemas.length, 1);
+  const faqs = schemas[0].mainEntity;
+  const suppliedFaqs = [...source.split("## Intrinsic Prism FAQ\n")[1].split("## Bottom line")[0].matchAll(/### (.+)\n([\s\S]*?)(?=\n### |$)/g)];
+  const visibleFaqs = [...article.matchAll(/<h3[^>]*>([\s\S]*?)<\/h3>\s*<p[^>]*>([\s\S]*?)<\/p>/g)];
+  assert.equal(faqs.length, 8);
+  assert.equal(suppliedFaqs.length, 8);
+  assert.equal(visibleFaqs.length, 8);
+  faqs.forEach((item, i) => {
+    assert.equal(item.name, suppliedFaqs[i][1]);
+    assert.equal(item.acceptedAnswer.text, plainMarkdown(suppliedFaqs[i][2]));
+    assert.equal(plainHtml(visibleFaqs[i][1]), item.name);
+    assert.equal(plainHtml(visibleFaqs[i][2]), item.acceptedAnswer.text);
+  });
+  const links = [...article.matchAll(/<a\b[^>]*href="([^"]+)"[^>]*>/g)];
+  assert.equal(links.length, 3);
+  links.forEach(([tag, href]) => {
+    assert.equal(href, affiliateUrl);
+    assert(tag.includes('rel="noopener noreferrer sponsored"'));
+  });
+  const imageTag = [...html.matchAll(/<img\b[^>]*>/g)].map((m) => m[0]).find((tag) => tag.includes("IMG_1605_1792681508022"));
+  assert(imageTag?.includes('alt="Intrinsic Prism home test kit being delivered"'));
+  const hero = imageTag.match(/src="([^"]+)"/)[1];
+  assert(fs.existsSync(path.join("dist/public", hero)));
+  assert(head.match(/property="og:image" content="([^"]+)"/)?.[1].endsWith(hero));
+  assert((await render("/blog")).html.includes(`href="${route}"`));
+  const directoryFile = "client/src/pages/Discounts.tsx";
+  const offer = fs.readFileSync(directoryFile, "utf8").match(/name: "Intrinsic Prism",([\s\S]*?)\n\s*},/)?.[1];
+  assert(offer?.includes('code: "THRIVETOOLS"'));
+  assert(offer.includes(`url: "${affiliateUrl}"`));
+  assert(offer.includes(`blogHref: "${route}"`));
+  const directory = await render("/discount-codes");
+  assert.equal((directory.html.match(/Intrinsic Prism<\/h3>/g) || []).length, 1);
+  const card = directory.html.match(/Intrinsic Prism<\/h3>([\s\S]*?)<\/p>/)?.[1];
+  assert(card?.includes(`href="${route}"`));
+  assert(card.includes("Benefits"));
+  console.log("PASS Intrinsic Prism: full source wording, headings, Quick answer, disclosure, eight exact visible/schema FAQs, three affiliate links, supplied hero + OG, routes/listing and existing card Benefits link.");
+})().catch((error) => {
+  console.error(error);
+  process.exitCode = 1;
+});

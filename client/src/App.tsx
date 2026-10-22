@@ -238,6 +238,7 @@ import LumeboxDiscountCode from "./pages/reviews/LumeboxDiscountCode";
 import GoliDiscountCode from "./pages/reviews/GoliDiscountCode";
 import GoliDiscountCodeFaq from "./pages/reviews/GoliDiscountCodeFaq";
 import AchedawayCupperGuide from "./pages/reviews/AchedawayCupperGuide";
+import IntrinsicPrismDiscountCode from "./pages/reviews/IntrinsicPrismDiscountCode";
 import EmrTekDiscountCode from "./pages/reviews/EmrTekDiscountCode";
 import TherasageDiscountCode from "./pages/reviews/TherasageDiscountCode";
 import EmrTekCheckoutCode from "./pages/reviews/EmrTekCheckoutCode";
@@ -658,6 +659,7 @@ function Router() {
         <Route path="/goli-discount-code" component={GoliDiscountCode} />
         <Route path="/blog/goli-discount-code-faq" component={GoliDiscountCodeFaq} />
         <Route path="/blog/achedaway-cupper-guide" component={AchedawayCupperGuide} />
+        <Route path="/blog/intrinsic-prism-discount-code" component={IntrinsicPrismDiscountCode} />
         <Route path="/emr-tek-discount-code" component={EmrTekDiscountCode} />
         <Route path="/blog/therasage-discount-code" component={TherasageDiscountCode} />
         <Route path="/blog/emr-tek-discount-code" component={EmrTekCheckoutCode} />

@@ -286,6 +286,7 @@ export const healthTech: DiscountItem[] = [
     description: "at home lab testing: 133+ toxin and detox markers, AI analytics, personalized protocols",
     code: "THRIVETOOLS",
     url: "https://intrinsicprism.com/?ref=THRIVETOOLS",
+    blogHref: "/blog/intrinsic-prism-discount-code",
   },
 ];
 
