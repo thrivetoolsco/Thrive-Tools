@@ -127,6 +127,8 @@ import GoliDiscountCode from "@/pages/reviews/GoliDiscountCode";
 import GoliDiscountCodeFaq from "@/pages/reviews/GoliDiscountCodeFaq";
 import AchedawayCupperGuide from "@/pages/reviews/AchedawayCupperGuide";
 import IntrinsicPrismDiscountCode from "@/pages/reviews/IntrinsicPrismDiscountCode";
+import ColdPlungeAtHomeGuide from "@/pages/reviews/ColdPlungeAtHomeGuide";
+import DoGroundingSheetsWork from "@/pages/reviews/DoGroundingSheetsWork";
 import EmrTekDiscountCode from "@/pages/reviews/EmrTekDiscountCode";
 import TherasageDiscountCode from "@/pages/reviews/TherasageDiscountCode";
 import EmrTekCheckoutCode from "@/pages/reviews/EmrTekCheckoutCode";
@@ -378,6 +380,8 @@ export const SSR_ROUTE_COMPONENTS: Record<string, ComponentType> = {
   "/blog/goli-discount-code-faq": GoliDiscountCodeFaq,
   "/blog/achedaway-cupper-guide": AchedawayCupperGuide,
   "/blog/intrinsic-prism-discount-code": IntrinsicPrismDiscountCode,
+  "/blog/cold-plunge-at-home-guide": ColdPlungeAtHomeGuide,
+  "/blog/do-grounding-sheets-work": DoGroundingSheetsWork,
   "/emr-tek-discount-code": EmrTekDiscountCode,
   "/blog/therasage-discount-code": TherasageDiscountCode,
   "/blog/emr-tek-discount-code": EmrTekCheckoutCode,
