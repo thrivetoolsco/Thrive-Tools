@@ -9,6 +9,11 @@ import { useMutation } from "@tanstack/react-query";
 import { apiRequest } from "@/lib/queryClient";
 import { trackEvent } from "@/lib/analytics";
 
+// New articles come first; edits to older posts must not change their position.
+const newestPosts = [...blogPosts].sort(
+  (a, b) => Date.parse(b.date) - Date.parse(a.date)
+);
+
 function EmailCapture() {
   const [email, setEmail] = useState("");
   const [done, setDone] = useState(false);
@@ -68,13 +73,13 @@ export default function ProductReviews() {
   const [query, setQuery] = useState("");
 
   const filtered = query.trim()
-    ? blogPosts.filter(
+    ? newestPosts.filter(
         (p) =>
           p.title.toLowerCase().includes(query.toLowerCase()) ||
           p.excerpt.toLowerCase().includes(query.toLowerCase()) ||
           p.badge.toLowerCase().includes(query.toLowerCase())
       )
-    : blogPosts;
+    : newestPosts;
 
   return (
     <PageLayout
