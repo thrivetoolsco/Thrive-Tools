@@ -27,6 +27,7 @@ const BLOG_ROUTE_MAP: Record<string, string> = {
   "/blog/achedaway-cupper-guide": "/src/pages/reviews/AchedawayCupperGuide.tsx",
   "/blog/intrinsic-prism-discount-code": "/src/pages/reviews/IntrinsicPrismDiscountCode.tsx",
   "/blog/cold-plunge-at-home-guide": "/src/pages/reviews/ColdPlungeAtHomeGuide.tsx",
+  "/blog/what-is-hrv-how-to-improve-it": "/src/pages/reviews/WhatIsHrvHowToImproveIt.tsx",
   "/blog/do-grounding-sheets-work": "/src/pages/reviews/DoGroundingSheetsWork.tsx",
   "/blog/therasage-discount-code-faq": "/src/pages/reviews/TherasageDiscountCodeFaq.tsx",
   "/blog/zentein-discount-code": "/src/pages/reviews/ZenteinDiscountCode.tsx",
