@@ -130,6 +130,9 @@ import IntrinsicPrismDiscountCode from "@/pages/reviews/IntrinsicPrismDiscountCo
 import ColdPlungeAtHomeGuide from "@/pages/reviews/ColdPlungeAtHomeGuide";
 import WhatIsHrvHowToImproveIt from "@/pages/reviews/WhatIsHrvHowToImproveIt";
 import ColdBh2LongevityStudy from "@/pages/reviews/ColdBh2LongevityStudy";
+import NovosStaminaVascularTrial from "@/pages/reviews/NovosStaminaVascularTrial";
+import IntrinsicPrismDiscountCodeFaq from "@/pages/reviews/IntrinsicPrismDiscountCodeFaq";
+import ContrastTherapyAtHomeGuide from "@/pages/reviews/ContrastTherapyAtHomeGuide";
 import DoGroundingSheetsWork from "@/pages/reviews/DoGroundingSheetsWork";
 import EmrTekDiscountCode from "@/pages/reviews/EmrTekDiscountCode";
 import TherasageDiscountCode from "@/pages/reviews/TherasageDiscountCode";
@@ -385,6 +388,9 @@ export const SSR_ROUTE_COMPONENTS: Record<string, ComponentType> = {
   "/blog/cold-plunge-at-home-guide": ColdPlungeAtHomeGuide,
   "/blog/what-is-hrv-how-to-improve-it": WhatIsHrvHowToImproveIt,
   "/blog/cold-bh2-longevity-study": ColdBh2LongevityStudy,
+  "/blog/novos-stamina-vascular-trial": NovosStaminaVascularTrial,
+  "/blog/intrinsic-prism-discount-code-faq": IntrinsicPrismDiscountCodeFaq,
+  "/blog/contrast-therapy-at-home-guide": ContrastTherapyAtHomeGuide,
   "/blog/do-grounding-sheets-work": DoGroundingSheetsWork,
   "/emr-tek-discount-code": EmrTekDiscountCode,
   "/blog/therasage-discount-code": TherasageDiscountCode,

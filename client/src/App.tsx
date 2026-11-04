@@ -242,6 +242,9 @@ import IntrinsicPrismDiscountCode from "./pages/reviews/IntrinsicPrismDiscountCo
 import ColdPlungeAtHomeGuide from "./pages/reviews/ColdPlungeAtHomeGuide";
 import WhatIsHrvHowToImproveIt from "./pages/reviews/WhatIsHrvHowToImproveIt";
 import ColdBh2LongevityStudy from "./pages/reviews/ColdBh2LongevityStudy";
+import NovosStaminaVascularTrial from "./pages/reviews/NovosStaminaVascularTrial";
+import IntrinsicPrismDiscountCodeFaq from "./pages/reviews/IntrinsicPrismDiscountCodeFaq";
+import ContrastTherapyAtHomeGuide from "./pages/reviews/ContrastTherapyAtHomeGuide";
 import DoGroundingSheetsWork from "./pages/reviews/DoGroundingSheetsWork";
 import EmrTekDiscountCode from "./pages/reviews/EmrTekDiscountCode";
 import TherasageDiscountCode from "./pages/reviews/TherasageDiscountCode";
@@ -667,6 +670,9 @@ function Router() {
         <Route path="/blog/cold-plunge-at-home-guide" component={ColdPlungeAtHomeGuide} />
         <Route path="/blog/what-is-hrv-how-to-improve-it" component={WhatIsHrvHowToImproveIt} />
         <Route path="/blog/cold-bh2-longevity-study" component={ColdBh2LongevityStudy} />
+        <Route path="/blog/novos-stamina-vascular-trial" component={NovosStaminaVascularTrial} />
+        <Route path="/blog/intrinsic-prism-discount-code-faq" component={IntrinsicPrismDiscountCodeFaq} />
+        <Route path="/blog/contrast-therapy-at-home-guide" component={ContrastTherapyAtHomeGuide} />
         <Route path="/blog/do-grounding-sheets-work" component={DoGroundingSheetsWork} />
         <Route path="/emr-tek-discount-code" component={EmrTekDiscountCode} />
         <Route path="/blog/therasage-discount-code" component={TherasageDiscountCode} />

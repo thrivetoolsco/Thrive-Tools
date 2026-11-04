@@ -70,9 +70,9 @@ const plainHtml = (html) => normalize(decode(html.replace(/<!--[\s\S]*?-->/g, ""
   assert.deepEqual(fs.readFileSync(path.join("dist/public", src)), fs.readFileSync("attached_assets/IMG_1661_1793732296832.webp"));
   assert(head.match(/property="og:image" content="([^"]+)"/)[1].endsWith(src));
   const listing = (await render("/blog")).html;
-  assert.equal(listing.match(/data-testid="card-post-([^"]+)"/)[1], "cold-bh2-longevity-study");
+  assert(listing.includes('data-testid="card-post-cold-bh2-longevity-study"'));
   assert.equal((listing.match(/data-testid="card-post-cold-bh2-longevity-study"/g) || []).length, 1);
-  console.log("PASS BH2: unchanged article, heading/list structure, 3 internal links, 5 exact visible/schema FAQs, uploaded hero/OG, routes and first blog card.");
+  console.log("PASS BH2: unchanged article, heading/list structure, 3 internal links, 5 exact visible/schema FAQs, uploaded hero/OG, routes and blog card.");
 })().catch((error) => {
   console.error(error);
   process.exitCode = 1;
