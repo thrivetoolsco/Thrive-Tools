@@ -14,7 +14,8 @@ const markdownText = (s) => normalize(s.replace(/\[([^\]]+)\]\([^)]+\)/g, "$1")
   .replace(/^#{1,6}\s+|^-\s+|^\d+\.\s+|^---$/gm, "").replace(/\*/g, ""));
 const posts = [
   { slug: "intrinsic-prism-discount-code-faq", title: "Intrinsic Prism Discount Code FAQ (Verified 2026)",
-    category: "Discount Codes", hero: "intrinsic-prism-faq-hero", faqCount: 11,
+    category: "Discount Codes", hero: "IMG_1665_1793820476137",
+    imageFile: "attached_assets/IMG_1665_1793820476137.webp", faqCount: 11,
     keywords: ["Intrinsic Prism discount code", "THRIVETOOLS", "10% off", "verified"] },
   { slug: "contrast-therapy-at-home-guide", title: "Contrast Therapy at Home: Sauna + Cold Plunge Guide",
     category: "Wellness Tech", hero: "contrast-therapy-at-home-hero", faqCount: 7,
@@ -77,9 +78,9 @@ const directory = fs.readFileSync("client/src/pages/Discounts.tsx", "utf8");
     assert(image?.match(/alt="[^"]+"/));
     const src = image.match(/src="([^"]+)"/)[1];
     assert.deepEqual(fs.readFileSync(path.join("dist/public", src)),
-      fs.readFileSync(`attached_assets/generated_images/${post.hero}.jpg`));
+      fs.readFileSync(post.imageFile || `attached_assets/generated_images/${post.hero}.jpg`));
     assert(head.match(/property="og:image" content="([^"]+)"/)[1].endsWith(src));
-    console.log(`PASS ${post.slug}: exact article, headings, meta, ${expectedLinks.length} verified links, ${post.faqCount} matching FAQs/schema, generated hero/OG and all routes.`);
+    console.log(`PASS ${post.slug}: exact article, headings, meta, ${expectedLinks.length} verified links, ${post.faqCount} matching FAQs/schema, correct hero/OG and all routes.`);
   }
   assert(directory.includes('code: "THRIVETOOLS"'));
   assert(directory.includes('code: "thrive35 to get $250 Discount"'));

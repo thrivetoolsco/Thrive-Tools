@@ -1,13 +1,13 @@
 import PageLayout from "@/components/PageLayout";
 import FaqJsonLd from "@/components/FaqJsonLd";
 import { Badge } from "@/components/ui/badge";
-import intrinsicPrismFaqImage from "@assets/generated_images/intrinsic-prism-faq-hero.jpg";
+import intrinsicPrismFaqImage from "@assets/IMG_1665_1793820476137.webp";
 import { Link } from "wouter";
 
 const title = "Intrinsic Prism Discount Code FAQ (Verified 2026)";
 const affiliateUrl = "https://intrinsicprism.com/?ref=THRIVETOOLS";
 const imageAlt =
-  "Editorial illustration of an at-home toxin testing kit beside a sample collection box";
+  "A person reviewing an Intrinsic Prism toxin exposure summary on a phone";
 
 const faqs = [
   {
