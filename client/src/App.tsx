@@ -244,6 +244,7 @@ import WhatIsHrvHowToImproveIt from "./pages/reviews/WhatIsHrvHowToImproveIt";
 import ColdBh2LongevityStudy from "./pages/reviews/ColdBh2LongevityStudy";
 import NovosStaminaVascularTrial from "./pages/reviews/NovosStaminaVascularTrial";
 import IntrinsicPrismDiscountCodeFaq from "./pages/reviews/IntrinsicPrismDiscountCodeFaq";
+import LeelaQuantumTechGuide from "./pages/reviews/LeelaQuantumTechGuide";
 import ContrastTherapyAtHomeGuide from "./pages/reviews/ContrastTherapyAtHomeGuide";
 import DoGroundingSheetsWork from "./pages/reviews/DoGroundingSheetsWork";
 import EmrTekDiscountCode from "./pages/reviews/EmrTekDiscountCode";
@@ -672,6 +673,7 @@ function Router() {
         <Route path="/blog/cold-bh2-longevity-study" component={ColdBh2LongevityStudy} />
         <Route path="/blog/novos-stamina-vascular-trial" component={NovosStaminaVascularTrial} />
         <Route path="/blog/intrinsic-prism-discount-code-faq" component={IntrinsicPrismDiscountCodeFaq} />
+        <Route path="/blog/leela-quantum-tech-guide" component={LeelaQuantumTechGuide} />
         <Route path="/blog/contrast-therapy-at-home-guide" component={ContrastTherapyAtHomeGuide} />
         <Route path="/blog/do-grounding-sheets-work" component={DoGroundingSheetsWork} />
         <Route path="/emr-tek-discount-code" component={EmrTekDiscountCode} />

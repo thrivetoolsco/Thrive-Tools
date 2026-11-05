@@ -31,6 +31,7 @@ const BLOG_ROUTE_MAP: Record<string, string> = {
   "/blog/cold-bh2-longevity-study": "/src/pages/reviews/ColdBh2LongevityStudy.tsx",
   "/blog/novos-stamina-vascular-trial": "/src/pages/reviews/NovosStaminaVascularTrial.tsx",
   "/blog/intrinsic-prism-discount-code-faq": "/src/pages/reviews/IntrinsicPrismDiscountCodeFaq.tsx",
+  "/blog/leela-quantum-tech-guide": "/src/pages/reviews/LeelaQuantumTechGuide.tsx",
   "/blog/contrast-therapy-at-home-guide": "/src/pages/reviews/ContrastTherapyAtHomeGuide.tsx",
   "/blog/do-grounding-sheets-work": "/src/pages/reviews/DoGroundingSheetsWork.tsx",
   "/blog/therasage-discount-code-faq": "/src/pages/reviews/TherasageDiscountCodeFaq.tsx",
