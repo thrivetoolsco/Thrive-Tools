@@ -36,11 +36,19 @@ const plain = (s) => normalize(s.replace(/<!--[\s\S]*?-->/g, "")
   assert.equal((article.match(/<li\b/g) || []).length, 8);
   assert.deepEqual([...article.matchAll(/<a\b[^>]*href="([^"]+)"[^>]*>([\s\S]*?)<\/a>/g)]
     .map((m) => [plain(m[2]), m[1]]), [
+    ["Leela Quantum Tech (LeelaQ)", "https://leelaq.com/?ref=ThriveTools"],
+    ["INFINITY Bloc", "https://leelaq.com/?ref=ThriveTools"],
+    ["H.E.A.L.360 Advanced Petite Capsule", "https://leelaq.com/?ref=ThriveTools"],
     ["what HRV is and how to improve it", "/blog/what-is-hrv-how-to-improve-it"],
+    ["current pricing on LeelaQ's site", "https://leelaq.com/?ref=ThriveTools"],
     ["Leela Quantum Tech", "https://leelaq.com/?ref=ThriveTools"],
     ["discount codes page", "https://thrivetools.co/discount-codes"],
   ]);
-  assert(article.match(/<a\b[^>]*href="https:\/\/leelaq.com\/\?ref=ThriveTools"[^>]*rel="[^"]*sponsored/));
+  const affiliateLinks = [...article.matchAll(/<a\b[^>]*href="https:\/\/leelaq.com\/\?ref=ThriveTools"[^>]*>/g)];
+  assert.equal(affiliateLinks.length, 5);
+  for (const [tag] of affiliateLinks) {
+    assert(tag.includes('rel="sponsored noopener noreferrer"'), "Every affiliate link must be labeled sponsored");
+  }
   for (const href of ["/blog/what-is-hrv-how-to-improve-it", "/discount-codes"]) {
     assert(app.includes(`path="${href}"`) && SSR_ROUTE_COMPONENTS[href]);
   }
@@ -73,5 +81,5 @@ const plain = (s) => normalize(s.replace(/<!--[\s\S]*?-->/g, "")
   assert.equal((listing.match(/data-testid="card-post-leela-quantum-tech-guide"/g) || []).length, 1);
   assert(!fs.readFileSync("client/src/pages/Discounts.tsx", "utf8").match(/leela/i), "No Leela discount card");
   assert(!(await render("/discount-codes")).html.includes("Leela Quantum Tech"), "No Leela discount card in UI");
-  console.log("PASS Leela: exact full article, 3 links, 6 matching visible/schema FAQs, original hero/OG, second uploaded image, routes, first blog card and no discount card.");
+  console.log("PASS Leela: exact full article, 5 sponsored affiliate links, 6 matching visible/schema FAQs, original hero/OG, second uploaded image, routes, first blog card and no discount card.");
 })().catch((error) => { console.error(error); process.exitCode = 1; });

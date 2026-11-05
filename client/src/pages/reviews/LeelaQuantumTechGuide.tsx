@@ -94,7 +94,13 @@ export default function LeelaQuantumTechGuide() {
         <section className="space-y-4">
           <h2>What Leela Quantum Tech Makes</h2>
           <p>
-            Leela Quantum Tech (LeelaQ) makes what it calls quantum energy
+            <a
+              href="https://leelaq.com/?ref=ThriveTools"
+              className="text-[#8b3a1a] underline underline-offset-4"
+              rel="sponsored noopener noreferrer"
+            >
+              Leela Quantum Tech (LeelaQ)
+            </a>{" "}makes what it calls quantum energy
             wellness products — devices and wearables intended to support
             balance and vitality through what the company describes as a more
             coherent energetic environment, including in the presence of
@@ -104,14 +110,25 @@ export default function LeelaQuantumTechGuide() {
           <p>The product range falls into a few categories:</p>
           <ul className="list-disc space-y-2 pl-6">
             <li>
-              <strong>Blocs, including the INFINITY Bloc.</strong> The Bloc is
+              <strong>Blocs, including the{" "}
+                <a
+                  href="https://leelaq.com/?ref=ThriveTools"
+                  className="text-[#8b3a1a] underline underline-offset-4"
+                  rel="sponsored noopener noreferrer"
+                >INFINITY Bloc</a>.
+              </strong> The Bloc is
               the company's core technology: a device intended to infuse
               objects placed on or near it with quantum energy, using what
               LeelaQ calls Bloc technology.
             </li>
             <li>
-              <strong>Capsules and jewelry, including the H.E.A.L.360 Advanced
-              Petite Capsule.</strong> A small, portable capsule designed to be
+              <strong>Capsules and jewelry, including the{" "}
+                <a
+                  href="https://leelaq.com/?ref=ThriveTools"
+                  className="text-[#8b3a1a] underline underline-offset-4"
+                  rel="sponsored noopener noreferrer"
+                >H.E.A.L.360 Advanced Petite Capsule</a>.
+              </strong> A small, portable capsule designed to be
               carried for protection and balance wherever you go.
             </li>
             <li>
@@ -240,8 +257,12 @@ export default function LeelaQuantumTechGuide() {
           </p>
           <p>
             Pricing is not something I am stating here, because it changes and
-            I do not want to publish a number that goes stale — check the
-            current pricing on LeelaQ's site before deciding anything.
+            I do not want to publish a number that goes stale — check the{" "}
+            <a
+              href="https://leelaq.com/?ref=ThriveTools"
+              className="text-[#8b3a1a] underline underline-offset-4"
+              rel="sponsored noopener noreferrer"
+            >current pricing on LeelaQ's site</a>{" "}before deciding anything.
           </p>
         </section>
 
