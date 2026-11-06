@@ -132,6 +132,7 @@ import ColdBh2LongevityStudy from "./pages/reviews/ColdBh2LongevityStudy";
 import NovosStaminaVascularTrial from "./pages/reviews/NovosStaminaVascularTrial";
 import IntrinsicPrismDiscountCodeFaq from "./pages/reviews/IntrinsicPrismDiscountCodeFaq";
 import LeelaQuantumTechGuide from "./pages/reviews/LeelaQuantumTechGuide";
+import BoneLoadingPiezo1Study from "./pages/reviews/BoneLoadingPiezo1Study";
 import ContrastTherapyAtHomeGuide from "./pages/reviews/ContrastTherapyAtHomeGuide";
 import DoGroundingSheetsWork from "./pages/reviews/DoGroundingSheetsWork";
 import EmrTekDiscountCode from "./pages/reviews/EmrTekDiscountCode";
@@ -279,6 +280,7 @@ export const SSR_ROUTE_COMPONENTS: Record<string, ComponentType> = {
   "/blog/novos-stamina-vascular-trial": NovosStaminaVascularTrial,
   "/blog/intrinsic-prism-discount-code-faq": IntrinsicPrismDiscountCodeFaq,
   "/blog/leela-quantum-tech-guide": LeelaQuantumTechGuide,
+  "/blog/bone-loading-piezo1-lifespan-study": BoneLoadingPiezo1Study,
   "/blog/contrast-therapy-at-home-guide": ContrastTherapyAtHomeGuide,
   "/blog/do-grounding-sheets-work": DoGroundingSheetsWork,
   "/emr-tek-discount-code": EmrTekDiscountCode,

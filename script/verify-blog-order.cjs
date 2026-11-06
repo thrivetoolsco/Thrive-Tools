@@ -6,12 +6,12 @@ const { render } = require("../dist/entry-server.cjs");
     const { html } = await render(route);
     const cards = [...html.matchAll(/data-testid="card-post-([^"]+)"([\s\S]*?)(?=data-testid="card-post-|$)/g)];
     assert(cards.length > 100, "All existing articles must remain listed");
-    assert.deepEqual(cards.slice(0, 4).map((card) => card[1]), [
-      "leela-quantum-tech-guide", "intrinsic-prism-discount-code-faq", "contrast-therapy-at-home-guide", "novos-stamina-vascular-trial",
-    ], "Latest shared Leela article must precede older same-day articles");
-    assert.equal(cards[4][1], "cold-bh2-longevity-study");
-    assert.equal(cards[5][1], "what-is-hrv-how-to-improve-it");
-    assert.deepEqual(new Set(cards.slice(6, 8).map((card) => card[1])),
+    assert.deepEqual(cards.slice(0, 5).map((card) => card[1]), [
+      "bone-loading-piezo1-lifespan-study", "leela-quantum-tech-guide", "intrinsic-prism-discount-code-faq", "contrast-therapy-at-home-guide", "novos-stamina-vascular-trial",
+    ], "Latest shared bone-loading article must precede older articles");
+    assert.equal(cards[5][1], "cold-bh2-longevity-study");
+    assert.equal(cards[6][1], "what-is-hrv-how-to-improve-it");
+    assert.deepEqual(new Set(cards.slice(7, 9).map((card) => card[1])),
       new Set(["cold-plunge-at-home-guide", "do-grounding-sheets-work"]));
     const dates = cards.map((card) => {
       const date = card[2].match(/\b(?:January|February|March|April|May|June|July|August|September|October|November|December) \d{1,2}, \d{4}\b/);
@@ -24,7 +24,7 @@ const { render } = require("../dist/entry-server.cjs");
       if (i) assert(dates[i - 1] >= date, `Out of order: ${cards[i][1]}`);
     });
     assert.equal(new Set(cards.map((card) => card[1])).size, cards.length, "No duplicate cards");
-    console.log(`PASS ${route}: ${cards.length} articles newest-first; Leela ahead of the weekly pair, STAMINA, BH2, HRV and older guides.`);
+    console.log(`PASS ${route}: ${cards.length} articles newest-first; bone-loading study ahead of Leela and older guides.`);
   }
   const source = require("node:fs").readFileSync("client/src/pages/ProductReviews.tsx", "utf8");
   assert(source.includes("? newestPosts.filter(") && source.includes(": newestPosts;"),
