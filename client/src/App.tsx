@@ -246,6 +246,7 @@ import NovosStaminaVascularTrial from "./pages/reviews/NovosStaminaVascularTrial
 import IntrinsicPrismDiscountCodeFaq from "./pages/reviews/IntrinsicPrismDiscountCodeFaq";
 import LeelaQuantumTechGuide from "./pages/reviews/LeelaQuantumTechGuide";
 import BoneLoadingPiezo1Study from "./pages/reviews/BoneLoadingPiezo1Study";
+import VanadylSulfateSenolyticStudy from "./pages/reviews/VanadylSulfateSenolyticStudy";
 import ContrastTherapyAtHomeGuide from "./pages/reviews/ContrastTherapyAtHomeGuide";
 import DoGroundingSheetsWork from "./pages/reviews/DoGroundingSheetsWork";
 import EmrTekDiscountCode from "./pages/reviews/EmrTekDiscountCode";
@@ -676,6 +677,7 @@ function Router() {
         <Route path="/blog/intrinsic-prism-discount-code-faq" component={IntrinsicPrismDiscountCodeFaq} />
         <Route path="/blog/leela-quantum-tech-guide" component={LeelaQuantumTechGuide} />
         <Route path="/blog/bone-loading-piezo1-lifespan-study" component={BoneLoadingPiezo1Study} />
+        <Route path="/blog/vanadyl-sulfate-senolytic-study" component={VanadylSulfateSenolyticStudy} />
         <Route path="/blog/contrast-therapy-at-home-guide" component={ContrastTherapyAtHomeGuide} />
         <Route path="/blog/do-grounding-sheets-work" component={DoGroundingSheetsWork} />
         <Route path="/emr-tek-discount-code" component={EmrTekDiscountCode} />
