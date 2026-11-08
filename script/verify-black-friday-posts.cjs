@@ -3,6 +3,8 @@ const fs = require("node:fs");
 const path = require("node:path");
 const ts = require("typescript");
 const { render } = require("../dist/entry-server.cjs");
+require("tsx/cjs");
+const { currentMonthCopy } = require("../shared/month-copy.ts");
 
 const posts = [
   {
@@ -60,7 +62,7 @@ visit(source);
     assert(post.title.length <= 60);
     assert(head.includes(`rel="canonical" href="https://thrivetools.co${post.route}"`));
     assert(!/noindex/i.test(head));
-    assert(article.includes(">Deals<") && article.includes("Last verified: October 13, 2026"));
+    assert(article.includes(">Deals<") && article.includes(currentMonthCopy("Last verified: October 13, 2026")));
     assert(article.includes("November 27, 2026") && article.includes("November 30, 2026"));
     assert(article.includes("not tested in merchant checkouts") && article.includes("Re-verify"));
     assert(article.includes("Disclosure:") && article.includes("14 years of personal research"));
@@ -98,7 +100,7 @@ visit(source);
       assert.equal(decode(visibleFaqs[index][2]), item.acceptedAnswer.text);
     });
     if (post.hero.endsWith("wellness-tech")) {
-      assert(article.includes("https://neurosity.co/thrivetools") && article.includes("Visitor check on October 13, 2026"));
+      assert(article.includes("https://neurosity.co/thrivetools") && article.includes(currentMonthCopy("Visitor check on October 13, 2026")));
       for (const group of ["Recovery &amp; sleep tech", "Brain &amp; neurotech", "EMF protection"]) assert(article.includes(group));
     }
     console.log(`PASS ${post.route}: ${cards.length} source-matched partners, guide links, five matching FAQs, Deals category, seasonal caveats, hero, SEO and blog listing.`);

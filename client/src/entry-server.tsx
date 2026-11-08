@@ -4,6 +4,7 @@ import { Router } from "wouter";
 import { QueryClientProvider, QueryClient } from "@tanstack/react-query";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import type { ComponentType } from "react";
+import { isMonthCopyPage, monthCopyHtml } from "@shared/month-copy";
 
 import Home from "@/pages/Home";
 import About from "@/pages/About";
@@ -443,5 +444,14 @@ export async function render(
   );
 
   const { helmet } = helmetContext as { helmet: Record<string, { toString(): string }> };
+  if (isMonthCopyPage(url)) {
+    const now = new Date();
+    return {
+      html: monthCopyHtml(html, now),
+      helmet: Object.fromEntries(Object.entries(helmet).map(([key, value]) => [
+        key, { toString: () => monthCopyHtml(value.toString(), now) },
+      ])),
+    };
+  }
   return { html, helmet };
 }

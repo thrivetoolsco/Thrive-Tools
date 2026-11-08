@@ -3,6 +3,8 @@ const fs = require("node:fs");
 const path = require("node:path");
 const ts = require("typescript");
 const { render } = require("../dist/entry-server.cjs");
+require("tsx/cjs");
+const { currentMonthCopy } = require("../shared/month-copy.ts");
 
 const routes = [
   ["/blog/emr-tek-discount-code", "EMR-TEK Discount Code (EDEN17306): Verified 2026", "EMR-TEK Discount Code: EDEN17306 (Verified 2026)", 4, "EMR-TEK"],
@@ -64,7 +66,7 @@ async function main() {
     assert(head.includes(`rel="canonical" href="https://thrivetools.co${route}"`), `${route}: canonical missing`);
     assert(!/noindex/i.test(head), `${route}: must be indexable`);
     assert.equal((article.match(/href="\/discount-codes"/g) || []).length, 1, `${route}: expected one directory link in the article`);
-    assert(result.html.includes("October 2026"), `${route}: wrong display month`);
+    assert(result.html.includes(currentMonthCopy("October 2026")), `${route}: wrong display month`);
     const schemas = [...head.matchAll(/<script[^>]*type="application\/ld\+json"[^>]*>(.*?)<\/script>/gs)].map((m) => JSON.parse(m[1]));
     const posting = schemas.find((s) => s["@type"] === "BlogPosting");
     const weeklyFaq = route === "/blog/lumebox-discount-code-faq" || route === "/blog/therasage-discount-code-faq";

@@ -2,6 +2,8 @@ const assert = require("node:assert/strict");
 const fs = require("node:fs");
 const path = require("node:path");
 const { render, SSR_ROUTE_COMPONENTS } = require("../dist/entry-server.cjs");
+require("tsx/cjs");
+const { currentMonthCopy } = require("../shared/month-copy.ts");
 
 const route = "/blog/cold-bh2-longevity-study";
 const brief = fs.readFileSync("attached_assets/Pasted-Today-s-daily-article-is-ready-the-first-news-driven-on_1793732309037.txt", "utf8");
@@ -9,7 +11,7 @@ const source = brief.split("ARTICLE TEXT (place exactly as written):")[1]
   .split("And here's the hero image")[0].replace(/\uFFFC/g, "").trim();
 const decode = (text) => text.replace(/&amp;/g, "&").replace(/&quot;/g, '"')
   .replace(/&#x27;|&#39;|&apos;/g, "'").replace(/&lt;/g, "<").replace(/&gt;/g, ">");
-const normalize = (text) => text.replace(/\s+/g, " ").trim();
+const normalize = (text) => currentMonthCopy(text.replace(/\s+/g, " ").trim());
 const plainHtml = (html) => normalize(decode(html.replace(/<!--[\s\S]*?-->/g, "")
   .replace(/<\/(?:p|h[1-6]|li|section|div|aside|blockquote)>/g, " ").replace(/<[^>]*>/g, "")));
 

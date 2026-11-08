@@ -2,6 +2,8 @@ const assert = require("node:assert/strict");
 const fs = require("node:fs");
 const path = require("node:path");
 const { render } = require("../dist/entry-server.cjs");
+require("tsx/cjs");
+const { currentMonthCopy } = require("../shared/month-copy.ts");
 
 const route = "/blog/zentein-discount-code";
 const title = "Zentein Discount Code: 30% Off with EDEN30 (2026)";
@@ -23,7 +25,7 @@ const decode = (text) => text.replace(/<[^>]*>/g, "").replace(/&amp;/g, "&").rep
   assert(head.includes(`rel="canonical" href="https://thrivetools.co${route}"`));
   assert(!/noindex/i.test(head));
   assert(!/PASTE NOTES|Slug suggestion|Hero image:|Meta description:/i.test(result.html));
-  assert(article.includes("EDEN30") && article.includes("30% off") && article.includes("October 13, 2027"));
+  assert(article.includes("EDEN30") && article.includes("30% off") && article.includes(currentMonthCopy("October 13, 2027")));
   assert(article.includes('href="https://zentein.ca/?ref=THRIVETOOLSCO"'));
   assert(article.includes("sponsored") && article.includes("Disclosure:"));
   assert(article.includes("<table") && article.includes("<ol"));

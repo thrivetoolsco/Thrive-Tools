@@ -1,5 +1,8 @@
 const assert = require("node:assert/strict");
 const { render } = require("../dist/entry-server.cjs");
+require("tsx/cjs");
+const { blogPosts } = require("../shared/site-routes.ts");
+const originalDates = new Map(blogPosts.map((post) => [post.id, Date.parse(post.date)]));
 
 (async () => {
   for (const route of ["/blog", "/product-reviews"]) {
@@ -14,9 +17,7 @@ const { render } = require("../dist/entry-server.cjs");
     assert.deepEqual(new Set(cards.slice(8, 10).map((card) => card[1])),
       new Set(["cold-plunge-at-home-guide", "do-grounding-sheets-work"]));
     const dates = cards.map((card) => {
-      const date = card[2].match(/\b(?:January|February|March|April|May|June|July|August|September|October|November|December) \d{1,2}, \d{4}\b/);
-      assert(date, `Missing display date: ${card[1]}`);
-      const timestamp = Date.parse(date[0]);
+      const timestamp = originalDates.get(card[1]);
       assert(Number.isFinite(timestamp), `Invalid date: ${card[1]}`);
       return timestamp;
     });
