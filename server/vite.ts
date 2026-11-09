@@ -34,6 +34,7 @@ const BLOG_ROUTE_MAP: Record<string, string> = {
   "/blog/leela-quantum-tech-guide": "/src/pages/reviews/LeelaQuantumTechGuide.tsx",
   "/blog/bone-loading-piezo1-lifespan-study": "/src/pages/reviews/BoneLoadingPiezo1Study.tsx",
   "/blog/vanadyl-sulfate-senolytic-study": "/src/pages/reviews/VanadylSulfateSenolyticStudy.tsx",
+  "/blog/aged-garlic-s1pc-muscle-aging-study": "/src/pages/reviews/AgedGarlicS1pcMuscleAgingStudy.tsx",
   "/blog/contrast-therapy-at-home-guide": "/src/pages/reviews/ContrastTherapyAtHomeGuide.tsx",
   "/blog/do-grounding-sheets-work": "/src/pages/reviews/DoGroundingSheetsWork.tsx",
   "/blog/therasage-discount-code-faq": "/src/pages/reviews/TherasageDiscountCodeFaq.tsx",

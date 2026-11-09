@@ -136,6 +136,7 @@ import IntrinsicPrismDiscountCodeFaq from "@/pages/reviews/IntrinsicPrismDiscoun
 import LeelaQuantumTechGuide from "@/pages/reviews/LeelaQuantumTechGuide";
 import BoneLoadingPiezo1Study from "@/pages/reviews/BoneLoadingPiezo1Study";
 import VanadylSulfateSenolyticStudy from "@/pages/reviews/VanadylSulfateSenolyticStudy";
+import AgedGarlicS1pcMuscleAgingStudy from "@/pages/reviews/AgedGarlicS1pcMuscleAgingStudy";
 import ContrastTherapyAtHomeGuide from "@/pages/reviews/ContrastTherapyAtHomeGuide";
 import DoGroundingSheetsWork from "@/pages/reviews/DoGroundingSheetsWork";
 import EmrTekDiscountCode from "@/pages/reviews/EmrTekDiscountCode";
@@ -397,6 +398,7 @@ export const SSR_ROUTE_COMPONENTS: Record<string, ComponentType> = {
   "/blog/leela-quantum-tech-guide": LeelaQuantumTechGuide,
   "/blog/bone-loading-piezo1-lifespan-study": BoneLoadingPiezo1Study,
   "/blog/vanadyl-sulfate-senolytic-study": VanadylSulfateSenolyticStudy,
+  "/blog/aged-garlic-s1pc-muscle-aging-study": AgedGarlicS1pcMuscleAgingStudy,
   "/blog/contrast-therapy-at-home-guide": ContrastTherapyAtHomeGuide,
   "/blog/do-grounding-sheets-work": DoGroundingSheetsWork,
   "/emr-tek-discount-code": EmrTekDiscountCode,
