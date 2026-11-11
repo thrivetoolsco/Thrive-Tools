@@ -9,3 +9,4 @@
 - [Apollo publication boundaries](apollo-publication-boundaries.md) — use neutral brand-guide partner wording, not coupon/deal-site framing.
 - [Retired partner offers](retired-partner-offers.md) — owner-directed removals must not be reintroduced from older content briefs.
 - [Blog article ordering](blog-article-ordering.md) — most recently shared articles must appear first; new posts go ahead of older posts and same-day additions.
+- [Article closing policy](article-closing-policy.md) — all blog articles end with the owner’s offers link and general study disclaimer; garlic-specific cautions stay topic-specific.

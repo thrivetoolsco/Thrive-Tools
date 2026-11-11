@@ -1,5 +1,6 @@
 import { Link } from "wouter";
 import { Mail } from "lucide-react";
+import ArticleClosingNote from "@/components/ArticleClosingNote";
 
 function RedditIcon({ className }: { className?: string }) {
   return (
@@ -11,6 +12,8 @@ function RedditIcon({ className }: { className?: string }) {
 
 export default function Footer() {
   return (
+    <>
+    <ArticleClosingNote />
     <footer
       className="py-16 px-4 sm:px-6 lg:px-8"
       style={{ background: "#f8ece0", borderTop: "1px solid rgba(201,122,142,0.2)" }}
@@ -92,5 +95,6 @@ export default function Footer() {
         </div>
       </div>
     </footer>
+    </>
   );
 }

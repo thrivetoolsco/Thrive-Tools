@@ -2,6 +2,7 @@ import type { Express } from "express";
 import { type Server } from "http";
 import rateLimit from "express-rate-limit";
 import { blogPosts, staticRoutes, eventRoutes, SITE_URL } from "../shared/site-routes";
+import { appendArticleClosing } from "../shared/article-closing";
 
 const contactRateLimit = rateLimit({
   windowMs: 15 * 60 * 1000,
@@ -1611,19 +1612,19 @@ export async function registerRoutes(
   app.get("/blog/miso-myth-biologically-dead-fermented-foods", (_req, res) => {
     res.setHeader("Content-Type", "text/html; charset=utf-8");
     res.setHeader("Cache-Control", "public, max-age=3600");
-    res.send(MISO_SSR_HTML);
+    res.send(appendArticleClosing(MISO_SSR_HTML));
   });
 
   app.get("/blog/kratom-replacing-alcohol-cannabis-social-pivot-2026", (_req, res) => {
     res.setHeader("Content-Type", "text/html; charset=utf-8");
     res.setHeader("Cache-Control", "public, max-age=3600");
-    res.send(KRATOM_SSR_HTML);
+    res.send(appendArticleClosing(KRATOM_SSR_HTML));
   });
 
   app.get("/blog/waterdrop-k19-h-aquatru-rkin-reverse-osmosis-review", (_req, res) => {
     res.setHeader("Content-Type", "text/html; charset=utf-8");
     res.setHeader("Cache-Control", "public, max-age=3600");
-    res.send(WATERDROP_SSR_HTML);
+    res.send(appendArticleClosing(WATERDROP_SSR_HTML));
   });
 
   app.get("/sitemap.xml", (_req, res) => {
