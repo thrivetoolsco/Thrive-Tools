@@ -138,6 +138,7 @@ import BoneLoadingPiezo1Study from "@/pages/reviews/BoneLoadingPiezo1Study";
 import VanadylSulfateSenolyticStudy from "@/pages/reviews/VanadylSulfateSenolyticStudy";
 import AgedGarlicS1pcMuscleAgingStudy from "@/pages/reviews/AgedGarlicS1pcMuscleAgingStudy";
 import Vo2MaxZone2CardioLongevityGuide from "@/pages/reviews/Vo2MaxZone2CardioLongevityGuide";
+import StrengthTrainingLongevityMuscleGuide from "@/pages/reviews/StrengthTrainingLongevityMuscleGuide";
 import ContrastTherapyAtHomeGuide from "@/pages/reviews/ContrastTherapyAtHomeGuide";
 import DoGroundingSheetsWork from "@/pages/reviews/DoGroundingSheetsWork";
 import EmrTekDiscountCode from "@/pages/reviews/EmrTekDiscountCode";
@@ -401,6 +402,7 @@ export const SSR_ROUTE_COMPONENTS: Record<string, ComponentType> = {
   "/blog/vanadyl-sulfate-senolytic-study": VanadylSulfateSenolyticStudy,
   "/blog/aged-garlic-s1pc-muscle-aging-study": AgedGarlicS1pcMuscleAgingStudy,
   "/blog/vo2-max-zone-2-cardio-longevity-guide": Vo2MaxZone2CardioLongevityGuide,
+  "/blog/strength-training-longevity-muscle-guide": StrengthTrainingLongevityMuscleGuide,
   "/blog/contrast-therapy-at-home-guide": ContrastTherapyAtHomeGuide,
   "/blog/do-grounding-sheets-work": DoGroundingSheetsWork,
   "/emr-tek-discount-code": EmrTekDiscountCode,

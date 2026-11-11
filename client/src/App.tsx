@@ -249,6 +249,7 @@ import BoneLoadingPiezo1Study from "./pages/reviews/BoneLoadingPiezo1Study";
 import VanadylSulfateSenolyticStudy from "./pages/reviews/VanadylSulfateSenolyticStudy";
 import AgedGarlicS1pcMuscleAgingStudy from "./pages/reviews/AgedGarlicS1pcMuscleAgingStudy";
 import Vo2MaxZone2CardioLongevityGuide from "./pages/reviews/Vo2MaxZone2CardioLongevityGuide";
+import StrengthTrainingLongevityMuscleGuide from "./pages/reviews/StrengthTrainingLongevityMuscleGuide";
 import ContrastTherapyAtHomeGuide from "./pages/reviews/ContrastTherapyAtHomeGuide";
 import DoGroundingSheetsWork from "./pages/reviews/DoGroundingSheetsWork";
 import EmrTekDiscountCode from "./pages/reviews/EmrTekDiscountCode";
@@ -682,6 +683,7 @@ function Router() {
         <Route path="/blog/vanadyl-sulfate-senolytic-study" component={VanadylSulfateSenolyticStudy} />
         <Route path="/blog/aged-garlic-s1pc-muscle-aging-study" component={AgedGarlicS1pcMuscleAgingStudy} />
         <Route path="/blog/vo2-max-zone-2-cardio-longevity-guide" component={Vo2MaxZone2CardioLongevityGuide} />
+        <Route path="/blog/strength-training-longevity-muscle-guide" component={StrengthTrainingLongevityMuscleGuide} />
         <Route path="/blog/contrast-therapy-at-home-guide" component={ContrastTherapyAtHomeGuide} />
         <Route path="/blog/do-grounding-sheets-work" component={DoGroundingSheetsWork} />
         <Route path="/emr-tek-discount-code" component={EmrTekDiscountCode} />
