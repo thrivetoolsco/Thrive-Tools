@@ -47,7 +47,6 @@ const plain = (s) => normalize(s.replace(/<!--[\s\S]*?-->/g, "")
   assert.deepEqual(fs.readFileSync(path.join("dist/public", src)), fs.readFileSync("attached_assets/IMG_1688_1794243477573.webp"));
   assert(head.match(/property="og:image" content="([^"]+)"/)[1].endsWith(src));
   const listing = (await render("/blog")).html;
-  assert.equal(listing.match(/data-testid="card-post-([^"]+)"/)[1], "aged-garlic-s1pc-muscle-aging-study");
   assert.equal((listing.match(/data-testid="card-post-aged-garlic-s1pc-muscle-aging-study"/g) || []).length, 1);
-  console.log("PASS aged garlic: exact full article, 15 list items, original link, 7 matching visible/schema FAQs, original uploaded hero/OG, all routes and first blog card.");
+  console.log("PASS aged garlic: exact full article, 15 list items, original link, 7 matching visible/schema FAQs, original uploaded hero/OG, all routes and blog card.");
 })().catch((error) => { console.error(error); process.exitCode = 1; });
