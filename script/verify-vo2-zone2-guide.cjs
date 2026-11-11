@@ -1,5 +1,6 @@
 const assert = require("node:assert/strict");
 const fs = require("node:fs");
+const path = require("node:path");
 const { render, SSR_ROUTE_COMPONENTS } = require("../dist/entry-server.cjs");
 require("tsx/cjs");
 const { blogPosts } = require("../shared/site-routes.ts");
@@ -57,11 +58,22 @@ const links = [
   assert.equal(faqSchema.length, 1);
   assert.deepEqual(faqSchema[0].mainEntity.map((faq) => ({ q: faq.name, a: faq.acceptedAnswer.text })), faqs);
   for (const faq of faqs) assert(plain(article).includes(`${faq.q} ${faq.a}`));
-  assert(!/<img\b/.test(article), "Do not add missing or invented article images");
+  const images = [...html.matchAll(/<img\b[^>]*>/g)].map((m) => m[0]);
+  for (const [filename, alt] of [
+    ["IMG_1695_1794393568710", "Woman brisk walking uphill on a forest trail in morning light"],
+    ["IMG_1696_1794393568709", "Heart-rate zone illustration, gentle jogging silhouette"],
+  ]) {
+    const tag = images.find((image) => image.includes(filename));
+    assert(tag?.includes(`alt="${alt}"`), `Missing uploaded image or alt: ${filename}`);
+    const src = tag.match(/src="([^"]+)"/)[1];
+    assert.deepEqual(fs.readFileSync(path.join("dist/public", src)), fs.readFileSync(`attached_assets/${filename}.webp`));
+    if (filename.includes("1695")) assert(head.match(/property="og:image" content="([^"]+)"/)[1].endsWith(src));
+  }
+  assert.equal((article.match(/<img\b/g) || []).length, 1, "Only the uploaded heart-zone supporting image is available");
   for (const listingRoute of ["/blog", "/product-reviews"]) {
     const listing = (await render(listingRoute)).html;
     assert.equal(listing.match(/data-testid="card-post-([^"]+)"/)[1], "vo2-max-zone-2-cardio-longevity-guide");
     assert.equal((listing.match(/data-testid="card-post-vo2-max-zone-2-cardio-longevity-guide"/g) || []).length, 1);
   }
-  console.log("PASS VO2 max: exact article and SEO, all routes, 185 entries, first card on both listings, 5 working internal links, 5 matching FAQs, no missing image references.");
+  console.log("PASS VO2 max: exact article and SEO, all routes, 185 entries, first card on both listings, 5 working internal links, 5 matching FAQs, original uploaded hero/OG and supporting image with exact alt text.");
 })().catch((error) => { console.error(error); process.exitCode = 1; });

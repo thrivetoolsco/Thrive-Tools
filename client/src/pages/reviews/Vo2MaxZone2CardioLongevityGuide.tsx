@@ -2,6 +2,8 @@ import PageLayout from "@/components/PageLayout";
 import FaqJsonLd from "@/components/FaqJsonLd";
 import { Badge } from "@/components/ui/badge";
 import { Link } from "wouter";
+import walkingImage from "@assets/IMG_1695_1794393568710.webp";
+import heartZonesImage from "@assets/IMG_1696_1794393568709.webp";
 
 const title =
   "VO2 Max and Zone 2 Cardio: The Longevity Metric Your Supplements Can't Replace";
@@ -47,6 +49,8 @@ export default function Vo2MaxZone2CardioLongevityGuide() {
         noSuffix: true,
         ogType: "article",
         datePublished: "2026-11-11",
+        image: walkingImage,
+        imageAlt: "Woman brisk walking uphill on a forest trail in morning light",
       }}
     >
       <FaqJsonLd faqs={faqs} />
@@ -77,6 +81,16 @@ export default function Vo2MaxZone2CardioLongevityGuide() {
         ))}
       </div>
 
+      <div className="card-glass mb-8 overflow-hidden rounded-2xl">
+        <img
+          src={walkingImage}
+          alt="Woman brisk walking uphill on a forest trail in morning light"
+          width={1280}
+          height={1920}
+          decoding="async"
+          className="max-h-[640px] w-full bg-[#f8ece0] object-contain"
+        />
+      </div>
       <article className="space-y-8 text-[#3d1a28]/80 [&_h2]:font-display [&_h2]:text-2xl [&_h2]:font-bold [&_h2]:leading-tight [&_h2]:text-[#3d1a28] [&_h3]:font-display [&_h3]:font-bold [&_h3]:text-[#3d1a28] [&_p]:leading-relaxed [&_strong]:font-bold [&_strong]:text-[#3d1a28]">
         <p>
           Short answer: VO2 max — how much oxygen your body can use during hard
@@ -179,6 +193,17 @@ export default function Vo2MaxZone2CardioLongevityGuide() {
 
         <section className="space-y-4">
           <h2>What is Zone 2, and why does it matter?</h2>
+          <div className="card-glass overflow-hidden rounded-2xl">
+            <img
+              src={heartZonesImage}
+              alt="Heart-rate zone illustration, gentle jogging silhouette"
+              width={1920}
+              height={1280}
+              loading="lazy"
+              decoding="async"
+              className="h-auto w-full object-contain"
+            />
+          </div>
           <p>
             Zone 2 is slow, steady cardio at an intensity where you can still
             talk in full sentences, but you would rather not sing. For most
