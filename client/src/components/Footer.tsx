@@ -1,5 +1,5 @@
 import { Link } from "wouter";
-import { Mail } from "lucide-react";
+import { Instagram, Mail } from "lucide-react";
 import ArticleClosingNote from "@/components/ArticleClosingNote";
 
 function RedditIcon({ className }: { className?: string }) {
@@ -35,6 +35,17 @@ export default function Footer() {
                 style={{ background: "rgba(61,26,40,0.06)", border: "1px solid rgba(201,122,142,0.25)" }}
               >
                 <RedditIcon className="w-4 h-4 text-[#3d1a28]/50 hover:text-[#3d1a28] transition-colors" />
+              </a>
+              <a
+                href="https://www.instagram.com/thrivetools.co?srtk=MWdjbXl3bHZoOWlzcA%3D%3D&utm_source=qr"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Thrive Tools on Instagram"
+                data-testid="link-social-instagram"
+                className="w-9 h-9 rounded-full flex items-center justify-center transition-colors"
+                style={{ background: "rgba(61,26,40,0.06)", border: "1px solid rgba(201,122,142,0.25)" }}
+              >
+                <Instagram aria-hidden="true" className="w-4 h-4 text-[#3d1a28]/50 hover:text-[#3d1a28] transition-colors" />
               </a>
               <a
                 href="/contact"
