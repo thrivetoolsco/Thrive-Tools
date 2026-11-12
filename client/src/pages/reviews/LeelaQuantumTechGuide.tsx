@@ -12,7 +12,7 @@ const imageAlt = "Leela Quantum Tech copper bracelet promotional graphic";
 const faqs = [
   {
     q: "Is there a Leela Quantum Tech discount code?",
-    a: "No. As of November 2026, there is no reader discount code for Leela Quantum Tech. The way to support ThriveTools while shopping the range is the affiliate link in this article.",
+    a: "Yes. As of November 2026, readers can use code ThriveTools10 at checkout on leelaq.com. The affiliate link in this article also supports ThriveTools.",
   },
   {
     q: "Does Leela Quantum Tech claim to heal disease?",
@@ -78,8 +78,9 @@ export default function LeelaQuantumTechGuide() {
           with brands I can recommend authentically, and I want to be upfront
           about this one from the start: I am an affiliate partner of Leela
           Quantum Tech, which means I earn a commission if you buy through my
-          link, at no extra cost to you. There is no reader discount code for
-          Leela Quantum Tech — if you want to support ThriveTools while
+          link, at no extra cost to you. There is now a reader discount code for
+          Leela Quantum Tech: use code ThriveTools10 at checkout on leelaq.com.
+          If you want to support ThriveTools while
           exploring their products, the affiliate link in this article is the
           way to do it.
         </p>
@@ -274,8 +275,8 @@ export default function LeelaQuantumTechGuide() {
             that deserves a careful read rather than a headline. The technology
             is positioned as supporting balance and coherence, not as treating
             disease. The affiliate link below is how you can explore the range
-            while supporting ThriveTools — there is no discount code, and I
-            will not invent one.
+            while supporting ThriveTools — and readers can now use code
+            ThriveTools10 at checkout.
           </p>
           <p>
             If you explore it, do what I would do: start with one entry point,
