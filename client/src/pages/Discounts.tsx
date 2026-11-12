@@ -288,6 +288,13 @@ export const healthTech: DiscountItem[] = [
     url: "https://intrinsicprism.com/?ref=THRIVETOOLS",
     blogHref: "/blog/intrinsic-prism-discount-code",
   },
+  {
+    name: "Leela Quantum Tech",
+    description: "Quantum wellness products, including the Leela Quantum Bloc and wearable accessories.",
+    code: "ThriveTools10",
+    url: "https://leelaq.com/?ref=ThriveTools",
+    blogHref: "/blog/leela-quantum-tech-guide",
+  },
 ];
 
 const nontoxicCookware: DiscountItem[] = [
