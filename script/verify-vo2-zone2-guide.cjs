@@ -33,7 +33,7 @@ const links = [
   assert(app.indexOf(`path="${route}"`) < app.indexOf("<Route component={NotFound}"));
   const entry = blogPosts.filter((post) => post.href === route);
   assert.equal(entry.length, 1);
-  assert.equal(blogPosts.length, 186);
+  assert.equal(blogPosts.length, 187);
   assert.equal(entry[0].badge, "Guides / Longevity & Fitness");
   const { html, helmet } = await render(route);
   const head = Object.values(helmet).map((value) => value.toString()).join("\n");
@@ -75,5 +75,5 @@ const links = [
     assert.equal((listing.match(/data-testid="card-post-vo2-max-zone-2-cardio-longevity-guide"/g) || []).length, 1);
     assert.equal((listing.match(/data-testid="card-post-vo2-max-zone-2-cardio-longevity-guide"/g) || []).length, 1);
   }
-  console.log("PASS VO2 max: exact article and SEO, all routes, 186 entries, present on both listings, 5 working internal links, 5 matching FAQs, original uploaded hero/OG and supporting image with exact alt text.");
+  console.log("PASS VO2 max: exact article and SEO, all routes, 187 entries, present on both listings, 5 working internal links, 5 matching FAQs, original uploaded hero/OG and supporting image with exact alt text.");
 })().catch((error) => { console.error(error); process.exitCode = 1; });
