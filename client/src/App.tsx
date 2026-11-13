@@ -252,6 +252,7 @@ import Vo2MaxZone2CardioLongevityGuide from "./pages/reviews/Vo2MaxZone2CardioLo
 import StrengthTrainingLongevityMuscleGuide from "./pages/reviews/StrengthTrainingLongevityMuscleGuide";
 import DeepSleepLongevityGuide from "./pages/reviews/DeepSleepLongevityGuide";
 import DoesLeelaQuantumTechWork from "./pages/reviews/DoesLeelaQuantumTechWork";
+import HowManyStepsADayLongevityGuide from "./pages/reviews/HowManyStepsADayLongevityGuide";
 import ContrastTherapyAtHomeGuide from "./pages/reviews/ContrastTherapyAtHomeGuide";
 import DoGroundingSheetsWork from "./pages/reviews/DoGroundingSheetsWork";
 import EmrTekDiscountCode from "./pages/reviews/EmrTekDiscountCode";
@@ -688,6 +689,7 @@ function Router() {
         <Route path="/blog/strength-training-longevity-muscle-guide" component={StrengthTrainingLongevityMuscleGuide} />
         <Route path="/blog/deep-sleep-longevity-guide" component={DeepSleepLongevityGuide} />
         <Route path="/blog/does-leela-quantum-tech-work" component={DoesLeelaQuantumTechWork} />
+        <Route path="/blog/how-many-steps-a-day-longevity-guide" component={HowManyStepsADayLongevityGuide} />
         <Route path="/blog/contrast-therapy-at-home-guide" component={ContrastTherapyAtHomeGuide} />
         <Route path="/blog/do-grounding-sheets-work" component={DoGroundingSheetsWork} />
         <Route path="/emr-tek-discount-code" component={EmrTekDiscountCode} />

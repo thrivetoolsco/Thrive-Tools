@@ -141,6 +141,7 @@ import Vo2MaxZone2CardioLongevityGuide from "@/pages/reviews/Vo2MaxZone2CardioLo
 import StrengthTrainingLongevityMuscleGuide from "@/pages/reviews/StrengthTrainingLongevityMuscleGuide";
 import DeepSleepLongevityGuide from "@/pages/reviews/DeepSleepLongevityGuide";
 import DoesLeelaQuantumTechWork from "@/pages/reviews/DoesLeelaQuantumTechWork";
+import HowManyStepsADayLongevityGuide from "@/pages/reviews/HowManyStepsADayLongevityGuide";
 import ContrastTherapyAtHomeGuide from "@/pages/reviews/ContrastTherapyAtHomeGuide";
 import DoGroundingSheetsWork from "@/pages/reviews/DoGroundingSheetsWork";
 import EmrTekDiscountCode from "@/pages/reviews/EmrTekDiscountCode";
@@ -407,6 +408,7 @@ export const SSR_ROUTE_COMPONENTS: Record<string, ComponentType> = {
   "/blog/strength-training-longevity-muscle-guide": StrengthTrainingLongevityMuscleGuide,
   "/blog/deep-sleep-longevity-guide": DeepSleepLongevityGuide,
   "/blog/does-leela-quantum-tech-work": DoesLeelaQuantumTechWork,
+  "/blog/how-many-steps-a-day-longevity-guide": HowManyStepsADayLongevityGuide,
   "/blog/contrast-therapy-at-home-guide": ContrastTherapyAtHomeGuide,
   "/blog/do-grounding-sheets-work": DoGroundingSheetsWork,
   "/emr-tek-discount-code": EmrTekDiscountCode,

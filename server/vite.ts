@@ -39,6 +39,7 @@ const BLOG_ROUTE_MAP: Record<string, string> = {
   "/blog/strength-training-longevity-muscle-guide": "/src/pages/reviews/StrengthTrainingLongevityMuscleGuide.tsx",
   "/blog/deep-sleep-longevity-guide": "/src/pages/reviews/DeepSleepLongevityGuide.tsx",
   "/blog/does-leela-quantum-tech-work": "/src/pages/reviews/DoesLeelaQuantumTechWork.tsx",
+  "/blog/how-many-steps-a-day-longevity-guide": "/src/pages/reviews/HowManyStepsADayLongevityGuide.tsx",
   "/blog/contrast-therapy-at-home-guide": "/src/pages/reviews/ContrastTherapyAtHomeGuide.tsx",
   "/blog/do-grounding-sheets-work": "/src/pages/reviews/DoGroundingSheetsWork.tsx",
   "/blog/therasage-discount-code-faq": "/src/pages/reviews/TherasageDiscountCodeFaq.tsx",
