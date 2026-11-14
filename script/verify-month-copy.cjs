@@ -116,7 +116,7 @@ async function verifyOpenTabRollover() {
     assert(schema.some((item) => item["@type"] === "FAQPage"));
     const blog = (await render("/blog")).html;
     assert(blog.includes(`${month} 28, 2026`));
-    assert.equal(blog.match(/data-testid="card-post-([^"]+)"/)[1], "how-many-steps-a-day-longevity-guide");
+    assert.equal(blog.match(/data-testid="card-post-([^"]+)"/)[1], "shield-your-body-emf-protection-review");
   }
   global.Date = RealDate;
   let checked = 0;

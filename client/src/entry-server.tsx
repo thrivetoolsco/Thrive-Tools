@@ -142,6 +142,7 @@ import StrengthTrainingLongevityMuscleGuide from "@/pages/reviews/StrengthTraini
 import DeepSleepLongevityGuide from "@/pages/reviews/DeepSleepLongevityGuide";
 import DoesLeelaQuantumTechWork from "@/pages/reviews/DoesLeelaQuantumTechWork";
 import HowManyStepsADayLongevityGuide from "@/pages/reviews/HowManyStepsADayLongevityGuide";
+import ShieldYourBodyEmfProtectionReview from "@/pages/reviews/ShieldYourBodyEmfProtectionReview";
 import ContrastTherapyAtHomeGuide from "@/pages/reviews/ContrastTherapyAtHomeGuide";
 import DoGroundingSheetsWork from "@/pages/reviews/DoGroundingSheetsWork";
 import EmrTekDiscountCode from "@/pages/reviews/EmrTekDiscountCode";
@@ -409,6 +410,7 @@ export const SSR_ROUTE_COMPONENTS: Record<string, ComponentType> = {
   "/blog/deep-sleep-longevity-guide": DeepSleepLongevityGuide,
   "/blog/does-leela-quantum-tech-work": DoesLeelaQuantumTechWork,
   "/blog/how-many-steps-a-day-longevity-guide": HowManyStepsADayLongevityGuide,
+  "/blog/shield-your-body-emf-protection-review": ShieldYourBodyEmfProtectionReview,
   "/blog/contrast-therapy-at-home-guide": ContrastTherapyAtHomeGuide,
   "/blog/do-grounding-sheets-work": DoGroundingSheetsWork,
   "/emr-tek-discount-code": EmrTekDiscountCode,
