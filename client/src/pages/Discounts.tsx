@@ -262,13 +262,6 @@ export const healthTech: DiscountItem[] = [
     url: "https://neurovizr.com/?ref=rzortqxs",
   },
   {
-    name: "HeatBit",
-    description: "Earn btc as you heat and purify your home",
-    code: "THRIVE101",
-    url: "https://heatbit.com/?ref=EDENKAWTHARLARAKI",
-  },
-
-  {
     name: "Muse Headband",
     description: "EEG device providing real time neurofeedback",
     code: "THRIVE25",
