@@ -52,7 +52,10 @@ const faqs = source.split("## Frequently asked questions\n")[1].split("\n## Sour
   }
   assert.equal((html.match(/data-testid="article-closing-note"/g) || []).length, 1);
   const tsx = fs.readFileSync("client/src/pages/reviews/GlutathioneSupplementsEvidenceGuide.tsx", "utf8");
-  for (const name of ["glutathione-hero.webp", "glutathione-absorption.webp", "glutathione-building-blocks.webp"]) {
+  assert(!tsx.includes("glutathione-building-blocks.webp"));
+  assert(tsx.indexOf('<ArticleImage filename="glutathione-absorption.webp"') > tsx.indexOf("Liposomal glutathione: the idea is sound"));
+  assert(/on the product page\.\s*<\/p>\s*<ArticleImage filename="glutathione-facts\.webp" \/>/.test(tsx));
+  for (const name of ["glutathione-hero.webp", "glutathione-absorption.webp", "glutathione-facts.webp"]) {
     assert(tsx.includes(name), `Pending image reference: ${name}`);
     if (!fs.existsSync(`attached_assets/${name}`)) assert(!html.includes(`src="${name}"`), "No broken image references");
   }

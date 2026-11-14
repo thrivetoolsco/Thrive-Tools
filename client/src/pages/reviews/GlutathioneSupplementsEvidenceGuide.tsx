@@ -17,9 +17,18 @@ const imageMetadata: Record<
   string,
   { alt: string | null; caption: string | null }
 > = {
-  "glutathione-hero.webp": { alt: null, caption: null },
-  "glutathione-absorption.webp": { alt: null, caption: null },
-  "glutathione-building-blocks.webp": { alt: null, caption: null },
+  "glutathione-hero.webp": {
+    alt: "Close-up of a teal Cymbiotika Liposomal Glutathione packet in Citrus Vanilla flavour, an amber drop spilling from its top",
+    caption: null,
+  },
+  "glutathione-absorption.webp": {
+    alt: "Cymbiotika liposomal delivery diagram: capsule powder stops at the gut wall, liposomes reach the blood",
+    caption: null,
+  },
+  "glutathione-facts.webp": {
+    alt: "Supplement Facts for Cymbiotika Liposomal Glutathione: per 5 mL packet, 150 mg glutathione with riboflavin, CoQ10 and PQQ",
+    caption: "Supplement Facts for Cymbiotika Liposomal Glutathione: 150 mg glutathione per 5 mL pouch, with CoQ10, PQQ and riboflavin.",
+  },
 };
 
 const articleLinkClass = "break-words text-[#8b3a1a] underline underline-offset-4";
@@ -71,7 +80,7 @@ function AffiliateLink({ children }: { children: ReactNode }) {
 function ArticleImage({ filename }: { filename: string }) {
   const src = imageModules[`../../../../attached_assets/${filename}`];
   const metadata = imageMetadata[filename];
-  if (!src || !metadata?.alt || !metadata.caption) return null;
+  if (!src || !metadata?.alt) return null;
 
   return (
     <figure className="card-glass overflow-hidden rounded-2xl">
@@ -82,9 +91,11 @@ function ArticleImage({ filename }: { filename: string }) {
         decoding="async"
         className="h-auto w-full bg-[#f8ece0] object-contain"
       />
-      <figcaption className="px-4 py-3 text-sm leading-relaxed text-[#3d1a28]/70 sm:px-6">
-        {metadata.caption}
-      </figcaption>
+      {metadata.caption && (
+        <figcaption className="px-4 py-3 text-sm leading-relaxed text-[#3d1a28]/70 sm:px-6">
+          {metadata.caption}
+        </figcaption>
+      )}
     </figure>
   );
 }
@@ -94,7 +105,7 @@ export default function GlutathioneSupplementsEvidenceGuide() {
     "../../../../attached_assets/glutathione-hero.webp"
   ];
   const heroMetadata = imageMetadata["glutathione-hero.webp"];
-  const seoImage = heroImage && heroMetadata.alt && heroMetadata.caption;
+  const seoImage = heroImage && heroMetadata.alt;
 
   return (
     <PageLayout
@@ -211,7 +222,6 @@ export default function GlutathioneSupplementsEvidenceGuide() {
             matter more than any single pill. A supplement cannot replace a
             system that is under supplied.
           </p>
-          <ArticleImage filename="glutathione-building-blocks.webp" />
         </section>
 
         <section className="space-y-4">
@@ -239,7 +249,6 @@ export default function GlutathioneSupplementsEvidenceGuide() {
             the same as months of daily dosing, and blood levels after one dose
             are not the same as body stores built up over time.
           </p>
-          <ArticleImage filename="glutathione-absorption.webp" />
         </section>
 
         <section className="space-y-4">
@@ -291,6 +300,7 @@ export default function GlutathioneSupplementsEvidenceGuide() {
             material as cell membranes, which are meant to protect it through
             digestion and help it reach the blood.
           </p>
+          <ArticleImage filename="glutathione-absorption.webp" />
           <p>
             The study everyone cites is Sinha and colleagues, published in the
             European Journal of Clinical Nutrition in 2018. Twelve healthy
@@ -403,6 +413,7 @@ export default function GlutathioneSupplementsEvidenceGuide() {
             day money back guarantee. Prices change, so check the current price
             on the product page.
           </p>
+          <ArticleImage filename="glutathione-facts.webp" />
           <p>
             You can find it through my affiliate link here:{" "}
             <AffiliateLink>Cymbiotika Liposomal Glutathione</AffiliateLink>{" "}
