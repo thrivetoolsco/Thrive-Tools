@@ -97,11 +97,9 @@ export default function ShieldYourBodyEmfProtectionReview() {
 
       <article className="space-y-8 text-[#3d1a28]/80 [&_h2]:font-display [&_h2]:text-2xl [&_h2]:font-bold [&_h2]:leading-tight [&_h2]:text-[#3d1a28] [&_h3]:font-display [&_h3]:font-bold [&_h3]:text-[#3d1a28] [&_p]:leading-relaxed [&_strong]:font-bold [&_strong]:text-[#3d1a28]">
         <p className="border-l-2 border-[#c4622d]/50 pl-4">
-          <strong>Affiliate disclosure:</strong> ThriveTools is an affiliate
-          partner of Shield Your Body. We may earn a commission on purchases
-          made through links on this page, at no extra cost to you. That does
-          not change what I write here. I am going to tell you what the products
-          do, what they do not do, and what the science actually says.
+          <strong>Disclosure:</strong> I'm affiliated with Shield Your Body, but I
+          only recommend things I can actually stand behind so here's my honest
+          breakdown.
         </p>
 
         <section className="space-y-4">

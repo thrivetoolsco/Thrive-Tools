@@ -26,7 +26,11 @@ const plain = (s) => normalize(s.replace(/<!--[\s\S]*?-->/g, "")
   assert(head.includes(`https://thrivetools.co${route}`));
   const article = html.match(/<article\b[^>]*>([\s\S]*?)<\/article>/)[1];
   const text = plain(article);
-  const source = brief.slice(brief.indexOf("Affiliate disclosure:")).split("\nLooking for tools")[0];
+  const disclosure = "Disclosure: I'm affiliated with Shield Your Body, but I only recommend things I can actually stand behind so here's my honest breakdown.";
+  assert(text.includes(disclosure));
+  assert(!text.includes("Affiliate disclosure: ThriveTools is an affiliate partner of Shield Your Body."));
+  const source = brief.slice(brief.indexOf("Affiliate disclosure:")).split("\nLooking for tools")[0]
+    .replace(/^Affiliate disclosure:[\s\S]*?(?=\n\s*\n)/, disclosure);
   const expectedBlocks = source.replace(/\[(?:Image|Hero image):[^\]]*\]\nAlt text: [^\n]*\nCaption: [^\n]*/g, "")
     .split(/\n\s*\n/).map((s) => normalize(s.replace(/^#{1,6}\s+|^-\s+/gm, ""))).filter(Boolean);
   for (const block of expectedBlocks) assert(text.includes(block), `Missing supplied copy: ${block.slice(0, 180)}`);
