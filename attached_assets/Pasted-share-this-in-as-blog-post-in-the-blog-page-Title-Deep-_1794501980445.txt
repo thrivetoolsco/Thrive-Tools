@@ -1,0 +1,163 @@
+share this in as blog post in the blog page:
+
+Title: Deep Sleep Is Your Brain's Nightly Clean-Up: What the Evidence Actually Says About Sleep, Deep Sleep, and Living Longer
+
+Slug: /blog/deep-sleep-longevity-guide
+
+Meta title: Deep Sleep and Longevity: How Much Sleep You Need & Why Regularity Beats Duration (2026)
+
+Meta description: Losing 1% of deep sleep a year was linked to 27% higher dementia risk — and regular sleep predicted mortality better than duration in 61,000 adults. What the evidence actually says about deep sleep and longevity.
+
+Tags: deep sleep, sleep, longevity, slow-wave sleep, dementia, sleep regularity, healthy aging, sleep duration
+
+Category: Guides / Sleep & Recovery
+
+---
+
+# Deep Sleep Is Your Brain's Nightly Clean-Up: What the Evidence Actually Says About Sleep, Deep Sleep, and Living Longer
+
+**Short answer:** It is not just how long you sleep. It is how much deep sleep you get — and how regular your schedule is. In a 2023 study of 346 adults over 60, losing just 1% of deep sleep per year was linked to a 27% higher risk of dementia. In a 2024 study of 61,000 adults, how regularly people slept predicted who lived longer better than how many hours they slept. The target the evidence keeps pointing to is simple: 7–8 hours, at the same time, every night. No supplement or gadget replaces that.
+
+I have written about VO2 max, strength training, and HRV this week. Sleep is the foundation all three sit on. You can train perfectly and still under-recover if your nights are short, irregular, or shallow. Here is what the research actually shows — and where it stops.
+
+> This is general information, not medical advice. If you snore loudly, gasp or stop breathing at night, fall asleep during the day without meaning to, or you have had insomnia for more than a few weeks, talk to your doctor — or a sleep specialist — before trying any of this. Sleep apnoea is common, treatable, and dangerous to ignore.
+
+## What deep sleep actually is
+
+Your night is not one long stretch of unconsciousness. It runs in cycles of about 90 minutes, and each cycle moves through light sleep, deep sleep, and REM sleep (the dreaming stage).
+
+Deep sleep — also called slow-wave sleep — is the stage where your brain waves slow right down into big, slow oscillations. It is the most physically restorative stage: growth hormone is released, tissues repair, your immune system does maintenance, and memories consolidate. It is also the stage your brain uses to clear out metabolic waste — the glymphatic system, a network of channels that flushes fluid through the brain, is most active during deep sleep. That clean-up mechanism was shown in mice in a 2013 *Science* study; in humans the evidence is still indirect, but it is one of the most plausible explanations for why deep sleep matters so much for the ageing brain.
+
+Two things about the shape of a normal night matter for everything that follows:
+
+1. **Deep sleep is front-loaded.** Most of your deep sleep happens in the first half of the night, in the first two or three cycles. The second half is mostly light sleep and REM. That means a short night does not just cut your total sleep — it cuts a disproportionate share of your deep sleep. Going to bed at 1 a.m. and waking at 6 a.m. is not the same as 10 p.m. to 5 a.m., even though both are five hours.
+2. **Deep sleep declines with age.** In the Framingham data below, slow-wave sleep fell by about 0.6% per year after age 60 on average. Some of that decline is normal ageing. The question the research is now asking is whether the *rate* of decline is something you can influence.
+
+## The 2023 study: losing deep sleep, year by year, tracked with dementia risk
+
+The headline study here is Himali and colleagues, published in *JAMA Neurology* in 2023, using data from the Framingham Heart Study — one of the longest-running health studies in the world.
+
+What they did: 346 participants aged 60 and over had two overnight sleep studies (polysomnography — the gold-standard lab measurement, not a wrist tracker) about five years apart, in 1995–1998 and 2001–2003. The researchers measured how each person's percentage of slow-wave sleep changed, then followed them for up to 17 years to see who developed dementia.
+
+What they found:
+- Slow-wave sleep declined with age, by about 0.6% per year on average, with the steepest loss between ages 75 and 80.
+- **Each 1% decline in slow-wave sleep per year was associated with a 27% higher risk of developing dementia** (hazard ratio 1.27), and a **32% higher risk of Alzheimer's disease specifically**.
+- The decline was faster in people carrying the APOE ε4 gene variant, the strongest common genetic risk factor for Alzheimer's — but the association held across the group.
+
+That 27% number is the one you will see quoted everywhere, so here is the honest framing: this is an observational study. It shows that people whose deep sleep fell faster were more likely to develop dementia. It does not prove that losing deep sleep *causes* dementia. The authors say so themselves — it is possible that early, undetected brain changes cause the sleep loss, rather than the other way around. What makes the finding worth taking seriously is the design: the sleep was measured objectively, twice, years before dementia appeared, and the association survived adjustment for age, sex, smoking, medication use, and genetics. Slow-wave sleep loss looks like a modifiable risk factor. It is not proven to be one yet.
+
+## How much sleep: the U-shaped curve
+
+The second question everyone asks is simpler: how many hours? The answer from the largest pooling of the evidence is a U-shape, not a straight line. Too little is associated with higher mortality. Too much is too — although the long-sleep side is more likely to reflect underlying illness than to cause it.
+
+- A 2017 dose-response meta-analysis in the *Journal of the American Heart Association* (Yin and colleagues), pooling prospective cohort studies, found the lowest risk of death at about **7 hours per night**, with risk rising about 6% for each hour below 7 and about 13% for each hour above 7.
+- A 2025 meta-analysis in *GeroScience* put numbers on the same shape: short sleep (under 7 hours) carried about a 14% higher mortality hazard, long sleep (9 hours or more) about 34% higher.
+- The official guidance lines up with the middle of the curve: the American Academy of Sleep Medicine and the Sleep Research Society recommend **7 or more hours** for adults, and the National Sleep Foundation's range is **7–9 hours** for adults aged 26–64 and **7–8 hours** for older adults.
+
+The practical target is 7–8 hours. The difference between 7 and 8 is small compared with the difference between 5 and 7 — and the difference between 7 and 10 is mostly a signal to check your health, not a reason to set an alarm to wake yourself up.
+
+## The surprise finding: regularity beats duration
+
+The most interesting sleep result of the last two years is not about hours at all. It is about *when*.
+
+In 2024, Windred and colleagues published a study in the journal *Sleep* that analysed more than 10 million hours of wrist-accelerometer data from **60,977 UK Biobank adults** (average age 63). They calculated each person's Sleep Regularity Index — essentially, how likely you are to be asleep or awake at the same clock time on any two days — then followed who lived and who died for about six years.
+
+The result: compared with the least regular fifth of sleepers, the more regular groups had a **20–48% lower risk of dying from any cause**. Cardiometabolic death was 22–57% lower and cancer death 16–39% lower. And when the researchers put regularity and duration head to head in the same model, **regularity was the stronger predictor of mortality**. Adding duration to a model that already had regularity barely improved it at all.
+
+A second 2024 study, in the *Journal of Epidemiology & Community Health*, followed 72,269 UK adults for eight years and found the same pattern for heart disease: irregular sleep timing was linked to a **26% higher risk of major cardiovascular events** — heart attack, stroke, heart failure — even in people who got the recommended number of hours.
+
+The same honesty applies here: these are observational studies. Irregular sleepers are more likely to do shift work, have chronic illness, or live with stress and poor health habits — and the studies adjust for what they can measure, not for everything. Nobody has run a trial randomising people to regular versus irregular sleep and tracked who lives longer, and nobody is going to. But the pattern has now shown up in multiple large cohorts, with objective measurement, and it is consistent with everything we know about circadian biology: your body runs on clocks, and clocks work best on a schedule.
+
+The takeaway is refreshingly boring: **go to bed and wake up at roughly the same time every day, weekends included.** The research suggests that a steady 6.5 hours may serve you better than 9 hours on Saturday and 5 on Tuesday. That is the single most underrated sleep intervention there is, and it costs nothing.
+
+## What this does NOT prove
+
+Because the headlines on this topic are dramatic, the limits matter:
+
+- **Association is not proof of cause.** Every mortality and dementia number in this article comes from observational research. People who sleep badly differ from people who sleep well in dozens of ways — health, income, stress, shift work, mental health — that no study fully captures. Short or irregular sleep can be a *symptom* of illness, not just a cause of it.
+- **The long-sleep side of the curve is probably reverse causation.** People who are already ill sleep longer because illness increases sleep need. Do not use this article as a reason to cut your sleep short if your body genuinely needs nine hours.
+- **No trial has shown that improving deep sleep prevents dementia.** The 27% figure describes risk in people whose deep sleep was already declining. We do not yet have evidence that an intervention that raises deep sleep lowers dementia risk. That is the study the field needs next.
+- **Sleep trackers measure deep sleep badly.** Wrist devices estimate sleep stages from movement and heart rate. They are reasonable at total sleep time and poor at staging — the "deep sleep" number on your watch is an estimate, not a measurement. Do not chase it as a score. Use it to spot patterns (bedtime drift, short nights) and ignore the rest. For more on what wearables get right and wrong, see [What Is HRV and How to Improve It](/blog/what-is-hrv-how-to-improve-it).
+- **Supplements are not the lever.** Melatonin can help shift timing (jet lag, shift work) but does not reliably deepen sleep. Magnesium has weak, mixed evidence for sleep in healthy adults — it helps if you are deficient, which is common, but it is not a sleep drug. I have a full guide on magnesium on the blog. The levers with real evidence are schedule, light, temperature, caffeine timing, and treating actual sleep disorders.
+
+## The protocol: what actually moves the needle
+
+Nothing here is exotic. That is the point — the evidence supports the boring basics, and the boring basics are what most of us skip.
+
+**1. Fix your wake time first.** Pick a wake time you can hold seven days a week and anchor everything to it. Bedtime follows from it: if you wake at 6:30 a.m. and need eight hours, you are in bed by 10:30 p.m. Weekends within an hour of the same time. This is the regularity finding, applied.
+
+**2. Get bright light in the morning.** Daylight within an hour of waking is the strongest signal that sets your circadian clock — it anchors your melatonin rhythm so that sleepiness arrives on time that evening. Ten to thirty minutes outside, or by a bright window. This pairs with the morning routine I wrote about in June, and it costs nothing.
+
+**3. Cut caffeine by noon.** Caffeine's half-life is about five to six hours, which means a 3 p.m. coffee is still half there at 9 p.m. — and caffeine fragments deep sleep even when you fall asleep fine. If you love coffee, keep it to the morning. This is the single most common fix I see in people who say they "sleep fine" but wake up unrefreshed.
+
+**4. Cool, dark, quiet.** Your core temperature has to drop to fall asleep and stay asleep. A bedroom around 18–19°C (65–67°F) is the commonly cited range. Blackout the room properly — even dim light through the eyelids measurably fragments sleep — and keep your phone out of the bedroom, or at least face-down and on silent. The last hour before bed is for dim light and low stimulation, not for scrolling.
+
+**5. Train — but not at midnight.** Both of this week's earlier posts help here: [VO2 max and Zone 2 cardio](/blog/vo2-max-zone-2-cardio-longevity-guide) and [strength training](/blog/strength-training-longevity-muscle-guide) both improve sleep quality in trials, and exercise is one of the few interventions with randomised evidence behind it. Just keep hard sessions out of the last two to three hours before bed.
+
+**6. If you cannot sleep, get up.** Lying awake trains your brain to associate your bed with frustration. The gold-standard treatment for insomnia, cognitive behavioural therapy for insomnia (CBT-I), teaches exactly this: if you are awake after about 20 minutes, get up, do something quiet and boring in dim light, and return when sleepy. It outperforms sleeping pills in the long term, with no side effects. If insomnia has lasted more than a few weeks, ask your doctor about CBT-I before reaching for a supplement.
+
+## Tools that can help — honestly
+
+Sleep is mostly behaviour, not shopping. But a few things on my own list genuinely support the protocol above:
+
+- **Grounding sheets:** I reviewed the earthing evidence honestly on the blog — small studies, suggestive sleep findings, real limitations. If you sleep better on them, the mechanism may be the routine as much as the earthing. Earthing Harmony, code **THRIVENOW** on our [discount codes page](/discount-codes).
+- **Magnesium:** if you are deficient — and about a third of people are — correcting it can help sleep quality. It is not a sedative. Bioptimizers Magnesium Breakthrough, code **THRIVETOOLS** on our [discount codes page](/discount-codes).
+- **A sleep-friendly bedroom:** silk bedding stays cool and comfortable through the night. Promeed silk bedding is a link-only offer on our [discount codes page](/discount-codes).
+- **Goli Sleep gummies:** a melatonin-free sleep gummy option for occasional use — not a nightly crutch. Goli, code **g-745207ab6b** for 10% off on our [discount codes page](/discount-codes).
+- **Tracking the pattern, not the score:** a Muse headband can show you whether your bedtime is drifting, which is the metric that matters. Code **THRIVE25** on our [discount codes page](/discount-codes).
+
+None of these replaces the schedule. They make the schedule easier to keep.
+
+## FAQ
+
+**How much sleep do I actually need?**
+Most adults need 7–9 hours, with the lowest mortality risk in large studies clustering around 7–8 hours. Older adults need 7–8 hours. If you wake without an alarm feeling rested and stay alert through the afternoon, you are probably getting enough. If you need caffeine to function and fall asleep the moment you sit down, you are not.
+
+**How can I get more deep sleep?**
+Deep sleep is front-loaded in the night, so the biggest lever is time in bed early enough — going to bed earlier protects deep sleep more than sleeping in does. Regular exercise, a cool dark room, and no alcohol in the evening also help: alcohol suppresses deep sleep in the first half of the night even at modest doses. There is no proven supplement that reliably increases deep sleep.
+
+**Is 6 hours of sleep enough?**
+For most adults, no. Six hours sits on the short side of the U-shaped curve and is associated with higher mortality risk than 7–8 hours. A small minority of people carry rare gene variants (like DEC2) that let them function on six hours, but for the rest of us, six hours is a deficit that accumulates — in attention, mood, blood sugar control, and immune function.
+
+**Does sleeping at the same time every night really matter?**
+The best recent evidence says it matters more than total hours. In a 2024 study of 60,977 adults, sleep regularity predicted mortality better than sleep duration, with the most regular sleepers carrying 20–48% lower all-cause mortality than the least regular. These are observational findings, not proof — but keeping a steady schedule is free, and it is consistent with how circadian biology works.
+
+**Does deep sleep prevent dementia?**
+Not proven. A 2023 Framingham study found that each 1% annual decline in deep sleep was associated with a 27% higher dementia risk, but that is an association — it may be that early brain changes cause the sleep loss. Deep sleep supports the brain's waste-clearance system, which makes the link biologically plausible, but no trial has yet shown that improving deep sleep prevents dementia.
+
+**Why do I wake up at 3 a.m. every night?**
+Waking in the early hours is common and usually not dangerous on its own: sleep gets lighter in the second half of the night, so brief awakenings are normal — most people just do not remember them. Stress, alcohol, a warm room, or needing the bathroom make them longer and more memorable. If it happens nightly for weeks and you cannot get back to sleep, or you are excessively sleepy during the day, talk to your doctor.
+
+**Should I trust my watch's deep sleep number?**
+Use it as a trend, not a measurement. Wrist trackers estimate sleep stages from movement and heart rate and are notably unreliable for deep sleep specifically. What they are good at is showing patterns: bedtime drift, short nights, and whether your schedule is actually as regular as you think it is.
+
+## Sources
+
+- Himali, J.J. et al. (2023). Association Between Slow-Wave Sleep Loss and Incident Dementia. *JAMA Neurology*, 80(12), 1326–1333. doi:10.1001/jamaneurol.2023.3889 — 346 Framingham participants, 27% higher dementia risk per 1% annual slow-wave sleep decline.
+- Windred, D.P. et al. (2024). Sleep regularity is a stronger predictor of mortality risk than sleep duration: A prospective cohort study. *Sleep*, 47(1), zsad253. doi:10.1093/sleep/zsad253 — 60,977 UK Biobank adults, 20–48% lower all-cause mortality in more regular sleepers.
+- Chaput, J.P. et al. (2024). Sleep regularity and major adverse cardiovascular events: a device-based prospective study in 72,269 UK adults. *Journal of Epidemiology and Community Health* — irregular sleep timing linked to 26% higher risk of major cardiovascular events.
+- Yin, J. et al. (2017). Relationship of Sleep Duration With All-Cause Mortality and Cardiovascular Events: A Systematic Review and Dose-Response Meta-Analysis. *Journal of the American Heart Association*, 6(9), e005947 — lowest mortality risk at ~7 hours per night.
+- Cappuccio, F.P. et al. (2010). Sleep duration and all-cause mortality: a systematic review and meta-analysis of prospective studies. *Sleep*, 33(5), 585–592.
+- Xie, L. et al. (2013). Sleep drives metabolite clearance from the adult brain. *Science*, 342(6156), 373–377 — glymphatic clearance during sleep (mouse study).
+- Watson, N.F. et al. (2015). Recommended amount of sleep for a healthy adult: a joint consensus statement of the American Academy of Sleep Medicine and Sleep Research Society. *Sleep*, 38(6), 843–844 — 7 or more hours for adults.
+- Hirshkowitz, M. et al. (2015). National Sleep Foundation's sleep time duration recommendations. *Sleep Health*, 1(1), 40–43 — 7–9 hours for adults, 7–8 hours for older adults.
+
+> **Disclaimer:** This article is for general information only and is not medical advice. It reports on published research and does not recommend any supplement, dose, or treatment. If you have a sleep disorder or a medical condition, speak to your doctor or a qualified sleep specialist.
+
+Looking for tools that support healthy aging and recovery? Browse the current offers on our [discount codes page](/discount-codes). This article is for general information only and is not medical advice. It reports on a published study and does not recommend any supplement, dose, or treatment
+
+---
+
+Images:
+
+1. Hero — media-generation-day3-hero-sleep-0-baf07d1d-5d5b-420b-86cb-56d9f7ed589f.webp
+   Alt text: "Woman with long dark curly hair sleeping peacefully on her side in a dark bedroom, moonlight through the window"
+   Caption: "Deep sleep does the heavy lifting — and most of it happens in the first half of the night."
+
+2. Supporting 1 — day3-support-u-shape-curve.png
+   Alt text: "Chart showing sleep duration and mortality risk forming a U-shape, with the lowest risk at 7 to 8 hours per night"
+   Caption: "Sleep and mortality follow a U-shaped curve, not a straight line. Illustrative dose-response based on Yin et al. 2017 (Journal of the American Heart Association)."
+
+3. Supporting 2 — day3-support-hypnogram.png
+   Alt text: "Hypnogram of a typical night showing deep sleep concentrated in the first half of the night and REM sleep later"
+   Caption: "A typical night: deep sleep happens mostly in the first half. A short night cuts deep sleep first."
