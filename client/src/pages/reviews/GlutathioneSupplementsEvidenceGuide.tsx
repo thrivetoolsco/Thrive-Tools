@@ -417,9 +417,9 @@ export default function GlutathioneSupplementsEvidenceGuide() {
           <p>
             You can find it through my affiliate link here:{" "}
             <AffiliateLink>Cymbiotika Liposomal Glutathione</AffiliateLink>{" "}
-            ({affiliateUrl}). This article contains an affiliate link, which
-            means I may earn a commission if you buy through it, at no extra
-            cost to you.
+            ({affiliateUrl}). Disclosure: I'm affiliated with Cymbiotika, but I
+            only recommend things I can actually stand behind so here's my honest
+            breakdown.
           </p>
           <p>
             Now the honest assessment. The format is the right one. A liposomal
