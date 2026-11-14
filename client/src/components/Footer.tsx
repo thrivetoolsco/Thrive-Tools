@@ -2,6 +2,14 @@ import { Link } from "wouter";
 import { Instagram, Mail } from "lucide-react";
 import ArticleClosingNote from "@/components/ArticleClosingNote";
 
+function TikTokIcon({ className }: { className?: string }) {
+  return (
+    <svg viewBox="0 0 24 24" fill="currentColor" className={className} aria-hidden="true">
+      <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 1 1-2-2.75V9.4a6.32 6.32 0 1 0 5.45 6.27V8.69a8.16 8.16 0 0 0 4.77 1.53V6.8a4.85 4.85 0 0 1-1-.11z" />
+    </svg>
+  );
+}
+
 function RedditIcon({ className }: { className?: string }) {
   return (
     <svg viewBox="0 0 24 24" fill="currentColor" className={className} aria-hidden="true">
@@ -46,6 +54,17 @@ export default function Footer() {
                 style={{ background: "rgba(61,26,40,0.06)", border: "1px solid rgba(201,122,142,0.25)" }}
               >
                 <Instagram aria-hidden="true" className="w-4 h-4 text-[#3d1a28]/50 hover:text-[#3d1a28] transition-colors" />
+              </a>
+              <a
+                href="https://www.tiktok.com/@thrivetools.co"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Thrive Tools on TikTok"
+                data-testid="link-social-tiktok"
+                className="w-9 h-9 rounded-full flex items-center justify-center transition-colors"
+                style={{ background: "rgba(61,26,40,0.06)", border: "1px solid rgba(201,122,142,0.25)" }}
+              >
+                <TikTokIcon className="w-4 h-4 text-[#3d1a28]/50 hover:text-[#3d1a28] transition-colors" />
               </a>
               <a
                 href="/contact"

@@ -39,6 +39,12 @@ const INSTAGRAM_SOCIAL_HTML = `<a href="https://www.instagram.com/thrivetools.co
   </svg>
 </a>`;
 
+const TIKTOK_SOCIAL_HTML = `<a href="https://www.tiktok.com/@thrivetools.co" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="Thrive Tools on TikTok" data-testid="link-social-tiktok">
+  <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" style="width:16px;height:16px;color:rgba(61,26,40,0.5);">
+    <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 1 1-2-2.75V9.4a6.32 6.32 0 1 0 5.45 6.27V8.69a8.16 8.16 0 0 0 4.77 1.53V6.8a4.85 4.85 0 0 1-1-.11z"></path>
+  </svg>
+</a>`;
+
 const WATERDROP_SSR_HTML = `<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -672,6 +678,7 @@ const WATERDROP_SSR_HTML = `<!DOCTYPE html>
                 </svg>
               </a>
               ${INSTAGRAM_SOCIAL_HTML}
+              ${TIKTOK_SOCIAL_HTML}
               <a href="mailto:Thrivetools.co@gmail.com" class="social-btn" aria-label="Email Thrive Tools" data-testid="link-social-email">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor" style="width:16px;height:16px;color:rgba(61,26,40,0.5);">
                   <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
@@ -1253,6 +1260,7 @@ const KRATOM_SSR_HTML = `<!DOCTYPE html>
                 </svg>
               </a>
               ${INSTAGRAM_SOCIAL_HTML}
+              ${TIKTOK_SOCIAL_HTML}
               <a href="mailto:Thrivetools.co@gmail.com" class="social-btn" aria-label="Email Thrive Tools" data-testid="link-social-email">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor" style="width:16px;height:16px;color:rgba(61,26,40,0.5);">
                   <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
@@ -1563,6 +1571,7 @@ const MISO_SSR_HTML = `<!DOCTYPE html>
                 </svg>
               </a>
               ${INSTAGRAM_SOCIAL_HTML}
+              ${TIKTOK_SOCIAL_HTML}
               <a href="mailto:Thrivetools.co@gmail.com" class="social-btn" aria-label="Email Thrive Tools">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.8" stroke="currentColor" style="width:16px;height:16px;color:rgba(61,26,40,0.5);">
                   <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
