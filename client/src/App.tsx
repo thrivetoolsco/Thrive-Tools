@@ -254,6 +254,7 @@ import DeepSleepLongevityGuide from "./pages/reviews/DeepSleepLongevityGuide";
 import DoesLeelaQuantumTechWork from "./pages/reviews/DoesLeelaQuantumTechWork";
 import HowManyStepsADayLongevityGuide from "./pages/reviews/HowManyStepsADayLongevityGuide";
 import ShieldYourBodyEmfProtectionReview from "./pages/reviews/ShieldYourBodyEmfProtectionReview";
+import GlutathioneSupplementsEvidenceGuide from "./pages/reviews/GlutathioneSupplementsEvidenceGuide";
 import ContrastTherapyAtHomeGuide from "./pages/reviews/ContrastTherapyAtHomeGuide";
 import DoGroundingSheetsWork from "./pages/reviews/DoGroundingSheetsWork";
 import EmrTekDiscountCode from "./pages/reviews/EmrTekDiscountCode";
@@ -692,6 +693,7 @@ function Router() {
         <Route path="/blog/does-leela-quantum-tech-work" component={DoesLeelaQuantumTechWork} />
         <Route path="/blog/how-many-steps-a-day-longevity-guide" component={HowManyStepsADayLongevityGuide} />
         <Route path="/blog/shield-your-body-emf-protection-review" component={ShieldYourBodyEmfProtectionReview} />
+        <Route path="/blog/glutathione-supplements-evidence-guide" component={GlutathioneSupplementsEvidenceGuide} />
         <Route path="/blog/contrast-therapy-at-home-guide" component={ContrastTherapyAtHomeGuide} />
         <Route path="/blog/do-grounding-sheets-work" component={DoGroundingSheetsWork} />
         <Route path="/emr-tek-discount-code" component={EmrTekDiscountCode} />

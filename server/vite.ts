@@ -41,6 +41,7 @@ const BLOG_ROUTE_MAP: Record<string, string> = {
   "/blog/does-leela-quantum-tech-work": "/src/pages/reviews/DoesLeelaQuantumTechWork.tsx",
   "/blog/how-many-steps-a-day-longevity-guide": "/src/pages/reviews/HowManyStepsADayLongevityGuide.tsx",
   "/blog/shield-your-body-emf-protection-review": "/src/pages/reviews/ShieldYourBodyEmfProtectionReview.tsx",
+  "/blog/glutathione-supplements-evidence-guide": "/src/pages/reviews/GlutathioneSupplementsEvidenceGuide.tsx",
   "/blog/contrast-therapy-at-home-guide": "/src/pages/reviews/ContrastTherapyAtHomeGuide.tsx",
   "/blog/do-grounding-sheets-work": "/src/pages/reviews/DoGroundingSheetsWork.tsx",
   "/blog/therasage-discount-code-faq": "/src/pages/reviews/TherasageDiscountCodeFaq.tsx",
